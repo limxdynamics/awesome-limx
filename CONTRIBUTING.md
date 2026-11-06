@@ -1,53 +1,76 @@
 # Contributing
 
-Thanks for wanting to add something. This list stays useful only if every entry is a project someone can actually run.
+[中文](CONTRIBUTING_cn.md)
 
-## Adding an entry
+Thanks for sharing your work. This list is useful only if every entry points to something real that people can check.
 
-1. Fork this repository and edit `README.md`, or open the [add-project issue](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
-2. Put the entry in the section that fits. One entry, one line plus a short italic attribution line.
-3. Keep entries in the existing format:
+## How to submit
+
+Pick whichever is easiest:
+
+- Fill in the [submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
+- Open a pull request that adds your entry to `README.md` and `README_cn.md`. If you only write one language, we will translate the other.
+- Email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) with the same details the form asks for.
+
+If you are the author or maintainer, say so. It makes review much faster.
+
+## Entry format
 
 ```markdown
-- [owner/repo](https://github.com/owner/repo) — one line on what it does.
-  _By Team or Person (TRON1, limxsdk)_
+- **[Project name](https://primary-link)** — What was done on LimX hardware, in one sentence.<br>
+  <sub>Institution or authors · Product · Year · [Paper](…) · [Code](…) · [Video](…)</sub>
 ```
 
-4. Open a pull request. If you are the maintainer, say so — it makes review much faster.
+- **Primary link**: the project page if there is one, otherwise the paper, then the code, then the video.
+- **Product**: TRON1, TRON2, Oli, Luna, or LimX SDK. List more than one if the work used several.
+- **Year**: the year the work was published or shown.
+- **Links**: include only the kinds that exist, in the order Paper, Code, Video, Result. Use `Result` for an official competition result.
+- **Order**: newest first within each section.
 
-## What gets accepted
+## Which section
+
+| Section | Put it here if the main result is about |
+|---|---|
+| Locomotion & whole-body control | walking, running, jumping, terrain, motion tracking, whole-body control |
+| Perception & navigation | mapping, localization, planning, obstacle avoidance, autonomous navigation |
+| Manipulation | grasping, mobile manipulation, teleoperation, arm control |
+| Embodied AI | VLA models, LLM agents, imitation learning, foundation models |
+| Tools, simulation & SDK | simulators, robot models, deployment tooling, libraries on the LimX SDK |
+| Education & competitions | courses, teaching labs, student teams, competition results |
+| Industry deployments | company products and real-world deployments |
+
+If a project fits more than one section, choose the one that best describes its main result. Each project appears once.
+
+## What we accept
 
 | Rule | Why |
 |---|---|
-| Runs on LimX hardware or `limxsdk` | This is the whole point of the list. "Might be compatible" does not count. |
-| Public repository with a README that explains the project | A link to an empty repo helps nobody. |
-| Not abandoned (commits within roughly 18 months, or a clear statement that it is finished and stable) | Dead entries are worse than missing ones. |
-| Link only — no copied code, no mirrors, no forks of LimX repositories | We do not redistribute other people's code. |
-| Existing LimX licence terms respected | If a project ships LimX binaries, check what the upstream licence allows. |
+| The work used LimX hardware or software, on a real robot or in simulation with official LimX models | That is what this list shows. "Might be compatible" does not count. |
+| A public source says so: the paper names the robot, the video shows it, or the README states it | Anyone reading the list should be able to check the claim. |
+| There is a public link to the original source | We link to where the work lives. We do not host it. |
+| Company projects only with the company's agreement | We do not announce someone else's business relationship before they do. |
+| Links only: no copied code, papers, videos, screenshots or logos | Those belong to their owners. |
 
-We do **not** accept:
+We do not accept:
 
 - Forks of LimX repositories with no changes of your own.
-- Commercial projects listed without the maintainer's agreement (see below).
-- Anything that mostly resells or rebrands LimX hardware without adding engineering work.
+- Work that only mentions LimX in passing and did not use the hardware or software.
+- Reposts of LimX's own videos or marketing material.
 
-## Commercial and product projects
+## Company projects
 
-If the project is a product or a company integration, we ask the maintainer before listing it. This is not about permission to link — it is about not announcing someone else's commercial relationship before they do.
-
-If you are submitting on behalf of a company, please confirm in the issue or PR that you are allowed to make the association public.
+If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company wants to announce first, tell us and we will wait.
 
 ## Screenshots and logos
 
-By default an entry is a link plus one line of text. If you also want a screenshot or a company logo in the README, say so explicitly — those are covered by copyright and trademark, unlike a plain link.
+An entry is a link plus one line of text. If you want an image or a logo next to your entry, ask explicitly and confirm that you hold the rights to it.
 
 ## Removal
 
-Any maintainer can ask for removal at any time, for any reason, without explanation. We will remove the entry and will not re-add it unless you ask us to.
+Owners can ask for removal at any time, for any reason, without explanation. We will remove the entry and will not add it back unless you ask.
 
 ## House style
 
-- English entries, even for projects with Chinese documentation.
-- One sentence per entry. Describe what it does, not how impressive it is.
-- No emoji, no superlatives ("blazing fast", "revolutionary").
-- Keep sections alphabetical once there are more than a handful of entries.
+- `README.md` in English, `README_cn.md` in Chinese, with the same entries in both.
+- One sentence per entry. Say what was done on the robot, not how impressive it is.
+- No emoji and no superlatives such as "first ever" or "state of the art".

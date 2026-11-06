@@ -1,63 +1,117 @@
-name: Add a project
-description: Suggest a project built on LimX hardware or SDK
-title: "add: "
+name: Submit a case / 提交案例
+description: Share a project, paper, video or competition result built on LimX hardware or SDK / 提交基于 LimX 硬件或 SDK 的项目、论文、视频或比赛成果
+title: "case: "
 labels: ["entry-request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for the suggestion. One project per issue, please.
-        If you are the maintainer, say so in the last question — it is the fastest path to getting listed.
+        Thanks for sharing your work. One project per submission, please. If you are the author, say so in the relationship question below; it makes review much faster.
+
+        感谢分享。每次提交一个项目。如果你是作者，请在下方“与项目的关系”中注明，审核会快很多。
   - type: input
-    id: repo
+    id: name
     attributes:
-      label: Repository URL
-      description: Public repository only. Links only — we do not copy code.
-      placeholder: https://github.com/owner/repo
+      label: Project name / 项目名称
+      placeholder: Stair climbing with learned locomotion
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links / 链接
+      description: |
+        Public links only, one per line, labeled by type. At least one is required.
+        只填公开链接，每行一个，注明类型。至少填一个。
+      placeholder: |
+        Project page / 项目主页: https://example.org/project
+        Paper / 论文: https://arxiv.org/abs/0000.00000
+        Code / 代码: https://github.com/owner/repo
+        Video / 视频: https://www.bilibili.com/video/...
+        Result / 比赛成绩: https://...
     validations:
       required: true
   - type: dropdown
-    id: hardware
+    id: product
     attributes:
-      label: What does it run on?
+      label: LimX product used / 使用的产品
       multiple: true
       options:
         - TRON1
         - TRON2
-        - limxsdk (low-level SDK)
-        - Other LimX hardware
+        - Oli
+        - Luna
+        - LimX SDK only / 仅 LimX SDK
+        - Other / 其他
     validations:
       required: true
-  - type: input
-    id: line
+  - type: dropdown
+    id: setting
     attributes:
-      label: One-line description
-      description: What it does, in one sentence. No superlatives.
-      placeholder: Docker images and launch scripts for running the TRON1 simulator.
+      label: Real robot or simulation / 实机还是仿真
+      options:
+        - Real robot / 实机
+        - Simulation with LimX models / 基于 LimX 模型的仿真
+        - Both / 两者都有
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 分类
+      description: Pick the one that best describes the main result. / 选最能代表主要成果的一个。
+      options:
+        - Locomotion & whole-body control / 运动控制
+        - Perception & navigation / 感知与导航
+        - Manipulation / 操作
+        - Embodied AI / 具身智能
+        - Tools, simulation & SDK / 工具、仿真与 SDK
+        - Education & competitions / 教学与竞赛
+        - Industry deployments / 行业应用
     validations:
       required: true
   - type: input
     id: who
     attributes:
-      label: Who made it?
-      description: Person, lab or company, as it should appear in the italic line.
-      placeholder: RoboTUM student team
+      label: Institution or authors / 机构或作者
+      description: As it should appear in the list. / 按希望在列表中显示的写法填写。
+      placeholder: Example University Robotics Lab
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year / 年份
+      description: When the work was published or shown. / 成果发表或公开展示的年份。
+      placeholder: "2025"
+    validations:
+      required: true
+  - type: textarea
+    id: line
+    attributes:
+      label: One-line description / 一句话简介
+      description: |
+        What was done on the LimX robot, in one sentence. No superlatives. English, Chinese or both.
+        一句话说明在 LimX 机器人上做了什么，不用最高级说法。中文、英文或两者都写均可。
+      placeholder: Trained a stair-climbing policy in simulation and deployed it on TRON1 without fine-tuning.
     validations:
       required: true
   - type: dropdown
     id: relation
     attributes:
-      label: Your relationship to the project
+      label: Your relationship to the project / 你与项目的关系
       options:
-        - I am the maintainer (I agree to be listed publicly)
-        - I am not the maintainer, but the project says publicly it is built on LimX
-        - I am submitting on behalf of a company and I am allowed to make this public
+        - I am an author or maintainer, and I agree to be listed / 我是作者或维护者，同意公开收录
+        - I am not an author, but a public source says it used LimX hardware or software / 我不是作者，但有公开资料说明其使用了 LimX
+        - I am submitting for a company, and the company agrees to be listed / 我代表企业提交，企业同意公开收录
     validations:
       required: true
   - type: textarea
     id: notes
     attributes:
-      label: Anything else
-      description: Optional. If the project is a commercial product not yet announced, tell us here and we will hold off.
+      label: Anything else / 其他
+      description: |
+        Optional. If the company wants to announce first, tell us here and we will wait.
+        选填。如果企业希望先自行发布，请在此说明，我们会等。
     validations:
       required: false
