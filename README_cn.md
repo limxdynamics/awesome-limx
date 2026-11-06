@@ -4,7 +4,7 @@
 
 </div>
 
-# Awesome LimX
+<p align="center"><img src="assets/banner_cn.png" alt="Awesome LimX：基于 LimX 的项目与案例" width="100%"></p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
