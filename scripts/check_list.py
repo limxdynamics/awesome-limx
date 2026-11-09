@@ -1,0 +1,356 @@
+#!/usr/bin/env python3
+"""Validate the awesome-limx list.
+
+Two levels, on purpose, because the layout of this file will keep changing:
+
+  ERROR  the page is broken or content is missing. Fails the build.
+         - duplicate anchors, or a #p-... link that resolves to nothing
+         - a table row with a different number of cells than its header
+         - an entry present in one language edition but not the other
+
+  WARN   worth a look, but a change of layout must not fail the build.
+         - a printed count that no longer matches the table under it
+         - a Type label that disagrees with the links in the same row
+         - a total in the header that disagrees with the entries found
+
+Anything the script cannot recognise is skipped silently, not reported: if the
+count line or the By-robot summary is rewritten in a new shape, the check simply
+stops applying until it is taught the new shape.
+
+Standard library only, so CI needs no install step.
+"""
+
+import argparse
+import os
+import re
+import sys
+import urllib.error
+import urllib.request
+
+EDITIONS = [("README.md", "en"), ("README_cn.md", "cn")]
+
+ANCHOR = re.compile(r'<a id="p-([^"]+)"></a>')
+LINK_REF = re.compile(r"\]\(#p-([^)]+)\)")
+TABLE_SEP = re.compile(r"^\|[\s\-:|]+\|$")
+HEADING = re.compile(r"^(#{2,3})\s+(.*)$")
+ROBOT_ROW = re.compile(r"^-\s*\*\*([^*]+)\*\*\s*[:：]\s*(.*)$")
+
+TYPE_CODE = {"en": "Code", "cn": "代码"}
+TYPE_PAPER = {"en": "Paper", "cn": "论文"}
+TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程"}
+
+CODE_HOSTS = ("github.com", "gitlab.com", "huggingface.co", "bitbucket.org")
+PAPER_HOSTS = ("arxiv.org", "doi.org", "openreview.net")
+
+MAX_SHOWN = 12
+
+
+class Report:
+    def __init__(self):
+        self.items = []
+
+    def error(self, kind, msg):
+        self.items.append(("ERROR", kind, msg))
+
+    def warn(self, kind, msg):
+        self.items.append(("WARN", kind, msg))
+
+    def dump(self, strict):
+        errors = [i for i in self.items if i[0] == "ERROR"]
+        warns = [i for i in self.items if i[0] == "WARN"]
+
+        for title, group in (("error", errors), ("warning", warns)):
+            if not group:
+                continue
+            print("%d %s(s):\n" % (len(group), title))
+            for n, (_, kind, msg) in enumerate(group[:MAX_SHOWN], 1):
+                print("  %2d. [%s] %s" % (n, kind, msg))
+            if len(group) > MAX_SHOWN:
+                print("  ... and %d more" % (len(group) - MAX_SHOWN))
+            print()
+
+        if errors:
+            print("FAIL  %d error(s), %d warning(s)" % (len(errors), len(warns)))
+            return 1
+        if warns and strict:
+            print("FAIL  --strict: %d warning(s)" % len(warns))
+            return 1
+        if warns:
+            print("PASS  with %d warning(s)" % len(warns))
+        else:
+            print("OK  no problems found")
+        return 0
+
+
+def split_row(line):
+    body = line.strip()
+    if body.startswith("|"):
+        body = body[1:]
+    if body.endswith("|"):
+        body = body[:-1]
+    return [c.strip() for c in re.split(r"(?<!\\)\|", body)]
+
+
+def headings(text):
+    """Yield (line, level, section, subsection) for every line."""
+    section = sub = None
+    for line in text.splitlines():
+        h = HEADING.match(line)
+        if h:
+            if h.group(1) == "##":
+                section, sub = h.group(2).strip(), None
+            else:
+                sub = h.group(2).strip()
+            yield line, len(h.group(1)), section, sub
+        else:
+            yield line, 0, section, sub
+
+
+def tables(text):
+    """Yield each markdown table with the heading it sits under.
+
+    Blank lines between rows are tolerated: this list puts one between every
+    row, and a parser that treats them as the end of the table sees each row as
+    a header of its own.
+    """
+    cur = None
+    for line, level, section, sub in headings(text):
+        if level:
+            if cur is not None:
+                yield cur
+                cur = None
+            continue
+
+        s = line.strip()
+        if s.startswith("|"):
+            if cur is None:
+                cur = {"section": section, "sub": sub, "header": split_row(line),
+                       "rows": [], "sep_seen": False}
+            elif TABLE_SEP.match(s):
+                if cur["sep_seen"]:
+                    yield cur
+                    cur = {"section": section, "sub": sub, "header": split_row(line),
+                           "rows": [], "sep_seen": False}
+                cur["sep_seen"] = True
+            else:
+                cur["rows"].append(split_row(line))
+        elif s and cur is not None:
+            yield cur
+            cur = None
+
+    if cur is not None:
+        yield cur
+
+
+def is_entry_table(t):
+    return len(t["header"]) >= 4 and t["header"][0].strip().lower() in ("project", "项目")
+
+
+def type_index(t):
+    for i, h in enumerate(t["header"]):
+        if h.strip().lower() == "type" or h.strip() == "类型":
+            return i
+    return None
+
+
+def urls_in(text):
+    return re.findall(r"\]\((https?://[^)]+)\)", text)
+
+
+def table_label(t):
+    return t["section"] if not t["sub"] else "%s / %s" % (t["section"], t["sub"])
+
+
+def check_tables(text, path, report):
+    """Column counts, anchors per entry, and the Type column."""
+    entries = {}
+    row_counts = {}
+
+    for t in tables(text):
+        ncol = len(t["header"])
+        label = table_label(t)
+
+        if not is_entry_table(t):
+            for cells in t["rows"]:
+                if len(cells) != ncol:
+                    report.error("columns", "%s / %r: a row has %d cells, the header has %d"
+                                 % (path, t["section"], len(cells), ncol))
+            continue
+
+        tidx = type_index(t)
+        for cells in t["rows"]:
+            if len(cells) != ncol:
+                report.error("columns", "%s / %r: a row has %d cells, the header has %d: %r"
+                             % (path, label, len(cells), ncol, cells[0][:45]))
+                continue
+
+            m = ANCHOR.search(cells[0])
+            if m:
+                aid = m.group(1)
+                if aid in entries:
+                    report.error("anchors", "%s: anchor p-%s is used by two entries" % (path, aid))
+                entries.setdefault(aid, label)
+            else:
+                report.warn("anchors", "%s / %r: entry has no <a id=\"p-...\"> anchor: %r"
+                            % (path, label, cells[0][:50]))
+
+            if tidx is None:
+                continue
+            label_type = cells[tidx].strip()
+            urls = urls_in(cells[-1])
+            has_code = any(h in u for u in urls for h in CODE_HOSTS)
+            has_paper = any(h in u for u in urls for h in PAPER_HOSTS)
+
+            if label_type in (TYPE_CODE["en"], TYPE_CODE["cn"]):
+                if not has_code:
+                    report.warn("type", "%s / %r: marked %s but links no repository, model or dataset"
+                                % (path, label, label_type))
+            elif label_type in (TYPE_PAPER["en"], TYPE_PAPER["cn"]):
+                if has_code:
+                    report.warn("type", "%s / %r: marked %s but links code"
+                                % (path, label, label_type))
+                if not has_paper:
+                    report.warn("type", "%s / %r: marked %s but links no paper"
+                                % (path, label, label_type))
+            elif label_type in (TYPE_TUTORIAL["en"], TYPE_TUTORIAL["cn"]):
+                if not has_code:
+                    report.warn("type", "%s / %r: marked %s but links nothing runnable"
+                                % (path, label, label_type))
+            else:
+                report.warn("type", "%s / %r: unrecognised type %r"
+                            % (path, label, label_type))
+
+        row_counts[t["section"]] = row_counts.get(t["section"], 0) + len(t["rows"])
+
+    return entries, row_counts
+
+
+def check_refs(text, path, entries, report):
+    for ref in sorted(set(LINK_REF.findall(text))):
+        if ref not in entries:
+            report.error("links", "%s: link #p-%s points at no entry" % (path, ref))
+
+
+def check_counts(text, path, row_counts, report):
+    """Printed counts, only when a line still looks like a count line."""
+    section = None
+    for line, level, sec, sub in headings(text):
+        if level == 2:
+            section = sec
+        s = line.strip()
+        if not (s.startswith("_") and s.endswith("_")):
+            continue
+        m = re.match(r"^_(\d+)\s", s)
+        if not m:
+            continue
+        declared = int(m.group(1))
+        actual = row_counts.get(section)
+        if actual is None:
+            report.warn("counts", "%s: count line under %r has no table" % (path, section))
+        elif actual != declared:
+            report.warn("counts", "%s: %r says %d, the tables hold %d"
+                        % (path, section, declared, actual))
+
+    for m in re.finditer(r"\*\*(\d+)\*\*\s*(?:projects|个项目)", text):
+        total = len(ANCHOR.findall(text))
+        if int(m.group(1)) != total:
+            report.warn("counts", "%s: header says %s entries, found %d"
+                        % (path, m.group(1), total))
+
+
+def check_by_robot(text, path, report):
+    start, end = text.find("<details>"), text.find("</details>")
+    if start < 0 or end < 0:
+        return
+    block = text[start:end]
+
+    indexed = {}
+    for line in block.splitlines():
+        m = ROBOT_ROW.match(line.strip())
+        if m:
+            indexed[m.group(1).strip()] = len(LINK_REF.findall(m.group(2)))
+    if not indexed:
+        return
+
+    m = re.search(r"<summary>(.*?)</summary>", block, re.S)
+    if not m:
+        return
+    body = m.group(1).split("</b>")[-1]
+    declared = {model.strip(): int(n)
+                for model, n in re.findall(r"([A-Za-z0-9][A-Za-z0-9 ]*?)\s(\d+)", body)}
+    if not declared:
+        return
+
+    for model, n in declared.items():
+        if model not in indexed:
+            report.warn("by-robot", "%s: summary counts %s but the index has no such row"
+                        % (path, model))
+        elif indexed[model] != n:
+            report.warn("by-robot", "%s: summary says %s %d, the index lists %d"
+                        % (path, model, n, indexed[model]))
+    for model in indexed:
+        if model not in declared:
+            report.warn("by-robot", "%s: the index lists %s but the summary does not count it"
+                        % (path, model))
+
+
+def check_links(paths, report):
+    urls = set()
+    for p in paths:
+        urls.update(urls_in(open(p, encoding="utf-8").read()))
+    print("Checking %d external links...\n" % len(urls))
+    for u in sorted(urls):
+        code = fetch_code(u)
+        if code >= 400 or code == 0:
+            report.warn("dead-link", "%s (%s)" % (u, "HTTP %d" % code if code else "unreachable"))
+
+
+def fetch_code(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "awesome-limx-ci"})
+    try:
+        return urllib.request.urlopen(req, timeout=25).getcode()
+    except urllib.error.HTTPError as e:
+        return e.code
+    except Exception:  # noqa: BLE001 - DNS and TLS failures are expected here
+        return 0
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Validate the awesome-limx list.")
+    ap.add_argument("--check-links", action="store_true",
+                    help="also fetch every external link (slow, needs network)")
+    ap.add_argument("--strict", action="store_true",
+                    help="treat warnings as failures")
+    ap.add_argument("--root", default=".", help="repository root")
+    args = ap.parse_args()
+
+    report = Report()
+    paths = [(os.path.join(args.root, p), lang) for p, lang in EDITIONS]
+
+    editions = {}
+    for path, lang in paths:
+        if not os.path.exists(path):
+            report.error("files", "missing %s" % path)
+            continue
+        text = open(path, encoding="utf-8").read()
+        entries, row_counts = check_tables(text, path, report)
+        check_refs(text, path, entries, report)
+        check_counts(text, path, row_counts, report)
+        check_by_robot(text, path, report)
+        editions[lang] = entries
+
+    if "en" in editions and "cn" in editions:
+        en, cn = set(editions["en"]), set(editions["cn"])
+        for a in sorted(en - cn):
+            report.error("sync", "entry p-%s is in README.md but not README_cn.md" % a)
+        for a in sorted(cn - en):
+            report.error("sync", "entry p-%s is in README_cn.md but not README.md" % a)
+
+    if args.check_links:
+        check_links([p for p, _ in paths if os.path.exists(p)], report)
+
+    return report.dump(args.strict)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

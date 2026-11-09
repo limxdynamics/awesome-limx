@@ -1,0 +1,58 @@
+name: Check list
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - README_cn.md
+      - scripts/**
+      - .github/workflows/check.yml
+  pull_request:
+    paths:
+      - README.md
+      - README_cn.md
+      - scripts/**
+  schedule:
+    # Monday 03:00 UTC: look for links that died since the last sweep.
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    name: Entries
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check entries, anchors and counts
+        run: python scripts/check_list.py
+
+  links:
+    name: External links
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Fetch every link out of the list
+        run: python scripts/check_list.py --check-links | tee link-check.txt
+      - name: Add the result to the job summary
+        if: always()
+        run: |
+          {
+            echo '### External link check'
+            echo
+            echo 'Anything below needs a human look: a site may be briefly down, or moved.'
+            echo
+            echo '```'
+            cat link-check.txt 2>/dev/null || echo 'no output'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
