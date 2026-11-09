@@ -5,6 +5,8 @@ Two levels, on purpose, because the layout of this file will keep changing:
 
   ERROR  the page is broken or content is missing. Fails the build.
          - duplicate anchors, or a #p-... link that resolves to nothing
+         - a blank line inside a table, which ends it: every row below renders
+           as plain text instead of a table row
          - a table row with a different number of cells than its header
          - an entry present in one language edition but not the other
 
@@ -109,9 +111,10 @@ def headings(text):
 def tables(text):
     """Yield each markdown table with the heading it sits under.
 
-    Blank lines between rows are tolerated: this list puts one between every
-    row, and a parser that treats them as the end of the table sees each row as
-    a header of its own.
+    Strict on purpose: a blank line ends a table. GitHub renders a pipe row
+    after a blank line as ordinary text, so a lenient parser here would report
+    a healthy table for a page that visibly is not one. check_table_breaks
+    reports the blank lines themselves.
     """
     cur = None
     for line, level, section, sub in headings(text):
@@ -134,12 +137,49 @@ def tables(text):
                 cur["sep_seen"] = True
             else:
                 cur["rows"].append(split_row(line))
-        elif s and cur is not None:
+        elif cur is not None:
             yield cur
             cur = None
 
     if cur is not None:
         yield cur
+
+
+def check_table_breaks(text, path, report):
+    """Report blank lines that cut a table in two.
+
+    GitHub ends a table at the first blank line. Everything after it is text.
+    The failure is invisible in a lenient parser and obvious on the page, so it
+    is checked before anything is parsed out of the tables.
+    """
+    lines = text.split("\n")
+    broken = False
+    i = 0
+    while i < len(lines):
+        if not lines[i].strip().startswith("|"):
+            i += 1
+            continue
+        start = i
+        blanks = 0
+        j = i
+        while j < len(lines):
+            s = lines[j].strip()
+            if s.startswith("|"):
+                if blanks:
+                    report.error(
+                        "table",
+                        "%s:%d: a blank line ends the table, so this row renders as text "
+                        "(table starts at line %d)" % (path, j + 1, start + 1))
+                    broken = True
+                    blanks = 0
+                j += 1
+            elif not s:
+                blanks += 1
+                j += 1
+            else:
+                break
+        i = j
+    return broken
 
 
 def is_entry_table(t):
@@ -369,6 +409,13 @@ def main():
             report.error("files", "missing %s" % path)
             continue
         text = open(path, encoding="utf-8").read()
+        if "\r\r" in text:
+            report.warn("newline", "%s: contains a doubled CR. Writing CRLF text "
+                        "through a Windows text-mode open turns CRLF into CR CRLF, "
+                        "which adds a blank line after every line" % path)
+        if check_table_breaks(text, path, report):
+            # The tables are broken; whatever we parsed out of them would be noise.
+            continue
         entries, row_counts = check_tables(text, lang, path, report)
         check_refs(text, path, entries, report)
         check_counts(text, path, row_counts, report)

@@ -19,8 +19,12 @@ If you are the author or maintainer, say so. It makes review much faster.
 CI runs on every pull request. It fails only on things that break the page:
 
 - an anchor changed without the link that points at it
+- a blank line inside a table, which ends it: every row below renders as text
 - a row with a different number of cells than its header
 - an entry added to one language edition and not the other
+
+Keep a table's rows on consecutive lines. A blank line looks like spacing, but
+GitHub reads it as the end of the table.
 
 The count lines, the By-robot summary and the Type column are checked too, but
 they only warn. The layout of this file will keep changing, and a check that
