@@ -43,14 +43,14 @@ Nothing to install, Python 3.9 or newer is enough.
 Each section is a table. Add one row per project:
 
 ```markdown
-| **Short name**: what was done, in a few words | `TRON1` | [Author or lab](https://github.com/you) · 2025 | Code | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
+| **Short name**: what was done, in a few words | `TRON1` | [Author or lab](https://github.com/you) | 2025 | Code | [project](…)&nbsp;·&nbsp;[paper](…)&nbsp;·&nbsp;[code](…) |
 ```
 
 - **Project**: a short name in bold, then a plain phrase saying what was done. No full sentences.
-- **Robot**: TRON1, TRON2, Oli, Luna, an earlier LimX robot such as P1, or LimX SDK, in backticks. List more than one if the work used several.
+- **Robot**: TRON1, TRON2, Oli, Luna, an earlier LimX robot such as P1, or LimX SDK, in backticks. List more than one if the work used several. Add `&nbsp;*sim*` after the robots when public sources show the work only in simulation, sim-to-sim included. No mark means it ran on a real robot. Tools are not marked.
 - **Author / Org**: your GitHub or Hugging Face handle, linked to your profile, or your lab or institution. For papers with several institutions, name the first two or three and add "et al.", without a link.
-- **Year**: the year the work was published or shown, after the author, separated by a middle dot.
-- **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result.
+- **Year**: the year the work was published or shown, in its own column.
+- **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result. Separate them with `&nbsp;·&nbsp;` so the links stay on one line.
 - **Order**: newest first within each section.
 - **Type**: `Code`, `Tutorial` or `Paper`, decided by the maintainers. See [Type](#type). Leave it out when you submit.
 

@@ -35,14 +35,13 @@ ANCHOR = re.compile(r'<a id="p-([^"]+)"></a>')
 LINK_REF = re.compile(r"\]\(#p-([^)]+)\)")
 TABLE_SEP = re.compile(r"^\|[\s\-:|]+\|$")
 HEADING = re.compile(r"^(#{2,3})\s+(.*)$")
-ROBOT_ROW = re.compile(r"^-\s*\*\*([^*]+)\*\*\s*[:：]\s*(.*)$")
 
 TYPE_CODE = {"en": "Code", "cn": "代码"}
 TYPE_PAPER = {"en": "Paper", "cn": "论文"}
 TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程"}
 
 CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
-LINK_MARK = re.compile(r"\[\[(\w+)\]\((https?://[^)]+)\)\]")
+LINK_MARK = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
 
 MAX_SHOWN = 12
 
@@ -198,7 +197,7 @@ def urls_in(text):
 
 
 def link_items(cell):
-    """The [[kind](url)] pairs in a Links cell."""
+    """The [kind](url) pairs in a Links cell."""
     return [(m.group(1), m.group(2)) for m in LINK_MARK.finditer(cell)]
 
 
@@ -221,7 +220,7 @@ def is_runnable(items):
 
 def is_walkable(items):
     """Something to follow along with: a tutorial or a Space."""
-    return any(kind == "tutorial" or "huggingface.co/spaces" in url for kind, url in items)
+    return any(kind in ("tutorial", "教程") or "huggingface.co/spaces" in url for kind, url in items)
 
 
 def check_type(label_type, items, lang, path, table, report):
@@ -335,39 +334,37 @@ def check_counts(text, path, row_counts, report):
 
 
 def check_by_robot(text, path, report):
+    """The By-robot table must agree with the Robot column of the entry tables."""
     start, end = text.find("<details>"), text.find("</details>")
     if start < 0 or end < 0:
         return
     block = text[start:end]
 
-    indexed = {}
+    declared = {}
     for line in block.splitlines():
-        m = ROBOT_ROW.match(line.strip())
+        m = re.match(r"^\|\s*`([^`]+)`\s*\|\s*\*\*(\d+)\*\*\s*\|", line.strip())
         if m:
-            indexed[m.group(1).strip()] = len(LINK_REF.findall(m.group(2)))
-    if not indexed:
-        return
-
-    m = re.search(r"<summary>(.*?)</summary>", block, re.S)
-    if not m:
-        return
-    body = m.group(1).split("</b>")[-1]
-    declared = {model.strip(): int(n)
-                for model, n in re.findall(r"([A-Za-z0-9][A-Za-z0-9 ]*?)\s(\d+)", body)}
+            declared[m.group(1)] = int(m.group(2))
     if not declared:
         return
 
-    for model, n in declared.items():
-        if model not in indexed:
-            report.warn("by-robot", "%s: summary counts %s but the index has no such row"
-                        % (path, model))
-        elif indexed[model] != n:
-            report.warn("by-robot", "%s: summary says %s %d, the index lists %d"
-                        % (path, model, n, indexed[model]))
-    for model in indexed:
-        if model not in declared:
-            report.warn("by-robot", "%s: the index lists %s but the summary does not count it"
-                        % (path, model))
+    actual = {}
+    for t in tables(text):
+        if not is_entry_table(t):
+            continue
+        for cells in t["rows"]:
+            if len(cells) > 1:
+                for robot in set(re.findall(r"`([^`]+)`", cells[1])):
+                    actual[robot] = actual.get(robot, 0) + 1
+
+    for robot, n in declared.items():
+        if actual.get(robot, 0) != n:
+            report.warn("by-robot", "%s: By robot says %s %d, the tables hold %d"
+                        % (path, robot, n, actual.get(robot, 0)))
+    for robot, n in actual.items():
+        if robot not in declared:
+            report.warn("by-robot", "%s: %d entries use %s, but By robot has no row for it"
+                        % (path, n, robot))
 
 
 def check_links(paths, report):
