@@ -17,23 +17,23 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 
 > This list covers public work that uses LimX hardware or software, by universities, individuals and LimX researchers alike. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics). Every entry links to its original source; a listing is not an endorsement, and all rights stay with the owners.
 
-**31 projects, 12 open source (🌟)**, covering TRON1 (17), TRON2 (3), Oli (10), Luna (1), P1 (3), W1 (1).
+**35 projects, 13 open source (🌟)**, covering TRON1 (18), TRON2 (5), Oli (11), Luna (1), P1 (3), W1 (1).
 
 ## Contents
 
 - [By robot](#by-robot)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) (16)
-- [Manipulation](#manipulation) (5)
-- [Embodied AI](#embodied-ai) (3)
+- [Locomotion & whole-body control](#locomotion--whole-body-control) (17)
+- [Manipulation](#manipulation) (6)
+- [Embodied AI](#embodied-ai) (5)
 - [Tools, simulation & SDK](#tools-simulation--sdk) (3)
 - [Education & competitions](#education--competitions) (4)
 - [Contributing](#contributing)
 
 ## By robot
 
-- **TRON1** (17): [Learning-Enhanced PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM-Guided RL](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [Bipedal MPC](#p-bipedal-mpc) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [TRON1-to-UR5e Bottle Transfer](#p-tron1-to-ur5e-bottle-transfer) · [Cooperative Transportation](#p-cooperative-transportation) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [RL Bipedal Locomotion](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
-- **TRON2** (3): [Cooperative Transportation](#p-cooperative-transportation) · [TRON2 Garment Feeder](#p-tron2-garment-feeder) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets)
-- **Oli** (10): [SuperMimic for Oli](#p-supermimic-for-oli) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [Canton Tower Robot Climbing Challenge](#p-canton-tower-robot-climbing-challenge)
+- **TRON1** (18): [Learning-Enhanced PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM-Guided RL](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [Bipedal MPC](#p-bipedal-mpc) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [TRON1-to-UR5e Bottle Transfer](#p-tron1-to-ur5e-bottle-transfer) · [Cooperative Transportation](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [RL Bipedal Locomotion](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
+- **TRON2** (5): [Cooperative Transportation](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [Drifting Action Heads for GR00T N1.7](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 Garment Feeder](#p-tron2-garment-feeder) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets)
+- **Oli** (11): [SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [Canton Tower Robot Climbing Challenge](#p-canton-tower-robot-climbing-challenge)
 - **Luna** (1): [Any2Any](#p-any2any)
 - **P1** (3): [VMTS](#p-vmts) · [CTS](#p-cts) · [Task-Space Riccati WBC](#p-task-space-riccati-wbc)
 - **W1** (1): [Wheeled-Quadrupedal Manipulator](#p-wheeled-quadrupedal-manipulator)
@@ -44,6 +44,7 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 |---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **Learning-Enhanced PMP-MPC**: Pontryagin-based MPC with a learned dynamics residual for a point-foot biped (ASCC 2026) | `TRON1` | Markwcl2004 | 2026 | [[paper](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**: one policy tracking 40 LAFAN1 motions on a 31-DoF Oli in Isaac Lab / MuJoCo-Warp | `Oli` | Tianxing Liu | 2026 | [[code](https://github.com/liuskywalkerjskd/supermimic_oli)] |
+| <a id="p-vaps"></a>**VAPS**: viability-aware policy selection for safe humanoid acrobatics, with real side flips on Oli | `Oli` | TU Darmstadt, LimX et al. | 2026 | [[project](https://vaps-r-al.github.io/)] [[paper](https://arxiv.org/abs/2610.01397)] |
 | <a id="p-any2any"></a>**Any2Any**: efficient cross-embodiment transfer for humanoid whole-body tracking | `Oli` `Luna` | LimX | 2026 | [[paper](https://arxiv.org/abs/2605.23733)] |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**: analytical policy gradient directed exploration for on-policy RL | `TRON1` | ZJU, SUSTech | 2026 | [[project](https://wheretolearn.github.io)] [[paper](https://arxiv.org/abs/2603.27317)] [[video](https://www.youtube.com/watch?v=DztdUyh_LVk)] |
 | <a id="p-faststair"></a>**FastStair**: learning to run up stairs on a full-size humanoid | `Oli` | HIT, LimX et al. | 2026 | [[project](https://npcliu.github.io/FastStair)] [[paper](https://arxiv.org/abs/2601.10365)] [[video](https://youtu.be/SoLBK7VEGDo)] |
@@ -67,6 +68,7 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>🌟 **TRON1-to-UR5e Bottle Transfer**: TRON1 docks with a load of bottles, then a UR5e picks them with MoveIt 2 (MuJoCo, ROS 2) | `TRON1` | Centaucyan | 2026 | [[code](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env)] |
 | <a id="p-cooperative-transportation"></a>🌟 **Cooperative Transportation**: two wheel-legged TRONs with arms carrying a payload together in MuJoCo | `TRON1` `TRON2` | Matt14-mander | 2026 | [[code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)] |
 | <a id="p-cwi"></a>**CWI**: composite humanoid whole-body imitation for loco-manipulation | `Oli` | LimX, HKU, SUSTech et al. | 2026 | [[project](https://cwi-ral.github.io/CWI-RAL-Webpage/)] [[paper](https://arxiv.org/abs/2606.27676)] |
+| <a id="p-arm-tron"></a>**Arm-TRON**: whole-body loco-manipulation with a reconfigurable point / sole / wheel biped and arm (IEEE/ASME TMECH) | `TRON1` | SUSTech, ZJU, LimX | 2026 | [[paper](https://doi.org/10.1109/TMECH.2026.3727546)] |
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: whole-body loco-manipulation for omni-directional pose tracking on W1 with an AIRBOT arm | `W1` | SUSTech, ZJU-UIUC, LimX | 2024 | [[paper](https://arxiv.org/abs/2412.03012)] |
 
 ## Embodied AI
@@ -74,6 +76,8 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 | Project | Robot | Team | Year | Links |
 |---|---|---|---|---|
 | <a id="p-hwam"></a>**HWAM**: humanoid world action model with joint state-action generation, on a 31-DoF Oli | `Oli` | LimX | 2026 | [[project](https://hwam.vercel.app/)] [[paper](https://arxiv.org/abs/2610.12026)] |
+| <a id="p-acg-wam"></a>🌟 **ACG-WAM**: world-action modeling via action-conditioned geometric latent prediction, on TRON2 with WUJI hands | `TRON2` | BIT, LimX | 2026 | [[project](https://RoboOpus.github.io/ACG-WAM)] [[paper](https://arxiv.org/abs/2610.06965)] [[code](https://github.com/RoboOpus/ACG-WAM)] |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**Drifting Action Heads for GR00T N1.7**: one-step action heads for GR00T, deployed on a real TRON2 | `TRON2` | ZJU-UIUC, LimX | 2026 | [[paper](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>🌟 **TRON2 Garment Feeder**: Pi0.5 policy fine-tuned on 506 TRON2 episodes | `TRON2` | voniu | 2026 | [[model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
 | <a id="p-tron2-lerobot-datasets"></a>🌟 **TRON2 LeRobot Datasets**: pick, sort, pour and fold datasets, with GR00T fine-tunes | `TRON2` | trantor2nd | 2026 | [[dataset](https://huggingface.co/trantor2nd)] |
 

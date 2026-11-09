@@ -17,23 +17,23 @@
 
 > 收录所有使用 LimX 硬件或软件的公开成果，包括高校、个人和逐际动力研究人员的工作；逐际动力官方发布的开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。每条都链接到公开原始出处，收录不代表逐际动力背书，权利归原作者所有。
 
-**31 个项目，其中 12 个开源（🌟）**，覆盖 TRON1（17）、TRON2（3）、Oli（10）、Luna（1）、P1（3）、W1（1）。
+**35 个项目，其中 13 个开源（🌟）**，覆盖 TRON1（18）、TRON2（5）、Oli（11）、Luna（1）、P1（3）、W1（1）。
 
 ## 目录
 
 - [按机型查找](#按机型查找)
-- [运动控制](#运动控制)（16）
-- [操作](#操作)（5）
-- [具身智能](#具身智能)（3）
+- [运动控制](#运动控制)（17）
+- [操作](#操作)（6）
+- [具身智能](#具身智能)（5）
 - [工具、仿真与 SDK](#工具仿真与-sdk)（3）
 - [教学与竞赛](#教学与竞赛)（4）
 - [参与贡献](#参与贡献)
 
 ## 按机型查找
 
-- **TRON1**（17）：[学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
-- **TRON2**（3）：[多机协同搬运](#p-cooperative-transportation) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets)
-- **Oli**（10）：[SuperMimic for Oli](#p-supermimic-for-oli) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [广州塔机器人登高挑战赛](#p-canton-tower-robot-climbing-challenge)
+- **TRON1**（18）：[学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
+- **TRON2**（5）：[多机协同搬运](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [GR00T N1.7 单步漂移动作头](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets)
+- **Oli**（11）：[SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [广州塔机器人登高挑战赛](#p-canton-tower-robot-climbing-challenge)
 - **Luna**（1）：[Any2Any](#p-any2any)
 - **P1**（3）：[VMTS](#p-vmts) · [CTS](#p-cts) · [任务空间 Riccati 全身控制](#p-task-space-riccati-wbc)
 - **W1**（1）：[轮足四足移动操作](#p-wheeled-quadrupedal-manipulator)
@@ -44,6 +44,7 @@
 |---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **学习增强的 PMP-MPC**：点足双足的庞特里亚金 MPC，加入学习的动力学残差（ASCC 2026） | `TRON1` | Markwcl2004 | 2026 | [[论文](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**：在 Isaac Lab / MuJoCo-Warp 中用一个策略让 31 自由度 Oli 跟踪 40 段 LAFAN1 动作 | `Oli` | Tianxing Liu | 2026 | [[代码](https://github.com/liuskywalkerjskd/supermimic_oli)] |
+| <a id="p-vaps"></a>**VAPS**：可行性感知的策略选择，让人形机器人安全完成特技动作，在 Oli 实机上做侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | [[主页](https://vaps-r-al.github.io/)] [[论文](https://arxiv.org/abs/2610.01397)] |
 | <a id="p-any2any"></a>**Any2Any**：人形全身动作跟踪的高效跨本体迁移 | `Oli` `Luna` | 逐际动力 | 2026 | [[论文](https://arxiv.org/abs/2605.23733)] |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**：解析策略梯度引导的同策略强化学习探索 | `TRON1` | 浙江大学、南方科技大学 | 2026 | [[主页](https://wheretolearn.github.io)] [[论文](https://arxiv.org/abs/2603.27317)] [[视频](https://www.youtube.com/watch?v=DztdUyh_LVk)] |
 | <a id="p-faststair"></a>**FastStair**：让全尺寸人形机器人快速跑上楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | [[主页](https://npcliu.github.io/FastStair)] [[论文](https://arxiv.org/abs/2601.10365)] [[视频](https://youtu.be/SoLBK7VEGDo)] |
@@ -67,6 +68,7 @@
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>🌟 **TRON1 与 UR5e 交接水瓶**：TRON1 运送水瓶并对接，UR5e 用 MoveIt 2 抓取（MuJoCo、ROS 2） | `TRON1` | Centaucyan | 2026 | [[代码](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env)] |
 | <a id="p-cooperative-transportation"></a>🌟 **多机协同搬运**：两台带机械臂的轮足 TRON 在 MuJoCo 中协同搬运 | `TRON1` `TRON2` | Matt14-mander | 2026 | [[代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)] |
 | <a id="p-cwi"></a>**CWI**：面向移动操作的人形全身组合模仿 | `Oli` | 逐际动力、港大、南方科大等 | 2026 | [[主页](https://cwi-ral.github.io/CWI-RAL-Webpage/)] [[论文](https://arxiv.org/abs/2606.27676)] |
+| <a id="p-arm-tron"></a>**Arm-TRON**：点足、双足、轮足可切换的双足加机械臂平台上的全身移动操作（IEEE/ASME TMECH） | `TRON1` | 南方科大、浙江大学、逐际动力 | 2026 | [[论文](https://doi.org/10.1109/TMECH.2026.3727546)] |
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**轮足四足移动操作**：W1 加装 AIRBOT 机械臂，实现全向位姿跟踪的全身移动操作 | `W1` | 南方科大、浙大-UIUC 联合学院、逐际动力 | 2024 | [[论文](https://arxiv.org/abs/2412.03012)] |
 
 ## 具身智能
@@ -74,6 +76,8 @@
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-hwam"></a>**HWAM**：状态与动作联合生成的人形世界动作模型，在 31 自由度 Oli 上验证 | `Oli` | 逐际动力 | 2026 | [[主页](https://hwam.vercel.app/)] [[论文](https://arxiv.org/abs/2610.12026)] |
+| <a id="p-acg-wam"></a>🌟 **ACG-WAM**：基于动作条件几何隐变量预测的世界-动作模型，在配 WUJI 灵巧手的 TRON2 上验证 | `TRON2` | 北京理工大学、逐际动力 | 2026 | [[主页](https://RoboOpus.github.io/ACG-WAM)] [[论文](https://arxiv.org/abs/2610.06965)] [[代码](https://github.com/RoboOpus/ACG-WAM)] |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T N1.7 单步漂移动作头**：GR00T 的单步动作头，部署在 TRON2 实机上 | `TRON2` | 浙大-UIUC 联合学院、逐际动力 | 2026 | [[论文](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>🌟 **TRON2 服装送料**：在 506 段 TRON2 数据上微调的 Pi0.5 策略 | `TRON2` | voniu | 2026 | [[模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
 | <a id="p-tron2-lerobot-datasets"></a>🌟 **TRON2 LeRobot 数据集**：抓取、分拣、倒水、叠衣数据集及 GR00T 微调模型 | `TRON2` | trantor2nd | 2026 | [[数据集](https://huggingface.co/trantor2nd)] |
 
