@@ -45,7 +45,7 @@
 | <a id="p-pvp"></a>**PvP**：基于本体-特权对比表征的高效人形机器人学习 | `Oli` | 香港理工、中国科大、逐际动力等 | 2025 | [[论文](https://arxiv.org/abs/2512.13093)] |
 | <a id="p-ga-phl"></a>**GA-PHL**：实时地形重建的步态自适应人形感知运动 | `Oli` | 中国科大、逐际动力等 | 2025 | [[主页](https://ga-phl.github.io/)] [[论文](https://arxiv.org/abs/2512.07464)] |
 | <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：点足双足的稳定感知运动 | `TRON1` | 南方科大、港科大、港大等 | 2025 | [[论文](https://arxiv.org/abs/2509.09106)] |
-| <a id="p-ctbc"></a>**CTBC**：轮式双足机器人的接触触发盲爬 | `TRON1` | 上海大学 | 2025 | [[主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[论文](https://arxiv.org/abs/2509.02986)] |
+| <a id="p-ctbc"></a>**CTBC**：轮式双足机器人的接触触发盲爬 | `TRON1` | 上海大学、酷哇机器人 | 2025 | [[主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[论文](https://arxiv.org/abs/2509.02986)] |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：面向地形自适应运动的自监督表征 | `TRON1` | 哈工大（深圳） | 2025 | [[论文](https://arxiv.org/abs/2508.00939)] |
 | <a id="p-bipedal-mpc"></a>🌟 **双足 MPC**：MuJoCo 中的凸 MPC 与全身控制，基于 ROS 2 | `TRON1` | 南方科技大学 CLEAR 实验室 | 2024 | [[代码](https://github.com/clearlab-sustech/Bipedal_MPC)] |
 

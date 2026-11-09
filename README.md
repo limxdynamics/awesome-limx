@@ -45,7 +45,7 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 | <a id="p-pvp"></a>**PvP**: data-efficient humanoid learning with proprioceptive-privileged contrastive representations | `Oli` | PolyU, USTC, LimX et al. | 2025 | [[paper](https://arxiv.org/abs/2512.13093)] |
 | <a id="p-ga-phl"></a>**GA-PHL**: gait-adaptive perceptive humanoid locomotion with real-time terrain reconstruction | `Oli` | USTC, LimX et al. | 2025 | [[project](https://ga-phl.github.io/)] [[paper](https://arxiv.org/abs/2512.07464)] |
 | <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: stable and perceptive locomotion for point-foot bipeds | `TRON1` | SUSTech, HKUST, HKU et al. | 2025 | [[paper](https://arxiv.org/abs/2509.09106)] |
-| <a id="p-ctbc"></a>**CTBC**: contact-triggered blind climbing for wheeled bipedal robots | `TRON1` | Shanghai University | 2025 | [[project](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[paper](https://arxiv.org/abs/2509.02986)] |
+| <a id="p-ctbc"></a>**CTBC**: contact-triggered blind climbing for wheeled bipedal robots | `TRON1` | Shanghai University, COWAROBOT | 2025 | [[project](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[paper](https://arxiv.org/abs/2509.02986)] |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: self-supervised representations for terrain-adaptive locomotion | `TRON1` | HIT Shenzhen | 2025 | [[paper](https://arxiv.org/abs/2508.00939)] |
 | <a id="p-bipedal-mpc"></a>🌟 **Bipedal MPC**: convex MPC and whole-body control in MuJoCo with ROS 2 | `TRON1` | SUSTech CLEAR Lab | 2024 | [[code](https://github.com/clearlab-sustech/Bipedal_MPC)] |
 
