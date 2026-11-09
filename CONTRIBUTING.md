@@ -19,12 +19,12 @@ If you are the author or maintainer, say so. It makes review much faster.
 Each section is a table. Add one row per project:
 
 ```markdown
-| **Short name**: what was done, in a few words | `TRON1` | Institution or authors | 2025 | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
+| **Short name**: what was done, in a few words | `TRON1` | [Author or lab](https://github.com/you) | 2025 | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
 ```
 
 - **Project**: a short name in bold, then a plain phrase saying what was done. No full sentences.
 - **Robot**: TRON1, TRON2, Oli, Luna, an earlier LimX robot such as P1, or LimX SDK, in backticks. List more than one if the work used several.
-- **Team**: the institution, or the author's handle for individual work. For long author lists, name the first two or three and add "et al.".
+- **Author / Org**: your GitHub or Hugging Face handle, linked to your profile, or your lab or institution. For papers with several institutions, name the first two or three and add "et al.", without a link.
 - **Year**: the year the work was published or shown.
 - **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result.
 - **Order**: newest first within each section.
