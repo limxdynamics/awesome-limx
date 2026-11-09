@@ -17,12 +17,12 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 
 > Every entry links to its original public source. A listing means the work used LimX hardware or software; it is not an endorsement, and all rights stay with the owners.
 
-**21 projects, 11 open source (🌟)**, covering TRON1 (16), TRON2 (3), Oli (4).
+**23 projects, 12 open source (🌟)**, covering TRON1 (16), TRON2 (3), Oli (5), P1 (1).
 
 ## Contents
 
 - [By robot](#by-robot)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) (9)
+- [Locomotion & whole-body control](#locomotion--whole-body-control) (11)
 - [Manipulation](#manipulation) (4)
 - [Embodied AI](#embodied-ai) (2)
 - [Tools, simulation & SDK](#tools-simulation--sdk) (3)
@@ -33,13 +33,15 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 
 - **TRON1** (16): [Learning-Enhanced PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM-Guided RL](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [Bipedal MPC](#p-bipedal-mpc) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [TRON1-to-UR5e Bottle Transfer](#p-tron1-to-ur5e-bottle-transfer) · [Cooperative Transportation](#p-cooperative-transportation) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [RL Bipedal Locomotion](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
 - **TRON2** (3): [Cooperative Transportation](#p-cooperative-transportation) · [TRON2 Garment Feeder](#p-tron2-garment-feeder) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets)
-- **Oli** (4): [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [CWI](#p-cwi) · [limx-robotics-mcp](#p-limx-robotics-mcp)
+- **Oli** (5): [SuperMimic for Oli](#p-supermimic-for-oli) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [CWI](#p-cwi) · [limx-robotics-mcp](#p-limx-robotics-mcp)
+- **P1** (1): [CTS](#p-cts)
 
 ## Locomotion & whole-body control
 
 | Project | Robot | Team | Year | Links |
 |---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **Learning-Enhanced PMP-MPC**: Pontryagin-based MPC with a learned dynamics residual for a point-foot biped (ASCC 2026) | `TRON1` | Markwcl2004 | 2026 | [[paper](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
+| <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**: one policy tracking 40 LAFAN1 motions on a 31-DoF Oli in Isaac Lab / MuJoCo-Warp | `Oli` | Tianxing Liu | 2026 | [[code](https://github.com/liuskywalkerjskd/supermimic_oli)] |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**: analytical policy gradient directed exploration for on-policy RL | `TRON1` | ZJU, SUSTech | 2026 | [[project](https://wheretolearn.github.io)] [[paper](https://arxiv.org/abs/2603.27317)] [[video](https://www.youtube.com/watch?v=DztdUyh_LVk)] |
 | <a id="p-ame-2"></a>**AME-2**: agile legged locomotion via attention-based neural map encoding | `TRON1` | ETH Zurich | 2026 | [[project](https://sites.google.com/leggedrobotics.com/ame-2)] [[paper](https://arxiv.org/abs/2601.08485)] |
 | <a id="p-pvp"></a>**PvP**: data-efficient humanoid learning with proprioceptive-privileged contrastive representations | `Oli` | PolyU, USTC, LimX et al. | 2025 | [[paper](https://arxiv.org/abs/2512.13093)] |
@@ -48,6 +50,7 @@ Open-source projects, papers and competition results built on [LimX Dynamics](ht
 | <a id="p-ctbc"></a>**CTBC**: contact-triggered blind climbing for wheeled bipedal robots | `TRON1` | Shanghai University, COWAROBOT | 2025 | [[project](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[paper](https://arxiv.org/abs/2509.02986)] |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: self-supervised representations for terrain-adaptive locomotion | `TRON1` | HIT Shenzhen | 2025 | [[paper](https://arxiv.org/abs/2508.00939)] |
 | <a id="p-bipedal-mpc"></a>🌟 **Bipedal MPC**: convex MPC and whole-body control in MuJoCo with ROS 2 | `TRON1` | SUSTech CLEAR Lab | 2024 | [[code](https://github.com/clearlab-sustech/Bipedal_MPC)] |
+| <a id="p-cts"></a>**CTS**: concurrent teacher-student RL for legged locomotion, tested on the point-foot P1 | `P1` | SUSTech, ZJU-UIUC, LimX | 2024 | [[project](https://clearlab-sustech.github.io/concurrentTS/)] [[paper](https://arxiv.org/abs/2405.10830)] |
 
 ## Manipulation
 

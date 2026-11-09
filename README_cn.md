@@ -17,12 +17,12 @@
 
 > 每条都链接到公开原始出处。收录仅说明该工作使用了 LimX 硬件或软件，不代表逐际动力背书，权利归原作者所有。
 
-**21 个项目，其中 11 个开源（🌟）**，覆盖 TRON1（16）、TRON2（3）、Oli（4）。
+**23 个项目，其中 12 个开源（🌟）**，覆盖 TRON1（16）、TRON2（3）、Oli（5）、P1（1）。
 
 ## 目录
 
 - [按机型查找](#按机型查找)
-- [运动控制](#运动控制)（9）
+- [运动控制](#运动控制)（11）
 - [操作](#操作)（4）
 - [具身智能](#具身智能)（2）
 - [工具、仿真与 SDK](#工具仿真与-sdk)（3）
@@ -33,13 +33,15 @@
 
 - **TRON1**（16）：[学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
 - **TRON2**（3）：[多机协同搬运](#p-cooperative-transportation) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets)
-- **Oli**（4）：[PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [CWI](#p-cwi) · [limx-robotics-mcp](#p-limx-robotics-mcp)
+- **Oli**（5）：[SuperMimic for Oli](#p-supermimic-for-oli) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [CWI](#p-cwi) · [limx-robotics-mcp](#p-limx-robotics-mcp)
+- **P1**（1）：[CTS](#p-cts)
 
 ## 运动控制
 
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **学习增强的 PMP-MPC**：点足双足的庞特里亚金 MPC，加入学习的动力学残差（ASCC 2026） | `TRON1` | Markwcl2004 | 2026 | [[论文](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
+| <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**：在 Isaac Lab / MuJoCo-Warp 中用一个策略让 31 自由度 Oli 跟踪 40 段 LAFAN1 动作 | `Oli` | Tianxing Liu | 2026 | [[代码](https://github.com/liuskywalkerjskd/supermimic_oli)] |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**：解析策略梯度引导的同策略强化学习探索 | `TRON1` | 浙江大学、南方科技大学 | 2026 | [[主页](https://wheretolearn.github.io)] [[论文](https://arxiv.org/abs/2603.27317)] [[视频](https://www.youtube.com/watch?v=DztdUyh_LVk)] |
 | <a id="p-ame-2"></a>**AME-2**：基于注意力地图编码的敏捷足式运动 | `TRON1` | 苏黎世联邦理工学院 | 2026 | [[主页](https://sites.google.com/leggedrobotics.com/ame-2)] [[论文](https://arxiv.org/abs/2601.08485)] |
 | <a id="p-pvp"></a>**PvP**：基于本体-特权对比表征的高效人形机器人学习 | `Oli` | 香港理工、中国科大、逐际动力等 | 2025 | [[论文](https://arxiv.org/abs/2512.13093)] |
@@ -48,6 +50,7 @@
 | <a id="p-ctbc"></a>**CTBC**：轮式双足机器人的接触触发盲爬 | `TRON1` | 上海大学、酷哇机器人 | 2025 | [[主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)] [[论文](https://arxiv.org/abs/2509.02986)] |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：面向地形自适应运动的自监督表征 | `TRON1` | 哈工大（深圳） | 2025 | [[论文](https://arxiv.org/abs/2508.00939)] |
 | <a id="p-bipedal-mpc"></a>🌟 **双足 MPC**：MuJoCo 中的凸 MPC 与全身控制，基于 ROS 2 | `TRON1` | 南方科技大学 CLEAR 实验室 | 2024 | [[代码](https://github.com/clearlab-sustech/Bipedal_MPC)] |
+| <a id="p-cts"></a>**CTS**：足式运动的并行师生强化学习，在点足 P1 上验证 | `P1` | 南方科大、浙大-UIUC 联合学院、逐际动力 | 2024 | [[主页](https://clearlab-sustech.github.io/concurrentTS/)] [[论文](https://arxiv.org/abs/2405.10830)] |
 
 ## 操作
 
