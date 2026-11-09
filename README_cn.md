@@ -33,7 +33,20 @@
 
 _行走、奔跑、跳跃、上下楼梯、复杂地形通过、动作跟踪和全身控制，强化学习或模型方法均可。_
 
-_暂无收录，欢迎[提交案例](#提交案例)。_
+- **[Where-to-Learn：解析策略梯度引导的探索](https://wheretolearn.github.io)** — 用解析策略梯度引导同策略强化学习的探索，把训练出的速度跟踪策略迁移到点足 TRON1 实机上。<br>
+  <sub>浙江大学、南方科技大学 · TRON1 · 2026 · [论文](https://arxiv.org/abs/2603.27317) · [视频](https://www.youtube.com/watch?v=DztdUyh_LVk)</sub>
+- **[AME-2：基于注意力地图编码的敏捷足式运动](https://sites.google.com/leggedrobotics.com/ame-2)** — 训练了基于注意力地图编码的感知运动策略，在 TRON1 双足和 ANYmal-D 实机上运行。<br>
+  <sub>苏黎世联邦理工学院机器人系统实验室 · TRON1 · 2026 · [论文](https://arxiv.org/abs/2601.08485)</sub>
+- **[PvP：本体感知-特权信息对比表征](https://arxiv.org/abs/2512.13093)** — 用对比表征提升人形机器人强化学习的数据效率，在 Oli 上评估了速度跟踪和动作模仿。<br>
+  <sub>香港理工大学、中国科学技术大学、逐际动力等 · Oli · 2025 · [论文](https://arxiv.org/abs/2512.13093)</sub>
+- **[步态自适应的人形感知运动](https://ga-phl.github.io/)** — 实时重建机器人脚下地形，在楼梯和崎岖路面上自适应调整步态，在仿真和 Oli 实机上验证。<br>
+  <sub>中国科学技术大学、逐际动力等 · Oli · 2025 · [论文](https://arxiv.org/abs/2512.07464)</sub>
+- **[LIPM 引导的双足稳定感知运动强化学习](https://arxiv.org/abs/2509.09106)** — 把线性倒立摆模型引导与强化学习结合，将学生策略部署到点足 TRON1 上进行户外行走。<br>
+  <sub>南方科技大学、香港科技大学、香港大学、浙大-UIUC 联合学院、逐际动力 · TRON1 · 2025 · [论文](https://arxiv.org/abs/2509.09106)</sub>
+- **[CTBC：轮式双足机器人的接触触发盲爬](https://ctbc-for-wheeled-bipedal-robots.github.io/)** — 训练由轮子接触触发的盲爬台阶、马路牙子策略，部署在轮足 TRON1 上。<br>
+  <sub>上海大学、酷哇机器人 · TRON1 · 2025 · [论文](https://arxiv.org/abs/2509.02986)</sub>
+- **[BarlowWalk：面向地形自适应运动的自监督表征](https://arxiv.org/abs/2508.00939)** — 用 Barlow Twins 学习地形感知表征用于运动控制，在双足（sole-foot）形态的 TRON1 上做实验。<br>
+  <sub>哈尔滨工业大学（深圳） · TRON1 · 2025 · [论文](https://arxiv.org/abs/2508.00939)</sub>
 
 ## 感知与导航
 
@@ -45,13 +58,19 @@ _暂无收录，欢迎[提交案例](#提交案例)。_
 
 _抓取、移动操作、遥操作和机械臂控制。_
 
-_暂无收录，欢迎[提交案例](#提交案例)。_
+- **[双足移动操作机器人的全身一体化移动操作](https://arxiv.org/abs/2609.18930)** — 在加装 ARX L5 机械臂的 TRON1 双足上学习行走与机械臂动作的协同。<br>
+  <sub>浙大-UIUC 联合学院、逐际动力 · TRON1 · 2026 · [论文](https://arxiv.org/abs/2609.18930)</sub>
+- **[CWI：面向移动操作的人形全身组合模仿系统](https://cwi-ral.github.io/CWI-RAL-Webpage/)** — 搭建了用于移动操作的全身模仿系统，部署在全尺寸 Oli 上。<br>
+  <sub>逐际动力、香港大学、南方科技大学、香港科技大学、浙大-UIUC 联合学院 · Oli · 2026 · [论文](https://arxiv.org/abs/2606.27676)</sub>
 
 ## 具身智能
 
 _在 LimX 机器人上运行的视觉-语言-动作模型（VLA）、大模型智能体、模仿学习和基础模型。_
 
-_暂无收录，欢迎[提交案例](#提交案例)。_
+- **[TRON2 服装送料 Pi0.5 策略](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)** — 用 506 段 TRON2 数据微调 Pi0.5 策略，完成把衣物放进送料机并按下按钮的任务。<br>
+  <sub>voniu · TRON2 · 2026</sub>
+- **[TRON2 LeRobot 数据集与 GR00T 微调模型](https://huggingface.co/trantor2nd)** — 发布了抓取、分拣、倒水、叠衣等 TRON2 LeRobot 格式数据集，并在其上微调了 NVIDIA GR00T 策略。<br>
+  <sub>trantor2nd · TRON2 · 2026</sub>
 
 ## 工具、仿真与 SDK
 
@@ -63,7 +82,10 @@ _暂无收录，欢迎[提交案例](#提交案例)。_
 
 _课程、教学实验室、学生团队项目和比赛成绩。_
 
-_暂无收录，欢迎[提交案例](#提交案例)。_
+- **[LimX Tron1 Learning](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)** — 中文交互式教程，讲解如何用 tron1-rl-isaaclab 训练 TRON1 运动策略，从强化学习基础讲到仿真环境搭建。<br>
+  <sub>jessiezhg · TRON1 · 2026</sub>
+- **[基于 Isaac Lab 的双足运动强化学习](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)** — 南方科技大学 ACR2025 课程项目：基于 Isaac Lab 的 TRON1 训练框架，覆盖点足、双足、轮足三种形态和平地、崎岖、楼梯地形。<br>
+  <sub>南方科技大学 · TRON1 · 2025 · [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)</sub>
 
 ## 行业应用
 

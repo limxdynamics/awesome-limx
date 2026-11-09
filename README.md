@@ -33,7 +33,20 @@ Every entry links to its original public source, so you can see for yourself wha
 
 _Walking, running, jumping, stair climbing, terrain traversal, motion tracking and whole-body control, learned or model-based._
 
-_Nothing listed yet. [Submit a case](#submit-a-case)._
+- **[Where-to-Learn: analytical policy gradient directed exploration](https://wheretolearn.github.io)** — Used analytical policy gradients to guide on-policy RL exploration and transferred the resulting velocity-tracking policy to a real point-foot TRON1.<br>
+  <sub>Zhejiang University, SUSTech · TRON1 · 2026 · [Paper](https://arxiv.org/abs/2603.27317) · [Video](https://www.youtube.com/watch?v=DztdUyh_LVk)</sub>
+- **[AME-2: agile legged locomotion via attention-based neural map encoding](https://sites.google.com/leggedrobotics.com/ame-2)** — Trained a perceptive locomotion policy with attention-based map encoding and ran it on a real TRON1 biped as well as ANYmal-D.<br>
+  <sub>ETH Zurich Robotic Systems Lab · TRON1 · 2026 · [Paper](https://arxiv.org/abs/2601.08485)</sub>
+- **[PvP: proprioceptive-privileged contrastive representations](https://arxiv.org/abs/2512.13093)** — Used contrastive representations to make humanoid RL more data-efficient, evaluated on velocity tracking and motion imitation with Oli.<br>
+  <sub>PolyU, USTC, LimX Dynamics et al. · Oli · 2025 · [Paper](https://arxiv.org/abs/2512.13093)</sub>
+- **[Gait-adaptive perceptive humanoid locomotion](https://ga-phl.github.io/)** — Reconstructed the terrain under the robot in real time to adapt gait on stairs and rough ground, in simulation and on a real Oli.<br>
+  <sub>USTC, LimX Dynamics et al. · Oli · 2025 · [Paper](https://arxiv.org/abs/2512.07464)</sub>
+- **[LIPM-guided RL for stable and perceptive bipedal locomotion](https://arxiv.org/abs/2509.09106)** — Combined linear inverted pendulum guidance with RL and deployed the student policy on a point-foot TRON1 outdoors.<br>
+  <sub>SUSTech, HKUST, HKU, ZJU-UIUC Institute, LimX Dynamics · TRON1 · 2025 · [Paper](https://arxiv.org/abs/2509.09106)</sub>
+- **[CTBC: contact-triggered blind climbing for wheeled bipedal robots](https://ctbc-for-wheeled-bipedal-robots.github.io/)** — Trained blind curb and stair climbing triggered by wheel contact and deployed it on a wheel-legged TRON1.<br>
+  <sub>Shanghai University, COWAROBOT · TRON1 · 2025 · [Paper](https://arxiv.org/abs/2509.02986)</sub>
+- **[BarlowWalk: self-supervised representations for terrain-adaptive locomotion](https://arxiv.org/abs/2508.00939)** — Learned terrain-aware representations with Barlow Twins for locomotion and ran experiments on TRON1 in sole-foot mode.<br>
+  <sub>Harbin Institute of Technology, Shenzhen · TRON1 · 2025 · [Paper](https://arxiv.org/abs/2508.00939)</sub>
 
 ## Perception & navigation
 
@@ -45,13 +58,19 @@ _Nothing listed yet. [Submit a case](#submit-a-case)._
 
 _Grasping, mobile manipulation, teleoperation and arm control._
 
-_Nothing listed yet. [Submit a case](#submit-a-case)._
+- **[Holistic whole-body loco-manipulation with a bipedal mobile manipulator](https://arxiv.org/abs/2609.18930)** — Learned coordinated walking and arm motion on a TRON1 biped fitted with an ARX L5 arm.<br>
+  <sub>ZJU-UIUC Institute, LimX Dynamics · TRON1 · 2026 · [Paper](https://arxiv.org/abs/2609.18930)</sub>
+- **[CWI: composite humanoid whole-body imitation for loco-manipulation](https://cwi-ral.github.io/CWI-RAL-Webpage/)** — Built a whole-body imitation system for loco-manipulation and deployed it on a full-size Oli.<br>
+  <sub>LimX Dynamics, HKU, SUSTech, HKUST, ZJU-UIUC Institute · Oli · 2026 · [Paper](https://arxiv.org/abs/2606.27676)</sub>
 
 ## Embodied AI
 
 _Vision-language-action models, LLM agents, imitation learning and foundation models running on LimX robots._
 
-_Nothing listed yet. [Submit a case](#submit-a-case)._
+- **[TRON2 garment feeder Pi0.5 policy](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)** — Fine-tuned a Pi0.5 policy on 506 TRON2 episodes to place a garment into a feeder and press a button.<br>
+  <sub>voniu · TRON2 · 2026</sub>
+- **[TRON2 LeRobot datasets and GR00T fine-tunes](https://huggingface.co/trantor2nd)** — Published TRON2 datasets in LeRobot format for picking, sorting, pouring and cloth folding, and fine-tuned NVIDIA GR00T policies on them.<br>
+  <sub>trantor2nd · TRON2 · 2026</sub>
 
 ## Tools, simulation & SDK
 
@@ -63,7 +82,10 @@ _Nothing listed yet. [Submit a case](#submit-a-case)._
 
 _Courses, teaching labs, student team projects and competition results._
 
-_Nothing listed yet. [Submit a case](#submit-a-case)._
+- **[LimX Tron1 Learning](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)** — An interactive guide, in Chinese, to training TRON1 locomotion policies with tron1-rl-isaaclab, from RL basics to the simulation setup.<br>
+  <sub>jessiezhg · TRON1 · 2026</sub>
+- **[RL bipedal locomotion with Isaac Lab](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)** — SUSTech ACR2025 course project: an Isaac Lab training setup for TRON1 point-foot, sole-foot and wheel-foot variants on flat, rough and stair terrain.<br>
+  <sub>SUSTech · TRON1 · 2025 · [Code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)</sub>
 
 ## Industry deployments
 
