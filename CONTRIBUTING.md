@@ -19,16 +19,16 @@ If you are the author or maintainer, say so. It makes review much faster.
 Each section is a table. Add one row per project:
 
 ```markdown
-| **Short name**: what was done, in a few words | `TRON1` | [Author or lab](https://github.com/you) | 2025 | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
+| **Short name**: what was done, in a few words | `TRON1` | [Author or lab](https://github.com/you) · 2025 | Code | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
 ```
 
 - **Project**: a short name in bold, then a plain phrase saying what was done. No full sentences.
 - **Robot**: TRON1, TRON2, Oli, Luna, an earlier LimX robot such as P1, or LimX SDK, in backticks. List more than one if the work used several.
 - **Author / Org**: your GitHub or Hugging Face handle, linked to your profile, or your lab or institution. For papers with several institutions, name the first two or three and add "et al.", without a link.
-- **Year**: the year the work was published or shown.
+- **Year**: the year the work was published or shown, after the author, separated by a middle dot.
 - **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result.
 - **Order**: newest first within each section.
-- **🌟**: added automatically by the maintainers when the entry links to code, a model or a dataset. You don't need to add it.
+- **Type**: `Code` when the entry links a repository, a model or a dataset people can run, `Paper` when it only links a paper or a project page. Maintainers decide it; leave it out when you submit.
 
 A section appears in the README once it has its first entry.
 
@@ -81,4 +81,4 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 
 - `README.md` in English, `README_cn.md` in Chinese, with the same entries in both.
 - Keep the project phrase short. Say what was done on the robot, not how impressive it is.
-- No emoji other than the 🌟 open-source marker and no superlatives such as "first ever" or "state of the art".
+- No emoji and no superlatives such as "first ever" or "state of the art".
