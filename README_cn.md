@@ -15,15 +15,15 @@
 
 收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程和比赛成绩。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
-**42** 个项目 · **20** 个开源 🌟 ｜ [运动控制](#运动控制) 19 · [操作](#操作) 6 · [具身智能](#具身智能) 5 · [工具、仿真与 SDK](#工具仿真与-sdk) 7 · [教学与竞赛](#教学与竞赛) 5 · [参与贡献](#参与贡献)
+**43** 个项目 · **21** 个开源 🌟 ｜ [运动控制](#运动控制) 19 · [操作](#操作) 6 · [具身智能](#具身智能) 5 · [工具、仿真与 SDK](#工具仿真与-sdk) 8 · [教学与竞赛](#教学与竞赛) 5 · [参与贡献](#参与贡献)
 
 <details>
-<summary><b>按机型查找</b>：TRON1 25 · TRON2 6 · Oli 11 · Luna 1 · P1 3 · W1 1</summary>
+<summary><b>按机型查找</b>：TRON1 26 · TRON2 7 · Oli 12 · Luna 2 · P1 3 · W1 1</summary>
 
-- **TRON1**：[TRON1 打滑分析](#p-tron1-sliding-analysis) · [学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [TRON1 轮足舞蹈模仿](#p-tron1-wf-mimic) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [wf_tron1b_deploy](#p-wf_tron1b_deploy) · [Tron_Deploy](#p-tron_deploy) · [limx-3d-measurement-workbench](#p-limx-3d-measurement-workbench) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [tron_docker_sim](#p-tron_docker_sim) · [tron1-rl-mjlab](#p-tron1-rl-mjlab) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [OpenArm 移动操作实训](#p-openarm-mobile-manipulation-lab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
-- **TRON2**：[多机协同搬运](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [GR00T 漂移动作头](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets) · [limx-3d-measurement-workbench](#p-limx-3d-measurement-workbench)
-- **Oli**：[SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [广州塔机器人登高挑战赛](#p-canton-tower-robot-climbing-challenge)
-- **Luna**：[Any2Any](#p-any2any)
+- **TRON1**：[TRON1 打滑分析](#p-tron1-sliding-analysis) · [学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [TRON1 轮足舞蹈模仿](#p-tron1-wf-mimic) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [robot_descriptions.py](#p-robot_descriptionspy) · [wf_tron1b_deploy](#p-wf_tron1b_deploy) · [Tron_Deploy](#p-tron_deploy) · [limx-3d-measurement-workbench](#p-limx-3d-measurement-workbench) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [tron_docker_sim](#p-tron_docker_sim) · [tron1-rl-mjlab](#p-tron1-rl-mjlab) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [OpenArm 移动操作实训](#p-openarm-mobile-manipulation-lab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
+- **TRON2**：[多机协同搬运](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [GR00T 漂移动作头](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets) · [robot_descriptions.py](#p-robot_descriptionspy) · [limx-3d-measurement-workbench](#p-limx-3d-measurement-workbench)
+- **Oli**：[SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [robot_descriptions.py](#p-robot_descriptionspy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [广州塔机器人登高挑战赛](#p-canton-tower-robot-climbing-challenge)
+- **Luna**：[Any2Any](#p-any2any) · [robot_descriptions.py](#p-robot_descriptionspy)
 - **P1**：[VMTS](#p-vmts) · [CTS](#p-cts) · [任务空间 Riccati 全身控制](#p-task-space-riccati-wbc)
 - **W1**：[轮足四足移动操作](#p-wheeled-quadrupedal-manipulator)
 
@@ -78,6 +78,7 @@
 
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-robot_descriptionspy"></a>🌟 **robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | robot-descriptions | 2026 | [[代码](https://github.com/robot-descriptions/robot_descriptions.py)] |
 | <a id="p-wf_tron1b_deploy"></a>🌟 **wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | Leixin Chang | 2026 | [[代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy)] |
 | <a id="p-tron_deploy"></a>🌟 **Tron_Deploy**：在 Windows 上部署策略 | `TRON1` | candi4 | 2026 | [[代码](https://github.com/candi4/Tron_Deploy)] |
 | <a id="p-limx-3d-measurement-workbench"></a>🌟 **limx-3d-measurement-workbench**：浏览 TRON 模型、测量尺寸 | `TRON1` `TRON2` | voniu | 2026 | [[代码](https://github.com/voniu/limx-3d-measurement-workbench)] |
