@@ -4,7 +4,7 @@
 
 </div>
 
-<h1 align="center"><img src="assets/banner.png" alt="Awesome LimX" width="100%"></h1>
+<p align="center"><img src="assets/banner.png" alt="Awesome LimX" width="100%"></p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -124,7 +124,7 @@ _7 entries: 2 papers · 5 code_
 | <a id="p-acg-wam"></a>**ACG-WAM**: world-action model with dexterous hands | `TRON2` | BIT, LimX · 2026 | Code | [[project](https://RoboOpus.github.io/ACG-WAM)] [[paper](https://arxiv.org/abs/2610.06965)] [[code](https://github.com/RoboOpus/ACG-WAM)] |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: one-step action heads | `TRON2` | ZJU-UIUC, LimX · 2026 | Paper | [[paper](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy | `TRON2` | [voniu](https://huggingface.co/voniu) · 2026 | Code | [[model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | Code | [[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | Code | [[model](https://huggingface.co/models?author=trantor2nd&search=tron2)] [[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
 
 ## Tools, simulation & SDK
 
@@ -181,7 +181,7 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 | <a id="p-study_tron1"></a>**study_tron1**: setup notes and learning log | `TRON1` | [beamkeerati](https://github.com/beamkeerati) · 2026 | Code | [[code](https://github.com/beamkeerati/study_tron1)] |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (sim, Korean) | `TRON1` | [aha645](https://github.com/aha645) · 2026 | Code | [[code](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1` | [jessiezhg](https://huggingface.co/jessiezhg) · 2026 | Tutorial | [[tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
-| <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX · 2025 | Paper | [[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[paper](https://arxiv.org/abs/2601.10365)] |
+| <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX · 2025 | Paper | [[paper](https://arxiv.org/abs/2601.10365)] [[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1` | [81578823 (SUSTech)](https://github.com/81578823) · 2025 | Code | [[code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1` | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) · 2024 | Code | [[code](https://github.com/SuDaxia-kai/pointfootGym)] |
 

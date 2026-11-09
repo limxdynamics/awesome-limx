@@ -4,7 +4,7 @@
 
 </div>
 
-<h1 align="center"><img src="assets/banner_cn.png" alt="Awesome LimX" width="100%"></h1>
+<p align="center"><img src="assets/banner_cn.png" alt="Awesome LimX" width="100%"></p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -124,7 +124,7 @@ _7 个条目：2 篇论文 · 5 个代码_
 | <a id="p-acg-wam"></a>**ACG-WAM**：灵巧手世界-动作模型 | `TRON2` | 北京理工大学、逐际动力 · 2026 | 代码 | [[主页](https://RoboOpus.github.io/ACG-WAM)] [[论文](https://arxiv.org/abs/2610.06965)] [[代码](https://github.com/RoboOpus/ACG-WAM)] |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：单步动作头 | `TRON2` | 浙大-UIUC、逐际动力 · 2026 | 论文 | [[论文](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：Pi0.5 策略 | `TRON2` | [voniu](https://huggingface.co/voniu) · 2026 | 代码 | [[模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | 代码 | [[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | 代码 | [[模型](https://huggingface.co/models?author=trantor2nd&search=tron2)] [[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
 
 ## 工具、仿真与 SDK
 
@@ -181,7 +181,7 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 | <a id="p-study_tron1"></a>**study_tron1**：环境搭建与学习笔记 | `TRON1` | [beamkeerati](https://github.com/beamkeerati) · 2026 | 代码 | [[代码](https://github.com/beamkeerati/study_tron1)] |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（仿真，韩语） | `TRON1` | [aha645](https://github.com/aha645) · 2026 | 代码 | [[代码](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1` | [jessiezhg](https://huggingface.co/jessiezhg) · 2026 | 教程 | [[教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
-| <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 · 2025 | 论文 | [[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[论文](https://arxiv.org/abs/2601.10365)] |
+| <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 · 2025 | 论文 | [[论文](https://arxiv.org/abs/2601.10365)] [[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1` | [81578823（南方科大）](https://github.com/81578823) · 2025 | 代码 | [[代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym 课程模板 | `TRON1` | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) · 2024 | 代码 | [[代码](https://github.com/SuDaxia-kai/pointfootGym)] |
 
