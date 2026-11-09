@@ -15,7 +15,7 @@
 
 基于[逐际动力（LimX Dynamics）](https://www.limxdynamics.com)机器人（TRON1、TRON2、Oli、Luna）和 LimX SDK 完成的开源项目、论文和比赛成果。
 
-> 每条都链接到公开原始出处。收录仅说明该工作使用了 LimX 硬件或软件，不代表逐际动力背书，权利归原作者所有。
+> 收录所有使用 LimX 硬件或软件的公开成果，包括高校、个人和逐际动力研究人员的工作；逐际动力官方发布的开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。每条都链接到公开原始出处，收录不代表逐际动力背书，权利归原作者所有。
 
 **31 个项目，其中 12 个开源（🌟）**，覆盖 TRON1（17）、TRON2（3）、Oli（10）、Luna（1）、P1（3）、W1（1）。
 

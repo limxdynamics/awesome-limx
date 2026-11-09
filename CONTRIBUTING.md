@@ -56,11 +56,14 @@ If a project fits more than one section, choose the one that best describes its 
 | Company projects only with the company's agreement | We do not announce someone else's business relationship before they do. |
 | Links only: no copied code, papers, videos, screenshots or logos | Those belong to their owners. |
 
+Work by LimX researchers, such as papers and competition results, is welcome on the same terms as anyone else's.
+
 We do not accept:
 
+- LimX's own open-source releases, such as repositories under [limxdynamics](https://github.com/limxdynamics) or official models on [Hugging Face](https://huggingface.co/limxdynamics). Those are listed there.
 - Forks of LimX repositories with no changes of your own.
 - Work that only mentions LimX in passing and did not use the hardware or software.
-- Reposts of LimX's own videos or marketing material.
+- Reposts of LimX's product videos or marketing material.
 
 ## Company projects
 

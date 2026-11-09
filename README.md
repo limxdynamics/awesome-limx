@@ -15,7 +15,7 @@
 
 Open-source projects, papers and competition results built on [LimX Dynamics](https://www.limxdynamics.com) robots (TRON1, TRON2, Oli, Luna) and the LimX SDK.
 
-> Every entry links to its original public source. A listing means the work used LimX hardware or software; it is not an endorsement, and all rights stay with the owners.
+> This list covers public work that uses LimX hardware or software, by universities, individuals and LimX researchers alike. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics). Every entry links to its original source; a listing is not an endorsement, and all rights stay with the owners.
 
 **31 projects, 12 open source (🌟)**, covering TRON1 (17), TRON2 (3), Oli (10), Luna (1), P1 (3), W1 (1).
 
