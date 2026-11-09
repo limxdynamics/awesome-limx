@@ -28,6 +28,7 @@ Each section is a table. Add one row per project:
 - **Year**: the year the work was published or shown.
 - **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result.
 - **Order**: newest first within each section.
+- **🌟**: added automatically by the maintainers when the entry links to code, a model or a dataset. You don't need to add it.
 
 A section appears in the README once it has its first entry.
 
@@ -77,4 +78,4 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 
 - `README.md` in English, `README_cn.md` in Chinese, with the same entries in both.
 - Keep the project phrase short. Say what was done on the robot, not how impressive it is.
-- No emoji and no superlatives such as "first ever" or "state of the art".
+- No emoji other than the 🌟 open-source marker and no superlatives such as "first ever" or "state of the art".
