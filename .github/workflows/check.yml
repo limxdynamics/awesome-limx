@@ -13,6 +13,7 @@ on:
       - README.md
       - README_cn.md
       - scripts/**
+      - .github/workflows/check.yml
   schedule:
     # Monday 03:00 UTC: look for links that died since the last sweep.
     - cron: '0 3 * * 1'

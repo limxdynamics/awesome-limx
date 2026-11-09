@@ -4,7 +4,7 @@
 
 </div>
 
-<p align="center"><img src="assets/banner.png" alt="Awesome LimX" width="100%"></p>
+<h1 align="center"><img src="assets/banner.png" alt="Awesome LimX" width="100%"></h1>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -35,13 +35,13 @@ Public work that uses LimX hardware or software: papers, open-source code, datas
 | I want to… | Start with |
 |---|---|
 | See what is possible | [VAPS](#p-vaps) · [FastStair](#p-faststair) · [Canton Tower Climbing](#p-canton-tower-robot-climbing-challenge) · [UMI on Tron1](#p-umi-on-tron1) · [SteppingStoneLocomotion](#p-steppingstonelocomotion) |
-| Train TRON1 to walk in Isaac Lab | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LeggedGym-Ex](#p-leggedgym-ex) · [TRON1 Isaac Lab Tasks](#p-tron1-isaac-lab-tasks) |
+| Train TRON1 to walk in Isaac Lab | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [TRON1 Isaac Lab Tasks](#p-tron1-isaac-lab-tasks) · [HIM-PIM Isaac Lab](#p-him-pim-isaac-lab) |
 | Get started with tutorials | [LimX Tron1 Learning](#p-limx-tron1-learning) · [study_tron1](#p-study_tron1) · [pointfootGym](#p-pointfootgym) |
 | Deploy a policy on a real TRON1 | [Tron_Deploy](#p-tron_deploy) · [TRON Camp Wheel-Foot Deployment](#p-tron-camp-wheel-foot-deployment) · [CRL Humanoid ROS](#p-crl-humanoid-ros) |
 | Add navigation to TRON1 | [GPS-TRON1](#p-gps-tron1) · [WF_TRON1A LiDAR Navigation](#p-wf_tron1a-lidar-navigation) · [NeuPAN on TRON1](#p-neupan-on-tron1) |
 | Run VLA or imitation learning on TRON2 | [FluxVLA on TRON2](#p-fluxvla-on-tron2) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets) · [TRONCamp 2026 Mani Solution](#p-troncamp-2026-mani-solution) |
 | Whole-body control and motion tracking on Oli | [SuperMimic for Oli](#p-supermimic-for-oli) · [Whole-Body Humanoid MPC](#p-whole-body-humanoid-mpc) · [CHIP for Oli](#p-chip-for-oli) |
-| Mobile manipulation with an arm | [UMI on Tron1](#p-umi-on-tron1) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [Quest VR Teleop for Oli](#p-quest-vr-teleop-for-oli) |
+| Mobile manipulation with an arm | [UMI on Tron1](#p-umi-on-tron1) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [Arm-TRON](#p-arm-tron) |
 | Robot models and simulators | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
 
 
@@ -56,7 +56,7 @@ _32 entries: 12 papers · 20 code_
 | <a id="p-biped-rl-with-pathfinding"></a>**Biped RL with Pathfinding**: goal-conditioned training with pathfinding | `TRON1` | [shandilya1998](https://github.com/shandilya1998) · 2026 | Code | [[code](https://github.com/singhaman1750/biped-rl-isaaclab-iisc)] |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**: adaptive-compliance motion tracking on mjlab | `Oli` | [Matt14-mander](https://github.com/Matt14-mander) · 2026 | Code | [[code](https://github.com/Matt14-mander/chip-oli)] |
 | <a id="p-faststair"></a>**FastStair**: running up stairs | `Oli` | HIT, LimX et al. · 2026 | Paper | [[project](https://npcliu.github.io/FastStair)] [[paper](https://arxiv.org/abs/2601.10365)] [[video](https://youtu.be/SoLBK7VEGDo)] |
-| <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: learned-residual MPC for a point-foot biped | `TRON1` | Markwcl2004 · 2026 | Code | [[paper](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
+| <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: learned-residual MPC for a point-foot biped | `TRON1` | [Markwcl2004](https://github.com/Markwcl2004) · 2026 | Code | [[paper](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-osram"></a>**OSRAM**: online sim-to-real adaptation | `TRON1` | [Duke University](https://github.com/generalroboticslab) · 2026 | Code | [[code](https://github.com/generalroboticslab/OSRAM)] |
 | <a id="p-rl-tron1"></a>**rl-tron1**: Isaac Lab training with teacher-student | `TRON1` | [Jiakang Ma](https://github.com/Jiakang-Ma) · 2026 | Code | [[code](https://github.com/Jiakang-Ma/rl-tron1)] |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**: stepping stones, blind then with vision | `TRON1` | [Yiyou6](https://github.com/Yiyou6) · 2026 | Code | [[code](https://github.com/Yiyou6/SteppingStoneLocomotion)] [[video](https://www.youtube.com/watch?v=vs608-L7kl0)] |
@@ -74,7 +74,7 @@ _32 entries: 12 papers · 20 code_
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: robust locomotion with HIM and PIM | `TRON1` | [DongyangLin](https://github.com/DongyangLin) · 2025 | Code | [[code](https://github.com/DongyangLin/HIM-PIM-isaaclab)] |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Isaac Lab locomotion for Go1 and TRON1A | `TRON1` | [Guohua Zhang](https://github.com/guohua-zhang) · 2025 | Code | [[code](https://github.com/guohua-zhang/LeggedRobotsLab)] |
 | <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: stable perceptive biped walking | `TRON1` | SUSTech, HKUST et al. · 2025 | Paper | [[paper](https://arxiv.org/abs/2509.09106)] |
-| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: diffusion-based motion retargeting | `Oli` `TRON1` | SUSTech, HKUST et al. · 2025 | Paper | [[paper](https://arxiv.org/abs/2505.20857)] |
+| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: diffusion-based motion retargeting | `TRON1` `Oli` | SUSTech, HKUST et al. · 2025 | Paper | [[paper](https://arxiv.org/abs/2505.20857)] |
 | <a id="p-multi-loco"></a>**Multi-Loco**: one diffusion policy for point-foot and wheel-foot | `TRON1` | SUSTech, LimX et al. · 2025 | Code | [[project](https://multi-loco.github.io)] [[paper](https://arxiv.org/abs/2506.11470)] [[code](https://github.com/clearlab-sustech/multi_loco_isaacgym)] |
 | <a id="p-pvp"></a>**PvP**: data-efficient humanoid RL | `Oli` | PolyU, USTC et al. · 2025 | Paper | [[paper](https://arxiv.org/abs/2512.13093)] |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**: wheel-foot policy on a real robot | `TRON1` | [Yitao Zeng](https://github.com/24zen0) · 2025 | Code | [[code](https://github.com/24zen0/Deployment_of_wheelfoot_tron)] |
@@ -124,7 +124,7 @@ _7 entries: 2 papers · 5 code_
 | <a id="p-acg-wam"></a>**ACG-WAM**: world-action model with dexterous hands | `TRON2` | BIT, LimX · 2026 | Code | [[project](https://RoboOpus.github.io/ACG-WAM)] [[paper](https://arxiv.org/abs/2610.06965)] [[code](https://github.com/RoboOpus/ACG-WAM)] |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: one-step action heads | `TRON2` | ZJU-UIUC, LimX · 2026 | Paper | [[paper](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy | `TRON2` | [voniu](https://huggingface.co/voniu) · 2026 | Code | [[model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | Code | [[dataset](https://huggingface.co/trantor2nd)] |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | Code | [[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
 
 ## Tools, simulation & SDK
 
@@ -171,7 +171,7 @@ _19 tools in 4 groups_
 
 ## Education & competitions
 
-_9 entries: 1 papers · 7 code · 1 tutorial_
+_9 entries: 1 paper · 7 code · 1 tutorial_
 
 | Project | Robot | Author / Org · Year | Type | Links |
 |---|---|---|---|---|
@@ -181,13 +181,13 @@ _9 entries: 1 papers · 7 code · 1 tutorial_
 | <a id="p-study_tron1"></a>**study_tron1**: setup notes and learning log | `TRON1` | [beamkeerati](https://github.com/beamkeerati) · 2026 | Code | [[code](https://github.com/beamkeerati/study_tron1)] |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (sim, Korean) | `TRON1` | [aha645](https://github.com/aha645) · 2026 | Code | [[code](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1` | [jessiezhg](https://huggingface.co/jessiezhg) · 2026 | Tutorial | [[tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
-| <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion, best precision control | `Oli` | LimX · 2025 | Paper | [[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[paper](https://arxiv.org/abs/2601.10365)] |
+| <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX · 2025 | Paper | [[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[paper](https://arxiv.org/abs/2601.10365)] |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1` | [81578823 (SUSTech)](https://github.com/81578823) · 2025 | Code | [[code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1` | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) · 2024 | Code | [[code](https://github.com/SuDaxia-kai/pointfootGym)] |
 
 ## Contributing
 
-Self-nominations and suggestions are welcome: use the [submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), open a pull request, or email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com). See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria. Entries are newest first within each section; the Type column says whether there is something to run (**Code**) or only a paper or project page (**Paper**).
+Self-nominations and suggestions are welcome: use the [submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), open a pull request, or email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com). See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria. Entries are newest first within each section; the Type column says what a reader gets: something to run (**Code**), something to follow (**Tutorial**), or something to read (**Paper**).
 
 A listing is not an endorsement, and all rights stay with the owners. Owners can ask to be removed at any time, for any reason.
 

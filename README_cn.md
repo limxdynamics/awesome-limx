@@ -4,7 +4,7 @@
 
 </div>
 
-<p align="center"><img src="assets/banner_cn.png" alt="Awesome LimX" width="100%"></p>
+<h1 align="center"><img src="assets/banner_cn.png" alt="Awesome LimX" width="100%"></h1>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -35,13 +35,13 @@
 | 我想… | 先看这些 |
 |---|---|
 | 看看能做到什么 | [VAPS](#p-vaps) · [FastStair](#p-faststair) · [广州塔登高](#p-canton-tower-robot-climbing-challenge) · [UMI on Tron1](#p-umi-on-tron1) · [SteppingStoneLocomotion](#p-steppingstonelocomotion) |
-| 在 Isaac Lab 里训练 TRON1 行走 | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LeggedGym-Ex](#p-leggedgym-ex) · [TRON1 Isaac Lab 任务集](#p-tron1-isaac-lab-tasks) |
+| 在 Isaac Lab 里训练 TRON1 行走 | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [TRON1 Isaac Lab 任务集](#p-tron1-isaac-lab-tasks) · [HIM-PIM Isaac Lab](#p-him-pim-isaac-lab) |
 | 第一次上手、找教程 | [LimX Tron1 Learning](#p-limx-tron1-learning) · [study_tron1](#p-study_tron1) · [pointfootGym](#p-pointfootgym) |
 | 把策略部署到 TRON1 实机 | [Tron_Deploy](#p-tron_deploy) · [TRON Camp 轮足部署](#p-tron-camp-wheel-foot-deployment) · [CRL Humanoid ROS](#p-crl-humanoid-ros) |
 | 给 TRON1 加导航 | [GPS-TRON1](#p-gps-tron1) · [WF_TRON1A 激光导航](#p-wf_tron1a-lidar-navigation) · [TRON1 上的 NeuPAN](#p-neupan-on-tron1) |
 | 在 TRON2 上做 VLA、模仿学习 | [在 TRON2 上部署 FluxVLA](#p-fluxvla-on-tron2) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets) · [TRONCamp 2026 操作赛方案](#p-troncamp-2026-mani-solution) |
 | 在 Oli 上做全身控制、动作跟踪 | [SuperMimic for Oli](#p-supermimic-for-oli) · [人形全身 MPC](#p-whole-body-humanoid-mpc) · [CHIP for Oli](#p-chip-for-oli) |
-| 加机械臂做移动操作 | [UMI on Tron1](#p-umi-on-tron1) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [Oli 的 Quest VR 遥操作](#p-quest-vr-teleop-for-oli) |
+| 加机械臂做移动操作 | [UMI on Tron1](#p-umi-on-tron1) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [Arm-TRON](#p-arm-tron) |
 | 机器人模型与仿真器 | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
 
 
@@ -65,7 +65,7 @@ _32 个条目：12 篇论文 · 20 个代码_
 | <a id="p-where-to-learn"></a>**Where-to-Learn**：梯度引导的强化学习探索 | `TRON1` | 浙江大学、南方科技大学 · 2026 | 论文 | [[主页](https://wheretolearn.github.io)] [[论文](https://arxiv.org/abs/2603.27317)] [[视频](https://www.youtube.com/watch?v=DztdUyh_LVk)] |
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 部署**：sim2sim 与实机部署 | `TRON1` | [Chanjun Lee（首尔市立大学 Zetin）](https://github.com/chanjun-nyam) · 2026 | 代码 | [[代码](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy)] |
 | <a id="p-whole-body-humanoid-mpc"></a>**人形全身 MPC**：31 自由度 Oli 上的全身非线性 MPC | `Oli` | [Tianxing Liu](https://github.com/liuskywalkerjskd) · 2026 | 代码 | [[代码](https://github.com/liuskywalkerjskd/humanoid_mpc)] |
-| <a id="p-learning-enhanced-pmp-mpc"></a>**学习增强的 PMP-MPC**：点足双足的学习增强 MPC | `TRON1` | Markwcl2004 · 2026 | 代码 | [[论文](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
+| <a id="p-learning-enhanced-pmp-mpc"></a>**学习增强的 PMP-MPC**：点足双足的学习增强 MPC | `TRON1` | [Markwcl2004](https://github.com/Markwcl2004) · 2026 | 代码 | [[论文](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-steppingstonelocomotion"></a>**梅花桩行走**：跨越梅花桩，先盲走再加视觉 | `TRON1` | [Yiyou6](https://github.com/Yiyou6) · 2026 | 代码 | [[代码](https://github.com/Yiyou6/SteppingStoneLocomotion)] [[视频](https://www.youtube.com/watch?v=vs608-L7kl0)] |
 | <a id="p-biped-rl-with-pathfinding"></a>**目标导向双足训练**：带路径规划的目标导向训练 | `TRON1` | [shandilya1998](https://github.com/shandilya1998) · 2026 | 代码 | [[代码](https://github.com/singhaman1750/biped-rl-isaaclab-iisc)] |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1` | 哈工大（深圳） · 2025 | 论文 | [[论文](https://arxiv.org/abs/2508.00939)] |
@@ -78,7 +78,7 @@ _32 个条目：12 篇论文 · 20 个代码_
 | <a id="p-pvp"></a>**PvP**：高效的人形强化学习 | `Oli` | 香港理工、中国科大等 · 2025 | 论文 | [[论文](https://arxiv.org/abs/2512.13093)] |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp 轮足部署**：轮足策略实机部署 | `TRON1` | [Yitao Zeng](https://github.com/24zen0) · 2025 | 代码 | [[代码](https://github.com/24zen0/Deployment_of_wheelfoot_tron)] |
 | <a id="p-vmts"></a>**VMTS**：视觉辅助多地形行走 | `P1` | 东南大学 · 2025 | 代码 | [[论文](https://arxiv.org/abs/2503.07049)] [[代码](https://github.com/chenfu-user/VMTS)] |
-| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `Oli` `TRON1` | 南方科大、港科大等 · 2025 | 论文 | [[论文](https://arxiv.org/abs/2505.20857)] |
+| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `TRON1` `Oli` | 南方科大、港科大等 · 2025 | 论文 | [[论文](https://arxiv.org/abs/2505.20857)] |
 | <a id="p-anybipe"></a>**AnyBipe**：大模型引导的双足训练与部署 | `TRON1` | [上海交通大学](https://github.com/sjtu-mvasl-robotics) · 2024 | 代码 | [[代码](https://github.com/sjtu-mvasl-robotics/AnyBipe)] |
 | <a id="p-cts"></a>**CTS**：并行师生强化学习 | `P1` | 南方科大、浙大-UIUC等 · 2024 | 论文 | [[主页](https://clearlab-sustech.github.io/concurrentTS/)] [[论文](https://arxiv.org/abs/2405.10830)] |
 | <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：全身控制（仿真） | `P1` | 南方科大、港科大等 · 2024 | 论文 | [[论文](https://arxiv.org/abs/2404.00591)] |
@@ -124,7 +124,7 @@ _7 个条目：2 篇论文 · 5 个代码_
 | <a id="p-acg-wam"></a>**ACG-WAM**：灵巧手世界-动作模型 | `TRON2` | 北京理工大学、逐际动力 · 2026 | 代码 | [[主页](https://RoboOpus.github.io/ACG-WAM)] [[论文](https://arxiv.org/abs/2610.06965)] [[代码](https://github.com/RoboOpus/ACG-WAM)] |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：单步动作头 | `TRON2` | 浙大-UIUC、逐际动力 · 2026 | 论文 | [[论文](https://arxiv.org/abs/2609.18108)] |
 | <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：Pi0.5 策略 | `TRON2` | [voniu](https://huggingface.co/voniu) · 2026 | 代码 | [[模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05)] |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | 代码 | [[数据集](https://huggingface.co/trantor2nd)] |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) · 2026 | 代码 | [[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2)] |
 
 ## 工具、仿真与 SDK
 
@@ -181,13 +181,13 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 | <a id="p-study_tron1"></a>**study_tron1**：环境搭建与学习笔记 | `TRON1` | [beamkeerati](https://github.com/beamkeerati) · 2026 | 代码 | [[代码](https://github.com/beamkeerati/study_tron1)] |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（仿真，韩语） | `TRON1` | [aha645](https://github.com/aha645) · 2026 | 代码 | [[代码](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1` | [jessiezhg](https://huggingface.co/jessiezhg) · 2026 | 教程 | [[教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
-| <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军、最佳精准控制奖 | `Oli` | 逐际动力 · 2025 | 论文 | [[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[论文](https://arxiv.org/abs/2601.10365)] |
+| <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 · 2025 | 论文 | [[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[论文](https://arxiv.org/abs/2601.10365)] |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1` | [81578823（南方科大）](https://github.com/81578823) · 2025 | 代码 | [[代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym 课程模板 | `TRON1` | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) · 2024 | 代码 | [[代码](https://github.com/SuDaxia-kai/pointfootGym)] |
 
 ## 参与贡献
 
-欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按时间从新到旧排列；「类型」列说明是可以直接跑的东西（**代码**），还是只有论文或项目主页（**论文**）。
+欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按时间从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**），还是可以阅读的（**论文**）。
 
 收录不代表逐际动力背书，权利归原作者所有。项目所有者可随时要求移除，无需说明理由。
 
