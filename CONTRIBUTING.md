@@ -16,16 +16,20 @@ If you are the author or maintainer, say so. It makes review much faster.
 
 ## Entry format
 
+Each section is a table. Add one row per project:
+
 ```markdown
-- **[Project name](https://primary-link)** — What was done on LimX hardware, in one sentence.<br>
-  <sub>Institution or authors · Product · Year · [Paper](…) · [Code](…) · [Video](…)</sub>
+| **Short name**: what was done, in a few words | `TRON1` | Institution or authors | 2025 | [[project](…)] [[paper](…)] [[code](…)] [[video](…)] |
 ```
 
-- **Primary link**: the project page if there is one, otherwise the paper, then the code, then the video.
-- **Product**: TRON1, TRON2, Oli, Luna, or LimX SDK. List more than one if the work used several.
+- **Project**: a short name in bold, then a plain phrase saying what was done. No full sentences.
+- **Robot**: TRON1, TRON2, Oli, Luna, or LimX SDK, in backticks. List more than one if the work used several.
+- **Team**: the institution, or the author's handle for individual work. For long author lists, name the first two or three and add "et al.".
 - **Year**: the year the work was published or shown.
-- **Links**: include only the kinds that exist, in the order Paper, Code, Video, Result. Use `Result` for an official competition result.
+- **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result.
 - **Order**: newest first within each section.
+
+A section appears in the README once it has its first entry.
 
 ## Which section
 
@@ -63,7 +67,7 @@ If you submit a product or a company deployment, confirm in the form, pull reque
 
 ## Screenshots and logos
 
-An entry is a link plus one line of text. If you want an image or a logo next to your entry, ask explicitly and confirm that you hold the rights to it.
+An entry is one table row of text and links. If you want an image or a logo next to your entry, ask explicitly and confirm that you hold the rights to it.
 
 ## Removal
 
@@ -72,5 +76,5 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 ## House style
 
 - `README.md` in English, `README_cn.md` in Chinese, with the same entries in both.
-- One sentence per entry. Say what was done on the robot, not how impressive it is.
+- Keep the project phrase short. Say what was done on the robot, not how impressive it is.
 - No emoji and no superlatives such as "first ever" or "state of the art".
