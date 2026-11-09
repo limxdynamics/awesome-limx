@@ -39,8 +39,8 @@ TYPE_CODE = {"en": "Code", "cn": "代码"}
 TYPE_PAPER = {"en": "Paper", "cn": "论文"}
 TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程"}
 
-CODE_HOSTS = ("github.com", "gitlab.com", "huggingface.co", "bitbucket.org")
-PAPER_HOSTS = ("arxiv.org", "doi.org", "openreview.net")
+CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
+LINK_MARK = re.compile(r"\[\[(\w+)\]\((https?://[^)]+)\)\]")
 
 MAX_SHOWN = 12
 
@@ -157,11 +157,69 @@ def urls_in(text):
     return re.findall(r"\]\((https?://[^)]+)\)", text)
 
 
+def link_items(cell):
+    """The [[kind](url)] pairs in a Links cell."""
+    return [(m.group(1), m.group(2)) for m in LINK_MARK.finditer(cell)]
+
+
+def is_runnable(items):
+    """Something to clone or download.
+
+    A Hugging Face account page counts: it lists that account's models and
+    datasets, so a reader who lands there can still download something. A
+    GitHub profile does not - it may hold nothing related to the entry.
+    """
+    for _, url in items:
+        if "huggingface.co/spaces" in url:
+            continue
+        if "huggingface.co/" in url or "modelscope.cn/" in url:
+            return True
+        if any(h in url for h in CODE_HOSTS) and url.rstrip("/").count("/") >= 4:
+            return True
+    return False
+
+
+def is_walkable(items):
+    """Something to follow along with: a tutorial or a Space."""
+    return any(kind == "tutorial" or "huggingface.co/spaces" in url for kind, url in items)
+
+
+def check_type(label_type, items, lang, path, table, report):
+    """The three values answer one question: what can a reader do with this?
+
+    Code      clone or download it
+    Tutorial  follow it, but there is no package to take away
+    Paper     read it (paper, project page, write-up, result announcement)
+    """
+    runnable = is_runnable(items)
+    walkable = is_walkable(items)
+
+    if label_type in (TYPE_CODE["en"], TYPE_CODE["cn"]):
+        if not runnable:
+            report.warn("type", "%s / %r: marked %s but links nothing to clone or download"
+                        % (path, table, label_type))
+    elif label_type in (TYPE_TUTORIAL["en"], TYPE_TUTORIAL["cn"]):
+        if not walkable:
+            report.warn("type", "%s / %r: marked %s but links no tutorial or Space"
+                        % (path, table, label_type))
+        elif runnable:
+            report.warn("type", "%s / %r: marked %s but also links code or a model"
+                        % (path, table, label_type))
+    elif label_type in (TYPE_PAPER["en"], TYPE_PAPER["cn"]):
+        if runnable or walkable:
+            report.warn("type", "%s / %r: marked %s but links something to run"
+                        % (path, table, label_type))
+    else:
+        report.warn("type", "%s / %r: unrecognised type %r, expected %s / %s / %s"
+                    % (path, table, label_type, TYPE_CODE[lang], TYPE_TUTORIAL[lang],
+                       TYPE_PAPER[lang]))
+
+
 def table_label(t):
     return t["section"] if not t["sub"] else "%s / %s" % (t["section"], t["sub"])
 
 
-def check_tables(text, path, report):
+def check_tables(text, lang, path, report):
     """Column counts, anchors per entry, and the Type column."""
     entries = {}
     row_counts = {}
@@ -196,29 +254,7 @@ def check_tables(text, path, report):
 
             if tidx is None:
                 continue
-            label_type = cells[tidx].strip()
-            urls = urls_in(cells[-1])
-            has_code = any(h in u for u in urls for h in CODE_HOSTS)
-            has_paper = any(h in u for u in urls for h in PAPER_HOSTS)
-
-            if label_type in (TYPE_CODE["en"], TYPE_CODE["cn"]):
-                if not has_code:
-                    report.warn("type", "%s / %r: marked %s but links no repository, model or dataset"
-                                % (path, label, label_type))
-            elif label_type in (TYPE_PAPER["en"], TYPE_PAPER["cn"]):
-                if has_code:
-                    report.warn("type", "%s / %r: marked %s but links code"
-                                % (path, label, label_type))
-                if not has_paper:
-                    report.warn("type", "%s / %r: marked %s but links no paper"
-                                % (path, label, label_type))
-            elif label_type in (TYPE_TUTORIAL["en"], TYPE_TUTORIAL["cn"]):
-                if not has_code:
-                    report.warn("type", "%s / %r: marked %s but links nothing runnable"
-                                % (path, label, label_type))
-            else:
-                report.warn("type", "%s / %r: unrecognised type %r"
-                            % (path, label, label_type))
+            check_type(cells[tidx].strip(), link_items(cells[-1]), lang, path, label, report)
 
         row_counts[t["section"]] = row_counts.get(t["section"], 0) + len(t["rows"])
 
@@ -333,7 +369,7 @@ def main():
             report.error("files", "missing %s" % path)
             continue
         text = open(path, encoding="utf-8").read()
-        entries, row_counts = check_tables(text, path, report)
+        entries, row_counts = check_tables(text, lang, path, report)
         check_refs(text, path, entries, report)
         check_counts(text, path, row_counts, report)
         check_by_robot(text, path, report)
