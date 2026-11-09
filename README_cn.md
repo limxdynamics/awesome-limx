@@ -15,12 +15,12 @@
 
 收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程和比赛成绩。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
-**35** 个项目 · **13** 个开源 🌟 ｜ [运动控制](#运动控制) 17 · [操作](#操作) 6 · [具身智能](#具身智能) 5 · [工具、仿真与 SDK](#工具仿真与-sdk) 3 · [教学与竞赛](#教学与竞赛) 4 · [参与贡献](#参与贡献)
+**40** 个项目 · **18** 个开源 🌟 ｜ [运动控制](#运动控制) 18 · [操作](#操作) 6 · [具身智能](#具身智能) 5 · [工具、仿真与 SDK](#工具仿真与-sdk) 6 · [教学与竞赛](#教学与竞赛) 5 · [参与贡献](#参与贡献)
 
 <details>
-<summary><b>按机型查找</b>：TRON1 18 · TRON2 5 · Oli 11 · Luna 1 · P1 3 · W1 1</summary>
+<summary><b>按机型查找</b>：TRON1 23 · TRON2 5 · Oli 11 · Luna 1 · P1 3 · W1 1</summary>
 
-- **TRON1**：[学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
+- **TRON1**：[TRON1 打滑分析](#p-tron1-sliding-analysis) · [学习增强的 PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM 引导强化学习](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [双足 MPC](#p-bipedal-mpc) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [TRON1 与 UR5e 交接水瓶](#p-tron1-to-ur5e-bottle-transfer) · [多机协同搬运](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [wf_tron1b_deploy](#p-wf_tron1b_deploy) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [tron_docker_sim](#p-tron_docker_sim) · [tron1-rl-mjlab](#p-tron1-rl-mjlab) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [OpenArm 移动操作实训](#p-openarm-mobile-manipulation-lab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [双足运动强化学习](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
 - **TRON2**：[多机协同搬运](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [GR00T 漂移动作头](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 服装送料](#p-tron2-garment-feeder) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets)
 - **Oli**：[SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [多本体动作重定向](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [广州塔机器人登高挑战赛](#p-canton-tower-robot-climbing-challenge)
 - **Luna**：[Any2Any](#p-any2any)
@@ -33,6 +33,7 @@
 
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-tron1-sliding-analysis"></a>🌟 **TRON1 打滑分析**：轮足漂移与摩擦迁移（仿真） | `TRON1` | Shukashuki | 2026 | [[代码](https://github.com/Shukashuki/tron1-sliding-analysis)] |
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **学习增强的 PMP-MPC**：点足双足的学习增强 MPC | `TRON1` | Markwcl2004 | 2026 | [[论文](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**：单策略跟踪 40 段动作（仿真） | `Oli` | Tianxing Liu | 2026 | [[代码](https://github.com/liuskywalkerjskd/supermimic_oli)] |
 | <a id="p-vaps"></a>**VAPS**：安全特技动作，实机侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | [[主页](https://vaps-r-al.github.io/)] [[论文](https://arxiv.org/abs/2610.01397)] |
@@ -76,14 +77,18 @@
 
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-wf_tron1b_deploy"></a>🌟 **wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | Leixin Chang | 2026 | [[代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy)] |
 | <a id="p-tron_deploy"></a>🌟 **Tron_Deploy**：在 Windows 上部署策略 | `TRON1` | candi4 | 2026 | [[代码](https://github.com/candi4/Tron_Deploy)] |
 | <a id="p-limx-robotics-mcp"></a>🌟 **limx-robotics-mcp**：仿真与控制的 MCP 服务器 | `TRON1` `Oli` | sandraschi | 2026 | [[代码](https://github.com/sandraschi/limx-robotics-mcp)] |
+| <a id="p-tron_docker_sim"></a>🌟 **tron_docker_sim**：Gazebo 仿真 Docker 环境 | `TRON1` | The-RoboTUM | 2026 | [[代码](https://github.com/The-RoboTUM/tron_docker_sim)] |
+| <a id="p-tron1-rl-mjlab"></a>🌟 **tron1-rl-mjlab**：基于 mjlab 的轮足训练 | `TRON1` | Xinchen Yao | 2025 | [[代码](https://github.com/hoscy/tron1-rl-mjlab)] |
 | <a id="p-bipedal_locomotion_isaaclab"></a>🌟 **bipedal_locomotion_isaaclab**：Isaac Lab 训练与实机部署 | `TRON1` | 南方科技大学 | 2024 | [[代码](https://github.com/Andy-xiong6/bipedal_locomotion_isaaclab)] |
 
 ## 教学与竞赛
 
 | 项目 | 机型 | 团队 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-openarm-mobile-manipulation-lab"></a>🌟 **OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（仿真，韩语） | `TRON1` | aha645 | 2026 | [[代码](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1` | jessiezhg | 2026 | [[教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军、最佳精准控制奖 | `Oli` | 逐际动力 | 2025 | [[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[论文](https://arxiv.org/abs/2601.10365)] |
 | <a id="p-rl-bipedal-locomotion"></a>🌟 **双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1` | 南方科技大学 | 2025 | [[代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |

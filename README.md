@@ -15,12 +15,12 @@
 
 Public work that uses LimX hardware or software: papers, open-source code, datasets, tutorials and competition results. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
-**35** projects · **13** open source 🌟 | [Locomotion & whole-body control](#locomotion--whole-body-control) 17 · [Manipulation](#manipulation) 6 · [Embodied AI](#embodied-ai) 5 · [Tools, simulation & SDK](#tools-simulation--sdk) 3 · [Education & competitions](#education--competitions) 4 · [Contributing](#contributing)
+**40** projects · **18** open source 🌟 | [Locomotion & whole-body control](#locomotion--whole-body-control) 18 · [Manipulation](#manipulation) 6 · [Embodied AI](#embodied-ai) 5 · [Tools, simulation & SDK](#tools-simulation--sdk) 6 · [Education & competitions](#education--competitions) 5 · [Contributing](#contributing)
 
 <details>
-<summary><b>By robot</b>: TRON1 18 · TRON2 5 · Oli 11 · Luna 1 · P1 3 · W1 1</summary>
+<summary><b>By robot</b>: TRON1 23 · TRON2 5 · Oli 11 · Luna 1 · P1 3 · W1 1</summary>
 
-- **TRON1**: [Learning-Enhanced PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM-Guided RL](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [Bipedal MPC](#p-bipedal-mpc) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [TRON1-to-UR5e Bottle Transfer](#p-tron1-to-ur5e-bottle-transfer) · [Cooperative Transportation](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [RL Bipedal Locomotion](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
+- **TRON1**: [TRON1 Sliding Analysis](#p-tron1-sliding-analysis) · [Learning-Enhanced PMP-MPC](#p-learning-enhanced-pmp-mpc) · [Where-to-Learn](#p-where-to-learn) · [AME-2](#p-ame-2) · [LIPM-Guided RL](#p-lipm-guided-rl) · [CTBC](#p-ctbc) · [BarlowWalk](#p-barlowwalk) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [Bipedal MPC](#p-bipedal-mpc) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [TRON1-to-UR5e Bottle Transfer](#p-tron1-to-ur5e-bottle-transfer) · [Cooperative Transportation](#p-cooperative-transportation) · [Arm-TRON](#p-arm-tron) · [wf_tron1b_deploy](#p-wf_tron1b_deploy) · [Tron_Deploy](#p-tron_deploy) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [tron_docker_sim](#p-tron_docker_sim) · [tron1-rl-mjlab](#p-tron1-rl-mjlab) · [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [OpenArm Mobile Manipulation Lab](#p-openarm-mobile-manipulation-lab) · [LimX Tron1 Learning](#p-limx-tron1-learning) · [RL Bipedal Locomotion](#p-rl-bipedal-locomotion) · [pointfootGym](#p-pointfootgym)
 - **TRON2**: [Cooperative Transportation](#p-cooperative-transportation) · [ACG-WAM](#p-acg-wam) · [GR00T Drifting Heads](#p-drifting-action-heads-for-gr00t-n17) · [TRON2 Garment Feeder](#p-tron2-garment-feeder) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets)
 - **Oli**: [SuperMimic for Oli](#p-supermimic-for-oli) · [VAPS](#p-vaps) · [Any2Any](#p-any2any) · [FastStair](#p-faststair) · [PvP](#p-pvp) · [GA-PHL](#p-ga-phl) · [Multi-Embodiment Retargeting](#p-multi-embodiment-retargeting) · [CWI](#p-cwi) · [HWAM](#p-hwam) · [limx-robotics-mcp](#p-limx-robotics-mcp) · [Canton Tower Robot Climbing Challenge](#p-canton-tower-robot-climbing-challenge)
 - **Luna**: [Any2Any](#p-any2any)
@@ -33,6 +33,7 @@ Public work that uses LimX hardware or software: papers, open-source code, datas
 
 | Project | Robot | Team | Year | Links |
 |---|---|---|---|---|
+| <a id="p-tron1-sliding-analysis"></a>🌟 **TRON1 Sliding Analysis**: wheel-foot drift and friction transfer (sim) | `TRON1` | Shukashuki | 2026 | [[code](https://github.com/Shukashuki/tron1-sliding-analysis)] |
 | <a id="p-learning-enhanced-pmp-mpc"></a>🌟 **Learning-Enhanced PMP-MPC**: learned-residual MPC for a point-foot biped | `TRON1` | Markwcl2004 | 2026 | [[paper](https://doi.org/10.1109/ASCC70886.2026.11701800)] [[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC)] |
 | <a id="p-supermimic-for-oli"></a>🌟 **SuperMimic for Oli**: one policy tracking 40 motions (sim) | `Oli` | Tianxing Liu | 2026 | [[code](https://github.com/liuskywalkerjskd/supermimic_oli)] |
 | <a id="p-vaps"></a>**VAPS**: safe acrobatics, real side flips | `Oli` | TU Darmstadt, LimX et al. | 2026 | [[project](https://vaps-r-al.github.io/)] [[paper](https://arxiv.org/abs/2610.01397)] |
@@ -76,14 +77,18 @@ Public work that uses LimX hardware or software: papers, open-source code, datas
 
 | Project | Robot | Team | Year | Links |
 |---|---|---|---|---|
+| <a id="p-wf_tron1b_deploy"></a>🌟 **wf_tron1b_deploy**: depth-perceptive policy sim-to-sim | `TRON1` | Leixin Chang | 2026 | [[code](https://github.com/Leixinjonaschang/wf_tron1b_deploy)] |
 | <a id="p-tron_deploy"></a>🌟 **Tron_Deploy**: deploy policies from Windows | `TRON1` | candi4 | 2026 | [[code](https://github.com/candi4/Tron_Deploy)] |
 | <a id="p-limx-robotics-mcp"></a>🌟 **limx-robotics-mcp**: MCP server for sim and control | `TRON1` `Oli` | sandraschi | 2026 | [[code](https://github.com/sandraschi/limx-robotics-mcp)] |
+| <a id="p-tron_docker_sim"></a>🌟 **tron_docker_sim**: Docker image for Gazebo sim | `TRON1` | The-RoboTUM | 2026 | [[code](https://github.com/The-RoboTUM/tron_docker_sim)] |
+| <a id="p-tron1-rl-mjlab"></a>🌟 **tron1-rl-mjlab**: wheel-foot training on mjlab | `TRON1` | Xinchen Yao | 2025 | [[code](https://github.com/hoscy/tron1-rl-mjlab)] |
 | <a id="p-bipedal_locomotion_isaaclab"></a>🌟 **bipedal_locomotion_isaaclab**: Isaac Lab training, sim-to-real | `TRON1` | SUSTech | 2024 | [[code](https://github.com/Andy-xiong6/bipedal_locomotion_isaaclab)] |
 
 ## Education & competitions
 
 | Project | Robot | Team | Year | Links |
 |---|---|---|---|---|
+| <a id="p-openarm-mobile-manipulation-lab"></a>🌟 **OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (sim, Korean) | `TRON1` | aha645 | 2026 | [[code](https://github.com/aha645/openarms_llm_ex)] |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1` | jessiezhg | 2026 | [[tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning)] |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion, best precision control | `Oli` | LimX | 2025 | [[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html)] [[paper](https://arxiv.org/abs/2601.10365)] |
 | <a id="p-rl-bipedal-locomotion"></a>🌟 **RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1` | SUSTech | 2025 | [[code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab)] |
