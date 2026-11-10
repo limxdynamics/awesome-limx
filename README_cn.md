@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **85** 个项目，其中 **61** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **95** 个项目，其中 **61** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 ## 目录
 
@@ -29,7 +29,12 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 9
-- [行业应用](#行业应用) — 4
+- [行业应用](#行业应用) — 14
+  - [落地与产品](#落地与产品)
+  - [商业演出与活动](#商业演出与活动)
+  - [战略合作](#战略合作)
+  - [区域伙伴与渠道](#区域伙伴与渠道)
+  - [奖项与认可](#奖项与认可)
 - [按机型查找](#按机型查找)
 - [参与贡献](#参与贡献)
 
@@ -205,14 +210,46 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 
 ## 行业应用
 
-_4 个条目：落地项目、产品与商业演出_
+_14 个条目，分 5 组_
+
+### 落地与产品
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 论文 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：逐际动力人形机器人搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布 | — | 东土科技 | 2026 | 论文 | [报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 商业演出与活动
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 论文 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 论文 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 论文 | [报道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+### 战略合作
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-smartcube-partnership"></a>**SmartCube**：韩国官方合作伙伴，人形机器人用于工厂与能源现场巡检并接入数字孪生 | — | SmartCube（韩国） | 2026 | 论文 | [报道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
+| <a id="p-guangyang-partnership"></a>**光洋股份**：签署战略合作协议 | — | 光洋股份 | 2026 | 论文 | [报道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-saic-beijing-joint-lab"></a>**上汽北京联合实验室**：面向汽车制造的具身智能联合实验室，逐际动力为上汽首家具身智能战略合作伙伴 | — | 上汽北京 | 2025 | 论文 | [报道](https://www.pingwest.com/a/306356) |
+
+### 区域伙伴与渠道
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 论文 | [主页](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 论文 | [主页](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 论文 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-r2c2-partnership"></a>**R2C2**：与香港机器人协作平台建立合作 | — | R2C2 Limited（香港） | 2024 | 论文 | [报道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+
+### 奖项与认可
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-rbr50-2025-tron1"></a>**2025 RBR50 机器人创新奖**：TRON1 作为多形态双足研发平台入选 | `TRON1` | The Robot Report | 2025 | 论文 | [成绩](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 ## 按机型查找
 
@@ -220,10 +257,10 @@ _4 个条目：落地项目、产品与商业演出_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `TRON1` | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
+| `TRON2` | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
+| `Oli` | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| `Luna` | **5** | 1 |  |  |  | 1 |  | 3 |
 | `P1` | **3** | 3 |  |  |  |  |  |  |
 | `W1` | **1** |  |  | 1 |  |  |  |  |
 

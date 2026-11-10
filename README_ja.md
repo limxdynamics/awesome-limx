@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK を使った **85** プロジェクトを収録しています。うち **61** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK を使った **95** プロジェクトを収録しています。うち **61** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 ## 目次
 
@@ -29,7 +29,12 @@
   - [デプロイと制御](#デプロイと制御)
   - [モデルとモーションデータ](#モデルとモーションデータ)
 - [教育と競技会](#教育と競技会) — 9
-- [産業応用](#産業応用) — 4
+- [産業応用](#産業応用) — 14
+  - [導入事例と製品](#導入事例と製品)
+  - [商業公演とイベント](#商業公演とイベント)
+  - [戦略提携](#戦略提携)
+  - [地域パートナーと販売チャネル](#地域パートナーと販売チャネル)
+  - [受賞と評価](#受賞と評価)
 - [機種別](#機種別)
 - [コントリビュート](#コントリビュート)
 
@@ -205,14 +210,46 @@ _9 件：論文 1 · コード 7 · チュートリアル 1_
 
 ## 産業応用
 
-_4 件：導入事例、製品、商業公演_
+_14 件（5 グループ）_
+
+### 導入事例と製品
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：TRON2 ホイール脚を土台にしたテニスロボット、2026 ビリー・ジーン・キング・カップ ファイナルでプロと対戦 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 論文 | [報道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：2 台の TRON2 が釘打ち機と鉄筋で縮小版のティルトアップ工法を実演 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 論文 | [動画](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[報道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-dongtu-domestic-architecture"></a>**国産電子アーキテクチャのヒューマノイド**：東土科技の Intewell OS と AUTBUS バスを搭載した LimX のヒューマノイド、共同発表 | — | 東土科技（Kyland） | 2026 | 論文 | [報道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 商業公演とイベント
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 論文 | [報道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**「キル・イット」決勝**：デザイナー キム・ナラの優勝決勝ステージに Luna が登場、tvN | `Luna` | tvN、キム・ナラ | 2026 | 論文 | [報道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[報道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝インフルエンサーフェスティバル**：上海で俳優 ミシェル・チェンと Luna がランウェイを歩行 | `Luna` | 淘宝 | 2026 | 論文 | [報道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+### 戦略提携
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-smartcube-partnership"></a>**SmartCube**：韓国の公式パートナー、工場やエネルギー施設の点検にヒューマノイドとデジタルツインを活用 | — | SmartCube（韓国） | 2026 | 論文 | [報道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
+| <a id="p-guangyang-partnership"></a>**光洋股份**：戦略提携契約を締結 | — | 光洋股份 | 2026 | 論文 | [報道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-saic-beijing-joint-lab"></a>**上汽北京 共同ラボ**：自動車製造向けのエンボディドAI共同ラボ、LimX は SAIC 初のエンボディドAI戦略パートナー | — | 上汽北京 | 2025 | 論文 | [報道](https://www.pingwest.com/a/306356) |
+
+### 地域パートナーと販売チャネル
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：米国で TRON2 と Oli のバンドルを販売、データ収集向け遠隔操作のセットアップを提供 | `TRON2` `Oli` | Knoxlabs | 2026 | 論文 | [プロジェクト](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-tron-kk-humanoid-si"></a>**トロン株式会社**：日本でヒューマノイドのシステムインテグレーションと Omniverse シミュレーションを提供、LimX を取り扱い | — | トロン株式会社 | 2026 | 論文 | [プロジェクト](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-synerex-korea"></a>**Synerex**：韓国の公式パートナー、Drone Show Korea 2025 で TRON1 を韓国初公開 | `TRON1` | Synerex（韓国） | 2025 | 論文 | [報道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-r2c2-partnership"></a>**R2C2**：香港のロボット協調プラットフォームと提携 | — | R2C2 Limited（香港） | 2024 | 論文 | [報道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+
+### 受賞と評価
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-rbr50-2025-tron1"></a>**RBR50 ロボティクス・イノベーション・アワード 2025**：TRON1 がマルチモーダル二足の研究開発プラットフォームとして選出 | `TRON1` | The Robot Report | 2025 | 論文 | [結果](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 ## 機種別
 
@@ -220,10 +257,10 @@ _4 件：導入事例、製品、商業公演_
 
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `TRON1` | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
+| `TRON2` | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
+| `Oli` | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| `Luna` | **5** | 1 |  |  |  | 1 |  | 3 |
 | `P1` | **3** | 3 |  |  |  |  |  |  |
 | `W1` | **1** |  |  | 1 |  |  |  |  |
 

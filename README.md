@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **85** projects built on LimX robots and the LimX SDK, **61** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **95** projects built on LimX robots and the LimX SDK, **61** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 ## Contents
 
@@ -29,7 +29,12 @@
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
 - [Education & competitions](#education--competitions) — 9
-- [Industry deployments](#industry-deployments) — 4
+- [Industry deployments](#industry-deployments) — 14
+  - [Deployments & products](#deployments--products)
+  - [Commercial shows & events](#commercial-shows--events)
+  - [Strategic partnerships](#strategic-partnerships)
+  - [Regional partners & channels](#regional-partners--channels)
+  - [Awards & recognition](#awards--recognition)
 - [By robot](#by-robot)
 - [Contributing](#contributing)
 
@@ -206,14 +211,46 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 
 ## Industry deployments
 
-_4 entries: deployments, products and commercial shows_
+_14 entries in 5 groups_
+
+### Deployments & products
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: LimX humanoid running Dongtu's Intewell OS and AUTBUS bus, released jointly | — | Kyland (Dongtu Technology) | 2026 | Paper | [news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### Commercial shows & events
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | Paper | [news](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | Paper | [news](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | Paper | [news](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+### Strategic partnerships
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-smartcube-partnership"></a>**SmartCube**: official partner in Korea, humanoids for factory and energy-site inspection with digital twins | — | SmartCube (Korea) | 2026 | Paper | [news](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
+| <a id="p-guangyang-partnership"></a>**Guangyang Shares**: strategic cooperation agreement | — | Guangyang Shares | 2026 | Paper | [news](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-saic-beijing-joint-lab"></a>**SAIC Beijing Joint Lab**: embodied AI joint lab for automotive manufacturing, LimX as SAIC's first embodied AI partner | — | SAIC Beijing | 2025 | Paper | [news](https://www.pingwest.com/a/306356) |
+
+### Regional partners & channels
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | Paper | [project](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: humanoid system integration and Omniverse simulation in Japan, with LimX robots | — | TRON K.K. (Japan) | 2026 | Paper | [project](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | Paper | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-r2c2-partnership"></a>**R2C2**: partnership with a Hong Kong robot collaboration platform | — | R2C2 Limited (Hong Kong) | 2024 | Paper | [news](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+
+### Awards & recognition
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-rbr50-2025-tron1"></a>**RBR50 Robotics Innovation Awards 2025**: TRON1 recognized as a multi-modal biped R&D platform | `TRON1` | The Robot Report | 2025 | Paper | [result](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 ## By robot
 
@@ -221,10 +258,10 @@ How many entries use each robot, by section. Search the robot name on this page 
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `TRON1` | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
+| `TRON2` | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
+| `Oli` | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| `Luna` | **5** | 1 |  |  |  | 1 |  | 3 |
 | `P1` | **3** | 3 |  |  |  |  |  |  |
 | `W1` | **1** |  |  | 1 |  |  |  |  |
 

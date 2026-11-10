@@ -88,7 +88,7 @@ result belongs here as well: there is nothing to run.
 | Embodied AI | VLA models, LLM agents, imitation learning, foundation models |
 | Tools, simulation & SDK | simulators, robot models, deployment tooling, libraries on the LimX SDK |
 | Education & competitions | courses, teaching labs, student teams, competition results |
-| Industry deployments | company products, real-world deployments, commercial shows and events |
+| Industry deployments | company products, real-world deployments, commercial shows and events, strategic partnerships, regional partners and channels, awards |
 
 If a project fits more than one section, choose the one that best describes its main result. Each project appears once.
 
@@ -99,7 +99,7 @@ If a project fits more than one section, choose the one that best describes its 
 | The work used LimX hardware or software, on a real robot or in simulation with official LimX models | That is what this list shows. "Might be compatible" does not count. |
 | A public source says so: the paper names the robot, the video shows it, or the README states it | Anyone reading the list should be able to check the claim. |
 | There is a public link to the original source | We link to where the work lives. We do not host it. |
-| Company projects only with the company's agreement, or once the company has announced the work itself | We do not announce someone else's business relationship before they do. |
+| Company projects only with the company's agreement, or once the company has announced the work or the partnership itself | We do not announce someone else's business relationship before they do. |
 | Links only: no copied code, papers, videos, screenshots or logos | Those belong to their owners. |
 
 Work by LimX researchers, such as papers and competition results, is welcome on the same terms as anyone else's.
@@ -113,7 +113,7 @@ We do not accept:
 
 ## Company projects
 
-If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company or both partners have already announced the work publicly, link that announcement or the press coverage instead. A signed agreement on its own is not enough: there has to be public work on a LimX robot, such as a demo, a product or a deployment. If the company wants to announce first, tell us and we will wait.
+If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company or both partners have already announced the work publicly, link that announcement or the press coverage instead. Public strategic agreements, official regional partners and sales channels, and industry awards count too: they go under Industry deployments. If the company wants to announce first, tell us and we will wait.
 
 ## Screenshots and logos
 
