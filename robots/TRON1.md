@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **54** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **57** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 - [Manipulation](#manipulation) — 5
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 15
 - [Education & competitions](#education--competitions) — 6
-- [Industry deployments](#industry-deployments) — 2
+- [Industry deployments](#industry-deployments) — 5
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -135,6 +135,14 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | Code | [code](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## Industry deployments
+
+### Open source from companies
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**: Nav2 route tests for TRON1 in the Newton simulator | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | Code | [code](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**: ROS 2 and Gazebo simulation stack that ships a TRON1 biped | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**: ROS 2 and Gazebo demo with the Artefacts robot-testing platform | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | Code | [code](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### Regional partners & channels
 

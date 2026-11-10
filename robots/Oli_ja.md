@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **20** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **21** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 - [エンボディドAI](#エンボディドai) — 2
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 3
 - [教育と競技会](#教育と競技会) — 1
-- [産業応用](#産業応用) — 3
+- [産業応用](#産業応用) — 4
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -96,6 +96,12 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-dongtu-domestic-architecture"></a>**国産電子アーキテクチャのヒューマノイド**：東土科技の Intewell OS と AUTBUS バスを搭載した Oli、共同発表 | `Oli` | 東土科技（Kyland） | 2026 | 論文 | [報道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[報道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 企業のオープンソース
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**：31 自由度の Oli で GEAR-SONIC 全身制御を学習、PICO VR 遠隔操作に対応 | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | コード | [コード](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
 
 ### 商業公演とイベント
 

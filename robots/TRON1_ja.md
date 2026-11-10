@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **54** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **57** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 - [マニピュレーション](#マニピュレーション) — 5
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 15
 - [教育と競技会](#教育と競技会) — 6
-- [産業応用](#産業応用) — 2
+- [産業応用](#産業応用) — 5
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -135,6 +135,14 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym の授業用テンプレート | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | コード | [コード](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 産業応用
+
+### 企業のオープンソース
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**：Newton シミュレータで TRON1 の Nav2 ルートテスト | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | コード | [コード](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**：TRON1 二足モデルを同梱した ROS 2 と Gazebo のシミュレーションスタック | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | コード | [コード](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**：Artefacts ロボットテスト基盤を使った ROS 2 と Gazebo のデモ | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | コード | [コード](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### 地域パートナーと販売チャネル
 

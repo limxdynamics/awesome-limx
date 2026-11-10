@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **20**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **21**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 - [임바디드 AI](#임바디드-ai) — 2
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 3
 - [교육 및 대회](#교육-및-대회) — 1
-- [산업 적용](#산업-적용) — 3
+- [산업 적용](#산업-적용) — 4
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -96,6 +96,12 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 Oli, 공동 발표 | `Oli` | 둥투커지(Kyland) | 2026 | 논문 | [보도](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 기업 오픈소스
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**: 31자유도 Oli에서 GEAR-SONIC 전신 제어 학습, PICO VR 원격 조작 지원 | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | 코드 | [코드](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
 
 ### 상업 공연 및 이벤트
 

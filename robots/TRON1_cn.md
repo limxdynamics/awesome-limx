@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **54** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **57** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 - [操作](#操作) — 5
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 15
 - [教学与竞赛](#教学与竞赛) — 6
-- [行业应用](#行业应用) — 2
+- [行业应用](#行业应用) — 5
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -135,6 +135,14 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym 课程模板 | `TRON1`&nbsp;*仿真* | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) | 2024 | 代码 | [代码](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 行业应用
+
+### 企业开源项目
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**：在 Newton 仿真器中对 TRON1 做 Nav2 路线测试 | `TRON1`&nbsp;*仿真* | [Artefacts（日本）](https://github.com/art-e-fact) | 2026 | 代码 | [代码](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**：ROS 2 与 Gazebo 仿真栈，内置 TRON1 双足模型 | `TRON1`&nbsp;*仿真* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 代码 | [代码](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**：基于 Artefacts 机器人测试平台的 ROS 2 与 Gazebo 演示 | `TRON1`&nbsp;*仿真* | [Artefacts（日本）](https://github.com/art-e-fact) | 2026 | 代码 | [代码](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### 区域伙伴与渠道
 

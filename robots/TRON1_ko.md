@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **54**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **57**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 - [매니퓰레이션](#매니퓰레이션) — 5
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 15
 - [교육 및 대회](#교육-및-대회) — 6
-- [산업 적용](#산업-적용) — 2
+- [산업 적용](#산업-적용) — 5
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -135,6 +135,14 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym 수업용 템플릿 | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | 코드 | [코드](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 산업 적용
+
+### 기업 오픈소스
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**: Newton 시뮬레이터에서 TRON1 Nav2 경로 테스트 | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | 코드 | [코드](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**: TRON1 이족 모델을 포함한 ROS 2·Gazebo 시뮬레이션 스택 | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 코드 | [코드](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**: Artefacts 로봇 테스트 플랫폼 기반 ROS 2·Gazebo 데모 | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | 코드 | [코드](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### 지역 파트너 및 판매 채널
 

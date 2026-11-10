@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **20** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **21** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Embodied AI](#embodied-ai) — 2
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 3
 - [Education & competitions](#education--competitions) — 1
-- [Industry deployments](#industry-deployments) — 3
+- [Industry deployments](#industry-deployments) — 4
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -96,6 +96,12 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli running Dongtu's Intewell OS and AUTBUS bus, released jointly | `Oli` | Kyland (Dongtu Technology) | 2026 | Paper | [news](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### Open source from companies
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**: GEAR-SONIC whole-body control on the 31-DOF Oli, with PICO VR teleoperation | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | Code | [code](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
 
 ### Commercial shows & events
 

@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **18** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **20** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 5
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 3
-- [Industry deployments](#industry-deployments) — 3
+- [Industry deployments](#industry-deployments) — 5
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -77,6 +77,13 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+
+### Open source from companies
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: Pi0.5 training configs and real-time inference for TRON2 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: PICO 4 bimanual teleoperation plugin for LeRobot, with TRON2 support | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 
 ### Regional partners & channels
 
