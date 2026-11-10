@@ -16,7 +16,7 @@
 
 **81** 个项目 · **61** 个有开源代码
 
-[快速上手](#快速上手) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [参与贡献](#参与贡献)
+[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [参与贡献](#参与贡献)
 
 _标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过。_
 
@@ -33,22 +33,6 @@ _标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过
 | `W1` | **1** |  |  | 1 |  |  |  |
 
 </details>
-
-
-## 快速上手
-
-| 我想… | 先看这些 |
-|---|---|
-| 看看能做到什么 | [VAPS](#p-vaps) · [FastStair](#p-faststair) · [广州塔登高](#p-canton-tower-robot-climbing-challenge) · [UMI on Tron1](#p-umi-on-tron1) · [SteppingStoneLocomotion](#p-steppingstonelocomotion) |
-| 在 Isaac Lab 里训练 TRON1 行走 | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [TRON1 Isaac Lab 任务集](#p-tron1-isaac-lab-tasks) · [HIM-PIM Isaac Lab](#p-him-pim-isaac-lab) |
-| 第一次上手、找教程 | [LimX Tron1 Learning](#p-limx-tron1-learning) · [study_tron1](#p-study_tron1) · [pointfootGym](#p-pointfootgym) |
-| 把策略部署到 TRON1 实机 | [Tron_Deploy](#p-tron_deploy) · [TRON Camp 轮足部署](#p-tron-camp-wheel-foot-deployment) · [CRL Humanoid ROS](#p-crl-humanoid-ros) |
-| 给 TRON1 加导航 | [GPS-TRON1](#p-gps-tron1) · [WF_TRON1A 激光导航](#p-wf_tron1a-lidar-navigation) · [TRON1 上的 NeuPAN](#p-neupan-on-tron1) |
-| 在 TRON2 上做 VLA、模仿学习 | [在 TRON2 上部署 FluxVLA](#p-fluxvla-on-tron2) · [TRON2 LeRobot 数据集](#p-tron2-lerobot-datasets) · [TRONCamp 2026 操作赛方案](#p-troncamp-2026-mani-solution) |
-| 在 Oli 上做全身控制、动作跟踪 | [SuperMimic for Oli](#p-supermimic-for-oli) · [人形全身 MPC](#p-whole-body-humanoid-mpc) · [CHIP for Oli](#p-chip-for-oli) |
-| 加机械臂做移动操作 | [UMI on Tron1](#p-umi-on-tron1) · [全身一体化移动操作](#p-holistic-loco-manipulation) · [Arm-TRON](#p-arm-tron) |
-| 机器人模型与仿真器 | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
-
 
 ## 动手之前
 

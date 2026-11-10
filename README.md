@@ -16,7 +16,7 @@ Public work that uses LimX hardware or software: papers, open-source code, datas
 
 **81** projects · **61** have open-source code
 
-[Start here](#start-here) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Contributing](#contributing)
+[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Contributing](#contributing)
 
 _*sim* marks work shown only in simulation; everything else ran on a real robot._
 
@@ -33,22 +33,6 @@ _*sim* marks work shown only in simulation; everything else ran on a real robot.
 | `W1` | **1** |  |  | 1 |  |  |  |
 
 </details>
-
-
-## Start here
-
-| I want to… | Start with |
-|---|---|
-| See what is possible | [VAPS](#p-vaps) · [FastStair](#p-faststair) · [Canton Tower Climbing](#p-canton-tower-robot-climbing-challenge) · [UMI on Tron1](#p-umi-on-tron1) · [SteppingStoneLocomotion](#p-steppingstonelocomotion) |
-| Train TRON1 to walk in Isaac Lab | [bipedal_locomotion_isaaclab](#p-bipedal_locomotion_isaaclab) · [TRON1 Isaac Lab Tasks](#p-tron1-isaac-lab-tasks) · [HIM-PIM Isaac Lab](#p-him-pim-isaac-lab) |
-| Get started with tutorials | [LimX Tron1 Learning](#p-limx-tron1-learning) · [study_tron1](#p-study_tron1) · [pointfootGym](#p-pointfootgym) |
-| Deploy a policy on a real TRON1 | [Tron_Deploy](#p-tron_deploy) · [TRON Camp Wheel-Foot Deployment](#p-tron-camp-wheel-foot-deployment) · [CRL Humanoid ROS](#p-crl-humanoid-ros) |
-| Add navigation to TRON1 | [GPS-TRON1](#p-gps-tron1) · [WF_TRON1A LiDAR Navigation](#p-wf_tron1a-lidar-navigation) · [NeuPAN on TRON1](#p-neupan-on-tron1) |
-| Run VLA or imitation learning on TRON2 | [FluxVLA on TRON2](#p-fluxvla-on-tron2) · [TRON2 LeRobot Datasets](#p-tron2-lerobot-datasets) · [TRONCamp 2026 Mani Solution](#p-troncamp-2026-mani-solution) |
-| Whole-body control and motion tracking on Oli | [SuperMimic for Oli](#p-supermimic-for-oli) · [Whole-Body Humanoid MPC](#p-whole-body-humanoid-mpc) · [CHIP for Oli](#p-chip-for-oli) |
-| Mobile manipulation with an arm | [UMI on Tron1](#p-umi-on-tron1) · [Holistic Loco-Manipulation](#p-holistic-loco-manipulation) · [Arm-TRON](#p-arm-tron) |
-| Robot models and simulators | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
-
 
 ## Before you start
 
