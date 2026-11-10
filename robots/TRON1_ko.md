@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **64**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **66**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 ## 목차
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 21
-- [인지 및 내비게이션](#인지-및-내비게이션) — 9
+- [인지 및 내비게이션](#인지-및-내비게이션) — 11
 - [매니퓰레이션](#매니퓰레이션) — 5
 - [임바디드 AI](#임바디드-ai) — 1
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 16
@@ -73,6 +73,8 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 |---|---|---|---|---|---|
 | <a id="p-tron1_navrl"></a>**tron1_navrl**: Isaac Lab 기반 강화학습 로컬 내비게이션 (한국어) | `TRON1`&nbsp;*sim* | [jongbob1918](https://github.com/jongbob1918) | 2026 | 코드 | [코드](https://github.com/jongbob1918/tron1_navrl) |
 | <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**: 평면 주행, 층 전환, 계단 주행을 하나의 미션으로 운영 (한국어) | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | 코드 | [코드](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-geometric-candidate-modes"></a>**Geometric Candidate Modes**: 멀티모달 시연으로 내비게이션 학습, 시뮬레이션에서 학습한 정책을 TRON1에 전이 | `TRON1` | 오하이오 주립대학교 | 2026 | 논문 | [논문](https://arxiv.org/abs/2610.20241) |
+| <a id="p-ros2_gnss_waypoint_nav"></a>**ros2_gnss_waypoint_nav**: RTK GNSS, MID360, Nav2 기반 지도 없는 실외 웨이포인트 내비게이션, TRON1 베이스 브리지 포함 | `TRON1` | [우한대학교 BRAIN Lab](https://github.com/Whu-BrainLab) | 2026 | 코드 | [코드](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
 | <a id="p-lightnav-0"></a>**LightNav-0**: VLM 기반 내비게이션 스택, MPC 추종과 웹 패널 포함, Go2와 TRON1 지원 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | 코드 | [논문](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[코드](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[모델](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: FAST-LIO 기반 실외 GPS 내비게이션 | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | 코드 | [코드](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**: LiDAR 오도메트리와 내비게이션 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | 코드 | [코드](https://github.com/F-Morry/limx_ws) |

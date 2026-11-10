@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **64** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **66** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 ## 目录
 
 - [运动控制](#运动控制) — 21
-- [感知与导航](#感知与导航) — 9
+- [感知与导航](#感知与导航) — 11
 - [操作](#操作) — 5
 - [具身智能](#具身智能) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 16
@@ -73,6 +73,8 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 |---|---|---|---|---|---|
 | <a id="p-tron1_navrl"></a>**tron1_navrl**：在 Isaac Lab 中做强化学习局部导航（韩语） | `TRON1`&nbsp;*仿真* | [jongbob1918](https://github.com/jongbob1918) | 2026 | 代码 | [代码](https://github.com/jongbob1918/tron1_navrl) |
 | <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**：把平地行驶、换层和上下楼梯合成一个任务（韩语） | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | 代码 | [代码](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-geometric-candidate-modes"></a>**Geometric Candidate Modes**：从多模态示范中学习导航，仿真训练的策略迁移到 TRON1 | `TRON1` | 俄亥俄州立大学 | 2026 | 论文 | [论文](https://arxiv.org/abs/2610.20241) |
+| <a id="p-ros2_gnss_waypoint_nav"></a>**ros2_gnss_waypoint_nav**：基于 RTK GNSS、MID360 与 Nav2 的免建图室外航点导航，含 TRON1 底盘桥接 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2026 | 代码 | [代码](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
 | <a id="p-lightnav-0"></a>**LightNav-0**：基于 VLM 的导航栈，含 MPC 路径跟踪与网页控制面板，适配 Go2 和 TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | 代码 | [论文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[代码](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[模型](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：融合 FAST-LIO 的户外 GPS 导航 | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | 代码 | [代码](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A 激光导航**：激光里程计与导航 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | 代码 | [代码](https://github.com/F-Morry/limx_ws) |

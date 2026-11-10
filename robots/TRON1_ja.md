@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **64** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **66** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 ## 目次
 
 - [移動と全身制御](#移動と全身制御) — 21
-- [知覚とナビゲーション](#知覚とナビゲーション) — 9
+- [知覚とナビゲーション](#知覚とナビゲーション) — 11
 - [マニピュレーション](#マニピュレーション) — 5
 - [エンボディドAI](#エンボディドai) — 1
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 16
@@ -73,6 +73,8 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 |---|---|---|---|---|---|
 | <a id="p-tron1_navrl"></a>**tron1_navrl**：Isaac Lab での強化学習ローカルナビゲーション（韓国語） | `TRON1`&nbsp;*sim* | [jongbob1918](https://github.com/jongbob1918) | 2026 | コード | [コード](https://github.com/jongbob1918/tron1_navrl) |
 | <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**：平地走行、フロア切り替え、階段走行を一つのミッションに統合（韓国語） | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | コード | [コード](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-geometric-candidate-modes"></a>**Geometric Candidate Modes**：マルチモーダルなデモからナビゲーションを学習、シミュレーションで学習したポリシーを TRON1 に転移 | `TRON1` | オハイオ州立大学 | 2026 | 論文 | [論文](https://arxiv.org/abs/2610.20241) |
+| <a id="p-ros2_gnss_waypoint_nav"></a>**ros2_gnss_waypoint_nav**：RTK GNSS、MID360、Nav2 による地図不要の屋外ウェイポイントナビゲーション、TRON1 ベースブリッジ付き | `TRON1` | [武漢大学 BRAIN Lab](https://github.com/Whu-BrainLab) | 2026 | コード | [コード](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
 | <a id="p-lightnav-0"></a>**LightNav-0**：VLM ベースのナビゲーションスタック、MPC 追従と Web パネル付き、Go2 と TRON1 に対応 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | コード | [論文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[コード](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[モデル](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：FAST-LIO を使った屋外 GPS ナビゲーション | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | コード | [コード](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**：LiDAR オドメトリとナビゲーション | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | コード | [コード](https://github.com/F-Morry/limx_ws) |

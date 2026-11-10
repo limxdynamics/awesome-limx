@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **64** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **66** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 21
-- [Perception & navigation](#perception--navigation) — 9
+- [Perception & navigation](#perception--navigation) — 11
 - [Manipulation](#manipulation) — 5
 - [Embodied AI](#embodied-ai) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 16
@@ -73,6 +73,8 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 |---|---|---|---|---|---|
 | <a id="p-tron1_navrl"></a>**tron1_navrl**: RL local navigation in Isaac Lab (Korean) | `TRON1`&nbsp;*sim* | [jongbob1918](https://github.com/jongbob1918) | 2026 | Code | [code](https://github.com/jongbob1918/tron1_navrl) |
 | <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**: flat driving, floor changes and stairs as one mission (Korean) | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | Code | [code](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-geometric-candidate-modes"></a>**Geometric Candidate Modes**: learning navigation from multimodal demonstrations, sim-trained policy transferred to TRON1 | `TRON1` | Ohio State University | 2026 | Paper | [paper](https://arxiv.org/abs/2610.20241) |
+| <a id="p-ros2_gnss_waypoint_nav"></a>**ros2_gnss_waypoint_nav**: map-free outdoor waypoint navigation with RTK GNSS, MID360 and Nav2, with a TRON1 base bridge | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2026 | Code | [code](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
 | <a id="p-lightnav-0"></a>**LightNav-0**: VLM navigation stack with MPC tracking and a web panel, adapters for Go2 and TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | Code | [paper](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[code](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[model](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: outdoor GPS navigation with FAST-LIO | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | Code | [code](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**: LiDAR odometry and navigation | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_ws) |
