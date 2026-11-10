@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **57** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **63** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,9 +15,10 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 ## 目次
 
 - [移動と全身制御](#移動と全身制御) — 21
-- [知覚とナビゲーション](#知覚とナビゲーション) — 5
+- [知覚とナビゲーション](#知覚とナビゲーション) — 9
 - [マニピュレーション](#マニピュレーション) — 5
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 15
+- [エンボディドAI](#エンボディドai) — 1
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 16
 - [教育と競技会](#教育と競技会) — 6
 - [産業応用](#産業応用) — 5
 
@@ -70,11 +71,15 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
+| <a id="p-tron1_navrl"></a>**tron1_navrl**：Isaac Lab での強化学習ローカルナビゲーション（韓国語） | `TRON1`&nbsp;*sim* | [jongbob1918](https://github.com/jongbob1918) | 2026 | コード | [コード](https://github.com/jongbob1918/tron1_navrl) |
+| <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**：平地走行、フロア切り替え、階段走行を一つのミッションに統合（韓国語） | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | コード | [コード](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-lightnav-0"></a>**LightNav-0**：VLM ベースのナビゲーションスタック、MPC 追従と Web パネル付き、Go2 と TRON1 に対応 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | コード | [論文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[コード](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[モデル](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：FAST-LIO を使った屋外 GPS ナビゲーション | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | コード | [コード](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**：LiDAR オドメトリとナビゲーション | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | コード | [コード](https://github.com/F-Morry/limx_ws) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：Jetson による自律ナビゲーション | `TRON1` | [enfff](https://github.com/enfff) | 2025 | コード | [コード](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**：車輪形態でのエンドツーエンド NeuPAN ナビゲーション | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | コード | [コード](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**：階段での 3D ナビゲーション | `TRON1` | [81578823](https://github.com/81578823) | 2025 | コード | [コード](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-eroam"></a>**EROAM**：イベントカメラによる回転オドメトリ、TRON1 で収録したシーケンスを含む | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | コード | [プロジェクト](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[コード](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[動画](https://youtu.be/8tF6b2VuvSM) |
 
 ## マニピュレーション
 
@@ -85,6 +90,12 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 | <a id="p-cooperative-transportation"></a>**Cooperative Transportation**：2 台のホイール脚ロボットで荷物を運搬 | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-arm-tron"></a>**Arm-TRON**：アーム付きの再構成可能な二足ロボット | `TRON1` | SUSTech, ZJU et al. | 2026 | 論文 | [論文](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**：実機 TRON1 で ARX5 アームによる UMI スキル | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | コード | [コード](https://github.com/Czy213hd/umi-on-tron-lab) |
+
+## エンボディドAI
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：Mac 上の MuJoCo で TRON1 を動かす自己改善型ローカル AI エージェント | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | コード | [コード](https://github.com/justinsuo/tron1-hermes-agent) |
 
 ## ツール、シミュレーション、SDK
 
@@ -111,6 +122,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
+| <a id="p-tron1_ctrl_ros2"></a>**tron1_ctrl_ros2**：TRON1 の WebSocket SDK をラップした ROS 2 制御パッケージ | `TRON1` | [Turing-zero](https://github.com/Turing-zero) | 2026 | [コード](https://github.com/Turing-zero/tron1_ctrl_ros2) |
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：実機 TRON1 用の Qt 操作パネル | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [コード](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度知覚ポリシーの sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [コード](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**：Windows からポリシーをデプロイ | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [コード](https://github.com/candi4/Tron_Deploy) |

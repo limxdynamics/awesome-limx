@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **57** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **63** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,9 +15,10 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 21
-- [Perception & navigation](#perception--navigation) — 5
+- [Perception & navigation](#perception--navigation) — 9
 - [Manipulation](#manipulation) — 5
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 15
+- [Embodied AI](#embodied-ai) — 1
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 16
 - [Education & competitions](#education--competitions) — 6
 - [Industry deployments](#industry-deployments) — 5
 
@@ -70,11 +71,15 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-tron1_navrl"></a>**tron1_navrl**: RL local navigation in Isaac Lab (Korean) | `TRON1`&nbsp;*sim* | [jongbob1918](https://github.com/jongbob1918) | 2026 | Code | [code](https://github.com/jongbob1918/tron1_navrl) |
+| <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**: flat driving, floor changes and stairs as one mission (Korean) | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | Code | [code](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-lightnav-0"></a>**LightNav-0**: VLM navigation stack with MPC tracking and a web panel, adapters for Go2 and TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | Code | [paper](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[code](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[model](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: outdoor GPS navigation with FAST-LIO | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | Code | [code](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**: LiDAR odometry and navigation | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_ws) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: autonomous navigation with a Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: end-to-end NeuPAN navigation on wheels | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: 3D navigation on stairs | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-eroam"></a>**EROAM**: event-camera rotational odometry, with sequences recorded on TRON1 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | Code | [project](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[code](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[video](https://youtu.be/8tF6b2VuvSM) |
 
 ## Manipulation
 
@@ -85,6 +90,12 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two wheel-legged robots carry a load | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-arm-tron"></a>**Arm-TRON**: reconfigurable biped with an arm | `TRON1` | SUSTech, ZJU et al. | 2026 | Paper | [paper](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: UMI skills with an ARX5 arm on a real TRON1 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | Code | [code](https://github.com/Czy213hd/umi-on-tron-lab) |
+
+## Embodied AI
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**: self-improving local AI agent driving TRON1 in MuJoCo on a Mac | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | Code | [code](https://github.com/justinsuo/tron1-hermes-agent) |
 
 ## Tools, simulation & SDK
 
@@ -111,6 +122,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
+| <a id="p-tron1_ctrl_ros2"></a>**tron1_ctrl_ros2**: ROS 2 control package wrapping the TRON1 WebSocket SDK | `TRON1` | [Turing-zero](https://github.com/Turing-zero) | 2026 | [code](https://github.com/Turing-zero/tron1_ctrl_ros2) |
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**: Qt control panel for a real TRON1 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [code](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: depth-perceptive policy sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [code](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: deploy policies from Windows | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [code](https://github.com/candi4/Tron_Deploy) |
