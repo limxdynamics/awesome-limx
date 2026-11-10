@@ -26,7 +26,7 @@ CI runs on every pull request. It fails only on things that break the page:
 Keep a table's rows on consecutive lines. A blank line looks like spacing, but
 GitHub reads it as the end of the table.
 
-The count lines, the By-robot summary and the Type column are checked too, but
+The count lines, the section counts in Contents, the By robot table and the Type column are checked too, but
 they only warn. The layout of this file will keep changing, and a check that
 cannot read the new shape steps aside instead of blocking a contribution.
 

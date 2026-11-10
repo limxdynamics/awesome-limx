@@ -316,7 +316,7 @@ def check_counts(text, path, row_counts, report):
         s = line.strip()
         if not (s.startswith("_") and s.endswith("_")):
             continue
-        m = re.match(r"^_(\d+)\s", s)
+        m = re.match(r"^_(\d+)(?!\d)", s)
         if not m:
             continue
         declared = int(m.group(1))
@@ -335,36 +335,73 @@ def check_counts(text, path, row_counts, report):
 
 
 def check_by_robot(text, path, report):
-    block = text
+    """The By-robot table should agree with the Robot column. Warn only.
 
-    indexed = {}
-    for line in block.splitlines():
-        m = ROBOT_ROW.match(line.strip())
+    Reads rows shaped like  | `TRON1` | **52** | 21 | 5 | ... |  wherever they are.
+    The per-section cells are compared only when there is one cell per entry
+    section, in page order; otherwise only the totals are checked. Any other
+    layout is skipped, so the page can change shape without failing CI.
+    """
+    row = re.compile(r"^\|\s*`([^`]+)`\s*\|\s*\*\*(\d+)\*\*\s*\|(.*)\|\s*$")
+    declared = {}
+    for line in text.splitlines():
+        m = row.match(line.strip())
         if m:
-            indexed[m.group(1).strip()] = len(LINK_REF.findall(m.group(2)))
-    if not indexed:
-        return
-
-    m = re.search(r"<summary>(.*?)</summary>", block, re.S)
-    if not m:
-        return
-    body = m.group(1).split("</b>")[-1]
-    declared = {model.strip(): int(n)
-                for model, n in re.findall(r"([A-Za-z0-9][A-Za-z0-9 ]*?)\s(\d+)", body)}
+            cells = [c.strip() for c in m.group(3).split("|")]
+            declared[m.group(1)] = (int(m.group(2)), cells)
     if not declared:
         return
 
-    for model, n in declared.items():
-        if model not in indexed:
-            report.warn("by-robot", "%s: summary counts %s but the index has no such row"
-                        % (path, model))
-        elif indexed[model] != n:
-            report.warn("by-robot", "%s: summary says %s %d, the index lists %d"
-                        % (path, model, n, indexed[model]))
-    for model in indexed:
-        if model not in declared:
-            report.warn("by-robot", "%s: the index lists %s but the summary does not count it"
-                        % (path, model))
+    sections, actual, per = [], {}, {}
+    for t in tables(text):
+        if not is_entry_table(t):
+            continue
+        if t["section"] not in sections:
+            sections.append(t["section"])
+        for cells in t["rows"]:
+            if len(cells) < 2:
+                continue
+            for robot in set(re.findall(r"`([^`]+)`", cells[1])):
+                actual[robot] = actual.get(robot, 0) + 1
+                per[(robot, t["section"])] = per.get((robot, t["section"]), 0) + 1
+
+    for robot, (total, cells) in declared.items():
+        if actual.get(robot, 0) != total:
+            report.warn("by-robot", "%s: By robot says %s %d, the tables hold %d"
+                        % (path, robot, total, actual.get(robot, 0)))
+        if len(cells) != len(sections):
+            continue
+        for sec, cell in zip(sections, cells):
+            want = per.get((robot, sec), 0)
+            got = int(cell) if cell.isdigit() else 0
+            if got != want:
+                report.warn("by-robot", "%s: By robot says %s has %d in %r, the table holds %d"
+                            % (path, robot, got, sec, want))
+    for robot, n in sorted(actual.items()):
+        if robot not in declared:
+            report.warn("by-robot", "%s: %d entries use %s, but By robot has no row for it"
+                        % (path, n, robot))
+
+    # The one-line summary, if there is one: "TRON1 52 · TRON2 17 · ..."
+    m = re.search(r"<summary>(.*?)</summary>", text, re.S)
+    if m:
+        for robot, n in re.findall(r"([A-Za-z][A-Za-z0-9]*) (\d+)", m.group(1).split("</b>")[-1]):
+            if robot in actual and actual[robot] != int(n):
+                report.warn("by-robot", "%s: summary says %s %s, the tables hold %d"
+                            % (path, robot, n, actual[robot]))
+
+
+def check_contents(text, path, row_counts, report):
+    """Section counts in the Contents list or nav line. Warn only.
+
+    Recognises "[Section](#anchor) — 32" and "[Section](#anchor) (32)";
+    names that are not entry sections are ignored.
+    """
+    for m in re.finditer(r"\[([^\]]+)\]\(#[^)]+\)\s*(?:[—–-]\s*(\d+)|[(（](\d+)[)）])", text):
+        name, n = m.group(1), int(m.group(2) or m.group(3))
+        if name in row_counts and row_counts[name] != n:
+            report.warn("counts", "%s: Contents says %r has %d, the tables hold %d"
+                        % (path, name, n, row_counts[name]))
 
 
 def check_links(paths, report):
@@ -416,6 +453,7 @@ def main():
         entries, row_counts = check_tables(text, lang, path, report)
         check_refs(text, path, entries, report)
         check_counts(text, path, row_counts, report)
+        check_contents(text, path, row_counts, report)
         check_by_robot(text, path, report)
         editions[lang] = entries
 
