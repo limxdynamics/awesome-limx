@@ -88,7 +88,7 @@ result belongs here as well: there is nothing to run.
 | Embodied AI | VLA models, LLM agents, imitation learning, foundation models |
 | Tools, simulation & SDK | simulators, robot models, deployment tooling, libraries on the LimX SDK |
 | Education & competitions | courses, teaching labs, student teams, competition results |
-| Industry deployments | company products and real-world deployments |
+| Industry deployments | company products, real-world deployments, commercial shows and events |
 
 If a project fits more than one section, choose the one that best describes its main result. Each project appears once.
 

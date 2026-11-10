@@ -14,21 +14,21 @@
 
 Public work that uses LimX hardware or software: papers, open-source code, datasets, tutorials, competition results and industry deployments. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
-**83** projects · **61** have open-source code
+**85** projects · **61** have open-source code
 
-[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Industry deployments](#industry-deployments) (2) · [Contributing](#contributing)
+[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Industry deployments](#industry-deployments) (4) · [Contributing](#contributing)
 
 _*sim* marks work shown only in simulation; everything else ran on a real robot._
 
 <details>
-<summary><b>By robot</b>: TRON1 52 · TRON2 17 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
+<summary><b>By robot</b>: TRON1 52 · TRON2 17 · Oli 17 · Luna 4 · P1 3 · W1 1</summary>
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
 | `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
 | `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **2** | 1 |  |  |  | 1 |  |  |
+| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
 | `P1` | **3** | 3 |  |  |  |  |  |  |
 | `W1` | **1** |  |  | 1 |  |  |  |  |
 
@@ -205,12 +205,14 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 
 ## Industry deployments
 
-_2 entries, both from public announcements_
+_4 entries: deployments, products and commercial shows_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | Paper | [news](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | Paper | [news](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
 
 ## Contributing
 

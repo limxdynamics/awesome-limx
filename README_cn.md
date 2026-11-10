@@ -14,21 +14,21 @@
 
 收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程、比赛成绩和行业应用。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
-**83** 个项目 · **61** 个有开源代码
+**85** 个项目 · **61** 个有开源代码
 
-[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [行业应用](#行业应用)（2） · [参与贡献](#参与贡献)
+[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [行业应用](#行业应用)（4） · [参与贡献](#参与贡献)
 
 _标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过。_
 
 <details>
-<summary><b>按机型查找</b>：TRON1 52 · TRON2 17 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
+<summary><b>按机型查找</b>：TRON1 52 · TRON2 17 · Oli 17 · Luna 4 · P1 3 · W1 1</summary>
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
 | `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
 | `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **2** | 1 |  |  |  | 1 |  |  |
+| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
 | `P1` | **3** | 3 |  |  |  |  |  |  |
 | `W1` | **1** |  |  | 1 |  |  |  |  |
 
@@ -204,12 +204,14 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 
 ## 行业应用
 
-_2 个条目，均来自公开发布_
+_4 个条目：落地项目、产品与商业演出_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 论文 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 论文 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 论文 | [报道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
 
 ## 参与贡献
 
