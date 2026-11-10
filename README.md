@@ -50,6 +50,18 @@ _*sim* marks work shown only in simulation; everything else ran on a real robot.
 | Robot models and simulators | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
 
 
+## Before you start
+
+Everything below builds on the same four steps. If you are new, walk them in
+order - these are our own repositories, not community projects.
+
+| Step | What you need | Where to get it |
+|---|---|---|
+| 1 · Models | URDF, MJCF and USD for your robot | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
+| 2 · Interface | Low-level motion SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
+| 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
+| 4 · Deploy | ONNX runtime, ROS 2, C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
+
 ## Locomotion & whole-body control
 
 _32 entries in 4 groups: 12 papers · 20 code_

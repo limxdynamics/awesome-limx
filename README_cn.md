@@ -50,6 +50,17 @@ _标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过
 | 机器人模型与仿真器 | [robot_descriptions.py](#p-robot_descriptionspy) · [MetalSim](#p-metalsim) · [robot-sim-docker](#p-robot-sim-docker) |
 
 
+## 动手之前
+
+下面的条目都建立在这四步之上。刚开始的话，先按顺序走一遍——这些是我们自己维护的仓，不是社区项目。
+
+| 步骤 | 需要什么 | 从哪拿 |
+|---|---|---|
+| 1 · 模型 | 机器人的 URDF、MJCF 和 USD | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
+| 2 · 接口 | 低层运动 SDK、ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
+| 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
+| 4 · 部署 | ONNX 推理、ROS 2、C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
+
 ## 运动控制
 
 _32 个条目，分 4 组：12 篇论文 · 20 个代码_
