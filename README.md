@@ -234,7 +234,7 @@ _14 entries in 5 groups_
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**SmartCube**: official partner in Korea, humanoids for factory and energy-site inspection with digital twins | — | SmartCube (Korea) | 2026 | Paper | [news](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
-| <a id="p-guangyang-partnership"></a>**Guangyang Shares**: strategic cooperation agreement | — | Guangyang Shares | 2026 | Paper | [news](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-guangyang-partnership"></a>**Guangyang Shares**: joint development of integrated joint modules: bearings, gears, reducers and drivers (supply chain) | — | Guangyang Shares | 2026 | Paper | [news](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[news](https://finance.eastmoney.com/a/202603093666208673.html) |
 | <a id="p-saic-beijing-joint-lab"></a>**SAIC Beijing Joint Lab**: embodied AI joint lab for automotive manufacturing, LimX as SAIC's first embodied AI partner | — | SAIC Beijing | 2025 | Paper | [news](https://www.pingwest.com/a/306356) |
 
 ### Regional partners & channels

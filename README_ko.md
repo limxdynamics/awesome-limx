@@ -233,7 +233,7 @@ _14개 (5개 그룹)_
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**스마트큐브**: 한국 공식 파트너, 공장·에너지 현장 점검에 휴머노이드와 디지털 트윈 활용 | — | 스마트큐브 | 2026 | 논문 | [보도](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
-| <a id="p-guangyang-partnership"></a>**광양구펀**: 전략적 협력 협약 체결 | — | 광양구펀 | 2026 | 논문 | [보도](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-guangyang-partnership"></a>**광양구펀**: 일체형 관절 모듈 공동 개발, 베어링·기어·감속기·드라이버 포함 (공급망 협력) | — | 광양구펀 | 2026 | 논문 | [보도](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[보도](https://finance.eastmoney.com/a/202603093666208673.html) |
 | <a id="p-saic-beijing-joint-lab"></a>**상하이자동차 베이징 공동 연구소**: 자동차 제조를 위한 임바디드 AI 공동 연구소, LimX는 SAIC의 첫 임바디드 AI 전략 파트너 | — | SAIC 베이징 | 2025 | 논문 | [보도](https://www.pingwest.com/a/306356) |
 
 ### 지역 파트너 및 판매 채널

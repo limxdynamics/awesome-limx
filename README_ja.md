@@ -233,7 +233,7 @@ _14 件（5 グループ）_
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**SmartCube**：韓国の公式パートナー、工場やエネルギー施設の点検にヒューマノイドとデジタルツインを活用 | — | SmartCube（韓国） | 2026 | 論文 | [報道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
-| <a id="p-guangyang-partnership"></a>**光洋股份**：戦略提携契約を締結 | — | 光洋股份 | 2026 | 論文 | [報道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-guangyang-partnership"></a>**光洋股份**：一体型関節モジュールを共同開発、軸受・歯車・減速機・ドライバーを含む（サプライチェーン連携） | — | 光洋股份 | 2026 | 論文 | [報道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[報道](https://finance.eastmoney.com/a/202603093666208673.html) |
 | <a id="p-saic-beijing-joint-lab"></a>**上汽北京 共同ラボ**：自動車製造向けのエンボディドAI共同ラボ、LimX は SAIC 初のエンボディドAI戦略パートナー | — | 上汽北京 | 2025 | 論文 | [報道](https://www.pingwest.com/a/306356) |
 
 ### 地域パートナーと販売チャネル

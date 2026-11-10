@@ -233,7 +233,7 @@ _14 个条目，分 5 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**SmartCube**：韩国官方合作伙伴，人形机器人用于工厂与能源现场巡检并接入数字孪生 | — | SmartCube（韩国） | 2026 | 论文 | [报道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
-| <a id="p-guangyang-partnership"></a>**光洋股份**：签署战略合作协议 | — | 光洋股份 | 2026 | 论文 | [报道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html) |
+| <a id="p-guangyang-partnership"></a>**光洋股份**：联合开发一体化关节模组，涵盖轴承、齿轮、减速机和驱动器（供应链合作） | — | 光洋股份 | 2026 | 论文 | [报道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[报道](https://finance.eastmoney.com/a/202603093666208673.html) |
 | <a id="p-saic-beijing-joint-lab"></a>**上汽北京联合实验室**：面向汽车制造的具身智能联合实验室，逐际动力为上汽首家具身智能战略合作伙伴 | — | 上汽北京 | 2025 | 论文 | [报道](https://www.pingwest.com/a/306356) |
 
 ### 区域伙伴与渠道
