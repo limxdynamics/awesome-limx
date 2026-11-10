@@ -218,7 +218,7 @@ _14 个条目，分 5 组_
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 论文 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：逐际动力人形机器人搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布 | — | 东土科技 | 2026 | 论文 | [报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：Oli 搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布 | `Oli` | 东土科技 | 2026 | 论文 | [报道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
 
 ### 商业演出与活动
 
@@ -243,7 +243,7 @@ _14 个条目，分 5 组_
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 论文 | [主页](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 论文 | [主页](https://tron.tokyo/en/service/limx-dynamics/) |
 | <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 论文 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**：与香港机器人协作平台建立合作 | — | R2C2 Limited（香港） | 2024 | 论文 | [报道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+| <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 论文 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 ### 奖项与认可
 
@@ -261,10 +261,10 @@ _14 个条目，分 5 组_
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
 | [`TRON2`](robots/TRON2_cn.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli_cn.md) | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| [`Oli`](robots/Oli_cn.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
-| [`P1`](robots/P1_cn.md) | **3** | 3 |  |  |  |  |  |  |
-| [`W1`](robots/W1_cn.md) | **1** |  |  | 1 |  |  |  |  |
+| [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
+| [`W1`](robots/W1_cn.md) | **2** |  |  | 1 |  |  |  | 1 |
 
 ## 参与贡献
 

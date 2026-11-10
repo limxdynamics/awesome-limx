@@ -6,13 +6,14 @@
 
 # P1 · Awesome LimX
 
-> 基于 P1 的 **3** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 P1 的 **4** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 [完整列表](../README_cn.md) · 其他机型: [TRON1](TRON1_cn.md) · [TRON2](TRON2_cn.md) · [Oli](Oli_cn.md) · [Luna](Luna_cn.md) · [W1](W1_cn.md)
 
 ## 目录
 
 - [运动控制](#运动控制) — 3
+- [行业应用](#行业应用) — 1
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -35,5 +36,13 @@
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
+
+## 行业应用
+
+### 区域伙伴与渠道
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 论文 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 用 P1 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

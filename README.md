@@ -219,7 +219,7 @@ _14 entries in 5 groups_
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: LimX humanoid running Dongtu's Intewell OS and AUTBUS bus, released jointly | — | Kyland (Dongtu Technology) | 2026 | Paper | [news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli running Dongtu's Intewell OS and AUTBUS bus, released jointly | `Oli` | Kyland (Dongtu Technology) | 2026 | Paper | [news](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
 
 ### Commercial shows & events
 
@@ -244,7 +244,7 @@ _14 entries in 5 groups_
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | Paper | [project](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: humanoid system integration and Omniverse simulation in Japan, with LimX robots | — | TRON K.K. (Japan) | 2026 | Paper | [project](https://tron.tokyo/en/service/limx-dynamics/) |
 | <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | Paper | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**: partnership with a Hong Kong robot collaboration platform | — | R2C2 Limited (Hong Kong) | 2024 | Paper | [news](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+| <a id="p-r2c2-partnership"></a>**R2C2**: official developer and distributor in Hong Kong, RL robots for utility and inspection work | `W1` `P1` | R2C2 Limited (Hong Kong) | 2024 | Paper | [news](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 ### Awards & recognition
 
@@ -262,10 +262,10 @@ Entries per robot and section:
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
 | [`TRON2`](robots/TRON2.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli.md) | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| [`Oli`](robots/Oli.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
 | [`Luna`](robots/Luna.md) | **5** | 1 |  |  |  | 1 |  | 3 |
-| [`P1`](robots/P1.md) | **3** | 3 |  |  |  |  |  |  |
-| [`W1`](robots/W1.md) | **1** |  |  | 1 |  |  |  |  |
+| [`P1`](robots/P1.md) | **4** | 3 |  |  |  |  |  | 1 |
+| [`W1`](robots/W1.md) | **2** |  |  | 1 |  |  |  | 1 |
 
 ## Contributing
 

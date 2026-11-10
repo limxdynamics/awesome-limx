@@ -218,7 +218,7 @@ _14개 (5개 그룹)_
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 논문 | [보도](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 논문 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 LimX 휴머노이드, 공동 발표 | — | 둥투커지(Kyland) | 2026 | 논문 | [보도](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 Oli, 공동 발표 | `Oli` | 둥투커지(Kyland) | 2026 | 논문 | [보도](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
 
 ### 상업 공연 및 이벤트
 
@@ -243,7 +243,7 @@ _14개 (5개 그룹)_
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 논문 | [프로젝트](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: 일본에서 휴머노이드 시스템 통합과 Omniverse 시뮬레이션 제공, LimX 로봇 취급 | — | TRON K.K.(일본) | 2026 | 논문 | [프로젝트](https://tron.tokyo/en/service/limx-dynamics/) |
 | <a id="p-synerex-korea"></a>**씨너렉스**: 한국 공식 파트너, 드론쇼코리아 2025에서 TRON1 국내 첫 공개 | `TRON1` | 씨너렉스 | 2025 | 논문 | [보도](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**: 홍콩 로봇 협업 플랫폼과 제휴 | — | R2C2 Limited(홍콩) | 2024 | 논문 | [보도](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+| <a id="p-r2c2-partnership"></a>**R2C2**: 홍콩 공식 개발사 겸 유통사, 강화학습 로봇을 유틸리티·점검 업무에 활용 | `W1` `P1` | R2C2 Limited(홍콩) | 2024 | 논문 | [보도](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 ### 수상 및 인정
 
@@ -261,10 +261,10 @@ _14개 (5개 그룹)_
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ko.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
 | [`TRON2`](robots/TRON2_ko.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli_ko.md) | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| [`Oli`](robots/Oli_ko.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
 | [`Luna`](robots/Luna_ko.md) | **5** | 1 |  |  |  | 1 |  | 3 |
-| [`P1`](robots/P1_ko.md) | **3** | 3 |  |  |  |  |  |  |
-| [`W1`](robots/W1_ko.md) | **1** |  |  | 1 |  |  |  |  |
+| [`P1`](robots/P1_ko.md) | **4** | 3 |  |  |  |  |  | 1 |
+| [`W1`](robots/W1_ko.md) | **2** |  |  | 1 |  |  |  | 1 |
 
 ## 기여하기
 

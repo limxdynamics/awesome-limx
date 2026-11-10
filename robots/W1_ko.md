@@ -6,13 +6,14 @@
 
 # W1 · Awesome LimX
 
-> W1로 만든 **1**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> W1로 만든 **2**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 [전체 목록](../README_ko.md) · 다른 기종: [TRON1](TRON1_ko.md) · [TRON2](TRON2_ko.md) · [Oli](Oli_ko.md) · [Luna](Luna_ko.md) · [P1](P1_ko.md)
 
 ## 목차
 
 - [매니퓰레이션](#매니퓰레이션) — 1
+- [산업 적용](#산업-적용) — 1
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -21,5 +22,13 @@
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: 로봇팔을 단 W1, 자세 추종 | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2412.03012) |
+
+## 산업 적용
+
+### 지역 파트너 및 판매 채널
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-r2c2-partnership"></a>**R2C2**: 홍콩 공식 개발사 겸 유통사, 강화학습 로봇을 유틸리티·점검 업무에 활용 | `W1` `P1` | R2C2 Limited(홍콩) | 2024 | 논문 | [보도](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 W1로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
