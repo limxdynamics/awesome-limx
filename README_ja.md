@@ -65,7 +65,7 @@ _32 件（4 グループ）：論文 12 · コード 20_
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形適応ロコモーション | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 論文 | [論文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：車輪でのブラインド階段昇降 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 論文 | [プロジェクト](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**：歩容適応型の知覚歩行 | `Oli` | USTC, LimX et al. | 2025 | 論文 | [プロジェクト](https://ga-phl.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2512.07464) |
-| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**：安定した知覚二足歩行 | `TRON1` | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2509.09106) |
+| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**：安定した知覚二足歩行 | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2509.09106) |
 | <a id="p-vmts"></a>**VMTS**：視覚支援による多地形歩行 | `P1` | Southeast University | 2025 | コード | [論文](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[コード](https://github.com/chenfu-user/VMTS) |
 
 ### 強化学習の訓練と実機転移
@@ -82,11 +82,11 @@ _32 件（4 グループ）：論文 12 · コード 20_
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 Deploy**：sim-to-sim と実機へのデプロイ | `TRON1` | [Chanjun Lee (UOS Zetin)](https://github.com/chanjun-nyam) | 2026 | コード | [コード](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**：HIM と PIM によるロバストなロコモーション | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | コード | [コード](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 と TRON1A 向け Isaac Lab ロコモーション | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | コード | [コード](https://github.com/guohua-zhang/LeggedRobotsLab) |
-| <a id="p-multi-loco"></a>**Multi-Loco**：ポイントフットとホイールフットを一つの拡散ポリシーで | `TRON1` | SUSTech, LimX et al. | 2025 | コード | [プロジェクト](https://multi-loco.github.io)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[コード](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
+| <a id="p-multi-loco"></a>**Multi-Loco**：ポイントフットとホイールフットを一つの拡散ポリシーで | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | コード | [プロジェクト](https://multi-loco.github.io)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[コード](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-pvp"></a>**PvP**：データ効率の高いヒューマノイド RL | `Oli` | PolyU, USTC et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**：ホイールフットポリシーの実機デプロイ | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | コード | [コード](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
 | <a id="p-anybipe"></a>**AnyBipe**：LLM が導く二足ロボットの学習とデプロイ | `TRON1` | [SJTU](https://github.com/sjtu-mvasl-robotics) | 2024 | コード | [コード](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
-| <a id="p-cts"></a>**CTS**：同時進行型の教師・生徒 RL | `P1` | SUSTech, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**：同時進行型の教師・生徒 RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2405.10830) |
 
 ### モデルベース制御
 
@@ -133,7 +133,7 @@ _9 件：論文 4 · コード 5_
 | <a id="p-arm-tron"></a>**Arm-TRON**：アーム付きの再構成可能な二足ロボット | `TRON1` | SUSTech, ZJU et al. | 2026 | 論文 | [論文](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**：実機 TRON1 で ARX5 アームによる UMI スキル | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | コード | [コード](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**：Meta Quest による腕と頭の遠隔操作 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | コード | [コード](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
-| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**：アーム付き W1、姿勢追従 | `W1` | SUSTech, ZJU-UIUC et al. | 2024 | 論文 | [論文](https://arxiv.org/abs/2412.03012) |
+| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**：アーム付き W1、姿勢追従 | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2412.03012) |
 
 ## エンボディドAI
 

@@ -65,7 +65,7 @@ _32개 (4개 그룹): 논문 12 · 코드 20_
 | <a id="p-barlowwalk"></a>**BarlowWalk**: 지형 적응 보행 | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 논문 | [논문](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: 바퀴로 하는 블라인드 계단 오르기 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 논문 | [프로젝트](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**: 보행 패턴 적응형 인지 보행 | `Oli` | USTC, LimX et al. | 2025 | 논문 | [프로젝트](https://ga-phl.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2512.07464) |
-| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: 안정적인 인지 기반 이족 보행 | `TRON1` | SUSTech, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2509.09106) |
+| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: 안정적인 인지 기반 이족 보행 | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2509.09106) |
 | <a id="p-vmts"></a>**VMTS**: 비전 보조 다지형 보행 | `P1` | Southeast University | 2025 | 코드 | [논문](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[코드](https://github.com/chenfu-user/VMTS) |
 
 ### 강화학습 훈련 및 실기 전이
@@ -82,11 +82,11 @@ _32개 (4개 그룹): 논문 12 · 코드 20_
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 Deploy**: sim-to-sim 및 실기 배포 | `TRON1` | [Chanjun Lee (UOS Zetin)](https://github.com/chanjun-nyam) | 2026 | 코드 | [코드](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: HIM과 PIM을 이용한 강건한 보행 | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | 코드 | [코드](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Go1과 TRON1A용 Isaac Lab 보행 | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 코드 | [코드](https://github.com/guohua-zhang/LeggedRobotsLab) |
-| <a id="p-multi-loco"></a>**Multi-Loco**: 포인트풋과 휠풋을 하나의 확산 정책으로 | `TRON1` | SUSTech, LimX et al. | 2025 | 코드 | [프로젝트](https://multi-loco.github.io)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[코드](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
+| <a id="p-multi-loco"></a>**Multi-Loco**: 포인트풋과 휠풋을 하나의 확산 정책으로 | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | 코드 | [프로젝트](https://multi-loco.github.io)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[코드](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-pvp"></a>**PvP**: 데이터 효율적인 휴머노이드 RL | `Oli` | PolyU, USTC et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**: 휠풋 정책 실기 배포 | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | 코드 | [코드](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
 | <a id="p-anybipe"></a>**AnyBipe**: LLM 기반 이족 로봇 학습 및 배포 | `TRON1` | [SJTU](https://github.com/sjtu-mvasl-robotics) | 2024 | 코드 | [코드](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
-| <a id="p-cts"></a>**CTS**: 동시 교사-학생 RL | `P1` | SUSTech, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**: 동시 교사-학생 RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2405.10830) |
 
 ### 모델 기반 제어
 
@@ -133,7 +133,7 @@ _9개: 논문 4 · 코드 5_
 | <a id="p-arm-tron"></a>**Arm-TRON**: 로봇팔을 단 재구성형 이족 로봇 | `TRON1` | SUSTech, ZJU et al. | 2026 | 논문 | [논문](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: 실기 TRON1에서 ARX5 팔로 UMI 스킬 수행 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | 코드 | [코드](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**: Meta Quest로 팔과 머리 원격 조종 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | 코드 | [코드](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
-| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: 로봇팔을 단 W1, 자세 추종 | `W1` | SUSTech, ZJU-UIUC et al. | 2024 | 논문 | [논문](https://arxiv.org/abs/2412.03012) |
+| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: 로봇팔을 단 W1, 자세 추종 | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2412.03012) |
 
 ## 임바디드 AI
 

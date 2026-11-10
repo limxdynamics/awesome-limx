@@ -65,7 +65,7 @@ _32 个条目，分 4 组：12 篇论文 · 20 个代码_
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：轮足盲爬台阶 | `TRON1` | 上海大学、酷哇机器人 | 2025 | 论文 | [主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**：步态自适应感知行走 | `Oli` | 中国科大、逐际动力等 | 2025 | 论文 | [主页](https://ga-phl.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2512.07464) |
-| <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：稳定的双足感知行走 | `TRON1` | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.09106) |
+| <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：稳定的双足感知行走 | `TRON1` | 南科大 CLEAR 实验室、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.09106) |
 | <a id="p-vmts"></a>**VMTS**：视觉辅助多地形行走 | `P1` | 东南大学 | 2025 | 代码 | [论文](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[代码](https://github.com/chenfu-user/VMTS) |
 
 ### 强化学习训练与部署
@@ -82,11 +82,11 @@ _32 个条目，分 4 组：12 篇论文 · 20 个代码_
 | <a id="p-biped-rl-with-pathfinding"></a>**目标导向双足训练**：带路径规划的目标导向训练 | `TRON1`&nbsp;*仿真* | [shandilya1998](https://github.com/shandilya1998) | 2026 | 代码 | [代码](https://github.com/singhaman1750/biped-rl-isaaclab-iisc) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**：基于 HIM、PIM 的鲁棒运动控制 | `TRON1`&nbsp;*仿真* | [DongyangLin](https://github.com/DongyangLin) | 2025 | 代码 | [代码](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 与 TRON1A 的 Isaac Lab 运动控制 | `TRON1`&nbsp;*仿真* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 代码 | [代码](https://github.com/guohua-zhang/LeggedRobotsLab) |
-| <a id="p-multi-loco"></a>**Multi-Loco**：点足与轮足统一的扩散策略 | `TRON1` | 南方科大、逐际动力等 | 2025 | 代码 | [主页](https://multi-loco.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[代码](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
+| <a id="p-multi-loco"></a>**Multi-Loco**：点足与轮足统一的扩散策略 | `TRON1` | 南科大 CLEAR 实验室、逐际动力等 | 2025 | 代码 | [主页](https://multi-loco.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[代码](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-pvp"></a>**PvP**：高效的人形强化学习 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp 轮足部署**：轮足策略实机部署 | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | 代码 | [代码](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
 | <a id="p-anybipe"></a>**AnyBipe**：大模型引导的双足训练与部署 | `TRON1` | [上海交通大学](https://github.com/sjtu-mvasl-robotics) | 2024 | 代码 | [代码](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
-| <a id="p-cts"></a>**CTS**：并行师生强化学习 | `P1` | 南方科大、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**：并行师生强化学习 | `P1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
 
 ### 基于模型的控制
 
@@ -133,7 +133,7 @@ _9 个条目：4 篇论文 · 5 个代码_
 | <a id="p-arm-tron"></a>**Arm-TRON**：可变足型双足加机械臂 | `TRON1` | 南方科大、浙江大学等 | 2026 | 论文 | [论文](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**：真机 TRON1 加 ARX5 机械臂部署 UMI 技能 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | 代码 | [代码](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Oli 的 Quest VR 遥操作**：Meta Quest 双臂与头部遥操作 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | 代码 | [代码](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
-| <a id="p-wheeled-quadrupedal-manipulator"></a>**轮足四足移动操作**：W1 加机械臂位姿跟踪 | `W1` | 南方科大、浙大-UIUC等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2412.03012) |
+| <a id="p-wheeled-quadrupedal-manipulator"></a>**轮足四足移动操作**：W1 加机械臂位姿跟踪 | `W1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2412.03012) |
 
 ## 具身智能
 

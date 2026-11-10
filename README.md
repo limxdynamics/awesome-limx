@@ -66,7 +66,7 @@ _32 entries in 4 groups: 12 papers · 20 code_
 | <a id="p-barlowwalk"></a>**BarlowWalk**: terrain-adaptive locomotion | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | Paper | [paper](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: blind stair climbing on wheels | `TRON1` | Shanghai University, COWAROBOT | 2025 | Paper | [project](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**: gait-adaptive perceptive walking | `Oli` | USTC, LimX et al. | 2025 | Paper | [project](https://ga-phl.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2512.07464) |
-| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: stable perceptive biped walking | `TRON1` | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2509.09106) |
+| <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: stable perceptive biped walking | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2509.09106) |
 | <a id="p-vmts"></a>**VMTS**: vision-assisted multi-terrain walking | `P1` | Southeast University | 2025 | Code | [paper](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[code](https://github.com/chenfu-user/VMTS) |
 
 ### RL training & sim-to-real
@@ -83,11 +83,11 @@ _32 entries in 4 groups: 12 papers · 20 code_
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 Deploy**: sim-to-sim and sim-to-real deployment | `TRON1` | [Chanjun Lee (UOS Zetin)](https://github.com/chanjun-nyam) | 2026 | Code | [code](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: robust locomotion with HIM and PIM | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | Code | [code](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Isaac Lab locomotion for Go1 and TRON1A | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | Code | [code](https://github.com/guohua-zhang/LeggedRobotsLab) |
-| <a id="p-multi-loco"></a>**Multi-Loco**: one diffusion policy for point-foot and wheel-foot | `TRON1` | SUSTech, LimX et al. | 2025 | Code | [project](https://multi-loco.github.io)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[code](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
+| <a id="p-multi-loco"></a>**Multi-Loco**: one diffusion policy for point-foot and wheel-foot | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | Code | [project](https://multi-loco.github.io)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[code](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-pvp"></a>**PvP**: data-efficient humanoid RL | `Oli` | PolyU, USTC et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**: wheel-foot policy deployed on hardware | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | Code | [code](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
 | <a id="p-anybipe"></a>**AnyBipe**: LLM-guided training and deployment for bipeds | `TRON1` | [SJTU](https://github.com/sjtu-mvasl-robotics) | 2024 | Code | [code](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
-| <a id="p-cts"></a>**CTS**: concurrent teacher-student RL | `P1` | SUSTech, ZJU-UIUC et al. | 2024 | Paper | [project](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**: concurrent teacher-student RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | Paper | [project](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2405.10830) |
 
 ### Model-based control
 
@@ -134,7 +134,7 @@ _9 entries: 4 papers · 5 code_
 | <a id="p-arm-tron"></a>**Arm-TRON**: reconfigurable biped with an arm | `TRON1` | SUSTech, ZJU et al. | 2026 | Paper | [paper](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: UMI skills with an ARX5 arm on a real TRON1 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | Code | [code](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**: Meta Quest arm and head teleoperation | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | Code | [code](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
-| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: W1 with an arm, pose tracking | `W1` | SUSTech, ZJU-UIUC et al. | 2024 | Paper | [paper](https://arxiv.org/abs/2412.03012) |
+| <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: W1 with an arm, pose tracking | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | Paper | [project](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2412.03012) |
 
 ## Embodied AI
 
