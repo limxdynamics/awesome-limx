@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2 を使った **20** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON2 を使った **21** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 - [エンボディドAI](#エンボディドai) — 5
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 5
 - [教育と競技会](#教育と競技会) — 3
-- [産業応用](#産業応用) — 5
+- [産業応用](#産業応用) — 6
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -83,6 +83,7 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：TRON2 向けの Pi0.5 学習設定とリアルタイム推論 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | コード | [コード](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：SFYG アームの手首カメラマウントに合わせて調整した TRON2 モデル | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | コード | [コード](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 用の PICO 4 双腕遠隔操作プラグイン、TRON2 に対応 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | コード | [コード](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 
 ### 地域パートナーと販売チャネル

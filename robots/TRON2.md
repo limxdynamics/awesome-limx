@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **20** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **21** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 5
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 3
-- [Industry deployments](#industry-deployments) — 5
+- [Industry deployments](#industry-deployments) — 6
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -83,6 +83,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: Pi0.5 training configs and real-time inference for TRON2 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**: TRON2 models adjusted for a wrist camera mount on the SFYG arm | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | Code | [code](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: PICO 4 bimanual teleoperation plugin for LeRobot, with TRON2 support | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 
 ### Regional partners & channels

@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **20** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **21** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 5
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 5
 - [教学与竞赛](#教学与竞赛) — 3
-- [行业应用](#行业应用) — 5
+- [行业应用](#行业应用) — 6
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -83,6 +83,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：面向 TRON2 的 Pi0.5 训练配置与实时推理 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：为 SFYG 机械臂腕部相机支架调整过的 TRON2 模型 | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | 代码 | [代码](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 的 PICO 4 双臂遥操作插件，支持 TRON2 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 
 ### 区域伙伴与渠道
