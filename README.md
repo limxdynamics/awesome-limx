@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **108** projects built on LimX robots and the LimX SDK, **74** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **109** projects built on LimX robots and the LimX SDK, **75** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 ## Contents
 
@@ -28,7 +28,7 @@
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
-- [Education & competitions](#education--competitions) — 9
+- [Education & competitions](#education--competitions) — 10
 - [Industry deployments](#industry-deployments) — 21
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
@@ -202,7 +202,7 @@ _20 tools in 4 groups_
 
 ## Education & competitions
 
-_9 entries: 1 paper · 7 code · 1 tutorial_
+_10 entries: 1 paper · 8 code · 1 tutorial_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -212,6 +212,7 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 | <a id="p-study_tron1"></a>**study_tron1**: setup notes and learning log | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | Code | [code](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (Korean) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | Code | [code](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | Tutorial | [tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
+| <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: open course from algorithms to real robots, with outdoor GNSS and Nav2 navigation on point-foot and wheel-foot TRON1 (Chinese) | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | Code | [code](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[tutorial](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | Code | [code](https://github.com/SuDaxia-kai/pointfootGym) |
@@ -279,7 +280,7 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **63** | 21 | 9 | 5 | 1 | 16 | 6 | 5 |
+| [`TRON1`](robots/TRON1.md) | **64** | 21 | 9 | 5 | 1 | 16 | 7 | 5 |
 | [`TRON2`](robots/TRON2.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna.md) | **5** | 1 |  |  |  | 1 |  | 3 |

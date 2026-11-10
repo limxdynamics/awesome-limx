@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK を使った **108** プロジェクトを収録しています。うち **74** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK を使った **109** プロジェクトを収録しています。うち **75** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 ## 目次
 
@@ -28,7 +28,7 @@
   - [シミュレーションと環境](#シミュレーションと環境)
   - [デプロイと制御](#デプロイと制御)
   - [モデルとモーションデータ](#モデルとモーションデータ)
-- [教育と競技会](#教育と競技会) — 9
+- [教育と競技会](#教育と競技会) — 10
 - [産業応用](#産業応用) — 21
   - [導入事例と製品](#導入事例と製品)
   - [企業のオープンソース](#企業のオープンソース)
@@ -201,7 +201,7 @@ _ツール 20 件（4 グループ）_
 
 ## 教育と競技会
 
-_9 件：論文 1 · コード 7 · チュートリアル 1_
+_10 件：論文 1 · コード 8 · チュートリアル 1_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
@@ -211,6 +211,7 @@ _9 件：論文 1 · コード 7 · チュートリアル 1_
 | <a id="p-study_tron1"></a>**study_tron1**：環境構築メモと学習ログ | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | コード | [コード](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**：TRON1 と OpenArm、LLM によるミッション（韓国語） | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | コード | [コード](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：インタラクティブな Isaac Lab ガイド | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | チュートリアル | [チュートリアル](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
+| <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**：アルゴリズムから実機までの公開講座、ポイントフットとホイールフットの TRON1 で屋外 GNSS と Nav2 ナビゲーション（中国語） | `TRON1` | [武漢大学 BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | コード | [コード](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[チュートリアル](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**広州タワー ロボット登塔チャレンジ**：優勝と最優秀精密制御賞、FastStair を使用 | `Oli` | LimX | 2025 | 論文 | [論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[結果](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**：SUSTech ACR2025 の授業プロジェクト | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | コード | [コード](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym の授業用テンプレート | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | コード | [コード](https://github.com/SuDaxia-kai/pointfootGym) |
@@ -278,7 +279,7 @@ _21 件（6 グループ）_
 
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ja.md) | **63** | 21 | 9 | 5 | 1 | 16 | 6 | 5 |
+| [`TRON1`](robots/TRON1_ja.md) | **64** | 21 | 9 | 5 | 1 | 16 | 7 | 5 |
 | [`TRON2`](robots/TRON2_ja.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli_ja.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_ja.md) | **5** | 1 |  |  |  | 1 |  | 3 |

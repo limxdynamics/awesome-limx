@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **108** 个项目，其中 **74** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **109** 个项目，其中 **75** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 ## 目录
 
@@ -28,7 +28,7 @@
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
-- [教学与竞赛](#教学与竞赛) — 9
+- [教学与竞赛](#教学与竞赛) — 10
 - [行业应用](#行业应用) — 21
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
@@ -201,7 +201,7 @@ _20 个工具，分 4 组_
 
 ## 教学与竞赛
 
-_9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
+_10 个条目：1 篇论文 · 8 个代码 · 1 个教程_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
@@ -211,6 +211,7 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 | <a id="p-study_tron1"></a>**study_tron1**：环境搭建与学习笔记 | `TRON1`&nbsp;*仿真* | [beamkeerati](https://github.com/beamkeerati) | 2026 | 代码 | [代码](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（韩语） | `TRON1`&nbsp;*仿真* | [aha645](https://github.com/aha645) | 2026 | 代码 | [代码](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1`&nbsp;*仿真* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 教程 | [教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
+| <a id="p-hands-on-embodied-ai"></a>**动手做具身智能**：从算法到实机部署的公开教程，含点足和轮足 TRON1 的室外 GNSS 与 Nav2 导航避障 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2025 | 代码 | [代码](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[教程](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1`&nbsp;*仿真* | [81578823（南方科大）](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym 课程模板 | `TRON1`&nbsp;*仿真* | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) | 2024 | 代码 | [代码](https://github.com/SuDaxia-kai/pointfootGym) |
@@ -278,7 +279,7 @@ _21 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **63** | 21 | 9 | 5 | 1 | 16 | 6 | 5 |
+| [`TRON1`](robots/TRON1_cn.md) | **64** | 21 | 9 | 5 | 1 | 16 | 7 | 5 |
 | [`TRON2`](robots/TRON2_cn.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli_cn.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
