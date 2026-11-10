@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **102** 个项目，其中 **68** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **108** 个项目，其中 **74** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 ## 目录
 
@@ -20,10 +20,10 @@
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
-- [感知与导航](#感知与导航) — 5
+- [感知与导航](#感知与导航) — 9
 - [操作](#操作) — 9
-- [具身智能](#具身智能) — 7
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 19
+- [具身智能](#具身智能) — 8
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 20
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
@@ -110,15 +110,19 @@ _32 个条目，分 4 组：12 篇论文 · 20 个代码_
 
 ## 感知与导航
 
-_5 个条目，全部有代码_
+_9 个条目，全部有代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-tron1_navrl"></a>**tron1_navrl**：在 Isaac Lab 中做强化学习局部导航（韩语） | `TRON1`&nbsp;*仿真* | [jongbob1918](https://github.com/jongbob1918) | 2026 | 代码 | [代码](https://github.com/jongbob1918/tron1_navrl) |
+| <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**：把平地行驶、换层和上下楼梯合成一个任务（韩语） | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | 代码 | [代码](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
+| <a id="p-lightnav-0"></a>**LightNav-0**：基于 VLM 的导航栈，含 MPC 路径跟踪与网页控制面板，适配 Go2 和 TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | 代码 | [论文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[代码](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[模型](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：融合 FAST-LIO 的户外 GPS 导航 | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | 代码 | [代码](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A 激光导航**：激光里程计与导航 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | 代码 | [代码](https://github.com/F-Morry/limx_ws) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：基于 Jetson 的自主导航 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | 代码 | [代码](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**TRON1 上的 NeuPAN**：轮足上的 NeuPAN 端到端导航 | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | 代码 | [代码](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**PCT 规划器 3D 导航**：楼梯 3D 导航 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-eroam"></a>**EROAM**：事件相机旋转里程计，数据集含在 TRON1 上采集的序列 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | 代码 | [主页](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[代码](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[视频](https://youtu.be/8tF6b2VuvSM) |
 
 ## 操作
 
@@ -138,10 +142,11 @@ _9 个条目：4 篇论文 · 5 个代码_
 
 ## 具身智能
 
-_7 个条目：2 篇论文 · 5 个代码_
+_8 个条目：2 篇论文 · 6 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：在 Mac 上用 MuJoCo 驱动 TRON1 的自改进本地 AI 智能体 | `TRON1`&nbsp;*仿真* | [justinsuo](https://github.com/justinsuo) | 2026 | 代码 | [代码](https://github.com/justinsuo/tron1-hermes-agent) |
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的 TRON2 上训练部署 FluxVLA | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：语音对话与动作控制 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
@@ -152,7 +157,7 @@ _7 个条目：2 篇论文 · 5 个代码_
 
 ## 工具、仿真与 SDK
 
-_19 个工具，分 4 组_
+_20 个工具，分 4 组_
 
 ### 训练框架
 
@@ -178,6 +183,7 @@ _19 个工具，分 4 组_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-tron1_ctrl_ros2"></a>**tron1_ctrl_ros2**：封装 TRON1 WebSocket SDK 的 ROS 2 控制包 | `TRON1` | [Turing-zero](https://github.com/Turing-zero) | 2026 | [代码](https://github.com/Turing-zero/tron1_ctrl_ros2) |
 | <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：实机 TRON1 的 Qt 控制面板 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [代码](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
@@ -272,7 +278,7 @@ _21 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **57** | 21 | 5 | 5 |  | 15 | 6 | 5 |
+| [`TRON1`](robots/TRON1_cn.md) | **63** | 21 | 9 | 5 | 1 | 16 | 6 | 5 |
 | [`TRON2`](robots/TRON2_cn.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli_cn.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
