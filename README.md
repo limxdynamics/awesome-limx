@@ -35,7 +35,7 @@
   - [Strategic partnerships](#strategic-partnerships)
   - [Regional partners & channels](#regional-partners--channels)
   - [Awards & recognition](#awards--recognition)
-- [By robot](#by-robot)
+- [By robot](#by-robot): [TRON1](robots/TRON1.md) · [TRON2](robots/TRON2.md) · [Oli](robots/Oli.md) · [Luna](robots/Luna.md) · [P1](robots/P1.md) · [W1](robots/W1.md)
 - [Contributing](#contributing)
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
@@ -254,16 +254,18 @@ _14 entries in 5 groups_
 
 ## By robot
 
-How many entries use each robot, by section. Search the robot name on this page to find them.
+Each robot has its own page with every entry that uses it: [TRON1](robots/TRON1.md) · [TRON2](robots/TRON2.md) · [Oli](robots/Oli.md) · [Luna](robots/Luna.md) · [P1](robots/P1.md) · [W1](robots/W1.md)
+
+Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
-| `TRON2` | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| `Oli` | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
-| `Luna` | **5** | 1 |  |  |  | 1 |  | 3 |
-| `P1` | **3** | 3 |  |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |  |
+| [`TRON1`](robots/TRON1.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
+| [`TRON2`](robots/TRON2.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
+| [`Oli`](robots/Oli.md) | **19** | 9 |  | 2 | 2 | 3 | 1 | 2 |
+| [`Luna`](robots/Luna.md) | **5** | 1 |  |  |  | 1 |  | 3 |
+| [`P1`](robots/P1.md) | **3** | 3 |  |  |  |  |  |  |
+| [`W1`](robots/W1.md) | **1** |  |  | 1 |  |  |  |  |
 
 ## Contributing
 

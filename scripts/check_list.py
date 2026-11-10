@@ -342,7 +342,7 @@ def check_by_robot(text, path, report):
     section, in page order; otherwise only the totals are checked. Any other
     layout is skipped, so the page can change shape without failing CI.
     """
-    row = re.compile(r"^\|\s*`([^`]+)`\s*\|\s*\*\*(\d+)\*\*\s*\|(.*)\|\s*$")
+    row = re.compile(r"^\|\s*\[?`([^`]+)`(?:\]\([^)]*\))?\s*\|\s*\*\*(\d+)\*\*\s*\|(.*)\|\s*$")
     declared = {}
     for line in text.splitlines():
         m = row.match(line.strip())
@@ -467,6 +467,16 @@ def main():
                 report.error("sync", "entry p-%s is in README.md but not %s" % (a, name))
             for a in sorted(set(other) - en):
                 report.error("sync", "entry p-%s is in %s but not README.md" % (a, name))
+
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import build_robot_pages
+        for page, content in build_robot_pages.build(args.root).items():
+            old = open(page, encoding="utf-8").read() if os.path.exists(page) else None
+            if old != content:
+                report.warn("robot-pages", "%s is out of date: run python scripts/build_robot_pages.py" % page)
+    except Exception as e:  # the page builder is a convenience, never a blocker
+        report.warn("robot-pages", "could not check robot pages: %s" % e)
 
     if args.check_links:
         check_links([p for p, _ in paths if os.path.exists(p)], report)

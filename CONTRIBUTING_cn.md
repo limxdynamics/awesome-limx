@@ -35,6 +35,8 @@ python scripts/check_list.py
 
 不需要装任何东西，Python 3.9 以上即可。
 
+`robots/` 下是按机型拆分的页面，由 README 自动生成，请不要手动修改。改完 README 后运行 `python scripts/build_robot_pages.py` 即可；不跑也没关系，维护者会补上，CI 只会提示页面过期。
+
 ## 条目格式
 
 每个分类是一张表格，每个项目占一行：

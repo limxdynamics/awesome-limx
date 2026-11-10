@@ -38,6 +38,8 @@ python scripts/check_list.py
 
 Nothing to install, Python 3.9 or newer is enough.
 
+The pages under `robots/` list the entries for one robot each. They are generated from the README files, so do not edit them by hand. After a README change, run `python scripts/build_robot_pages.py`, or leave it to the maintainers: CI only warns when the pages are stale.
+
 ## Entry format
 
 Each section is a table. Add one row per project:
