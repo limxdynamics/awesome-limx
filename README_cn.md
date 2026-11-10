@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **101** 个项目，其中 **67** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **102** 个项目，其中 **68** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 ## 目录
 
@@ -29,7 +29,7 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 9
-- [行业应用](#行业应用) — 20
+- [行业应用](#行业应用) — 21
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
@@ -211,7 +211,7 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 
 ## 行业应用
 
-_20 个条目，分 6 组_
+_21 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -226,6 +226,7 @@ _20 个条目，分 6 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：面向 TRON2 的 Pi0.5 训练配置与实时推理 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：为 SFYG 机械臂腕部相机支架调整过的 TRON2 模型 | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | 代码 | [代码](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**：在 Newton 仿真器中对 TRON1 做 Nav2 路线测试 | `TRON1`&nbsp;*仿真* | [Artefacts（日本）](https://github.com/art-e-fact) | 2026 | 代码 | [代码](https://github.com/art-e-fact/tron-navigation-demo) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 的 PICO 4 双臂遥操作插件，支持 TRON2 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**：在 31 自由度 Oli 上训练 GEAR-SONIC 全身控制，配 PICO VR 遥操作 | `Oli`&nbsp;*仿真* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | 代码 | [代码](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
@@ -272,7 +273,7 @@ _20 个条目，分 6 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **57** | 21 | 5 | 5 |  | 15 | 6 | 5 |
-| [`TRON2`](robots/TRON2_cn.md) | **20** |  |  | 2 | 5 | 5 | 3 | 5 |
+| [`TRON2`](robots/TRON2_cn.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli_cn.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
