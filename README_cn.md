@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **95** 个项目，其中 **61** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **101** 个项目，其中 **67** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 ## 目录
 
@@ -29,8 +29,9 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 9
-- [行业应用](#行业应用) — 14
+- [行业应用](#行业应用) — 20
   - [落地与产品](#落地与产品)
+  - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
   - [战略合作](#战略合作)
   - [区域伙伴与渠道](#区域伙伴与渠道)
@@ -210,7 +211,7 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 
 ## 行业应用
 
-_14 个条目，分 5 组_
+_20 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -219,6 +220,17 @@ _14 个条目，分 5 组_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 论文 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：Oli 搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布 | `Oli` | 东土科技 | 2026 | 论文 | [报道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 企业开源项目
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：面向 TRON2 的 Pi0.5 训练配置与实时推理 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**：在 Newton 仿真器中对 TRON1 做 Nav2 路线测试 | `TRON1`&nbsp;*仿真* | [Artefacts（日本）](https://github.com/art-e-fact) | 2026 | 代码 | [代码](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 的 PICO 4 双臂遥操作插件，支持 TRON2 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**：在 31 自由度 Oli 上训练 GEAR-SONIC 全身控制，配 PICO VR 遥操作 | `Oli`&nbsp;*仿真* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | 代码 | [代码](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**：ROS 2 与 Gazebo 仿真栈，内置 TRON1 双足模型 | `TRON1`&nbsp;*仿真* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 代码 | [代码](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**：基于 Artefacts 机器人测试平台的 ROS 2 与 Gazebo 演示 | `TRON1`&nbsp;*仿真* | [Artefacts（日本）](https://github.com/art-e-fact) | 2026 | 代码 | [代码](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### 商业演出与活动
 
@@ -259,9 +271,9 @@ _14 个条目，分 5 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
-| [`TRON2`](robots/TRON2_cn.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli_cn.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
+| [`TRON1`](robots/TRON1_cn.md) | **57** | 21 | 5 | 5 |  | 15 | 6 | 5 |
+| [`TRON2`](robots/TRON2_cn.md) | **20** |  |  | 2 | 5 | 5 | 3 | 5 |
+| [`Oli`](robots/Oli_cn.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1_cn.md) | **2** |  |  | 1 |  |  |  | 1 |

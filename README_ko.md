@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK로 만든 **95**개 프로젝트를 모았고, 그중 **61**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK로 만든 **101**개 프로젝트를 모았고, 그중 **67**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 ## 목차
 
@@ -29,8 +29,9 @@
   - [배포 및 제어](#배포-및-제어)
   - [모델 및 모션 데이터](#모델-및-모션-데이터)
 - [교육 및 대회](#교육-및-대회) — 9
-- [산업 적용](#산업-적용) — 14
+- [산업 적용](#산업-적용) — 20
   - [적용 사례 및 제품](#적용-사례-및-제품)
+  - [기업 오픈소스](#기업-오픈소스)
   - [상업 공연 및 이벤트](#상업-공연-및-이벤트)
   - [전략적 제휴](#전략적-제휴)
   - [지역 파트너 및 판매 채널](#지역-파트너-및-판매-채널)
@@ -210,7 +211,7 @@ _9개: 논문 1 · 코드 7 · 튜토리얼 1_
 
 ## 산업 적용
 
-_14개 (5개 그룹)_
+_20개 (6개 그룹)_
 
 ### 적용 사례 및 제품
 
@@ -219,6 +220,17 @@ _14개 (5개 그룹)_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 논문 | [보도](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 논문 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 Oli, 공동 발표 | `Oli` | 둥투커지(Kyland) | 2026 | 논문 | [보도](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### 기업 오픈소스
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: TRON2용 Pi0.5 학습 설정과 실시간 추론 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | 코드 | [코드](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**: Newton 시뮬레이터에서 TRON1 Nav2 경로 테스트 | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | 코드 | [코드](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: LeRobot용 PICO 4 양팔 원격 조작 플러그인, TRON2 지원 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | 코드 | [코드](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**: 31자유도 Oli에서 GEAR-SONIC 전신 제어 학습, PICO VR 원격 조작 지원 | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | 코드 | [코드](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**: TRON1 이족 모델을 포함한 ROS 2·Gazebo 시뮬레이션 스택 | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 코드 | [코드](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**: Artefacts 로봇 테스트 플랫폼 기반 ROS 2·Gazebo 데모 | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | 코드 | [코드](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### 상업 공연 및 이벤트
 
@@ -259,9 +271,9 @@ _14개 (5개 그룹)_
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
-| [`TRON2`](robots/TRON2_ko.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli_ko.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
+| [`TRON1`](robots/TRON1_ko.md) | **57** | 21 | 5 | 5 |  | 15 | 6 | 5 |
+| [`TRON2`](robots/TRON2_ko.md) | **20** |  |  | 2 | 5 | 5 | 3 | 5 |
+| [`Oli`](robots/Oli_ko.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_ko.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ko.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1_ko.md) | **2** |  |  | 1 |  |  |  | 1 |

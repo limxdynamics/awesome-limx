@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **95** projects built on LimX robots and the LimX SDK, **61** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **101** projects built on LimX robots and the LimX SDK, **67** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 ## Contents
 
@@ -29,8 +29,9 @@
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
 - [Education & competitions](#education--competitions) — 9
-- [Industry deployments](#industry-deployments) — 14
+- [Industry deployments](#industry-deployments) — 20
   - [Deployments & products](#deployments--products)
+  - [Open source from companies](#open-source-from-companies)
   - [Commercial shows & events](#commercial-shows--events)
   - [Strategic partnerships](#strategic-partnerships)
   - [Regional partners & channels](#regional-partners--channels)
@@ -211,7 +212,7 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 
 ## Industry deployments
 
-_14 entries in 5 groups_
+_20 entries in 6 groups_
 
 ### Deployments & products
 
@@ -220,6 +221,17 @@ _14 entries in 5 groups_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli running Dongtu's Intewell OS and AUTBUS bus, released jointly | `Oli` | Kyland (Dongtu Technology) | 2026 | Paper | [news](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+
+### Open source from companies
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: Pi0.5 training configs and real-time inference for TRON2 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-artefacts-tron1-nav2-newton"></a>**TRON1 Nav2 in Newton**: Nav2 route tests for TRON1 in the Newton simulator | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | Code | [code](https://github.com/art-e-fact/tron-navigation-demo) |
+| <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: PICO 4 bimanual teleoperation plugin for LeRobot, with TRON2 support | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**: GEAR-SONIC whole-body control on the 31-DOF Oli, with PICO VR teleoperation | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | Code | [code](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
+| <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**: ROS 2 and Gazebo simulation stack that ships a TRON1 biped | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
+| <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**: ROS 2 and Gazebo demo with the Artefacts robot-testing platform | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | Code | [code](https://github.com/art-e-fact/tron1-artefacts) |
 
 ### Commercial shows & events
 
@@ -260,9 +272,9 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **54** | 21 | 5 | 5 |  | 15 | 6 | 2 |
-| [`TRON2`](robots/TRON2.md) | **18** |  |  | 2 | 5 | 5 | 3 | 3 |
-| [`Oli`](robots/Oli.md) | **20** | 9 |  | 2 | 2 | 3 | 1 | 3 |
+| [`TRON1`](robots/TRON1.md) | **57** | 21 | 5 | 5 |  | 15 | 6 | 5 |
+| [`TRON2`](robots/TRON2.md) | **20** |  |  | 2 | 5 | 5 | 3 | 5 |
+| [`Oli`](robots/Oli.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1.md) | **2** |  |  | 1 |  |  |  | 1 |
