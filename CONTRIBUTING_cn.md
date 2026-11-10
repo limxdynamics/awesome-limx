@@ -9,7 +9,7 @@
 选最方便的一种：
 
 - 填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。
-- 提 Pull Request，把条目加到 `README.md` 和 `README_cn.md`。只写一种语言也可以，另一种由我们翻译。
+- 提 Pull Request，把条目加到 `README.md` 和 `README_cn.md`。只写一种语言也可以，其余语言（包括日语和韩语版）由我们翻译。
 - 发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)，内容同提交表单。
 
 如果你是作者或维护者，请注明，这样审核会快很多。
@@ -120,6 +120,6 @@ python scripts/check_list.py
 
 ## 写作规范
 
-- `README.md` 用英文，`README_cn.md` 用中文，两边条目保持一致。
+- `README.md` 用英文，`README_cn.md` 用中文，`README_ja.md` 用日语，`README_ko.md` 用韩语，四个版本条目保持一致。可以用其中任何一种语言提交，其他版本由维护者同步。
 - 项目说明尽量简短，写清楚在机器人上做了什么，不写有多厉害。
 - 不用 emoji，也不用“首个”“业界领先”之类的最高级说法。

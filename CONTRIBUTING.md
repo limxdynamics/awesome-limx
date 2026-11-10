@@ -9,7 +9,7 @@ Thanks for sharing your work. This list is useful only if every entry points to 
 Pick whichever is easiest:
 
 - Fill in the [submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
-- Open a pull request that adds your entry to `README.md` and `README_cn.md`. If you only write one language, we will translate the other.
+- Open a pull request that adds your entry to `README.md` and `README_cn.md`. If you only write one language, we will translate the rest, including the Japanese and Korean editions.
 - Email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) with the same details the form asks for.
 
 If you are the author or maintainer, say so. It makes review much faster.
@@ -125,6 +125,6 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 
 ## House style
 
-- `README.md` in English, `README_cn.md` in Chinese, with the same entries in both.
+- `README.md` in English, `README_cn.md` in Chinese, `README_ja.md` in Japanese and `README_ko.md` in Korean, with the same entries in all four. Submissions can be in any of these languages; the maintainers keep the other editions in step.
 - Keep the project phrase short. Say what was done on the robot, not how impressive it is.
 - No emoji and no superlatives such as "first ever" or "state of the art".

@@ -6,12 +6,16 @@ on:
     paths:
       - README.md
       - README_cn.md
+      - README_ja.md
+      - README_ko.md
       - scripts/**
       - .github/workflows/check.yml
   pull_request:
     paths:
       - README.md
       - README_cn.md
+      - README_ja.md
+      - README_ko.md
       - scripts/**
       - .github/workflows/check.yml
   schedule:

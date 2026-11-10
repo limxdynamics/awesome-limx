@@ -1,0 +1,75 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/300.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/700-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.12/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.12/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5.0.19/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5.0.19/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-kr@5.0.19/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-kr@5.0.19/500.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:2560px;height:800px;background:#0b0d10;overflow:hidden;position:relative;font-family:Poppins,'Noto Sans SC',sans-serif;color:#f5f7fa}
+svg{position:absolute;inset:0}
+.logo{position:absolute;left:170px;top:85px}
+.eyebrow{position:absolute;left:168px;top:236px;display:flex;align-items:center;gap:26px;font:500 30px 'JetBrains Mono','Noto Sans SC';letter-spacing:.38em;color:#8a93a0}
+.eyebrow i{display:block;width:44px;height:5px;background:#2f6feb}
+h1{position:absolute;left:166px;top:290px;font:700 152px/1 Poppins;letter-spacing:-.02em;white-space:nowrap}
+h1 em{font-style:italic;margin-left:.14em}
+.tag{position:absolute;left:168px;top:478px;width:1130px;font:300 40px/1.45 Poppins,'Noto Sans SC';color:#c3c9d2}
+.chips{position:absolute;left:170px;top:642px;display:flex;gap:16px}
+.chips span{display:block;padding:0 30px;height:66px;line-height:66px;font:700 29px/66px 'JetBrains Mono';letter-spacing:.06em;color:#f5f7fa;position:relative}
+.chips span:before{content:"";position:absolute;inset:0;background:#14181d;border:2px solid #262c34;transform:skewX(-12deg);z-index:-1}
+.lab{position:absolute;font:700 27px 'JetBrains Mono','Noto Sans SC';letter-spacing:.13em;color:#e6e9ee;white-space:nowrap;transform:translateY(-50%)}
+body.cn .lab{font:500 31px var(--cjk);letter-spacing:.06em}
+body.cn .eyebrow{font:500 30px var(--cjk);letter-spacing:.3em}
+body.cn h1{top:316px}
+body.cn .eyebrow{top:262px}
+body.cn .logo{top:105px}
+body.cn .tag{top:512px;width:1400px;font:400 38px/1.45 var(--cjk);letter-spacing:.01em}
+body.cn .chips{top:618px}
+</style></head><body>
+<svg width="2560" height="800" id="bg"></svg>
+<img class="logo" src="logo.png">
+<div class="eyebrow"><i></i><span id="eb"></span></div>
+<h1>Awesome<em>LimX</em></h1>
+<div class="tag" id="tag"></div>
+<div class="chips" id="chips"></div>
+<script>
+const lang=location.hash.slice(1)||'en';
+const T={en:{eb:'BUILT ON LIMX',tag:'Papers, open-source code, datasets, competition results and industry deployments built on LimX robots.',
+  labs:['LOCOMOTION','PERCEPTION & NAVIGATION','MANIPULATION','EMBODIED AI','TOOLS, SIMULATION & SDK','EDUCATION & COMPETITIONS','INDUSTRY DEPLOYMENTS']},
+ cn:{eb:'基于 LIMX 的项目与案例',tag:'使用逐际动力机器人完成的论文、开源代码、数据集、比赛成绩与行业应用。',
+  labs:['运动控制','感知与导航','操作','具身智能','工具、仿真与 SDK','教学与竞赛','行业应用']},
+ ja:{eb:'LIMX で生まれたプロジェクト',tag:'LimX ロボットによる論文、コード、データセット、競技結果、産業応用。',
+  labs:['移動と全身制御','知覚とナビゲーション','マニピュレーション','エンボディドAI','ツール、シミュレーション、SDK','教育と競技会','産業応用']},
+ ko:{eb:'LIMX 기반 프로젝트',tag:'LimX 로봇으로 만든 논문, 오픈소스 코드, 데이터셋, 대회 결과, 산업 적용 사례.',
+  labs:['보행 및 전신 제어','인지 및 내비게이션','매니퓰레이션','임바디드 AI','도구, 시뮬레이션 및 SDK','교육 및 대회','산업 적용']}}[lang];
+if(lang!=='en'){document.body.classList.add('cn');const F={cn:'Noto Sans SC',ja:'Noto Sans JP',ko:'Noto Sans KR'}[lang];document.body.style.setProperty('--cjk',"'"+F+"'")}
+eb.textContent=T.eb;tag.textContent=T.tag;
+['TRON1','TRON2','Oli','Luna','P1','W1','LimX SDK'].forEach(c=>{const s=document.createElement('span');s.textContent=c;chips.appendChild(s)});
+const NS='http://www.w3.org/2000/svg',svg=bg;
+function el(n,a){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);svg.appendChild(e);return e}
+const defs=el('defs',{});defs.innerHTML='<linearGradient id="fade" x1="0" x2="1"><stop offset="0.38" stop-color="#fff" stop-opacity="0"/><stop offset="0.62" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="m"><rect width="2560" height="800" fill="url(#fade)"/></mask>';
+const g=el('g',{mask:'url(#m)'});
+for(let x=600;x<3200;x+=107.7){const l=document.createElementNS(NS,'line');l.setAttribute('x1',x);l.setAttribute('y1',800);l.setAttribute('x2',x+390);l.setAttribute('y2',0);l.setAttribute('stroke','#191c21');l.setAttribute('stroke-width',4);g.appendChild(l)}
+// original roadmap points (2560 scale)
+const P=[[1660,717],[1818,662],[1962,580],[2092,476],[2212,361],[2328,241],[2442,119]].map(p=>p);
+// curve path through points, extended at both ends
+const pts=[[1578,735],...P,[2490,70]];
+let d='M'+pts[0];for(let i=1;i<pts.length;i++)d+=' L'+pts[i];
+el('path',{d,fill:'none',stroke:'#59616c','stroke-width':3,'stroke-dasharray':'3 12','stroke-linecap':'round'});
+// arc-length resample 6 points between P[0] and P[6]
+const seg=[];let tot=0;for(let i=1;i<P.length;i++){const L=Math.hypot(P[i][0]-P[i-1][0],P[i][1]-P[i-1][1]);seg.push(L);tot+=L}
+function at(s){for(let i=0;i<seg.length;i++){if(s<=seg[i]){const t=s/seg[i];return[P[i][0]+t*(P[i+1][0]-P[i][0]),P[i][1]+t*(P[i+1][1]-P[i][1])]}s-=seg[i]}return P[P.length-1]}
+const N=T.labs.length;
+T.labs.forEach((lab,i)=>{const [x,y]=at(tot*i/(N-1)*1);const s=19;
+ el('rect',{x:x-s,y:y-s,width:2*s,height:2*s,transform:`rotate(45 ${x} ${y})`,fill:i?'#0b0d10':'#2f6feb',stroke:i?'#f5f7fa':'#2f6feb','stroke-width':4});
+ const dv=document.createElement('div');dv.className='lab';dv.textContent=lab;document.body.appendChild(dv);
+ const left=i>=4;dv.style.top=y+'px';
+ if(left){dv.style.right=(2560-x+40)+'px'}else{dv.style.left=(x+38)+'px'}
+});
+</script></body></html>

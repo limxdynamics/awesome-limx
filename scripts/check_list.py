@@ -29,7 +29,7 @@ import sys
 import urllib.error
 import urllib.request
 
-EDITIONS = [("README.md", "en"), ("README_cn.md", "cn")]
+EDITIONS = [("README.md", "en"), ("README_cn.md", "cn"), ("README_ja.md", "ja"), ("README_ko.md", "ko")]
 
 ANCHOR = re.compile(r'<a id="p-([^"]+)"></a>')
 LINK_REF = re.compile(r"\]\(#p-([^)]+)\)")
@@ -37,9 +37,9 @@ TABLE_SEP = re.compile(r"^\|[\s\-:|]+\|$")
 HEADING = re.compile(r"^(#{2,3})\s+(.*)$")
 ROBOT_ROW = re.compile(r"^-\s*\*\*([^*]+)\*\*\s*[:：]\s*(.*)$")
 
-TYPE_CODE = {"en": "Code", "cn": "代码"}
-TYPE_PAPER = {"en": "Paper", "cn": "论文"}
-TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程"}
+TYPE_CODE = {"en": "Code", "cn": "代码", "ja": "コード", "ko": "코드"}
+TYPE_PAPER = {"en": "Paper", "cn": "论文", "ja": "論文", "ko": "논문"}
+TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程", "ja": "チュートリアル", "ko": "튜토리얼"}
 
 CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
 LINK_MARK = re.compile(r"\[?\[(\w+)\]\((https?://[^)]+)\)")
@@ -183,12 +183,12 @@ def check_table_breaks(text, path, report):
 
 
 def is_entry_table(t):
-    return len(t["header"]) >= 4 and t["header"][0].strip().lower() in ("project", "项目")
+    return len(t["header"]) >= 4 and t["header"][0].strip().lower() in ("project", "项目", "プロジェクト", "프로젝트")
 
 
 def type_index(t):
     for i, h in enumerate(t["header"]):
-        if h.strip().lower() == "type" or h.strip() == "类型":
+        if h.strip().lower() == "type" or h.strip() in ("类型", "種別", "유형"):
             return i
     return None
 
@@ -221,7 +221,7 @@ def is_runnable(items):
 
 def is_walkable(items):
     """Something to follow along with: a tutorial or a Space."""
-    return any(kind == "tutorial" or "huggingface.co/spaces" in url for kind, url in items)
+    return any(kind in ("tutorial", "教程", "チュートリアル", "튜토리얼") or "huggingface.co/spaces" in url for kind, url in items)
 
 
 def check_type(label_type, items, lang, path, table, report):
@@ -234,18 +234,18 @@ def check_type(label_type, items, lang, path, table, report):
     runnable = is_runnable(items)
     walkable = is_walkable(items)
 
-    if label_type in (TYPE_CODE["en"], TYPE_CODE["cn"]):
+    if label_type in TYPE_CODE.values():
         if not runnable:
             report.warn("type", "%s / %r: marked %s but links nothing to clone or download"
                         % (path, table, label_type))
-    elif label_type in (TYPE_TUTORIAL["en"], TYPE_TUTORIAL["cn"]):
+    elif label_type in TYPE_TUTORIAL.values():
         if not walkable:
             report.warn("type", "%s / %r: marked %s but links no tutorial or Space"
                         % (path, table, label_type))
         elif runnable:
             report.warn("type", "%s / %r: marked %s but also links code or a model"
                         % (path, table, label_type))
-    elif label_type in (TYPE_PAPER["en"], TYPE_PAPER["cn"]):
+    elif label_type in TYPE_PAPER.values():
         if runnable or walkable:
             report.warn("type", "%s / %r: marked %s but links something to run"
                         % (path, table, label_type))
@@ -327,7 +327,7 @@ def check_counts(text, path, row_counts, report):
             report.warn("counts", "%s: %r says %d, the tables hold %d"
                         % (path, section, declared, actual))
 
-    for m in re.finditer(r"\*\*(\d+)\*\*\s*(?:projects|个项目)", text):
+    for m in re.finditer(r"\*\*(\d+)\*\*\s*(?:projects|个项目|プロジェクト|개 프로젝트)", text):
         total = len(ANCHOR.findall(text))
         if int(m.group(1)) != total:
             report.warn("counts", "%s: header says %s entries, found %d"
@@ -422,12 +422,16 @@ def main():
         check_by_robot(text, path, report)
         editions[lang] = entries
 
-    if "en" in editions and "cn" in editions:
-        en, cn = set(editions["en"]), set(editions["cn"])
-        for a in sorted(en - cn):
-            report.error("sync", "entry p-%s is in README.md but not README_cn.md" % a)
-        for a in sorted(cn - en):
-            report.error("sync", "entry p-%s is in README_cn.md but not README.md" % a)
+    if "en" in editions:
+        en = set(editions["en"])
+        for lang, other in editions.items():
+            if lang == "en":
+                continue
+            name = dict((l, p) for p, l in EDITIONS)[lang]
+            for a in sorted(en - set(other)):
+                report.error("sync", "entry p-%s is in README.md but not %s" % (a, name))
+            for a in sorted(set(other) - en):
+                report.error("sync", "entry p-%s is in %s but not README.md" % (a, name))
 
     if args.check_links:
         check_links([p for p, _ in paths if os.path.exists(p)], report)
