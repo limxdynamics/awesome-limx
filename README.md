@@ -1,10 +1,8 @@
-<div align="center">
-
-<a href="README.md"><img src="https://img.shields.io/badge/English-24292f?style=for-the-badge" alt="English"></a>&nbsp;&nbsp;<a href="README_cn.md"><img src="https://img.shields.io/badge/Chinese-24292f?style=for-the-badge" alt="Chinese"></a>&nbsp;&nbsp;<a href="README_ja.md"><img src="https://img.shields.io/badge/Japanese-24292f?style=for-the-badge" alt="Japanese"></a>&nbsp;&nbsp;<a href="README_ko.md"><img src="https://img.shields.io/badge/Korean-24292f?style=for-the-badge" alt="Korean"></a>
-
-</div>
-
 <p align="center"><img src="assets/banner.png" alt="Awesome LimX" width="100%"></p>
+
+<p align="center">
+  <b>English</b> | <a href="README_cn.md">中文</a> | <a href="README_ja.md">日本語</a> | <a href="README_ko.md">한국어</a>
+</p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -12,27 +10,30 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-Public work that uses LimX hardware or software: papers, open-source code, datasets, tutorials, competition results and industry deployments. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **85** projects built on LimX robots and the LimX SDK, **61** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
-**85** projects · **61** have open-source code
+## Contents
 
-[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Industry deployments](#industry-deployments) (4) · [Contributing](#contributing)
+- [Before you start](#before-you-start)
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 32
+  - [Terrain & perceptive locomotion](#terrain--perceptive-locomotion)
+  - [RL training & sim-to-real](#rl-training--sim-to-real)
+  - [Model-based control](#model-based-control)
+  - [Motion tracking & retargeting](#motion-tracking--retargeting)
+- [Perception & navigation](#perception--navigation) — 5
+- [Manipulation](#manipulation) — 9
+- [Embodied AI](#embodied-ai) — 7
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 19
+  - [Training frameworks](#training-frameworks)
+  - [Simulation & environments](#simulation--environments)
+  - [Deployment & control](#deployment--control)
+  - [Models & motion data](#models--motion-data)
+- [Education & competitions](#education--competitions) — 9
+- [Industry deployments](#industry-deployments) — 4
+- [By robot](#by-robot)
+- [Contributing](#contributing)
 
-_*sim* marks work shown only in simulation; everything else ran on a real robot._
-
-<details>
-<summary><b>By robot</b>: TRON1 52 · TRON2 17 · Oli 17 · Luna 4 · P1 3 · W1 1</summary>
-
-| Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
-| `P1` | **3** | 3 |  |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |  |
-
-</details>
+<sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
 ## Before you start
 
@@ -213,6 +214,19 @@ _4 entries: deployments, products and commercial shows_
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | Paper | [news](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | Paper | [news](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+## By robot
+
+How many entries use each robot, by section. Search the robot name on this page to find them.
+
+| Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
+| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
+| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
+| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `P1` | **3** | 3 |  |  |  |  |  |  |
+| `W1` | **1** |  |  | 1 |  |  |  |  |
 
 ## Contributing
 

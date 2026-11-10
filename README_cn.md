@@ -1,10 +1,8 @@
-<div align="center">
-
-<a href="README.md"><img src="https://img.shields.io/badge/English-24292f?style=for-the-badge" alt="English"></a>&nbsp;&nbsp;<a href="README_cn.md"><img src="https://img.shields.io/badge/Chinese-24292f?style=for-the-badge" alt="Chinese"></a>&nbsp;&nbsp;<a href="README_ja.md"><img src="https://img.shields.io/badge/Japanese-24292f?style=for-the-badge" alt="Japanese"></a>&nbsp;&nbsp;<a href="README_ko.md"><img src="https://img.shields.io/badge/Korean-24292f?style=for-the-badge" alt="Korean"></a>
-
-</div>
-
 <p align="center"><img src="assets/banner_cn.png" alt="Awesome LimX" width="100%"></p>
+
+<p align="center">
+  <a href="README.md">English</a> | <b>中文</b> | <a href="README_ja.md">日本語</a> | <a href="README_ko.md">한국어</a>
+</p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -12,27 +10,30 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程、比赛成绩和行业应用。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **85** 个项目，其中 **61** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
-**85** 个项目 · **61** 个有开源代码
+## 目录
 
-[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [行业应用](#行业应用)（4） · [参与贡献](#参与贡献)
+- [动手之前](#动手之前)
+- [运动控制](#运动控制) — 32
+  - [地形与感知行走](#地形与感知行走)
+  - [强化学习训练与部署](#强化学习训练与部署)
+  - [基于模型的控制](#基于模型的控制)
+  - [动作跟踪与重定向](#动作跟踪与重定向)
+- [感知与导航](#感知与导航) — 5
+- [操作](#操作) — 9
+- [具身智能](#具身智能) — 7
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 19
+  - [训练框架](#训练框架)
+  - [仿真与环境](#仿真与环境)
+  - [部署与控制](#部署与控制)
+  - [模型与动作数据](#模型与动作数据)
+- [教学与竞赛](#教学与竞赛) — 9
+- [行业应用](#行业应用) — 4
+- [按机型查找](#按机型查找)
+- [参与贡献](#参与贡献)
 
-_标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过。_
-
-<details>
-<summary><b>按机型查找</b>：TRON1 52 · TRON2 17 · Oli 17 · Luna 4 · P1 3 · W1 1</summary>
-
-| 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
-| `P1` | **3** | 3 |  |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |  |
-
-</details>
+<sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
 ## 动手之前
 
@@ -212,6 +213,19 @@ _4 个条目：落地项目、产品与商业演出_
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 论文 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 论文 | [报道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+## 按机型查找
+
+各机型在每个分类中的条目数。在本页搜索机型名即可找到对应条目。
+
+| 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
+| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
+| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
+| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `P1` | **3** | 3 |  |  |  |  |  |  |
+| `W1` | **1** |  |  | 1 |  |  |  |  |
 
 ## 参与贡献
 

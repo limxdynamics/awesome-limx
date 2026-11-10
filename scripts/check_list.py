@@ -335,10 +335,7 @@ def check_counts(text, path, row_counts, report):
 
 
 def check_by_robot(text, path, report):
-    start, end = text.find("<details>"), text.find("</details>")
-    if start < 0 or end < 0:
-        return
-    block = text[start:end]
+    block = text
 
     indexed = {}
     for line in block.splitlines():

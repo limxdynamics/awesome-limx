@@ -1,10 +1,8 @@
-<div align="center">
-
-<a href="README.md"><img src="https://img.shields.io/badge/English-24292f?style=for-the-badge" alt="English"></a>&nbsp;&nbsp;<a href="README_cn.md"><img src="https://img.shields.io/badge/Chinese-24292f?style=for-the-badge" alt="Chinese"></a>&nbsp;&nbsp;<a href="README_ja.md"><img src="https://img.shields.io/badge/Japanese-24292f?style=for-the-badge" alt="Japanese"></a>&nbsp;&nbsp;<a href="README_ko.md"><img src="https://img.shields.io/badge/Korean-24292f?style=for-the-badge" alt="Korean"></a>
-
-</div>
-
 <p align="center"><img src="assets/banner_ko.png" alt="Awesome LimX" width="100%"></p>
+
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_cn.md">中文</a> | <a href="README_ja.md">日本語</a> | <b>한국어</b>
+</p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -12,27 +10,30 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-LimX 하드웨어나 소프트웨어를 사용한 공개 성과를 모은 목록입니다. 논문, 오픈소스 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 수록합니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK로 만든 **85**개 프로젝트를 모았고, 그중 **61**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
-**85**개 프로젝트 · 그중 **61**개는 오픈소스 코드 제공
+## 목차
 
-[시작하기 전에](#시작하기-전에) · [보행 및 전신 제어](#보행-및-전신-제어) (32) · [인지 및 내비게이션](#인지-및-내비게이션) (5) · [매니퓰레이션](#매니퓰레이션) (9) · [임바디드 AI](#임바디드-ai) (7) · [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) (19) · [교육 및 대회](#교육-및-대회) (9) · [산업 적용](#산업-적용) (4) · [기여하기](#기여하기)
+- [시작하기 전에](#시작하기-전에)
+- [보행 및 전신 제어](#보행-및-전신-제어) — 32
+  - [지형 및 인지 기반 보행](#지형-및-인지-기반-보행)
+  - [강화학습 훈련 및 실기 전이](#강화학습-훈련-및-실기-전이)
+  - [모델 기반 제어](#모델-기반-제어)
+  - [모션 트래킹 및 리타게팅](#모션-트래킹-및-리타게팅)
+- [인지 및 내비게이션](#인지-및-내비게이션) — 5
+- [매니퓰레이션](#매니퓰레이션) — 9
+- [임바디드 AI](#임바디드-ai) — 7
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 19
+  - [학습 프레임워크](#학습-프레임워크)
+  - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
+  - [배포 및 제어](#배포-및-제어)
+  - [모델 및 모션 데이터](#모델-및-모션-데이터)
+- [교육 및 대회](#교육-및-대회) — 9
+- [산업 적용](#산업-적용) — 4
+- [기종별](#기종별)
+- [기여하기](#기여하기)
 
-_*sim*은 시뮬레이션에서만 보여준 성과입니다. 나머지는 모두 실제 로봇에서 동작했습니다._
-
-<details>
-<summary><b>기종별</b>: TRON1 52 · TRON2 17 · Oli 17 · Luna 4 · P1 3 · W1 1</summary>
-
-| 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
-| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
-| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
-| `P1` | **3** | 3 |  |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |  |
-
-</details>
+<sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
 ## 시작하기 전에
 
@@ -212,6 +213,19 @@ _4개: 적용 사례, 제품, 상업 공연_
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 논문 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-kill-it-finale"></a>**〈킬잇: 스타일 크리에이터 대전쟁〉 결승**: 디자이너 김나라의 우승 결승 무대에 Luna 출연, tvN | `Luna` | tvN, 김나라 | 2026 | 논문 | [보도](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[보도](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**타오바오 인플루언서 페스티벌**: 상하이에서 배우 천이한과 Luna가 런웨이 워킹 | `Luna` | 타오바오 | 2026 | 논문 | [보도](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+
+## 기종별
+
+기종별·분류별 수록 개수입니다. 이 페이지에서 기종 이름을 검색하면 해당 항목을 찾을 수 있습니다.
+
+| 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
+| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
+| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
+| `Luna` | **4** | 1 |  |  |  | 1 |  | 2 |
+| `P1` | **3** | 3 |  |  |  |  |  |  |
+| `W1` | **1** |  |  | 1 |  |  |  |  |
 
 ## 기여하기
 
