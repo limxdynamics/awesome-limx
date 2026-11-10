@@ -12,25 +12,25 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-Public work that uses LimX hardware or software: papers, open-source code, datasets, tutorials and competition results. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+Public work that uses LimX hardware or software: papers, open-source code, datasets, tutorials, competition results and industry deployments. LimX's own open-source releases live on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
-**81** projects · **61** have open-source code
+**83** projects · **61** have open-source code
 
-[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Contributing](#contributing)
+[Before you start](#before-you-start) · [Locomotion & whole-body control](#locomotion--whole-body-control) (32) · [Perception & navigation](#perception--navigation) (5) · [Manipulation](#manipulation) (9) · [Embodied AI](#embodied-ai) (7) · [Tools, simulation & SDK](#tools-simulation--sdk) (19) · [Education & competitions](#education--competitions) (9) · [Industry deployments](#industry-deployments) (2) · [Contributing](#contributing)
 
 _*sim* marks work shown only in simulation; everything else ran on a real robot._
 
 <details>
-<summary><b>By robot</b>: TRON1 52 · TRON2 15 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
+<summary><b>By robot</b>: TRON1 52 · TRON2 17 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
 
-| Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |
-| `TRON2` | **15** |  |  | 2 | 5 | 5 | 3 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |
-| `Luna` | **2** | 1 |  |  |  | 1 |  |
-| `P1` | **3** | 3 |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |
+| Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
+| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
+| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
+| `Luna` | **2** | 1 |  |  |  | 1 |  |  |
+| `P1` | **3** | 3 |  |  |  |  |  |  |
+| `W1` | **1** |  |  | 1 |  |  |  |  |
 
 </details>
 
@@ -202,6 +202,15 @@ _9 entries: 1 paper · 7 code · 1 tutorial_
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | Code | [code](https://github.com/SuDaxia-kai/pointfootGym) |
+
+## Industry deployments
+
+_2 entries, both from public announcements_
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | Paper | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
+| <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | Paper | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 
 ## Contributing
 

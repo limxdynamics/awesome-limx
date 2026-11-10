@@ -12,25 +12,25 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程和比赛成绩。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+收录所有使用 LimX 硬件或软件的公开成果：论文、开源代码、数据集、教程、比赛成绩和行业应用。官方开源仓库请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
-**81** 个项目 · **61** 个有开源代码
+**83** 个项目 · **61** 个有开源代码
 
-[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [参与贡献](#参与贡献)
+[动手之前](#动手之前) · [运动控制](#运动控制)（32） · [感知与导航](#感知与导航)（5） · [操作](#操作)（9） · [具身智能](#具身智能)（7） · [工具、仿真与 SDK](#工具仿真与-sdk)（19） · [教学与竞赛](#教学与竞赛)（9） · [行业应用](#行业应用)（2） · [参与贡献](#参与贡献)
 
 _标 *仿真* 的条目只在仿真中展示过，其余都在实机上运行过。_
 
 <details>
-<summary><b>按机型查找</b>：TRON1 52 · TRON2 15 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
+<summary><b>按机型查找</b>：TRON1 52 · TRON2 17 · Oli 17 · Luna 2 · P1 3 · W1 1</summary>
 
-| 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |
-| `TRON2` | **15** |  |  | 2 | 5 | 5 | 3 |
-| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |
-| `Luna` | **2** | 1 |  |  |  | 1 |  |
-| `P1` | **3** | 3 |  |  |  |  |  |
-| `W1` | **1** |  |  | 1 |  |  |  |
+| 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `TRON1` | **52** | 21 | 5 | 5 |  | 15 | 6 |  |
+| `TRON2` | **17** |  |  | 2 | 5 | 5 | 3 | 2 |
+| `Oli` | **17** | 9 |  | 2 | 2 | 3 | 1 |  |
+| `Luna` | **2** | 1 |  |  |  | 1 |  |  |
+| `P1` | **3** | 3 |  |  |  |  |  |  |
+| `W1` | **1** |  |  | 1 |  |  |  |  |
 
 </details>
 
@@ -201,6 +201,15 @@ _9 个条目：1 篇论文 · 7 个代码 · 1 个教程_
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1`&nbsp;*仿真* | [81578823（南方科大）](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**：Isaac Gym 课程模板 | `TRON1`&nbsp;*仿真* | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) | 2024 | 代码 | [代码](https://github.com/SuDaxia-kai/pointfootGym) |
+
+## 行业应用
+
+_2 个条目，均来自公开发布_
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 论文 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
+| <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 论文 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 
 ## 参与贡献
 

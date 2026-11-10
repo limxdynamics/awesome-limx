@@ -50,7 +50,7 @@ Each section is a table. Add one row per project:
 - **Robot**: TRON1, TRON2, Oli, Luna, an earlier LimX robot such as P1, or LimX SDK, in backticks. List more than one if the work used several. Add `&nbsp;*sim*` after the robots when public sources show the work only in simulation, sim-to-sim included. No mark means it ran on a real robot. Tools are not marked.
 - **Author / Org**: your GitHub or Hugging Face handle, linked to your profile, or your lab or institution. For papers with several institutions, name the first two or three and add "et al.", without a link.
 - **Year**: the year the work was published or shown, in its own column.
-- **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, result. Use `result` for an official competition result. Separate them with `&nbsp;·&nbsp;` so the links stay on one line.
+- **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, news, result. Use `news` for press coverage of a deployment and `result` for an official competition result. Separate them with `&nbsp;·&nbsp;` so the links stay on one line.
 - **Order**: newest first within each section.
 - **Type**: `Code`, `Tutorial` or `Paper`, decided by the maintainers. See [Type](#type). Leave it out when you submit.
 
@@ -64,7 +64,7 @@ The Type column answers one question: what can a reader do with this?
 |---|---|
 | **Code** | Something to clone or download: a repository, a model, a dataset |
 | **Tutorial** | Something to follow: a tutorial, a course, a Hugging Face Space |
-| **Paper** | Something to read: a paper, a project page, a write-up, a result announcement |
+| **Paper** | Something to read: a paper, a project page, a write-up, a news report, a result announcement |
 
 Decide in this order:
 
@@ -99,7 +99,7 @@ If a project fits more than one section, choose the one that best describes its 
 | The work used LimX hardware or software, on a real robot or in simulation with official LimX models | That is what this list shows. "Might be compatible" does not count. |
 | A public source says so: the paper names the robot, the video shows it, or the README states it | Anyone reading the list should be able to check the claim. |
 | There is a public link to the original source | We link to where the work lives. We do not host it. |
-| Company projects only with the company's agreement | We do not announce someone else's business relationship before they do. |
+| Company projects only with the company's agreement, or once the company has announced the work itself | We do not announce someone else's business relationship before they do. |
 | Links only: no copied code, papers, videos, screenshots or logos | Those belong to their owners. |
 
 Work by LimX researchers, such as papers and competition results, is welcome on the same terms as anyone else's.
@@ -113,7 +113,7 @@ We do not accept:
 
 ## Company projects
 
-If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company wants to announce first, tell us and we will wait.
+If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company or both partners have already announced the work publicly, link that announcement or the press coverage instead. A signed agreement on its own is not enough: there has to be public work on a LimX robot, such as a demo, a product or a deployment. If the company wants to announce first, tell us and we will wait.
 
 ## Screenshots and logos
 
