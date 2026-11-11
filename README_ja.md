@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **154** プロジェクト・提携を収録しています。うち **104** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **156** プロジェクト・提携を収録しています。うち **106** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;件 | 31&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
+| 91&nbsp;件 | 33&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
 
 ## 目次
 
@@ -29,13 +29,13 @@
 - [知覚とナビゲーション](#知覚とナビゲーション) — 13
 - [マニピュレーション](#マニピュレーション) — 11
 - [エンボディドAI](#エンボディドai) — 9
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 23
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 24
   - [学習フレームワーク](#学習フレームワーク)
   - [シミュレーションと環境](#シミュレーションと環境)
   - [デプロイと制御](#デプロイと制御)
   - [モデルとモーションデータ](#モデルとモーションデータ)
 - [教育と競技会](#教育と競技会) — 17
-- [産業応用](#産業応用) — 30
+- [産業応用](#産業応用) — 31
   - [導入事例と製品](#導入事例と製品)
   - [企業のオープンソース](#企業のオープンソース)
   - [商業公演とイベント](#商業公演とイベント)
@@ -191,7 +191,7 @@ _9 件：論文 2 · コード 7_
 
 ## ツール、シミュレーション、SDK
 
-_ツール 23 件（4 グループ）_
+_ツール 24 件（4 グループ）_
 
 ### 学習フレームワーク
 
@@ -224,6 +224,7 @@ _ツール 23 件（4 グループ）_
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：実機 TRON1 用の Qt 操作パネル | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [コード](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度知覚ポリシーの sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [コード](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**：Windows からポリシーをデプロイ | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [コード](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：TRON1・TRON2・Bunker 台車のカメラを切り替え、タスク段階ごとに画像を保存してデータ収集（中国語） | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [コード](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**：G1 と TRON1A 向け ROS 2 フレームワーク | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [コード](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**：TRON1 の WebSocket API を ROS につなぐ Docker ブリッジ、実機なしでテストできる疑似ロボット付き | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [コード](https://github.com/daweidavidwang/websocket_ros) |
 
@@ -262,7 +263,7 @@ _17 件：論文 2 · コード 14 · チュートリアル 1_
 
 ## 産業応用
 
-_30 件（6 グループ）_
+_31 件（6 グループ）_
 
 ### 導入事例と製品
 
@@ -288,6 +289,7 @@ _30 件（6 グループ）_
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：4Paradigm の具身 AI 基盤 Phanthy Motus のハードウェアドライバ、TRON2 双腕に対応 | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | コード | [コード](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：触覚映像付きの遠隔操作 115 エピソード、Voxel51 が FiftyOne 形式でも公開 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | コード | [データセット](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**：AI エージェントと ROS 2 ロボットをつなぐ DDS / WebSocket ブリッジ、LimX 機を識別し TRON1 モデルを同梱 | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | コード | [コード](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
+| <a id="p-cmriat-citadel"></a>**Citadel**：HDF5 の記録を LeRobot v2.1 に一括変換するロボットデータ管理ツール、例に TRON2 のデータを使用 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | コード | [コード](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**：TRON1、Unitree G1、Go2 に対応するモジュール式コンピュート・開発バックパック | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | コード | [コード](https://github.com/OpenMind/brainpack) |
 
 ### 商業公演とイベント
@@ -332,8 +334,8 @@ _30 件（6 グループ）_
 
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ja.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2_ja.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
+| [`TRON1`](robots/TRON1_ja.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON2`](robots/TRON2_ja.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_ja.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ja.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ja.md) | **5** | 3 |  |  |  |  |  | 2 |

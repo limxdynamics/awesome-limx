@@ -461,3 +461,8 @@ gh:jengler/bench_ds_projects
 gh:sheff-hub/b2w-z1-isaacsim
 gh:syw-robotics/nabo_pointfoot_bipedal_robot
 gh:wilcoxbrandi06/wil
+
+# TRON2 re-check 2026-11-11: forks of official stacks, a variant of a listed repo, a fork of video2robot.
+gh:matt14-mander/multiple_humanoid_cooperative_transportation
+gh:skr3178/video2robot
+gh:emopointer/fluxvla-tron2

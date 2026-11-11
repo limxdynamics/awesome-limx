@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **154** projects and partnerships around LimX robots and the LimX SDK, **104** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **156** projects and partnerships around LimX robots and the LimX SDK, **106** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;projects | 31&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 91&nbsp;projects | 33&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 ## Contents
 
@@ -29,13 +29,13 @@
 - [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 11
 - [Embodied AI](#embodied-ai) — 9
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 23
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 24
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
 - [Education & competitions](#education--competitions) — 17
-- [Industry deployments](#industry-deployments) — 30
+- [Industry deployments](#industry-deployments) — 31
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
   - [Commercial shows & events](#commercial-shows--events)
@@ -192,7 +192,7 @@ _9 entries: 2 papers · 7 code_
 
 ## Tools, simulation & SDK
 
-_23 tools in 4 groups_
+_24 tools in 4 groups_
 
 ### Training frameworks
 
@@ -225,6 +225,7 @@ _23 tools in 4 groups_
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**: Qt control panel for a real TRON1 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [code](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: depth-perceptive policy sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [code](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: deploy policies from Windows | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [code](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between TRON1, TRON2 and a Bunker base's cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: ROS 2 framework for G1 and TRON1A | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [code](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**: Docker bridge from the TRON1 WebSocket API to ROS, with a fake robot for testing without hardware | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [code](https://github.com/daweidavidwang/websocket_ros) |
 
@@ -263,7 +264,7 @@ _17 entries: 2 papers · 14 code · 1 tutorial_
 
 ## Industry deployments
 
-_30 entries in 6 groups_
+_31 entries in 6 groups_
 
 ### Deployments & products
 
@@ -289,6 +290,7 @@ _30 entries in 6 groups_
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: hardware drivers for 4Paradigm's Phanthy Motus embodied AI platform, TRON2 dual-arm included | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | Code | [code](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 115 teleoperated episodes with tactile video, also republished by Voxel51 in FiftyOne format | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | Code | [dataset](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**: DDS and WebSocket bridge from AI agents to ROS 2 robots, detects LimX robots and ships TRON1 models | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
+| <a id="p-cmriat-citadel"></a>**Citadel**: robot data pipeline that converts HDF5 recordings to LeRobot v2.1, with TRON2 episodes as its worked example | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | Code | [code](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: modular compute and development backpack integrated with TRON1, Unitree G1 and Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | Code | [code](https://github.com/OpenMind/brainpack) |
 
 ### Commercial shows & events
@@ -333,8 +335,8 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
+| [`TRON1`](robots/TRON1.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON2`](robots/TRON2.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |

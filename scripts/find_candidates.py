@@ -540,33 +540,49 @@ def src_gitee(cfg, wanted, known, seen, since):
 
 
 def src_hf(cfg, wanted, known, seen, since):
-    """Hugging Face matches repo names only, so keywords here are short name fragments."""
+    """Hugging Face: repo-name search, plus full-text search over model and dataset cards.
+
+    Name search only finds repos named after the robot. Full-text search also
+    reads the cards, which is where LeRobot datasets record their robot_type
+    and where model cards say which robot they were trained for. Full-text
+    results are fuzzy, so a hit is kept only when the keyword is in it.
+    """
     out, done = [], set()
     kws = list(cfg.get("company", {}).get("hf", []))
     for name in wanted:
         kws += [(k, name) for k in cfg["robots"][name].get("hf", [])]
     skip_owner = {o.lower() for o in cfg.get("skip_owners", [])}
+
+    def add(rid, kind, date, downloads, kw, robot, how):
+        owner = rid.split("/")[0].lower()
+        key = "hf:" + rid.lower()
+        if (not rid or rid.lower() in known["hf"] or owner in skip_owner
+                or key in seen or key in done or (since and date and date < since)):
+            return
+        done.add(key)
+        # An author already in the list may publish more; report it, but say so.
+        note = "; ".join(filter(None, ["author already in the list" if owner in known["hf_owner"] else "", how]))
+        prefix = "" if kind == "model" else kind + "s/"
+        out.append({"key": key, "title": f"{rid} ({kind})", "url": f"https://huggingface.co/{prefix}{rid}",
+                    "robots": [robot] if robot else [], "date": date, "stars": downloads, "note": note, "why": kw})
+
     for kw in kws:
         kw, robot = kw if isinstance(kw, tuple) else (kw, None)
         log(f"  hf: {kw}")
-        for kind in ("models", "datasets", "spaces"):
-            d = get(f"https://huggingface.co/api/{kind}?search={urllib.parse.quote(kw)}&limit=100&sort=lastModified&direction=-1")
+        for kind in ("model", "dataset", "space"):
+            d = get(f"https://huggingface.co/api/{kind}s?search={urllib.parse.quote(kw)}&limit=100&sort=lastModified&direction=-1")
             time.sleep(1)
             for it in d or []:
-                rid = it.get("id") or ""
-                owner = rid.split("/")[0].lower()
-                key = "hf:" + rid.lower()
-                date = (it.get("lastModified") or it.get("createdAt") or "")[:10]
-                if (rid.lower() in known["hf"] or owner in skip_owner
-                        or key in seen or key in done or (since and date and date < since)):
-                    continue
-                # An author already in the list may publish more; report it, but say so.
-                note = "author already in the list" if owner in known["hf_owner"] else ""
-                done.add(key)
-                prefix = "" if kind == "models" else kind + "/"
-                out.append({"key": key, "title": f"{rid} ({kind[:-1]})", "url": f"https://huggingface.co/{prefix}{rid}",
-                            "robots": [robot] if robot else [], "date": date, "stars": it.get("downloads"),
-                            "note": note, "why": kw})
+                add(it.get("id") or "", kind, (it.get("lastModified") or it.get("createdAt") or "")[:10],
+                    it.get("downloads"), kw, robot, "")
+            if not cfg["sources"]["hf"].get("full_text", True):
+                continue
+            d = get(f"https://huggingface.co/api/search/full-text?q={urllib.parse.quote(kw)}&type={kind}&limit=100")
+            time.sleep(1)
+            low = kw.lower()
+            for h in (d or {}).get("hits") or []:
+                if low in json.dumps(h, ensure_ascii=False).lower():  # drop the fuzzy matches
+                    add(h.get("name") or "", h.get("type") or kind, "", None, kw, robot, "found in the card")
     return out
 
 

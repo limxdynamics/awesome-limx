@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **154** 个项目与合作，其中 **104** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **156** 个项目与合作，其中 **106** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;条 | 31&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 91&nbsp;条 | 33&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
@@ -29,13 +29,13 @@
 - [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
 - [具身智能](#具身智能) — 9
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 23
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 24
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 17
-- [行业应用](#行业应用) — 30
+- [行业应用](#行业应用) — 31
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
@@ -191,7 +191,7 @@ _9 个条目：2 篇论文 · 7 个代码_
 
 ## 工具、仿真与 SDK
 
-_23 个工具，分 4 组_
+_24 个工具，分 4 组_
 
 ### 训练框架
 
@@ -224,6 +224,7 @@ _23 个工具，分 4 组_
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：实机 TRON1 的 Qt 控制面板 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [代码](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**：在 Windows 上部署策略 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [代码](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：在 TRON1、TRON2 与 Bunker 底盘的摄像头之间切换，按任务阶段保存画面用于数据采集 | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [代码](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**：支持 G1 与 TRON1A 的 ROS 2 框架 | `TRON1` | [Jin Cheng（苏黎世联邦理工 CRL）](https://github.com/catachiii) | 2025 | [代码](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**：把 TRON1 WebSocket 接口桥接到 ROS 的 Docker 方案，带模拟机器人，无实机也能测试 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [代码](https://github.com/daweidavidwang/websocket_ros) |
 
@@ -262,7 +263,7 @@ _17 个条目：2 篇论文 · 14 个代码 · 1 个教程_
 
 ## 行业应用
 
-_30 个条目，分 6 组_
+_31 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -288,6 +289,7 @@ _30 个条目，分 6 组_
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：第四范式 Phanthy Motus 具身智能平台的硬件驱动，支持 TRON2 双臂 | `TRON2` | [第四范式](https://github.com/4paradigm) | 2026 | 代码 | [代码](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：115 条遥操作数据，带触觉视频；Voxel51 另以 FiftyOne 格式转发 | `TRON2` | [他山科技 Xense](https://huggingface.co/Xense) | 2026 | 代码 | [数据集](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**：AI 智能体到 ROS 2 机器人的 DDS / WebSocket 桥接，可识别 LimX 机器人并内置 TRON1 模型 | `TRON1`&nbsp;*仿真* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 代码 | [代码](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
+| <a id="p-cmriat-citadel"></a>**Citadel**：机器人数据管理工具，把 HDF5 录制数据批量转换为 LeRobot v2.1，示例使用 TRON2 采集的数据 | `TRON2` | [招商局先进技术研究院](https://github.com/cmriat) | 2026 | 代码 | [代码](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**：模块化计算与开发背包，适配 TRON1、Unitree G1 和 Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 代码 | [代码](https://github.com/OpenMind/brainpack) |
 
 ### 商业演出与活动
@@ -332,8 +334,8 @@ _30 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
+| [`TRON1`](robots/TRON1_cn.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON2`](robots/TRON2_cn.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |

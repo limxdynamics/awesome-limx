@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **154**개 프로젝트와 협력 사례를 모았고, 그중 **104**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **156**개 프로젝트와 협력 사례를 모았고, 그중 **106**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 **기종별로 찾기**
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90개 | 31개 | 29개 | 7개 | 5개 | 4개 |
+| 91개 | 33개 | 29개 | 7개 | 5개 | 4개 |
 
 ## 목차
 
@@ -29,13 +29,13 @@
 - [인지 및 내비게이션](#인지-및-내비게이션) — 13
 - [매니퓰레이션](#매니퓰레이션) — 11
 - [임바디드 AI](#임바디드-ai) — 9
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 23
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 24
   - [학습 프레임워크](#학습-프레임워크)
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
   - [배포 및 제어](#배포-및-제어)
   - [모델 및 모션 데이터](#모델-및-모션-데이터)
 - [교육 및 대회](#교육-및-대회) — 17
-- [산업 적용](#산업-적용) — 30
+- [산업 적용](#산업-적용) — 31
   - [적용 사례 및 제품](#적용-사례-및-제품)
   - [기업 오픈소스](#기업-오픈소스)
   - [상업 공연 및 이벤트](#상업-공연-및-이벤트)
@@ -191,7 +191,7 @@ _9개: 논문 2 · 코드 7_
 
 ## 도구, 시뮬레이션 및 SDK
 
-_도구 23개 (4개 그룹)_
+_도구 24개 (4개 그룹)_
 
 ### 학습 프레임워크
 
@@ -224,6 +224,7 @@ _도구 23개 (4개 그룹)_
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**: 실기 TRON1용 Qt 제어 패널 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [코드](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: 깊이 인지 정책 sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [코드](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: Windows에서 정책 배포 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [코드](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: TRON1·TRON2·Bunker 섀시 카메라를 전환하며 작업 단계별로 화면을 저장해 데이터 수집 (중국어) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [코드](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: G1과 TRON1A용 ROS 2 프레임워크 | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [코드](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**: TRON1 WebSocket API를 ROS로 연결하는 Docker 브리지, 실기 없이 테스트할 수 있는 가짜 로봇 포함 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [코드](https://github.com/daweidavidwang/websocket_ros) |
 
@@ -262,7 +263,7 @@ _17개: 논문 2 · 코드 14 · 튜토리얼 1_
 
 ## 산업 적용
 
-_30개 (6개 그룹)_
+_31개 (6개 그룹)_
 
 ### 적용 사례 및 제품
 
@@ -288,6 +289,7 @@ _30개 (6개 그룹)_
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: 4Paradigm 임바디드 AI 플랫폼 Phanthy Motus의 하드웨어 드라이버, TRON2 양팔 지원 | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | 코드 | [코드](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 촉각 영상 포함 원격 조작 115 에피소드, Voxel51이 FiftyOne 형식으로도 공개 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | 코드 | [데이터셋](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[데이터셋](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**: AI 에이전트와 ROS 2 로봇을 잇는 DDS / WebSocket 브리지, LimX 로봇을 인식하고 TRON1 모델 포함 | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 코드 | [코드](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
+| <a id="p-cmriat-citadel"></a>**Citadel**: HDF5 기록을 LeRobot v2.1로 일괄 변환하는 로봇 데이터 관리 도구, 예시로 TRON2 데이터 사용 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | 코드 | [코드](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: TRON1, Unitree G1, Go2에 통합되는 모듈형 컴퓨팅·개발 백팩 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 코드 | [코드](https://github.com/OpenMind/brainpack) |
 
 ### 상업 공연 및 이벤트
@@ -332,8 +334,8 @@ _30개 (6개 그룹)_
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2_ko.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
+| [`TRON1`](robots/TRON1_ko.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON2`](robots/TRON2_ko.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_ko.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ko.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ko.md) | **5** | 3 |  |  |  |  |  | 2 |
