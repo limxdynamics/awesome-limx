@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **30** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 - [具身智能](#具身智能) — 2
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 4
 - [教学与竞赛](#教学与竞赛) — 2
-- [行业应用](#行业应用) — 5
+- [行业应用](#行业应用) — 6
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -115,6 +115,12 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
+
+### 战略合作
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：共建人形机器人与具身智能产业学院，以 Oli 为核心教学载体，并启用智能工程技术学习与创新工场 | `Oli` | 宁波职业技术大学 | 2026 | 报道 | [报道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### 区域伙伴与渠道
 

@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **29** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **30** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Embodied AI](#embodied-ai) — 2
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 4
 - [Education & competitions](#education--competitions) — 2
-- [Industry deployments](#industry-deployments) — 5
+- [Industry deployments](#industry-deployments) — 6
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -115,6 +115,12 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news](https://news.ifeng.com/c/8vmGa3sP4u7) |
+
+### Strategic partnerships
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: joint industry college for humanoid and embodied AI, with Oli as the core teaching platform and a new training workshop | `Oli` | Ningbo Polytechnic University | 2026 | News | [news](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### Regional partners & channels
 

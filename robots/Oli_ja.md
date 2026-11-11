@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **29** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **30** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 - [エンボディドAI](#エンボディドai) — 2
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 4
 - [教育と競技会](#教育と競技会) — 2
-- [産業応用](#産業応用) — 5
+- [産業応用](#産業応用) — 6
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -115,6 +115,12 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 報道 | [報道](https://news.ifeng.com/c/8vmGa3sP4u7) |
+
+### 戦略提携
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：人型ロボットと具身 AI の産業学院を共同設立、Oli を中核教材に据え、実習工房も開設 | `Oli` | 寧波職業技術大学 | 2026 | 報道 | [報道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### 地域パートナーと販売チャネル
 

@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **29**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **30**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 - [임바디드 AI](#임바디드-ai) — 2
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 4
 - [교육 및 대회](#교육-및-대회) — 2
-- [산업 적용](#산업-적용) — 5
+- [산업 적용](#산업-적용) — 6
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -115,6 +115,12 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도](https://news.ifeng.com/c/8vmGa3sP4u7) |
+
+### 전략적 제휴
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: 휴머노이드·임바디드 AI 산업학원 공동 설립, Oli를 핵심 교육 플랫폼으로 삼고 실습 공방 개소 | `Oli` | 닝보직업기술대학 | 2026 | 보도 | [보도](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### 지역 파트너 및 판매 채널
 

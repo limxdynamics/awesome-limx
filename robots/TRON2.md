@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **35** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **36** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 6
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 6
 - [Education & competitions](#education--competitions) — 8
-- [Industry deployments](#industry-deployments) — 10
+- [Industry deployments](#industry-deployments) — 11
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -95,6 +95,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | News | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 fitted with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine in a pharmacy demo | `TRON2` | WUJI TECH | 2026 | News | [news](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### Open source from companies
 

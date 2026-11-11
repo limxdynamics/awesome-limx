@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **35** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **36** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 6
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 6
 - [教学与竞赛](#教学与竞赛) — 8
-- [行业应用](#行业应用) — 10
+- [行业应用](#行业应用) — 11
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -95,6 +95,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 报道 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 报道 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### 企业开源项目
 

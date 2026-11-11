@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **35**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **36**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +19,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 - [임바디드 AI](#임바디드-ai) — 6
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
 - [교육 및 대회](#교육-및-대회) — 8
-- [산업 적용](#산업-적용) — 10
+- [산업 적용](#산업-적용) — 11
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -95,6 +95,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 보도 | [보도](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 보도 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: WUJI TECH의 Wuji Hand 2를 장착한 TRON2가 약국 시연에서 약재 꺼내기·계량·분쇄·포장 수행 | `TRON2` | WUJI TECH | 2026 | 보도 | [보도](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### 기업 오픈소스
 
