@@ -35,16 +35,23 @@ ROOT = os.path.dirname(HERE)
 UA = "awesome-limx-sweep (+https://github.com/limxdynamics/awesome-limx)"
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 DEADLINE = [float("inf")]  # per source, so one slow or flaky site cannot eat the whole run
+STATS = {"requests": 0, "failed": 0, "errors": []}  # per source, reset in main()
 
 
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+def warn(msg):
+    """A log line that GitHub Actions also shows as a warning on the run."""
+    log(("::warning::" if os.environ.get("GITHUB_ACTIONS") else "warning: ") + msg)
+
+
 def get(url, headers=None, retries=3, accept_json=True):
     """GET a URL, return parsed JSON (or text). None when it keeps failing."""
     h = {"User-Agent": UA}
     h.update(headers or {})
+    STATS["requests"] += 1
     for attempt in range(retries):
         if time.time() > DEADLINE[0]:
             return None
@@ -60,13 +67,21 @@ def get(url, headers=None, retries=3, accept_json=True):
                 time.sleep(min(wait, 120))
                 continue
             log(f"    HTTP {e.code} for {url[:110]}")
+            fail(f"HTTP {e.code}")
             return None
         except Exception as e:  # network hiccup, bad JSON
             if attempt < retries - 1:
                 time.sleep(5)
                 continue
             log(f"    failed: {e} for {url[:110]}")
+            fail(type(e).__name__)
             return None
+
+
+def fail(why):
+    STATS["failed"] += 1
+    if why not in STATS["errors"]:
+        STATS["errors"].append(why)
 
 
 def gh(path, retries=3):
@@ -81,7 +96,8 @@ def gh(path, retries=3):
 def load_known():
     """Everything already linked from README.md, plus the reviewed list."""
     text = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
-    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(), "titles": set(), "names": {}}
+    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(),
+             "titles": set(), "names": {}, "seen_titles": set()}
     # Entry names, e.g. "PTRL" or "TRON1 Sliding Analysis", to catch a paper listed under another link.
     for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*', text):
         known["titles"].add(norm_title(m.group(1)))
@@ -108,7 +124,7 @@ def load_known():
         for line in open(p, encoding="utf-8"):
             line = line.split("#")[0].strip()
             if line.lower().startswith("title:"):
-                known["titles"].add(norm_title(line[6:]))
+                known["seen_titles"].add(norm_title(line[6:]))
             elif line:
                 seen.add(line.lower())
     return known, seen
@@ -124,25 +140,30 @@ def listed_title(title, known):
     A paper is often listed under its arXiv or code link while a database
     returns the journal DOI, so links alone miss it. Returns:
 
-    - "listed" when the whole title, the short name before a colon ("PTRL:
-      Prior Transfer ..." against the entry "PTRL") or a short name in
-      brackets ("... Selection (VAPS) for ...") is an entry name, or the
-      title is in sweep_seen.txt as `title: ...`. The candidate is dropped.
-    - "maybe listed as <entry>" when every word of an entry name of three or
-      more words appears in the title. The candidate stays in the report with
-      this note, because a new paper can share all the words of an old entry
-      ("Whole-Body MPC for Humanoid Robots" against "Whole-Body Humanoid MPC").
+    - "listed" only when the whole title is an entry name, or is in
+      sweep_seen.txt as `title: ...`. The candidate is dropped.
+    - "maybe listed as <entry>" when the short name before a colon ("PTRL:
+      ...") or in brackets ("... (VAPS) ...") is an entry name, or every word
+      of an entry name of three or more words is in the title. The candidate
+      stays in the report with this note: short names repeat across papers
+      ("CTS: Cross-Task Skill Transfer" is not the listed CTS), and a new
+      paper can share every word of an old entry.
     - "" otherwise.
+
+    To stop a known journal version of a listed paper from showing up, put
+    its key (doi:..., arxiv:...) in sweep_seen.txt.
     """
     t = norm_title(title)
     if not t:
         return ""
-    names = {t}
-    if ":" in title:
-        names.add(norm_title(title.split(":")[0]))
-    names |= {norm_title(x) for x in re.findall(r"\(([^()]{2,20})\)", title)}
-    if names & known["titles"]:
+    if t in known["titles"] or t in known["seen_titles"]:
         return "listed"
+    short = set()
+    if ":" in title:
+        short.add(norm_title(title.split(":")[0]))
+    short |= {norm_title(x) for x in re.findall(r"\(([^()]{2,20})\)", title)}
+    for k in sorted(short & known["titles"]):
+        return "maybe listed as " + known["names"].get(k, k)
     words = set(t.split())
     for k in sorted(known["titles"]):
         if len(k.split()) >= 3 and set(k.split()) <= words:
@@ -209,7 +230,11 @@ def src_github(cfg, wanted, known, seen, since):
     hits = {f: h for f, h in hits.items() if h["solid"]}
     if dropped:
         log(f"  github: left out {len(dropped)} repos that only mention the keywords in news or data files")
-    limit = s.get("max_repos", 400)
+    # Code search is not sorted by date, so with --since every hit is checked:
+    # cutting the list first could drop exactly the recent repos.
+    limit = len(hits) if since else s.get("max_repos", 400)
+    if len(hits) > limit:
+        STATS["skipped"] = len(hits) - limit
     log(f"  github: {len(hits)} new repos, fetching details" + (f" for the first {limit}" if len(hits) > limit else ""))
     for full, h in list(hits.items())[:limit]:
         d = gh("/repos/" + full, retries=2) or {}
@@ -340,14 +365,16 @@ def src_hf(cfg, wanted, known, seen, since):
                 owner = rid.split("/")[0].lower()
                 key = "hf:" + rid.lower()
                 date = (it.get("lastModified") or it.get("createdAt") or "")[:10]
-                if (rid.lower() in known["hf"] or owner in known["hf_owner"] or owner in skip_owner
+                if (rid.lower() in known["hf"] or owner in skip_owner
                         or key in seen or key in done or (since and date and date < since)):
                     continue
+                # An author already in the list may publish more; report it, but say so.
+                note = "author already in the list" if owner in known["hf_owner"] else ""
                 done.add(key)
                 prefix = "" if kind == "models" else kind + "/"
                 out.append({"key": key, "title": f"{rid} ({kind[:-1]})", "url": f"https://huggingface.co/{prefix}{rid}",
                             "robots": [robot] if robot else [], "date": date, "stars": it.get("downloads"),
-                            "note": "", "why": kw})
+                            "note": note, "why": kw})
     return out
 
 
@@ -357,7 +384,7 @@ SOURCES = {"github": ("GitHub", src_github, "stars"), "hf": ("Hugging Face", src
 
 # ---------------------------------------------------------------- report
 
-def report(results, wanted, since, partial=()):
+def report(results, wanted, since, partial=(), stats=None):
     total = sum(len(v) for v in results.values())
     lines = [f"# Candidate sweep, {datetime.date.today().isoformat()}", "",
              f"{total} candidates not yet in the list. Robots: {', '.join(wanted)}."
@@ -370,8 +397,14 @@ def report(results, wanted, since, partial=()):
         lines += [f"## {label}: {len(items)}", ""]
         if key in partial:
             lines += ["**Partial:** this source hit its time limit (`max_minutes` in the config), so some searches did not run.", ""]
+        st = (stats or {}).get(key) or {}
+        if st.get("failed"):
+            what = "**Failed:** every request" if st["failed"] >= st["requests"] else f"**Errors:** {st['failed']} of {st['requests']} requests"
+            lines += [f"{what} to this source failed ({', '.join(st['errors'][:4])}), so the list below may be incomplete. See the run log.", ""]
+        if st.get("skipped"):
+            lines += [f"**Capped:** {st['skipped']} repos were not checked (`max_repos` in the config).", ""]
         if not items:
-            lines += ["Nothing new.", ""]
+            lines += ["No results." if st.get("failed") or key in partial else "Nothing new.", ""]
             continue
         head = "| Candidate | Robot | " + (metric.capitalize() + " | " if metric else "") + "Date | Matched |"
         lines += [head, "|" + "---|" * (head.count("|") - 1)]
@@ -392,13 +425,16 @@ def key_of(x):
     m = re.search(r"github\.com/([\w.-]+/[\w.-]+)", x)
     if m:
         return "gh:" + m.group(1).lower()
-    m = re.search(r"arxiv\.org/abs/(\d{4}\.\d{4,5})", x)
+    m = re.search(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})", x) or re.search(r"arxiv\.(\d{4}\.\d{4,5})", x)
     if m:
         return "arxiv:" + m.group(1)
+    m = re.search(r"openalex\.org/(?:works/)?(W\d+)", x, re.I)
+    if m:
+        return "openalex:" + m.group(1).lower()
     m = re.search(r"huggingface\.co/(?:datasets/|spaces/)?([\w.-]+/[\w.-]+)", x)
     if m:
         return "hf:" + m.group(1).lower()
-    m = re.search(r"doi\.org/(10\..+)", x)
+    m = re.search(r"(?:doi\.org/|doi:)(10\..+)", x, re.I)
     if m:
         return "doi:" + m.group(1).lower()
     if re.fullmatch(r"[\w.-]+/[\w.-]+", x):
@@ -448,22 +484,28 @@ def main():
         log("no GITHUB_TOKEN: using repository search only, expect far fewer GitHub hits")
 
     known, seen = load_known()
-    results, partial = {}, []
+    results, partial, stats = {}, [], {}
     for s in sources:
         if s not in SOURCES:
             sys.exit(f"unknown source {s}. Choose from: {', '.join(SOURCES)}")
         log(f"{SOURCES[s][0]}")
         budget = cfg["sources"].get(s, {}).get("max_minutes", 15)
         DEADLINE[0] = time.time() + budget * 60
+        STATS.update(requests=0, failed=0, errors=[], skipped=0)
         try:
             results[s] = SOURCES[s][1](cfg, wanted, known, seen, since)
             if time.time() > DEADLINE[0]:
                 log(f"  {s}: stopped after {budget} minutes, results are partial")
                 partial.append(s)
+            if STATS["failed"]:
+                warn(f"{SOURCES[s][0]}: {STATS['failed']} of {STATS['requests']} requests failed ({', '.join(STATS['errors'][:4])})")
         except Exception as e:  # one source down should not lose the others
-            log(f"  {s} failed: {e}")
+            warn(f"{SOURCES[s][0]} stopped with an error: {e}")
+            fail(type(e).__name__)
+            STATS["requests"] = max(STATS["requests"], STATS["failed"])
             results[s] = []
-    text = report(results, wanted, since, partial)
+        stats[s] = dict(STATS)
+    text = report(results, wanted, since, partial, stats)
     open(a.out, "w", encoding="utf-8").write(text + "\n")
     json.dump([c["key"] for v in results.values() for c in v], open(state, "w", encoding="utf-8"), indent=0)
     print(f"{sum(len(v) for v in results.values())} candidates -> {a.out}")

@@ -9,6 +9,8 @@ body:
         Thanks for sharing your work. One project per submission, please. If you are the author, say so in the relationship question below; it makes review much faster.
 
         感谢分享。每次提交一个项目。如果你是作者，请在下方“与项目的关系”中注明，审核会快很多。
+
+        日本語・한국어でも記入できます / 한국어로 작성해도 됩니다. Answers in Japanese or Korean are welcome too.
   - type: input
     id: name
     attributes:
@@ -43,6 +45,7 @@ body:
         - Luna
         - P1
         - W1
+        - CL-1
         - LimX SDK only / 仅 LimX SDK
         - Other / 其他
     validations:
@@ -93,8 +96,8 @@ body:
     attributes:
       label: One-line description / 一句话简介
       description: |
-        What was done on the LimX robot, in one sentence. No superlatives. English, Chinese or both.
-        一句话说明在 LimX 机器人上做了什么，不用最高级说法。中文、英文或两者都写均可。
+        What was done on the LimX robot, in one sentence. No superlatives. English, Chinese, Japanese or Korean.
+        一句话说明在 LimX 机器人上做了什么，不用最高级说法。中、英、日、韩文均可。
       placeholder: Trained a stair-climbing policy in simulation and deployed it on TRON1 without fine-tuning.
     validations:
       required: true

@@ -484,15 +484,20 @@ def main():
             for a in sorted(set(other) - en):
                 report.error("sync", "entry p-%s is in %s but not README.md" % (a, name))
 
-    try:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        import build_robot_pages
-        for page, content in build_robot_pages.build(args.root).items():
-            old = open(page, encoding="utf-8").read() if os.path.exists(page) else None
-            if old != content:
-                report.warn("robot-pages", "%s is out of date: run python scripts/build_robot_pages.py" % page)
-    except Exception as e:  # the page builder is a convenience, never a blocker
-        report.warn("robot-pages", "could not check robot pages: %s" % e)
+    # robots/*.md are rebuilt by a workflow after every README change lands on
+    # main, so a pull request is expected to leave them behind: say nothing there.
+    if os.environ.get("GITHUB_EVENT_NAME") != "pull_request":
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import build_robot_pages
+            stale = [page for page, content in build_robot_pages.build(args.root).items()
+                     if (open(page, encoding="utf-8").read() if os.path.exists(page) else None) != content]
+            if stale:
+                report.warn("robot-pages", "%d robot page(s) out of date (%s%s). They are rebuilt automatically after "
+                            "the README change reaches main; to do it by hand: python scripts/build_robot_pages.py"
+                            % (len(stale), ", ".join(os.path.basename(p) for p in stale[:4]), ", ..." if len(stale) > 4 else ""))
+        except Exception as e:  # the page builder is a convenience, never a blocker
+            report.warn("robot-pages", "could not check robot pages: %s" % e)
 
     if args.check_links:
         check_links([p for p, _ in paths if os.path.exists(p)], report)

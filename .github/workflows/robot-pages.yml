@@ -26,6 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Build from the newest main, not the commit that triggered the run,
+          # so a README change pushed meanwhile is not left out.
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -38,4 +42,14 @@ jobs:
           git add robots
           git diff --cached --quiet && exit 0
           git commit -m "chore: rebuild robot pages (auto)"
-          git push
+          # main may have moved while this ran: rebase onto it and rebuild, a few times if needed.
+          for i in 1 2 3; do
+            git push && exit 0
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/build_robot_pages.py
+            git add robots
+            git diff --cached --quiet && exit 0
+            git commit -m "chore: rebuild robot pages (auto)"
+          done
+          exit 1
