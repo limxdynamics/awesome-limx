@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **147** 个项目与合作，其中 **99** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **149** 个项目与合作，其中 **101** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;条 | 29&nbsp;条 | 26&nbsp;条 | 6&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
+| 90&nbsp;条 | 31&nbsp;条 | 26&nbsp;条 | 6&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
 
 ## 目录
 
@@ -34,7 +34,7 @@
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
-- [教学与竞赛](#教学与竞赛) — 15
+- [教学与竞赛](#教学与竞赛) — 17
 - [行业应用](#行业应用) — 29
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
@@ -234,13 +234,13 @@ _23 个工具，分 4 组_
 
 ## 教学与竞赛
 
-_15 个条目：2 篇论文 · 12 个代码 · 1 个教程_
+_17 个条目：2 篇论文 · 14 个代码 · 1 个教程_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 仿真挑战赛**：官方赛题，含 TRON1、TRON2A 赛道 | `TRON1` `TRON2`&nbsp;*仿真* | [ATEC](https://github.com/atecup) | 2026 | 代码 | [代码](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
-| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 操作赛方案**：ACT 双臂操作 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-mani) |
-| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 运动赛方案**：SFYG TRON2A 强化学习策略 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-locomotion) |
+| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 操作赛方案**：ACT 双臂操作 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[模型](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
+| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 运动赛方案**：SFYG TRON2A 强化学习策略 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[模型](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
 | <a id="p-study_tron1"></a>**study_tron1**：环境搭建与学习笔记 | `TRON1`&nbsp;*仿真* | [beamkeerati](https://github.com/beamkeerati) | 2026 | 代码 | [代码](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（韩语） | `TRON1`&nbsp;*仿真* | [aha645](https://github.com/aha645) | 2026 | 代码 | [代码](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1`&nbsp;*仿真* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 教程 | [教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
@@ -249,6 +249,8 @@ _15 个条目：2 篇论文 · 12 个代码 · 1 个教程_
 | <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**：Datawhale 具身智能开源教程，含 TRONCamp Mani 赛事章节，讲 TRON2 双臂操作任务 | `TRON2`&nbsp;*仿真* | [Datawhale](https://github.com/datawhalechina) | 2026 | 代码 | [代码](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**：参赛队伍在 ATEC 2026 挑战赛中的强化学习训练与仿真部署工程 | `TRON1` `TRON2`&nbsp;*仿真* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | 代码 | [代码](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**：RoboCup 2026 比赛代码：TRON1 下肢加自制上身和相机（韩语） | `TRON1` | [newb-ops（首尔市立大学 ZETIN）](https://github.com/newb-ops) | 2026 | 代码 | [代码](https://github.com/newb-ops/robocup-control-portfolio) |
+| <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**：ACT 加困难样本挖掘与多卡训练，附技术报告；T4 线上得分 79/100 | `TRON2`&nbsp;*仿真* | [upset666](https://github.com/upset666) | 2026 | 代码 | [代码](https://github.com/upset666/troncamp-mani-24ZlhA) |
+| <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**：T1 到 T3 用 ACT，三碗堆叠任务改用 Diffusion Policy，附技术设计文档 | `TRON2`&nbsp;*仿真* | [irvingskr](https://github.com/irvingskr) | 2026 | 代码 | [代码](https://github.com/irvingskr/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**动手做具身智能**：从算法到实机部署的公开教程，含点足和轮足 TRON1 的室外 GNSS 与 Nav2 导航避障 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2025 | 代码 | [代码](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[教程](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1`&nbsp;*仿真* | [81578823（南方科大）](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -326,7 +328,7 @@ _29 个条目，分 6 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **29** | 1 |  | 3 | 6 | 5 | 5 | 9 |
+| [`TRON2`](robots/TRON2_cn.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
 | [`Oli`](robots/Oli_cn.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |

@@ -414,3 +414,30 @@ hf:luong22/tron1-rl-videos
 
 # Journal version of an entry listed under arXiv.
 doi:10.1109/lra.2026.3707348
+
+# TRON2 sweep 2026-11-11: copies of the TRONCamp and ATEC starter kits, official-repo copies, noise; papers that only cite TRON2.
+gh:acmex-cosmos/blog
+gh:gaizhiyang/troncamp_mani
+gh:jjlin00001/atec
+gh:jizhuochen/atec_locomotion_checkpoint
+gh:limingxing00/mitoem2021-challenge
+gh:treasureislandmc/treasureislandmc.github.io
+gh:yukai-shi/etac_west
+gh:arjuncdev/atec2026-1
+gh:bakerbrandond/dotfiles
+gh:by-liu/latent-light
+gh:charming0668/act
+gh:dongyingyibadao/atec
+gh:hanklee1324/troncamp_hank_final
+gh:jrial/pstmods-linux
+gh:obitvn/humanoid.github.io
+gh:sguys99/ai-wiki
+gh:ziyang-ray/tron2_openpi-public
+gh:ziyang-ray/troncamp-t1-t4
+hf:limx-tron2/tron2-openpi-models
+hf:datawhale/troncamp-mani-exact550-repro
+hf:xensedyl/tron2-pico4-test
+hf:xensedyl/tron2-pico4-demo
+arxiv:2610.03248
+arxiv:2512.17253
+arxiv:2608.15461

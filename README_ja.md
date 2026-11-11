@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **147** プロジェクト・提携を収録しています。うち **99** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **149** プロジェクト・提携を収録しています。うち **101** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;件 | 29&nbsp;件 | 26&nbsp;件 | 6&nbsp;件 | 4&nbsp;件 | 3&nbsp;件 |
+| 90&nbsp;件 | 31&nbsp;件 | 26&nbsp;件 | 6&nbsp;件 | 4&nbsp;件 | 3&nbsp;件 |
 
 ## 目次
 
@@ -34,7 +34,7 @@
   - [シミュレーションと環境](#シミュレーションと環境)
   - [デプロイと制御](#デプロイと制御)
   - [モデルとモーションデータ](#モデルとモーションデータ)
-- [教育と競技会](#教育と競技会) — 15
+- [教育と競技会](#教育と競技会) — 17
 - [産業応用](#産業応用) — 29
   - [導入事例と製品](#導入事例と製品)
   - [企業のオープンソース](#企業のオープンソース)
@@ -234,13 +234,13 @@ _ツール 23 件（4 グループ）_
 
 ## 教育と競技会
 
-_15 件：論文 2 · コード 12 · チュートリアル 1_
+_17 件：論文 2 · コード 14 · チュートリアル 1_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**：TRON1 と TRON2A 部門のある公式チャレンジ | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | コード | [コード](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
-| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**：ACT による双腕マニピュレーション | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-mani) |
-| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**：SFYG TRON2A の RL ポリシー | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-locomotion) |
+| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**：ACT による双腕マニピュレーション | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
+| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**：SFYG TRON2A の RL ポリシー | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
 | <a id="p-study_tron1"></a>**study_tron1**：環境構築メモと学習ログ | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | コード | [コード](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**：TRON1 と OpenArm、LLM によるミッション（韓国語） | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | コード | [コード](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：インタラクティブな Isaac Lab ガイド | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | チュートリアル | [チュートリアル](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
@@ -249,6 +249,8 @@ _15 件：論文 2 · コード 12 · チュートリアル 1_
 | <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**：Datawhale の具身 AI オープン講座、TRON2 双腕タスクを扱う TRONCamp Mani の章を収録（中国語） | `TRON2`&nbsp;*sim* | [Datawhale](https://github.com/datawhalechina) | 2026 | コード | [コード](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**：ATEC 2026 チャレンジ参加チームの強化学習訓練とシミュレーション配備 | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | コード | [コード](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**：RoboCup 2026 の試合用コード：TRON1 の下半身に自作の上半身とカメラを接続（韓国語） | `TRON1` | [newb-ops（ソウル市立大学 ZETIN）](https://github.com/newb-ops) | 2026 | コード | [コード](https://github.com/newb-ops/robocup-control-portfolio) |
+| <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**：ACT とハードサンプルマイニング、マルチ GPU 学習、技術レポート付き。T4 のオンライン得点は 79/100 | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | コード | [コード](https://github.com/upset666/troncamp-mani-24ZlhA) |
+| <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**：T1〜T3 は ACT、3 つのボウルを積む課題は Diffusion Policy、設計文書付き（中国語） | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | コード | [コード](https://github.com/irvingskr/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**：アルゴリズムから実機までの公開講座、ポイントフットとホイールフットの TRON1 で屋外 GNSS と Nav2 ナビゲーション（中国語） | `TRON1` | [武漢大学 BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | コード | [コード](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[チュートリアル](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**広州タワー ロボット登塔チャレンジ**：優勝と最優秀精密制御賞、FastStair を使用 | `Oli` | LimX | 2025 | 論文 | [論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[結果](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**：SUSTech ACR2025 の授業プロジェクト | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | コード | [コード](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -326,7 +328,7 @@ _29 件（6 グループ）_
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2_ja.md) | **29** | 1 |  | 3 | 6 | 5 | 5 | 9 |
+| [`TRON2`](robots/TRON2_ja.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
 | [`Oli`](robots/Oli_ja.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ja.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ja.md) | **4** | 3 |  |  |  |  |  | 1 |

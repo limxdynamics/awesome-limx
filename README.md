@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **147** projects and partnerships around LimX robots and the LimX SDK, **99** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **149** projects and partnerships around LimX robots and the LimX SDK, **101** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;projects | 29&nbsp;projects | 26&nbsp;projects | 6&nbsp;projects | 4&nbsp;projects | 3&nbsp;projects |
+| 90&nbsp;projects | 31&nbsp;projects | 26&nbsp;projects | 6&nbsp;projects | 4&nbsp;projects | 3&nbsp;projects |
 
 ## Contents
 
@@ -34,7 +34,7 @@
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
-- [Education & competitions](#education--competitions) — 15
+- [Education & competitions](#education--competitions) — 17
 - [Industry deployments](#industry-deployments) — 29
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
@@ -235,13 +235,13 @@ _23 tools in 4 groups_
 
 ## Education & competitions
 
-_15 entries: 2 papers · 12 code · 1 tutorial_
+_17 entries: 2 papers · 14 code · 1 tutorial_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**: official challenge with TRON1 and TRON2A tracks | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | Code | [code](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
-| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**: ACT dual-arm manipulation | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-mani) |
-| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**: SFYG TRON2A RL policy | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-locomotion) |
+| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**: ACT dual-arm manipulation | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
+| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**: SFYG TRON2A RL policy | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
 | <a id="p-study_tron1"></a>**study_tron1**: setup notes and learning log | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | Code | [code](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (Korean) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | Code | [code](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | Tutorial | [tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
@@ -250,6 +250,8 @@ _15 entries: 2 papers · 12 code · 1 tutorial_
 | <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**: Datawhale's open embodied-AI course, with a TRONCamp Mani chapter on TRON2 dual-arm tasks (Chinese) | `TRON2`&nbsp;*sim* | [Datawhale](https://github.com/datawhalechina) | 2026 | Code | [code](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**: a team's RL training and simulation deployment for the ATEC 2026 challenge | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | Code | [code](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**: match code for RoboCup 2026: a TRON1 lower body with a team-built upper body and camera (Korean) | `TRON1` | [newb-ops (UOS ZETIN)](https://github.com/newb-ops) | 2026 | Code | [code](https://github.com/newb-ops/robocup-control-portfolio) |
+| <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT with hard-example mining and multi-GPU training, with a technical report; T4 scored 79/100 online | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | Code | [code](https://github.com/upset666/troncamp-mani-24ZlhA) |
+| <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**: ACT for T1 to T3 and Diffusion Policy for the three-bowl stacking task, with a design document (Chinese) | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | Code | [code](https://github.com/irvingskr/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: open course from algorithms to real robots, with outdoor GNSS and Nav2 navigation on point-foot and wheel-foot TRON1 (Chinese) | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | Code | [code](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[tutorial](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -327,7 +329,7 @@ Entries per robot and section:
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **29** | 1 |  | 3 | 6 | 5 | 5 | 9 |
+| [`TRON2`](robots/TRON2.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
 | [`Oli`](robots/Oli.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **4** | 3 |  |  |  |  |  | 1 |
