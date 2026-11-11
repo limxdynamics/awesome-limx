@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> 基于 Luna 的 **5** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Luna 的 **6** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -15,6 +15,7 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 ## 目录
 
 - [运动控制](#运动控制) — 1
+- [感知与导航](#感知与导航) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 1
 - [行业应用](#行业应用) — 3
 
@@ -27,6 +28,12 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：跨本体全身动作跟踪 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
+
+## 感知与导航
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-wave-go"></a>**WAVE-Go**：世界模型动作适配的长距离导航，Go2-W 实机验证，并在 MuJoCo 中迁移到 Luna | `Luna`&nbsp;*仿真* | 北理工、港大、逐际动力等 | 2026 | 代码 | [论文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[代码](https://github.com/vigorlee/wave-go) |
 
 ## 工具、仿真与 SDK
 

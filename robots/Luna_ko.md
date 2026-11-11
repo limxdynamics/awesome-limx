@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna로 만든 **5**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Luna로 만든 **6**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -15,6 +15,7 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 ## 목차
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
+- [인지 및 내비게이션](#인지-및-내비게이션) — 1
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 1
 - [산업 적용](#산업-적용) — 3
 
@@ -27,6 +28,12 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**: 기체 간 전신 모션 트래킹 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
+
+## 인지 및 내비게이션
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-wave-go"></a>**WAVE-Go**: 월드 모델 행동 적응 기반 장거리 내비게이션, Go2-W 실기와 MuJoCo의 Luna로 검증 | `Luna`&nbsp;*sim* | BIT, HKU, LimX 외 | 2026 | 코드 | [논문](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[코드](https://github.com/vigorlee/wave-go) |
 
 ## 도구, 시뮬레이션 및 SDK
 

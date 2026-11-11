@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **23** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **26** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,10 +14,10 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 9
+- [移動と全身制御](#移動と全身制御) — 11
 - [マニピュレーション](#マニピュレーション) — 2
 - [エンボディドAI](#エンボディドai) — 2
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 3
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 4
 - [教育と競技会](#教育と競技会) — 2
 - [産業応用](#産業応用) — 5
 
@@ -52,6 +52,8 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | <a id="p-any2any"></a>**Any2Any**：機体をまたぐ全身モーショントラッキング | `Oli` `Luna` | LimX | 2026 | コード | [論文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[コード](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**：mjlab での適応コンプライアンス型モーショントラッキング | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：一つのポリシーで 40 種類の動作を追従 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/supermimic_oli) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 拡張、Oli のモーション模倣タスクを追加（Isaac Lab） | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**robot_retargeter**：SMPL-X や他ロボットのモーションをヒューマノイドへリターゲット、Oli 設定を同梱 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：拡散モデルによるモーションリターゲティング | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
 ## マニピュレーション
@@ -75,6 +77,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
 | <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**：シミュレーションと制御のための MCP サーバー | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [コード](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-roqsim"></a>**roqsim**：プラグイン式 MuJoCo シミュレーション基盤、同梱ヒューマノイドに Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [コード](https://github.com/cps-test-lab/roqsim) |
 
 ### モデルとモーションデータ
 

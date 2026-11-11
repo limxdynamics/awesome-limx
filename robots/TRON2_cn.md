@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **22** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,13 +14,22 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 
 ## 目录
 
-- [操作](#操作) — 2
-- [具身智能](#具身智能) — 5
+- [运动控制](#运动控制) — 1
+- [操作](#操作) — 3
+- [具身智能](#具身智能) — 6
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 5
-- [教学与竞赛](#教学与竞赛) — 3
-- [行业应用](#行业应用) — 7
+- [教学与竞赛](#教学与竞赛) — 5
+- [行业应用](#行业应用) — 9
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
+
+## 运动控制
+
+### 地形与感知行走
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-ame-locomotion-tron2a"></a>**AME Locomotion for TRON2A**：在 Isaac Lab 中复现 AME，并新增 TRON2A 双足环境 | `TRON2`&nbsp;*仿真* | [possibleustc](https://github.com/possibleustc) | 2026 | 代码 | [代码](https://github.com/possibleustc/AME_Locomotion) |
 
 ## 操作
 
@@ -28,6 +37,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 |---|---|---|---|---|---|
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人机协同搬运，TRON2 移植 | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-cooperative-transportation"></a>**多机协同搬运**：两台轮足协同搬运 | `TRON1` `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
+| <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**：两台 TRON2 协同搬运的研究平台，MuJoCo 仿真并对接 LimX SDK | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 
 ## 具身智能
 
@@ -38,6 +48,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：单步动作头 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |
 | <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：Pi0.5 策略 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 代码 | [模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | 代码 | [模型](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
+| <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRON2 插花、叠衣任务的 Pi0.5 权重 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | 代码 | [模型](https://huggingface.co/toki1231) |
 
 ## 工具、仿真与 SDK
 
@@ -68,6 +79,8 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 仿真挑战赛**：官方赛题，含 TRON1、TRON2A 赛道 | `TRON1` `TRON2`&nbsp;*仿真* | [ATEC](https://github.com/atecup) | 2026 | 代码 | [代码](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
 | <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 操作赛方案**：ACT 双臂操作 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-mani) |
 | <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 运动赛方案**：SFYG TRON2A 强化学习策略 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-locomotion) |
+| <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**：Datawhale 具身智能开源教程，含 TRONCamp Mani 赛事章节，讲 TRON2 双臂操作任务 | `TRON2`&nbsp;*仿真* | [Datawhale](https://github.com/datawhalechina) | 2026 | 代码 | [代码](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
+| <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**：参赛队伍在 ATEC 2026 挑战赛中的强化学习训练与仿真部署工程 | `TRON1` `TRON2`&nbsp;*仿真* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | 代码 | [代码](https://github.com/Logic-TARS/ATEC2026) |
 
 ## 行业应用
 
@@ -85,6 +98,8 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：面向 TRON2 的 Pi0.5 训练配置与实时推理 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/xense-openpi) |
 | <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：为 SFYG 机械臂腕部相机支架调整过的 TRON2 模型 | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | 代码 | [代码](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 的 PICO 4 双臂遥操作插件，支持 TRON2 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
+| <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：第四范式 Phanthy Motus 具身智能平台的硬件驱动，支持 TRON2 双臂 | `TRON2` | [第四范式](https://github.com/4paradigm) | 2026 | 代码 | [代码](https://github.com/4paradigm/phanthymotus-driver) |
+| <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：115 条遥操作数据，带触觉视频；Voxel51 另以 FiftyOne 格式转发 | `TRON2` | [他山科技 Xense](https://huggingface.co/Xense) | 2026 | 代码 | [数据集](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 
 ### 区域伙伴与渠道
 

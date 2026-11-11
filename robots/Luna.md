@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> **5** projects built on Luna, from the [Awesome LimX](../README.md) list.
+> **6** projects built on Luna, from the [Awesome LimX](../README.md) list.
 
 Official Luna repositories: [luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -15,6 +15,7 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
+- [Perception & navigation](#perception--navigation) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 1
 - [Industry deployments](#industry-deployments) — 3
 
@@ -27,6 +28,12 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**: cross-embodiment whole-body tracking | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
+
+## Perception & navigation
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-wave-go"></a>**WAVE-Go**: world-model action adaptation for long-range navigation, real Go2-W plus a Luna rollout in MuJoCo | `Luna`&nbsp;*sim* | BIT, HKU, LimX et al. | 2026 | Code | [paper](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[code](https://github.com/vigorlee/wave-go) |
 
 ## Tools, simulation & SDK
 

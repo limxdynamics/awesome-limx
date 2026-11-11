@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna を使った **5** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Luna を使った **6** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -15,6 +15,7 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 ## 目次
 
 - [移動と全身制御](#移動と全身制御) — 1
+- [知覚とナビゲーション](#知覚とナビゲーション) — 1
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 1
 - [産業応用](#産業応用) — 3
 
@@ -27,6 +28,12 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：機体をまたぐ全身モーショントラッキング | `Oli` `Luna` | LimX | 2026 | コード | [論文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[コード](https://github.com/Ming827/any2any_sonic2Oli) |
+
+## 知覚とナビゲーション
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-wave-go"></a>**WAVE-Go**：世界モデルによる行動適応で長距離ナビゲーション、Go2-W 実機と MuJoCo 上の Luna で検証 | `Luna`&nbsp;*sim* | BIT、HKU、LimX ほか | 2026 | コード | [論文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[コード](https://github.com/vigorlee/wave-go) |
 
 ## ツール、シミュレーション、SDK
 
