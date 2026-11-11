@@ -30,11 +30,14 @@ environment variables:
     S2_API_KEY     Semantic Scholar. Without it Semantic Scholar is skipped:
                    the keyless pool is almost always rate limited (429).
 
-Sources: GitHub, Gitee, Hugging Face, arXiv, OpenAlex and Semantic Scholar.
-Not covered: news and WeChat articles, video sites, CNKI.
+Sources: GitHub (code search and forks of LimX repos), Gitee, Hugging Face,
+arXiv, OpenAlex, Semantic Scholar and Google News (zh, en, ja, ko).
+Google News is blocked in mainland China: run with HTTPS_PROXY set there.
+Not covered: WeChat articles, video sites, CNKI.
 """
 import argparse
 import datetime
+import email.utils
 import json
 import os
 import random
@@ -151,6 +154,9 @@ def load_known():
             known["hf"].add((owner + "/" + name).lower())
         else:
             known["hf_owner"].add(owner.lower())
+    texts = [text] + [open(os.path.join(ROOT, f), encoding="utf-8").read()
+                      for f in ("README_cn.md", "README_ja.md", "README_ko.md") if os.path.exists(os.path.join(ROOT, f))]
+    known["partners"] = partner_names(texts)
     seen = set()
     p = os.path.join(HERE, "sweep_seen.txt")
     if os.path.exists(p):
@@ -354,6 +360,94 @@ def src_forks(cfg, wanted, known, seen, since):
                 break
             page += 1
     out.sort(key=lambda c: (-int(c["note"].split()[0]), c["title"]))
+    return out
+
+
+NEWS_KINDS = (("partnership", ("合作", "签约", "携手", "联合", "战略", "partner", "agreement", "collaborat", "提携", "協業", "협력", "파트너", "계약", "mou")),
+              ("channel", ("代理", "经销", "分销", "distribut", "reseller", "dealer", "販売", "代理店", "총판", "유통")),
+              ("show", ("亮相", "展会", "展出", "演出", "博览", "expo", "exhibit", "show", "展示会", "전시")),
+              ("award", ("获奖", "入选", "奖", "award", "prize", "honor", "受賞", "수상")),
+              ("deployment", ("落地", "应用", "交付", "部署", "deploy", "pilot", "導入", "도입")))
+
+
+def partner_names(known_text):
+    """Names in the industry entries (title and author), to flag news about a listed partner."""
+    generic = {"limx", "limx dynamics", "逐际动力", "tron1", "tron2", "oli", "luna", "w1", "p1", "japan", "korea",
+               "china", "germany", "us", "日本", "韩国", "德国", "美国", "중국", "일본", "한국"}
+    names = {}
+    for text in known_text:
+        m = re.search(r"^## (?:Industry deployments|行业应用|産業応用|산업 적용)\s*$", text, re.M)
+        sec = text[m.end():] if m else ""
+        sec = sec.split("\n## ")[0]
+        for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*[^|]*\|[^|]*\|([^|]*)\|', sec):
+            entry = m.group(1)
+            for chunk in re.split(r"[（）()、,，/]| and | et al\.?", re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", entry + "," + m.group(2))):
+                c = chunk.strip(" *:：")
+                if c.lower() in generic or len(c) < 2 or (c.isascii() and len(c) < 4):
+                    continue
+                names.setdefault(c.lower(), entry)
+    return names
+
+
+def src_news(cfg, wanted, known, seen, since):
+    """Google News search in Chinese, English, Japanese and Korean.
+
+    For the industry section: partnerships, channels, shows, awards and
+    deployments, which only show up in the press. Each edition has its own
+    queries (sources.news.editions). Links are Google News redirects, so
+    dedupe works on the headline; a headline naming a partner already in the
+    list gets a 'maybe listed as' note. Google News is blocked in mainland
+    China, so set HTTPS_PROXY there.
+    """
+    s = cfg["sources"]["news"]
+    days = s.get("default_days", 90)
+    if since:
+        days = max(1, (datetime.date.today() - datetime.date.fromisoformat(since)).days)
+    skip = tuple(d.lower() for d in s.get("skip_domains", []))
+    names = known.get("partners", {})
+    out, done = [], set()
+    for ed in s.get("editions", []):
+        for q in ed.get("queries", []):
+            log(f"  news [{ed['hl']}]: {q}")
+            url = (f"https://news.google.com/rss/search?q={urllib.parse.quote(q + f' when:{days}d')}"
+                   f"&hl={ed['hl']}&gl={ed['gl']}&ceid={urllib.parse.quote(ed['ceid'])}")
+            body = get(url, accept_json=False)
+            time.sleep(1.5)
+            if not body:
+                continue
+            if "<rss" not in body[:500]:
+                fail("not RSS (blocked or consent page)")
+                continue
+            try:
+                items = ET.fromstring(body).iter("item")
+            except ET.ParseError:
+                fail("bad RSS")
+                continue
+            for it in items:
+                title = " ".join((it.findtext("title") or "").split())
+                src = it.find("source")
+                src_name = (src.text or "").strip() if src is not None else ""
+                src_url = (src.get("url") or "").lower() if src is not None else ""
+                if src_name and title.endswith(" - " + src_name):
+                    title = title[: -len(src_name) - 3]
+                if any(d in src_url for d in skip):
+                    continue
+                key = "news:" + norm_title(title)[:80]
+                if not title or key in done or key in seen:
+                    continue
+                done.add(key)
+                try:
+                    date = email.utils.parsedate_to_datetime(it.findtext("pubDate") or "").date().isoformat()
+                except (TypeError, ValueError):
+                    date = ""
+                low = title.lower()
+                kinds = [k for k, words in NEWS_KINDS if any(w in low for w in words)]
+                hint = next((f"maybe listed as {entry}" for n, entry in names.items() if n in low), "")
+                out.append({"key": key, "title": title, "url": it.findtext("link") or "",
+                            "robots": robots_for(title, cfg, wanted), "date": date, "stars": None,
+                            "note": "; ".join(filter(None, [src_name, hint])),
+                            "why": ", ".join(kinds) or q})
+    out.sort(key=lambda c: c["date"], reverse=True)
     return out
 
 
@@ -643,7 +737,8 @@ SOURCES = {"github": ("GitHub", src_github, "stars"), "forks": ("Forks of LimX r
            "gitee": ("Gitee", src_gitee, "stars"),
            "hf": ("Hugging Face", src_hf, "downloads"), "arxiv": ("arXiv (title and abstract)", src_arxiv, None),
            "openalex": ("OpenAlex (full text)", src_openalex, None),
-           "semanticscholar": ("Semantic Scholar (abstract and full-text snippets)", src_semanticscholar, None)}
+           "semanticscholar": ("Semantic Scholar (abstract and full-text snippets)", src_semanticscholar, None),
+           "news": ("News (Google News, zh/en/ja/ko)", src_news, None)}
 PAPERS_DONE = set()  # paper keys reported this run, shared by OpenAlex and Semantic Scholar
 
 
