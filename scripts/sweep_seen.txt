@@ -441,3 +441,14 @@ hf:xensedyl/tron2-pico4-demo
 arxiv:2610.03248
 arxiv:2512.17253
 arxiv:2608.15461
+
+# Oli sweep 2026-11-11: lists, notes, a retargeter copy, research notes.
+gh:betterthanawesome/better-than-awesome-robots
+gh:cesarliu/smimic-ext
+gh:hasnate618/clank
+gh:jiayoua-panda/gothenburg_tech_week_chalmers_hackathon_go_pikachu
+gh:mochiaochen/notes
+gh:qinnyulan/supermimiccarnival
+gh:ishandutta2007/world-humanoid-robot-games
+gh:krixdina/robot-retargeter-dr02
+gh:zhaoyang97/paper-notes-en

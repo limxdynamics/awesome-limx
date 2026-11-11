@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **149** プロジェクト・提携を収録しています。うち **101** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **152** プロジェクト・提携を収録しています。うち **103** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;件 | 31&nbsp;件 | 26&nbsp;件 | 6&nbsp;件 | 4&nbsp;件 | 3&nbsp;件 |
+| 90&nbsp;件 | 31&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 4&nbsp;件 | 3&nbsp;件 |
 
 ## 目次
 
 - [はじめる前に](#はじめる前に)
-- [移動と全身制御](#移動と全身制御) — 47
+- [移動と全身制御](#移動と全身制御) — 50
   - [地形と知覚ロコモーション](#地形と知覚ロコモーション)
   - [強化学習の訓練と実機転移](#強化学習の訓練と実機転移)
   - [モデルベース制御](#モデルベース制御)
@@ -62,7 +62,7 @@
 
 ## 移動と全身制御
 
-_47 件（4 グループ）：論文 19 · コード 28_
+_50 件（4 グループ）：論文 20 · コード 30_
 
 ### 地形と知覚ロコモーション
 
@@ -129,6 +129,9 @@ _47 件（4 グループ）：論文 19 · コード 28_
 | <a id="p-tron1-wf-mimic"></a>**TRON1 WF Mimic**：ダンス模倣と実現可能性の検証 | `TRON1`&nbsp;*sim* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | コード | [コード](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 拡張、Oli のモーション模倣タスクを追加（Isaac Lab） | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**：SMPL-X や他ロボットのモーションをヒューマノイドへリターゲット、Oli 設定を同梱 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：mjlab で旧型 Oli（HU_D03）の歩行と動作模倣ポリシーを学習（ベトナム語） | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | コード | [コード](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**：ウェブのダンス動画を Oli を含む 12 機種のヒューマノイドにリターゲット、MuJoCo で描画 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | コード | [コード](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：拡散モデルによるモーションリターゲティング | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
 ## 知覚とナビゲーション
@@ -329,8 +332,8 @@ _29 件（6 グループ）_
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2_ja.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
-| [`Oli`](robots/Oli_ja.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
-| [`Luna`](robots/Luna_ja.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
+| [`Oli`](robots/Oli_ja.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
+| [`Luna`](robots/Luna_ja.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ja.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1_ja.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 

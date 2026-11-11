@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **149** 个项目与合作，其中 **101** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **152** 个项目与合作，其中 **103** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;条 | 31&nbsp;条 | 26&nbsp;条 | 6&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
+| 90&nbsp;条 | 31&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
 
 ## 目录
 
 - [动手之前](#动手之前)
-- [运动控制](#运动控制) — 47
+- [运动控制](#运动控制) — 50
   - [地形与感知行走](#地形与感知行走)
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
@@ -62,7 +62,7 @@
 
 ## 运动控制
 
-_47 个条目，分 4 组：19 篇论文 · 28 个代码_
+_50 个条目，分 4 组：20 篇论文 · 30 个代码_
 
 ### 地形与感知行走
 
@@ -129,6 +129,9 @@ _47 个条目，分 4 组：19 篇论文 · 28 个代码_
 | <a id="p-tron1-wf-mimic"></a>**TRON1 轮足舞蹈模仿**：舞蹈模仿与可行性分析 | `TRON1`&nbsp;*仿真* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | 代码 | [代码](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：在 mjlab 中为上一代 Oli（HU_D03）训练行走和动作模仿策略（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 感知与导航
@@ -329,8 +332,8 @@ _29 个条目，分 6 组_
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2_cn.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
-| [`Oli`](robots/Oli_cn.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
-| [`Luna`](robots/Luna_cn.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
+| [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
+| [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1_cn.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 

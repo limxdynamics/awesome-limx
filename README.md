@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **149** projects and partnerships around LimX robots and the LimX SDK, **101** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **152** projects and partnerships around LimX robots and the LimX SDK, **103** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;projects | 31&nbsp;projects | 26&nbsp;projects | 6&nbsp;projects | 4&nbsp;projects | 3&nbsp;projects |
+| 90&nbsp;projects | 31&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 4&nbsp;projects | 3&nbsp;projects |
 
 ## Contents
 
 - [Before you start](#before-you-start)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 47
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 50
   - [Terrain & perceptive locomotion](#terrain--perceptive-locomotion)
   - [RL training & sim-to-real](#rl-training--sim-to-real)
   - [Model-based control](#model-based-control)
@@ -63,7 +63,7 @@ order - these are our own repositories, not community projects.
 
 ## Locomotion & whole-body control
 
-_47 entries in 4 groups: 19 papers · 28 code_
+_50 entries in 4 groups: 20 papers · 30 code_
 
 ### Terrain & perceptive locomotion
 
@@ -130,6 +130,9 @@ _47 entries in 4 groups: 19 papers · 28 code_
 | <a id="p-tron1-wf-mimic"></a>**TRON1 WF Mimic**: dance imitation and feasibility study | `TRON1`&nbsp;*sim* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | Code | [code](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**: robot_lab extension with motion-mimic tasks for Oli in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**: retargets SMPL-X or source-robot motion to humanoids, with an Oli config | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**: locomotion and motion-imitation policies for HU_D03, the earlier Oli model, in mjlab (Vietnamese) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | Code | [code](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: diffusion-based motion retargeting | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 
 ## Perception & navigation
@@ -330,8 +333,8 @@ Entries per robot and section:
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
-| [`Oli`](robots/Oli.md) | **26** | 11 |  | 2 | 2 | 4 | 2 | 5 |
-| [`Luna`](robots/Luna.md) | **6** | 1 | 1 |  |  | 1 |  | 3 |
+| [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
+| [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **4** | 3 |  |  |  |  |  | 1 |
 | [`W1`](robots/W1.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 
