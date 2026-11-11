@@ -22,7 +22,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 - [教学与竞赛](#教学与竞赛) — 10
 - [行业应用](#行业应用) — 11
 
-<sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
+<sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
 ## 运动控制
 
@@ -173,7 +173,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足 TRON1 运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，列为该开发板官方应用案例 | `TRON1` | 地瓜机器人 | 2025 | 论文 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足 TRON1 运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，列为该开发板官方应用案例 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企业开源项目
 
@@ -190,14 +190,14 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 论文 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 论文 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 奖项与认可
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**：TRON1 入选 IEEE Spectrum 杂志“月度机器人”栏目 | `TRON1` | IEEE Spectrum | 2026 | 论文 | [报道](https://doi.org/10.1109/MSPEC.2026.11595926) |
-| <a id="p-rbr50-2025-tron1"></a>**2025 RBR50 机器人创新奖**：TRON1 作为多形态双足研发平台入选 | `TRON1` | The Robot Report | 2025 | 论文 | [成绩](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
+| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**：TRON1 入选 IEEE Spectrum 杂志“月度机器人”栏目 | `TRON1` | IEEE Spectrum | 2026 | 报道 | [报道](https://doi.org/10.1109/MSPEC.2026.11595926) |
+| <a id="p-rbr50-2025-tron1"></a>**2025 RBR50 机器人创新奖**：TRON1 作为多形态双足研发平台入选 | `TRON1` | The Robot Report | 2025 | 报道 | [成绩](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 用 TRON1 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

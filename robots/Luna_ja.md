@@ -19,7 +19,7 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 1
 - [産業応用](#産業応用) — 3
 
-<sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
+<sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
 ## 移動と全身制御
 
@@ -49,8 +49,8 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 論文 | [報道](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**「キル・イット」決勝**：デザイナー キム・ナラの優勝決勝ステージに Luna が登場、tvN | `Luna` | tvN、キム・ナラ | 2026 | 論文 | [報道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[報道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
-| <a id="p-taobao-influencer-festival"></a>**淘宝インフルエンサーフェスティバル**：上海で俳優 ミシェル・チェンと Luna がランウェイを歩行 | `Luna` | 淘宝 | 2026 | 論文 | [報道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+| <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 報道 | [報道](https://news.ifeng.com/c/8vmGa3sP4u7) |
+| <a id="p-kill-it-finale"></a>**「キル・イット」決勝**：デザイナー キム・ナラの優勝決勝ステージに Luna が登場、tvN | `Luna` | tvN、キム・ナラ | 2026 | 報道 | [報道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[報道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-taobao-influencer-festival"></a>**淘宝インフルエンサーフェスティバル**：上海で俳優 ミシェル・チェンと Luna がランウェイを歩行 | `Luna` | 淘宝 | 2026 | 報道 | [報道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
 
 Luna で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

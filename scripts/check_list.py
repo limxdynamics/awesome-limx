@@ -40,6 +40,9 @@ ROBOT_ROW = re.compile(r"^-\s*\*\*([^*]+)\*\*\s*[:：]\s*(.*)$")
 TYPE_CODE = {"en": "Code", "cn": "代码", "ja": "コード", "ko": "코드"}
 TYPE_PAPER = {"en": "Paper", "cn": "论文", "ja": "論文", "ko": "논문"}
 TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程", "ja": "チュートリアル", "ko": "튜토리얼"}
+TYPE_NEWS = {"en": "News", "cn": "报道", "ja": "報道", "ko": "보도"}
+# Link kinds that only report on something: a media report, a result announcement, a video.
+NEWS_KINDS = {"news", "报道", "報道", "보도", "result", "成绩", "結果", "결과", "video", "视频", "動画", "영상"}
 
 CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
 LINK_MARK = re.compile(r"\[?\[(\w+)\]\((https?://[^)]+)\)")
@@ -225,14 +228,16 @@ def is_walkable(items):
 
 
 def check_type(label_type, items, lang, path, table, report):
-    """The three values answer one question: what can a reader do with this?
+    """The four values answer one question: what can a reader do with this?
 
     Code      clone or download it
     Tutorial  follow it, but there is no package to take away
-    Paper     read it (paper, project page, write-up, result announcement)
+    Paper     read it (paper, project page, write-up)
+    News      only a media report, an announcement or a result
     """
     runnable = is_runnable(items)
     walkable = is_walkable(items)
+    news_only = bool(items) and all(kind in NEWS_KINDS for kind, _ in items)
 
     if label_type in TYPE_CODE.values():
         if not runnable:
@@ -249,10 +254,17 @@ def check_type(label_type, items, lang, path, table, report):
         if runnable or walkable:
             report.warn("type", "%s / %r: marked %s but links something to run"
                         % (path, table, label_type))
+        elif news_only:
+            report.warn("type", "%s / %r: marked %s but links only reports: use %s"
+                        % (path, table, label_type, TYPE_NEWS[lang]))
+    elif label_type in TYPE_NEWS.values():
+        if runnable or walkable or not news_only:
+            report.warn("type", "%s / %r: marked %s but links more than reports"
+                        % (path, table, label_type))
     else:
-        report.warn("type", "%s / %r: unrecognised type %r, expected %s / %s / %s"
+        report.warn("type", "%s / %r: unrecognised type %r, expected %s / %s / %s / %s"
                     % (path, table, label_type, TYPE_CODE[lang], TYPE_TUTORIAL[lang],
-                       TYPE_PAPER[lang]))
+                       TYPE_PAPER[lang], TYPE_NEWS[lang]))
 
 
 def table_label(t):

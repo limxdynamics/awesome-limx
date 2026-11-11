@@ -22,7 +22,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 - [Education & competitions](#education--competitions) — 10
 - [Industry deployments](#industry-deployments) — 11
 
-<sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
+<sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
 ## Locomotion & whole-body control
 
@@ -173,7 +173,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot TRON1 locomotion policy moved to D-Robotics' RDK S100 BPU, an official application case of the board | `TRON1` | D-Robotics | 2025 | Paper | [news](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot TRON1 locomotion policy moved to D-Robotics' RDK S100 BPU, an official application case of the board | `TRON1` | D-Robotics | 2025 | News | [news](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### Open source from companies
 
@@ -190,14 +190,14 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | Paper | [news](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | Paper | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | News | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### Awards & recognition
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**: TRON1 featured as Robot of the Month in IEEE Spectrum magazine | `TRON1` | IEEE Spectrum | 2026 | Paper | [news](https://doi.org/10.1109/MSPEC.2026.11595926) |
-| <a id="p-rbr50-2025-tron1"></a>**RBR50 Robotics Innovation Awards 2025**: TRON1 recognized as a multi-modal biped R&D platform | `TRON1` | The Robot Report | 2025 | Paper | [result](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
+| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**: TRON1 featured as Robot of the Month in IEEE Spectrum magazine | `TRON1` | IEEE Spectrum | 2026 | News | [news](https://doi.org/10.1109/MSPEC.2026.11595926) |
+| <a id="p-rbr50-2025-tron1"></a>**RBR50 Robotics Innovation Awards 2025**: TRON1 recognized as a multi-modal biped R&D platform | `TRON1` | The Robot Report | 2025 | News | [result](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 Built something on TRON1? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

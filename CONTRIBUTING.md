@@ -54,7 +54,7 @@ Each section is a table. Add one row per project:
 - **Year**: the year the work was published or shown, in its own column.
 - **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, news, result. Use `news` for press coverage of a deployment and `result` for an official competition result. Separate them with `&nbsp;·&nbsp;` so the links stay on one line.
 - **Order**: newest first within each section.
-- **Type**: `Code`, `Tutorial` or `Paper`, decided by the maintainers. See [Type](#type). Leave it out when you submit.
+- **Type**: `Code`, `Tutorial`, `Paper` or `News`, decided by the maintainers. See [Type](#type). Leave it out when you submit.
 
 A section appears in the README once it has its first entry.
 
@@ -66,19 +66,22 @@ The Type column answers one question: what can a reader do with this?
 |---|---|
 | **Code** | Something to clone or download: a repository, a model, a dataset |
 | **Tutorial** | Something to follow: a tutorial, a course, a Hugging Face Space |
-| **Paper** | Something to read: a paper, a project page, a write-up, a news report, a result announcement |
+| **Paper** | Something to read: a paper, a project page, a write-up |
+| **News** | Only a report: a media article, a company or partner announcement, an award or competition result |
 
 Decide in this order:
 
 1. Links a repository, a model or a dataset: `Code`
 2. Links a tutorial or a Space: `Tutorial`
-3. Anything else: `Paper`
+3. Links a paper, a project page or a write-up: `Paper`
+4. Links only reports (news, announcement, result, video): `News`
 
 A project with both a paper and a repository is `Code`, because the reader still
 gets something to run. A repository that only holds setup notes is `Code` too.
 
-`Paper` does not mean only papers. A write-up, a project page or a competition
-result belongs here as well: there is nothing to run.
+`Paper` does not mean only papers. A write-up or a project page belongs here as
+well: there is nothing to run. Industry entries are usually `News`: a
+partnership, a show or an award is known from reports, not from a paper.
 
 ## Which section
 

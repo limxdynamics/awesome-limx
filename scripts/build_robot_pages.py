@@ -34,28 +34,28 @@ TEXT = {
         official="Official {r} repositories: {links}",
         contents="Contents", back="Full list", others="Other robots",
         none="No entries yet.",
-        legend="**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot",
+        legend="**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot",
         submit="Built something on {r}? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)."),
     "_cn": dict(
         lead="> 基于 {r} 的 **{n}** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。",
         official="{r} 官方仓库：{links}",
         contents="目录", back="完整列表", others="其他机型",
         none="暂无条目。",
-        legend="**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过",
+        legend="**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过",
         submit="用 {r} 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。"),
     "_ja": dict(
         lead="> {r} を使った **{n}** プロジェクト（[Awesome LimX](../README_ja.md) より）。",
         official="{r} 公式リポジトリ：{links}",
         contents="目次", back="全リスト", others="ほかの機種",
         none="まだ項目はありません。",
-        legend="**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作",
+        legend="**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作",
         submit="{r} で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。"),
     "_ko": dict(
         lead="> {r}로 만든 **{n}**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).",
         official="{r} 공식 저장소: {links}",
         contents="목차", back="전체 목록", others="다른 기종",
         none="아직 항목이 없습니다.",
-        legend="**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작",
+        legend="**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작",
         submit="{r}로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)."),
 }
 

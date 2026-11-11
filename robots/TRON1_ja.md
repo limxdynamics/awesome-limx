@@ -22,7 +22,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 - [教育と競技会](#教育と競技会) — 10
 - [産業応用](#産業応用) — 11
 
-<sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
+<sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
 ## 移動と全身制御
 
@@ -173,7 +173,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：ポイントフット TRON1 の運動制御モデルを D-Robotics の RDK S100 の BPU に移植、同ボードの公式応用事例 | `TRON1` | D-Robotics | 2025 | 論文 | [報道](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：ポイントフット TRON1 の運動制御モデルを D-Robotics の RDK S100 の BPU に移植、同ボードの公式応用事例 | `TRON1` | D-Robotics | 2025 | 報道 | [報道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企業のオープンソース
 
@@ -190,14 +190,14 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**ロボットバンク**：TRON1、TRON2、Oli を日本国内で展開、現場導入を支援 | `TRON1` `TRON2` `Oli` | ロボットバンク | 2026 | 論文 | [報道](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**Synerex**：韓国の公式パートナー、Drone Show Korea 2025 で TRON1 を韓国初公開 | `TRON1` | Synerex（韓国） | 2025 | 論文 | [報道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-robot-bank-japan"></a>**ロボットバンク**：TRON1、TRON2、Oli を日本国内で展開、現場導入を支援 | `TRON1` `TRON2` `Oli` | ロボットバンク | 2026 | 報道 | [報道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-synerex-korea"></a>**Synerex**：韓国の公式パートナー、Drone Show Korea 2025 で TRON1 を韓国初公開 | `TRON1` | Synerex（韓国） | 2025 | 報道 | [報道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 受賞と評価
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**：TRON1 が IEEE Spectrum 誌の「Robot of the Month」に掲載 | `TRON1` | IEEE Spectrum | 2026 | 論文 | [報道](https://doi.org/10.1109/MSPEC.2026.11595926) |
-| <a id="p-rbr50-2025-tron1"></a>**RBR50 ロボティクス・イノベーション・アワード 2025**：TRON1 がマルチモーダル二足の研究開発プラットフォームとして選出 | `TRON1` | The Robot Report | 2025 | 論文 | [結果](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
+| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**：TRON1 が IEEE Spectrum 誌の「Robot of the Month」に掲載 | `TRON1` | IEEE Spectrum | 2026 | 報道 | [報道](https://doi.org/10.1109/MSPEC.2026.11595926) |
+| <a id="p-rbr50-2025-tron1"></a>**RBR50 ロボティクス・イノベーション・アワード 2025**：TRON1 がマルチモーダル二足の研究開発プラットフォームとして選出 | `TRON1` | The Robot Report | 2025 | 報道 | [結果](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 TRON1 で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。
