@@ -389,7 +389,27 @@
             "림엑스 로봇"
           ]
         }
-      ]
+      ],
+      "exclude": [
+        "融资",
+        "上市",
+        "IPO",
+        "递表",
+        "港交所",
+        "估值",
+        "募资",
+        "funding",
+        "raises",
+        "valuation",
+        "Hong Kong listing",
+        "stock",
+        "調達",
+        "上場",
+        "투자 유치",
+        "상장",
+        "시가총액"
+      ],
+      "_note": "Headlines containing an exclude word (funding, IPO, valuation, stock) are dropped: the list wants partnerships, channels, shows, awards and deployments."
     }
   },
   "_models": "Model IDs from LimX's own description repos: TRON1 = PF_/SF_/WF_TRON1A|B, plus PF_P441A..C2 (older point-foot TRON1, per tron1-robot-description); W1 = WL_P311D/E (wheel-legged quadruped, tron1-robot-description); Oli = HU_D04_01, HU_D03_03 (discontinued predecessor, humanoid-description); Luna = HU_L04_01 (luna-description); TRON2 = {DACH, DASF2, DASF, DA, SFYG, WFYG, SF, WF}_TRON2{A,B} (folder names in tron2-robot-description). P1 and CL-1 have no public description repo, so only their names are searched. CL-1 is searched so a first project can be found, but the list has no CL-1 entry, robot page or form option yet: when one is listed, add CL-1 to ROBOTS in build_robot_pages.py, the README robot tables and the form. TRON2 code is also found by the names of LimX's TRON2 stacks people build on (tron2_env, tron2_rl_lab, TRON2_YG_LAB, tron2_openpi, tron2_mujoco_sim), since the description repo has no model ID."

@@ -481,3 +481,6 @@ gh:voniu/troncamp-mani
 gh:naotchi/tron2_mujoco_sim
 gh:dmshsl/tron2_mujoco_sim
 gh:dmshsl/tron2_rl_deploy_python
+
+# News reviewed 2026-11-11: LimX's own program and company news, listed partners, unverified items.
+news:逐际动力启动具身智能产业学院共建计划 携手高校打造具身人才培养新范式

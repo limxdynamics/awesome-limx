@@ -441,6 +441,8 @@ def src_news(cfg, wanted, known, seen, since):
                 except (TypeError, ValueError):
                     date = ""
                 low = title.lower()
+                if any(w.lower() in low for w in s.get("exclude", [])):  # funding, IPO and the like
+                    continue
                 kinds = [k for k, words in NEWS_KINDS if any(w in low for w in words)]
                 hint = next((f"maybe listed as {entry}" for n, entry in names.items() if n in low), "")
                 out.append({"key": key, "title": title, "url": it.findtext("link") or "",
