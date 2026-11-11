@@ -22,6 +22,7 @@ import argparse
 import datetime
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -62,6 +63,7 @@ def get(url, headers=None, retries=3, accept_json=True):
                 body = r.read().decode("utf-8", "replace")
                 return json.loads(body) if accept_json else body
         except urllib.error.HTTPError as e:
+            LAST["remaining"] = e.headers.get("x-ratelimit-remaining")  # a 403 for a spent quota says 0 here
             limited = e.code == 429 or e.headers.get("Retry-After") or e.headers.get("x-ratelimit-remaining") == "0"
             if limited and attempt < retries - 1:
                 wait = int(e.headers.get("Retry-After") or 0) or 30 * (attempt + 1)
@@ -238,7 +240,12 @@ def src_github(cfg, wanted, known, seen, since):
     if len(hits) > limit:
         STATS["skipped"] = len(hits) - limit
     log(f"  github: {len(hits)} new repos, fetching details" + (f" for the first {limit}" if len(hits) > limit else ""))
-    todo = list(hits.items())[:limit]
+    todo = list(hits.items())
+    # Shuffle before capping, so when the quota or time runs out it is not the
+    # same repos at the end of the list that miss out every month.
+    random.shuffle(todo)
+    todo = todo[:limit]
+    LAST["remaining"] = None  # the last value is from code search, which has its own quota
     for i, (full, h) in enumerate(todo):
         # Stop cleanly at the time budget or when the hourly API quota runs out:
         # what is left is counted as unchecked and comes back next run.

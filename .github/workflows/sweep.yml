@@ -36,9 +36,7 @@ on:
         description: 'With mark_seen: candidates to keep reporting, comma-separated URLs or owner/repo'
         required: false
 
-permissions:
-  contents: write
-  actions: read
+permissions: {}
 
 concurrency:
   group: sweep
@@ -52,6 +50,8 @@ jobs:
     name: Sweep
     if: ${{ !inputs.mark_seen }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     # The sources' time budgets (max_minutes in the config) add up to 50 minutes.
     timeout-minutes: 90
     steps:
@@ -104,6 +104,9 @@ jobs:
     name: Mark reviewed
     if: ${{ inputs.mark_seen }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
