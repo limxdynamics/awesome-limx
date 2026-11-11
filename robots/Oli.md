@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **26** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **29** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 11
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 14
 - [Manipulation](#manipulation) — 2
 - [Embodied AI](#embodied-ai) — 2
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 4
@@ -54,6 +54,9 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: one policy tracking 40 motions | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | Code | [code](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**: robot_lab extension with motion-mimic tasks for Oli in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**: retargets SMPL-X or source-robot motion to humanoids, with an Oli config | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**: locomotion and motion-imitation policies for HU_D03, the earlier Oli model, in mjlab (Vietnamese) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | Code | [code](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: diffusion-based motion retargeting | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 
 ## Manipulation

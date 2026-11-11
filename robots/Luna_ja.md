@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna を使った **6** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Luna を使った **7** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -14,7 +14,7 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 1
+- [移動と全身制御](#移動と全身制御) — 2
 - [知覚とナビゲーション](#知覚とナビゲーション) — 1
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 1
 - [産業応用](#産業応用) — 3
@@ -28,6 +28,7 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：機体をまたぐ全身モーショントラッキング | `Oli` `Luna` | LimX | 2026 | コード | [論文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[コード](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
 
 ## 知覚とナビゲーション
 

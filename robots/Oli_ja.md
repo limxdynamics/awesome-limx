@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **26** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **29** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 11
+- [移動と全身制御](#移動と全身制御) — 14
 - [マニピュレーション](#マニピュレーション) — 2
 - [エンボディドAI](#エンボディドai) — 2
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 4
@@ -54,6 +54,9 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：一つのポリシーで 40 種類の動作を追従 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 拡張、Oli のモーション模倣タスクを追加（Isaac Lab） | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**：SMPL-X や他ロボットのモーションをヒューマノイドへリターゲット、Oli 設定を同梱 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：mjlab で旧型 Oli（HU_D03）の歩行と動作模倣ポリシーを学習（ベトナム語） | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | コード | [コード](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**：ウェブのダンス動画を Oli を含む 12 機種のヒューマノイドにリターゲット、MuJoCo で描画 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | コード | [コード](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：拡散モデルによるモーションリターゲティング | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
 ## マニピュレーション

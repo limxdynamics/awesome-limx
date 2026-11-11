@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **26** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 ## 目录
 
-- [运动控制](#运动控制) — 11
+- [运动控制](#运动控制) — 14
 - [操作](#操作) — 2
 - [具身智能](#具身智能) — 2
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 4
@@ -54,6 +54,9 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：单策略跟踪 40 段动作 | `Oli`&nbsp;*仿真* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 代码 | [代码](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**robot_retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：在 mjlab 中为上一代 Oli（HU_D03）训练行走和动作模仿策略（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-robodance"></a>**robodance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 操作

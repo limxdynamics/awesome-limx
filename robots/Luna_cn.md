@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> 基于 Luna 的 **6** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Luna 的 **7** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -14,7 +14,7 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 
 ## 目录
 
-- [运动控制](#运动控制) — 1
+- [运动控制](#运动控制) — 2
 - [感知与导航](#感知与导航) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 1
 - [行业应用](#行业应用) — 3
@@ -28,6 +28,7 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：跨本体全身动作跟踪 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 
 ## 感知与导航
 

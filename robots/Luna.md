@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> **6** projects built on Luna, from the [Awesome LimX](../README.md) list.
+> **7** projects built on Luna, from the [Awesome LimX](../README.md) list.
 
 Official Luna repositories: [luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -14,7 +14,7 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 2
 - [Perception & navigation](#perception--navigation) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 1
 - [Industry deployments](#industry-deployments) — 3
@@ -28,6 +28,7 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**: cross-embodiment whole-body tracking | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 
 ## Perception & navigation
 
