@@ -59,6 +59,8 @@ jobs:
           args=()
           [ -n "$ROBOTS" ] && args+=(--robots "$ROBOTS")
           [ -n "$SOURCES" ] && args+=(--sources "$SOURCES")
+          # A scheduled run only looks at the last 60 days; run by hand with an empty `since` for the full history.
+          [ -z "$SINCE" ] && [ "${{ github.event_name }}" = "schedule" ] && SINCE=60
           [ -n "$SINCE" ] && args+=(--since "$SINCE")
           python scripts/find_candidates.py "${args[@]}"
           head -c 900000 sweep_report.md >> "$GITHUB_STEP_SUMMARY"

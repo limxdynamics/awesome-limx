@@ -173,29 +173,31 @@
       "pages": 3,
       "max_repos": 400,
       "min_stars": 0,
-      "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2}|(^|/)community/|(^|/)[^/]*(adopters|users|customers|clients|showcase|who-?uses)[^/]*$)"
+      "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2}|(^|/)community/|(^|/)[^/]*(adopters|users|customers|clients|showcase|who-?uses)[^/]*$)",
+      "max_minutes": 20
     },
     "hf": {
-      "enabled": true
+      "enabled": true,
+      "max_minutes": 10
     },
     "arxiv": {
       "enabled": true,
       "max_results": 100,
       "queries": [
-        "all:LimX",
+        "all:LimX AND cat:cs.RO",
         "all:\"TRON 1\"",
         "all:\"TRON 2\"",
-        "all:\"LimX Oli\"",
-        "all:\"point-foot\"",
-        "all:\"wheel-foot\""
+        "all:\"LimX Oli\""
       ],
-      "_note": "Checked 2026-11-11: all:LimX 8, \"TRON 1\" 1, \"LimX Oli\" 5, \"point-foot\" 11, \"wheel-foot\" 2 hits in total; \"Tron1\", TRON1, \"sole-foot\" 0, because arXiv only indexes titles and abstracts. OpenAlex full text is the main paper source."
+      "_note": "Checked 2026-11-11: all:LimX 8 hits in total (one is a 2010 maths paper matching 'lim x', hence cat:cs.RO), \"TRON 1\" 1, \"LimX Oli\" 5, \"TRON 2\" 0 for now. \"Tron1\", TRON1 and \"sole-foot\" have none, and generic terms such as \"point-foot\" or \"wheel-foot\" only bring other companies' robots (0 overlap with LimX), so they are left out. arXiv only indexes titles and abstracts: OpenAlex full text is the main paper source.",
+      "max_minutes": 10
     },
     "openalex": {
       "enabled": true,
       "max_results": 50,
       "default_days": 365,
-      "mailto": ""
+      "mailto": "opensource@limxdynamics.com",
+      "max_minutes": 10
     }
   },
   "_models": "Model IDs from LimX's own description repos: TRON1 = PF_/SF_/WF_TRON1A|B, plus PF_P441A..C2 (older point-foot TRON1, per tron1-robot-description); W1 = WL_P311D/E (wheel-legged quadruped, tron1-robot-description); Oli = HU_D04_01, HU_D03_03 (discontinued predecessor, humanoid-description); Luna = HU_L04_01 (luna-description); TRON2 = SFYG_TRON2A, DA_TRON2A (tron2-robot-description ships a generic robot.urdf). P1 and CL-1 have no public description repo, so only their names are searched."

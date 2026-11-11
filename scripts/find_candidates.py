@@ -34,6 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 UA = "awesome-limx-sweep (+https://github.com/limxdynamics/awesome-limx)"
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
+DEADLINE = [float("inf")]  # per source, so one slow or flaky site cannot eat the whole run
 
 
 def log(*a):
@@ -45,6 +46,8 @@ def get(url, headers=None, retries=3, accept_json=True):
     h = {"User-Agent": UA}
     h.update(headers or {})
     for attempt in range(retries):
+        if time.time() > DEADLINE[0]:
+            return None
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
                 body = r.read().decode("utf-8", "replace")
@@ -354,7 +357,7 @@ SOURCES = {"github": ("GitHub", src_github, "stars"), "hf": ("Hugging Face", src
 
 # ---------------------------------------------------------------- report
 
-def report(results, wanted, since):
+def report(results, wanted, since, partial=()):
     total = sum(len(v) for v in results.values())
     lines = [f"# Candidate sweep, {datetime.date.today().isoformat()}", "",
              f"{total} candidates not yet in the list. Robots: {', '.join(wanted)}."
@@ -365,6 +368,8 @@ def report(results, wanted, since):
     for key, items in results.items():
         label, _, metric = SOURCES[key]
         lines += [f"## {label}: {len(items)}", ""]
+        if key in partial:
+            lines += ["**Partial:** this source hit its time limit (`max_minutes` in the config), so some searches did not run.", ""]
         if not items:
             lines += ["Nothing new.", ""]
             continue
@@ -443,17 +448,22 @@ def main():
         log("no GITHUB_TOKEN: using repository search only, expect far fewer GitHub hits")
 
     known, seen = load_known()
-    results = {}
+    results, partial = {}, []
     for s in sources:
         if s not in SOURCES:
             sys.exit(f"unknown source {s}. Choose from: {', '.join(SOURCES)}")
         log(f"{SOURCES[s][0]}")
+        budget = cfg["sources"].get(s, {}).get("max_minutes", 15)
+        DEADLINE[0] = time.time() + budget * 60
         try:
             results[s] = SOURCES[s][1](cfg, wanted, known, seen, since)
+            if time.time() > DEADLINE[0]:
+                log(f"  {s}: stopped after {budget} minutes, results are partial")
+                partial.append(s)
         except Exception as e:  # one source down should not lose the others
             log(f"  {s} failed: {e}")
             results[s] = []
-    text = report(results, wanted, since)
+    text = report(results, wanted, since, partial)
     open(a.out, "w", encoding="utf-8").write(text + "\n")
     json.dump([c["key"] for v in results.values() for c in v], open(state, "w", encoding="utf-8"), indent=0)
     print(f"{sum(len(v) for v in results.values())} candidates -> {a.out}")
