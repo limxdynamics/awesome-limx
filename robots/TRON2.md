@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **21** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **22** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 5
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 3
-- [Industry deployments](#industry-deployments) — 6
+- [Industry deployments](#industry-deployments) — 7
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -91,5 +91,6 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | Paper | [project](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | Paper | [news](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on TRON2? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

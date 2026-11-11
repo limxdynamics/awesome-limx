@@ -6,16 +6,25 @@
 
 # W1 · Awesome LimX
 
-> W1 を使った **2** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> W1 を使った **3** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 [全リスト](../README_ja.md) · ほかの機種: [TRON1](TRON1_ja.md) · [TRON2](TRON2_ja.md) · [Oli](Oli_ja.md) · [Luna](Luna_ja.md) · [P1](P1_ja.md)
 
 ## 目次
 
+- [移動と全身制御](#移動と全身制御) — 1
 - [マニピュレーション](#マニピュレーション) — 1
 - [産業応用](#産業応用) — 1
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
+
+## 移動と全身制御
+
+### モデルベース制御
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**：凸実行可能領域による階段走破計画、W1 で 200 回中 200 回成功 | `W1` | SUSTech CLEAR Lab | 2026 | 論文 | [論文](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
 
 ## マニピュレーション
 

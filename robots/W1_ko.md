@@ -6,16 +6,25 @@
 
 # W1 · Awesome LimX
 
-> W1로 만든 **2**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> W1로 만든 **3**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 [전체 목록](../README_ko.md) · 다른 기종: [TRON1](TRON1_ko.md) · [TRON2](TRON2_ko.md) · [Oli](Oli_ko.md) · [Luna](Luna_ko.md) · [P1](P1_ko.md)
 
 ## 목차
 
+- [보행 및 전신 제어](#보행-및-전신-제어) — 1
 - [매니퓰레이션](#매니퓰레이션) — 1
 - [산업 적용](#산업-적용) — 1
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
+
+## 보행 및 전신 제어
+
+### 모델 기반 제어
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**: 볼록 가능 영역 기반 계단 주행 계획, W1에서 200회 중 200회 성공 | `W1` | SUSTech CLEAR Lab | 2026 | 논문 | [논문](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
 
 ## 매니퓰레이션
 

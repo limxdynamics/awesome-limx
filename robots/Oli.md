@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **21** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **23** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,8 +18,8 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Manipulation](#manipulation) — 2
 - [Embodied AI](#embodied-ai) — 2
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 3
-- [Education & competitions](#education--competitions) — 1
-- [Industry deployments](#industry-deployments) — 4
+- [Education & competitions](#education--competitions) — 2
+- [Industry deployments](#industry-deployments) — 5
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -87,6 +87,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**: music-conducting demonstration and scoring for teaching, shown on the Oli digital twin | `Oli`&nbsp;*sim* | Guangdong Peizheng College | 2026 | Paper | [paper](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 
 ## Industry deployments
@@ -114,5 +115,6 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | Paper | [project](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | Paper | [news](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on Oli? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

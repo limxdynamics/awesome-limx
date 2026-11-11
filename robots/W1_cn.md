@@ -6,16 +6,25 @@
 
 # W1 · Awesome LimX
 
-> 基于 W1 的 **2** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 W1 的 **3** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 [完整列表](../README_cn.md) · 其他机型: [TRON1](TRON1_cn.md) · [TRON2](TRON2_cn.md) · [Oli](Oli_cn.md) · [Luna](Luna_cn.md) · [P1](P1_cn.md)
 
 ## 目录
 
+- [运动控制](#运动控制) — 1
 - [操作](#操作) — 1
 - [行业应用](#行业应用) — 1
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
+
+## 运动控制
+
+### 基于模型的控制
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**：凸可行域规划上下楼梯，W1 实测 200 次全部通过 | `W1` | 南科大 CLEAR 实验室 | 2026 | 论文 | [论文](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
 
 ## 操作
 

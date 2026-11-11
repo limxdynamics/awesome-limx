@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **21**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **23**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,8 +18,8 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 - [매니퓰레이션](#매니퓰레이션) — 2
 - [임바디드 AI](#임바디드-ai) — 2
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 3
-- [교육 및 대회](#교육-및-대회) — 1
-- [산업 적용](#산업-적용) — 4
+- [교육 및 대회](#교육-및-대회) — 2
+- [산업 적용](#산업-적용) — 5
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -87,6 +87,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**: 음악 교육용 지휘 동작 시연 및 평가 시스템, Oli 디지털 트윈에서 시연 | `Oli`&nbsp;*sim* | 광둥페이정학원 | 2026 | 논문 | [논문](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**광저우타워 로봇 등반 챌린지**: 우승 및 최우수 정밀 제어상, FastStair 사용 | `Oli` | LimX | 2025 | 논문 | [논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[결과](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 
 ## 산업 적용
@@ -114,5 +115,6 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 논문 | [프로젝트](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 논문 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Oli로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

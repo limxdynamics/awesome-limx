@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **73** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **76** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,13 +14,13 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 ## 目录
 
-- [运动控制](#运动控制) — 25
+- [运动控制](#运动控制) — 27
 - [感知与导航](#感知与导航) — 11
 - [操作](#操作) — 5
 - [具身智能](#具身智能) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 18
 - [教学与竞赛](#教学与竞赛) — 8
-- [行业应用](#行业应用) — 5
+- [行业应用](#行业应用) — 6
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -33,6 +33,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-ame-2"></a>**AME-2**：敏捷感知运动 | `TRON1` | [苏黎世联邦理工 RSL](https://rsl.ethz.ch) | 2026 | 论文 | [主页](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.08485) |
 | <a id="p-steppingstonelocomotion"></a>**梅花桩行走**：跨越梅花桩，先盲走再加视觉 | `TRON1`&nbsp;*仿真* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 代码 | [代码](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：轮足 TRON1 的地形适应与机身高度调节 | `TRON1` | 桂林电子科大、上海交大、浙大 | 2026 | 论文 | [论文](https://doi.org/10.1109/amc67705.2026.11435832) |
+| <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**：参考轨迹引导的强化学习，让轮足 TRON1 上楼梯，本科毕业论文 | `TRON1`&nbsp;*仿真* | 乌普萨拉大学 | 2026 | 论文 | [论文](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：轮足盲爬台阶 | `TRON1` | 上海大学、酷哇机器人 | 2025 | 论文 | [主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：稳定的双足感知行走 | `TRON1` | 南科大 CLEAR 实验室、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.09106) |
@@ -61,6 +62,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**学习增强的 PMP-MPC**：点足双足的学习增强 MPC | `TRON1`&nbsp;*仿真* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | 代码 | [论文](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
+| <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**：双足机器人最高速度分析模型，用于优化 TRON1 关节电机参数 | `TRON1`&nbsp;*仿真* | 浙江大学 | 2026 | 论文 | [论文](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**：轮足 TRON1 的 LQR 与全身控制，毕业论文项目 | `TRON1`&nbsp;*仿真* | [alpttex19](https://github.com/alpttex19) | 2025 | 代码 | [代码](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**双足 MPC**：MuJoCo 中的 MPC 与全身控制 | `TRON1`&nbsp;*仿真* | [南方科技大学 CLEAR 实验室](https://github.com/clearlab-sustech) | 2024 | 代码 | [代码](https://github.com/clearlab-sustech/Bipedal_MPC) |
 
@@ -170,6 +172,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 论文 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 论文 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 奖项与认可

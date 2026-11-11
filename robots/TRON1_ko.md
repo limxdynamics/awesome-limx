@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **73**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **76**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,13 +14,13 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 
 ## 목차
 
-- [보행 및 전신 제어](#보행-및-전신-제어) — 25
+- [보행 및 전신 제어](#보행-및-전신-제어) — 27
 - [인지 및 내비게이션](#인지-및-내비게이션) — 11
 - [매니퓰레이션](#매니퓰레이션) — 5
 - [임바디드 AI](#임바디드-ai) — 1
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 18
 - [교육 및 대회](#교육-및-대회) — 8
-- [산업 적용](#산업-적용) — 5
+- [산업 적용](#산업-적용) — 6
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -33,6 +33,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-ame-2"></a>**AME-2**: 민첩한 인지 기반 보행 | `TRON1` | [ETH Zurich RSL](https://rsl.ethz.ch) | 2026 | 논문 | [프로젝트](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2601.08485) |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**: 징검다리 보행, 블라인드 후 비전 적용 | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 코드 | [코드](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[영상](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**: 휠풋 TRON1의 지형 적응과 차체 높이 조절 | `TRON1` | 구이린전자과기대, 상하이교통대, 저장대 | 2026 | 논문 | [논문](https://doi.org/10.1109/amc67705.2026.11435832) |
+| <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**: 참조 궤적 유도 강화학습으로 휠풋 TRON1 계단 주행, 학사 논문 | `TRON1`&nbsp;*sim* | 웁살라 대학교 | 2026 | 논문 | [논문](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: 지형 적응 보행 | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 논문 | [논문](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: 바퀴로 하는 블라인드 계단 오르기 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 논문 | [프로젝트](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2509.02986) |
 | <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: 안정적인 인지 기반 이족 보행 | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2509.09106) |
@@ -61,6 +62,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: 포인트풋 이족 로봇용 학습 잔차 MPC | `TRON1`&nbsp;*sim* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | 코드 | [논문](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[코드](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
+| <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**: 이족 로봇 최고 속도 분석 모델, TRON1 관절 모터 파라미터 최적화에 적용 | `TRON1`&nbsp;*sim* | 저장대학교 | 2026 | 논문 | [논문](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**: 휠풋 TRON1의 LQR 및 전신 제어, 졸업 논문 프로젝트 | `TRON1`&nbsp;*sim* | [alpttex19](https://github.com/alpttex19) | 2025 | 코드 | [코드](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**Bipedal MPC**: MuJoCo 기반 볼록 MPC와 WBC | `TRON1`&nbsp;*sim* | [SUSTech CLEAR Lab](https://github.com/clearlab-sustech) | 2024 | 코드 | [코드](https://github.com/clearlab-sustech/Bipedal_MPC) |
 
@@ -170,6 +172,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 논문 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-synerex-korea"></a>**씨너렉스**: 한국 공식 파트너, 드론쇼코리아 2025에서 TRON1 국내 첫 공개 | `TRON1` | 씨너렉스 | 2025 | 논문 | [보도](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 수상 및 인정

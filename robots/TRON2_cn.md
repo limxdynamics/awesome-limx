@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **21** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **22** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 5
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 5
 - [教学与竞赛](#教学与竞赛) — 3
-- [行业应用](#行业应用) — 6
+- [行业应用](#行业应用) — 7
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -91,5 +91,6 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 论文 | [主页](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 论文 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 TRON2 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

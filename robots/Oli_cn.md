@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **21** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **23** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,8 +18,8 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 - [操作](#操作) — 2
 - [具身智能](#具身智能) — 2
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 3
-- [教学与竞赛](#教学与竞赛) — 1
-- [行业应用](#行业应用) — 4
+- [教学与竞赛](#教学与竞赛) — 2
+- [行业应用](#行业应用) — 5
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -87,6 +87,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**：面向音乐教学的指挥动作示范与评分系统，在 Oli 数字孪生上展示 | `Oli`&nbsp;*仿真* | 广东培正学院 | 2026 | 论文 | [论文](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 
 ## 行业应用
@@ -114,5 +115,6 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 论文 | [主页](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 论文 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 Oli 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

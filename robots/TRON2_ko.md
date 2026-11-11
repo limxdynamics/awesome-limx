@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **21**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **22**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 - [임바디드 AI](#임바디드-ai) — 5
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 5
 - [교육 및 대회](#교육-및-대회) — 3
-- [산업 적용](#산업-적용) — 6
+- [산업 적용](#산업-적용) — 7
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -91,5 +91,6 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 논문 | [프로젝트](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 논문 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
 
 TRON2로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
