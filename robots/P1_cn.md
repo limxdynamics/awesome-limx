@@ -6,14 +6,14 @@
 
 # P1 · Awesome LimX
 
-> 基于 P1 的 **4** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 P1 的 **5** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 [完整列表](../README_cn.md) · 其他机型: [TRON1](TRON1_cn.md) · [TRON2](TRON2_cn.md) · [Oli](Oli_cn.md) · [Luna](Luna_cn.md) · [W1](W1_cn.md)
 
 ## 目录
 
 - [运动控制](#运动控制) — 3
-- [行业应用](#行业应用) — 1
+- [行业应用](#行业应用) — 2
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -43,6 +43,7 @@
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：在德国销售并支持 P1，提供用户手册、网络与 ROS 2 配置指南和返修服务 | `P1` | MYBOTSHOP GmbH（德国） | 2026 | 报道 | [报道](https://www.docs.mybotshop.de/limx_p1.html) |
 | <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
 用 P1 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

@@ -6,19 +6,25 @@
 
 # W1 · Awesome LimX
 
-> W1 を使った **3** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> W1 を使った **4** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 [全リスト](../README_ja.md) · ほかの機種: [TRON1](TRON1_ja.md) · [TRON2](TRON2_ja.md) · [Oli](Oli_ja.md) · [Luna](Luna_ja.md) · [P1](P1_ja.md)
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 1
+- [移動と全身制御](#移動と全身制御) — 2
 - [マニピュレーション](#マニピュレーション) — 1
 - [産業応用](#産業応用) — 1
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
 ## 移動と全身制御
+
+### 強化学習の訓練と実機転移
+
+| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
+|---|---|---|---|---|---|
+| <a id="p-w1-parkour-legged-gym"></a>**W1 Parkour in legged_gym**：legged_gym で W1 ホイール脚四足のパルクールと追従環境を構築、ROS コントローラ付き | `W1`&nbsp;*sim* | [yiqiuqwq](https://github.com/yiqiuqwq) | 2026 | コード | [コード](https://github.com/yiqiuqwq/wheellegged_control) |
 
 ### モデルベース制御
 

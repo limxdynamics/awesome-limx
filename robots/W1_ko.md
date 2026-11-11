@@ -6,19 +6,25 @@
 
 # W1 · Awesome LimX
 
-> W1로 만든 **3**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> W1로 만든 **4**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 [전체 목록](../README_ko.md) · 다른 기종: [TRON1](TRON1_ko.md) · [TRON2](TRON2_ko.md) · [Oli](Oli_ko.md) · [Luna](Luna_ko.md) · [P1](P1_ko.md)
 
 ## 목차
 
-- [보행 및 전신 제어](#보행-및-전신-제어) — 1
+- [보행 및 전신 제어](#보행-및-전신-제어) — 2
 - [매니퓰레이션](#매니퓰레이션) — 1
 - [산업 적용](#산업-적용) — 1
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
 ## 보행 및 전신 제어
+
+### 강화학습 훈련 및 실기 전이
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
+|---|---|---|---|---|---|
+| <a id="p-w1-parkour-legged-gym"></a>**W1 Parkour in legged_gym**: legged_gym에서 W1 휠-레그 사족용 파쿠르·추종 환경 구축, ROS 컨트롤러 포함 | `W1`&nbsp;*sim* | [yiqiuqwq](https://github.com/yiqiuqwq) | 2026 | 코드 | [코드](https://github.com/yiqiuqwq/wheellegged_control) |
 
 ### 모델 기반 제어
 

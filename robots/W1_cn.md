@@ -6,19 +6,25 @@
 
 # W1 · Awesome LimX
 
-> 基于 W1 的 **3** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 W1 的 **4** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 [完整列表](../README_cn.md) · 其他机型: [TRON1](TRON1_cn.md) · [TRON2](TRON2_cn.md) · [Oli](Oli_cn.md) · [Luna](Luna_cn.md) · [P1](P1_cn.md)
 
 ## 目录
 
-- [运动控制](#运动控制) — 1
+- [运动控制](#运动控制) — 2
 - [操作](#操作) — 1
 - [行业应用](#行业应用) — 1
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
 ## 运动控制
+
+### 强化学习训练与部署
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
+|---|---|---|---|---|---|
+| <a id="p-w1-parkour-legged-gym"></a>**W1 Parkour in legged_gym**：在 legged_gym 中为 W1 轮腿四足搭建跑酷与跟踪训练环境，附 ROS 控制器 | `W1`&nbsp;*仿真* | [yiqiuqwq](https://github.com/yiqiuqwq) | 2026 | 代码 | [代码](https://github.com/yiqiuqwq/wheellegged_control) |
 
 ### 基于模型的控制
 
