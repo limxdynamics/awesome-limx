@@ -1,5 +1,5 @@
 {
-  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to OpenAlex full-text search; `hf` keywords match Hugging Face repo names; `aliases` are the names that tag a hit with this robot in the report (whole-word, case-insensitive). arXiv only searches titles and abstracts, so it has its own raw query list under sources.arxiv.queries. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files, adopter lists) is left out. Add a robot by adding a block here.",
+  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to OpenAlex full-text search; `hf` keywords match Hugging Face repo names; `aliases` are the names that tag a hit with this robot in the report (whole-word, case-insensitive). arXiv only searches titles and abstracts, so it has its own raw query list under sources.arxiv.queries. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files, adopter lists) is left out. Add a robot by adding a block here. `repo` keywords match repository names and descriptions on Gitee, which has no code search.",
   "robots": {
     "TRON1": {
       "code": [
@@ -37,6 +37,13 @@
         "PF_P441B",
         "PF_P441C",
         "PF_P441C2"
+      ],
+      "repo": [
+        "tron1",
+        "PF_TRON1A",
+        "WF_TRON1A",
+        "SF_TRON1A",
+        "pointfoot"
       ]
     },
     "TRON2": {
@@ -60,6 +67,10 @@
         "TRON2A",
         "SFYG_TRON2A",
         "DA_TRON2A"
+      ],
+      "repo": [
+        "tron2",
+        "TRON2A"
       ]
     },
     "Oli": {
@@ -86,6 +97,10 @@
         "limx_oli",
         "HU_D03",
         "HU_D03_03"
+      ],
+      "repo": [
+        "HU_D04",
+        "limx_oli"
       ]
     },
     "Luna": {
@@ -105,6 +120,10 @@
         "limx_luna",
         "HU_L04",
         "HU_L04_01"
+      ],
+      "repo": [
+        "HU_L04",
+        "limx_luna"
       ]
     },
     "W1": {
@@ -121,6 +140,10 @@
         "limx_w1",
         "WL_P311D",
         "WL_P311E"
+      ],
+      "repo": [
+        "WL_P311",
+        "limx_w1"
       ]
     },
     "P1": {
@@ -133,6 +156,9 @@
       "hf": [],
       "aliases": [
         "LimX P1",
+        "limx_p1"
+      ],
+      "repo": [
         "limx_p1"
       ]
     },
@@ -147,7 +173,8 @@
       "aliases": [
         "LimX CL-1",
         "CL-1 humanoid"
-      ]
+      ],
+      "repo": []
     }
   },
   "company": {
@@ -161,6 +188,11 @@
     ],
     "hf": [
       "limx"
+    ],
+    "repo": [
+      "limx",
+      "逐际",
+      "limxsdk"
     ]
   },
   "skip_owners": [
@@ -176,6 +208,12 @@
       "min_stars": 0,
       "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2}|(^|/)community/|(^|/)[^/]*(adopters|users|customers|clients|showcase|who-?uses)[^/]*$)",
       "max_minutes": 20
+    },
+    "gitee": {
+      "enabled": true,
+      "pages": 2,
+      "min_stars": 0,
+      "max_minutes": 10
     },
     "hf": {
       "enabled": true,
@@ -195,9 +233,17 @@
     },
     "openalex": {
       "enabled": true,
-      "max_results": 50,
+      "max_results": 200,
       "default_days": 365,
       "mailto": "opensource@limxdynamics.com",
+      "max_minutes": 10
+    },
+    "semanticscholar": {
+      "enabled": true,
+      "max_results": 100,
+      "snippets": true,
+      "max_snippets": 50,
+      "default_days": 365,
       "max_minutes": 10
     }
   },

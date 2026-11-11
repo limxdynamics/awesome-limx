@@ -20,9 +20,18 @@ scripts/sweep_seen.txt, is left out of the report.
 The script only finds candidates. A person still decides what gets listed:
 a keyword hit is not proof that a project really uses the robot.
 
-Needs only the Python standard library. GitHub code search needs a token in
-GITHUB_TOKEN or GH_TOKEN (any token works, no scopes needed); without one the
-script falls back to repository search, which finds much less.
+Needs only the Python standard library. Tokens, all free and read-only, set as
+environment variables:
+
+    GITHUB_TOKEN   GitHub code search (any token, no scopes). Without it the
+                   script falls back to repository search, which finds much less.
+    GITEE_TOKEN    Gitee search (personal access token, no scopes). Without it
+                   Gitee is skipped: its search API returns nothing anonymously.
+    S2_API_KEY     Semantic Scholar. Optional, but the keyless pool is often
+                   rate limited (429).
+
+Sources: GitHub, Gitee, Hugging Face, arXiv, OpenAlex and Semantic Scholar.
+Not covered: news and WeChat articles, video sites, CNKI.
 """
 import argparse
 import datetime
@@ -54,7 +63,7 @@ def warn(msg):
     log("warning: " + msg)
 
 
-def get(url, headers=None, retries=3, accept_json=True):
+def get(url, headers=None, retries=3, accept_json=True, data=None):
     """GET a URL, return parsed JSON (or text). None when it keeps failing."""
     h = {"User-Agent": UA}
     h.update(headers or {})
@@ -63,7 +72,7 @@ def get(url, headers=None, retries=3, accept_json=True):
         if time.time() > DEADLINE[0]:
             return None
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=h), timeout=40) as r:
                 LAST["remaining"] = r.headers.get("x-ratelimit-remaining")
                 body = r.read().decode("utf-8", "replace")
                 return json.loads(body) if accept_json else body
@@ -87,6 +96,13 @@ def get(url, headers=None, retries=3, accept_json=True):
             return None
 
 
+def post(url, payload, headers=None):
+    """POST JSON through get()'s retry and failure accounting."""
+    h = {"Content-Type": "application/json"}
+    h.update(headers or {})
+    return get(url, h, data=json.dumps(payload).encode())
+
+
 def fail(why):
     STATS["failed"] += 1
     if why not in STATS["errors"]:
@@ -105,7 +121,7 @@ def gh(path, retries=3):
 def load_known():
     """Everything already linked from README.md, plus the reviewed list."""
     text = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
-    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(),
+    known = {"github": set(), "gitee": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(),
              "titles": set(), "names": {}, "seen_titles": set()}
     # Entry names, e.g. "PTRL" or "TRON1 Sliding Analysis", to catch a paper listed under another link.
     for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*', text):
@@ -113,6 +129,8 @@ def load_known():
         known["names"][norm_title(m.group(1))] = m.group(1)
     for m in re.finditer(r"github\.com/([\w.-]+)/([\w.-]+)", text):
         known["github"].add((m.group(1) + "/" + m.group(2)).lower().removesuffix(".git"))
+    for m in re.finditer(r"gitee\.com/([\w.-]+)/([\w.-]+)", text):
+        known["gitee"].add((m.group(1) + "/" + m.group(2)).lower().removesuffix(".git"))
     for m in re.finditer(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})", text):
         known["arxiv"].add(m.group(1))
     for m in re.finditer(r"doi\.org/(10\.[^\s)|]+)", text):
@@ -336,38 +354,177 @@ def abstract(inv):
     return " ".join(w for _, w in pos)
 
 
-def src_openalex(cfg, wanted, known, seen, since):
-    """OpenAlex searches full text, so it also finds papers that only name the robot in the experiments."""
-    out, done = [], set()
+def paper(title, doi, aid, fallback_key, url, date, text, kw, robot_of, cfg, wanted, known, seen, done):
+    """One paper candidate, or None when it is listed, seen or already reported this run.
+
+    Shared by the paper databases, so the same paper found by OpenAlex and by
+    Semantic Scholar is reported once, under its arXiv ID or DOI.
+    """
+    doi = (doi or "").replace("https://doi.org/", "").lower()
+    if not aid:
+        m = re.search(r"arxiv\.(\d{4}\.\d{4,5})", doi)
+        aid = m.group(1) if m else ""
+    key = "arxiv:" + aid if aid else ("doi:" + doi if doi else fallback_key)
+    if (key in done or key.lower() in seen or (aid and aid in known["arxiv"]) or (doi and doi in known["doi"])
+            or (doi and "doi:" + doi in seen)):
+        return None
+    done.add(key)
+    title = " ".join((title or "").split())
+    hint = listed_title(title, known)
+    if hint == "listed":
+        return None
+    robots = robots_for(title + " " + (text or ""), cfg, wanted)
+    if not robots and kw in robot_of:  # the robot is named in the body, which the database does not return
+        robots = [robot_of[kw]]
+    url = ("https://arxiv.org/abs/" + aid) if aid else ("https://doi.org/" + doi if doi else url)
+    return {"key": key, "title": title, "url": url, "robots": robots, "date": date or "",
+            "stars": None, "note": hint, "why": kw}
+
+
+def src_openalex(cfg, wanted, known, seen, since, done=None):
+    """OpenAlex searches full text, so it also finds papers that only name the robot in the experiments.
+
+    Its full text only covers papers it can read (mostly open access), so a
+    paywalled paper that names the robot only in the body can still be missed;
+    Semantic Scholar is the second net. Results are paged up to max_results.
+    """
+    out = []
+    done = PAPERS_DONE if done is None else done
     s = cfg["sources"]["openalex"]
     start = since or (datetime.date.today() - datetime.timedelta(days=s.get("default_days", 365))).isoformat()
     mail = os.environ.get("OPENALEX_MAILTO") or s.get("mailto", "")
     robot_of = {k: name for name in wanted for k in cfg["robots"][name].get("text", [])}
+    limit = s.get("max_results", 200)
     for kw in text_keywords(cfg, wanted):
         log(f"  openalex: {kw}")
         f = urllib.parse.quote(f'fulltext.search:"{kw}",from_publication_date:{start}')
-        d = get(f"https://api.openalex.org/works?filter={f}&per-page={s.get('max_results', 50)}"
-                f"&sort=publication_date:desc&select=id,doi,title,publication_date,abstract_inverted_index"
-                + (f"&mailto={mail}" if mail else ""))
-        time.sleep(1)
-        for w in (d or {}).get("results") or []:
-            doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
-            m = re.search(r"arxiv\.(\d{4}\.\d{4,5})", doi)
-            aid = m.group(1) if m else ""
-            key = "arxiv:" + aid if aid else ("doi:" + doi if doi else "openalex:" + w["id"].rsplit("/", 1)[-1])
-            if key in done or key.lower() in seen or (aid and aid in known["arxiv"]) or (doi and doi in known["doi"]):
+        cursor, got = "*", 0
+        while cursor and got < limit:
+            d = get(f"https://api.openalex.org/works?filter={f}&per-page={min(100, limit)}&cursor={urllib.parse.quote(cursor)}"
+                    f"&sort=publication_date:desc&select=id,doi,title,publication_date,abstract_inverted_index"
+                    + (f"&mailto={mail}" if mail else ""))
+            time.sleep(1)
+            results = (d or {}).get("results") or []
+            got += len(results)
+            for w in results:
+                c = paper(w.get("title"), w.get("doi"), "", "openalex:" + w["id"].rsplit("/", 1)[-1], w["id"],
+                          w.get("publication_date"), abstract(w.get("abstract_inverted_index")),
+                          kw, robot_of, cfg, wanted, known, seen, done)
+                if c:
+                    out.append(c)
+            cursor = (d or {}).get("meta", {}).get("next_cursor") if results else None
+    return out
+
+
+def src_semanticscholar(cfg, wanted, known, seen, since, done=None):
+    """Semantic Scholar: keyword search over titles and abstracts, plus snippet search over full text.
+
+    A second paper index next to OpenAlex, with its own coverage of
+    conference papers and publisher full text. Without S2_API_KEY the shared
+    rate limit often answers 429; a free key from
+    https://www.semanticscholar.org/product/api makes it reliable.
+    """
+    out = []
+    done = PAPERS_DONE if done is None else done
+    s = cfg["sources"]["semanticscholar"]
+    key = os.environ.get("S2_API_KEY", "")
+    h = {"x-api-key": key} if key else {}
+    gap = 1.2 if key else 4  # the keyless pool is shared by everyone
+    if not key:
+        warn("Semantic Scholar: no S2_API_KEY, expect rate limiting (429)")
+    start = since or (datetime.date.today() - datetime.timedelta(days=s.get("default_days", 365))).isoformat()
+    robot_of = {k: name for name in wanted for k in cfg["robots"][name].get("text", [])}
+    base = "https://api.semanticscholar.org/graph/v1"
+    fields = "title,publicationDate,year,externalIds,abstract,url"
+    for kw in text_keywords(cfg, wanted):
+        log(f"  semanticscholar: {kw}")
+        q = urllib.parse.quote(f'"{kw}"')
+        d = get(f"{base}/paper/search?query={q}&limit={min(100, s.get('max_results', 100))}&fields={fields}"
+                f"&publicationDateOrYear={start}:", h)
+        time.sleep(gap)
+        for p in (d or {}).get("data") or []:
+            ids = p.get("externalIds") or {}
+            c = paper(p.get("title"), ids.get("DOI"), ids.get("ArXiv", ""), "s2:" + p.get("paperId", ""), p.get("url", ""),
+                      p.get("publicationDate") or str(p.get("year") or ""), p.get("abstract"),
+                      kw, robot_of, cfg, wanted, known, seen, done)
+            if c:
+                out.append(c)
+        if not s.get("snippets", True):
+            continue
+        # Snippet search reads the body text, so it finds papers that name the robot only in the experiments.
+        d = get(f"{base}/snippet/search?query={urllib.parse.quote(kw)}&limit={s.get('max_snippets', 50)}", h)
+        time.sleep(gap)
+        corpus = {}
+        for hit in (d or {}).get("data") or []:
+            pid = (hit.get("paper") or {}).get("corpusId")
+            text = (hit.get("snippet") or {}).get("text", "")
+            if pid and kw.lower() in text.lower():  # snippet search is fuzzy: keep exact mentions only
+                corpus.setdefault(pid, text)
+        if not corpus:
+            continue
+        b = post(f"{base}/paper/batch?fields={fields}", {"ids": [f"CorpusId:{i}" for i in corpus]}, h)
+        time.sleep(gap)
+        for (pid, text), p in zip(corpus.items(), b or []):
+            if not p:
                 continue
-            done.add(key)
-            title = " ".join((w.get("title") or "").split())
-            hint = listed_title(title, known)
-            if hint == "listed":
+            date = p.get("publicationDate") or str(p.get("year") or "")
+            if date and date < start[:len(date)]:
                 continue
-            url = ("https://arxiv.org/abs/" + aid) if aid else (w.get("doi") or w["id"])
-            robots = robots_for(title + " " + abstract(w.get("abstract_inverted_index")), cfg, wanted)
-            if not robots and kw in robot_of:  # the robot is named in the body, which OpenAlex does not return
-                robots = [robot_of[kw]]
-            out.append({"key": key, "title": title, "url": url, "robots": robots,
-                        "date": w.get("publication_date") or "", "stars": None, "note": hint, "why": kw})
+            ids = p.get("externalIds") or {}
+            c = paper(p.get("title"), ids.get("DOI"), ids.get("ArXiv", ""), "s2:" + p.get("paperId", ""), p.get("url", ""),
+                      date, (p.get("abstract") or "") + " " + text, kw, robot_of, cfg, wanted, known, seen, done)
+            if c:
+                c["note"] = (c["note"] + "; " if c["note"] else "") + "in the text: " + " ".join(text.split())[:100]
+                out.append(c)
+    return out
+
+
+def src_gitee(cfg, wanted, known, seen, since):
+    """Gitee, where many Chinese university and competition projects live.
+
+    Gitee has no code search, so this searches repository names and
+    descriptions with each robot's `repo` keywords. Its search API returns
+    nothing without a token: set GITEE_TOKEN (a personal access token from
+    https://gitee.com/profile/personal_access_tokens, no scopes needed).
+    """
+    token = os.environ.get("GITEE_TOKEN", "")
+    if not token:
+        STATS["note"] = "Skipped: Gitee's search API answers nothing without GITEE_TOKEN."
+        warn("Gitee: no GITEE_TOKEN, skipped")
+        return []
+    s = cfg["sources"]["gitee"]
+    kws = [(k, None) for k in cfg.get("company", {}).get("repo", [])]
+    for name in wanted:
+        kws += [(k, name) for k in cfg["robots"][name].get("repo", [])]
+    skip_owner = {o.lower() for o in cfg.get("skip_owners", [])}
+    hits = {}
+    for kw, robot in kws:
+        log(f"  gitee: {kw}")
+        for page in range(1, s.get("pages", 2) + 1):
+            d = get(f"https://gitee.com/api/v5/search/repositories?access_token={token}&q={urllib.parse.quote(kw)}"
+                    f"&page={page}&per_page=100&sort=last_push_at&order=desc")
+            time.sleep(1)
+            items = d if isinstance(d, list) else []
+            for r in items:
+                full = r.get("full_name") or ""
+                low = full.lower()
+                if (not full or r.get("fork") or low in known["gitee"] or "gitee:" + low in seen
+                        or (r.get("owner") or {}).get("login", "").lower() in skip_owner):
+                    continue
+                pushed = (r.get("pushed_at") or r.get("updated_at") or "")[:10]
+                if since and pushed and pushed < since:
+                    continue
+                c = hits.setdefault(full, {
+                    "key": "gitee:" + low, "title": full, "url": r.get("html_url") or "https://gitee.com/" + full,
+                    "robots": [], "date": pushed, "stars": r.get("stargazers_count", 0),
+                    "note": (r.get("description") or "").strip()[:140], "why": ""})
+                if robot and robot not in c["robots"]:
+                    c["robots"].append(robot)
+                c["why"] = ", ".join(filter(None, [c["why"], kw]))
+            if len(items) < 100:
+                break
+    out = [c for c in hits.values() if c["stars"] >= s.get("min_stars", 0)]
+    out.sort(key=lambda c: (-c["stars"], c["title"]))
     return out
 
 
@@ -402,8 +559,11 @@ def src_hf(cfg, wanted, known, seen, since):
     return out
 
 
-SOURCES = {"github": ("GitHub", src_github, "stars"), "hf": ("Hugging Face", src_hf, "downloads"),
-           "arxiv": ("arXiv (title and abstract)", src_arxiv, None), "openalex": ("OpenAlex (full text)", src_openalex, None)}
+SOURCES = {"github": ("GitHub", src_github, "stars"), "gitee": ("Gitee", src_gitee, "stars"),
+           "hf": ("Hugging Face", src_hf, "downloads"), "arxiv": ("arXiv (title and abstract)", src_arxiv, None),
+           "openalex": ("OpenAlex (full text)", src_openalex, None),
+           "semanticscholar": ("Semantic Scholar (abstract and full-text snippets)", src_semanticscholar, None)}
+PAPERS_DONE = set()  # paper keys reported this run, shared by OpenAlex and Semantic Scholar
 
 
 # ---------------------------------------------------------------- report
@@ -422,6 +582,8 @@ def report(results, wanted, since, partial=(), stats=None):
         if key in partial:
             lines += ["**Partial:** this source hit its time limit (`max_minutes` in the config), so some searches did not run.", ""]
         st = (stats or {}).get(key) or {}
+        if st.get("note"):
+            lines += [f"**{st['note']}**", ""]
         if st.get("failed"):
             what = "**Failed:** every request" if st["failed"] >= st["requests"] else f"**Errors:** {st['failed']} of {st['requests']} requests"
             lines += [f"{what} to this source failed ({', '.join(st['errors'][:4])}), so the list below may be incomplete. See the run log.", ""]
@@ -431,7 +593,8 @@ def report(results, wanted, since, partial=(), stats=None):
             lines += [f"**Unchecked:** {st['unchecked']} repos are left out because their details could not be fetched "
                       "(failed request, time limit or API quota). They are not marked as seen and come back next run.", ""]
         if not items:
-            lines += ["No results." if st.get("failed") or st.get("unchecked") or key in partial else "Nothing new.", ""]
+            lines += ["No results." if st.get("failed") or st.get("unchecked") or st.get("note") or key in partial
+                      else "Nothing new.", ""]
             continue
         head = "| Candidate | Robot | " + (metric.capitalize() + " | " if metric else "") + "Date | Matched |"
         lines += [head, "|" + "---|" * (head.count("|") - 1)]
@@ -452,6 +615,9 @@ def key_of(x):
     m = re.search(r"github\.com/([\w.-]+/[\w.-]+)", x)
     if m:
         return "gh:" + m.group(1).lower()
+    m = re.search(r"gitee\.com/([\w.-]+/[\w.-]+)", x)
+    if m:
+        return "gitee:" + m.group(1).lower()
     m = re.search(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})", x) or re.search(r"arxiv\.(\d{4}\.\d{4,5})", x)
     if m:
         return "arxiv:" + m.group(1)
@@ -518,7 +684,7 @@ def main():
         log(f"{SOURCES[s][0]}")
         budget = cfg["sources"].get(s, {}).get("max_minutes", 15)
         DEADLINE[0] = time.time() + budget * 60
-        STATS.update(requests=0, failed=0, errors=[], skipped=0, unchecked=0)
+        STATS.update(requests=0, failed=0, errors=[], skipped=0, unchecked=0, note="")
         try:
             results[s] = SOURCES[s][1](cfg, wanted, known, seen, since)
             if time.time() > DEADLINE[0]:

@@ -411,3 +411,6 @@ doi:10.2139/ssrn.7635121
 doi:10.2139/ssrn.7395620
 hf:luong22/tron1-rl-logs
 hf:luong22/tron1-rl-videos
+
+# Journal version of an entry listed under arXiv.
+doi:10.1109/lra.2026.3707348
