@@ -27,8 +27,8 @@ environment variables:
                    script falls back to repository search, which finds much less.
     GITEE_TOKEN    Gitee search (personal access token, no scopes). Without it
                    Gitee is skipped: its search API returns nothing anonymously.
-    S2_API_KEY     Semantic Scholar. Optional, but the keyless pool is often
-                   rate limited (429).
+    S2_API_KEY     Semantic Scholar. Without it Semantic Scholar is skipped:
+                   the keyless pool is almost always rate limited (429).
 
 Sources: GitHub, Gitee, Hugging Face, arXiv, OpenAlex and Semantic Scholar.
 Not covered: news and WeChat articles, video sites, CNKI.
@@ -67,10 +67,11 @@ def get(url, headers=None, retries=3, accept_json=True, data=None):
     """GET a URL, return parsed JSON (or text). None when it keeps failing."""
     h = {"User-Agent": UA}
     h.update(headers or {})
-    STATS["requests"] += 1
     for attempt in range(retries):
         if time.time() > DEADLINE[0]:
-            return None
+            return None  # past the budget: not sent, so not counted
+        if attempt == 0:
+            STATS["requests"] += 1
         try:
             with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=h), timeout=40) as r:
                 LAST["remaining"] = r.headers.get("x-ratelimit-remaining")
@@ -84,16 +85,21 @@ def get(url, headers=None, retries=3, accept_json=True, data=None):
                 log(f"    rate limited ({e.code}), waiting {wait}s")
                 time.sleep(min(wait, 120))
                 continue
-            log(f"    HTTP {e.code} for {url[:110]}")
+            log(f"    HTTP {e.code} for {redact(url)[:110]}")
             fail(f"HTTP {e.code}")
             return None
         except Exception as e:  # network hiccup, bad JSON
             if attempt < retries - 1:
                 time.sleep(5)
                 continue
-            log(f"    failed: {e} for {url[:110]}")
+            log(f"    failed: {e} for {redact(url)[:110]}")
             fail(type(e).__name__)
             return None
+
+
+def redact(url):
+    """Hide tokens that an API takes in the query string (Gitee) before a URL is logged."""
+    return re.sub(r"(access_token|token|api_key|key)=[^&]+", r"\1=***", url)
 
 
 def post(url, payload, headers=None):
@@ -332,17 +338,13 @@ def src_arxiv(cfg, wanted, known, seen, since):
         for e in feed.findall("a:entry", ns):
             aid = re.sub(r"v\d+$", "", e.findtext("a:id", "", ns).rsplit("/", 1)[-1])
             date = e.findtext("a:published", "", ns)[:10]
-            if aid in known["arxiv"] or "arxiv:" + aid in seen or aid in done or (since and date < since):
+            if since and date < since:
                 continue
-            done.add(aid)
-            title = " ".join(e.findtext("a:title", "", ns).split())
-            hint = listed_title(title, known)
-            if hint == "listed":
-                continue
-            summary = e.findtext("a:summary", "", ns)
-            out.append({"key": "arxiv:" + aid, "title": title, "url": "https://arxiv.org/abs/" + aid,
-                        "robots": robots_for(title + " " + summary, cfg, wanted), "date": date,
-                        "stars": None, "note": hint, "why": kw})
+            # Same dedupe as OpenAlex and Semantic Scholar, so a paper is reported once across all three.
+            c = paper(e.findtext("a:title", "", ns), "", aid, "arxiv:" + aid, "", date,
+                      e.findtext("a:summary", "", ns), kw, {}, cfg, wanted, known, seen, PAPERS_DONE)
+            if c:
+                out.append(c)
     return out
 
 
@@ -421,17 +423,21 @@ def src_semanticscholar(cfg, wanted, known, seen, since, done=None):
 
     A second paper index next to OpenAlex, with its own coverage of
     conference papers and publisher full text. Without S2_API_KEY the shared
-    rate limit often answers 429; a free key from
-    https://www.semanticscholar.org/product/api makes it reliable.
+    rate limit answers 429 nearly always, so the source is skipped; a free
+    key from https://www.semanticscholar.org/product/api turns it on.
     """
     out = []
     done = PAPERS_DONE if done is None else done
     s = cfg["sources"]["semanticscholar"]
     key = os.environ.get("S2_API_KEY", "")
-    h = {"x-api-key": key} if key else {}
-    gap = 1.2 if key else 4  # the keyless pool is shared by everyone
     if not key:
-        warn("Semantic Scholar: no S2_API_KEY, expect rate limiting (429)")
+        # The keyless pool is shared by everyone and mostly answers 429: a run
+        # without a key spends minutes and finds nothing, so skip it outright.
+        STATS["note"] = "Skipped: Semantic Scholar needs S2_API_KEY (the keyless pool is almost always rate limited)."
+        warn("Semantic Scholar: no S2_API_KEY, skipped")
+        return []
+    h = {"x-api-key": key}
+    gap = 1.2
     start = since or (datetime.date.today() - datetime.timedelta(days=s.get("default_days", 365))).isoformat()
     robot_of = {k: name for name in wanted for k in cfg["robots"][name].get("text", [])}
     base = "https://api.semanticscholar.org/graph/v1"
@@ -497,7 +503,7 @@ def src_gitee(cfg, wanted, known, seen, since):
     for name in wanted:
         kws += [(k, name) for k in cfg["robots"][name].get("repo", [])]
     skip_owner = {o.lower() for o in cfg.get("skip_owners", [])}
-    hits = {}
+    hits, raw = {}, [0]  # raw: everything Gitee returned, before filtering
     for kw, robot in kws:
         log(f"  gitee: {kw}")
         for page in range(1, s.get("pages", 2) + 1):
@@ -505,6 +511,7 @@ def src_gitee(cfg, wanted, known, seen, since):
                     f"&page={page}&per_page=100&sort=last_push_at&order=desc")
             time.sleep(1)
             items = d if isinstance(d, list) else []
+            raw[0] += len(items)
             for r in items:
                 full = r.get("full_name") or ""
                 low = full.lower()
@@ -523,6 +530,10 @@ def src_gitee(cfg, wanted, known, seen, since):
                 c["why"] = ", ".join(filter(None, [c["why"], kw]))
             if len(items) < 100:
                 break
+    if not raw[0] and not STATS["failed"]:
+        # Gitee answers an expired or wrong token with 200 and an empty list, never an error.
+        STATS["note"] = "Gitee returned nothing for every keyword: GITEE_TOKEN may be expired or invalid."
+        warn("Gitee: no results at all, GITEE_TOKEN may be expired")
     out = [c for c in hits.values() if c["stars"] >= s.get("min_stars", 0)]
     out.sort(key=lambda c: (-c["stars"], c["title"]))
     return out
@@ -615,6 +626,9 @@ def key_of(x):
     m = re.search(r"github\.com/([\w.-]+/[\w.-]+)", x)
     if m:
         return "gh:" + m.group(1).lower()
+    m = re.search(r"semanticscholar\.org/(?:paper/(?:[^/]+/)?)?([0-9a-f]{40})", x)
+    if m:
+        return "s2:" + m.group(1)
     m = re.search(r"gitee\.com/([\w.-]+/[\w.-]+)", x)
     if m:
         return "gitee:" + m.group(1).lower()
