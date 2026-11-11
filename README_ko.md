@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **156**개 프로젝트와 협력 사례를 모았고, 그중 **106**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **157**개 프로젝트와 협력 사례를 모았고, 그중 **106**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 **기종별로 찾기**
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 91개 | 33개 | 29개 | 7개 | 5개 | 4개 |
+| 92개 | 33개 | 29개 | 7개 | 5개 | 4개 |
 
 ## 목차
 
@@ -26,7 +26,7 @@
   - [강화학습 훈련 및 실기 전이](#강화학습-훈련-및-실기-전이)
   - [모델 기반 제어](#모델-기반-제어)
   - [모션 트래킹 및 리타게팅](#모션-트래킹-및-리타게팅)
-- [인지 및 내비게이션](#인지-및-내비게이션) — 13
+- [인지 및 내비게이션](#인지-및-내비게이션) — 14
 - [매니퓰레이션](#매니퓰레이션) — 11
 - [임바디드 AI](#임바디드-ai) — 9
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 24
@@ -137,7 +137,7 @@ _51개 (4개 그룹): 논문 20 · 코드 31_
 
 ## 인지 및 내비게이션
 
-_13개: 논문 2 · 코드 11_
+_14개: 논문 3 · 코드 11_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
@@ -153,6 +153,7 @@ _13개: 논문 2 · 코드 11_
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: Jetson 기반 자율 내비게이션 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | 코드 | [코드](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: 바퀴 형태의 엔드투엔드 NeuPAN 내비게이션 | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | 코드 | [코드](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: 계단에서의 3D 내비게이션 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | 코드 | [코드](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**: 지형을 고려한 휠-레그 로봇용 LiDAR 관성 오도메트리, 휠풋 TRON1으로 실외 실험 | `TRON1` | 상하이 교통대학교 | 2025 | 논문 | [논문](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**: 이벤트 카메라 회전 오도메트리, TRON1에서 수집한 시퀀스 포함 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | 코드 | [프로젝트](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[코드](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[영상](https://youtu.be/8tF6b2VuvSM) |
 
 ## 매니퓰레이션
@@ -334,7 +335,7 @@ _31개 (6개 그룹)_
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON1`](robots/TRON1_ko.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
 | [`TRON2`](robots/TRON2_ko.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_ko.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ko.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |

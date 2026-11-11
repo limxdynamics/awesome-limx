@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **156** projects and partnerships around LimX robots and the LimX SDK, **106** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **157** projects and partnerships around LimX robots and the LimX SDK, **106** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 91&nbsp;projects | 33&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 92&nbsp;projects | 33&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 ## Contents
 
@@ -26,7 +26,7 @@
   - [RL training & sim-to-real](#rl-training--sim-to-real)
   - [Model-based control](#model-based-control)
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
-- [Perception & navigation](#perception--navigation) — 13
+- [Perception & navigation](#perception--navigation) — 14
 - [Manipulation](#manipulation) — 11
 - [Embodied AI](#embodied-ai) — 9
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 24
@@ -138,7 +138,7 @@ _51 entries in 4 groups: 20 papers · 31 code_
 
 ## Perception & navigation
 
-_13 entries: 2 papers · 11 code_
+_14 entries: 3 papers · 11 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -154,6 +154,7 @@ _13 entries: 2 papers · 11 code_
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: autonomous navigation with a Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: end-to-end NeuPAN navigation on wheels | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: 3D navigation on stairs | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**: LiDAR-inertial odometry with terrain modeling for legged-wheel robots, tested outdoors on wheel-foot TRON1 | `TRON1` | Shanghai Jiao Tong University | 2025 | Paper | [paper](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**: event-camera rotational odometry, with sequences recorded on TRON1 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | Code | [project](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[code](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[video](https://youtu.be/8tF6b2VuvSM) |
 
 ## Manipulation
@@ -335,7 +336,7 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON1`](robots/TRON1.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
 | [`TRON2`](robots/TRON2.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |

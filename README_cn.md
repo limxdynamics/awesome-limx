@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **156** 个项目与合作，其中 **106** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **157** 个项目与合作，其中 **106** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 91&nbsp;条 | 33&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 92&nbsp;条 | 33&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
@@ -26,7 +26,7 @@
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
-- [感知与导航](#感知与导航) — 13
+- [感知与导航](#感知与导航) — 14
 - [操作](#操作) — 11
 - [具身智能](#具身智能) — 9
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 24
@@ -137,7 +137,7 @@ _51 个条目，分 4 组：20 篇论文 · 31 个代码_
 
 ## 感知与导航
 
-_13 个条目：2 篇论文 · 11 个代码_
+_14 个条目：3 篇论文 · 11 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
@@ -153,6 +153,7 @@ _13 个条目：2 篇论文 · 11 个代码_
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：基于 Jetson 的自主导航 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | 代码 | [代码](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**TRON1 上的 NeuPAN**：轮足上的 NeuPAN 端到端导航 | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | 代码 | [代码](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**PCT 规划器 3D 导航**：楼梯 3D 导航 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**：面向轮足机器人的地形感知激光惯性里程计，在轮足 TRON1 上做室外实验 | `TRON1` | 上海交通大学 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**：事件相机旋转里程计，数据集含在 TRON1 上采集的序列 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | 代码 | [主页](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[代码](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[视频](https://youtu.be/8tF6b2VuvSM) |
 
 ## 操作
@@ -334,7 +335,7 @@ _31 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON1`](robots/TRON1_cn.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
 | [`TRON2`](robots/TRON2_cn.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |

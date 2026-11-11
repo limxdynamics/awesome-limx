@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **156** プロジェクト・提携を収録しています。うち **106** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **157** プロジェクト・提携を収録しています。うち **106** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 91&nbsp;件 | 33&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
+| 92&nbsp;件 | 33&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
 
 ## 目次
 
@@ -26,7 +26,7 @@
   - [強化学習の訓練と実機転移](#強化学習の訓練と実機転移)
   - [モデルベース制御](#モデルベース制御)
   - [モーショントラッキングとリターゲティング](#モーショントラッキングとリターゲティング)
-- [知覚とナビゲーション](#知覚とナビゲーション) — 13
+- [知覚とナビゲーション](#知覚とナビゲーション) — 14
 - [マニピュレーション](#マニピュレーション) — 11
 - [エンボディドAI](#エンボディドai) — 9
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 24
@@ -137,7 +137,7 @@ _51 件（4 グループ）：論文 20 · コード 31_
 
 ## 知覚とナビゲーション
 
-_13 件：論文 2 · コード 11_
+_14 件：論文 3 · コード 11_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
@@ -153,6 +153,7 @@ _13 件：論文 2 · コード 11_
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：Jetson による自律ナビゲーション | `TRON1` | [enfff](https://github.com/enfff) | 2025 | コード | [コード](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**：車輪形態でのエンドツーエンド NeuPAN ナビゲーション | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | コード | [コード](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**：階段での 3D ナビゲーション | `TRON1` | [81578823](https://github.com/81578823) | 2025 | コード | [コード](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**：地形を考慮した脚車輪ロボット向け LiDAR 慣性オドメトリ、ホイールフット TRON1 で屋外実験 | `TRON1` | 上海交通大学 | 2025 | 論文 | [論文](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**：イベントカメラによる回転オドメトリ、TRON1 で収録したシーケンスを含む | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | コード | [プロジェクト](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[コード](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[動画](https://youtu.be/8tF6b2VuvSM) |
 
 ## マニピュレーション
@@ -334,7 +335,7 @@ _31 件（6 グループ）_
 
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ja.md) | **91** | 32 | 12 | 6 | 1 | 19 | 10 | 11 |
+| [`TRON1`](robots/TRON1_ja.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
 | [`TRON2`](robots/TRON2_ja.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
 | [`Oli`](robots/Oli_ja.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ja.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
