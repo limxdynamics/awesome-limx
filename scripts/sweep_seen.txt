@@ -344,3 +344,14 @@ gh:juexzz/lightnav-0
 gh:guilhermeaugusto123/fosforilando-neuro
 gh:selfgala/sf_tron1a_ts
 gh:robot-descriptions/awesome-robot-descriptions
+
+# Listed under another link: the journal or arXiv title, so paper sources stop reporting them.
+title: Online Sim-to-Real Adaptation via Closed-Loop System Modeling
+title: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding
+title: Gait-Adaptive Perceptive Humanoid Locomotion With Real-Time Under-Base Terrain Reconstruction
+
+# Papers reviewed earlier and not listed (LimX authors, but no LimX robot in the work, or a later version of a listed paper).
+arxiv:2607.18154
+arxiv:2603.04790
+arxiv:2606.05880
+doi:10.1002/aisy.70563

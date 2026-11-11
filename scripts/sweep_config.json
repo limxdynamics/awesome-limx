@@ -1,5 +1,5 @@
 {
-  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to arXiv and OpenAlex; `hf` keywords match Hugging Face repo names. Add a robot by adding a block here. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files) is left out.",
+  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to OpenAlex full-text search; `hf` keywords match Hugging Face repo names; `aliases` are the names that tag a hit with this robot in the report (whole-word, case-insensitive). arXiv only searches titles and abstracts, so it has its own raw query list under sources.arxiv.queries. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files, adopter lists) is left out. Add a robot by adding a block here.",
   "robots": {
     "TRON1": {
       "code": [
@@ -17,6 +17,18 @@
       ],
       "hf": [
         "tron1"
+      ],
+      "aliases": [
+        "TRON1",
+        "TRON 1",
+        "TRON-1",
+        "TRON1A",
+        "TRON1B",
+        "PF_TRON1A",
+        "WF_TRON1A",
+        "SF_TRON1A",
+        "PF_TRON1B",
+        "WF_TRON1B"
       ]
     },
     "TRON2": {
@@ -32,6 +44,14 @@
       ],
       "hf": [
         "tron2"
+      ],
+      "aliases": [
+        "TRON2",
+        "TRON 2",
+        "TRON-2",
+        "TRON2A",
+        "SFYG_TRON2A",
+        "DA_TRON2A"
       ]
     },
     "Oli": {
@@ -47,6 +67,13 @@
       "hf": [
         "HU_D04",
         "limx_oli"
+      ],
+      "aliases": [
+        "LimX Oli",
+        "Oli humanoid",
+        "HU_D04",
+        "HU_D04_01",
+        "limx_oli"
       ]
     },
     "Luna": {
@@ -57,7 +84,11 @@
       "text": [
         "LimX Luna"
       ],
-      "hf": []
+      "hf": [],
+      "aliases": [
+        "LimX Luna",
+        "limx_luna"
+      ]
     },
     "W1": {
       "code": [
@@ -66,7 +97,11 @@
       "text": [
         "LimX W1"
       ],
-      "hf": []
+      "hf": [],
+      "aliases": [
+        "LimX W1",
+        "limx_w1"
+      ]
     },
     "P1": {
       "code": [
@@ -75,7 +110,11 @@
       "text": [
         "LimX P1"
       ],
-      "hf": []
+      "hf": [],
+      "aliases": [
+        "LimX P1",
+        "limx_p1"
+      ]
     },
     "CL-1": {
       "code": [
@@ -84,7 +123,11 @@
       "text": [
         "LimX CL-1"
       ],
-      "hf": []
+      "hf": [],
+      "aliases": [
+        "LimX CL-1",
+        "CL-1 humanoid"
+      ]
     }
   },
   "company": {
@@ -111,14 +154,20 @@
       "pages": 3,
       "max_repos": 400,
       "min_stars": 0,
-      "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2})"
+      "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2}|(^|/)community/|(^|/)[^/]*(adopters|users|customers|clients|showcase|who-?uses)[^/]*$)"
     },
     "hf": {
       "enabled": true
     },
     "arxiv": {
       "enabled": true,
-      "max_results": 50
+      "max_results": 100,
+      "queries": [
+        "all:LimX",
+        "all:\"TRON 1\"",
+        "all:\"TRON 2\"",
+        "all:\"LimX Oli\""
+      ]
     },
     "openalex": {
       "enabled": true,

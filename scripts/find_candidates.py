@@ -7,8 +7,8 @@
     python scripts/find_candidates.py --since 2026-10-01    # only things touched since
     python scripts/find_candidates.py --mark-seen           # after review: stop reporting these
 
-What to search for lives in scripts/sweep_config.json (robots, keywords,
-sources, owners to skip). Anything already linked from README.md, or listed in
+What to search for lives in scripts/sweep_config.json (robots, keywords per
+source, owners to skip). Anything already in README.md (by link or by name), or in
 scripts/sweep_seen.txt, is left out of the report.
 
 The script only finds candidates. A person still decides what gets listed:
@@ -78,7 +78,10 @@ def gh(path, retries=3):
 def load_known():
     """Everything already linked from README.md, plus the reviewed list."""
     text = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
-    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set()}
+    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(), "titles": set()}
+    # Entry names, e.g. "PTRL" or "TRON1 Sliding Analysis", to catch a paper listed under another link.
+    for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*', text):
+        known["titles"].add(norm_title(m.group(1)))
     for m in re.finditer(r"github\.com/([\w.-]+)/([\w.-]+)", text):
         known["github"].add((m.group(1) + "/" + m.group(2)).lower().removesuffix(".git"))
     for m in re.finditer(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})", text):
@@ -100,20 +103,49 @@ def load_known():
     if os.path.exists(p):
         for line in open(p, encoding="utf-8"):
             line = line.split("#")[0].strip()
-            if line:
+            if line.lower().startswith("title:"):
+                known["titles"].add(norm_title(line[6:]))
+            elif line:
                 seen.add(line.lower())
     return known, seen
+
+
+def norm_title(t):
+    return re.sub(r"[^0-9a-z\u4e00-\u9fff]+", " ", t.lower()).strip()
+
+
+def listed_title(title, known):
+    """True when a paper title matches an entry already in the list.
+
+    A paper is often listed under its arXiv or code link while a database
+    returns the journal DOI, so links alone miss it. This matches the whole
+    title, the short name before a colon ("PTRL: Prior Transfer ..." against
+    the entry "PTRL"), a short name in brackets ("... Selection (VAPS) for
+    ..."), or an entry name of three or more words whose words all appear in
+    the title. Lines starting with `title:` in sweep_seen.txt add more names.
+    """
+    t = norm_title(title)
+    if not t:
+        return False
+    names = {t}
+    if ":" in title:
+        names.add(norm_title(title.split(":")[0]))
+    names |= {norm_title(x) for x in re.findall(r"\(([^()]{2,20})\)", title)}
+    if names & known["titles"]:
+        return True
+    words = set(t.split())
+    return any(len(k.split()) >= 3 and set(k.split()) <= words for k in known["titles"])
 
 
 # ---------------------------------------------------------------- sources
 
 def robots_for(text, cfg, wanted):
-    """Which configured robots a piece of text mentions."""
+    """Which configured robots a piece of text mentions, by the robot's `aliases`."""
     out = []
-    low = text.lower()
     for name in wanted:
         r = cfg["robots"][name]
-        if any(k.lower() in low for k in r.get("code", []) + r.get("text", [])):
+        words = r.get("aliases") or [k.strip('"') for k in r.get("code", []) + r.get("text", [])]
+        if any(re.search(r"(?<![0-9A-Za-z])" + re.escape(w) + r"(?![0-9A-Za-z])", text, re.I) for w in words):
             out.append(name)
     return out
 
@@ -194,15 +226,23 @@ def text_keywords(cfg, wanted):
 
 
 def src_arxiv(cfg, wanted, known, seen, since):
-    """arXiv searches titles and abstracts only, so this finds papers that name the robot up front."""
+    """arXiv searches titles, abstracts and comments only, so few papers name LimX there.
+
+    Its queries are raw arXiv syntax from the config (sources.arxiv.queries),
+    not the `text` keywords: the robot names in the text are rarely in an
+    abstract ("LimX TRON1" has no hits at all), while a plain `all:LimX`
+    catches every paper that mentions the company up front. OpenAlex, which
+    reads the full text, is the main paper source.
+    """
     out, done = [], set()
     ns = {"a": "http://www.w3.org/2005/Atom"}
-    for kw in text_keywords(cfg, wanted):
+    s = cfg["sources"]["arxiv"]
+    for kw in s.get("queries") or ["all:LimX"]:
         log(f"  arxiv: {kw}")
-        q = urllib.parse.quote(f'all:"{kw}"')
-        body = get(f"http://export.arxiv.org/api/query?search_query={q}&sortBy=submittedDate&sortOrder=descending"
+        q = urllib.parse.quote(kw, safe=":")
+        body = get(f"https://export.arxiv.org/api/query?search_query={q}&sortBy=submittedDate&sortOrder=descending"
                    f"&max_results={cfg['sources']['arxiv'].get('max_results', 50)}", accept_json=False)
-        time.sleep(3)
+        time.sleep(5)  # arXiv asks for one request every 3 s and answers 429 when pushed
         if not body:
             continue
         try:
@@ -216,6 +256,8 @@ def src_arxiv(cfg, wanted, known, seen, since):
                 continue
             done.add(aid)
             title = " ".join(e.findtext("a:title", "", ns).split())
+            if listed_title(title, known):
+                continue
             summary = e.findtext("a:summary", "", ns)
             out.append({"key": "arxiv:" + aid, "title": title, "url": "https://arxiv.org/abs/" + aid,
                         "robots": robots_for(title + " " + summary, cfg, wanted), "date": date,
@@ -223,17 +265,26 @@ def src_arxiv(cfg, wanted, known, seen, since):
     return out
 
 
+def abstract(inv):
+    """OpenAlex ships abstracts as {word: [positions]}; put the words back in order."""
+    if not inv:
+        return ""
+    pos = sorted((i, w) for w, idx in inv.items() for i in idx)
+    return " ".join(w for _, w in pos)
+
+
 def src_openalex(cfg, wanted, known, seen, since):
     """OpenAlex searches full text, so it also finds papers that only name the robot in the experiments."""
     out, done = [], set()
     s = cfg["sources"]["openalex"]
     start = since or (datetime.date.today() - datetime.timedelta(days=s.get("default_days", 365))).isoformat()
-    mail = s.get("mailto", "")
+    mail = os.environ.get("OPENALEX_MAILTO") or s.get("mailto", "")
+    robot_of = {k: name for name in wanted for k in cfg["robots"][name].get("text", [])}
     for kw in text_keywords(cfg, wanted):
         log(f"  openalex: {kw}")
         f = urllib.parse.quote(f'fulltext.search:"{kw}",from_publication_date:{start}')
         d = get(f"https://api.openalex.org/works?filter={f}&per-page={s.get('max_results', 50)}"
-                f"&sort=publication_date:desc&select=id,doi,title,publication_date,ids,primary_location"
+                f"&sort=publication_date:desc&select=id,doi,title,publication_date,abstract_inverted_index"
                 + (f"&mailto={mail}" if mail else ""))
         time.sleep(1)
         for w in (d or {}).get("results") or []:
@@ -244,9 +295,14 @@ def src_openalex(cfg, wanted, known, seen, since):
             if key in done or key.lower() in seen or (aid and aid in known["arxiv"]) or (doi and doi in known["doi"]):
                 continue
             done.add(key)
-            url = ("https://arxiv.org/abs/" + aid) if aid else (w.get("doi") or w["id"])
             title = " ".join((w.get("title") or "").split())
-            out.append({"key": key, "title": title, "url": url, "robots": robots_for(title, cfg, wanted),
+            if listed_title(title, known):
+                continue
+            url = ("https://arxiv.org/abs/" + aid) if aid else (w.get("doi") or w["id"])
+            robots = robots_for(title + " " + abstract(w.get("abstract_inverted_index")), cfg, wanted)
+            if not robots and kw in robot_of:  # the robot is named in the body, which OpenAlex does not return
+                robots = [robot_of[kw]]
+            out.append({"key": key, "title": title, "url": url, "robots": robots,
                         "date": w.get("publication_date") or "", "stars": None, "note": "", "why": kw})
     return out
 
@@ -292,7 +348,8 @@ def report(results, wanted, since):
              f"{total} candidates not yet in the list. Robots: {', '.join(wanted)}."
              + (f" Only items touched since {since}." if since else ""), "",
              "A keyword hit is not proof. Open each one and check that it really uses the robot before listing it.",
-             "When you are done, run `python scripts/find_candidates.py --mark-seen` so the rejected ones stop showing up.", ""]
+             "Add the ones that fit first. Then run `python scripts/find_candidates.py --mark-seen` so the rest stop",
+             "showing up; pass `--keep url1,url2` for any you still mean to come back to.", ""]
     for key, items in results.items():
         label, _, metric = SOURCES[key]
         lines += [f"## {label}: {len(items)}", ""]
@@ -312,6 +369,26 @@ def report(results, wanted, since):
     return "\n".join(lines)
 
 
+def key_of(x):
+    """Turn a URL or owner/repo into the key the report uses."""
+    x = x.strip().rstrip("/")
+    m = re.search(r"github\.com/([\w.-]+/[\w.-]+)", x)
+    if m:
+        return "gh:" + m.group(1).lower()
+    m = re.search(r"arxiv\.org/abs/(\d{4}\.\d{4,5})", x)
+    if m:
+        return "arxiv:" + m.group(1)
+    m = re.search(r"huggingface\.co/(?:datasets/|spaces/)?([\w.-]+/[\w.-]+)", x)
+    if m:
+        return "hf:" + m.group(1).lower()
+    m = re.search(r"doi\.org/(10\..+)", x)
+    if m:
+        return "doi:" + m.group(1).lower()
+    if re.fullmatch(r"[\w.-]+/[\w.-]+", x):
+        return "gh:" + x.lower()
+    return x.lower()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--config", default=os.path.join(HERE, "sweep_config.json"))
@@ -321,6 +398,9 @@ def main():
     ap.add_argument("--out", default="sweep_report.md", help="where to write the report")
     ap.add_argument("--mark-seen", action="store_true",
                     help="add the candidates from the last run (sweep_candidates.json) to sweep_seen.txt")
+    ap.add_argument("--keep", default="",
+                    help="with --mark-seen: comma-separated candidates (URL, owner/repo or key) to keep reporting, "
+                         "e.g. ones you mean to add later")
     a = ap.parse_args()
 
     state = os.path.join(ROOT, "sweep_candidates.json")
@@ -328,7 +408,10 @@ def main():
         if not os.path.exists(state):
             sys.exit("no sweep_candidates.json: run a sweep first")
         _, seen = load_known()
-        new = [k for k in json.load(open(state, encoding="utf-8")) if k.lower() not in seen]
+        keep = {key_of(x) for x in a.keep.split(",") if x.strip()}
+        new = [k for k in json.load(open(state, encoding="utf-8")) if k.lower() not in seen and k.lower() not in keep]
+        if keep:
+            print(f"keeping {len(keep)} candidates in future reports")
         with open(os.path.join(HERE, "sweep_seen.txt"), "a", encoding="utf-8") as f:
             f.write(f"\n# reviewed {datetime.date.today().isoformat()}\n" + "".join(k + "\n" for k in new))
         print(f"marked {len(new)} candidates as reviewed")
