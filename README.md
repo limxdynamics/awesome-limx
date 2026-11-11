@@ -16,7 +16,7 @@
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 71 projects | 21 projects | 21 projects | 5 projects | 4 projects | 2 projects |
+| 71&nbsp;projects | 21&nbsp;projects | 21&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects | 2&nbsp;projects |
 
 ## Contents
 

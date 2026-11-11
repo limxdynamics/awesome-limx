@@ -16,7 +16,7 @@
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 71 件 | 21 件 | 21 件 | 5 件 | 4 件 | 2 件 |
+| 71&nbsp;件 | 21&nbsp;件 | 21&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 | 2&nbsp;件 |
 
 ## 目次
 

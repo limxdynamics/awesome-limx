@@ -16,7 +16,7 @@
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 71 个项目 | 21 个项目 | 21 个项目 | 5 个项目 | 4 个项目 | 2 个项目 |
+| 71&nbsp;条 | 21&nbsp;条 | 21&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 | 2&nbsp;条 |
 
 ## 目录
 
