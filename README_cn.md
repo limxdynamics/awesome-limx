@@ -12,6 +12,12 @@
 
 > 收录 **116** 个项目，其中 **81** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
+**按机型直达**
+
+| [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 71 个项目 | 21 个项目 | 21 个项目 | 5 个项目 | 4 个项目 | 2 个项目 |
+
 ## 目录
 
 - [动手之前](#动手之前)
@@ -36,7 +42,7 @@
   - [战略合作](#战略合作)
   - [区域伙伴与渠道](#区域伙伴与渠道)
   - [奖项与认可](#奖项与认可)
-- [按机型查找](#按机型查找): [TRON1](robots/TRON1_cn.md) · [TRON2](robots/TRON2_cn.md) · [Oli](robots/Oli_cn.md) · [Luna](robots/Luna_cn.md) · [P1](robots/P1_cn.md) · [W1](robots/W1_cn.md)
+- [按机型查找](#按机型查找)
 - [参与贡献](#参与贡献)
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>

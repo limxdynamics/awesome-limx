@@ -382,6 +382,22 @@ def check_by_robot(text, path, report):
             report.warn("by-robot", "%s: %d entries use %s, but By robot has no row for it"
                         % (path, n, robot))
 
+    # The quick "Find by robot" table near the top, if there is one:
+    #   | [**TRON1**](robots/TRON1.md) | ... |  then a row of "71 projects" cells.
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        names = re.findall(r"\[\*\*([^*]+)\*\*\]\(robots/", line)
+        if len(names) < 2 or i + 2 >= len(lines):
+            continue
+        nums = re.findall(r"\d+", lines[i + 2])
+        if len(nums) != len(names):
+            continue
+        for robot, n in zip(names, nums):
+            if robot in actual and actual[robot] != int(n):
+                report.warn("by-robot", "%s: Find by robot says %s %s, the tables hold %d"
+                            % (path, robot, n, actual[robot]))
+        break
+
     # The one-line summary, if there is one: "TRON1 52 · TRON2 17 · ..."
     m = re.search(r"<summary>(.*?)</summary>", text, re.S)
     if m:

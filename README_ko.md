@@ -12,6 +12,12 @@
 
 > LimX 로봇과 LimX SDK로 만든 **116**개 프로젝트를 모았고, 그중 **81**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
+**기종별로 찾기**
+
+| [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 71개 | 21개 | 21개 | 5개 | 4개 | 2개 |
+
 ## 목차
 
 - [시작하기 전에](#시작하기-전에)
@@ -36,7 +42,7 @@
   - [전략적 제휴](#전략적-제휴)
   - [지역 파트너 및 판매 채널](#지역-파트너-및-판매-채널)
   - [수상 및 인정](#수상-및-인정)
-- [기종별](#기종별): [TRON1](robots/TRON1_ko.md) · [TRON2](robots/TRON2_ko.md) · [Oli](robots/Oli_ko.md) · [Luna](robots/Luna_ko.md) · [P1](robots/P1_ko.md) · [W1](robots/W1_ko.md)
+- [기종별](#기종별)
 - [기여하기](#기여하기)
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>

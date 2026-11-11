@@ -12,6 +12,12 @@
 
 > LimX のロボットと LimX SDK を使った **116** プロジェクトを収録しています。うち **81** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
+**機種から探す**
+
+| [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 71 件 | 21 件 | 21 件 | 5 件 | 4 件 | 2 件 |
+
 ## 目次
 
 - [はじめる前に](#はじめる前に)
@@ -36,7 +42,7 @@
   - [戦略提携](#戦略提携)
   - [地域パートナーと販売チャネル](#地域パートナーと販売チャネル)
   - [受賞と評価](#受賞と評価)
-- [機種別](#機種別): [TRON1](robots/TRON1_ja.md) · [TRON2](robots/TRON2_ja.md) · [Oli](robots/Oli_ja.md) · [Luna](robots/Luna_ja.md) · [P1](robots/P1_ja.md) · [W1](robots/W1_ja.md)
+- [機種別](#機種別)
 - [コントリビュート](#コントリビュート)
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>

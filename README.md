@@ -12,6 +12,12 @@
 
 > **116** projects built on LimX robots and the LimX SDK, **81** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
+**Find by robot**
+
+| [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 71 projects | 21 projects | 21 projects | 5 projects | 4 projects | 2 projects |
+
 ## Contents
 
 - [Before you start](#before-you-start)
@@ -36,7 +42,7 @@
   - [Strategic partnerships](#strategic-partnerships)
   - [Regional partners & channels](#regional-partners--channels)
   - [Awards & recognition](#awards--recognition)
-- [By robot](#by-robot): [TRON1](robots/TRON1.md) · [TRON2](robots/TRON2.md) · [Oli](robots/Oli.md) · [Luna](robots/Luna.md) · [P1](robots/P1.md) · [W1](robots/W1.md)
+- [By robot](#by-robot)
 - [Contributing](#contributing)
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
