@@ -484,9 +484,11 @@ def main():
             for a in sorted(set(other) - en):
                 report.error("sync", "entry p-%s is in %s but not README.md" % (a, name))
 
-    # robots/*.md are rebuilt by a workflow after every README change lands on
-    # main, so a pull request is expected to leave them behind: say nothing there.
-    if os.environ.get("GITHUB_EVENT_NAME") != "pull_request":
+    # robots/*.md are rebuilt by the robot-pages workflow after every README
+    # change lands on main. A pull request, and the push that runs alongside
+    # that workflow, are expected to see them behind: say nothing there. The
+    # weekly scheduled run and local runs still check.
+    if os.environ.get("GITHUB_EVENT_NAME") not in ("pull_request", "push"):
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
             import build_robot_pages

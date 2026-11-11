@@ -36,6 +36,7 @@ UA = "awesome-limx-sweep (+https://github.com/limxdynamics/awesome-limx)"
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 DEADLINE = [float("inf")]  # per source, so one slow or flaky site cannot eat the whole run
 STATS = {"requests": 0, "failed": 0, "errors": []}  # per source, reset in main()
+LAST = {"remaining": None}  # GitHub's x-ratelimit-remaining from the last good response
 
 
 def log(*a):
@@ -57,6 +58,7 @@ def get(url, headers=None, retries=3, accept_json=True):
             return None
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
+                LAST["remaining"] = r.headers.get("x-ratelimit-remaining")
                 body = r.read().decode("utf-8", "replace")
                 return json.loads(body) if accept_json else body
         except urllib.error.HTTPError as e:
@@ -236,9 +238,19 @@ def src_github(cfg, wanted, known, seen, since):
     if len(hits) > limit:
         STATS["skipped"] = len(hits) - limit
     log(f"  github: {len(hits)} new repos, fetching details" + (f" for the first {limit}" if len(hits) > limit else ""))
-    for full, h in list(hits.items())[:limit]:
-        d = gh("/repos/" + full, retries=2) or {}
-        time.sleep(0.5)
+    todo = list(hits.items())[:limit]
+    for i, (full, h) in enumerate(todo):
+        # Stop cleanly at the time budget or when the hourly API quota runs out:
+        # what is left is counted as unchecked and comes back next run.
+        if time.time() > DEADLINE[0] or LAST["remaining"] == "0":
+            STATS["unchecked"] = STATS.get("unchecked", 0) + len(todo) - i
+            log(f"  github: stopped fetching details, {len(todo) - i} repos left unchecked")
+            break
+        d = gh("/repos/" + full, retries=1)
+        time.sleep(0.3)
+        if not d:  # no details means no fork, date or star check: leave it for next time
+            STATS["unchecked"] = STATS.get("unchecked", 0) + 1
+            continue
         if d.get("fork"):
             continue
         pushed = (d.get("pushed_at") or "")[:10]
@@ -403,8 +415,11 @@ def report(results, wanted, since, partial=(), stats=None):
             lines += [f"{what} to this source failed ({', '.join(st['errors'][:4])}), so the list below may be incomplete. See the run log.", ""]
         if st.get("skipped"):
             lines += [f"**Capped:** {st['skipped']} repos were not checked (`max_repos` in the config).", ""]
+        if st.get("unchecked"):
+            lines += [f"**Unchecked:** {st['unchecked']} repos are left out because their details could not be fetched "
+                      "(failed request, time limit or API quota). They are not marked as seen and come back next run.", ""]
         if not items:
-            lines += ["No results." if st.get("failed") or key in partial else "Nothing new.", ""]
+            lines += ["No results." if st.get("failed") or st.get("unchecked") or key in partial else "Nothing new.", ""]
             continue
         head = "| Candidate | Robot | " + (metric.capitalize() + " | " if metric else "") + "Date | Matched |"
         lines += [head, "|" + "---|" * (head.count("|") - 1)]
@@ -491,7 +506,7 @@ def main():
         log(f"{SOURCES[s][0]}")
         budget = cfg["sources"].get(s, {}).get("max_minutes", 15)
         DEADLINE[0] = time.time() + budget * 60
-        STATS.update(requests=0, failed=0, errors=[], skipped=0)
+        STATS.update(requests=0, failed=0, errors=[], skipped=0, unchecked=0)
         try:
             results[s] = SOURCES[s][1](cfg, wanted, known, seen, since)
             if time.time() > DEADLINE[0]:

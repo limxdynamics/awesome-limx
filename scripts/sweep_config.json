@@ -200,5 +200,5 @@
       "max_minutes": 10
     }
   },
-  "_models": "Model IDs from LimX's own description repos: TRON1 = PF_/SF_/WF_TRON1A|B, plus PF_P441A..C2 (older point-foot TRON1, per tron1-robot-description); W1 = WL_P311D/E (wheel-legged quadruped, tron1-robot-description); Oli = HU_D04_01, HU_D03_03 (discontinued predecessor, humanoid-description); Luna = HU_L04_01 (luna-description); TRON2 = SFYG_TRON2A, DA_TRON2A (tron2-robot-description ships a generic robot.urdf). P1 and CL-1 have no public description repo, so only their names are searched."
+  "_models": "Model IDs from LimX's own description repos: TRON1 = PF_/SF_/WF_TRON1A|B, plus PF_P441A..C2 (older point-foot TRON1, per tron1-robot-description); W1 = WL_P311D/E (wheel-legged quadruped, tron1-robot-description); Oli = HU_D04_01, HU_D03_03 (discontinued predecessor, humanoid-description); Luna = HU_L04_01 (luna-description); TRON2 = SFYG_TRON2A, DA_TRON2A (tron2-robot-description ships a generic robot.urdf). P1 and CL-1 have no public description repo, so only their names are searched. CL-1 is searched so a first project can be found, but the list has no CL-1 entry, robot page or form option yet: when one is listed, add CL-1 to ROBOTS in build_robot_pages.py, the README robot tables and the form."
 }

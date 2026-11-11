@@ -44,7 +44,8 @@ jobs:
     name: Sweep
     if: ${{ !inputs.mark_seen }}
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # The sources' time budgets (max_minutes in the config) add up to 50 minutes.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -62,6 +63,10 @@ jobs:
           # A scheduled run only looks at the last 60 days; run by hand with an empty `since` for the full history.
           [ -z "$SINCE" ] && [ "${{ github.event_name }}" = "schedule" ] && SINCE=60
           [ -n "$SINCE" ] && args+=(--since "$SINCE")
+          # What this run covered. A run only replaces or closes the sweep issue
+          # when the issue holds a run of the same scope.
+          r="${ROBOTS// /}"; so="${SOURCES// /}"
+          echo "SCOPE=robots=${r:-all};sources=${so:-all};since=${SINCE:-all}" >> "$GITHUB_ENV"
           python scripts/find_candidates.py "${args[@]}"
           head -c 900000 sweep_report.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
@@ -74,11 +79,22 @@ jobs:
       - name: Update the sweep issue
         run: |
           total=$(python -c "import json;print(len(json.load(open('sweep_candidates.json'))))")
+          run="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
           n=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title --jq "map(select(.title==env.TITLE))[0].number // empty")
+          if [ -n "$n" ]; then
+            old=$(gh issue view "$n" --json body --jq .body | sed -n 's/.*<!-- sweep-scope: \(.*\) -->.*/\1/p' | head -1)
+            if [ "$old" != "$SCOPE" ]; then
+              # A different scope (say the monthly 60-day run against a full manual run still under
+              # review) must not replace or close it. Its candidates stay unseen and come back later.
+              gh issue comment "$n" --body "A sweep with a different scope (\`$SCOPE\`) found $total candidates: $run. This issue (\`${old:-unknown}\`) is left as it is; finish and mark it first."
+              exit 0
+            fi
+          fi
           if [ "$total" = "0" ]; then
-            # Unreviewed candidates would still be reported, so zero means nothing is waiting.
-            if grep -q '^\*\*\(Failed\|Errors\|Partial\)' sweep_report.md; then echo "no candidates, but some sources failed: see the report"; exit 0; fi
-            [ -n "$n" ] && gh issue close "$n" --comment "Sweep on $(date -u +%F): nothing new to review."
+            # Unreviewed candidates would still be reported, so zero means nothing is waiting,
+            # unless a source failed: then zero proves nothing, and the next step fails the job.
+            grep -q '^\*\*\(Failed\|Errors\|Partial\|Unchecked\)' sweep_report.md && exit 0
+            [ -n "$n" ] && gh issue close "$n" --comment "Sweep on $(date -u +%F) (\`$SCOPE\`): nothing new to review."
             exit 0
           fi
           # Issue bodies cap at 65536 characters: cut the report at a line and say how much is shown.
@@ -93,15 +109,25 @@ jobs:
               out.append(line); size += len(line.encode()) + 1
               shown += line.startswith("| [")
           run = f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
-          head = (f"**{total} candidates, {shown} shown here.**" + ("" if shown == total else
+          head = (f"Scope: `{os.environ['SCOPE']}`\n\n**{total} candidates, {shown} shown here.**" + ("" if shown == total else
                   f" The rest are in the full report ([run]({run}), artifact `sweep-report`): review those too before marking.") + "\n")
           tail = ["", f"Full report: {run}", "",
                   "After review: add the ones that fit, then run this workflow with **mark_seen** ticked "
                   "(list any to come back to under **keep**). It marks exactly the candidates of this run.",
-                  f"<!-- sweep-run: {os.environ['GITHUB_RUN_ID']} -->"]
+                  f"<!-- sweep-run: {os.environ['GITHUB_RUN_ID']} -->", f"<!-- sweep-scope: {os.environ['SCOPE']} -->"]
           open("body.md", "w", encoding="utf-8").write(head + "\n" + "\n".join(out + tail) + "\n")
           PY
           if [ -n "$n" ]; then gh issue edit "$n" --body-file body.md; gh issue comment "$n" --body "Updated by the sweep on $(date -u +%F): $total candidates."; else gh issue create --title "$TITLE" --body-file body.md; fi
+      - name: Fail if a source failed outright
+        run: |
+          # A source where every request failed is silent breakage (a revoked token, a changed API):
+          # a red run sends a notification, a warning does not.
+          if grep -q '^\*\*Failed' sweep_report.md; then
+            grep '^## \|^\*\*Failed' sweep_report.md
+            n=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title --jq "map(select(.title==env.TITLE))[0].number // empty")
+            [ -n "$n" ] && gh issue comment "$n" --body "Sweep on $(date -u +%F): a source failed outright, see ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            exit 1
+          fi
 
   mark-seen:
     name: Mark reviewed
