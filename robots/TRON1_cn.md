@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **71** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **73** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 ## 目录
 
-- [运动控制](#运动控制) — 23
+- [运动控制](#运动控制) — 25
 - [感知与导航](#感知与导航) — 11
 - [操作](#操作) — 5
 - [具身智能](#具身智能) — 1
@@ -32,6 +32,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 |---|---|---|---|---|---|
 | <a id="p-ame-2"></a>**AME-2**：敏捷感知运动 | `TRON1` | [苏黎世联邦理工 RSL](https://rsl.ethz.ch) | 2026 | 论文 | [主页](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.08485) |
 | <a id="p-steppingstonelocomotion"></a>**梅花桩行走**：跨越梅花桩，先盲走再加视觉 | `TRON1`&nbsp;*仿真* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 代码 | [代码](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=vs608-L7kl0) |
+| <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：轮足 TRON1 的地形适应与机身高度调节 | `TRON1` | 桂林电子科大、上海交大、浙大 | 2026 | 论文 | [论文](https://doi.org/10.1109/amc67705.2026.11435832) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：轮足盲爬台阶 | `TRON1` | 上海大学、酷哇机器人 | 2025 | 论文 | [主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：稳定的双足感知行走 | `TRON1` | 南科大 CLEAR 实验室、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.09106) |
@@ -52,6 +53,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 与 TRON1A 的 Isaac Lab 运动控制 | `TRON1`&nbsp;*仿真* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 代码 | [代码](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**：点足与轮足统一的扩散策略 | `TRON1` | 南科大 CLEAR 实验室、逐际动力等 | 2025 | 代码 | [主页](https://multi-loco.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[代码](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp 轮足部署**：轮足策略实机部署 | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | 代码 | [代码](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
+| <a id="p-ptrl"></a>**PTRL**：在机器人之间迁移先验以缩短强化学习训练时间，在 Go2 和 TRON1 上实测 | `TRON1` | 哈工大（深圳）、苏州大学 | 2025 | 论文 | [论文](https://arxiv.org/abs/2504.05629) |
 | <a id="p-anybipe"></a>**AnyBipe**：大模型引导的双足训练与部署 | `TRON1` | [上海交通大学](https://github.com/sjtu-mvasl-robotics) | 2024 | 代码 | [代码](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
 
 ### 基于模型的控制

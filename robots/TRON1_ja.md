@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **71** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **73** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 23
+- [移動と全身制御](#移動と全身制御) — 25
 - [知覚とナビゲーション](#知覚とナビゲーション) — 11
 - [マニピュレーション](#マニピュレーション) — 5
 - [エンボディドAI](#エンボディドai) — 1
@@ -32,6 +32,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 |---|---|---|---|---|---|
 | <a id="p-ame-2"></a>**AME-2**：俊敏な知覚ロコモーション | `TRON1` | [ETH Zurich RSL](https://rsl.ethz.ch) | 2026 | 論文 | [プロジェクト](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2601.08485) |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**：飛び石歩行、まずブラインドで、次に視覚あり | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | コード | [コード](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[動画](https://www.youtube.com/watch?v=vs608-L7kl0) |
+| <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：ホイールフット TRON1 での地形適応と車高調整 | `TRON1` | 桂林電子科技大学、上海交通大学、浙江大学 | 2026 | 論文 | [論文](https://doi.org/10.1109/amc67705.2026.11435832) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形適応ロコモーション | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 論文 | [論文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：車輪でのブラインド階段昇降 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 論文 | [プロジェクト](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**：安定した知覚二足歩行 | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2509.09106) |
@@ -52,6 +53,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 と TRON1A 向け Isaac Lab ロコモーション | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | コード | [コード](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**：ポイントフットとホイールフットを一つの拡散ポリシーで | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | コード | [プロジェクト](https://multi-loco.github.io)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[コード](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**：ホイールフットポリシーの実機デプロイ | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | コード | [コード](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
+| <a id="p-ptrl"></a>**PTRL**：ロボット間で事前知識を転移して RL 学習時間を短縮、Go2 と TRON1 で実機検証 | `TRON1` | ハルビン工業大学（深圳）、蘇州大学 | 2025 | 論文 | [論文](https://arxiv.org/abs/2504.05629) |
 | <a id="p-anybipe"></a>**AnyBipe**：LLM が導く二足ロボットの学習とデプロイ | `TRON1` | [SJTU](https://github.com/sjtu-mvasl-robotics) | 2024 | コード | [コード](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
 
 ### モデルベース制御
