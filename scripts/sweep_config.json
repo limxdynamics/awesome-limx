@@ -1,5 +1,5 @@
 {
-  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to OpenAlex full-text search; `hf` keywords match Hugging Face repo names; `aliases` are the names that tag a hit with this robot in the report (whole-word, case-insensitive). arXiv only searches titles and abstracts, so it has its own raw query list under sources.arxiv.queries. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files, adopter lists) is left out. Add a robot by adding a block here. `repo` keywords match repository names and descriptions on Gitee, which has no code search.",
+  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to OpenAlex full-text search; `hf` keywords match Hugging Face repo names; `aliases` are the names that tag a hit with this robot in the report (whole-word, case-insensitive). arXiv only searches titles and abstracts, so it has its own raw query list under sources.arxiv.queries. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files, adopter lists) is left out. Add a robot by adding a block here. `repo` keywords match repository names and descriptions on Gitee, which has no code search. sources.forks.repos lists LimX repositories whose forks are checked for their own commits (code search skips forks).",
   "robots": {
     "TRON1": {
       "code": [
@@ -250,6 +250,50 @@
       "min_stars": 0,
       "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2}|(^|/)community/|(^|/)[^/]*(adopters|users|customers|clients|showcase|who-?uses)[^/]*$)",
       "max_minutes": 20
+    },
+    "forks": {
+      "enabled": true,
+      "owner": "limxdynamics",
+      "min_ahead": 1,
+      "max_minutes": 15,
+      "repos": [
+        "tron2_rl_lab",
+        "TRON2_YG_LAB",
+        "tron2_mujoco_sim",
+        "tron2_openpi",
+        "tron2_env",
+        "tron2-robot-description",
+        "tron2_rl_deploy_python",
+        "tron2_rl_deploy_ros",
+        "tron2_gazebo_ros",
+        "tron2_manipulation_controller",
+        "tron2_visual_grasp",
+        "tron2-navigation-ros2",
+        "tron2-navigation-pct-gpl",
+        "tron2-navigation-fastlio-gpl",
+        "troncamp-mani",
+        "troncamp-web-mani",
+        "troncamp-web-locomotion",
+        "tron1-rl-isaaclab",
+        "tron1-rl-isaacgym",
+        "tron1-mujoco-sim",
+        "tron1-rl-deploy-python",
+        "tron1-rl-deploy-ros",
+        "tron1-rl-deploy-ros2",
+        "tron1-robot-description",
+        "tron1-gazebo-ros",
+        "tron1-gazebo-ros2",
+        "tron1-rl-deploy-arm",
+        "limxsdk-lowlevel",
+        "humanoid-rl-isaaclab",
+        "humanoid-description",
+        "humanoid-mujoco-sim",
+        "humanoid-rl-deploy-python",
+        "humanoid-rl-deploy-ros2",
+        "humanoid-rl-deploy-cpp",
+        "luna-description",
+        "GMR"
+      ]
     },
     "gitee": {
       "enabled": true,

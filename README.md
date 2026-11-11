@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **157** projects and partnerships around LimX robots and the LimX SDK, **106** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **159** projects and partnerships around LimX robots and the LimX SDK, **108** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;projects | 33&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 92&nbsp;projects | 35&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 ## Contents
 
@@ -27,14 +27,14 @@
   - [Model-based control](#model-based-control)
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
 - [Perception & navigation](#perception--navigation) — 14
-- [Manipulation](#manipulation) — 11
+- [Manipulation](#manipulation) — 12
 - [Embodied AI](#embodied-ai) — 9
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 24
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
-- [Education & competitions](#education--competitions) — 17
+- [Education & competitions](#education--competitions) — 18
 - [Industry deployments](#industry-deployments) — 31
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
@@ -159,7 +159,7 @@ _14 entries: 3 papers · 11 code_
 
 ## Manipulation
 
-_11 entries: 5 papers · 6 code_
+_12 entries: 5 papers · 7 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -171,6 +171,7 @@ _11 entries: 5 papers · 6 code_
 | <a id="p-arm-tron"></a>**Arm-TRON**: reconfigurable biped with an arm | `TRON1` | SUSTech, ZJU et al. | 2026 | Paper | [paper](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: research platform for two TRON2 robots carrying a load together, MuJoCo with LimX SDK interfaces | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**: hierarchical NMPC that lets wheel-foot TRON1 slide objects with its wheeled legs, RA-L | `TRON1` | University of Michigan | 2026 | Paper | [paper](https://arxiv.org/abs/2606.19233) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: drives both arms of a dual-arm TRON2 from OAK-D hand and arm tracking, with an ORCA hand and a pipe-drilling scene branded for Elecnor (Spanish) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | Code | [code](https://github.com/Aremanky/Teleoperacion-tron-2) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: UMI skills with an ARX5 arm on a real TRON1 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | Code | [code](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**: Meta Quest arm and head teleoperation | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | Code | [code](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: W1 with an arm, pose tracking | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | Paper | [project](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2412.03012) |
@@ -241,7 +242,7 @@ _24 tools in 4 groups_
 
 ## Education & competitions
 
-_17 entries: 2 papers · 14 code · 1 tutorial_
+_18 entries: 2 papers · 15 code · 1 tutorial_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -258,6 +259,7 @@ _17 entries: 2 papers · 14 code · 1 tutorial_
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**: match code for RoboCup 2026: a TRON1 lower body with a team-built upper body and camera (Korean) | `TRON1` | [newb-ops (UOS ZETIN)](https://github.com/newb-ops) | 2026 | Code | [code](https://github.com/newb-ops/robocup-control-portfolio) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT with hard-example mining and multi-GPU training, with a technical report; T4 scored 79/100 online | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | Code | [code](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**: ACT for T1 to T3 and Diffusion Policy for the three-bowl stacking task, with a design document (Chinese) | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | Code | [code](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**: unified ACT training and deployment for all four tasks, with rollout videos of the T3 and T4 policies | `TRON2`&nbsp;*sim* | [SORMaker](https://github.com/SORMaker) | 2026 | Code | [code](https://github.com/SORMaker/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: open course from algorithms to real robots, with outdoor GNSS and Nav2 navigation on point-foot and wheel-foot TRON1 (Chinese) | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | Code | [code](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[tutorial](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -337,7 +339,7 @@ Entries per robot and section:
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
+| [`TRON2`](robots/TRON2.md) | **35** | 1 |  | 4 | 6 | 6 | 8 | 10 |
 | [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |

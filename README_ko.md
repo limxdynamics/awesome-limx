@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **157**개 프로젝트와 협력 사례를 모았고, 그중 **106**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **159**개 프로젝트와 협력 사례를 모았고, 그중 **108**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 **기종별로 찾기**
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92개 | 33개 | 29개 | 7개 | 5개 | 4개 |
+| 92개 | 35개 | 29개 | 7개 | 5개 | 4개 |
 
 ## 목차
 
@@ -27,14 +27,14 @@
   - [모델 기반 제어](#모델-기반-제어)
   - [모션 트래킹 및 리타게팅](#모션-트래킹-및-리타게팅)
 - [인지 및 내비게이션](#인지-및-내비게이션) — 14
-- [매니퓰레이션](#매니퓰레이션) — 11
+- [매니퓰레이션](#매니퓰레이션) — 12
 - [임바디드 AI](#임바디드-ai) — 9
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 24
   - [학습 프레임워크](#학습-프레임워크)
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
   - [배포 및 제어](#배포-및-제어)
   - [모델 및 모션 데이터](#모델-및-모션-데이터)
-- [교육 및 대회](#교육-및-대회) — 17
+- [교육 및 대회](#교육-및-대회) — 18
 - [산업 적용](#산업-적용) — 31
   - [적용 사례 및 제품](#적용-사례-및-제품)
   - [기업 오픈소스](#기업-오픈소스)
@@ -158,7 +158,7 @@ _14개: 논문 3 · 코드 11_
 
 ## 매니퓰레이션
 
-_11개: 논문 5 · 코드 6_
+_12개: 논문 5 · 코드 7_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
@@ -170,6 +170,7 @@ _11개: 논문 5 · 코드 6_
 | <a id="p-arm-tron"></a>**Arm-TRON**: 로봇팔을 단 재구성형 이족 로봇 | `TRON1` | SUSTech, ZJU et al. | 2026 | 논문 | [논문](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: TRON2 두 대의 협동 운반 연구 플랫폼, MuJoCo와 LimX SDK 인터페이스 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**: 계층형 NMPC로 휠풋 TRON1이 바퀴 달린 다리로 물체를 밀어 옮김, RA-L | `TRON1` | 미시간 대학교 | 2026 | 논문 | [논문](https://arxiv.org/abs/2606.19233) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: OAK-D로 팔과 손을 추적해 양팔 TRON2를 원격 조작, ORCA 핸드와 Elecnor 브랜드의 배관 드릴 작업 장면 포함 (스페인어) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | 코드 | [코드](https://github.com/Aremanky/Teleoperacion-tron-2) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: 실기 TRON1에서 ARX5 팔로 UMI 스킬 수행 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | 코드 | [코드](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**: Meta Quest로 팔과 머리 원격 조종 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | 코드 | [코드](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: 로봇팔을 단 W1, 자세 추종 | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2412.03012) |
@@ -240,7 +241,7 @@ _도구 24개 (4개 그룹)_
 
 ## 교육 및 대회
 
-_17개: 논문 2 · 코드 14 · 튜토리얼 1_
+_18개: 논문 2 · 코드 15 · 튜토리얼 1_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
@@ -257,6 +258,7 @@ _17개: 논문 2 · 코드 14 · 튜토리얼 1_
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**: RoboCup 2026 경기 운용 코드: TRON1 하체에 자체 제작 상체와 카메라 연결 | `TRON1` | [newb-ops (서울시립대 ZETIN)](https://github.com/newb-ops) | 2026 | 코드 | [코드](https://github.com/newb-ops/robocup-control-portfolio) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT와 하드 샘플 마이닝, 멀티 GPU 학습, 기술 보고서 포함. T4 온라인 점수 79/100 | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | 코드 | [코드](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**: T1~T3은 ACT, 그릇 세 개 쌓기는 Diffusion Policy, 설계 문서 포함 (중국어) | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | 코드 | [코드](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**: 네 과제 공통 ACT 학습·배포 파이프라인, T3·T4 정책 실행 영상 포함 | `TRON2`&nbsp;*sim* | [SORMaker](https://github.com/SORMaker) | 2026 | 코드 | [코드](https://github.com/SORMaker/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: 알고리즘부터 실제 로봇까지 다루는 공개 강좌, 포인트풋·휠풋 TRON1의 실외 GNSS·Nav2 내비게이션 포함 (중국어) | `TRON1` | [우한대학교 BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | 코드 | [코드](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[튜토리얼](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**광저우타워 로봇 등반 챌린지**: 우승 및 최우수 정밀 제어상, FastStair 사용 | `Oli` | LimX | 2025 | 논문 | [논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[결과](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 수업 프로젝트 | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | 코드 | [코드](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -336,7 +338,7 @@ _31개 (6개 그룹)_
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ko.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_ko.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
+| [`TRON2`](robots/TRON2_ko.md) | **35** | 1 |  | 4 | 6 | 6 | 8 | 10 |
 | [`Oli`](robots/Oli_ko.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_ko.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ko.md) | **5** | 3 |  |  |  |  |  | 2 |

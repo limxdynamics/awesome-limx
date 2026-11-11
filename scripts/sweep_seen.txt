@@ -474,3 +474,10 @@ gh:irvingskr/fluxvla
 gh:justin186/fluxvla
 gh:emopointer/tron2_control
 gh:cyres03/oli-robot-manager
+
+# TRON2 forks 2026-11-11: identical forks or forks for other robots.
+gh:brian841102/tron2_rl_lab
+gh:voniu/troncamp-mani
+gh:naotchi/tron2_mujoco_sim
+gh:dmshsl/tron2_mujoco_sim
+gh:dmshsl/tron2_rl_deploy_python

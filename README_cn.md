@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **157** 个项目与合作，其中 **106** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **159** 个项目与合作，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;条 | 33&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 92&nbsp;条 | 35&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
@@ -27,14 +27,14 @@
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
 - [感知与导航](#感知与导航) — 14
-- [操作](#操作) — 11
+- [操作](#操作) — 12
 - [具身智能](#具身智能) — 9
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 24
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
-- [教学与竞赛](#教学与竞赛) — 17
+- [教学与竞赛](#教学与竞赛) — 18
 - [行业应用](#行业应用) — 31
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
@@ -158,7 +158,7 @@ _14 个条目：3 篇论文 · 11 个代码_
 
 ## 操作
 
-_11 个条目：5 篇论文 · 6 个代码_
+_12 个条目：5 篇论文 · 7 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
@@ -170,6 +170,7 @@ _11 个条目：5 篇论文 · 6 个代码_
 | <a id="p-arm-tron"></a>**Arm-TRON**：可变足型双足加机械臂 | `TRON1` | 南方科大、浙江大学等 | 2026 | 论文 | [论文](https://doi.org/10.1109/TMECH.2026.3727546) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**：两台 TRON2 协同搬运的研究平台，MuJoCo 仿真并对接 LimX SDK | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**：分层 NMPC 让轮足 TRON1 用轮腿推移物体，RA-L 论文 | `TRON1` | 密歇根大学 | 2026 | 论文 | [论文](https://arxiv.org/abs/2606.19233) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**：用 OAK-D 相机跟踪人的手臂和手，遥操作双臂 TRON2，接 ORCA 灵巧手，附带 Elecnor 品牌的管道钻孔场景（西班牙语） | `TRON2`&nbsp;*仿真* | [Aremanky](https://github.com/Aremanky) | 2026 | 代码 | [代码](https://github.com/Aremanky/Teleoperacion-tron-2) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**：真机 TRON1 加 ARX5 机械臂部署 UMI 技能 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | 代码 | [代码](https://github.com/Czy213hd/umi-on-tron-lab) |
 | <a id="p-quest-vr-teleop-for-oli"></a>**Oli 的 Quest VR 遥操作**：Meta Quest 双臂与头部遥操作 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | 代码 | [代码](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**轮足四足移动操作**：W1 加机械臂位姿跟踪 | `W1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2412.03012) |
@@ -240,7 +241,7 @@ _24 个工具，分 4 组_
 
 ## 教学与竞赛
 
-_17 个条目：2 篇论文 · 14 个代码 · 1 个教程_
+_18 个条目：2 篇论文 · 15 个代码 · 1 个教程_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
@@ -257,6 +258,7 @@ _17 个条目：2 篇论文 · 14 个代码 · 1 个教程_
 | <a id="p-zetin-robocup-control"></a>**Zetin RoboCup Control**：RoboCup 2026 比赛代码：TRON1 下肢加自制上身和相机（韩语） | `TRON1` | [newb-ops（首尔市立大学 ZETIN）](https://github.com/newb-ops) | 2026 | 代码 | [代码](https://github.com/newb-ops/robocup-control-portfolio) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**：ACT 加困难样本挖掘与多卡训练，附技术报告；T4 线上得分 79/100 | `TRON2`&nbsp;*仿真* | [upset666](https://github.com/upset666) | 2026 | 代码 | [代码](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**：T1 到 T3 用 ACT，三碗堆叠任务改用 Diffusion Policy，附技术设计文档 | `TRON2`&nbsp;*仿真* | [irvingskr](https://github.com/irvingskr) | 2026 | 代码 | [代码](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**：四个任务统一的 ACT 训练与部署流程，附 T3、T4 策略的运行视频 | `TRON2`&nbsp;*仿真* | [SORMaker](https://github.com/SORMaker) | 2026 | 代码 | [代码](https://github.com/SORMaker/troncamp-mani) |
 | <a id="p-hands-on-embodied-ai"></a>**动手做具身智能**：从算法到实机部署的公开教程，含点足和轮足 TRON1 的室外 GNSS 与 Nav2 导航避障 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2025 | 代码 | [代码](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[教程](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1`&nbsp;*仿真* | [81578823（南方科大）](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -336,7 +338,7 @@ _31 个条目，分 6 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **33** | 1 |  | 3 | 6 | 6 | 7 | 10 |
+| [`TRON2`](robots/TRON2_cn.md) | **35** | 1 |  | 4 | 6 | 6 | 8 | 10 |
 | [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |

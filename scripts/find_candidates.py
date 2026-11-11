@@ -304,6 +304,59 @@ def src_github(cfg, wanted, known, seen, since):
     return out
 
 
+def robot_of_repo(repo, wanted):
+    """Which robot a LimX repository is for, from its name."""
+    r = repo.lower()
+    for prefix, robot in (("tron2", "TRON2"), ("troncamp", "TRON2"), ("tron1", "TRON1"), ("luna", "Luna"),
+                          ("humanoid", "Oli"), ("gmr", "Oli")):
+        if r.startswith(prefix) and robot in wanted:
+            return [robot]
+    return []
+
+
+def src_forks(cfg, wanted, known, seen, since):
+    """Forks of LimX's own repositories that carry their own commits.
+
+    Code search skips forks, but much TRON2 work starts as a fork of an
+    official stack (a TRONCamp solution in a troncamp-mani fork, say). This
+    lists the forks of each repo in sources.forks.repos and keeps the ones
+    that are ahead of upstream, using GitHub's compare API.
+    """
+    s = cfg["sources"]["forks"]
+    owner = s.get("owner", "limxdynamics")
+    out = []
+    for repo in s.get("repos", []):
+        log(f"  forks: {owner}/{repo}")
+        up = gh(f"/repos/{owner}/{repo}") or {}
+        base = up.get("default_branch", "main")
+        page = 1
+        while True:
+            forks = gh(f"/repos/{owner}/{repo}/forks?per_page=100&page={page}&sort=newest") or []
+            for f in forks:
+                full = f.get("full_name", "")
+                low = full.lower()
+                pushed = (f.get("pushed_at") or "")[:10]
+                if (not full or low in known["github"] or "gh:" + low in seen
+                        or (since and pushed and pushed < since)):
+                    continue
+                c = gh(f"/repos/{owner}/{repo}/compare/{base}...{f['owner']['login']}:{f['name']}:{f.get('default_branch', base)}",
+                       retries=1) or {}
+                time.sleep(0.3)
+                ahead = c.get("ahead_by", 0)
+                if ahead < s.get("min_ahead", 1):
+                    continue
+                last = ((c.get("commits") or [{}])[-1].get("commit") or {}).get("message", "").split("\n")[0]
+                out.append({"key": "gh:" + low, "title": full, "url": f.get("html_url") or "https://github.com/" + full,
+                            "robots": robot_of_repo(repo, wanted), "date": pushed, "stars": f.get("stargazers_count", 0),
+                            "note": f"{ahead} commits ahead of {owner}/{repo}" + (f"; last: {last[:80]}" if last else ""),
+                            "why": f"fork of {owner}/{repo}"})
+            if len(forks) < 100:
+                break
+            page += 1
+    out.sort(key=lambda c: (-int(c["note"].split()[0]), c["title"]))
+    return out
+
+
 def text_keywords(cfg, wanted):
     kws = list(cfg.get("company", {}).get("text", []))
     for name in wanted:
@@ -586,7 +639,8 @@ def src_hf(cfg, wanted, known, seen, since):
     return out
 
 
-SOURCES = {"github": ("GitHub", src_github, "stars"), "gitee": ("Gitee", src_gitee, "stars"),
+SOURCES = {"github": ("GitHub", src_github, "stars"), "forks": ("Forks of LimX repositories", src_forks, "stars"),
+           "gitee": ("Gitee", src_gitee, "stars"),
            "hf": ("Hugging Face", src_hf, "downloads"), "arxiv": ("arXiv (title and abstract)", src_arxiv, None),
            "openalex": ("OpenAlex (full text)", src_openalex, None),
            "semanticscholar": ("Semantic Scholar (abstract and full-text snippets)", src_semanticscholar, None)}
