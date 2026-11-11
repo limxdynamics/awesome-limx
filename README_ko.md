@@ -58,6 +58,8 @@
 | 3 · 학습 | Isaac Lab, Isaac Gym, MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
 | 4 · 배포 | ONNX 런타임, ROS 2, C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
 
+**LimX 로봇으로 무언가 만들었나요?** 이 목록에 추가할 수 있습니다 —— [프로젝트 제출](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)(링크만 있으면 됩니다). 먼저 [기여 안내](CONTRIBUTING.md)를 읽어도 좋습니다. 코드는 원래 저장소에 그대로 두시면 됩니다.
+
 ## 보행 및 전신 제어
 
 _45개 (4개 그룹): 논문 17 · 코드 28_

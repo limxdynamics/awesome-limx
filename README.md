@@ -59,6 +59,8 @@ order - these are our own repositories, not community projects.
 | 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
 | 4 · Deploy | ONNX runtime, ROS 2, C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
 
+**Built something with a LimX robot?** Add it to the list — [submit a project](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml) (a link is enough), or read [CONTRIBUTING.md](CONTRIBUTING.md) first. Links only; your code stays in your own repository.
+
 ## Locomotion & whole-body control
 
 _45 entries in 4 groups: 17 papers · 28 code_

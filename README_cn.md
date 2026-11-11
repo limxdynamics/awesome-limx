@@ -58,6 +58,8 @@
 | 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
 | 4 · 部署 | ONNX 推理、ROS 2、C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
 
+**用 LimX 机器人做出过东西？** 欢迎加到这个清单里 —— [提交项目](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)（给个链接就够了），或先看[贡献说明](CONTRIBUTING_cn.md)。只放链接，代码留在你自己的仓里。
+
 ## 运动控制
 
 _45 个条目，分 4 组：17 篇论文 · 28 个代码_
