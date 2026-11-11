@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **66** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **71** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,12 +14,12 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 21
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 23
 - [Perception & navigation](#perception--navigation) — 11
 - [Manipulation](#manipulation) — 5
 - [Embodied AI](#embodied-ai) — 1
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 16
-- [Education & competitions](#education--competitions) — 7
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 18
+- [Education & competitions](#education--competitions) — 8
 - [Industry deployments](#industry-deployments) — 5
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
@@ -47,6 +47,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-wf_tron1a-stand-still-policy"></a>**WF_TRON1A Stand-Still Policy**: RL policy for standing still in place | `TRON1`&nbsp;*sim* | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_rl) |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**: gradient-guided RL exploration | `TRON1` | ZJU, SUSTech | 2026 | Paper | [project](https://wheretolearn.github.io)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2603.27317)&nbsp;·&nbsp;[video](https://www.youtube.com/watch?v=DztdUyh_LVk) |
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 Deploy**: sim-to-sim and sim-to-real deployment | `TRON1` | [Chanjun Lee (UOS Zetin)](https://github.com/chanjun-nyam) | 2026 | Code | [code](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
+| <a id="p-sf_tron-ext-estimator"></a>**SF_TRON Ext Estimator**: history-based disturbance estimator added to a depth residual policy for sole-foot TRON1 | `TRON1`&nbsp;*sim* | [EVENWaterOne](https://github.com/EVENWaterOne) | 2026 | Code | [code](https://github.com/EVENWaterOne/SF_TRON_Ext-estimator) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: robust locomotion with HIM and PIM | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | Code | [code](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Isaac Lab locomotion for Go1 and TRON1A | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | Code | [code](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**: one diffusion policy for point-foot and wheel-foot | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | Code | [project](https://multi-loco.github.io)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[code](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
@@ -58,6 +59,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: learned-residual MPC for a point-foot biped | `TRON1`&nbsp;*sim* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | Code | [paper](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
+| <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**: LQR and whole-body control for wheel-foot TRON1, thesis project | `TRON1`&nbsp;*sim* | [alpttex19](https://github.com/alpttex19) | 2025 | Code | [code](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**Bipedal MPC**: convex MPC and WBC in MuJoCo | `TRON1`&nbsp;*sim* | [SUSTech CLEAR Lab](https://github.com/clearlab-sustech) | 2024 | Code | [code](https://github.com/clearlab-sustech/Bipedal_MPC) |
 
 ### Motion tracking & retargeting
@@ -118,6 +120,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-robot-sim-docker"></a>**robot-sim-docker**: containers for LimX Gazebo, Isaac Lab, MuJoCo | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [code](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**: MCP server for sim and control | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**tron_docker_sim**: Docker image for Gazebo sim | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [code](https://github.com/The-RoboTUM/tron_docker_sim) |
+| <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**: Unity training platform from the national humanoid robot innovation center, Shanghai University and Tsinghua, ships TRON1 walk, drive and jump policies | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [code](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**: controller-to-MuJoCo bridge for TRON1 | `TRON1` | [UMich ARCaD Lab](https://github.com/ARCaD-Lab-UM) | 2024 | [code](https://github.com/ARCaD-Lab-UM/arc-bridge) |
 
 ### Deployment & control
@@ -129,6 +132,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: depth-perceptive policy sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [code](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: deploy policies from Windows | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [code](https://github.com/candi4/Tron_Deploy) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: ROS 2 framework for G1 and TRON1A | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [code](https://github.com/catachiii/crl-humanoid-ros) |
+| <a id="p-websocket_ros"></a>**websocket_ros**: Docker bridge from the TRON1 WebSocket API to ROS, with a fake robot for testing without hardware | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [code](https://github.com/daweidavidwang/websocket_ros) |
 
 ### Models & motion data
 
@@ -145,6 +149,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-study_tron1"></a>**study_tron1**: setup notes and learning log | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | Code | [code](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (Korean) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | Code | [code](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | Tutorial | [tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
+| <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**: walking, ball tracking and shooting for a sole-foot TRON1 soccer robot in Isaac Lab (Korean) | `TRON1`&nbsp;*sim* | [tae2yi](https://github.com/tae2yi) | 2026 | Code | [code](https://github.com/tae2yi/Zetin_Robocup2026) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: open course from algorithms to real robots, with outdoor GNSS and Nav2 navigation on point-foot and wheel-foot TRON1 (Chinese) | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | Code | [code](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[tutorial](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym course template | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | Code | [code](https://github.com/SuDaxia-kai/pointfootGym) |

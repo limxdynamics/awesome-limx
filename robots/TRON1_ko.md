@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **66**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **71**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,12 +14,12 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 
 ## 목차
 
-- [보행 및 전신 제어](#보행-및-전신-제어) — 21
+- [보행 및 전신 제어](#보행-및-전신-제어) — 23
 - [인지 및 내비게이션](#인지-및-내비게이션) — 11
 - [매니퓰레이션](#매니퓰레이션) — 5
 - [임바디드 AI](#임바디드-ai) — 1
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 16
-- [교육 및 대회](#교육-및-대회) — 7
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 18
+- [교육 및 대회](#교육-및-대회) — 8
 - [산업 적용](#산업-적용) — 5
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
@@ -47,6 +47,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-wf_tron1a-stand-still-policy"></a>**WF_TRON1A Stand-Still Policy**: 제자리 정지 서기 RL 정책 | `TRON1`&nbsp;*sim* | [F-Morry](https://github.com/F-Morry) | 2026 | 코드 | [코드](https://github.com/F-Morry/limx_rl) |
 | <a id="p-where-to-learn"></a>**Where-to-Learn**: 그래디언트 유도 RL 탐색 | `TRON1` | ZJU, SUSTech | 2026 | 논문 | [프로젝트](https://wheretolearn.github.io)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2603.27317)&nbsp;·&nbsp;[영상](https://www.youtube.com/watch?v=DztdUyh_LVk) |
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 Deploy**: sim-to-sim 및 실기 배포 | `TRON1` | [Chanjun Lee (UOS Zetin)](https://github.com/chanjun-nyam) | 2026 | 코드 | [코드](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
+| <a id="p-sf_tron-ext-estimator"></a>**SF_TRON Ext Estimator**: 솔풋 TRON1의 깊이 잔차 정책에 이력 기반 외란 추정기 추가 | `TRON1`&nbsp;*sim* | [EVENWaterOne](https://github.com/EVENWaterOne) | 2026 | 코드 | [코드](https://github.com/EVENWaterOne/SF_TRON_Ext-estimator) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: HIM과 PIM을 이용한 강건한 보행 | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | 코드 | [코드](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Go1과 TRON1A용 Isaac Lab 보행 | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 코드 | [코드](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**: 포인트풋과 휠풋을 하나의 확산 정책으로 | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | 코드 | [프로젝트](https://multi-loco.github.io)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[코드](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
@@ -58,6 +59,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: 포인트풋 이족 로봇용 학습 잔차 MPC | `TRON1`&nbsp;*sim* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | 코드 | [논문](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[코드](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
+| <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**: 휠풋 TRON1의 LQR 및 전신 제어, 졸업 논문 프로젝트 | `TRON1`&nbsp;*sim* | [alpttex19](https://github.com/alpttex19) | 2025 | 코드 | [코드](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**Bipedal MPC**: MuJoCo 기반 볼록 MPC와 WBC | `TRON1`&nbsp;*sim* | [SUSTech CLEAR Lab](https://github.com/clearlab-sustech) | 2024 | 코드 | [코드](https://github.com/clearlab-sustech/Bipedal_MPC) |
 
 ### 모션 트래킹 및 리타게팅
@@ -118,6 +120,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-robot-sim-docker"></a>**robot-sim-docker**: LimX용 Gazebo, Isaac Lab, MuJoCo 컨테이너 | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [코드](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**: 시뮬레이션과 제어를 위한 MCP 서버 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [코드](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**tron_docker_sim**: Gazebo 시뮬레이션용 Docker 이미지 | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [코드](https://github.com/The-RoboTUM/tron_docker_sim) |
+| <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**: 국가·지방 공동 휴머노이드 로봇 혁신센터, 상하이대, 칭화대가 함께 만든 Unity 학습 플랫폼, TRON1 보행·주행·점프 정책 포함 | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [코드](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**: TRON1용 컨트롤러-MuJoCo 브리지 | `TRON1` | [UMich ARCaD Lab](https://github.com/ARCaD-Lab-UM) | 2024 | [코드](https://github.com/ARCaD-Lab-UM/arc-bridge) |
 
 ### 배포 및 제어
@@ -129,6 +132,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: 깊이 인지 정책 sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [코드](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: Windows에서 정책 배포 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [코드](https://github.com/candi4/Tron_Deploy) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: G1과 TRON1A용 ROS 2 프레임워크 | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [코드](https://github.com/catachiii/crl-humanoid-ros) |
+| <a id="p-websocket_ros"></a>**websocket_ros**: TRON1 WebSocket API를 ROS로 연결하는 Docker 브리지, 실기 없이 테스트할 수 있는 가짜 로봇 포함 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [코드](https://github.com/daweidavidwang/websocket_ros) |
 
 ### 모델 및 모션 데이터
 
@@ -145,6 +149,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-study_tron1"></a>**study_tron1**: 환경 설정 노트와 학습 기록 | `TRON1`&nbsp;*sim* | [beamkeerati](https://github.com/beamkeerati) | 2026 | 코드 | [코드](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1과 OpenArm, LLM 미션 (한국어) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | 코드 | [코드](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: 인터랙티브 Isaac Lab 가이드 | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 튜토리얼 | [튜토리얼](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
+| <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**: Isaac Lab에서 솔풋 TRON1 축구 로봇의 보행, 공 추적, 슈팅 학습 (한국어) | `TRON1`&nbsp;*sim* | [tae2yi](https://github.com/tae2yi) | 2026 | 코드 | [코드](https://github.com/tae2yi/Zetin_Robocup2026) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: 알고리즘부터 실제 로봇까지 다루는 공개 강좌, 포인트풋·휠풋 TRON1의 실외 GNSS·Nav2 내비게이션 포함 (중국어) | `TRON1` | [우한대학교 BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | 코드 | [코드](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[튜토리얼](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 수업 프로젝트 | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | 코드 | [코드](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym 수업용 템플릿 | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | 코드 | [코드](https://github.com/SuDaxia-kai/pointfootGym) |
