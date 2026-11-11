@@ -4,8 +4,14 @@
     python scripts/find_candidates.py                       # every robot, every source
     python scripts/find_candidates.py --robots TRON2,Oli    # only these robots
     python scripts/find_candidates.py --sources github,hf   # only these sources
-    python scripts/find_candidates.py --since 2026-10-01    # only things touched since
+    python scripts/find_candidates.py --since 30            # only things touched in the last 30 days
     python scripts/find_candidates.py --mark-seen           # after review: stop reporting these
+    python scripts/find_candidates.py --mark-seen --keep owner/repo,https://arxiv.org/abs/...
+
+The report is written to sweep_report.md at the repository root. Review loop:
+read it, add the projects that fit to the README, then run --mark-seen so the
+rest stop showing up (--keep the ones you still mean to come back to). Commit
+scripts/sweep_seen.txt so the next run, on any machine, skips them too.
 
 What to search for lives in scripts/sweep_config.json (robots, keywords per
 source, owners to skip). Anything already in README.md (by link or by name), or in
@@ -45,8 +51,7 @@ def log(*a):
 
 
 def warn(msg):
-    """A log line that GitHub Actions also shows as a warning on the run."""
-    log(("::warning::" if os.environ.get("GITHUB_ACTIONS") else "warning: ") + msg)
+    log("warning: " + msg)
 
 
 def get(url, headers=None, retries=3, accept_json=True):
@@ -470,7 +475,7 @@ def main():
     ap.add_argument("--robots", help="comma-separated robot names from the config (default: all)")
     ap.add_argument("--sources", help="comma-separated: " + ",".join(SOURCES) + " (default: those enabled in the config)")
     ap.add_argument("--since", help="YYYY-MM-DD, or a number of days back")
-    ap.add_argument("--out", default="sweep_report.md", help="where to write the report")
+    ap.add_argument("--out", default=os.path.join(ROOT, "sweep_report.md"), help="where to write the report")
     ap.add_argument("--mark-seen", action="store_true",
                     help="add the candidates from the last run (sweep_candidates.json) to sweep_seen.txt")
     ap.add_argument("--keep", default="",
