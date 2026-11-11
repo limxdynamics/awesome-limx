@@ -1,8 +1,15 @@
 name: Candidate sweep
 
-# Looks for public work that uses LimX robots and is not in the list yet, and
-# keeps the result in one open issue. It never edits the list: a person reviews
-# the issue and adds what fits. What to search for: scripts/sweep_config.json.
+# Looks for public work that uses LimX robots and is not in the list yet. It
+# never edits the list and opens no issues: the report is on the run's summary
+# page and in its `sweep-report` artifact, and a person reviews it there.
+# What to search for: scripts/sweep_config.json.
+#
+# Review loop:
+#   1. Open the run (Actions > Candidate sweep), read the summary.
+#   2. Add the projects that fit to the README.
+#   3. Run this workflow again with "mark_seen" ticked and that run's ID, so
+#      the rest stop showing up. Put any you mean to come back to under "keep".
 on:
   schedule:
     # 1st of each month, 02:17 UTC.
@@ -19,16 +26,18 @@ on:
         description: 'Only items touched since YYYY-MM-DD, or a number of days (empty: no limit)'
         required: false
       mark_seen:
-        description: 'Review done: stop reporting the candidates from the last sweep, then close the issue (add the ones you want first)'
+        description: 'Review done: mark the candidates of the run below as seen (add the ones you want to the README first)'
         type: boolean
         default: false
+      run_id:
+        description: 'With mark_seen: ID of the sweep run you reviewed (the number at the end of its URL)'
+        required: false
       keep:
         description: 'With mark_seen: candidates to keep reporting, comma-separated URLs or owner/repo'
         required: false
 
 permissions:
   contents: write
-  issues: write
   actions: read
 
 concurrency:
@@ -37,7 +46,6 @@ concurrency:
 
 env:
   GH_TOKEN: ${{ github.token }}
-  TITLE: 'Candidate sweep: projects not yet in the list'
 
 jobs:
   sweep:
@@ -56,76 +64,39 @@ jobs:
           ROBOTS: ${{ inputs.robots }}
           SOURCES: ${{ inputs.sources }}
           SINCE: ${{ inputs.since }}
+          EVENT: ${{ github.event_name }}
         run: |
           args=()
           [ -n "$ROBOTS" ] && args+=(--robots "$ROBOTS")
           [ -n "$SOURCES" ] && args+=(--sources "$SOURCES")
           # A scheduled run only looks at the last 60 days; run by hand with an empty `since` for the full history.
-          [ -z "$SINCE" ] && [ "${{ github.event_name }}" = "schedule" ] && SINCE=60
+          [ -z "$SINCE" ] && [ "$EVENT" = "schedule" ] && SINCE=60
           [ -n "$SINCE" ] && args+=(--since "$SINCE")
-          # What this run covered. A run only replaces or closes the sweep issue
-          # when the issue holds a run of the same scope.
-          r="${ROBOTS// /}"; so="${SOURCES// /}"
-          echo "SCOPE=robots=${r:-all};sources=${so:-all};since=${SINCE:-all}" >> "$GITHUB_ENV"
           python scripts/find_candidates.py "${args[@]}"
-          head -c 900000 sweep_report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Put the report on the summary page
+        if: always()
+        run: |
+          {
+            echo "**Run ID for mark_seen: \`${GITHUB_RUN_ID}\`**"
+            echo
+            echo "After review: add the ones that fit to the README, then run this workflow with **mark_seen** ticked and this run ID."
+            echo
+            head -c 900000 sweep_report.md 2>/dev/null || echo "No report: the search step failed, see its log."
+          } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: sweep-report
           retention-days: 90
           path: |
             sweep_report.md
             sweep_candidates.json
-      - name: Update the sweep issue
-        run: |
-          total=$(python -c "import json;print(len(json.load(open('sweep_candidates.json'))))")
-          run="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-          n=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title --jq "map(select(.title==env.TITLE))[0].number // empty")
-          if [ -n "$n" ]; then
-            old=$(gh issue view "$n" --json body --jq .body | sed -n 's/.*<!-- sweep-scope: \(.*\) -->.*/\1/p' | head -1)
-            if [ "$old" != "$SCOPE" ]; then
-              # A different scope (say the monthly 60-day run against a full manual run still under
-              # review) must not replace or close it. Its candidates stay unseen and come back later.
-              gh issue comment "$n" --body "A sweep with a different scope (\`$SCOPE\`) found $total candidates: $run. This issue (\`${old:-unknown}\`) is left as it is; finish and mark it first."
-              exit 0
-            fi
-          fi
-          if [ "$total" = "0" ]; then
-            # Unreviewed candidates would still be reported, so zero means nothing is waiting,
-            # unless a source failed: then zero proves nothing, and the next step fails the job.
-            grep -q '^\*\*\(Failed\|Errors\|Partial\|Unchecked\)' sweep_report.md && exit 0
-            [ -n "$n" ] && gh issue close "$n" --comment "Sweep on $(date -u +%F) (\`$SCOPE\`): nothing new to review."
-            exit 0
-          fi
-          # Issue bodies cap at 65536 characters: cut the report at a line and say how much is shown.
-          python - <<'PY'
-          import json, os
-          rep = open("sweep_report.md", encoding="utf-8").read().splitlines()
-          total = len(json.load(open("sweep_candidates.json")))
-          out, size, shown = [], 0, 0
-          for line in rep:
-              if size + len(line.encode()) > 50000:
-                  break
-              out.append(line); size += len(line.encode()) + 1
-              shown += line.startswith("| [")
-          run = f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
-          head = (f"Scope: `{os.environ['SCOPE']}`\n\n**{total} candidates, {shown} shown here.**" + ("" if shown == total else
-                  f" The rest are in the full report ([run]({run}), artifact `sweep-report`): review those too before marking.") + "\n")
-          tail = ["", f"Full report: {run}", "",
-                  "After review: add the ones that fit, then run this workflow with **mark_seen** ticked "
-                  "(list any to come back to under **keep**). It marks exactly the candidates of this run.",
-                  f"<!-- sweep-run: {os.environ['GITHUB_RUN_ID']} -->", f"<!-- sweep-scope: {os.environ['SCOPE']} -->"]
-          open("body.md", "w", encoding="utf-8").write(head + "\n" + "\n".join(out + tail) + "\n")
-          PY
-          if [ -n "$n" ]; then gh issue edit "$n" --body-file body.md; gh issue comment "$n" --body "Updated by the sweep on $(date -u +%F): $total candidates."; else gh issue create --title "$TITLE" --body-file body.md; fi
       - name: Fail if a source failed outright
         run: |
           # A source where every request failed is silent breakage (a revoked token, a changed API):
-          # a red run sends a notification, a warning does not.
+          # a red run sends a notification, a passing one with a warning does not.
           if grep -q '^\*\*Failed' sweep_report.md; then
             grep '^## \|^\*\*Failed' sweep_report.md
-            n=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title --jq "map(select(.title==env.TITLE))[0].number // empty")
-            [ -n "$n" ] && gh issue comment "$n" --body "Sweep on $(date -u +%F): a source failed outright, see ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
             exit 1
           fi
 
@@ -138,17 +109,16 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Fetch the candidate list of the sweep in the open issue
+      - name: Fetch the candidate list of the reviewed run
+        env:
+          RUN_ID: ${{ inputs.run_id }}
         run: |
-          # Mark exactly what the issue showed: the run id is in the issue, so a sweep
-          # that ran after the review cannot slip unreviewed candidates in.
-          n=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title --jq "map(select(.title==env.TITLE))[0].number // empty")
-          [ -z "$n" ] && { echo "no open sweep issue: nothing to mark"; exit 1; }
-          id=$(gh issue view "$n" --json body --jq .body | sed -n 's/.*<!-- sweep-run: \([0-9]*\) -->.*/\1/p' | head -1)
-          [ -z "$id" ] && { echo "the issue does not name its sweep run"; exit 1; }
-          gh run download "$id" -n sweep-report -D last || { echo "artifact of run $id is gone (kept 90 days): run a new sweep"; exit 1; }
+          # Marks exactly the run you name, so a sweep that ran after your review
+          # cannot slip unreviewed candidates in.
+          id="${RUN_ID//[^0-9]/}"
+          [ -z "$id" ] && { echo "::error::Give the ID of the sweep run you reviewed (run_id)."; exit 1; }
+          gh run download "$id" -n sweep-report -D last || { echo "::error::No sweep report in run $id (artifacts are kept 90 days)."; exit 1; }
           cp last/sweep_candidates.json sweep_candidates.json
-          echo "ISSUE=$n" >> "$GITHUB_ENV"
       - name: Add them to sweep_seen.txt
         env:
           KEEP: ${{ inputs.keep }}
@@ -157,5 +127,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add scripts/sweep_seen.txt
-          git diff --cached --quiet || { git commit -m "chore: mark sweep candidates as reviewed (auto)"; git push; }
-          gh issue close "$ISSUE" --comment "Reviewed. The ones not listed are now in scripts/sweep_seen.txt."
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: mark sweep candidates as reviewed (auto)"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase origin main; done
+          exit 1
