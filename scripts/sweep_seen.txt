@@ -466,3 +466,11 @@ gh:wilcoxbrandi06/wil
 gh:matt14-mander/multiple_humanoid_cooperative_transportation
 gh:skr3178/video2robot
 gh:emopointer/fluxvla-tron2
+
+# TRON2 model-ID sweep 2026-11-11 (all 8 variants x A/B): forks of official stacks and personal extensions.
+gh:matt14-mander/tron2_mujoco_sim
+gh:matt14-mander/tron2_rl_deploy_python
+gh:irvingskr/fluxvla
+gh:justin186/fluxvla
+gh:emopointer/tron2_control
+gh:cyres03/oli-robot-manager
