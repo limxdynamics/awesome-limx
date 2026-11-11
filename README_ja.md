@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK を使った **116** プロジェクトを収録しています。うち **81** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK を使った **118** プロジェクトを収録しています。うち **81** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 71&nbsp;件 | 21&nbsp;件 | 21&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 | 2&nbsp;件 |
+| 73&nbsp;件 | 21&nbsp;件 | 21&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 | 2&nbsp;件 |
 
 ## 目次
 
 - [はじめる前に](#はじめる前に)
-- [移動と全身制御](#移動と全身制御) — 34
+- [移動と全身制御](#移動と全身制御) — 36
   - [地形と知覚ロコモーション](#地形と知覚ロコモーション)
   - [強化学習の訓練と実機転移](#強化学習の訓練と実機転移)
   - [モデルベース制御](#モデルベース制御)
@@ -60,7 +60,7 @@
 
 ## 移動と全身制御
 
-_34 件（4 グループ）：論文 12 · コード 22_
+_36 件（4 グループ）：論文 14 · コード 22_
 
 ### 地形と知覚ロコモーション
 
@@ -69,6 +69,7 @@ _34 件（4 グループ）：論文 12 · コード 22_
 | <a id="p-ame-2"></a>**AME-2**：俊敏な知覚ロコモーション | `TRON1` | [ETH Zurich RSL](https://rsl.ethz.ch) | 2026 | 論文 | [プロジェクト](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2601.08485) |
 | <a id="p-faststair"></a>**FastStair**：階段の駆け上がり | `Oli` | HIT, LimX et al. | 2026 | 論文 | [プロジェクト](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[動画](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**：飛び石歩行、まずブラインドで、次に視覚あり | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | コード | [コード](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[動画](https://www.youtube.com/watch?v=vs608-L7kl0) |
+| <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：ホイールフット TRON1 での地形適応と車高調整 | `TRON1` | 桂林電子科技大学、上海交通大学、浙江大学 | 2026 | 論文 | [論文](https://doi.org/10.1109/amc67705.2026.11435832) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形適応ロコモーション | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 論文 | [論文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：車輪でのブラインド階段昇降 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 論文 | [プロジェクト](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**：歩容適応型の知覚歩行 | `Oli` | USTC, LimX et al. | 2025 | 論文 | [プロジェクト](https://ga-phl.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2512.07464) |
@@ -93,6 +94,7 @@ _34 件（4 グループ）：論文 12 · コード 22_
 | <a id="p-multi-loco"></a>**Multi-Loco**：ポイントフットとホイールフットを一つの拡散ポリシーで | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | コード | [プロジェクト](https://multi-loco.github.io)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[コード](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
 | <a id="p-pvp"></a>**PvP**：データ効率の高いヒューマノイド RL | `Oli` | PolyU, USTC et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp Wheel-Foot Deployment**：ホイールフットポリシーの実機デプロイ | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | コード | [コード](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
+| <a id="p-ptrl"></a>**PTRL**：ロボット間で事前知識を転移して RL 学習時間を短縮、Go2 と TRON1 で実機検証 | `TRON1` | ハルビン工業大学（深圳）、蘇州大学 | 2025 | 論文 | [論文](https://arxiv.org/abs/2504.05629) |
 | <a id="p-anybipe"></a>**AnyBipe**：LLM が導く二足ロボットの学習とデプロイ | `TRON1` | [SJTU](https://github.com/sjtu-mvasl-robotics) | 2024 | コード | [コード](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
 | <a id="p-cts"></a>**CTS**：同時進行型の教師・生徒 RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2405.10830) |
 
@@ -292,7 +294,7 @@ _21 件（6 グループ）_
 
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ja.md) | **71** | 23 | 11 | 5 | 1 | 18 | 8 | 5 |
+| [`TRON1`](robots/TRON1_ja.md) | **73** | 25 | 11 | 5 | 1 | 18 | 8 | 5 |
 | [`TRON2`](robots/TRON2_ja.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
 | [`Oli`](robots/Oli_ja.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
 | [`Luna`](robots/Luna_ja.md) | **5** | 1 |  |  |  | 1 |  | 3 |
