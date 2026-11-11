@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **91** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **92** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 32
-- [Perception & navigation](#perception--navigation) — 12
+- [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 6
 - [Embodied AI](#embodied-ai) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 19
@@ -93,6 +93,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: autonomous navigation with a Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: end-to-end NeuPAN navigation on wheels | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: 3D navigation on stairs | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**: LiDAR-inertial odometry with terrain modeling for legged-wheel robots, tested outdoors on wheel-foot TRON1 | `TRON1` | Shanghai Jiao Tong University | 2025 | Paper | [paper](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**: event-camera rotational odometry, with sequences recorded on TRON1 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | Code | [project](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[code](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[video](https://youtu.be/8tF6b2VuvSM) |
 
 ## Manipulation

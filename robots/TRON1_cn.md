@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **91** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **92** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 ## 目录
 
 - [运动控制](#运动控制) — 32
-- [感知与导航](#感知与导航) — 12
+- [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 6
 - [具身智能](#具身智能) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 19
@@ -93,6 +93,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：基于 Jetson 的自主导航 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | 代码 | [代码](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**TRON1 上的 NeuPAN**：轮足上的 NeuPAN 端到端导航 | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | 代码 | [代码](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**PCT 规划器 3D 导航**：楼梯 3D 导航 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/3D_navigation_PCTplanner) |
+| <a id="p-terrain-aware-lio-legged-wheel"></a>**Terrain-Aware LiDAR-Inertial Odometry**：面向轮足机器人的地形感知激光惯性里程计，在轮足 TRON1 上做室外实验 | `TRON1` | 上海交通大学 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.26222) |
 | <a id="p-eroam"></a>**EROAM**：事件相机旋转里程计，数据集含在 TRON1 上采集的序列 | `TRON1` | [wlxing1901](https://github.com/wlxing1901) | 2024 | 代码 | [主页](https://wlxing1901.github.io/eroam/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2411.11004)&nbsp;·&nbsp;[代码](https://github.com/wlxing1901/eroam)&nbsp;·&nbsp;[视频](https://youtu.be/8tF6b2VuvSM) |
 
 ## 操作
