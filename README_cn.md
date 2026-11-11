@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **152** 个项目与合作，其中 **103** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **154** 个项目与合作，其中 **104** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;条 | 31&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
+| 90&nbsp;条 | 31&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
 - [动手之前](#动手之前)
-- [运动控制](#运动控制) — 50
+- [运动控制](#运动控制) — 51
   - [地形与感知行走](#地形与感知行走)
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
@@ -35,7 +35,7 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 17
-- [行业应用](#行业应用) — 29
+- [行业应用](#行业应用) — 30
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
@@ -62,7 +62,7 @@
 
 ## 运动控制
 
-_50 个条目，分 4 组：20 篇论文 · 30 个代码_
+_51 个条目，分 4 组：20 篇论文 · 31 个代码_
 
 ### 地形与感知行走
 
@@ -97,6 +97,7 @@ _50 个条目，分 4 组：20 篇论文 · 30 个代码_
 | <a id="p-imfs"></a>**imfs**：在 Isaac Gym 中用世界模型规划落脚点，双足 TRON1 跟踪落脚点 | `TRON1`&nbsp;*仿真* | [Fleming-Sung](https://github.com/Fleming-Sung) | 2026 | 代码 | [代码](https://github.com/Fleming-Sung/imfs) |
 | <a id="p-shape-your-body"></a>**Shape Your Body**：在 50 款足式机器人上做基于价值梯度的构型搜索，TRON1 是其中之一 | `TRON1`&nbsp;*仿真* | [nico-bohlinger](https://github.com/nico-bohlinger) | 2026 | 代码 | [代码](https://github.com/nico-bohlinger/shape-your-body) |
 | <a id="p-model-based-gait-planning-rl"></a>**Model-Based Gait Planning RL**：用 3D-LIPM 参考步态替代强化学习的步态奖励，部署到 TRON1 实机 | `TRON1` | 哈尔滨工业大学 | 2026 | 论文 | [论文](https://doi.org/10.1016/j.birob.2026.100338) |
+| <a id="p-w1-parkour-legged-gym"></a>**W1 Parkour in legged_gym**：在 legged_gym 中为 W1 轮腿四足搭建跑酷与跟踪训练环境，附 ROS 控制器 | `W1`&nbsp;*仿真* | [yiqiuqwq](https://github.com/yiqiuqwq) | 2026 | 代码 | [代码](https://github.com/yiqiuqwq/wheellegged_control) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**：基于 HIM、PIM 的鲁棒运动控制 | `TRON1`&nbsp;*仿真* | [DongyangLin](https://github.com/DongyangLin) | 2025 | 代码 | [代码](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 与 TRON1A 的 Isaac Lab 运动控制 | `TRON1`&nbsp;*仿真* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 代码 | [代码](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**：点足与轮足统一的扩散策略 | `TRON1` | 南科大 CLEAR 实验室、逐际动力等 | 2025 | 代码 | [主页](https://multi-loco.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[代码](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
@@ -261,7 +262,7 @@ _17 个条目：2 篇论文 · 14 个代码 · 1 个教程_
 
 ## 行业应用
 
-_29 个条目，分 6 组_
+_30 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -312,6 +313,7 @@ _29 个条目，分 6 组_
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 报道 | [报道](https://tron.tokyo/en/service/limx-dynamics/) |
 | <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：在德国销售并支持 P1，提供用户手册、网络与 ROS 2 配置指南和返修服务 | `P1` | MYBOTSHOP GmbH（德国） | 2026 | 报道 | [报道](https://www.docs.mybotshop.de/limx_p1.html) |
 | <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 | <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
@@ -334,8 +336,8 @@ _29 个条目，分 6 组_
 | [`TRON2`](robots/TRON2_cn.md) | **31** | 1 |  | 3 | 6 | 5 | 7 | 9 |
 | [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
-| [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
-| [`W1`](robots/W1_cn.md) | **3** | 1 |  | 1 |  |  |  | 1 |
+| [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |
+| [`W1`](robots/W1_cn.md) | **4** | 2 |  | 1 |  |  |  | 1 |
 
 ## 参与贡献
 

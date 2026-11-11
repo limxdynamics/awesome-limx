@@ -452,3 +452,12 @@ gh:qinnyulan/supermimiccarnival
 gh:ishandutta2007/world-humanoid-robot-games
 gh:krixdina/robot-retargeter-dr02
 gh:zhaoyang97/paper-notes-en
+
+# Luna, W1, P1 sweep 2026-11-11: comparisons, catalogues, portfolios, noise.
+gh:sohail1996/salman-omar-sohail
+gh:tiagognt/hermesllm
+gh:antonihabek/skynet
+gh:jengler/bench_ds_projects
+gh:sheff-hub/b2w-z1-isaacsim
+gh:syw-robotics/nabo_pointfoot_bipedal_robot
+gh:wilcoxbrandi06/wil
