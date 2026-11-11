@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **31** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **33** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,9 +17,9 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [运动控制](#运动控制) — 1
 - [操作](#操作) — 3
 - [具身智能](#具身智能) — 6
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 5
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 6
 - [教学与竞赛](#教学与竞赛) — 7
-- [行业应用](#行业应用) — 9
+- [行业应用](#行业应用) — 10
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -63,6 +63,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：在 TRON1、TRON2 与 Bunker 底盘的摄像头之间切换，按任务阶段保存画面用于数据采集 | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [代码](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### 模型与动作数据
 
@@ -102,6 +103,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 的 PICO 4 双臂遥操作插件，支持 TRON2 | `TRON2` | [他山科技 Xense](https://github.com/XenseRobotics-AI) | 2026 | 代码 | [代码](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：第四范式 Phanthy Motus 具身智能平台的硬件驱动，支持 TRON2 双臂 | `TRON2` | [第四范式](https://github.com/4paradigm) | 2026 | 代码 | [代码](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：115 条遥操作数据，带触觉视频；Voxel51 另以 FiftyOne 格式转发 | `TRON2` | [他山科技 Xense](https://huggingface.co/Xense) | 2026 | 代码 | [数据集](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
+| <a id="p-cmriat-citadel"></a>**Citadel**：机器人数据管理工具，把 HDF5 录制数据批量转换为 LeRobot v2.1，示例使用 TRON2 采集的数据 | `TRON2` | [招商局先进技术研究院](https://github.com/cmriat) | 2026 | 代码 | [代码](https://github.com/cmriat/Citadel) |
 
 ### 区域伙伴与渠道
 

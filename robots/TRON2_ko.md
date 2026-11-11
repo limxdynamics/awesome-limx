@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **31**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **33**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,9 +17,9 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
 - [매니퓰레이션](#매니퓰레이션) — 3
 - [임바디드 AI](#임바디드-ai) — 6
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 5
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
 - [교육 및 대회](#교육-및-대회) — 7
-- [산업 적용](#산업-적용) — 9
+- [산업 적용](#산업-적용) — 10
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -63,6 +63,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
 | <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**: TRON2 머리·손목 카메라 캘리브레이션 도구 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [코드](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: TRON1·TRON2·Bunker 섀시 카메라를 전환하며 작업 단계별로 화면을 저장해 데이터 수집 (중국어) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [코드](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### 모델 및 모션 데이터
 
@@ -102,6 +103,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: LeRobot용 PICO 4 양팔 원격 조작 플러그인, TRON2 지원 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | 코드 | [코드](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: 4Paradigm 임바디드 AI 플랫폼 Phanthy Motus의 하드웨어 드라이버, TRON2 양팔 지원 | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | 코드 | [코드](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 촉각 영상 포함 원격 조작 115 에피소드, Voxel51이 FiftyOne 형식으로도 공개 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | 코드 | [데이터셋](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[데이터셋](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
+| <a id="p-cmriat-citadel"></a>**Citadel**: HDF5 기록을 LeRobot v2.1로 일괄 변환하는 로봇 데이터 관리 도구, 예시로 TRON2 데이터 사용 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | 코드 | [코드](https://github.com/cmriat/Citadel) |
 
 ### 지역 파트너 및 판매 채널
 

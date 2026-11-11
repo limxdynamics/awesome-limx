@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **90**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **91**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 - [인지 및 내비게이션](#인지-및-내비게이션) — 12
 - [매니퓰레이션](#매니퓰레이션) — 6
 - [임바디드 AI](#임바디드-ai) — 1
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 18
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 19
 - [교육 및 대회](#교육-및-대회) — 10
 - [산업 적용](#산업-적용) — 11
 
@@ -142,6 +142,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**: 실기 TRON1용 Qt 제어 패널 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [코드](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: 깊이 인지 정책 sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [코드](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: Windows에서 정책 배포 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [코드](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: TRON1·TRON2·Bunker 섀시 카메라를 전환하며 작업 단계별로 화면을 저장해 데이터 수집 (중국어) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [코드](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: G1과 TRON1A용 ROS 2 프레임워크 | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [코드](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**: TRON1 WebSocket API를 ROS로 연결하는 Docker 브리지, 실기 없이 테스트할 수 있는 가짜 로봇 포함 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [코드](https://github.com/daweidavidwang/websocket_ros) |
 

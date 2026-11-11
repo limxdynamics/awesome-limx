@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **90** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **91** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 - [感知与导航](#感知与导航) — 12
 - [操作](#操作) — 6
 - [具身智能](#具身智能) — 1
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 18
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 19
 - [教学与竞赛](#教学与竞赛) — 10
 - [行业应用](#行业应用) — 11
 
@@ -142,6 +142,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：实机 TRON1 的 Qt 控制面板 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [代码](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**：在 Windows 上部署策略 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [代码](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：在 TRON1、TRON2 与 Bunker 底盘的摄像头之间切换，按任务阶段保存画面用于数据采集 | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [代码](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**：支持 G1 与 TRON1A 的 ROS 2 框架 | `TRON1` | [Jin Cheng（苏黎世联邦理工 CRL）](https://github.com/catachiii) | 2025 | [代码](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**：把 TRON1 WebSocket 接口桥接到 ROS 的 Docker 方案，带模拟机器人，无实机也能测试 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [代码](https://github.com/daweidavidwang/websocket_ros) |
 

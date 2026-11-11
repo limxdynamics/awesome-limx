@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **31** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **33** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,9 +17,9 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
 - [Manipulation](#manipulation) — 3
 - [Embodied AI](#embodied-ai) — 6
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 5
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 6
 - [Education & competitions](#education--competitions) — 7
-- [Industry deployments](#industry-deployments) — 9
+- [Industry deployments](#industry-deployments) — 10
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -63,6 +63,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
 | <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**: head and wrist camera calibration tools for TRON2 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between TRON1, TRON2 and a Bunker base's cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### Models & motion data
 
@@ -102,6 +103,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: PICO 4 bimanual teleoperation plugin for LeRobot, with TRON2 support | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: hardware drivers for 4Paradigm's Phanthy Motus embodied AI platform, TRON2 dual-arm included | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | Code | [code](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 115 teleoperated episodes with tactile video, also republished by Voxel51 in FiftyOne format | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | Code | [dataset](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
+| <a id="p-cmriat-citadel"></a>**Citadel**: robot data pipeline that converts HDF5 recordings to LeRobot v2.1, with TRON2 episodes as its worked example | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | Code | [code](https://github.com/cmriat/Citadel) |
 
 ### Regional partners & channels
 

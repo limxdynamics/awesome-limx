@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **90** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **91** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -18,7 +18,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 - [Perception & navigation](#perception--navigation) — 12
 - [Manipulation](#manipulation) — 6
 - [Embodied AI](#embodied-ai) — 1
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 18
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 19
 - [Education & competitions](#education--competitions) — 10
 - [Industry deployments](#industry-deployments) — 11
 
@@ -142,6 +142,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**: Qt control panel for a real TRON1 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [code](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
 | <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**: depth-perceptive policy sim-to-sim | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [code](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
 | <a id="p-tron_deploy"></a>**Tron_Deploy**: deploy policies from Windows | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [code](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between TRON1, TRON2 and a Bunker base's cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**: ROS 2 framework for G1 and TRON1A | `TRON1` | [Jin Cheng (ETH Zurich CRL)](https://github.com/catachiii) | 2025 | [code](https://github.com/catachiii/crl-humanoid-ros) |
 | <a id="p-websocket_ros"></a>**websocket_ros**: Docker bridge from the TRON1 WebSocket API to ROS, with a fake robot for testing without hardware | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [code](https://github.com/daweidavidwang/websocket_ros) |
 
