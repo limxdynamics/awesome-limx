@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **33**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **35**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,10 +15,10 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 ## 목차
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
-- [매니퓰레이션](#매니퓰레이션) — 3
+- [매니퓰레이션](#매니퓰레이션) — 4
 - [임바디드 AI](#임바디드-ai) — 6
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
-- [교육 및 대회](#교육-및-대회) — 7
+- [교육 및 대회](#교육-및-대회) — 8
 - [산업 적용](#산업-적용) — 10
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
@@ -38,6 +38,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**: 사람-로봇 협동 운반, TRON2 이식 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: 휠-레그 로봇 두 대가 짐을 운반 | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: TRON2 두 대의 협동 운반 연구 플랫폼, MuJoCo와 LimX SDK 인터페이스 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: OAK-D로 팔과 손을 추적해 양팔 TRON2를 원격 조작, ORCA 핸드와 Elecnor 브랜드의 배관 드릴 작업 장면 포함 (스페인어) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | 코드 | [코드](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## 임바디드 AI
 
@@ -84,6 +85,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**: ATEC 2026 챌린지 참가 팀의 강화학습 학습 및 시뮬레이션 배포 | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | 코드 | [코드](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT와 하드 샘플 마이닝, 멀티 GPU 학습, 기술 보고서 포함. T4 온라인 점수 79/100 | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | 코드 | [코드](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**: T1~T3은 ACT, 그릇 세 개 쌓기는 Diffusion Policy, 설계 문서 포함 (중국어) | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | 코드 | [코드](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**: 네 과제 공통 ACT 학습·배포 파이프라인, T3·T4 정책 실행 영상 포함 | `TRON2`&nbsp;*sim* | [SORMaker](https://github.com/SORMaker) | 2026 | 코드 | [코드](https://github.com/SORMaker/troncamp-mani) |
 
 ## 산업 적용
 

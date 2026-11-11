@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **33** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **35** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,10 +15,10 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 ## 目录
 
 - [运动控制](#运动控制) — 1
-- [操作](#操作) — 3
+- [操作](#操作) — 4
 - [具身智能](#具身智能) — 6
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 6
-- [教学与竞赛](#教学与竞赛) — 7
+- [教学与竞赛](#教学与竞赛) — 8
 - [行业应用](#行业应用) — 10
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
@@ -38,6 +38,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人机协同搬运，TRON2 移植 | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-cooperative-transportation"></a>**多机协同搬运**：两台轮足协同搬运 | `TRON1` `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**：两台 TRON2 协同搬运的研究平台，MuJoCo 仿真并对接 LimX SDK | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**：用 OAK-D 相机跟踪人的手臂和手，遥操作双臂 TRON2，接 ORCA 灵巧手，附带 Elecnor 品牌的管道钻孔场景（西班牙语） | `TRON2`&nbsp;*仿真* | [Aremanky](https://github.com/Aremanky) | 2026 | 代码 | [代码](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## 具身智能
 
@@ -84,6 +85,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**：参赛队伍在 ATEC 2026 挑战赛中的强化学习训练与仿真部署工程 | `TRON1` `TRON2`&nbsp;*仿真* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | 代码 | [代码](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**：ACT 加困难样本挖掘与多卡训练，附技术报告；T4 线上得分 79/100 | `TRON2`&nbsp;*仿真* | [upset666](https://github.com/upset666) | 2026 | 代码 | [代码](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**：T1 到 T3 用 ACT，三碗堆叠任务改用 Diffusion Policy，附技术设计文档 | `TRON2`&nbsp;*仿真* | [irvingskr](https://github.com/irvingskr) | 2026 | 代码 | [代码](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**：四个任务统一的 ACT 训练与部署流程，附 T3、T4 策略的运行视频 | `TRON2`&nbsp;*仿真* | [SORMaker](https://github.com/SORMaker) | 2026 | 代码 | [代码](https://github.com/SORMaker/troncamp-mani) |
 
 ## 行业应用
 

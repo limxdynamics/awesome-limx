@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **33** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **35** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,10 +15,10 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
-- [Manipulation](#manipulation) — 3
+- [Manipulation](#manipulation) — 4
 - [Embodied AI](#embodied-ai) — 6
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 6
-- [Education & competitions](#education--competitions) — 7
+- [Education & competitions](#education--competitions) — 8
 - [Industry deployments](#industry-deployments) — 10
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
@@ -38,6 +38,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**: human-robot collaborative carrying, TRON2 port | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two wheel-legged robots carry a load | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: research platform for two TRON2 robots carrying a load together, MuJoCo with LimX SDK interfaces | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: drives both arms of a dual-arm TRON2 from OAK-D hand and arm tracking, with an ORCA hand and a pipe-drilling scene branded for Elecnor (Spanish) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | Code | [code](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## Embodied AI
 
@@ -84,6 +85,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**: a team's RL training and simulation deployment for the ATEC 2026 challenge | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | Code | [code](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT with hard-example mining and multi-GPU training, with a technical report; T4 scored 79/100 online | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | Code | [code](https://github.com/upset666/troncamp-mani-24ZlhA) |
 | <a id="p-troncamp-mani-act-dp"></a>**TRONCamp Mani ACT + Diffusion Policy**: ACT for T1 to T3 and Diffusion Policy for the three-bowl stacking task, with a design document (Chinese) | `TRON2`&nbsp;*sim* | [irvingskr](https://github.com/irvingskr) | 2026 | Code | [code](https://github.com/irvingskr/troncamp-mani) |
+| <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**: unified ACT training and deployment for all four tasks, with rollout videos of the T3 and T4 policies | `TRON2`&nbsp;*sim* | [SORMaker](https://github.com/SORMaker) | 2026 | Code | [code](https://github.com/SORMaker/troncamp-mani) |
 
 ## Industry deployments
 
