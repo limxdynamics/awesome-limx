@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **83** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **90** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,13 +14,13 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 30
-- [Perception & navigation](#perception--navigation) — 11
-- [Manipulation](#manipulation) — 5
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 32
+- [Perception & navigation](#perception--navigation) — 12
+- [Manipulation](#manipulation) — 6
 - [Embodied AI](#embodied-ai) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 18
 - [Education & competitions](#education--competitions) — 10
-- [Industry deployments](#industry-deployments) — 8
+- [Industry deployments](#industry-deployments) — 11
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -34,6 +34,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**: stepping stones, blind then with vision | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | Code | [code](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[video](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**: terrain adaptation with body-height adjustment on wheel-foot TRON1 | `TRON1` | GUET, SJTU, ZJU | 2026 | Paper | [paper](https://doi.org/10.1109/amc67705.2026.11435832) |
 | <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**: reference-guided RL for wheel-foot TRON1 on stairs, bachelor's thesis | `TRON1`&nbsp;*sim* | Uppsala University | 2026 | Paper | [paper](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
+| <a id="p-offline-visual-encoder-biped"></a>**Offline Visual Encoder for Biped Locomotion**: vision-based locomotion with an offline-trained depth-to-height encoder, validated on TRON1 | `TRON1` | Huazhong University of Science and Technology | 2026 | Paper | [paper](https://doi.org/10.1109/access.2026.3686506) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: terrain-adaptive locomotion | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | Paper | [paper](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: blind stair climbing on wheels | `TRON1` | Shanghai University, COWAROBOT | 2025 | Paper | [project](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2509.02986) |
 | <a id="p-lipm-guided-rl"></a>**LIPM-Guided RL**: stable perceptive biped walking | `TRON1` | SUSTech CLEAR Lab, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2509.09106) |
@@ -52,6 +53,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-sf_tron-ext-estimator"></a>**SF_TRON Ext Estimator**: history-based disturbance estimator added to a depth residual policy for sole-foot TRON1 | `TRON1`&nbsp;*sim* | [EVENWaterOne](https://github.com/EVENWaterOne) | 2026 | Code | [code](https://github.com/EVENWaterOne/SF_TRON_Ext-estimator) |
 | <a id="p-imfs"></a>**imfs**: foothold planning with a world model and foothold tracking on sole-foot TRON1 in Isaac Gym | `TRON1`&nbsp;*sim* | [Fleming-Sung](https://github.com/Fleming-Sung) | 2026 | Code | [code](https://github.com/Fleming-Sung/imfs) |
 | <a id="p-shape-your-body"></a>**Shape Your Body**: value-gradient design search across 50 legged robots, TRON1 among them | `TRON1`&nbsp;*sim* | [nico-bohlinger](https://github.com/nico-bohlinger) | 2026 | Code | [code](https://github.com/nico-bohlinger/shape-your-body) |
+| <a id="p-model-based-gait-planning-rl"></a>**Model-Based Gait Planning RL**: 3D-LIPM reference gaits replace gait rewards in RL training, deployed on TRON1 | `TRON1` | Harbin Institute of Technology | 2026 | Paper | [paper](https://doi.org/10.1016/j.birob.2026.100338) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**: robust locomotion with HIM and PIM | `TRON1`&nbsp;*sim* | [DongyangLin](https://github.com/DongyangLin) | 2025 | Code | [code](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**: Isaac Lab locomotion for Go1 and TRON1A | `TRON1`&nbsp;*sim* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | Code | [code](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**: one diffusion policy for point-foot and wheel-foot | `TRON1` | SUSTech CLEAR Lab, LimX et al. | 2025 | Code | [project](https://multi-loco.github.io)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[code](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
@@ -87,6 +89,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-lightnav-0"></a>**LightNav-0**: VLM navigation stack with MPC tracking and a web panel, adapters for Go2 and TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | Code | [paper](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[code](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[model](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: outdoor GPS navigation with FAST-LIO | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | Code | [code](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A LiDAR Navigation**: LiDAR odometry and navigation | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_ws) |
+| <a id="p-hourglass-cross-embodiment-planning"></a>**Hourglass**: cross-embodiment motion planning with a body-agnostic world model, TRON1 among seven training robots | `TRON1`&nbsp;*sim* | Nanyang Technological University | 2026 | Paper | [paper](https://arxiv.org/abs/2610.41330) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: autonomous navigation with a Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: end-to-end NeuPAN navigation on wheels | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: 3D navigation on stairs | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
@@ -100,6 +103,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>**TRON1-to-UR5e Bottle Transfer**: ROS 2 and MuJoCo | `TRON1`&nbsp;*sim* | [Centaucyan](https://github.com/Centaucyan) | 2026 | Code | [code](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env) |
 | <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two wheel-legged robots carry a load | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
 | <a id="p-arm-tron"></a>**Arm-TRON**: reconfigurable biped with an arm | `TRON1` | SUSTech, ZJU et al. | 2026 | Paper | [paper](https://doi.org/10.1109/TMECH.2026.3727546) |
+| <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**: hierarchical NMPC that lets wheel-foot TRON1 slide objects with its wheeled legs, RA-L | `TRON1` | University of Michigan | 2026 | Paper | [paper](https://arxiv.org/abs/2606.19233) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: UMI skills with an ARX5 arm on a real TRON1 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | Code | [code](https://github.com/Czy213hd/umi-on-tron-lab) |
 
 ## Embodied AI
@@ -127,7 +131,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-robot-sim-docker"></a>**robot-sim-docker**: containers for LimX Gazebo, Isaac Lab, MuJoCo | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [code](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**: MCP server for sim and control | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**tron_docker_sim**: Docker image for Gazebo sim | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [code](https://github.com/The-RoboTUM/tron_docker_sim) |
-| <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**: Unity training platform from the national humanoid robot innovation center, Shanghai University and Tsinghua, ships TRON1 walk, drive and jump policies | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [code](https://github.com/loongOpen/Unity-RL-Playground) |
+| <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**: Unity training platform from the national humanoid robot innovation center, Shanghai University and Tsinghua, ships TRON1 walk, drive and jump policies | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [paper](https://arxiv.org/abs/2503.05146)&nbsp;·&nbsp;[code](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**: controller-to-MuJoCo bridge for TRON1 | `TRON1` | [UMich ARCaD Lab](https://github.com/ARCaD-Lab-UM) | 2024 | [code](https://github.com/ARCaD-Lab-UM/arc-bridge) |
 
 ### Deployment & control
@@ -165,6 +169,12 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 ## Industry deployments
 
+### Deployments & products
+
+| Project | Robot | Author / Org | Year | Type | Links |
+|---|---|---|---|---|---|
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot TRON1 locomotion policy moved to D-Robotics' RDK S100 BPU, an official application case of the board | `TRON1` | D-Robotics | 2025 | Paper | [news](https://forum.d-robotics.cc/t/topic/28833) |
+
 ### Open source from companies
 
 | Project | Robot | Author / Org | Year | Type | Links |
@@ -173,6 +183,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-anima-ros2-sim-net"></a>**ANIMA ROS 2 Simulation Network**: ROS 2 and Gazebo simulation stack that ships a TRON1 biped | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-sim-net) |
 | <a id="p-artefacts-tron1-workspace"></a>**TRON1 Artefacts Workspace**: ROS 2 and Gazebo demo with the Artefacts robot-testing platform | `TRON1`&nbsp;*sim* | [Artefacts](https://github.com/art-e-fact) | 2026 | Code | [code](https://github.com/art-e-fact/tron1-artefacts) |
 | <a id="p-openmind-om1-sim"></a>**OM1-sim**: Isaac Sim setup for the OM1 robot OS, with wheel-foot TRON1 next to Go2 and G1 | `TRON1`&nbsp;*sim* | [OpenMind](https://github.com/OpenMind) | 2026 | Code | [code](https://github.com/OpenMind/OM1-sim) |
+| <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**: DDS and WebSocket bridge from AI agents to ROS 2 robots, detects LimX robots and ships TRON1 models | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: modular compute and development backpack integrated with TRON1, Unitree G1 and Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | Code | [code](https://github.com/OpenMind/brainpack) |
 
 ### Regional partners & channels
@@ -186,6 +197,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-ieee-spectrum-robot-of-the-month-tron1"></a>**IEEE Spectrum Robot of the Month**: TRON1 featured as Robot of the Month in IEEE Spectrum magazine | `TRON1` | IEEE Spectrum | 2026 | Paper | [news](https://doi.org/10.1109/MSPEC.2026.11595926) |
 | <a id="p-rbr50-2025-tron1"></a>**RBR50 Robotics Innovation Awards 2025**: TRON1 recognized as a multi-modal biped R&D platform | `TRON1` | The Robot Report | 2025 | Paper | [result](https://www.therobotreport.com/rbr50-company-2025/tron-1-multi-modal-biped-offers-a-unique-rd-platform/) |
 
 Built something on TRON1? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).
