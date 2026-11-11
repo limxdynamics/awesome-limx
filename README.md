@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **118** projects built on LimX robots and the LimX SDK, **81** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **123** projects built on LimX robots and the LimX SDK, **81** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 73&nbsp;projects | 21&nbsp;projects | 21&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects | 2&nbsp;projects |
+| 76&nbsp;projects | 22&nbsp;projects | 23&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects | 3&nbsp;projects |
 
 ## Contents
 
 - [Before you start](#before-you-start)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 36
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 39
   - [Terrain & perceptive locomotion](#terrain--perceptive-locomotion)
   - [RL training & sim-to-real](#rl-training--sim-to-real)
   - [Model-based control](#model-based-control)
@@ -34,8 +34,8 @@
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
-- [Education & competitions](#education--competitions) — 11
-- [Industry deployments](#industry-deployments) — 21
+- [Education & competitions](#education--competitions) — 12
+- [Industry deployments](#industry-deployments) — 22
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
   - [Commercial shows & events](#commercial-shows--events)
@@ -61,7 +61,7 @@ order - these are our own repositories, not community projects.
 
 ## Locomotion & whole-body control
 
-_36 entries in 4 groups: 14 papers · 22 code_
+_39 entries in 4 groups: 17 papers · 22 code_
 
 ### Terrain & perceptive locomotion
 
@@ -71,6 +71,7 @@ _36 entries in 4 groups: 14 papers · 22 code_
 | <a id="p-faststair"></a>**FastStair**: running up stairs | `Oli` | HIT, LimX et al. | 2026 | Paper | [project](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[video](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**: stepping stones, blind then with vision | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | Code | [code](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[video](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**: terrain adaptation with body-height adjustment on wheel-foot TRON1 | `TRON1` | GUET, SJTU, ZJU | 2026 | Paper | [paper](https://doi.org/10.1109/amc67705.2026.11435832) |
+| <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**: reference-guided RL for wheel-foot TRON1 on stairs, bachelor's thesis | `TRON1`&nbsp;*sim* | Uppsala University | 2026 | Paper | [paper](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: terrain-adaptive locomotion | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | Paper | [paper](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: blind stair climbing on wheels | `TRON1` | Shanghai University, COWAROBOT | 2025 | Paper | [project](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**: gait-adaptive perceptive walking | `Oli` | USTC, LimX et al. | 2025 | Paper | [project](https://ga-phl.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2512.07464) |
@@ -105,6 +106,8 @@ _36 entries in 4 groups: 14 papers · 22 code_
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: learned-residual MPC for a point-foot biped | `TRON1`&nbsp;*sim* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | Code | [paper](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[code](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
 | <a id="p-whole-body-humanoid-mpc"></a>**Whole-Body Humanoid MPC**: nonlinear whole-body MPC on a 31-DoF Oli | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | Code | [code](https://github.com/liuskywalkerjskd/humanoid_mpc) |
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**: convex feasible region planning for stairs, 200 of 200 trials on W1 | `W1` | SUSTech CLEAR Lab | 2026 | Paper | [paper](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
+| <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**: maximum-speed model for bipeds, used to retune TRON1 joint motor parameters | `TRON1`&nbsp;*sim* | Zhejiang University | 2026 | Paper | [paper](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**: LQR and whole-body control for wheel-foot TRON1, thesis project | `TRON1`&nbsp;*sim* | [alpttex19](https://github.com/alpttex19) | 2025 | Code | [code](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**Bipedal MPC**: convex MPC and WBC in MuJoCo | `TRON1`&nbsp;*sim* | [SUSTech CLEAR Lab](https://github.com/clearlab-sustech) | 2024 | Code | [code](https://github.com/clearlab-sustech/Bipedal_MPC) |
 | <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**: whole-body control | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | Paper | [paper](https://arxiv.org/abs/2404.00591) |
@@ -216,7 +219,7 @@ _22 tools in 4 groups_
 
 ## Education & competitions
 
-_11 entries: 1 paper · 9 code · 1 tutorial_
+_12 entries: 2 papers · 9 code · 1 tutorial_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -227,6 +230,7 @@ _11 entries: 1 paper · 9 code · 1 tutorial_
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1 + OpenArm, LLM missions (Korean) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | Code | [code](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: interactive Isaac Lab guide | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | Tutorial | [tutorial](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
 | <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**: walking, ball tracking and shooting for a sole-foot TRON1 soccer robot in Isaac Lab (Korean) | `TRON1`&nbsp;*sim* | [tae2yi](https://github.com/tae2yi) | 2026 | Code | [code](https://github.com/tae2yi/Zetin_Robocup2026) |
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**: music-conducting demonstration and scoring for teaching, shown on the Oli digital twin | `Oli`&nbsp;*sim* | Guangdong Peizheng College | 2026 | Paper | [paper](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: open course from algorithms to real robots, with outdoor GNSS and Nav2 navigation on point-foot and wheel-foot TRON1 (Chinese) | `TRON1` | [WHU BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | Code | [code](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[tutorial](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**Canton Tower Robot Climbing Challenge**: champion and best precision control, with FastStair | `Oli` | LimX | 2025 | Paper | [paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[result](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 course project | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -234,7 +238,7 @@ _11 entries: 1 paper · 9 code · 1 tutorial_
 
 ## Industry deployments
 
-_21 entries in 6 groups_
+_22 entries in 6 groups_
 
 ### Deployments & products
 
@@ -278,6 +282,7 @@ _21 entries in 6 groups_
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | Paper | [project](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: humanoid system integration and Omniverse simulation in Japan, with LimX robots | — | TRON K.K. (Japan) | 2026 | Paper | [project](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | Paper | [news](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | Paper | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 | <a id="p-r2c2-partnership"></a>**R2C2**: official developer and distributor in Hong Kong, RL robots for utility and inspection work | `W1` `P1` | R2C2 Limited (Hong Kong) | 2024 | Paper | [news](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
@@ -295,12 +300,12 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **73** | 25 | 11 | 5 | 1 | 18 | 8 | 5 |
-| [`TRON2`](robots/TRON2.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
-| [`Oli`](robots/Oli.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
+| [`TRON1`](robots/TRON1.md) | **76** | 27 | 11 | 5 | 1 | 18 | 8 | 6 |
+| [`TRON2`](robots/TRON2.md) | **22** |  |  | 2 | 5 | 5 | 3 | 7 |
+| [`Oli`](robots/Oli.md) | **23** | 9 |  | 2 | 2 | 3 | 2 | 5 |
 | [`Luna`](robots/Luna.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1.md) | **4** | 3 |  |  |  |  |  | 1 |
-| [`W1`](robots/W1.md) | **2** |  |  | 1 |  |  |  | 1 |
+| [`W1`](robots/W1.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 
 ## Contributing
 

@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **118** 个项目，其中 **81** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **123** 个项目，其中 **81** 个有开源代码，都基于 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 73&nbsp;条 | 21&nbsp;条 | 21&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 | 2&nbsp;条 |
+| 76&nbsp;条 | 22&nbsp;条 | 23&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 | 3&nbsp;条 |
 
 ## 目录
 
 - [动手之前](#动手之前)
-- [运动控制](#运动控制) — 36
+- [运动控制](#运动控制) — 39
   - [地形与感知行走](#地形与感知行走)
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
@@ -34,8 +34,8 @@
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
-- [教学与竞赛](#教学与竞赛) — 11
-- [行业应用](#行业应用) — 21
+- [教学与竞赛](#教学与竞赛) — 12
+- [行业应用](#行业应用) — 22
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
@@ -60,7 +60,7 @@
 
 ## 运动控制
 
-_36 个条目，分 4 组：14 篇论文 · 22 个代码_
+_39 个条目，分 4 组：17 篇论文 · 22 个代码_
 
 ### 地形与感知行走
 
@@ -70,6 +70,7 @@ _36 个条目，分 4 组：14 篇论文 · 22 个代码_
 | <a id="p-faststair"></a>**FastStair**：快速跑楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | 论文 | [主页](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[视频](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-steppingstonelocomotion"></a>**梅花桩行走**：跨越梅花桩，先盲走再加视觉 | `TRON1`&nbsp;*仿真* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 代码 | [代码](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：轮足 TRON1 的地形适应与机身高度调节 | `TRON1` | 桂林电子科大、上海交大、浙大 | 2026 | 论文 | [论文](https://doi.org/10.1109/amc67705.2026.11435832) |
+| <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**：参考轨迹引导的强化学习，让轮足 TRON1 上楼梯，本科毕业论文 | `TRON1`&nbsp;*仿真* | 乌普萨拉大学 | 2026 | 论文 | [论文](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：轮足盲爬台阶 | `TRON1` | 上海大学、酷哇机器人 | 2025 | 论文 | [主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**：步态自适应感知行走 | `Oli` | 中国科大、逐际动力等 | 2025 | 论文 | [主页](https://ga-phl.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2512.07464) |
@@ -104,6 +105,8 @@ _36 个条目，分 4 组：14 篇论文 · 22 个代码_
 |---|---|---|---|---|---|
 | <a id="p-whole-body-humanoid-mpc"></a>**人形全身 MPC**：31 自由度 Oli 上的全身非线性 MPC | `Oli`&nbsp;*仿真* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 代码 | [代码](https://github.com/liuskywalkerjskd/humanoid_mpc) |
 | <a id="p-learning-enhanced-pmp-mpc"></a>**学习增强的 PMP-MPC**：点足双足的学习增强 MPC | `TRON1`&nbsp;*仿真* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | 代码 | [论文](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[代码](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**：凸可行域规划上下楼梯，W1 实测 200 次全部通过 | `W1` | 南科大 CLEAR 实验室 | 2026 | 论文 | [论文](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
+| <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**：双足机器人最高速度分析模型，用于优化 TRON1 关节电机参数 | `TRON1`&nbsp;*仿真* | 浙江大学 | 2026 | 论文 | [论文](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**：轮足 TRON1 的 LQR 与全身控制，毕业论文项目 | `TRON1`&nbsp;*仿真* | [alpttex19](https://github.com/alpttex19) | 2025 | 代码 | [代码](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
 | <a id="p-bipedal-mpc"></a>**双足 MPC**：MuJoCo 中的 MPC 与全身控制 | `TRON1`&nbsp;*仿真* | [南方科技大学 CLEAR 实验室](https://github.com/clearlab-sustech) | 2024 | 代码 | [代码](https://github.com/clearlab-sustech/Bipedal_MPC) |
@@ -215,7 +218,7 @@ _22 个工具，分 4 组_
 
 ## 教学与竞赛
 
-_11 个条目：1 篇论文 · 9 个代码 · 1 个教程_
+_12 个条目：2 篇论文 · 9 个代码 · 1 个教程_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
@@ -226,6 +229,7 @@ _11 个条目：1 篇论文 · 9 个代码 · 1 个教程_
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（韩语） | `TRON1`&nbsp;*仿真* | [aha645](https://github.com/aha645) | 2026 | 代码 | [代码](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1`&nbsp;*仿真* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 教程 | [教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
 | <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**：在 Isaac Lab 中训练双足 TRON1 足球机器人的行走、追球和射门（韩语） | `TRON1`&nbsp;*仿真* | [tae2yi](https://github.com/tae2yi) | 2026 | 代码 | [代码](https://github.com/tae2yi/Zetin_Robocup2026) |
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**：面向音乐教学的指挥动作示范与评分系统，在 Oli 数字孪生上展示 | `Oli`&nbsp;*仿真* | 广东培正学院 | 2026 | 论文 | [论文](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-hands-on-embodied-ai"></a>**动手做具身智能**：从算法到实机部署的公开教程，含点足和轮足 TRON1 的室外 GNSS 与 Nav2 导航避障 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2025 | 代码 | [代码](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[教程](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**广州塔机器人登高挑战赛**：冠军及最佳精准控制奖，采用 FastStair | `Oli` | 逐际动力 | 2025 | 论文 | [论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[成绩](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**双足运动强化学习**：南方科大 ACR2025 课程项目 | `TRON1`&nbsp;*仿真* | [81578823（南方科大）](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -233,7 +237,7 @@ _11 个条目：1 篇论文 · 9 个代码 · 1 个教程_
 
 ## 行业应用
 
-_21 个条目，分 6 组_
+_22 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -277,6 +281,7 @@ _21 个条目，分 6 组_
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 论文 | [主页](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 论文 | [主页](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 论文 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 论文 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 | <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 论文 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
@@ -294,12 +299,12 @@ _21 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **73** | 25 | 11 | 5 | 1 | 18 | 8 | 5 |
-| [`TRON2`](robots/TRON2_cn.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
-| [`Oli`](robots/Oli_cn.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
+| [`TRON1`](robots/TRON1_cn.md) | **76** | 27 | 11 | 5 | 1 | 18 | 8 | 6 |
+| [`TRON2`](robots/TRON2_cn.md) | **22** |  |  | 2 | 5 | 5 | 3 | 7 |
+| [`Oli`](robots/Oli_cn.md) | **23** | 9 |  | 2 | 2 | 3 | 2 | 5 |
 | [`Luna`](robots/Luna_cn.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_cn.md) | **4** | 3 |  |  |  |  |  | 1 |
-| [`W1`](robots/W1_cn.md) | **2** |  |  | 1 |  |  |  | 1 |
+| [`W1`](robots/W1_cn.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 
 ## 参与贡献
 

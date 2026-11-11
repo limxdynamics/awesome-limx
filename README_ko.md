@@ -10,18 +10,18 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK로 만든 **118**개 프로젝트를 모았고, 그중 **81**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK로 만든 **123**개 프로젝트를 모았고, 그중 **81**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 **기종별로 찾기**
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 73개 | 21개 | 21개 | 5개 | 4개 | 2개 |
+| 76개 | 22개 | 23개 | 5개 | 4개 | 3개 |
 
 ## 목차
 
 - [시작하기 전에](#시작하기-전에)
-- [보행 및 전신 제어](#보행-및-전신-제어) — 36
+- [보행 및 전신 제어](#보행-및-전신-제어) — 39
   - [지형 및 인지 기반 보행](#지형-및-인지-기반-보행)
   - [강화학습 훈련 및 실기 전이](#강화학습-훈련-및-실기-전이)
   - [모델 기반 제어](#모델-기반-제어)
@@ -34,8 +34,8 @@
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
   - [배포 및 제어](#배포-및-제어)
   - [모델 및 모션 데이터](#모델-및-모션-데이터)
-- [교육 및 대회](#교육-및-대회) — 11
-- [산업 적용](#산업-적용) — 21
+- [교육 및 대회](#교육-및-대회) — 12
+- [산업 적용](#산업-적용) — 22
   - [적용 사례 및 제품](#적용-사례-및-제품)
   - [기업 오픈소스](#기업-오픈소스)
   - [상업 공연 및 이벤트](#상업-공연-및-이벤트)
@@ -60,7 +60,7 @@
 
 ## 보행 및 전신 제어
 
-_36개 (4개 그룹): 논문 14 · 코드 22_
+_39개 (4개 그룹): 논문 17 · 코드 22_
 
 ### 지형 및 인지 기반 보행
 
@@ -70,6 +70,7 @@ _36개 (4개 그룹): 논문 14 · 코드 22_
 | <a id="p-faststair"></a>**FastStair**: 계단 달려 오르기 | `Oli` | HIT, LimX et al. | 2026 | 논문 | [프로젝트](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[영상](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-steppingstonelocomotion"></a>**SteppingStoneLocomotion**: 징검다리 보행, 블라인드 후 비전 적용 | `TRON1`&nbsp;*sim* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 코드 | [코드](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[영상](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**: 휠풋 TRON1의 지형 적응과 차체 높이 조절 | `TRON1` | 구이린전자과기대, 상하이교통대, 저장대 | 2026 | 논문 | [논문](https://doi.org/10.1109/amc67705.2026.11435832) |
+| <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**: 참조 궤적 유도 강화학습으로 휠풋 TRON1 계단 주행, 학사 논문 | `TRON1`&nbsp;*sim* | 웁살라 대학교 | 2026 | 논문 | [논문](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-barlowwalk"></a>**BarlowWalk**: 지형 적응 보행 | `TRON1`&nbsp;*sim* | HIT Shenzhen | 2025 | 논문 | [논문](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**: 바퀴로 하는 블라인드 계단 오르기 | `TRON1` | Shanghai University, COWAROBOT | 2025 | 논문 | [프로젝트](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**: 보행 패턴 적응형 인지 보행 | `Oli` | USTC, LimX et al. | 2025 | 논문 | [프로젝트](https://ga-phl.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2512.07464) |
@@ -104,6 +105,8 @@ _36개 (4개 그룹): 논문 14 · 코드 22_
 |---|---|---|---|---|---|
 | <a id="p-learning-enhanced-pmp-mpc"></a>**Learning-Enhanced PMP-MPC**: 포인트풋 이족 로봇용 학습 잔차 MPC | `TRON1`&nbsp;*sim* | [Markwcl2004](https://github.com/Markwcl2004) | 2026 | 코드 | [논문](https://doi.org/10.1109/ASCC70886.2026.11701800)&nbsp;·&nbsp;[코드](https://github.com/Markwcl2004/PMP_based_Bipedal_MPC) |
 | <a id="p-whole-body-humanoid-mpc"></a>**Whole-Body Humanoid MPC**: 31자유도 Oli 비선형 전신 MPC | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 코드 | [코드](https://github.com/liuskywalkerjskd/humanoid_mpc) |
+| <a id="p-terrain-aware-cfr-planning"></a>**Terrain-Aware CFR Planning**: 볼록 가능 영역 기반 계단 주행 계획, W1에서 200회 중 200회 성공 | `W1` | SUSTech CLEAR Lab | 2026 | 논문 | [논문](https://doi.org/10.21203/rs.3.rs-10577407/v1) |
+| <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**: 이족 로봇 최고 속도 분석 모델, TRON1 관절 모터 파라미터 최적화에 적용 | `TRON1`&nbsp;*sim* | 저장대학교 | 2026 | 논문 | [논문](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**: 휠풋 TRON1의 LQR 및 전신 제어, 졸업 논문 프로젝트 | `TRON1`&nbsp;*sim* | [alpttex19](https://github.com/alpttex19) | 2025 | 코드 | [코드](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
 | <a id="p-bipedal-mpc"></a>**Bipedal MPC**: MuJoCo 기반 볼록 MPC와 WBC | `TRON1`&nbsp;*sim* | [SUSTech CLEAR Lab](https://github.com/clearlab-sustech) | 2024 | 코드 | [코드](https://github.com/clearlab-sustech/Bipedal_MPC) |
 | <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**: 전신 제어 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 논문 | [논문](https://arxiv.org/abs/2404.00591) |
@@ -215,7 +218,7 @@ _도구 22개 (4개 그룹)_
 
 ## 교육 및 대회
 
-_11개: 논문 1 · 코드 9 · 튜토리얼 1_
+_12개: 논문 2 · 코드 9 · 튜토리얼 1_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
@@ -226,6 +229,7 @@ _11개: 논문 1 · 코드 9 · 튜토리얼 1_
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm Mobile Manipulation Lab**: TRON1과 OpenArm, LLM 미션 (한국어) | `TRON1`&nbsp;*sim* | [aha645](https://github.com/aha645) | 2026 | 코드 | [코드](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**: 인터랙티브 Isaac Lab 가이드 | `TRON1`&nbsp;*sim* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 튜토리얼 | [튜토리얼](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
 | <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**: Isaac Lab에서 솔풋 TRON1 축구 로봇의 보행, 공 추적, 슈팅 학습 (한국어) | `TRON1`&nbsp;*sim* | [tae2yi](https://github.com/tae2yi) | 2026 | 코드 | [코드](https://github.com/tae2yi/Zetin_Robocup2026) |
+| <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**: 음악 교육용 지휘 동작 시연 및 평가 시스템, Oli 디지털 트윈에서 시연 | `Oli`&nbsp;*sim* | 광둥페이정학원 | 2026 | 논문 | [논문](https://doi.org/10.1145/3806980.3807204) |
 | <a id="p-hands-on-embodied-ai"></a>**Hands-on Embodied AI**: 알고리즘부터 실제 로봇까지 다루는 공개 강좌, 포인트풋·휠풋 TRON1의 실외 GNSS·Nav2 내비게이션 포함 (중국어) | `TRON1` | [우한대학교 BRAIN Lab](https://github.com/Whu-BrainLab) | 2025 | 코드 | [코드](https://github.com/Whu-BrainLab/Embodied-AI-Tutorial)&nbsp;·&nbsp;[튜토리얼](https://mp.weixin.qq.com/s/YLKVi09hgImSuWUr_S6gJA) |
 | <a id="p-canton-tower-robot-climbing-challenge"></a>**광저우타워 로봇 등반 챌린지**: 우승 및 최우수 정밀 제어상, FastStair 사용 | `Oli` | LimX | 2025 | 논문 | [논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[결과](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 | <a id="p-rl-bipedal-locomotion"></a>**RL Bipedal Locomotion**: SUSTech ACR2025 수업 프로젝트 | `TRON1`&nbsp;*sim* | [81578823 (SUSTech)](https://github.com/81578823) | 2025 | 코드 | [코드](https://github.com/81578823/RL_bipedal_locomotion_Isaaclab) |
@@ -233,7 +237,7 @@ _11개: 논문 1 · 코드 9 · 튜토리얼 1_
 
 ## 산업 적용
 
-_21개 (6개 그룹)_
+_22개 (6개 그룹)_
 
 ### 적용 사례 및 제품
 
@@ -277,6 +281,7 @@ _21개 (6개 그룹)_
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 논문 | [프로젝트](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
 | <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: 일본에서 휴머노이드 시스템 통합과 Omniverse 시뮬레이션 제공, LimX 로봇 취급 | — | TRON K.K.(일본) | 2026 | 논문 | [프로젝트](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 논문 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-synerex-korea"></a>**씨너렉스**: 한국 공식 파트너, 드론쇼코리아 2025에서 TRON1 국내 첫 공개 | `TRON1` | 씨너렉스 | 2025 | 논문 | [보도](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 | <a id="p-r2c2-partnership"></a>**R2C2**: 홍콩 공식 개발사 겸 유통사, 강화학습 로봇을 유틸리티·점검 업무에 활용 | `W1` `P1` | R2C2 Limited(홍콩) | 2024 | 논문 | [보도](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
 
@@ -294,12 +299,12 @@ _21개 (6개 그룹)_
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **73** | 25 | 11 | 5 | 1 | 18 | 8 | 5 |
-| [`TRON2`](robots/TRON2_ko.md) | **21** |  |  | 2 | 5 | 5 | 3 | 6 |
-| [`Oli`](robots/Oli_ko.md) | **21** | 9 |  | 2 | 2 | 3 | 1 | 4 |
+| [`TRON1`](robots/TRON1_ko.md) | **76** | 27 | 11 | 5 | 1 | 18 | 8 | 6 |
+| [`TRON2`](robots/TRON2_ko.md) | **22** |  |  | 2 | 5 | 5 | 3 | 7 |
+| [`Oli`](robots/Oli_ko.md) | **23** | 9 |  | 2 | 2 | 3 | 2 | 5 |
 | [`Luna`](robots/Luna_ko.md) | **5** | 1 |  |  |  | 1 |  | 3 |
 | [`P1`](robots/P1_ko.md) | **4** | 3 |  |  |  |  |  | 1 |
-| [`W1`](robots/W1_ko.md) | **2** |  |  | 1 |  |  |  | 1 |
+| [`W1`](robots/W1_ko.md) | **3** | 1 |  | 1 |  |  |  | 1 |
 
 ## 기여하기
 
