@@ -112,6 +112,9 @@ We do not accept:
 - Forks of LimX repositories with no changes of your own.
 - Work that only mentions LimX in passing and did not use the hardware or software.
 - Reposts of LimX's product videos or marketing material.
+- Official code or model files re-uploaded as a new repository rather than forked, with nothing added of your own. A URDF collection, or a copy of a training project, is LimX's work, not a community contribution.
+
+Changes on top of official assets do count: a different controller, a new sensor or gripper, a calibration, a retargeting. The line is whether anything was added, not whether official files are inside.
 
 ## Company projects
 
