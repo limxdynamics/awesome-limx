@@ -78,10 +78,11 @@ def gh(path, retries=3):
 def load_known():
     """Everything already linked from README.md, plus the reviewed list."""
     text = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
-    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(), "titles": set()}
+    known = {"github": set(), "arxiv": set(), "doi": set(), "hf": set(), "hf_owner": set(), "titles": set(), "names": {}}
     # Entry names, e.g. "PTRL" or "TRON1 Sliding Analysis", to catch a paper listed under another link.
     for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*', text):
         known["titles"].add(norm_title(m.group(1)))
+        known["names"][norm_title(m.group(1))] = m.group(1)
     for m in re.finditer(r"github\.com/([\w.-]+)/([\w.-]+)", text):
         known["github"].add((m.group(1) + "/" + m.group(2)).lower().removesuffix(".git"))
     for m in re.finditer(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})", text):
@@ -115,26 +116,35 @@ def norm_title(t):
 
 
 def listed_title(title, known):
-    """True when a paper title matches an entry already in the list.
+    """Check a paper title against the entries already in the list.
 
     A paper is often listed under its arXiv or code link while a database
-    returns the journal DOI, so links alone miss it. This matches the whole
-    title, the short name before a colon ("PTRL: Prior Transfer ..." against
-    the entry "PTRL"), a short name in brackets ("... Selection (VAPS) for
-    ..."), or an entry name of three or more words whose words all appear in
-    the title. Lines starting with `title:` in sweep_seen.txt add more names.
+    returns the journal DOI, so links alone miss it. Returns:
+
+    - "listed" when the whole title, the short name before a colon ("PTRL:
+      Prior Transfer ..." against the entry "PTRL") or a short name in
+      brackets ("... Selection (VAPS) for ...") is an entry name, or the
+      title is in sweep_seen.txt as `title: ...`. The candidate is dropped.
+    - "maybe listed as <entry>" when every word of an entry name of three or
+      more words appears in the title. The candidate stays in the report with
+      this note, because a new paper can share all the words of an old entry
+      ("Whole-Body MPC for Humanoid Robots" against "Whole-Body Humanoid MPC").
+    - "" otherwise.
     """
     t = norm_title(title)
     if not t:
-        return False
+        return ""
     names = {t}
     if ":" in title:
         names.add(norm_title(title.split(":")[0]))
     names |= {norm_title(x) for x in re.findall(r"\(([^()]{2,20})\)", title)}
     if names & known["titles"]:
-        return True
+        return "listed"
     words = set(t.split())
-    return any(len(k.split()) >= 3 and set(k.split()) <= words for k in known["titles"])
+    for k in sorted(known["titles"]):
+        if len(k.split()) >= 3 and set(k.split()) <= words:
+            return "maybe listed as " + known["names"].get(k, k)
+    return ""
 
 
 # ---------------------------------------------------------------- sources
@@ -256,12 +266,13 @@ def src_arxiv(cfg, wanted, known, seen, since):
                 continue
             done.add(aid)
             title = " ".join(e.findtext("a:title", "", ns).split())
-            if listed_title(title, known):
+            hint = listed_title(title, known)
+            if hint == "listed":
                 continue
             summary = e.findtext("a:summary", "", ns)
             out.append({"key": "arxiv:" + aid, "title": title, "url": "https://arxiv.org/abs/" + aid,
                         "robots": robots_for(title + " " + summary, cfg, wanted), "date": date,
-                        "stars": None, "note": "", "why": kw})
+                        "stars": None, "note": hint, "why": kw})
     return out
 
 
@@ -296,14 +307,15 @@ def src_openalex(cfg, wanted, known, seen, since):
                 continue
             done.add(key)
             title = " ".join((w.get("title") or "").split())
-            if listed_title(title, known):
+            hint = listed_title(title, known)
+            if hint == "listed":
                 continue
             url = ("https://arxiv.org/abs/" + aid) if aid else (w.get("doi") or w["id"])
             robots = robots_for(title + " " + abstract(w.get("abstract_inverted_index")), cfg, wanted)
             if not robots and kw in robot_of:  # the robot is named in the body, which OpenAlex does not return
                 robots = [robot_of[kw]]
             out.append({"key": key, "title": title, "url": url, "robots": robots,
-                        "date": w.get("publication_date") or "", "stars": None, "note": "", "why": kw})
+                        "date": w.get("publication_date") or "", "stars": None, "note": hint, "why": kw})
     return out
 
 

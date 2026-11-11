@@ -185,8 +185,11 @@
         "all:LimX",
         "all:\"TRON 1\"",
         "all:\"TRON 2\"",
-        "all:\"LimX Oli\""
-      ]
+        "all:\"LimX Oli\"",
+        "all:\"point-foot\"",
+        "all:\"wheel-foot\""
+      ],
+      "_note": "Checked 2026-11-11: all:LimX 8, \"TRON 1\" 1, \"LimX Oli\" 5, \"point-foot\" 11, \"wheel-foot\" 2 hits in total; \"Tron1\", TRON1, \"sole-foot\" 0, because arXiv only indexes titles and abstracts. OpenAlex full text is the main paper source."
     },
     "openalex": {
       "enabled": true,
