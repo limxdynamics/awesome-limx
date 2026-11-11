@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **159** 个项目与合作，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **162** 个项目与合作，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;条 | 35&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 92&nbsp;条 | 36&nbsp;条 | 30&nbsp;条 | 8&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
@@ -35,7 +35,7 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 18
-- [行业应用](#行业应用) — 31
+- [行业应用](#行业应用) — 34
   - [落地与产品](#落地与产品)
   - [企业开源项目](#企业开源项目)
   - [商业演出与活动](#商业演出与活动)
@@ -266,7 +266,7 @@ _18 个条目：2 篇论文 · 15 个代码 · 1 个教程_
 
 ## 行业应用
 
-_31 个条目，分 6 组_
+_34 个条目，分 6 组_
 
 ### 落地与产品
 
@@ -275,6 +275,7 @@ _31 个条目，分 6 组_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 报道 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 报道 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：Oli 搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布 | `Oli` | 东土科技 | 2026 | 报道 | [报道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道](https://robotstart.info/article/2026/08/26/382326.html) |
 | <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足 TRON1 运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，列为该开发板官方应用案例 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企业开源项目
@@ -302,6 +303,7 @@ _31 个条目，分 6 组_
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道](https://robotstart.info/article/2026/09/18/382434.html) |
 
 ### 战略合作
 
@@ -309,6 +311,7 @@ _31 个条目，分 6 组_
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**SmartCube**：韩国官方合作伙伴，人形机器人用于工厂与能源现场巡检并接入数字孪生 | — | SmartCube（韩国） | 2026 | 报道 | [报道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
 | <a id="p-guangyang-partnership"></a>**光洋股份**：联合开发一体化关节模组，涵盖轴承、齿轮、减速机和驱动器（供应链合作） | — | 光洋股份 | 2026 | 报道 | [报道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[报道](https://finance.eastmoney.com/a/202603093666208673.html) |
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：共建人形机器人与具身智能产业学院，以 Oli 为核心教学载体，并启用智能工程技术学习与创新工场 | `Oli` | 宁波职业技术大学 | 2026 | 报道 | [报道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 | <a id="p-saic-beijing-joint-lab"></a>**上汽北京联合实验室**：面向汽车制造的具身智能联合实验室，逐际动力为上汽首家具身智能战略合作伙伴 | — | 上汽北京 | 2025 | 报道 | [报道](https://www.pingwest.com/a/306356) |
 
 ### 区域伙伴与渠道
@@ -338,9 +341,9 @@ _31 个条目，分 6 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **35** | 1 |  | 4 | 6 | 6 | 8 | 10 |
-| [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
-| [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
+| [`TRON2`](robots/TRON2_cn.md) | **36** | 1 |  | 4 | 6 | 6 | 8 | 11 |
+| [`Oli`](robots/Oli_cn.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
+| [`Luna`](robots/Luna_cn.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1_cn.md) | **4** | 2 |  | 1 |  |  |  | 1 |
 

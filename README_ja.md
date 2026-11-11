@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **159** プロジェクト・提携を収録しています。うち **108** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **162** プロジェクト・提携を収録しています。うち **108** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、産業応用を扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 
 **機種から探す**
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;件 | 35&nbsp;件 | 29&nbsp;件 | 7&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
+| 92&nbsp;件 | 36&nbsp;件 | 30&nbsp;件 | 8&nbsp;件 | 5&nbsp;件 | 4&nbsp;件 |
 
 ## 目次
 
@@ -35,7 +35,7 @@
   - [デプロイと制御](#デプロイと制御)
   - [モデルとモーションデータ](#モデルとモーションデータ)
 - [教育と競技会](#教育と競技会) — 18
-- [産業応用](#産業応用) — 31
+- [産業応用](#産業応用) — 34
   - [導入事例と製品](#導入事例と製品)
   - [企業のオープンソース](#企業のオープンソース)
   - [商業公演とイベント](#商業公演とイベント)
@@ -266,7 +266,7 @@ _18 件：論文 2 · コード 15 · チュートリアル 1_
 
 ## 産業応用
 
-_31 件（6 グループ）_
+_34 件（6 グループ）_
 
 ### 導入事例と製品
 
@@ -275,6 +275,7 @@ _31 件（6 グループ）_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：TRON2 ホイール脚を土台にしたテニスロボット、2026 ビリー・ジーン・キング・カップ ファイナルでプロと対戦 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 報道 | [報道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：2 台の TRON2 が釘打ち機と鉄筋で縮小版のティルトアップ工法を実演 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 報道 | [動画](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[報道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**国産電子アーキテクチャのヒューマノイド**：東土科技の Intewell OS と AUTBUS バスを搭載した Oli、共同発表 | `Oli` | 東土科技（Kyland） | 2026 | 報道 | [報道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[報道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：WUJI TECH の Wuji Hand 2 を装着した TRON2 が、薬局デモで生薬の取り出し・計量・粉砕・梱包を実行 | `TRON2` | WUJI TECH | 2026 | 報道 | [報道](https://robotstart.info/article/2026/08/26/382326.html) |
 | <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：ポイントフット TRON1 の運動制御モデルを D-Robotics の RDK S100 の BPU に移植、同ボードの公式応用事例 | `TRON1` | D-Robotics | 2025 | 報道 | [報道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企業のオープンソース
@@ -302,6 +303,7 @@ _31 件（6 グループ）_
 | <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 報道 | [報道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**「キル・イット」決勝**：デザイナー キム・ナラの優勝決勝ステージに Luna が登場、tvN | `Luna` | tvN、キム・ナラ | 2026 | 報道 | [報道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[報道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝インフルエンサーフェスティバル**：上海で俳優 ミシェル・チェンと Luna がランウェイを歩行 | `Luna` | 淘宝 | 2026 | 報道 | [報道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台の Luna が CHINA GT 選手権の開幕式で自律型グループダンスを披露 | `Luna` | CHINA GT | 2026 | 報道 | [報道](https://robotstart.info/article/2026/09/18/382434.html) |
 
 ### 戦略提携
 
@@ -309,6 +311,7 @@ _31 件（6 グループ）_
 |---|---|---|---|---|---|
 | <a id="p-smartcube-partnership"></a>**SmartCube**：韓国の公式パートナー、工場やエネルギー施設の点検にヒューマノイドとデジタルツインを活用 | — | SmartCube（韓国） | 2026 | 報道 | [報道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
 | <a id="p-guangyang-partnership"></a>**光洋股份**：一体型関節モジュールを共同開発、軸受・歯車・減速機・ドライバーを含む（サプライチェーン連携） | — | 光洋股份 | 2026 | 報道 | [報道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[報道](https://finance.eastmoney.com/a/202603093666208673.html) |
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：人型ロボットと具身 AI の産業学院を共同設立、Oli を中核教材に据え、実習工房も開設 | `Oli` | 寧波職業技術大学 | 2026 | 報道 | [報道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 | <a id="p-saic-beijing-joint-lab"></a>**上汽北京 共同ラボ**：自動車製造向けのエンボディドAI共同ラボ、LimX は SAIC 初のエンボディドAI戦略パートナー | — | 上汽北京 | 2025 | 報道 | [報道](https://www.pingwest.com/a/306356) |
 
 ### 地域パートナーと販売チャネル
@@ -338,9 +341,9 @@ _31 件（6 グループ）_
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_ja.md) | **35** | 1 |  | 4 | 6 | 6 | 8 | 10 |
-| [`Oli`](robots/Oli_ja.md) | **29** | 14 |  | 2 | 2 | 4 | 2 | 5 |
-| [`Luna`](robots/Luna_ja.md) | **7** | 2 | 1 |  |  | 1 |  | 3 |
+| [`TRON2`](robots/TRON2_ja.md) | **36** | 1 |  | 4 | 6 | 6 | 8 | 11 |
+| [`Oli`](robots/Oli_ja.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
+| [`Luna`](robots/Luna_ja.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
 | [`P1`](robots/P1_ja.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1_ja.md) | **4** | 2 |  | 1 |  |  |  | 1 |
 
