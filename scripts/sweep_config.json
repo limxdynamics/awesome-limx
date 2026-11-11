@@ -1,52 +1,130 @@
 {
-  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best, a bare 'TRON1' drowns in crypto repos); `text` keywords go to arXiv and OpenAlex; `hf` keywords match Hugging Face repo names. Add a robot by adding a block here.",
+  "_help": "Per robot: `code` keywords go to GitHub code search (model IDs work best: a bare 'TRON1' drowns in crypto repos, a bare 'TRON2A' matches 'synchrotron2a'); `text` keywords go to arXiv and OpenAlex; `hf` keywords match Hugging Face repo names. Add a robot by adding a block here. `ignore_paths` is a regex: a repo whose every hit is in a matching file (news dumps, dated posts, data files) is left out.",
   "robots": {
     "TRON1": {
-      "code": ["PF_TRON1A", "WF_TRON1A", "SF_TRON1A", "WF_TRON1B", "PF_TRON1B", "tron1 limx", "\"TRON 1\" limx"],
-      "text": ["LimX TRON1", "LimX TRON 1", "TRON1 biped"],
-      "hf": ["tron1"]
+      "code": [
+        "PF_TRON1A",
+        "WF_TRON1A",
+        "SF_TRON1A",
+        "WF_TRON1B",
+        "PF_TRON1B",
+        "tron1 limx"
+      ],
+      "text": [
+        "LimX TRON1",
+        "LimX TRON 1",
+        "TRON1 biped"
+      ],
+      "hf": [
+        "tron1"
+      ]
     },
     "TRON2": {
-      "code": ["TRON2A", "SFYG_TRON2A", "DA_TRON2A", "tron2 limx"],
-      "text": ["LimX TRON2", "LimX TRON 2"],
-      "hf": ["tron2"]
+      "code": [
+        "SFYG_TRON2A",
+        "DA_TRON2A",
+        "tron2 limx",
+        "TRON2A limx"
+      ],
+      "text": [
+        "LimX TRON2",
+        "LimX TRON 2"
+      ],
+      "hf": [
+        "tron2"
+      ]
     },
     "Oli": {
-      "code": ["HU_D04", "\"LimX Oli\"", "limx_oli"],
-      "text": ["LimX Oli"],
-      "hf": ["HU_D04", "limx_oli"]
+      "code": [
+        "HU_D04_description",
+        "HU_D04_01",
+        "\"LimX Oli\"",
+        "limx_oli"
+      ],
+      "text": [
+        "LimX Oli"
+      ],
+      "hf": [
+        "HU_D04",
+        "limx_oli"
+      ]
     },
     "Luna": {
-      "code": ["\"LimX Luna\"", "limx_luna"],
-      "text": ["LimX Luna"],
+      "code": [
+        "\"LimX Luna\"",
+        "limx_luna"
+      ],
+      "text": [
+        "LimX Luna"
+      ],
       "hf": []
     },
     "W1": {
-      "code": ["\"LimX W1\""],
-      "text": ["LimX W1"],
+      "code": [
+        "\"LimX W1\""
+      ],
+      "text": [
+        "LimX W1"
+      ],
       "hf": []
     },
     "P1": {
-      "code": ["\"LimX P1\""],
-      "text": ["LimX P1"],
+      "code": [
+        "\"LimX P1\""
+      ],
+      "text": [
+        "LimX P1"
+      ],
       "hf": []
     },
     "CL-1": {
-      "code": ["\"LimX CL-1\""],
-      "text": ["LimX CL-1"],
+      "code": [
+        "\"LimX CL-1\""
+      ],
+      "text": [
+        "LimX CL-1"
+      ],
       "hf": []
     }
   },
   "company": {
-    "code": ["limxsdk", "\"LimX Dynamics\"", "逐际动力"],
-    "text": ["LimX Dynamics"],
-    "hf": ["limx"]
+    "code": [
+      "limxsdk",
+      "\"LimX Dynamics\"",
+      "逐际动力"
+    ],
+    "text": [
+      "LimX Dynamics"
+    ],
+    "hf": [
+      "limx"
+    ]
   },
-  "skip_owners": ["limxdynamics", "FluxVLA", "limx-troncamp"],
+  "skip_owners": [
+    "limxdynamics",
+    "FluxVLA",
+    "limx-troncamp"
+  ],
   "sources": {
-    "github": {"enabled": true, "pages": 3, "max_repos": 400, "min_stars": 0},
-    "hf": {"enabled": true},
-    "arxiv": {"enabled": true, "max_results": 50},
-    "openalex": {"enabled": true, "max_results": 50, "default_days": 365, "mailto": ""}
+    "github": {
+      "enabled": true,
+      "pages": 3,
+      "max_repos": 400,
+      "min_stars": 0,
+      "ignore_paths": "(?i)(news|daily|digest|trend|radar|rss|archive|snapshot|report|brief|weekly|clipping|(^|/)_?posts?/|(^|/)papers?/|(^|/)(data|output|outputs|raw|cache)/|\\.(csv|jsonl?|xml|txt|html?|resx|m3u|ipynb)$|\\d{4}-?\\d{2}-?\\d{2})"
+    },
+    "hf": {
+      "enabled": true
+    },
+    "arxiv": {
+      "enabled": true,
+      "max_results": 50
+    },
+    "openalex": {
+      "enabled": true,
+      "max_results": 50,
+      "default_days": 365,
+      "mailto": ""
+    }
   }
 }

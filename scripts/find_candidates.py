@@ -127,6 +127,7 @@ def src_github(cfg, wanted, known, seen, since):
     queries += [(k, None) for k in cfg.get("company", {}).get("code", [])]
     skip_owner = {o.lower() for o in cfg.get("skip_owners", [])}
     hits = {}  # repo -> {robots, keywords, paths}
+    noise = re.compile(s.get("ignore_paths") or r"$^")
     for kw, robot in queries:
         log(f"  github: {kw}")
         for page in range(1, s.get("pages", 3) + 1):
@@ -147,7 +148,10 @@ def src_github(cfg, wanted, known, seen, since):
                     continue
                 if repo["owner"]["login"].lower() in skip_owner or repo.get("fork"):
                     continue
-                h = hits.setdefault(full, {"robots": set(), "kw": set(), "paths": []})
+                h = hits.setdefault(full, {"robots": set(), "kw": set(), "paths": [], "solid": not TOKEN})
+                # A hit in a news dump or a dated post says the robot was mentioned, not used.
+                if it.get("path") and not noise.search(it["path"]):
+                    h["solid"] = True
                 if robot:
                     h["robots"].add(robot)
                 h["kw"].add(kw)
@@ -156,6 +160,10 @@ def src_github(cfg, wanted, known, seen, since):
             if len(items) < 100:
                 break
     out = []
+    dropped = [f for f, h in hits.items() if not h["solid"]]
+    hits = {f: h for f, h in hits.items() if h["solid"]}
+    if dropped:
+        log(f"  github: left out {len(dropped)} repos that only mention the keywords in news or data files")
     limit = s.get("max_repos", 400)
     log(f"  github: {len(hits)} new repos, fetching details" + (f" for the first {limit}" if len(hits) > limit else ""))
     for full, h in list(hits.items())[:limit]:
