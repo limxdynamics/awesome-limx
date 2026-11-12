@@ -53,7 +53,7 @@ Each section is a table. Add one row per project:
 - **Author / Org**: your GitHub or Hugging Face handle, linked to your profile, or your lab or institution. For papers with several institutions, name the first two or three and add "et al.", without a link.
 - **Year**: the year the work was published or shown, in its own column.
 - **Links**: include only the kinds that exist, in this order: project, paper, code, video, model, dataset, tutorial, news, result. Use `news` for press coverage of a deployment and `result` for an official competition result. Separate them with `&nbsp;·&nbsp;` so the links stay on one line.
-- **Order**: newest first within each section.
+- **Order**: by year, newest first, within each section. Entries from the same year are not in a particular order.
 - **Type**: `Code`, `Tutorial`, `Paper` or `News`, decided by the maintainers. See [Type](#type). Leave it out when you submit.
 
 A section appears in the README once it has its first entry.
@@ -114,6 +114,7 @@ We do not accept:
 - LimX's own open-source releases, such as repositories under [limxdynamics](https://github.com/limxdynamics) or official models on [Hugging Face](https://huggingface.co/limxdynamics). Those are listed there.
 - Forks of LimX repositories with no changes of your own.
 - Work that only mentions LimX in passing and did not use the hardware or software.
+- Multi-robot work where the LimX robot is only one bundled asset: a model file in a collection, or one name in a list of supported robots with nothing to run. A LimX robot must be one of the main subjects, or come with a complete, runnable setup (training config, controller or deployment).
 - Reposts of LimX's product videos or marketing material.
 - Official code or model files re-uploaded as a new repository rather than forked, with nothing added of your own. A URDF collection, or a copy of a training project, is LimX's work, not a community contribution.
 
@@ -134,5 +135,9 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 ## House style
 
 - `README.md` in English, `README_cn.md` in Chinese, `README_ja.md` in Japanese and `README_ko.md` in Korean, with the same entries in all four. Submissions can be in any of these languages; the maintainers keep the other editions in step.
-- Keep the project phrase short. Say what was done on the robot, not how impressive it is.
+- **Name**: a name people can read, in title case: the paper's short name (`FastStair`), the project's own name (`RoboDance`), or a plain description (`TRON1 Wheel GUI`). Not a repository path such as `tron1_wheel_gui`; the link shows that. A library known by its package name, such as `robot_descriptions.py`, keeps it.
+- **Description**: what was done plus one detail that sets it apart, about 8 to 18 words, no full stop. Good: "replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost". Too short: "one-step action heads". Too long: a sentence listing every component.
+- Do not repeat the robot name in the description unless the variant matters (wheel-foot, sole-foot, dual-arm); the Robot column already says which robot.
+- Mark a source in Chinese, Japanese or Korean with its language when it differs from the edition's, e.g. `[news (zh)]` in the English edition. English sources are not marked.
+- Say what was done on the robot, not how impressive it is.
 - No emoji and no superlatives such as "first ever" or "state of the art".

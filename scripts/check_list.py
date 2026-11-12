@@ -45,7 +45,8 @@ TYPE_NEWS = {"en": "News", "cn": "报道", "ja": "報道", "ko": "보도"}
 NEWS_KINDS = {"news", "报道", "報道", "보도", "result", "成绩", "結果", "결과", "video", "视频", "動画", "영상"}
 
 CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
-LINK_MARK = re.compile(r"\[?\[(\w+)\]\((https?://[^)]+)\)")
+# A kind may carry a language tag, e.g. [news (zh)], for links not in the edition's language.
+LINK_MARK = re.compile(r"\[?\[(\w+)(?:\s*\([a-z]{2}\))?\]\((https?://[^)]+)\)")
 
 MAX_SHOWN = 12
 

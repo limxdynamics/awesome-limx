@@ -68,14 +68,14 @@ _51 个条目，分 4 组：20 篇论文 · 31 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-ame-2"></a>**AME-2**：敏捷感知运动 | `TRON1` | [苏黎世联邦理工 RSL](https://rsl.ethz.ch) | 2026 | 论文 | [主页](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.08485) |
-| <a id="p-faststair"></a>**FastStair**：快速跑楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | 论文 | [主页](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[视频](https://youtu.be/SoLBK7VEGDo) |
+| <a id="p-ame-2"></a>**AME-2**：基于注意力的地图编码，实现稀疏落脚点地形上敏捷、可泛化的感知运动 | `TRON1` | [苏黎世联邦理工 RSL](https://rsl.ethz.ch) | 2026 | 论文 | [主页](https://sites.google.com/leggedrobotics.com/ame-2)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.08485) |
+| <a id="p-faststair"></a>**FastStair**：把基于模型的落脚点规划与强化学习结合，学会快速跑上楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | 论文 | [主页](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[视频](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-steppingstonelocomotion"></a>**梅花桩行走**：跨越梅花桩，先盲走再加视觉 | `TRON1`&nbsp;*仿真* | [Yiyou6](https://github.com/Yiyou6) | 2026 | 代码 | [代码](https://github.com/Yiyou6/SteppingStoneLocomotion)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=vs608-L7kl0) |
 | <a id="p-height-adjustable-wheel-legged-rl"></a>**Height-Adjustable Wheel-Legged RL**：轮足 TRON1 的地形适应与机身高度调节 | `TRON1` | 桂林电子科大、上海交大、浙大 | 2026 | 论文 | [论文](https://doi.org/10.1109/amc67705.2026.11435832) |
 | <a id="p-reference-guided-stair-climbing"></a>**Reference-Guided Stair Climbing**：参考轨迹引导的强化学习，让轮足 TRON1 上楼梯，本科毕业论文 | `TRON1`&nbsp;*仿真* | 乌普萨拉大学 | 2026 | 论文 | [论文](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-594330) |
 | <a id="p-ame-locomotion-tron2a"></a>**AME Locomotion for TRON2A**：在 Isaac Lab 中复现 AME，并新增 TRON2A 双足环境 | `TRON2`&nbsp;*仿真* | [possibleustc](https://github.com/possibleustc) | 2026 | 代码 | [代码](https://github.com/possibleustc/AME_Locomotion) |
 | <a id="p-offline-visual-encoder-biped"></a>**Offline Visual Encoder for Biped Locomotion**：离线训练的深度到高程编码器做视觉运动控制，在 TRON1 实机验证 | `TRON1` | 华中科技大学 | 2026 | 论文 | [论文](https://doi.org/10.1109/access.2026.3686506) |
-| <a id="p-barlowwalk"></a>**BarlowWalk**：地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
+| <a id="p-barlowwalk"></a>**BarlowWalk**：用 Barlow Twins 自监督学习地形表征，实现地形自适应运动 | `TRON1`&nbsp;*仿真* | 哈工大（深圳） | 2025 | 论文 | [论文](https://arxiv.org/abs/2508.00939) |
 | <a id="p-ctbc"></a>**CTBC**：轮足盲爬台阶 | `TRON1` | 上海大学、酷哇机器人 | 2025 | 论文 | [主页](https://ctbc-for-wheeled-bipedal-robots.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2509.02986) |
 | <a id="p-ga-phl"></a>**GA-PHL**：步态自适应感知行走 | `Oli` | 中国科大、逐际动力等 | 2025 | 论文 | [主页](https://ga-phl.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2512.07464) |
 | <a id="p-lipm-guided-rl"></a>**LIPM 引导强化学习**：稳定的双足感知行走 | `TRON1` | 南科大 CLEAR 实验室、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2509.09106) |
@@ -85,27 +85,27 @@ _51 个条目，分 4 组：20 篇论文 · 31 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-osram"></a>**OSRAM**：在线 sim2real 自适应 | `TRON1` | [杜克大学](https://github.com/generalroboticslab) | 2026 | 代码 | [代码](https://github.com/generalroboticslab/OSRAM) |
-| <a id="p-rl-tron1"></a>**rl-tron1**：Isaac Lab 师生训练框架 | `TRON1`&nbsp;*仿真* | [Jiakang Ma](https://github.com/Jiakang-Ma) | 2026 | 代码 | [代码](https://github.com/Jiakang-Ma/rl-tron1) |
+| <a id="p-osram"></a>**OSRAM**：在线建模闭环系统，在实机上修正 sim2real 后残留的跟踪误差 | `TRON1` | [杜克大学](https://github.com/generalroboticslab) | 2026 | 代码 | [代码](https://github.com/generalroboticslab/OSRAM) |
+| <a id="p-rl-tron1"></a>**TRON1 Teacher-Student RL**：Isaac Lab 师生训练框架 | `TRON1`&nbsp;*仿真* | [Jiakang Ma](https://github.com/Jiakang-Ma) | 2026 | 代码 | [代码](https://github.com/Jiakang-Ma/rl-tron1) |
 | <a id="p-tron1-sliding-analysis"></a>**TRON1 打滑分析**：轮足漂移与摩擦迁移 | `TRON1`&nbsp;*仿真* | [Shukashuki](https://github.com/Shukashuki) | 2026 | 代码 | [代码](https://github.com/Shukashuki/tron1-sliding-analysis) |
 | <a id="p-vaps"></a>**VAPS**：安全特技动作，实机侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | 论文 | [主页](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-wf_tron1a-stand-still-policy"></a>**WF_TRON1A 静止站立**：原地静止站立的强化学习策略 | `TRON1`&nbsp;*仿真* | [F-Morry](https://github.com/F-Morry) | 2026 | 代码 | [代码](https://github.com/F-Morry/limx_rl) |
-| <a id="p-where-to-learn"></a>**Where-to-Learn**：梯度引导的强化学习探索 | `TRON1` | 浙江大学、南方科技大学 | 2026 | 论文 | [主页](https://wheretolearn.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2603.27317)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=DztdUyh_LVk) |
+| <a id="p-where-to-learn"></a>**Where-to-Learn**：用解析策略梯度引导 on-policy 强化学习的探索方向 | `TRON1` | 浙江大学、南方科技大学 | 2026 | 论文 | [主页](https://wheretolearn.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2603.27317)&nbsp;·&nbsp;[视频](https://www.youtube.com/watch?v=DztdUyh_LVk) |
 | <a id="p-zetin-tron1-deploy"></a>**Zetin TRON1 部署**：sim2sim 与实机部署 | `TRON1` | [Chanjun Lee（首尔市立大学 Zetin）](https://github.com/chanjun-nyam) | 2026 | 代码 | [代码](https://github.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy) |
 | <a id="p-biped-rl-with-pathfinding"></a>**目标导向双足训练**：带路径规划的目标导向训练 | `TRON1`&nbsp;*仿真* | [shandilya1998](https://github.com/shandilya1998) | 2026 | 代码 | [代码](https://github.com/singhaman1750/biped-rl-isaaclab-iisc) |
 | <a id="p-sf_tron-ext-estimator"></a>**SF_TRON Ext Estimator**：在双足 TRON1 的深度残差策略中加入历史扰动估计器 | `TRON1`&nbsp;*仿真* | [EVENWaterOne](https://github.com/EVENWaterOne) | 2026 | 代码 | [代码](https://github.com/EVENWaterOne/SF_TRON_Ext-estimator) |
-| <a id="p-imfs"></a>**imfs**：在 Isaac Gym 中用世界模型规划落脚点，双足 TRON1 跟踪落脚点 | `TRON1`&nbsp;*仿真* | [Fleming-Sung](https://github.com/Fleming-Sung) | 2026 | 代码 | [代码](https://github.com/Fleming-Sung/imfs) |
+| <a id="p-imfs"></a>**IMFS**：在 Isaac Gym 中用世界模型规划落脚点，双足 TRON1 跟踪落脚点 | `TRON1`&nbsp;*仿真* | [Fleming-Sung](https://github.com/Fleming-Sung) | 2026 | 代码 | [代码](https://github.com/Fleming-Sung/imfs) |
 | <a id="p-shape-your-body"></a>**Shape Your Body**：在 50 款足式机器人上做基于价值梯度的构型搜索，TRON1 是其中之一 | `TRON1`&nbsp;*仿真* | [nico-bohlinger](https://github.com/nico-bohlinger) | 2026 | 代码 | [代码](https://github.com/nico-bohlinger/shape-your-body) |
 | <a id="p-model-based-gait-planning-rl"></a>**Model-Based Gait Planning RL**：用 3D-LIPM 参考步态替代强化学习的步态奖励，部署到 TRON1 实机 | `TRON1` | 哈尔滨工业大学 | 2026 | 论文 | [论文](https://doi.org/10.1016/j.birob.2026.100338) |
 | <a id="p-w1-parkour-legged-gym"></a>**W1 Parkour in legged_gym**：在 legged_gym 中为 W1 轮腿四足搭建跑酷与跟踪训练环境，附 ROS 控制器 | `W1`&nbsp;*仿真* | [yiqiuqwq](https://github.com/yiqiuqwq) | 2026 | 代码 | [代码](https://github.com/yiqiuqwq/wheellegged_control) |
 | <a id="p-him-pim-isaac-lab"></a>**HIM-PIM Isaac Lab**：基于 HIM、PIM 的鲁棒运动控制 | `TRON1`&nbsp;*仿真* | [DongyangLin](https://github.com/DongyangLin) | 2025 | 代码 | [代码](https://github.com/DongyangLin/HIM-PIM-isaaclab) |
 | <a id="p-leggedrobotslab"></a>**LeggedRobotsLab**：Go1 与 TRON1A 的 Isaac Lab 运动控制 | `TRON1`&nbsp;*仿真* | [Guohua Zhang](https://github.com/guohua-zhang) | 2025 | 代码 | [代码](https://github.com/guohua-zhang/LeggedRobotsLab) |
 | <a id="p-multi-loco"></a>**Multi-Loco**：点足与轮足统一的扩散策略 | `TRON1` | 南科大 CLEAR 实验室、逐际动力等 | 2025 | 代码 | [主页](https://multi-loco.github.io)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2506.11470)&nbsp;·&nbsp;[代码](https://github.com/clearlab-sustech/multi_loco_isaacgym) |
-| <a id="p-pvp"></a>**PvP**：高效的人形强化学习 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
+| <a id="p-pvp"></a>**PvP**：在本体感知与特权状态之间做对比学习，提高全身控制的数据效率 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
 | <a id="p-tron-camp-wheel-foot-deployment"></a>**TRON Camp 轮足部署**：轮足策略实机部署 | `TRON1` | [Yitao Zeng](https://github.com/24zen0) | 2025 | 代码 | [代码](https://github.com/24zen0/Deployment_of_wheelfoot_tron) |
 | <a id="p-ptrl"></a>**PTRL**：在机器人之间迁移先验以缩短强化学习训练时间，在 Go2 和 TRON1 上实测 | `TRON1` | 哈工大（深圳）、苏州大学 | 2025 | 论文 | [论文](https://arxiv.org/abs/2504.05629) |
 | <a id="p-anybipe"></a>**AnyBipe**：大模型引导的双足训练与部署 | `TRON1` | [上海交通大学](https://github.com/sjtu-mvasl-robotics) | 2024 | 代码 | [代码](https://github.com/sjtu-mvasl-robotics/AnyBipe) |
-| <a id="p-cts"></a>**CTS**：并行师生强化学习 | `P1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**：教师策略与学生策略同时训练的足式运动强化学习 | `P1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
 
 ### 基于模型的控制
 
@@ -117,23 +117,23 @@ _51 个条目，分 4 组：20 篇论文 · 31 个代码_
 | <a id="p-power-bounded-inverted-pendulum"></a>**Power-Bounded Inverted Pendulum**：双足机器人最高速度分析模型，用于优化 TRON1 关节电机参数 | `TRON1`&nbsp;*仿真* | 浙江大学 | 2026 | 论文 | [论文](https://doi.org/10.1007/s10409-026-25928-x) |
 | <a id="p-hierarchical-nmpc-stsmc"></a>**Hierarchical NMPC + STSMC**：分层非线性 MPC 加超螺旋滑模控制，应对轮足 TRON1 的不确定性 | `TRON1`&nbsp;*仿真* | [pjmcconnellogue](https://github.com/pjmcconnellogue) | 2026 | 代码 | [代码](https://github.com/pjmcconnellogue/Hierarchical-Nonlinear-MPC-and-Super-Twisting-Sliding-Mode-Control-for-a-Wheeled-Biped-Robot-) |
 | <a id="p-two-wheeled-robot-lqr"></a>**Two-Wheeled Robot LQR**：轮足 TRON1 的 LQR 与全身控制，毕业论文项目 | `TRON1`&nbsp;*仿真* | [alpttex19](https://github.com/alpttex19) | 2025 | 代码 | [代码](https://github.com/alpttex19/Two_Wheeled_Robot_LQR) |
-| <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
+| <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：基于任务空间 Riccati 反馈的欠驱动足式机器人全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
 | <a id="p-bipedal-mpc"></a>**双足 MPC**：MuJoCo 中的 MPC 与全身控制 | `TRON1`&nbsp;*仿真* | [南方科技大学 CLEAR 实验室](https://github.com/clearlab-sustech) | 2024 | 代码 | [代码](https://github.com/clearlab-sustech/Bipedal_MPC) |
 
 ### 动作跟踪与重定向
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**：跨本体全身动作跟踪 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**：把预训练的全身动作跟踪模型以少量适配迁移到新的人形机器人 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**：基于 mjlab 的自适应柔顺动作跟踪 | `Oli`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：单策略跟踪 40 段动作 | `Oli`&nbsp;*仿真* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 代码 | [代码](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-tron1-wf-mimic"></a>**TRON1 轮足舞蹈模仿**：舞蹈模仿与可行性分析 | `TRON1`&nbsp;*仿真* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | 代码 | [代码](https://github.com/HUST-dolores/tron1-wf-mimic) |
-| <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
-| <a id="p-robot-retargeter"></a>**robot_retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**Robot Retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：在 mjlab 中为上一代 Oli（HU_D03）训练行走和动作模仿策略（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**robodance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
-| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
+| <a id="p-robodance"></a>**RoboDance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
+| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：以图结构为条件的扩散模型，把同一段动作重定向到结构不同的机器人上 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 感知与导航
 
@@ -141,10 +141,10 @@ _14 个条目：3 篇论文 · 11 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-tron1_navrl"></a>**tron1_navrl**：在 Isaac Lab 中做强化学习局部导航（韩语） | `TRON1`&nbsp;*仿真* | [jongbob1918](https://github.com/jongbob1918) | 2026 | 代码 | [代码](https://github.com/jongbob1918/tron1_navrl) |
+| <a id="p-tron1_navrl"></a>**TRON1 NavRL**：在 Isaac Lab 中做强化学习局部导航（韩语） | `TRON1`&nbsp;*仿真* | [jongbob1918](https://github.com/jongbob1918) | 2026 | 代码 | [代码](https://github.com/jongbob1918/tron1_navrl) |
 | <a id="p-tron1-multi-floor-navigation"></a>**TRON1 Multi-floor Navigation**：把平地行驶、换层和上下楼梯合成一个任务（韩语） | `TRON1` | [justpastmarch](https://github.com/justpastmarch) | 2026 | 代码 | [代码](https://github.com/justpastmarch/TRON1_multifloor-navigation) |
 | <a id="p-geometric-candidate-modes"></a>**Geometric Candidate Modes**：从多模态示范中学习导航，仿真训练的策略迁移到 TRON1 | `TRON1` | 俄亥俄州立大学 | 2026 | 论文 | [论文](https://arxiv.org/abs/2610.20241) |
-| <a id="p-ros2_gnss_waypoint_nav"></a>**ros2_gnss_waypoint_nav**：基于 RTK GNSS、MID360 与 Nav2 的免建图室外航点导航，含 TRON1 底盘桥接 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2026 | 代码 | [代码](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
+| <a id="p-ros2_gnss_waypoint_nav"></a>**GNSS Waypoint Navigation**：基于 RTK GNSS、MID360 与 Nav2 的免建图室外航点导航，含 TRON1 底盘桥接 | `TRON1` | [武汉大学 BRAIN 实验室](https://github.com/Whu-BrainLab) | 2026 | 代码 | [代码](https://github.com/Whu-BrainLab/ros2_gnss_waypoint_nav) |
 | <a id="p-lightnav-0"></a>**LightNav-0**：基于 VLM 的导航栈，含 MPC 路径跟踪与网页控制面板，适配 Go2 和 TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | 代码 | [论文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[代码](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[模型](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：融合 FAST-LIO 的户外 GPS 导航 | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | 代码 | [代码](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**WF_TRON1A 激光导航**：激光里程计与导航 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | 代码 | [代码](https://github.com/F-Morry/limx_ws) |
@@ -163,7 +163,7 @@ _11 个条目：5 篇论文 · 6 个代码_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人机协同搬运，TRON2 移植 | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/COLA_TRON2) |
-| <a id="p-holistic-loco-manipulation"></a>**全身一体化移动操作**：TRON1 加机械臂 | `TRON1` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18930) |
+| <a id="p-holistic-loco-manipulation"></a>**全身一体化移动操作**：强化学习全身控制器，把 6 自由度末端目标直接映射为加装机械臂的 TRON1 的腿臂动作 | `TRON1` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18930) |
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>**TRON1 与 UR5e 交接水瓶**：ROS 2 与 MuJoCo | `TRON1`&nbsp;*仿真* | [Centaucyan](https://github.com/Centaucyan) | 2026 | 代码 | [代码](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env) |
 | <a id="p-cooperative-transportation"></a>**多机协同搬运**：两台机器人协同搬运：轮足 TRON1 或 TRON2 成对搬运，另有对接 LimX SDK 的 TRON2 研究平台 | `TRON1` `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-cwi"></a>**CWI**：全身模仿移动操作 | `Oli` | 逐际动力、港大等 | 2026 | 论文 | [主页](https://cwi-ral.github.io/CWI-RAL-Webpage/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2606.27676) |
@@ -183,10 +183,10 @@ _9 个条目：2 篇论文 · 7 个代码_
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：在 Mac 上用 MuJoCo 驱动 TRON1 的自改进本地 AI 智能体 | `TRON1`&nbsp;*仿真* | [justinsuo](https://github.com/justinsuo) | 2026 | 代码 | [代码](https://github.com/justinsuo/tron1-hermes-agent) |
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的 TRON2 上训练部署 FluxVLA | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：语音对话与动作控制 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
-| <a id="p-hwam"></a>**HWAM**：人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
-| <a id="p-acg-wam"></a>**ACG-WAM**：灵巧手世界-动作模型 | `TRON2` | 北京理工大学、逐际动力 | 2026 | 代码 | [主页](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[代码](https://github.com/RoboOpus/ACG-WAM) |
-| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：单步动作头 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：Pi0.5 策略 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 代码 | [模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-hwam"></a>**HWAM**：联合生成未来状态与动作的人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
+| <a id="p-acg-wam"></a>**ACG-WAM**：预测动作条件几何隐变量的世界-动作模型，在灵巧手上验证 | `TRON2` | 北京理工大学、逐际动力 | 2026 | 代码 | [主页](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[代码](https://github.com/RoboOpus/ACG-WAM) |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：把 GR00T N1.7 的扩散动作头换成单步 drifting 头，降低推理开销 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：在双臂 TRON2 上微调的 Pi0.5 策略，用于服装送料任务 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 代码 | [模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | 代码 | [模型](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
 | <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRON2 插花、叠衣任务的 Pi0.5 权重 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | 代码 | [模型](https://huggingface.co/toki1231) |
 
@@ -199,19 +199,19 @@ _24 个工具，分 4 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab 任务集**：三种足型的 Isaac Lab 任务，含跳跃 | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [代码](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
-| <a id="p-tron1-rl-mjlab"></a>**tron1-rl-mjlab**：基于 mjlab 的轮足训练 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [代码](https://github.com/hoscy/tron1-rl-mjlab) |
+| <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**：基于 mjlab 的轮足训练 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [代码](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**：支持 Genesis、Isaac Gym、Isaac Sim 的 legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [代码](https://github.com/lupinjia/LeggedGym-Ex) |
-| <a id="p-bipedal_locomotion_isaaclab"></a>**bipedal_locomotion_isaaclab**：Isaac Lab 训练与实机部署 | `TRON1` | [Andy-xiong6（南方科大）](https://github.com/Andy-xiong6) | 2024 | [代码](https://github.com/Andy-xiong6/bipedal_locomotion_isaaclab) |
+| <a id="p-bipedal_locomotion_isaaclab"></a>**Bipedal Locomotion on Isaac Lab**：Isaac Lab 训练与实机部署 | `TRON1` | [Andy-xiong6（南方科大）](https://github.com/Andy-xiong6) | 2024 | [代码](https://github.com/Andy-xiong6/bipedal_locomotion_isaaclab) |
 
 ### 仿真与环境
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**tron2-wuji-bag-replay**：在 Isaac Sim 中回放 TRON2 与 Wuji 灵巧手轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：在 Isaac Sim 中回放 TRON2 与 Wuji 灵巧手轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 | <a id="p-metalsim"></a>**MetalSim**：Apple 芯片仿真器，含 TRON1 场景 | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [代码](https://github.com/pulipakaa24/MetalSim) |
-| <a id="p-robot-sim-docker"></a>**robot-sim-docker**：LimX Gazebo、Isaac Lab、MuJoCo 容器环境 | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [代码](https://github.com/Aklva/robot-sim-docker) |
-| <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**：仿真与控制的 MCP 服务器 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
-| <a id="p-tron_docker_sim"></a>**tron_docker_sim**：Gazebo 仿真 Docker 环境 | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [代码](https://github.com/The-RoboTUM/tron_docker_sim) |
+| <a id="p-robot-sim-docker"></a>**Robot Sim Docker**：LimX Gazebo、Isaac Lab、MuJoCo 容器环境 | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [代码](https://github.com/Aklva/robot-sim-docker) |
+| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：仿真与控制的 MCP 服务器 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-tron_docker_sim"></a>**TRON Docker Sim**：Gazebo 仿真 Docker 环境 | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [代码](https://github.com/The-RoboTUM/tron_docker_sim) |
 | <a id="p-roqsim"></a>**roqsim**：插件式 MuJoCo 仿真框架，内置人形机器人包含 Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [代码](https://github.com/cps-test-lab/roqsim) |
 | <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**：国家地方共建人形机器人创新中心、上海大学、清华大学联合推出的 Unity 训练平台，内置 TRON1 行走、轮式行驶和跳跃策略 | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [论文](https://arxiv.org/abs/2503.05146)&nbsp;·&nbsp;[代码](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**：控制器到 MuJoCo 的桥接，支持 TRON1 | `TRON1` | [密歇根大学 ARCaD 实验室](https://github.com/ARCaD-Lab-UM) | 2024 | [代码](https://github.com/ARCaD-Lab-UM/arc-bridge) |
@@ -220,23 +220,23 @@ _24 个工具，分 4 组_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-tron1_ctrl_ros2"></a>**tron1_ctrl_ros2**：封装 TRON1 WebSocket SDK 的 ROS 2 控制包 | `TRON1` | [Turing-zero](https://github.com/Turing-zero) | 2026 | [代码](https://github.com/Turing-zero/tron1_ctrl_ros2) |
-| <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
-| <a id="p-tron1_wheel_gui"></a>**tron1_wheel_gui**：实机 TRON1 的 Qt 控制面板 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [代码](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
-| <a id="p-wf_tron1b_deploy"></a>**wf_tron1b_deploy**：深度感知策略 sim2sim 部署 | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
-| <a id="p-tron_deploy"></a>**Tron_Deploy**：在 Windows 上部署策略 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [代码](https://github.com/candi4/Tron_Deploy) |
+| <a id="p-tron1_ctrl_ros2"></a>**TRON1 ROS 2 Control**：封装 TRON1 WebSocket SDK 的 ROS 2 控制包 | `TRON1` | [Turing-zero](https://github.com/Turing-zero) | 2026 | [代码](https://github.com/Turing-zero/tron1_ctrl_ros2) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-tron1_wheel_gui"></a>**TRON1 Wheel GUI**：实机 TRON1 的 Qt 控制面板 | `TRON1` | [Yang Zhuqi](https://github.com/Y20-code-cpu) | 2026 | [代码](https://github.com/Y20-code-cpu/tron1_wheel_gui) |
+| <a id="p-wf_tron1b_deploy"></a>**Wheel-Foot Depth Policy Deploy**：深度感知策略 sim2sim 部署 | `TRON1` | [Leixin Chang](https://github.com/Leixinjonaschang) | 2026 | [代码](https://github.com/Leixinjonaschang/wf_tron1b_deploy) |
+| <a id="p-tron_deploy"></a>**TRON Deploy for Windows**：在 Windows 上部署策略 | `TRON1` | [candi4](https://github.com/candi4) | 2026 | [代码](https://github.com/candi4/Tron_Deploy) |
 | <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：在 TRON1、TRON2 与 Bunker 底盘的摄像头之间切换，按任务阶段保存画面用于数据采集 | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [代码](https://github.com/oalaaCN/multi_robot_camera_collector) |
 | <a id="p-crl-humanoid-ros"></a>**CRL Humanoid ROS**：支持 G1 与 TRON1A 的 ROS 2 框架 | `TRON1` | [Jin Cheng（苏黎世联邦理工 CRL）](https://github.com/catachiii) | 2025 | [代码](https://github.com/catachiii/crl-humanoid-ros) |
-| <a id="p-websocket_ros"></a>**websocket_ros**：把 TRON1 WebSocket 接口桥接到 ROS 的 Docker 方案，带模拟机器人，无实机也能测试 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [代码](https://github.com/daweidavidwang/websocket_ros) |
+| <a id="p-websocket_ros"></a>**TRON1 WebSocket-ROS Bridge**：把 TRON1 WebSocket 接口桥接到 ROS 的 Docker 方案，带模拟机器人，无实机也能测试 | `TRON1` | [daweidavidwang](https://github.com/daweidavidwang) | 2025 | [代码](https://github.com/daweidavidwang/websocket_ros) |
 
 ### 模型与动作数据
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**：接触感知动作重定向，支持 Oli | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [代码](https://github.com/tmjeong1103/RIMKit) |
-| <a id="p-tron2_revo3_description"></a>**tron2_revo3_description**：TRON2 加 BrainCo Revo3 灵巧手模型 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：TRON2 加 BrainCo Revo3 灵巧手模型 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**limx-3d-measurement-workbench**：浏览 TRON 模型、测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：浏览 TRON 模型、测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教学与竞赛
 
@@ -247,7 +247,7 @@ _18 个条目：2 篇论文 · 15 个代码 · 1 个教程_
 | <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 仿真挑战赛**：官方赛题，含 TRON1、TRON2A 赛道 | `TRON1` `TRON2`&nbsp;*仿真* | [ATEC](https://github.com/atecup) | 2026 | 代码 | [代码](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
 | <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 操作赛方案**：ACT 双臂操作 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[模型](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
 | <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 运动赛方案**：SFYG TRON2A 强化学习策略 | `TRON2`&nbsp;*仿真* | [han-xudong](https://github.com/han-xudong) | 2026 | 代码 | [代码](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[模型](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
-| <a id="p-study_tron1"></a>**study_tron1**：环境搭建与学习笔记 | `TRON1`&nbsp;*仿真* | [beamkeerati](https://github.com/beamkeerati) | 2026 | 代码 | [代码](https://github.com/beamkeerati/study_tron1) |
+| <a id="p-study_tron1"></a>**TRON1 Study Notes**：环境搭建与学习笔记 | `TRON1`&nbsp;*仿真* | [beamkeerati](https://github.com/beamkeerati) | 2026 | 代码 | [代码](https://github.com/beamkeerati/study_tron1) |
 | <a id="p-openarm-mobile-manipulation-lab"></a>**OpenArm 移动操作实训**：TRON1 加 OpenArm 双臂，大模型任务（韩语） | `TRON1`&nbsp;*仿真* | [aha645](https://github.com/aha645) | 2026 | 代码 | [代码](https://github.com/aha645/openarms_llm_ex) |
 | <a id="p-limx-tron1-learning"></a>**LimX Tron1 Learning**：Isaac Lab 交互式教程 | `TRON1`&nbsp;*仿真* | [jessiezhg](https://huggingface.co/jessiezhg) | 2026 | 教程 | [教程](https://huggingface.co/spaces/jessiezhg/LimX-Tron1-Learning) |
 | <a id="p-zetin-robocup-2026"></a>**Zetin RoboCup 2026**：在 Isaac Lab 中训练双足 TRON1 足球机器人的行走、追球和射门（韩语） | `TRON1`&nbsp;*仿真* | [tae2yi](https://github.com/tae2yi) | 2026 | 代码 | [代码](https://github.com/tae2yi/Zetin_Robocup2026) |
@@ -276,7 +276,7 @@ _34 个条目，分 6 组_
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 报道 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 报道 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：Oli 搭载东土 Intewell 操作系统与 AUTBUS 总线，双方联合发布；逐际同时与清华大学、智元、摩尔线程等加入东土发起的国产化具身智能机器人电子架构联盟 | `Oli` | 东土科技 | 2026 | 报道 | [报道](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[报道](https://cbgc.scol.com.cn/news/8010385) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 | <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足 TRON1 运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，列为该开发板官方应用案例 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企业开源项目
@@ -302,15 +302,15 @@ _34 个条目，分 6 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道 (ko)](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道](https://robotstart.info/article/2026/09/18/382434.html) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
 
 ### 战略合作
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-smartcube-partnership"></a>**SmartCube**：韩国官方合作伙伴，人形机器人用于工厂与能源现场巡检并接入数字孪生 | — | SmartCube（韩国） | 2026 | 报道 | [报道](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
+| <a id="p-smartcube-partnership"></a>**SmartCube**：韩国官方合作伙伴，人形机器人用于工厂与能源现场巡检并接入数字孪生 | — | SmartCube（韩国） | 2026 | 报道 | [报道 (ko)](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
 | <a id="p-guangyang-partnership"></a>**光洋股份**：联合开发一体化关节模组，涵盖轴承、齿轮、减速机和驱动器（供应链合作） | — | 光洋股份 | 2026 | 报道 | [报道](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[报道](https://finance.eastmoney.com/a/202603093666208673.html) |
 | <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：共建人形机器人与具身智能产业学院，以 Oli 为核心教学载体，并启用智能工程技术学习与创新工场 | `Oli` | 宁波职业技术大学 | 2026 | 报道 | [报道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 | <a id="p-saic-beijing-joint-lab"></a>**上汽北京联合实验室**：面向汽车制造的具身智能联合实验室，逐际动力为上汽首家具身智能战略合作伙伴 | — | 上汽北京 | 2025 | 报道 | [报道](https://www.pingwest.com/a/306356) |
@@ -320,10 +320,10 @@ _34 个条目，分 6 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 报道 | [报道](https://tron.tokyo/en/service/limx-dynamics/) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**：在日本提供人形机器人系统集成与 Omniverse 仿真，合作品牌包括 LimX | — | TRON K.K.（日本） | 2026 | 报道 | [报道 (ja)](https://tron.tokyo/en/service/limx-dynamics/) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：在德国销售并支持 P1，提供用户手册、网络与 ROS 2 配置指南和返修服务 | `P1` | MYBOTSHOP GmbH（德国） | 2026 | 报道 | [报道](https://www.docs.mybotshop.de/limx_p1.html) |
-| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
+| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道 (ko)](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 | <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[报道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 ### 奖项与认可
@@ -350,7 +350,7 @@ _34 个条目，分 6 组_
 
 ## 参与贡献
 
-欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按时间从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**）、可以阅读的（**论文**），还是媒体报道或公告（**报道**）。
+欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按年份从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**）、可以阅读的（**论文**），还是媒体报道或公告（**报道**）。
 
 收录不代表逐际动力背书，权利归原作者所有。项目所有者可随时要求移除，无需说明理由。
 
