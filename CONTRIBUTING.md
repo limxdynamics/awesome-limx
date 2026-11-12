@@ -40,6 +40,8 @@ Nothing to install, Python 3.9 or newer is enough.
 
 The pages under `robots/` list the entries for one robot each. They are generated from the README files, so do not edit them by hand. CI rebuilds them whenever the README changes on `main`, so you do not need to run anything.
 
+The [gallery](https://limxdynamics.github.io/awesome-limx/) (`docs/index.html`) is generated the same way, by `scripts/build_gallery.py`. See [Gallery, videos and thumbnails](#gallery-videos-and-thumbnails).
+
 ## Entry format
 
 Each section is a table. Add one row per project:
@@ -124,9 +126,17 @@ Changes on top of official assets do count: a different controller, a new sensor
 
 If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company or both partners have already announced the work publicly, link that announcement or the press coverage instead. Public strategic agreements, official regional partners and sales channels, and industry awards count too: they go under Industry deployments. If the company wants to announce first, tell us and we will wait.
 
-## Screenshots and logos
+## Gallery, videos and thumbnails
 
-An entry is one table row of text and links. If you want an image or a logo next to your entry, ask explicitly and confirm that you hold the rights to it.
+The [gallery](https://limxdynamics.github.io/awesome-limx/) shows each entry as a card. What goes on the card, in this order:
+
+1. A thumbnail file the owner sent us, under `docs/thumbs/<id>.webp` (the id is the entry's anchor, without `p-`). We only host an image when its owner asks and confirms they hold the rights to it. Keep it 16:9, about 640 px wide and under 60 KB.
+2. Otherwise the entry's YouTube video: the card shows YouTube's own thumbnail and plays the video in YouTube's player. bilibili videos play the same way, with a plain card.
+3. Otherwise a band in the robot's color. Most entries look like this until someone adds a video.
+
+A video that is not in the entry's links can be added in `scripts/gallery.json` under `media`, and `featured` there picks the cards shown first, which we change from time to time. Then run `python scripts/build_gallery.py`, or let CI do it after the merge. The README stays the source: the gallery never holds an entry the README does not.
+
+The README itself stays text and links. If you want an image or a logo next to your entry in the README, ask explicitly and confirm that you hold the rights to it.
 
 ## Removal
 

@@ -18,6 +18,8 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 90&nbsp;projects | 34&nbsp;projects | 27&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
+**Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with demo videos and filters by robot, type and real or sim.
+
 ## Contents
 
 - [Before you start](#before-you-start)
