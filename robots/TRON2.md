@@ -35,20 +35,20 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-cola-on-tron2"></a>**COLA on TRON2**: human-robot collaborative carrying, TRON2 port | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/COLA_TRON2) |
-| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two robots carry a load together: wheel-foot TRON1 or TRON2 pairs, plus a TRON2 platform with LimX SDK interfaces | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[code](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
-| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: drives both arms of a dual-arm TRON2 from OAK-D hand and arm tracking, with an ORCA hand and a pipe-drilling scene branded for Elecnor (Spanish) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | Code | [code](https://github.com/Aremanky/Teleoperacion-tron-2) |
+| <a id="p-cola-on-tron2"></a>**COLA on TRON2**: COLA human-robot collaborative carrying, ported from Unitree G1 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/COLA_TRON2) |
+| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two robots carry one load together, in wheel-foot TRON1 pairs or TRON2 pairs | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code (TRON1)](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[code (TRON2)](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: camera-based arm and hand tracking teleoperates the dual-arm robot with an ORCA hand (Spanish) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | Code | [code](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## Embodied AI
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy FluxVLA on your own TRON2 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
+| <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy the FluxVLA vision-language-action model on your own robot | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**: world-action model predicting action-conditioned geometric latents, tested with dexterous hands | `TRON2` | BIT, LimX | 2026 | Code | [project](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[code](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost | `TRON2` | ZJU-UIUC, LimX | 2026 | Paper | [paper](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy fine-tuned for a garment-feeding task on dual-arm TRON2 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | Code | [model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | Code | [model](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
-| <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**: Pi0.5 checkpoints for flower arranging and cloth folding on TRON2 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | Code | [model](https://huggingface.co/toki1231) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy fine-tuned for a two-arm garment-feeding task | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | Code | [model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: pick-and-place, folding and pouring datasets in LeRobot format, with GR00T fine-tuned on them | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | Code | [model](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
+| <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**: Pi0.5 checkpoints for flower arranging and cloth folding, from TRONCamp | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | Code | [model](https://huggingface.co/toki1231) |
 
 ## Tools, simulation & SDK
 
@@ -56,30 +56,30 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: replay TRON2 + Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: replays recorded robot and Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### Deployment & control
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**: head and wrist camera calibration tools for TRON2 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_camera_calibration) |
-| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between TRON1, TRON2 and a Bunker base's cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**: calibration tools for the robot's head and wrist cameras | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between several robots' cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### Models & motion data
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: TRON2 with BrainCo Revo3 hands | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: assembly models fitted with BrainCo Revo3 dexterous hands, ready for training | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: browse TRON models, measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: web tool to browse TRON product models, locate parts and measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## Education & competitions
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**: official challenge with TRON1 and TRON2A tracks | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | Code | [code](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
-| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**: ACT dual-arm manipulation | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
-| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**: SFYG TRON2A RL policy | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
+| <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**: official starter code for the ATEC 2026 robot simulation challenge, with separate tracks per robot | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | Code | [code](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
+| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**: ACT policies for the four dual-arm tasks, with released checkpoints and demonstration data | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
+| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**: RL locomotion policy for the sole-foot TRON2 with locked arms, with released checkpoints | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | Code | [code](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[model](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
 | <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**: Datawhale's open embodied-AI course, with a TRONCamp Mani chapter on TRON2 dual-arm tasks (Chinese) | `TRON2`&nbsp;*sim* | [Datawhale](https://github.com/datawhalechina) | 2026 | Code | [code](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**: a team's RL training and simulation deployment for the ATEC 2026 challenge | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | Code | [code](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**: ACT with hard-example mining and multi-GPU training, with a technical report; T4 scored 79/100 online | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | Code | [code](https://github.com/upset666/troncamp-mani-24ZlhA) |
@@ -94,17 +94,17 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | News | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 fitted with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine in a pharmacy demo | `TRON2` | WUJI TECH | 2026 | News | [news (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine | `TRON2` | WUJI TECH | 2026 | News | [news (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### Open source from companies
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: Pi0.5 training configs and real-time inference for TRON2 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/xense-openpi) |
-| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**: TRON2 models adjusted for a wrist camera mount on the SFYG arm | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | Code | [code](https://github.com/Crest-Robotics/tron2-robot-description) |
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**: Pi0.5 training configs and real-time inference for dual-arm manipulation | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**: robot models adjusted for a wrist camera mount on the SFYG arm | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | Code | [code](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**: PICO 4 bimanual teleoperation plugin for LeRobot, with TRON2 support | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | Code | [code](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: hardware drivers for 4Paradigm's Phanthy Motus embodied AI platform, TRON2 dual-arm included | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | Code | [code](https://github.com/4paradigm/phanthymotus-driver) |
-| <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 115 teleoperated episodes with tactile video, also republished by Voxel51 in FiftyOne format | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | Code | [dataset](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
+| <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 115 teleoperated episodes with tactile video, also republished by Voxel51 in FiftyOne format | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | Code | [dataset](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[dataset (Voxel51)](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-cmriat-citadel"></a>**Citadel**: robot data pipeline that converts HDF5 recordings to LeRobot v2.1, with TRON2 episodes as its worked example | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | Code | [code](https://github.com/cmriat/Citadel) |
 
 ### Regional partners & channels

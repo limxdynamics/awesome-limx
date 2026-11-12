@@ -139,5 +139,7 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 - **Description**: what was done plus one detail that sets it apart, about 8 to 18 words, no full stop. Good: "replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost". Too short: "one-step action heads". Too long: a sentence listing every component.
 - Do not repeat the robot name in the description unless the variant matters (wheel-foot, sole-foot, dual-arm); the Robot column already says which robot.
 - Mark a source in Chinese, Japanese or Korean with its language when it differs from the edition's, e.g. `[news (zh)]` in the English edition. English sources are not marked.
+- When an entry has two links of the same kind, tell them apart in the brackets by robot, platform or outlet, e.g. `[code (TRON1)]` · `[code (TRON2)]` or `[news (zh, NBD)]`.
+- A post from LimX or the partner itself is an `announcement`, not `news`.
 - Say what was done on the robot, not how impressive it is.
 - No emoji and no superlatives such as "first ever" or "state of the art".

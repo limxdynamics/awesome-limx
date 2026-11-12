@@ -41,12 +41,13 @@ TYPE_CODE = {"en": "Code", "cn": "代码", "ja": "コード", "ko": "코드"}
 TYPE_PAPER = {"en": "Paper", "cn": "论文", "ja": "論文", "ko": "논문"}
 TYPE_TUTORIAL = {"en": "Tutorial", "cn": "教程", "ja": "チュートリアル", "ko": "튜토리얼"}
 TYPE_NEWS = {"en": "News", "cn": "报道", "ja": "報道", "ko": "보도"}
-# Link kinds that only report on something: a media report, a result announcement, a video.
-NEWS_KINDS = {"news", "报道", "報道", "보도", "result", "成绩", "結果", "결과", "video", "视频", "動画", "영상"}
+# Link kinds that only report on something: a media report, a result, an announcement, a video.
+NEWS_KINDS = {"news", "报道", "報道", "보도", "result", "成绩", "結果", "결과", "video", "视频", "動画", "영상",
+              "announcement", "公告", "発表", "발표"}
 
 CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org")
 # A kind may carry a language tag, e.g. [news (zh)], for links not in the edition's language.
-LINK_MARK = re.compile(r"\[?\[(\w+)(?:\s*\([a-z]{2}\))?\]\((https?://[^)]+)\)")
+LINK_MARK = re.compile(r"\[?\[(\w+)(?:\s*\([^)]*\))?\]\((https?://[^)]+)\)")
 
 MAX_SHOWN = 12
 

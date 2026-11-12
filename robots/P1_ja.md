@@ -23,7 +23,7 @@
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-vmts"></a>**VMTS**：視覚支援による多地形歩行 | `P1` | Southeast University | 2025 | コード | [論文](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[コード](https://github.com/chenfu-user/VMTS) |
+| <a id="p-vmts"></a>**VMTS**：視覚を使う混合エキスパート型の教師・生徒 RL で多様な地形を歩行 | `P1` | Southeast University | 2025 | コード | [論文](https://arxiv.org/abs/2503.07049)&nbsp;·&nbsp;[コード](https://github.com/chenfu-user/VMTS) |
 
 ### 強化学習の訓練と実機転移
 
@@ -43,7 +43,7 @@
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：ドイツで P1 を販売・サポート、ユーザーマニュアル、ネットワークと ROS 2 の設定ガイド、修理受付を提供 | `P1` | MYBOTSHOP GmbH（ドイツ） | 2026 | 報道 | [報道](https://www.docs.mybotshop.de/limx_p1.html) |
-| <a id="p-r2c2-partnership"></a>**R2C2**：香港の公式デベロッパー兼販売代理店、強化学習ロボットを公共設備と点検業務に活用 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 報道 | [報道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[報道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
+| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：ドイツで P1 を販売・サポート、マニュアル、ROS 2 設定ガイド、修理サービスを提供 | `P1` | MYBOTSHOP GmbH（ドイツ） | 2026 | 報道 | [報道](https://www.docs.mybotshop.de/limx_p1.html) |
+| <a id="p-r2c2-partnership"></a>**R2C2**：香港の公式デベロッパー兼販売代理店、強化学習ロボットを公共設備と点検業務に活用 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 報道 | [発表 (LinkedIn)](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[発表 (X)](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 P1 で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

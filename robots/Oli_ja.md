@@ -30,32 +30,32 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-faststair"></a>**FastStair**：モデルベースの足場計画と強化学習を組み合わせ、階段を駆け上がる | `Oli` | HIT, LimX et al. | 2026 | 論文 | [プロジェクト](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[動画](https://youtu.be/SoLBK7VEGDo) |
-| <a id="p-ga-phl"></a>**GA-PHL**：歩容適応型の知覚歩行 | `Oli` | USTC, LimX et al. | 2025 | 論文 | [プロジェクト](https://ga-phl.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2512.07464) |
+| <a id="p-ga-phl"></a>**GA-PHL**：足元の地形をリアルタイムに再構成し、歩容タイミングを適応させる知覚歩行 | `Oli` | USTC, LimX et al. | 2025 | 論文 | [プロジェクト](https://ga-phl.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2512.07464) |
 
 ### 強化学習の訓練と実機転移
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-vaps"></a>**VAPS**：安全なアクロバット、実機での側宙 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 論文 | [プロジェクト](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.01397) |
+| <a id="p-vaps"></a>**VAPS**：宙返り中に続行・中止・安全な転倒を選び分け、実機で側方宙返りを実演 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 論文 | [プロジェクト](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**：固有感覚と特権状態の対比学習で、データ効率の高い全身制御 | `Oli` | PolyU, USTC et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2512.13093) |
 
 ### モデルベース制御
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-whole-body-humanoid-mpc"></a>**Whole-Body Humanoid MPC**：31 自由度 Oli での非線形全身 MPC | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/humanoid_mpc) |
+| <a id="p-whole-body-humanoid-mpc"></a>**Whole-Body Humanoid MPC**：人型の移動操作向け非線形全身 MPC、MuJoCo での 31 自由度 Oli の例付き | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/humanoid_mpc) |
 
 ### モーショントラッキングとリターゲティング
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：事前学習済みの全身モーショントラッキングを、少ない適応で新しいヒューマノイドへ移植 | `Oli` `Luna` | LimX | 2026 | コード | [論文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[コード](https://github.com/Ming827/any2any_sonic2Oli) |
-| <a id="p-chip-for-oli"></a>**CHIP for Oli**：mjlab での適応コンプライアンス型モーショントラッキング | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/chip-oli) |
-| <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：一つのポリシーで 40 種類の動作を追従 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/supermimic_oli) |
-| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**：robot_lab 拡張、Oli のモーション模倣タスクを追加（Isaac Lab） | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
-| <a id="p-robot-retargeter"></a>**Robot Retargeter**：SMPL-X や他ロボットのモーションをヒューマノイドへリターゲット、Oli 設定を同梱 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-chip-for-oli"></a>**CHIP for Oli**：適応コンプライアンス型モーショントラッキング CHIP の移植版、mjlab で学習 | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/chip-oli) |
+| <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：世界モデル型全身制御 SuperMimic の適用版、1 つのポリシーで 40 動作を追従 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/supermimic_oli) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**：robot_lab の拡張、Isaac Lab に動作模倣の学習タスクを追加 | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**Robot Retargeter**：SMPL-X や他ロボットの動作を人型にリターゲット、この機種の専用設定付き | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
-| <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：mjlab で旧型 Oli（HU_D03）の歩行と動作模倣ポリシーを学習（ベトナム語） | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | コード | [コード](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
+| <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**：HU_D03 モデル向けの歩行と動作模倣ポリシー、mjlab で学習（ベトナム語） | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | コード | [コード](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
 | <a id="p-robodance"></a>**RoboDance**：ウェブのダンス動画を Oli を含む 12 機種のヒューマノイドにリターゲット、MuJoCo で描画 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | コード | [コード](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：グラフ条件付き拡散モデルで、構造の異なるロボット間で同じ動作をリターゲット | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
@@ -63,14 +63,14 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-cwi"></a>**CWI**：ロコマニピュレーションのための全身模倣 | `Oli` | LimX, HKU et al. | 2026 | 論文 | [プロジェクト](https://cwi-ral.github.io/CWI-RAL-Webpage/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2606.27676) |
-| <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**：Meta Quest による腕と頭の遠隔操作 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | コード | [コード](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
+| <a id="p-cwi"></a>**CWI**：モーキャプと指令を組み合わせた複合全身模倣で、歩きながらの操作を実現 | `Oli` | LimX, HKU et al. | 2026 | 論文 | [プロジェクト](https://cwi-ral.github.io/CWI-RAL-Webpage/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2606.27676) |
+| <a id="p-quest-vr-teleop-for-oli"></a>**Quest VR Teleop for Oli**：Meta Quest で両腕・グリッパー・頭部を遠隔操作し、カメラ映像をヘッドセットに表示 | `Oli` | [MSTLE](https://github.com/MSTLE) | 2025 | コード | [コード](https://github.com/MSTLE/Limx_teleoperate-end_pose) |
 
 ## エンボディドAI
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**：音声対話と動作制御 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | コード | [コード](https://github.com/zhilin2025/oli_audio) |
+| <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**：オフライン・オンライン音声認識、LLM 対話、動作指令を備えた ROS 2 音声システム | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | コード | [コード](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：将来の状態と行動を同時に生成するヒューマノイド世界行動モデル | `Oli` | LimX | 2026 | 論文 | [プロジェクト](https://hwam.vercel.app/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.12026) |
 
 ## ツール、シミュレーション、SDK
@@ -79,14 +79,14 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：シミュレーションと制御のための MCP サーバー | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [コード](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：AI エージェントが MuJoCo モデルの読み込み、関節制御、ポリシー実行を行える MCP サーバー | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [コード](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-roqsim"></a>**roqsim**：プラグイン式 MuJoCo シミュレーション基盤、同梱ヒューマノイドに Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [コード](https://github.com/cps-test-lab/roqsim) |
 
 ### モデルとモーションデータ
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-rimkit"></a>**RIMKit**：接触を考慮したリターゲティング、Oli 対応 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [コード](https://github.com/tmjeong1103/RIMKit) |
+| <a id="p-rimkit"></a>**RIMKit**：接触を考慮した人の動作のリターゲット、17 機種に対応しこの機種のモデルを同梱 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [コード](https://github.com/tmjeong1103/RIMKit) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 教育と競技会
@@ -94,7 +94,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-conducting-evaluation-with-oli"></a>**Conducting Evaluation System**：音楽教育向けの指揮動作の実演と評価システム、Oli のデジタルツインで実証 | `Oli`&nbsp;*sim* | 広東培正学院 | 2026 | 論文 | [論文](https://doi.org/10.1145/3806980.3807204) |
-| <a id="p-canton-tower-robot-climbing-challenge"></a>**広州タワー ロボット登塔チャレンジ**：優勝と最優秀精密制御賞、FastStair を使用 | `Oli` | LimX | 2025 | 論文 | [論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[結果](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
+| <a id="p-canton-tower-robot-climbing-challenge"></a>**広州タワー ロボット登塔チャレンジ**：Oli が FastStair 手法で階段登りの優勝と最優秀精密制御賞を獲得 | `Oli` | LimX | 2025 | 論文 | [論文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[結果 (zh)](https://www.sfccn.com/2026/1-1/5NMDE0NzNfMjA5MzM5NA.html) |
 
 ## 産業応用
 
@@ -102,13 +102,13 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**国産電子アーキテクチャのヒューマノイド**：東土科技の Intewell OS と AUTBUS バスを搭載した Oli、共同発表。LimX は清華大学・智元・摩爾線程らとともに東土科技主導の電子アーキテクチャ連盟にも参加 | `Oli` | 東土科技（Kyland） | 2026 | 報道 | [報道 (zh)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[報道 (zh)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[報道 (zh)](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**国産電子アーキテクチャのヒューマノイド**：東土科技の Intewell OS と AUTBUS を搭載した Oli、LimX は東土主導のアーキテクチャ連盟にも参加 | `Oli` | 東土科技（Kyland） | 2026 | 報道 | [報道 (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[報道 (zh, 21世紀経済報道)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[報道 (zh, 四川在線)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### 企業のオープンソース
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for HU_D04**：31 自由度の Oli で GEAR-SONIC 全身制御を学習、PICO VR 遠隔操作に対応 | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | コード | [コード](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
+| <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for Oli**：31 自由度モデルで GEAR-SONIC 全身制御を学習、PICO VR 遠隔操作対応 | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | コード | [コード](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
 
 ### 商業公演とイベント
 
@@ -120,7 +120,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：人型ロボットと具身 AI の産業学院を共同設立、Oli を中核教材に据え、実習工房も開設 | `Oli` | 寧波職業技術大学 | 2026 | 報道 | [報道 (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：エンボディド AI の共同産業学院、Oli を中核の教育プラットフォームに採用 | `Oli` | 寧波職業技術大学 | 2026 | 報道 | [報道 (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### 地域パートナーと販売チャネル
 

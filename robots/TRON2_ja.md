@@ -35,20 +35,20 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人とロボットの協調搬送、TRON2 への移植 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/COLA_TRON2) |
-| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**：2 台のロボットで協調搬送：ホイールフット TRON1 または TRON2 のペア、LimX SDK と接続する TRON2 研究基盤も | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[コード](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
-| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**：OAK-D で腕と手を追跡して双腕 TRON2 を遠隔操作、ORCA ハンドと Elecnor ブランドの配管ドリル作業シーン付き（スペイン語） | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | コード | [コード](https://github.com/Aremanky/Teleoperacion-tron-2) |
+| <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人とロボットの協調搬送 COLA を Unitree G1 から移植 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード](https://github.com/Matt14-mander/COLA_TRON2) |
+| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**：2 台のロボットが 1 つの荷物を協調搬送、ホイールフット TRON1 と TRON2 の組に対応 | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | コード | [コード (TRON1)](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[コード (TRON2)](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**：カメラで腕と手を追跡し、ORCA ハンド付き双腕ロボットを遠隔操作（スペイン語） | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | コード | [コード](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## エンボディドAI
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**：自分の TRON2 で FluxVLA を学習・デプロイ | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | コード | [コード](https://github.com/emoPointer/FluxVLA) |
+| <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**：FluxVLA 視覚言語行動モデルを自分のロボットで学習・展開 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | コード | [コード](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**：行動条件付きの幾何潜在表現を予測する世界行動モデル、多指ハンドで検証 | `TRON2` | BIT, LimX | 2026 | コード | [プロジェクト](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[コード](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**：GR00T N1.7 の拡散アクションヘッドを 1 ステップの drifting ヘッドに置き換え、推論コストを削減 | `TRON2` | ZJU-UIUC, LimX | 2026 | 論文 | [論文](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**：双腕 TRON2 で衣類の送り込み作業向けにファインチューニングした Pi0.5 ポリシー | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | コード | [モデル](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
-| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**：データセットと GR00T ファインチューニングモデル | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | コード | [モデル](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
-| <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRON2 の生け花・布たたみ向け Pi0.5 チェックポイント | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | コード | [モデル](https://huggingface.co/toki1231) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**：双腕で衣類を送り込むタスク向けに微調整した Pi0.5 ポリシー | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | コード | [モデル](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**：LeRobot 形式のピック＆プレース、衣類たたみ、注水データセットと、それで微調整した GR00T | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | コード | [モデル](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
+| <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRONCamp の生け花と衣類たたみ課題向け Pi0.5 チェックポイント | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | コード | [モデル](https://huggingface.co/toki1231) |
 
 ## ツール、シミュレーション、SDK
 
@@ -56,30 +56,30 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：TRON2 と Wuji ハンドの軌道を Isaac Sim で再生 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：記録したロボットと Wuji ハンドの軌道を Isaac Sim で再生 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### デプロイと制御
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**：TRON2 の頭部・手首カメラのキャリブレーションツール | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2_camera_calibration) |
-| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：TRON1・TRON2・Bunker 台車のカメラを切り替え、タスク段階ごとに画像を保存してデータ収集（中国語） | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [コード](https://github.com/oalaaCN/multi_robot_camera_collector) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**：頭部と手首カメラのキャリブレーションツール | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：複数ロボットのカメラを切り替え、タスク段階ごとに画像を保存してデータ収集（中国語） | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [コード](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### モデルとモーションデータ
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：BrainCo Revo3 ハンド付き TRON2 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [コード](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：BrainCo Revo3 ハンドを装着した組立モデル、学習にそのまま使える | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [コード](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：TRON モデルの閲覧と寸法計測 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [コード](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：TRON 製品モデルを閲覧し、部品を探して寸法を測る Web ツール | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [コード](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教育と競技会
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**：TRON1 と TRON2A 部門のある公式チャレンジ | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | コード | [コード](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
-| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**：ACT による双腕マニピュレーション | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
-| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**：SFYG TRON2A の RL ポリシー | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
+| <a id="p-atec-2026-simulation-challenge"></a>**ATEC 2026 Simulation Challenge**：ATEC 2026 ロボットシミュレーションチャレンジの公式スターターコード、機種ごとに部門あり | `TRON1` `TRON2`&nbsp;*sim* | [ATEC](https://github.com/atecup) | 2026 | コード | [コード](https://github.com/atecup/ATEC2026_Simulation_Challenge) |
+| <a id="p-troncamp-2026-mani-solution"></a>**TRONCamp 2026 Mani Solution**：双腕 4 課題向けの ACT 解法、チェックポイントとデモデータを公開 | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-mani)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-mani-act)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/han-xudong/troncamp-mani-dataset) |
+| <a id="p-troncamp-2026-locomotion-solution"></a>**TRONCamp 2026 Locomotion Solution**：腕を固定したソールフット TRON2 の RL 歩行ポリシー、チェックポイントを公開 | `TRON2`&nbsp;*sim* | [han-xudong](https://github.com/han-xudong) | 2026 | コード | [コード](https://github.com/han-xudong/troncamp-locomotion)&nbsp;·&nbsp;[モデル](https://huggingface.co/han-xudong/troncamp-locomotion-rl) |
 | <a id="p-every-embodied-troncamp-mani"></a>**Every Embodied: TRONCamp Mani**：Datawhale の具身 AI オープン講座、TRON2 双腕タスクを扱う TRONCamp Mani の章を収録（中国語） | `TRON2`&nbsp;*sim* | [Datawhale](https://github.com/datawhalechina) | 2026 | コード | [コード](https://github.com/datawhalechina/every-embodied/tree/main/15-Challenge%E7%AB%9E%E8%B5%9B/TRONCamp-Mani) |
 | <a id="p-atec2026-logic-tars"></a>**ATEC 2026 Wheel-Legged Entry**：ATEC 2026 チャレンジ参加チームの強化学習訓練とシミュレーション配備 | `TRON1` `TRON2`&nbsp;*sim* | [Logic-TARS](https://github.com/Logic-TARS) | 2026 | コード | [コード](https://github.com/Logic-TARS/ATEC2026) |
 | <a id="p-troncamp-mani-24zlha"></a>**TRONCamp Mani Solution 24ZlhA**：ACT とハードサンプルマイニング、マルチ GPU 学習、技術レポート付き。T4 のオンライン得点は 79/100 | `TRON2`&nbsp;*sim* | [upset666](https://github.com/upset666) | 2026 | コード | [コード](https://github.com/upset666/troncamp-mani-24ZlhA) |
@@ -94,17 +94,17 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：TRON2 ホイール脚を土台にしたテニスロボット、2026 ビリー・ジーン・キング・カップ ファイナルでプロと対戦 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 報道 | [報道 (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：2 台の TRON2 が釘打ち機と鉄筋で縮小版のティルトアップ工法を実演 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 報道 | [動画](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[報道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：WUJI TECH の Wuji Hand 2 を装着した TRON2 が、薬局デモで生薬の取り出し・計量・粉砕・梱包を実行 | `TRON2` | WUJI TECH | 2026 | 報道 | [報道](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：WUJI TECH の Wuji Hand 2 を付けた TRON2 が生薬をつかみ、量り、挽き、包む | `TRON2` | WUJI TECH | 2026 | 報道 | [報道](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### 企業のオープンソース
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：TRON2 向けの Pi0.5 学習設定とリアルタイム推論 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | コード | [コード](https://github.com/XenseRobotics-AI/xense-openpi) |
-| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：SFYG アームの手首カメラマウントに合わせて調整した TRON2 モデル | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | コード | [コード](https://github.com/Crest-Robotics/tron2-robot-description) |
+| <a id="p-xense-openpi-for-tron2"></a>**Xense OpenPI**：双腕操作向けの Pi0.5 学習設定とリアルタイム推論 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | コード | [コード](https://github.com/XenseRobotics-AI/xense-openpi) |
+| <a id="p-crest-tron2-description"></a>**TRON2 Description, Crest edition**：SFYG アームの手首カメラマウントに合わせて調整したロボットモデル | `TRON2` | [Crest Robotics](https://github.com/Crest-Robotics) | 2026 | コード | [コード](https://github.com/Crest-Robotics/tron2-robot-description) |
 | <a id="p-xense-pico4-teleoperator"></a>**LeRobot Pico4 Teleoperator**：LeRobot 用の PICO 4 双腕遠隔操作プラグイン、TRON2 に対応 | `TRON2` | [Xense Robotics](https://github.com/XenseRobotics-AI) | 2026 | コード | [コード](https://github.com/XenseRobotics-AI/lerobot-teleoperator-pico4) |
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：4Paradigm の具身 AI 基盤 Phanthy Motus のハードウェアドライバ、TRON2 双腕に対応 | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | コード | [コード](https://github.com/4paradigm/phanthymotus-driver) |
-| <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：触覚映像付きの遠隔操作 115 エピソード、Voxel51 が FiftyOne 形式でも公開 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | コード | [データセット](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
+| <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：触覚映像付きの遠隔操作 115 エピソード、Voxel51 が FiftyOne 形式でも公開 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | コード | [データセット](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[データセット (Voxel51)](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-cmriat-citadel"></a>**Citadel**：HDF5 の記録を LeRobot v2.1 に一括変換するロボットデータ管理ツール、例に TRON2 のデータを使用 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | コード | [コード](https://github.com/cmriat/Citadel) |
 
 ### 地域パートナーと販売チャネル
