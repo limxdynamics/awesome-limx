@@ -1,21 +1,13 @@
 name: Robot pages and gallery
 
-# Rebuilds robots/*.md and the gallery (docs/index.html) whenever the README
-# tables change on main, so neither falls behind the list.
+# Rebuilds robots/*.md and the gallery (docs/index.html) from the README once a
+# day, so a busy day of edits ends in one rebuild commit instead of one per push.
+# Nothing is committed when the pages are already up to date. To publish sooner,
+# run it by hand (Actions > Robot pages and gallery > Run workflow), or run the
+# two build scripts locally and commit the result.
 on:
-  push:
-    branches: [main]
-    paths:
-      - README.md
-      - README_cn.md
-      - README_ja.md
-      - README_ko.md
-      - scripts/build_robot_pages.py
-      - scripts/build_gallery.py
-      - scripts/gallery_template.html
-      - scripts/gallery_illustrations.js
-      - scripts/gallery.json
-      - docs/thumbs/**
+  schedule:
+    - cron: '17 18 * * *'   # 02:17 Beijing time
   workflow_dispatch:
 
 permissions:
@@ -32,8 +24,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          # Build from the newest main, not the commit that triggered the run,
-          # so a README change pushed meanwhile is not left out.
           ref: main
       - uses: actions/setup-python@v6
         with:

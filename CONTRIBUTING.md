@@ -38,7 +38,7 @@ python scripts/check_list.py
 
 Nothing to install, Python 3.9 or newer is enough.
 
-The pages under `robots/` list the entries for one robot each. They are generated from the README files, so do not edit them by hand. CI rebuilds them whenever the README changes on `main`, so you do not need to run anything.
+The pages under `robots/` list the entries for one robot each. They are generated from the README files, so do not edit them by hand. CI rebuilds them once a day from `main`, so you do not need to run anything; a change shows up there by the next day.
 
 The [gallery](https://limxdynamics.github.io/awesome-limx/) (`docs/index.html`) is generated the same way, by `scripts/build_gallery.py`. See [Gallery, videos and thumbnails](#gallery-videos-and-thumbnails).
 

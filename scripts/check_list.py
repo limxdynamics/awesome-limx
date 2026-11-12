@@ -498,10 +498,9 @@ def main():
             for a in sorted(set(other) - en):
                 report.error("sync", "entry p-%s is in %s but not README.md" % (a, name))
 
-    # robots/*.md are rebuilt by the robot-pages workflow after every README
-    # change lands on main. A pull request, and the push that runs alongside
-    # that workflow, are expected to see them behind: say nothing there. The
-    # weekly scheduled run and local runs still check.
+    # robots/*.md are rebuilt once a day by the robot-pages workflow, so pull
+    # requests and pushes are expected to see them behind: say nothing there.
+    # The weekly scheduled run and local runs still check.
     if os.environ.get("GITHUB_EVENT_NAME") not in ("pull_request", "push"):
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -509,8 +508,8 @@ def main():
             stale = [page for page, content in build_robot_pages.build(args.root).items()
                      if (open(page, encoding="utf-8").read() if os.path.exists(page) else None) != content]
             if stale:
-                report.warn("robot-pages", "%d robot page(s) out of date (%s%s). They are rebuilt automatically after "
-                            "the README change reaches main; to do it by hand: python scripts/build_robot_pages.py"
+                report.warn("robot-pages", "%d robot page(s) out of date (%s%s). They are rebuilt automatically once a "
+                            "day; to do it by hand: python scripts/build_robot_pages.py"
                             % (len(stale), ", ".join(os.path.basename(p) for p in stale[:4]), ", ..." if len(stale) > 4 else ""))
         except Exception as e:  # the page builder is a convenience, never a blocker
             report.warn("robot-pages", "could not check robot pages: %s" % e)

@@ -35,7 +35,7 @@ python scripts/check_list.py
 
 不需要装任何东西，Python 3.9 以上即可。
 
-`robots/` 下是按机型拆分的页面，由 README 自动生成，请不要手动修改。README 合并到 `main` 后 CI 会自动重新生成，你不需要运行任何命令。
+`robots/` 下是按机型拆分的页面，由 README 自动生成，请不要手动修改。CI 每天根据 `main` 自动重新生成一次，你不需要运行任何命令；改动最晚第二天出现在这些页面上。
 
 [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)（`docs/index.html`）同样由脚本 `scripts/build_gallery.py` 自动生成，详见[图库、视频和缩略图](#图库视频和缩略图)。
 
