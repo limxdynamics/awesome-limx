@@ -67,6 +67,26 @@ button, input, select { font: inherit; color: inherit; }
 .langs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 .toplink { font-size: 13px; color: var(--muted); text-decoration: none; white-space: nowrap; }
 .toplink:hover { color: var(--ink); text-decoration: underline; }
+.star {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; text-decoration: none; white-space: nowrap;
+  border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 5px 4px 5px 10px; color: var(--ink);
+}
+.star:hover { border-color: var(--ink); }
+.star svg { width: 15px; height: 15px; fill: #e3a008; flex: none; }
+.star .n { border-left: 1px solid var(--line); padding: 0 6px 0 8px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.star .n:empty { display: none; }
+
+/* Call to action above the footer */
+.cta { margin: 48px 0 32px; border: 1px solid var(--line); background: var(--surface); border-radius: 14px; padding: 28px 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.cta div { flex: 1 1 380px; }
+.cta h2 { font-size: 20px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+.cta p { margin: 0; color: var(--muted); font-size: 14.5px; }
+.cta .acts { display: flex; flex-wrap: wrap; gap: 10px; flex: 0 0 auto; }
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; padding: 9px 16px; font-size: 14px; font-weight: 500; text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface); }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.btn.primary:hover { opacity: .88; }
+.btn svg { width: 16px; height: 16px; fill: #e3a008; }
 
 .intro { padding-top: 28px; padding-bottom: 8px; }
 .intro h1, .intro .lead { max-width: 760px; }
@@ -177,6 +197,8 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
   .top { flex-wrap: wrap; gap: 10px; }
   .top .spacer { display: none; }
   .toplink { order: 3; }
+  .star { order: 4; }
+  .cta { padding: 20px; margin: 32px 0 24px; }
   .intro { padding-top: 16px; }
   .robot { min-width: 84px; padding: 8px 10px 12px; }
   .featured .grid, .grid { grid-template-columns: 1fr; }
@@ -193,6 +215,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
   <div class="spacer"></div>
   <div class="langs" role="group" aria-label="Language"></div>
   <a class="toplink" id="listlink" href="https://github.com/limxdynamics/awesome-limx" data-i="list"></a>
+  <a class="star" id="star" href="https://github.com/limxdynamics/awesome-limx"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-i="star"></span><span class="n" id="starn"></span></a>
 </header>
 
 <section class="wrap intro">
@@ -218,6 +241,19 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
 
 <main class="wrap" id="main"></main>
 
+<section class="wrap">
+  <div class="cta">
+    <div>
+      <h2 data-i="ctaH"></h2>
+      <p data-i="ctaP"></p>
+    </div>
+    <div class="acts">
+      <a class="btn primary" id="ctasubmit" data-i="ctaSubmit"></a>
+      <a class="btn" href="https://github.com/limxdynamics/awesome-limx"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-i="ctaStar"></span></a>
+    </div>
+  </div>
+</section>
+
 <footer class="wrap" id="foot"></footer>
 
 <dialog id="dlg" aria-label="Video">
@@ -237,39 +273,61 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
   var REPO = "https://github.com/limxdynamics/awesome-limx";
   var SUBMIT = REPO + "/issues/new?template=add-project.yml";
   var S = {
-    en: { gallery: "Gallery", list: "Full list on GitHub", h1: "What people build with LimX robots",
+    en: { star: "Star", ctaH: "Built something with a LimX robot?", ctaP: "Add it to the list so other developers, labs and partners can find it. A star on GitHub helps the list reach more people.", ctaSubmit: "Submit your project", ctaStar: "Star on GitHub",
+      gallery: "Gallery", list: "Full list on GitHub", h1: "What people build with LimX robots",
       lead: "{n} projects, papers and deployments from the community and partners. Pick a robot, narrow it down, and play the demos.",
       all: "All robots", allCats: "All categories", real: "Real robot only", video: "With video",
       search: "Search names, methods, authors", count: "{n} shown", clear: "Clear filters", featured: "Watch first",
       empty: "Nothing matches these filters.", play: "Play video", close: "Close", openOn: "Open on {p}",
       none: "No single robot", sim: "sim", illus: "Illustration",
       types: { code: "Code", tutorial: "Tutorial", paper: "Paper", news: "News" },
-      foot: "Built from the <a href=\"{readme}\">README list</a>, which stays the source of truth. Built something with a LimX robot? <a href=\"{submit}\">Submit it</a>. Videos and thumbnails belong to their owners." },
-    cn: { gallery: "图库", list: "GitHub 上的完整列表", h1: "大家用 LimX 机器人做了什么",
+      foot: "Built from the <a href=\"{readme}\">README list</a>, which stays the source of truth. Videos and thumbnails belong to their owners." },
+    cn: { star: "Star", ctaH: "用 LimX 机器人做了东西？", ctaP: "提交到列表，让更多开发者、实验室和合作伙伴看到。在 GitHub 上点个 Star，也能让这份列表被更多人发现。", ctaSubmit: "提交你的项目", ctaStar: "在 GitHub 上 Star",
+      gallery: "图库", list: "GitHub 上的完整列表", h1: "大家用 LimX 机器人做了什么",
       lead: "来自社区和合作伙伴的 {n} 个项目、论文与落地案例。选一个机型，筛一筛，直接看演示视频。",
       all: "全部机型", allCats: "全部分类", real: "只看实机", video: "有视频",
       search: "搜索名称、方法、作者", count: "显示 {n} 项", clear: "清除筛选", featured: "先看这些",
       empty: "没有符合这些条件的项目。", play: "播放视频", close: "关闭", openOn: "在 {p} 打开",
       none: "不针对具体机型", sim: "仿真", illus: "示意图",
       types: { code: "代码", tutorial: "教程", paper: "论文", news: "报道" },
-      foot: "数据来自 <a href=\"{readme}\">README 列表</a>，以列表为准。用 LimX 机器人做了东西？<a href=\"{submit}\">欢迎提交</a>。视频和缩略图版权归原作者所有。" },
-    ja: { gallery: "ギャラリー", list: "GitHub の全リスト", h1: "LimX のロボットでみんなが作ったもの",
+      foot: "数据来自 <a href=\"{readme}\">README 列表</a>，以列表为准。视频和缩略图版权归原作者所有。" },
+    ja: { star: "Star", ctaH: "LimX のロボットで何か作りましたか？", ctaP: "リストに追加して、ほかの開発者や研究室、パートナーに見つけてもらいましょう。GitHub で Star をもらえると、リストがより多くの人に届きます。", ctaSubmit: "プロジェクトを投稿", ctaStar: "GitHub で Star",
+      gallery: "ギャラリー", list: "GitHub の全リスト", h1: "LimX のロボットでみんなが作ったもの",
       lead: "コミュニティとパートナーによる {n} 件のプロジェクト、論文、導入事例。機種を選んで絞り込み、デモ動画をそのまま再生できます。",
       all: "すべての機種", allCats: "すべてのカテゴリ", real: "実機のみ", video: "動画あり",
       search: "名前・手法・作者で検索", count: "{n} 件を表示", clear: "絞り込みを解除", featured: "まずはこちら",
       empty: "条件に合うプロジェクトはありません。", play: "動画を再生", close: "閉じる", openOn: "{p} で開く",
       none: "特定の機種なし", sim: "sim", illus: "イメージ図",
       types: { code: "コード", tutorial: "チュートリアル", paper: "論文", news: "報道" },
-      foot: "データは <a href=\"{readme}\">README のリスト</a>から生成しており、リストが正です。LimX のロボットで何か作りましたか？<a href=\"{submit}\">投稿はこちら</a>。動画とサムネイルの権利は各制作者に帰属します。" },
-    ko: { gallery: "갤러리", list: "GitHub 전체 목록", h1: "사람들이 LimX 로봇으로 만든 것들",
+      foot: "データは <a href=\"{readme}\">README のリスト</a>から生成しており、リストが正です。動画とサムネイルの権利は各制作者に帰属します。" },
+    ko: { star: "Star", ctaH: "LimX 로봇으로 무언가 만들었나요?", ctaP: "목록에 추가해 다른 개발자, 연구실, 파트너가 찾을 수 있게 해 주세요. GitHub에서 Star를 누르면 이 목록이 더 많은 사람에게 닿습니다.", ctaSubmit: "프로젝트 제출하기", ctaStar: "GitHub에서 Star",
+      gallery: "갤러리", list: "GitHub 전체 목록", h1: "사람들이 LimX 로봇으로 만든 것들",
       lead: "커뮤니티와 파트너가 만든 프로젝트, 논문, 도입 사례 {n}건. 기종을 고르고 범위를 좁혀 데모 영상을 바로 재생하세요.",
       all: "전체 기종", allCats: "전체 분류", real: "실제 로봇만", video: "영상 있음",
       search: "이름, 방법, 저자로 검색", count: "{n}건 표시", clear: "필터 지우기", featured: "먼저 볼 것",
       empty: "조건에 맞는 프로젝트가 없습니다.", play: "영상 재생", close: "닫기", openOn: "{p}에서 열기",
       none: "특정 기종 없음", sim: "sim", illus: "일러스트",
       types: { code: "코드", tutorial: "튜토리얼", paper: "논문", news: "보도" },
-      foot: "<a href=\"{readme}\">README 목록</a>에서 생성되며, 목록이 기준입니다. LimX 로봇으로 무언가 만들었나요? <a href=\"{submit}\">제출하기</a>. 영상과 썸네일의 권리는 각 제작자에게 있습니다." }
+      foot: "<a href=\"{readme}\">README 목록</a>에서 생성되며, 목록이 기준입니다. 영상과 썸네일의 권리는 각 제작자에게 있습니다." }
   };
+  var MIN_STARS = 100; // below this the number undersells the list, so the button shows without it
+  function loadStars() { // live count from the GitHub API; the button works without it
+    var el = $("starn"), key = "awesome-limx-stars";
+    var show = function (n) {
+      if (n >= MIN_STARS) el.textContent = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(n);
+    };
+    try { var c = JSON.parse(sessionStorage.getItem(key)); if (c && Date.now() - c.t < 36e5) return show(c.n); } catch (e) {}
+    if (!window.fetch) return;
+    var ctl = window.AbortController ? new AbortController() : null;
+    if (ctl) setTimeout(function () { ctl.abort(); }, 5000);
+    fetch("https://api.github.com/repos/limxdynamics/awesome-limx", ctl ? { signal: ctl.signal } : {})
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || typeof j.stargazers_count !== "number") return;
+        show(j.stargazers_count);
+        try { sessionStorage.setItem(key, JSON.stringify({ n: j.stargazers_count, t: Date.now() })); } catch (e) {}
+      }).catch(function () {});
+  }
   var TYPE_ORDER = ["code", "tutorial", "paper", "news"];
   var PRIMARY = ["code", "project", "paper", "model", "dataset", "tutorial", "news", "result", "announcement", "video"];
 
@@ -374,6 +432,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
     $("lead").textContent = fmt(L.lead, { n: D.items.length });
     $("q").placeholder = L.search; $("q").setAttribute("aria-label", L.search);
     $("listlink").href = REPO + "/blob/main/" + README[st.lang];
+    $("ctasubmit").href = SUBMIT;
     $("foot").innerHTML = fmt(L.foot, { readme: REPO + "/blob/main/" + README[st.lang], submit: SUBMIT });
     var langs = document.querySelector(".langs");
     langs.innerHTML = LANGS.map(function (l) {
@@ -475,7 +534,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
   $("dlg").addEventListener("click", function (e) { if (e.target === this) closeVideo(); });
   window.addEventListener("hashchange", function () { readHash(); renderChrome(); render(); });
 
-  readHash(); renderChrome(); render();
+  readHash(); renderChrome(); render(); loadStars();
 })();
 </script>
 </body>
