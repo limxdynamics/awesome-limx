@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **36**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **35**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,7 +15,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 ## 목차
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
-- [매니퓰레이션](#매니퓰레이션) — 4
+- [매니퓰레이션](#매니퓰레이션) — 3
 - [임바디드 AI](#임바디드-ai) — 6
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
 - [교육 및 대회](#교육-및-대회) — 8
@@ -36,8 +36,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**: 사람-로봇 협동 운반, TRON2 이식 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/COLA_TRON2) |
-| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: 휠-레그 로봇 두 대가 짐을 운반 | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
-| <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: TRON2 두 대의 협동 운반 연구 플랫폼, MuJoCo와 LimX SDK 인터페이스 | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
+| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: 로봇 두 대의 협동 운반: 휠풋 TRON1 또는 TRON2 쌍, LimX SDK와 연동되는 TRON2 연구 플랫폼 포함 | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[코드](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: OAK-D로 팔과 손을 추적해 양팔 TRON2를 원격 조작, ORCA 핸드와 Elecnor 브랜드의 배관 드릴 작업 장면 포함 (스페인어) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | 코드 | [코드](https://github.com/Aremanky/Teleoperacion-tron-2) |
 
 ## 임바디드 AI
