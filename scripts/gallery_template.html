@@ -107,13 +107,14 @@ main { padding: 8px 0 40px; }
 .thumb img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; display: block; }
 .play, .badge { z-index: 2; }
 .ph { position: absolute; inset: 0; }
+.ph .illus { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--rc); }
+.ph .tag-illus {
+  position: absolute; right: 10px; bottom: 8px; font-size: 11px; color: var(--rc); opacity: .8;
+}
 .ph .big {
   position: absolute; left: -0.04em; bottom: -0.2em; font-weight: 600; line-height: 1; letter-spacing: -0.04em;
   font-size: 92px; color: var(--rc); opacity: .28; white-space: nowrap;
 }
-/* No media yet: a short band instead of a full 16:9 tile, so real thumbnails stand out. */
-.thumb.bare { aspect-ratio: auto; height: 76px; }
-.thumb.bare .big { font-size: 58px; bottom: -0.22em; }
 .ph .what { position: absolute; left: 14px; top: 12px; right: 14px; font-size: 12.5px; color: var(--rc); font-weight: 500; }
 .badge {
   position: absolute; right: 10px; top: 10px; font-size: 11.5px; font-weight: 500; padding: 2px 8px; border-radius: 999px;
@@ -209,6 +210,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
 </dialog>
 
 <script id="data" type="application/json">/*GALLERY_DATA*/{}</script>
+<script>/*GALLERY_ILLUSTRATIONS*/</script>
 <script>
 (function () {
   "use strict";
@@ -223,7 +225,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
       all: "All robots", allCats: "All categories", real: "Real robot only", video: "With video",
       search: "Search names, methods, authors", count: "{n} shown", clear: "Clear filters", featured: "Watch first",
       empty: "Nothing matches these filters.", play: "Play video", close: "Close", openOn: "Open on {p}",
-      none: "No single robot", sim: "sim",
+      none: "No single robot", sim: "sim", illus: "Illustration",
       types: { code: "Code", tutorial: "Tutorial", paper: "Paper", news: "News" },
       foot: "Built from the <a href=\"{readme}\">README list</a>, which stays the source of truth. Built something with a LimX robot? <a href=\"{submit}\">Submit it</a>. Videos and thumbnails belong to their owners." },
     cn: { gallery: "图库", list: "GitHub 上的完整列表", h1: "大家用 LimX 机器人做了什么",
@@ -231,7 +233,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
       all: "全部机型", allCats: "全部分类", real: "只看实机", video: "有视频",
       search: "搜索名称、方法、作者", count: "显示 {n} 项", clear: "清除筛选", featured: "先看这些",
       empty: "没有符合这些条件的项目。", play: "播放视频", close: "关闭", openOn: "在 {p} 打开",
-      none: "不针对具体机型", sim: "仿真",
+      none: "不针对具体机型", sim: "仿真", illus: "示意图",
       types: { code: "代码", tutorial: "教程", paper: "论文", news: "报道" },
       foot: "数据来自 <a href=\"{readme}\">README 列表</a>，以列表为准。用 LimX 机器人做了东西？<a href=\"{submit}\">欢迎提交</a>。视频和缩略图版权归原作者所有。" },
     ja: { gallery: "ギャラリー", list: "GitHub の全リスト", h1: "LimX のロボットでみんなが作ったもの",
@@ -239,7 +241,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
       all: "すべての機種", allCats: "すべてのカテゴリ", real: "実機のみ", video: "動画あり",
       search: "名前・手法・作者で検索", count: "{n} 件を表示", clear: "絞り込みを解除", featured: "まずはこちら",
       empty: "条件に合うプロジェクトはありません。", play: "動画を再生", close: "閉じる", openOn: "{p} で開く",
-      none: "特定の機種なし", sim: "sim",
+      none: "特定の機種なし", sim: "sim", illus: "イメージ図",
       types: { code: "コード", tutorial: "チュートリアル", paper: "論文", news: "報道" },
       foot: "データは <a href=\"{readme}\">README のリスト</a>から生成しており、リストが正です。LimX のロボットで何か作りましたか？<a href=\"{submit}\">投稿はこちら</a>。動画とサムネイルの権利は各制作者に帰属します。" },
     ko: { gallery: "갤러리", list: "GitHub 전체 목록", h1: "사람들이 LimX 로봇으로 만든 것들",
@@ -247,7 +249,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
       all: "전체 기종", allCats: "전체 분류", real: "실제 로봇만", video: "영상 있음",
       search: "이름, 방법, 저자로 검색", count: "{n}건 표시", clear: "필터 지우기", featured: "먼저 볼 것",
       empty: "조건에 맞는 프로젝트가 없습니다.", play: "영상 재생", close: "닫기", openOn: "{p}에서 열기",
-      none: "특정 기종 없음", sim: "sim",
+      none: "특정 기종 없음", sim: "sim", illus: "일러스트",
       types: { code: "코드", tutorial: "튜토리얼", paper: "논문", news: "보도" },
       foot: "<a href=\"{readme}\">README 목록</a>에서 생성되며, 목록이 기준입니다. LimX 로봇으로 무언가 만들었나요? <a href=\"{submit}\">제출하기</a>. 영상과 썸네일의 권리는 각 제작자에게 있습니다." }
   };
@@ -320,7 +322,10 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
     var thumb;
     var what = esc(t.sub || D.sections[st.lang][item.section]);
     var badge = item.sim ? '<span class="badge">' + esc(t.sim || L.sim) + "</span>" : "";
-    var ph = '<span class="ph"><span class="what">' + what + '</span><span class="big">' + esc(item.robots[0] || "LimX") + "</span></span>";
+    // The drawn picture sits under any real thumbnail, so it also shows if that image fails to load.
+    var real = item.thumb || (item.video && item.video.provider === "file");
+    var ph = '<span class="ph">' + window.illustrate(item, D) + '<span class="what">' + what + "</span>" +
+      (real ? "" : '<span class="tag-illus">' + esc(L.illus) + "</span>") + "</span>";
     var img = item.thumb ? '<img loading="lazy" decoding="async" alt="" src="' + esc(item.thumb) + '" onerror="this.remove()">' : "";
     // A video file with no thumbnail: let the browser show one of its frames.
     if (!img && item.video && item.video.provider === "file")
@@ -329,7 +334,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
       thumb = '<button class="thumb" type="button" data-video="' + esc(item.id) + '" aria-label="' + esc(L.play + ": " + t.name) + '">' +
         ph + img + '<span class="play"></span>' + badge + "</button>";
     } else {
-      thumb = '<a class="thumb' + (item.thumb ? "" : " bare") + '" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + ph + img + badge + "</a>";
+      thumb = '<a class="thumb" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + ph + img + badge + "</a>";
     }
     var tags = item.robots.length
       ? item.robots.map(function (r) { return '<span class="tag" style="--rc:var(--' + r + ')">' + esc(r) + "</span>"; }).join("")

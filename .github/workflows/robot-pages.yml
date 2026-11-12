@@ -13,6 +13,7 @@ on:
       - scripts/build_robot_pages.py
       - scripts/build_gallery.py
       - scripts/gallery_template.html
+      - scripts/gallery_illustrations.js
       - scripts/gallery.json
       - docs/thumbs/**
   workflow_dispatch:

@@ -132,7 +132,7 @@ The [gallery](https://limxdynamics.github.io/awesome-limx/) shows each entry as 
 
 1. A thumbnail under `docs/thumbs/<id>.webp` (the id is the entry's anchor, without `p-`): a small 640×360 still taken from a demo image or GIF in the project's own README, or one the owner sent us. `from` in `scripts/gallery.json` records where each still came from, and the card links back to the project. We take stills only of the project's own robot footage, never of people, press photos or diagrams.
 2. Otherwise the entry's YouTube video: the card shows YouTube's own thumbnail and plays the video in YouTube's player. bilibili videos and `.mp4` files on the project's own site play in place too, streamed from where they are hosted.
-3. Otherwise a band in the robot's color.
+3. Otherwise an illustration drawn in the page from the entry itself: the robot (and its variant, such as wheel-foot TRON1) in a scene picked from the description, such as stairs, a navigation path or a worktable. It is labelled "Illustration" so nobody takes it for footage. The rules are in `scripts/gallery_illustrations.js`; if a scene does not fit an entry, a real thumbnail or video fixes it, or the rules can be adjusted.
 
 A video that is not in the entry's links can be added in `scripts/gallery.json` under `media`, and `featured` there picks the cards shown first, which we change from time to time. If you own a project and want its thumbnail or video changed or taken off the gallery, open an issue or email us and we will do it, no reason needed. Then run `python scripts/build_gallery.py`, or let CI do it after the merge. The README stays the source: the gallery never holds an entry the README does not.
 
