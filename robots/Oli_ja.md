@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **30** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **27** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,10 +14,10 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 14
+- [移動と全身制御](#移動と全身制御) — 13
 - [マニピュレーション](#マニピュレーション) — 2
 - [エンボディドAI](#エンボディドai) — 2
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 4
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 2
 - [教育と競技会](#教育と競技会) — 2
 - [産業応用](#産業応用) — 6
 
@@ -54,9 +54,8 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：世界モデル型全身制御 SuperMimic の適用版、1 つのポリシーで 40 動作を追従 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | コード | [コード](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**：robot_lab の拡張、Isaac Lab に動作模倣の学習タスクを追加 | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | コード | [コード](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**：SMPL-X や他ロボットの動作を人型にリターゲット、この機種の専用設定付き | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | コード | [コード](https://github.com/ccrpRepo/robot_retargeter) |
-| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**：HU_D03 モデル向けの歩行と動作模倣ポリシー、mjlab で学習（ベトナム語） | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | コード | [コード](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**：ウェブのダンス動画を Oli を含む 12 機種のヒューマノイドにリターゲット、MuJoCo で描画 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | コード | [コード](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：グラフ条件付き拡散モデルで、構造の異なるロボット間で同じ動作をリターゲット | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
 ## マニピュレーション
@@ -80,14 +79,12 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：AI エージェントが MuJoCo モデルの読み込み、関節制御、ポリシー実行を行える MCP サーバー | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [コード](https://github.com/sandraschi/limx-robotics-mcp) |
-| <a id="p-roqsim"></a>**roqsim**：プラグイン式 MuJoCo シミュレーション基盤、同梱ヒューマノイドに Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [コード](https://github.com/cps-test-lab/roqsim) |
 
 ### モデルとモーションデータ
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**：接触を考慮した人の動作のリターゲット、17 機種に対応しこの機種のモデルを同梱 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [コード](https://github.com/tmjeong1103/RIMKit) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 教育と競技会
 

@@ -10,26 +10,26 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **161** projects and partnerships around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **157** projects and partnerships around LimX robots and the LimX SDK, **104** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;projects | 35&nbsp;projects | 30&nbsp;projects | 8&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 90&nbsp;projects | 34&nbsp;projects | 27&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 ## Contents
 
 - [Before you start](#before-you-start)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 51
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 50
   - [Terrain & perceptive locomotion](#terrain--perceptive-locomotion)
   - [RL training & sim-to-real](#rl-training--sim-to-real)
   - [Model-based control](#model-based-control)
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
-- [Perception & navigation](#perception--navigation) — 14
+- [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 11
 - [Embodied AI](#embodied-ai) — 9
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 24
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 22
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
@@ -131,9 +131,8 @@ _51 entries in 4 groups: 20 papers · 31 code_
 | <a id="p-tron1-wf-mimic"></a>**Wheel-Foot TRON1 Dance Mimic**: imitates human dance on the wheel-foot biped and studies which motions the morphology can do | `TRON1`&nbsp;*sim* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | Code | [code](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**: robot_lab extension that adds motion-mimic training tasks in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**: retargets SMPL-X or other robots' motion to humanoids, with a dedicated config for this robot | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
-| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**: locomotion and motion-imitation policies for the HU_D03 model, trained in mjlab (Vietnamese) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | Code | [code](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: graph-conditioned diffusion model that retargets one motion across robots of different structure | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 
 ## Perception & navigation
@@ -150,7 +149,6 @@ _14 entries: 3 papers · 11 code_
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: outdoor waypoint navigation with GNSS and FAST-LIO localization, plus local collision safety | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | Code | [code](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**Wheel-Foot TRON1 LiDAR Odometry**: adds 2D LiDAR odometry (RF2O) to correct wheel odometry when a wheel slips or sticks | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_ws) |
 | <a id="p-wave-go"></a>**WAVE-Go**: world-model action adaptation for long-range navigation, real Go2-W plus a Luna rollout in MuJoCo | `Luna`&nbsp;*sim* | BIT, HKU, LimX et al. | 2026 | Code | [paper](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[code](https://github.com/vigorlee/wave-go) |
-| <a id="p-hourglass-cross-embodiment-planning"></a>**Hourglass**: cross-embodiment motion planning with a body-agnostic world model, TRON1 among seven training robots | `TRON1`&nbsp;*sim* | Nanyang Technological University | 2026 | Paper | [paper](https://arxiv.org/abs/2610.41330) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: Gazebo and ROS 2 setup for autonomous navigation with an onboard Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: ROS navigation with A* global planning and NeuPAN end-to-end local obstacle avoidance | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: PCT planner 3D navigation through rooms and up stairs with a Mid360 LiDAR, on the real robot | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
@@ -209,11 +207,10 @@ _24 tools in 4 groups_
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: replays recorded robot and Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
-| <a id="p-metalsim"></a>**MetalSim**: robot simulation and learning stack for Apple-silicon GPUs, matching Isaac Lab tasks, with a TRON1 scene | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [code](https://github.com/pulipakaa24/MetalSim) |
+| <a id="p-metalsim"></a>**MetalSim**: Apple-silicon simulation and learning stack with a dedicated TRON1 module: simulator, controllers and robot bridge | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [code](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**: containers for ROS 2 with LimX Gazebo, Isaac Lab, LeIsaac and MuJoCo on one host | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [code](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: MCP server that lets AI agents load MuJoCo models, control joints and run policies | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**TRON Docker Sim**: runs the ROS 2 Gazebo simulation in a container with GUI forwarding | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [code](https://github.com/The-RoboTUM/tron_docker_sim) |
-| <a id="p-roqsim"></a>**roqsim**: plugin-driven MuJoCo simulation framework, Oli among its bundled humanoids | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [code](https://github.com/cps-test-lab/roqsim) |
 | <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**: Unity RL training platform that ships TRON1 walking, driving and jumping policies | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [paper](https://arxiv.org/abs/2503.05146)&nbsp;·&nbsp;[code](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**: LCM bridge that connects a nominal robot controller to the MuJoCo simulator | `TRON1` | [UMich ARCaD Lab](https://github.com/ARCaD-Lab-UM) | 2024 | [code](https://github.com/ARCaD-Lab-UM/arc-bridge) |
 
@@ -236,7 +233,6 @@ _24 tools in 4 groups_
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**: contact-aware retargeting of human motion to 17 humanoid models, with this robot's model included | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [code](https://github.com/tmjeong1103/RIMKit) |
 | <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: assembly models fitted with BrainCo Revo3 dexterous hands, ready for training | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: web tool to browse TRON product models, locate parts and measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## Education & competitions
@@ -342,10 +338,10 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **35** | 1 |  | 3 | 6 | 6 | 8 | 11 |
-| [`Oli`](robots/Oli.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
-| [`Luna`](robots/Luna.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
+| [`TRON1`](robots/TRON1.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
+| [`TRON2`](robots/TRON2.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
+| [`Oli`](robots/Oli.md) | **27** | 13 |  | 2 | 2 | 2 | 2 | 6 |
+| [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  |  |  | 4 |
 | [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1.md) | **4** | 2 |  | 1 |  |  |  | 1 |
 

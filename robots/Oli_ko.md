@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **30**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **27**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,10 +14,10 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 ## 목차
 
-- [보행 및 전신 제어](#보행-및-전신-제어) — 14
+- [보행 및 전신 제어](#보행-및-전신-제어) — 13
 - [매니퓰레이션](#매니퓰레이션) — 2
 - [임바디드 AI](#임바디드-ai) — 2
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 4
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 2
 - [교육 및 대회](#교육-및-대회) — 2
 - [산업 적용](#산업-적용) — 6
 
@@ -54,9 +54,8 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: 월드 모델 전신 제어 SuperMimic 적용판, 정책 하나로 40개 동작 추종 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 코드 | [코드](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**: robot_lab 확장, Isaac Lab에 동작 모방 학습 과제 추가 | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | 코드 | [코드](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**: SMPL-X나 다른 로봇의 동작을 휴머노이드로 리타게팅, 이 기종 전용 설정 포함 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 코드 | [코드](https://github.com/ccrpRepo/robot_retargeter) |
-| <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX Dynamics | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**: HU_D03 모델용 보행·동작 모방 정책, mjlab에서 학습 (베트남어) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 코드 | [코드](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**: 웹 댄스 영상을 Oli를 포함한 휴머노이드 12종에 리타게팅, MuJoCo로 렌더링 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 코드 | [코드](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: 그래프 조건부 확산 모델로 구조가 다른 로봇들에 같은 동작을 리타게팅 | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2505.20857) |
 
 ## 매니퓰레이션
@@ -80,14 +79,12 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: AI 에이전트가 MuJoCo 모델 로드, 관절 제어, 정책 실행을 할 수 있는 MCP 서버 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [코드](https://github.com/sandraschi/limx-robotics-mcp) |
-| <a id="p-roqsim"></a>**roqsim**: 플러그인 방식 MuJoCo 시뮬레이션 프레임워크, 기본 휴머노이드에 Oli 포함 | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [코드](https://github.com/cps-test-lab/roqsim) |
 
 ### 모델 및 모션 데이터
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**: 접촉을 고려한 사람 동작 리타게팅, 휴머노이드 17종 지원, 이 기종 모델 포함 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [코드](https://github.com/tmjeong1103/RIMKit) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: TRON1, TRON2, Oli, Luna 모델을 한 줄로 불러오기 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [코드](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 교육 및 대회
 

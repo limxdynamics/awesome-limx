@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **35** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **34** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,7 +17,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
 - [Manipulation](#manipulation) — 3
 - [Embodied AI](#embodied-ai) — 6
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 6
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 8
 - [Industry deployments](#industry-deployments) — 11
 
@@ -70,7 +70,6 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
 | <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: assembly models fitted with BrainCo Revo3 dexterous hands, ready for training | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: web tool to browse TRON product models, locate parts and measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## Education & competitions

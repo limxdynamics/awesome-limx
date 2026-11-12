@@ -10,26 +10,26 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **161** 个项目与合作，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **157** 个项目与合作，其中 **104** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;条 | 35&nbsp;条 | 30&nbsp;条 | 8&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 90&nbsp;条 | 34&nbsp;条 | 27&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
 - [动手之前](#动手之前)
-- [运动控制](#运动控制) — 51
+- [运动控制](#运动控制) — 50
   - [地形与感知行走](#地形与感知行走)
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
-- [感知与导航](#感知与导航) — 14
+- [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
 - [具身智能](#具身智能) — 9
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 24
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 22
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
@@ -132,7 +132,6 @@ _51 个条目，分 4 组：20 篇论文 · 31 个代码_
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，带该机型的专用配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**：面向 HU_D03 型号的行走与动作模仿策略，在 mjlab 中训练（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：以图结构为条件的扩散模型，把同一段动作重定向到结构不同的机器人上 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 感知与导航
@@ -149,7 +148,6 @@ _14 个条目：3 篇论文 · 11 个代码_
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：基于 GNSS 与 FAST-LIO 融合定位的户外航点导航，带局部防碰撞 | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | 代码 | [代码](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**Wheel-Foot TRON1 LiDAR Odometry**：外接二维激光雷达，用 RF2O 激光里程计修正单轮打滑或卡住时的轮式里程计误差 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | 代码 | [代码](https://github.com/F-Morry/limx_ws) |
 | <a id="p-wave-go"></a>**WAVE-Go**：世界模型动作适配的长距离导航，Go2-W 实机验证，并在 MuJoCo 中迁移到 Luna | `Luna`&nbsp;*仿真* | 北理工、港大、逐际动力等 | 2026 | 代码 | [论文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[代码](https://github.com/vigorlee/wave-go) |
-| <a id="p-hourglass-cross-embodiment-planning"></a>**Hourglass**：基于与机体无关的世界模型做跨机体运动规划，TRON1 是七款训练机器人之一 | `TRON1`&nbsp;*仿真* | 南洋理工大学 | 2026 | 论文 | [论文](https://arxiv.org/abs/2610.41330) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：用机载 Jetson 做自主导航的 Gazebo 与 ROS 2 工程 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | 代码 | [代码](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**TRON1 上的 NeuPAN**：ROS 导航：A* 全局规划，NeuPAN 端到端局部避障 | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | 代码 | [代码](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**PCT 规划器 3D 导航**：用 Mid360 激光雷达和 PCT 规划器在室内和楼梯上做三维导航，实机验证 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | 代码 | [代码](https://github.com/81578823/3D_navigation_PCTplanner) |
@@ -208,11 +206,10 @@ _24 个工具，分 4 组_
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：在 Isaac Sim 中回放机器人与 Wuji 灵巧手的录制轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
-| <a id="p-metalsim"></a>**MetalSim**：面向 Apple 芯片 GPU 的机器人仿真与学习框架，对齐 Isaac Lab 任务，含 TRON1 场景 | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [代码](https://github.com/pulipakaa24/MetalSim) |
+| <a id="p-metalsim"></a>**MetalSim**：面向 Apple 芯片的仿真与学习框架，带 TRON1 专用模块：仿真器、控制器和实机桥接 | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [代码](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**：在一台主机上用容器运行 ROS 2 与 LimX Gazebo、Isaac Lab、LeIsaac 和 MuJoCo | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [代码](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：MCP 服务器，让 AI 智能体加载 MuJoCo 模型、控制关节并运行策略 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**TRON Docker Sim**：在容器里运行 ROS 2 Gazebo 仿真，支持图形界面转发 | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [代码](https://github.com/The-RoboTUM/tron_docker_sim) |
-| <a id="p-roqsim"></a>**roqsim**：插件式 MuJoCo 仿真框架，内置人形机器人包含 Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [代码](https://github.com/cps-test-lab/roqsim) |
 | <a id="p-gewu-unity-rl-playground"></a>**Gewu (Unity RL Playground)**：Unity 强化学习训练平台，自带 TRON1 行走、轮行和跳跃策略 | `TRON1` | [loongOpen](https://github.com/loongOpen) | 2025 | [论文](https://arxiv.org/abs/2503.05146)&nbsp;·&nbsp;[代码](https://github.com/loongOpen/Unity-RL-Playground) |
 | <a id="p-arc-bridge"></a>**ARC Bridge**：通过 LCM 把机器人控制器接到 MuJoCo 仿真器的桥接工具 | `TRON1` | [密歇根大学 ARCaD 实验室](https://github.com/ARCaD-Lab-UM) | 2024 | [代码](https://github.com/ARCaD-Lab-UM/arc-bridge) |
 
@@ -235,7 +232,6 @@ _24 个工具，分 4 组_
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**：接触感知的人体动作重定向，支持 17 款人形机器人，含该机型模型 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [代码](https://github.com/tmjeong1103/RIMKit) |
 | <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：装配 BrainCo Revo3 灵巧手的整机模型，可直接用于训练 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：网页工具：浏览 TRON 产品模型、定位零件并测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教学与竞赛
@@ -341,10 +337,10 @@ _34 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **35** | 1 |  | 3 | 6 | 6 | 8 | 11 |
-| [`Oli`](robots/Oli_cn.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
-| [`Luna`](robots/Luna_cn.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
+| [`TRON1`](robots/TRON1_cn.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
+| [`TRON2`](robots/TRON2_cn.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
+| [`Oli`](robots/Oli_cn.md) | **27** | 13 |  | 2 | 2 | 2 | 2 | 6 |
+| [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  |  |  | 4 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1_cn.md) | **4** | 2 |  | 1 |  |  |  | 1 |
 

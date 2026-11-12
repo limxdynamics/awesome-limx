@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **30** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **27** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,10 +14,10 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 14
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 13
 - [Manipulation](#manipulation) — 2
 - [Embodied AI](#embodied-ai) — 2
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 4
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 2
 - [Education & competitions](#education--competitions) — 2
 - [Industry deployments](#industry-deployments) — 6
 
@@ -54,9 +54,8 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: SuperMimic world-model whole-body control, with one policy tracking 40 motions | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | Code | [code](https://github.com/liuskywalkerjskd/supermimic_oli) |
 | <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**: robot_lab extension that adds motion-mimic training tasks in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**: retargets SMPL-X or other robots' motion to humanoids, with a dedicated config for this robot | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
-| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**: locomotion and motion-imitation policies for the HU_D03 model, trained in mjlab (Vietnamese) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | Code | [code](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: graph-conditioned diffusion model that retargets one motion across robots of different structure | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 
 ## Manipulation
@@ -80,14 +79,12 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: MCP server that lets AI agents load MuJoCo models, control joints and run policies | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
-| <a id="p-roqsim"></a>**roqsim**: plugin-driven MuJoCo simulation framework, Oli among its bundled humanoids | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [code](https://github.com/cps-test-lab/roqsim) |
 
 ### Models & motion data
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**: contact-aware retargeting of human motion to 17 humanoid models, with this robot's model included | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [code](https://github.com/tmjeong1103/RIMKit) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## Education & competitions
 

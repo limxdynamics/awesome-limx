@@ -135,7 +135,7 @@ Owners can ask for removal at any time, for any reason, without explanation. We 
 ## House style
 
 - `README.md` in English, `README_cn.md` in Chinese, `README_ja.md` in Japanese and `README_ko.md` in Korean, with the same entries in all four. Submissions can be in any of these languages; the maintainers keep the other editions in step.
-- **Name**: a name people can read, in title case: the paper's short name (`FastStair`), the project's own name (`RoboDance`), or a plain description (`TRON1 Wheel GUI`). Not a repository path such as `tron1_wheel_gui`; the link shows that. A library known by its package name, such as `robot_descriptions.py`, keeps it.
+- **Name**: a name people can read, in title case: the paper's short name (`FastStair`), the project's own name (`MetalSim`), or a plain description (`TRON1 Wheel GUI`). Not a repository path such as `tron1_wheel_gui`; the link shows that. A library known by its package name, such as `legged_gym`, keeps it.
 - **Description**: what was done plus one detail that sets it apart, about 8 to 18 words, no full stop. Good: "replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost". Too short: "one-step action heads". Too long: a sentence listing every component.
 - Do not repeat the robot name in the description unless the variant matters (wheel-foot, sole-foot, dual-arm); the Robot column already says which robot.
 - Mark a source in Chinese, Japanese or Korean with its language when it differs from the edition's, e.g. `[news (zh)]` in the English edition. English sources are not marked.

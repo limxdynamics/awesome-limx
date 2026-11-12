@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **92** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **90** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,10 +15,10 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 ## 目次
 
 - [移動と全身制御](#移動と全身制御) — 32
-- [知覚とナビゲーション](#知覚とナビゲーション) — 13
+- [知覚とナビゲーション](#知覚とナビゲーション) — 12
 - [マニピュレーション](#マニピュレーション) — 6
 - [エンボディドAI](#エンボディドai) — 1
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 19
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 18
 - [教育と競技会](#教育と競技会) — 10
 - [産業応用](#産業応用) — 11
 
@@ -89,7 +89,6 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 | <a id="p-lightnav-0"></a>**LightNav-0**：VLM ベースのナビゲーションスタック、MPC 追従と Web パネル付き、Go2 と TRON1 に対応 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | コード | [論文](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[コード](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[モデル](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**：GNSS と FAST-LIO の融合測位による屋外ウェイポイント走行、局所的な衝突回避付き | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | コード | [コード](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**Wheel-Foot TRON1 LiDAR Odometry**：2D LiDAR の RF2O オドメトリで、車輪の空転や引っかかり時の車輪オドメトリ誤差を補正 | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | コード | [コード](https://github.com/F-Morry/limx_ws) |
-| <a id="p-hourglass-cross-embodiment-planning"></a>**Hourglass**：機体に依存しない世界モデルによるクロスエンボディメント動作計画、訓練用 7 機種に TRON1 | `TRON1`&nbsp;*sim* | 南洋理工大学 | 2026 | 論文 | [論文](https://arxiv.org/abs/2610.41330) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**：搭載した Jetson で自律走行するための Gazebo と ROS 2 環境 | `TRON1` | [enfff](https://github.com/enfff) | 2025 | コード | [コード](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**：A* による大域計画と NeuPAN のエンドツーエンド局所回避を組み合わせた ROS ナビゲーション | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | コード | [コード](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**：Mid360 LiDAR と PCT プランナーで室内と階段を 3D ナビゲーション、実機で検証 | `TRON1` | [81578823](https://github.com/81578823) | 2025 | コード | [コード](https://github.com/81578823/3D_navigation_PCTplanner) |
@@ -128,7 +127,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-metalsim"></a>**MetalSim**：Apple シリコン GPU 向けのロボットシミュレーション・学習基盤、Isaac Lab の課題に対応し TRON1 シーン付き | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [コード](https://github.com/pulipakaa24/MetalSim) |
+| <a id="p-metalsim"></a>**MetalSim**：Apple シリコン向けシミュレーション・学習基盤、TRON1 専用モジュール付き：シミュレータ、制御器、実機ブリッジ | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [コード](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**：ROS 2 と LimX Gazebo、Isaac Lab、LeIsaac、MuJoCo を 1 台のホストでコンテナ実行 | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [コード](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：AI エージェントが MuJoCo モデルの読み込み、関節制御、ポリシー実行を行える MCP サーバー | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [コード](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**TRON Docker Sim**：ROS 2 の Gazebo シミュレーションをコンテナで動かし、GUI も転送 | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [コード](https://github.com/The-RoboTUM/tron_docker_sim) |
@@ -151,7 +150,6 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：TRON 製品モデルを閲覧し、部品を探して寸法を測る Web ツール | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [コード](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教育と競技会

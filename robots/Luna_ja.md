@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna を使った **8** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Luna を使った **7** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -16,7 +16,6 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 
 - [移動と全身制御](#移動と全身制御) — 2
 - [知覚とナビゲーション](#知覚とナビゲーション) — 1
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 1
 - [産業応用](#産業応用) — 4
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
@@ -28,21 +27,13 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**：事前学習済みの全身モーショントラッキングを、少ない適応で新しいヒューマノイドへ移植 | `Oli` `Luna` | LimX | 2026 | コード | [論文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[コード](https://github.com/Ming827/any2any_sonic2Oli) |
-| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX Dynamics | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**：テキストから動作を生成する運動学を考慮したマルチモーダル拡散 Transformer、生成動作を Oli と Luna の実機で実行 | `Oli` `Luna` | LimX | 2026 | 論文 | [プロジェクト](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2609.30761) |
 
 ## 知覚とナビゲーション
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-wave-go"></a>**WAVE-Go**：世界モデルによる行動適応で長距離ナビゲーション、Go2-W 実機と MuJoCo 上の Luna で検証 | `Luna`&nbsp;*sim* | BIT、HKU、LimX ほか | 2026 | コード | [論文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[コード](https://github.com/vigorlee/wave-go) |
-
-## ツール、シミュレーション、SDK
-
-### モデルとモーションデータ
-
-| プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
-|---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 産業応用
 

@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **35** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **34** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,7 +17,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [运动控制](#运动控制) — 1
 - [操作](#操作) — 3
 - [具身智能](#具身智能) — 6
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 6
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 5
 - [教学与竞赛](#教学与竞赛) — 8
 - [行业应用](#行业应用) — 11
 
@@ -70,7 +70,6 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：装配 BrainCo Revo3 灵巧手的整机模型，可直接用于训练 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：网页工具：浏览 TRON 产品模型、定位零件并测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教学与竞赛

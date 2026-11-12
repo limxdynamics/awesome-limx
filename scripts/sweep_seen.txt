@@ -484,3 +484,9 @@ gh:dmshsl/tron2_rl_deploy_python
 
 # News reviewed 2026-11-11: LimX's own program and company news, listed partners, unverified items.
 news:逐际动力启动具身智能产业学院共建计划 携手高校打造具身人才培养新范式
+
+# removed 2026-11-12: LimX robot is only one bundled asset (CONTRIBUTING multi-robot rule)
+gh:junyuan-fang/robodance
+gh:cps-test-lab/roqsim
+gh:robot-descriptions/robot_descriptions.py
+arxiv:2610.41330

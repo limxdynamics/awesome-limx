@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **92** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **90** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -15,10 +15,10 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 ## Contents
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 32
-- [Perception & navigation](#perception--navigation) — 13
+- [Perception & navigation](#perception--navigation) — 12
 - [Manipulation](#manipulation) — 6
 - [Embodied AI](#embodied-ai) — 1
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 19
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 18
 - [Education & competitions](#education--competitions) — 10
 - [Industry deployments](#industry-deployments) — 11
 
@@ -89,7 +89,6 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-lightnav-0"></a>**LightNav-0**: VLM navigation stack with MPC tracking and a web panel, adapters for Go2 and TRON1 | `TRON1` | [Light Origins](https://github.com/lightorigins) | 2026 | Code | [paper](https://arxiv.org/abs/2608.30935)&nbsp;·&nbsp;[code](https://github.com/lightorigins/LightNav-0)&nbsp;·&nbsp;[model](https://huggingface.co/LightOriginsHQ/LightNav-0) |
 | <a id="p-gps-tron1"></a>**GPS-TRON1**: outdoor waypoint navigation with GNSS and FAST-LIO localization, plus local collision safety | `TRON1` | [potatoHu-a](https://github.com/potatoHu-a) | 2026 | Code | [code](https://github.com/potatoHu-a/GPS-TRON1) |
 | <a id="p-wf_tron1a-lidar-navigation"></a>**Wheel-Foot TRON1 LiDAR Odometry**: adds 2D LiDAR odometry (RF2O) to correct wheel odometry when a wheel slips or sticks | `TRON1` | [F-Morry](https://github.com/F-Morry) | 2026 | Code | [code](https://github.com/F-Morry/limx_ws) |
-| <a id="p-hourglass-cross-embodiment-planning"></a>**Hourglass**: cross-embodiment motion planning with a body-agnostic world model, TRON1 among seven training robots | `TRON1`&nbsp;*sim* | Nanyang Technological University | 2026 | Paper | [paper](https://arxiv.org/abs/2610.41330) |
 | <a id="p-tron-1-struzzo"></a>**TRON-1 Struzzo**: Gazebo and ROS 2 setup for autonomous navigation with an onboard Jetson | `TRON1` | [enfff](https://github.com/enfff) | 2025 | Code | [code](https://github.com/enfff/tron1-gazebo-ros2) |
 | <a id="p-neupan-on-tron1"></a>**NeuPAN on TRON1**: ROS navigation with A* global planning and NeuPAN end-to-end local obstacle avoidance | `TRON1` | [WikHClean](https://github.com/WikHClean) | 2025 | Code | [code](https://github.com/WikHClean/-ROS1-NeuPAN-TRON1-) |
 | <a id="p-3d-navigation-with-pct-planner"></a>**3D Navigation with PCT Planner**: PCT planner 3D navigation through rooms and up stairs with a Mid360 LiDAR, on the real robot | `TRON1` | [81578823](https://github.com/81578823) | 2025 | Code | [code](https://github.com/81578823/3D_navigation_PCTplanner) |
@@ -128,7 +127,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-metalsim"></a>**MetalSim**: robot simulation and learning stack for Apple-silicon GPUs, matching Isaac Lab tasks, with a TRON1 scene | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [code](https://github.com/pulipakaa24/MetalSim) |
+| <a id="p-metalsim"></a>**MetalSim**: Apple-silicon simulation and learning stack with a dedicated TRON1 module: simulator, controllers and robot bridge | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [code](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**: containers for ROS 2 with LimX Gazebo, Isaac Lab, LeIsaac and MuJoCo on one host | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [code](https://github.com/Aklva/robot-sim-docker) |
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: MCP server that lets AI agents load MuJoCo models, control joints and run policies | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-tron_docker_sim"></a>**TRON Docker Sim**: runs the ROS 2 Gazebo simulation in a container with GUI forwarding | `TRON1` | [The-RoboTUM](https://github.com/The-RoboTUM) | 2026 | [code](https://github.com/The-RoboTUM/tron_docker_sim) |
@@ -151,7 +150,6 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: web tool to browse TRON product models, locate parts and measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## Education & competitions

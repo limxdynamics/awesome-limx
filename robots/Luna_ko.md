@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna로 만든 **8**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Luna로 만든 **7**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -16,7 +16,6 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 2
 - [인지 및 내비게이션](#인지-및-내비게이션) — 1
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 1
 - [산업 적용](#산업-적용) — 4
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
@@ -28,21 +27,13 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**: 사전학습된 전신 모션 트래킹 모델을 적은 적응으로 새 휴머노이드에 이전 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
-| <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX Dynamics | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
 
 ## 인지 및 내비게이션
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-wave-go"></a>**WAVE-Go**: 월드 모델 행동 적응 기반 장거리 내비게이션, Go2-W 실기와 MuJoCo의 Luna로 검증 | `Luna`&nbsp;*sim* | BIT, HKU, LimX 외 | 2026 | 코드 | [논문](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[코드](https://github.com/vigorlee/wave-go) |
-
-## 도구, 시뮬레이션 및 SDK
-
-### 모델 및 모션 데이터
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
-|---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: TRON1, TRON2, Oli, Luna 모델을 한 줄로 불러오기 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [코드](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 산업 적용
 

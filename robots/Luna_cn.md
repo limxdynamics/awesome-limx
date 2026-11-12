@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> 基于 Luna 的 **8** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Luna 的 **7** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -16,7 +16,6 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 
 - [运动控制](#运动控制) — 2
 - [感知与导航](#感知与导航) — 1
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 1
 - [行业应用](#行业应用) — 4
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
@@ -35,14 +34,6 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-wave-go"></a>**WAVE-Go**：世界模型动作适配的长距离导航，Go2-W 实机验证，并在 MuJoCo 中迁移到 Luna | `Luna`&nbsp;*仿真* | 北理工、港大、逐际动力等 | 2026 | 代码 | [论文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[代码](https://github.com/vigorlee/wave-go) |
-
-## 工具、仿真与 SDK
-
-### 模型与动作数据
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
-|---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 行业应用
 

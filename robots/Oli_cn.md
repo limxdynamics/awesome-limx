@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **30** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **27** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,10 +14,10 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 ## 目录
 
-- [运动控制](#运动控制) — 14
+- [运动控制](#运动控制) — 13
 - [操作](#操作) — 2
 - [具身智能](#具身智能) — 2
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 4
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 2
 - [教学与竞赛](#教学与竞赛) — 2
 - [行业应用](#行业应用) — 6
 
@@ -56,7 +56,6 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | <a id="p-robot-retargeter"></a>**Robot Retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，带该机型的专用配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**Earlier-Generation Oli RL in mjlab**：面向 HU_D03 型号的行走与动作模仿策略，在 mjlab 中训练（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**RoboDance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
 | <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：以图结构为条件的扩散模型，把同一段动作重定向到结构不同的机器人上 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 操作
@@ -80,14 +79,12 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：MCP 服务器，让 AI 智能体加载 MuJoCo 模型、控制关节并运行策略 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
-| <a id="p-roqsim"></a>**roqsim**：插件式 MuJoCo 仿真框架，内置人形机器人包含 Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [代码](https://github.com/cps-test-lab/roqsim) |
 
 ### 模型与动作数据
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
 | <a id="p-rimkit"></a>**RIMKit**：接触感知的人体动作重定向，支持 17 款人形机器人，含该机型模型 | `Oli` | [Taemoon Jeong](https://github.com/tmjeong1103) | 2026 | [代码](https://github.com/tmjeong1103/RIMKit) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## 教学与竞赛
 

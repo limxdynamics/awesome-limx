@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **35**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **34**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -17,7 +17,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
 - [매니퓰레이션](#매니퓰레이션) — 3
 - [임바디드 AI](#임바디드-ai) — 6
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 5
 - [교육 및 대회](#교육-및-대회) — 8
 - [산업 적용](#산업-적용) — 11
 
@@ -70,7 +70,6 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
 | <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: BrainCo Revo3 손을 단 조립 모델, 바로 학습에 사용 가능 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [코드](https://github.com/ENDLESS0321/tron2_revo3_description) |
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: TRON1, TRON2, Oli, Luna 모델을 한 줄로 불러오기 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [코드](https://github.com/robot-descriptions/robot_descriptions.py) |
 | <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: TRON 제품 모델을 보고 부품을 찾아 치수를 재는 웹 도구 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [코드](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 교육 및 대회

@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> **8** projects built on Luna, from the [Awesome LimX](../README.md) list.
+> **7** projects built on Luna, from the [Awesome LimX](../README.md) list.
 
 Official Luna repositories: [luna-description](https://github.com/limxdynamics/luna-description)
 
@@ -16,7 +16,6 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 2
 - [Perception & navigation](#perception--navigation) — 1
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 1
 - [Industry deployments](#industry-deployments) — 4
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
@@ -28,21 +27,13 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-any2any"></a>**Any2Any**: transfers a pretrained whole-body tracking model to new humanoids with little adaptation | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
-| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
+| <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 
 ## Perception & navigation
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-wave-go"></a>**WAVE-Go**: world-model action adaptation for long-range navigation, real Go2-W plus a Luna rollout in MuJoCo | `Luna`&nbsp;*sim* | BIT, HKU, LimX et al. | 2026 | Code | [paper](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[code](https://github.com/vigorlee/wave-go) |
-
-## Tools, simulation & SDK
-
-### Models & motion data
-
-| Project | Robot | Author / Org | Year | Links |
-|---|---|---|---|---|
-| <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
 
 ## Industry deployments
 
