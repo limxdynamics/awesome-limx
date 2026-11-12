@@ -349,7 +349,7 @@ _34 个条目，分 6 组_
 
 ## 参与贡献
 
-欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按时间从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**），还是可以阅读的（**论文**）。
+欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按时间从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**）、可以阅读的（**论文**），还是媒体报道或公告（**报道**）。
 
 收录不代表逐际动力背书，权利归原作者所有。项目所有者可随时要求移除，无需说明理由。
 

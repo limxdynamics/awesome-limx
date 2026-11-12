@@ -349,7 +349,7 @@ _34 件（6 グループ）_
 
 ## コントリビュート
 
-自薦も他薦も歓迎します。[投稿フォーム](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、Pull Request、またはメール [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) でお送りください。英語・中国語・日本語・韓国語のどれでも構いません。収録基準は [CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。各カテゴリは新しい順に並んでいます。「種別」列は読者が得られるものを示します：すぐ動かせるもの（**コード**）、手順に沿って学べるもの（**チュートリアル**）、読むもの（**論文**）。
+自薦も他薦も歓迎します。[投稿フォーム](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、Pull Request、またはメール [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) でお送りください。英語・中国語・日本語・韓国語のどれでも構いません。収録基準は [CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。各カテゴリは新しい順に並んでいます。「種別」列は読者が得られるものを示します：すぐ動かせるもの（**コード**）、手順に沿って学べるもの（**チュートリアル**）、読むもの（**論文**）、メディア報道や発表（**報道**）。
 
 掲載は LimX による推奨を意味するものではなく、権利はすべて原作者に帰属します。掲載の取り下げは、理由を問わずいつでも依頼できます。
 

@@ -349,7 +349,7 @@ _34개 (6개 그룹)_
 
 ## 기여하기
 
-자기 추천과 타인 추천 모두 환영합니다. [제출 양식](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), Pull Request, 또는 이메일 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 보내 주세요. 영어, 중국어, 일본어, 한국어 모두 괜찮습니다. 수록 기준은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요. 각 분류는 최신순으로 정렬되어 있습니다. '유형' 열은 독자가 얻을 수 있는 것을 나타냅니다: 바로 실행할 수 있는 것(**코드**), 따라 배울 수 있는 것(**튜토리얼**), 읽을 수 있는 것(**논문**).
+자기 추천과 타인 추천 모두 환영합니다. [제출 양식](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), Pull Request, 또는 이메일 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 보내 주세요. 영어, 중국어, 일본어, 한국어 모두 괜찮습니다. 수록 기준은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요. 각 분류는 최신순으로 정렬되어 있습니다. '유형' 열은 독자가 얻을 수 있는 것을 나타냅니다: 바로 실행할 수 있는 것(**코드**), 따라 배울 수 있는 것(**튜토리얼**), 읽을 수 있는 것(**논문**), 언론 보도나 발표(**보도**).
 
 수록은 LimX의 보증을 의미하지 않으며 모든 권리는 원저작자에게 있습니다. 소유자는 이유와 관계없이 언제든 삭제를 요청할 수 있습니다.
 

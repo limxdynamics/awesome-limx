@@ -372,8 +372,12 @@ NEWS_KINDS = (("partnership", ("合作", "签约", "携手", "联合", "战略",
 
 def partner_names(known_text):
     """Names in the industry entries (title and author), to flag news about a listed partner."""
-    generic = {"limx", "limx dynamics", "逐际动力", "tron1", "tron2", "oli", "luna", "w1", "p1", "japan", "korea",
-               "china", "germany", "us", "日本", "韩国", "德国", "美国", "중국", "일본", "한국"}
+    generic = {"limx", "limx dynamics", "逐际动力", "tron1", "tron2", "oli", "luna", "w1", "p1", "cl-1",
+               # regions, in all four languages, in case one is written outside brackets
+               "china", "japan", "korea", "south korea", "germany", "hong kong", "taiwan", "singapore", "us", "usa", "uk",
+               "中国", "日本", "韩国", "德国", "香港", "台湾", "新加坡", "美国", "英国",
+               "韓国", "ドイツ", "米国", "アメリカ", "中國", "台湾", "シンガポール", "イギリス",
+               "중국", "일본", "한국", "독일", "홍콩", "대만", "싱가포르", "미국", "영국"}
     names = {}
     for text in known_text:
         m = re.search(r"^## (?:Industry deployments|行业应用|産業応用|산업 적용)\s*$", text, re.M)
@@ -381,7 +385,11 @@ def partner_names(known_text):
         sec = sec.split("\n## ")[0]
         for m in re.finditer(r'<a id="p-[^"]*"></a>\*\*(.+?)\*\*[^|]*\|[^|]*\|([^|]*)\|', sec):
             entry = m.group(1)
-            for chunk in re.split(r"[（）()、,，/]| and | et al\.?", re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", entry + "," + m.group(2))):
+            # Bracketed parts are regions or alternate names ("TRON K.K. (Japan)", "MYBOTSHOP GmbH (Germany)"):
+            # drop them, or every headline naming a region would look like a listed partner.
+            plain = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", entry + "," + m.group(2))
+            plain = re.sub(r"[（(][^（）()]*[)）]", " ", plain)
+            for chunk in re.split(r"[、,，/]| and | et al\.?", plain):
                 c = chunk.strip(" *:：")
                 if c.lower() in generic or len(c) < 2 or (c.isascii() and len(c) < 4):
                     continue
@@ -753,7 +761,7 @@ def report(results, wanted, since, partial=(), stats=None):
              + (f" Only items touched since {since}." if since else ""), "",
              "A keyword hit is not proof. Open each one and check that it really uses the robot before listing it.",
              "Add the ones that fit first. Then run `python scripts/find_candidates.py --mark-seen` so the rest stop",
-             "showing up; pass `--keep url1,url2` for any you still mean to come back to.", ""]
+             "showing up; pass `--keep` with the keys (shown under each candidate) or URLs of any you mean to come back to.", ""]
     for key, items in results.items():
         label, _, metric = SOURCES[key]
         lines += [f"## {label}: {len(items)}", ""]
@@ -778,7 +786,8 @@ def report(results, wanted, since, partial=(), stats=None):
         lines += [head, "|" + "---|" * (head.count("|") - 1)]
         for c in items:
             note = (" — " + c["note"].replace("|", "/")) if c["note"] else ""
-            row = f"| [{c['title'].replace('|', '/')}]({c['url']}){note} | {' '.join(c['robots']) or '?'} | "
+            row = (f"| [{c['title'].replace('|', '/')}]({c['url']}){note}<br><sub>`{c['key'].replace('|', '/')}`</sub> | "
+                   f"{' '.join(c['robots']) or '?'} | ")
             if metric:
                 row += f"{c['stars'] if c['stars'] is not None else ''} | "
             row += f"{c['date']} | {c['why'].replace('|', '/')[:120]} |"
@@ -788,8 +797,10 @@ def report(results, wanted, since, partial=(), stats=None):
 
 
 def key_of(x):
-    """Turn a URL or owner/repo into the key the report uses."""
+    """Turn a URL, owner/repo or a key from the report into the key the report uses."""
     x = x.strip().rstrip("/")
+    if re.match(r"(news|gh|gitee|hf|arxiv|doi|s2|openalex|title):", x, re.I):
+        return x.lower()
     m = re.search(r"github\.com/([\w.-]+/[\w.-]+)", x)
     if m:
         return "gh:" + m.group(1).lower()
