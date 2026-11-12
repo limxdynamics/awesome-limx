@@ -63,7 +63,7 @@ order - these are LimX's official repositories, not community projects.
 
 ## Locomotion & whole-body control
 
-_51 entries in 4 groups: 20 papers · 31 code_
+_50 entries in 4 groups: 20 papers · 30 code_
 
 ### Terrain & perceptive locomotion
 
@@ -137,7 +137,7 @@ _51 entries in 4 groups: 20 papers · 31 code_
 
 ## Perception & navigation
 
-_14 entries: 3 papers · 11 code_
+_13 entries: 2 papers · 11 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
@@ -191,7 +191,7 @@ _9 entries: 2 papers · 7 code_
 
 ## Tools, simulation & SDK
 
-_24 tools in 4 groups_
+_22 tools in 4 groups_
 
 ### Training frameworks
 
