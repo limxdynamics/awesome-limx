@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **162** projects and partnerships around LimX robots and the LimX SDK, **108** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **161** projects and partnerships around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;projects | 36&nbsp;projects | 30&nbsp;projects | 8&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 92&nbsp;projects | 35&nbsp;projects | 30&nbsp;projects | 8&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 ## Contents
 
@@ -27,7 +27,7 @@
   - [Model-based control](#model-based-control)
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
 - [Perception & navigation](#perception--navigation) — 14
-- [Manipulation](#manipulation) — 12
+- [Manipulation](#manipulation) — 11
 - [Embodied AI](#embodied-ai) — 9
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 24
   - [Training frameworks](#training-frameworks)
@@ -45,7 +45,7 @@
 - [By robot](#by-robot)
 - [Contributing](#contributing)
 
-<sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
+<sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot · **—** not tied to one robot</sub>
 
 ## Before you start
 
@@ -56,8 +56,8 @@ order - these are our own repositories, not community projects.
 |---|---|---|
 | 1 · Models | URDF, MJCF and USD for your robot | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
 | 2 · Interface | Low-level motion SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
-| 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
-| 4 · Deploy | ONNX runtime, ROS 2, C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
+| 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo sim-to-sim: [TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
+| 4 · Deploy | ONNX runtime, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: no public deploy repo yet |
 
 **Built something with a LimX robot?** Add it to the list — [submit a project](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml) (a link is enough), or read [CONTRIBUTING.md](CONTRIBUTING.md) first. Links only; your code stays in your own repository.
 
@@ -159,17 +159,16 @@ _14 entries: 3 papers · 11 code_
 
 ## Manipulation
 
-_12 entries: 5 papers · 7 code_
+_11 entries: 5 papers · 6 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**: human-robot collaborative carrying, TRON2 port | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-holistic-loco-manipulation"></a>**Holistic Loco-Manipulation**: TRON1 with an arm | `TRON1` | ZJU-UIUC, LimX | 2026 | Paper | [paper](https://arxiv.org/abs/2609.18930) |
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>**TRON1-to-UR5e Bottle Transfer**: ROS 2 and MuJoCo | `TRON1`&nbsp;*sim* | [Centaucyan](https://github.com/Centaucyan) | 2026 | Code | [code](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env) |
-| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two wheel-legged robots carry a load | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
+| <a id="p-cooperative-transportation"></a>**Cooperative Transportation**: two robots carry a load together: wheel-foot TRON1 or TRON2 pairs, plus a TRON2 platform with LimX SDK interfaces | `TRON1` `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[code](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-cwi"></a>**CWI**: whole-body imitation for loco-manipulation | `Oli` | LimX, HKU et al. | 2026 | Paper | [project](https://cwi-ral.github.io/CWI-RAL-Webpage/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2606.27676) |
 | <a id="p-arm-tron"></a>**Arm-TRON**: reconfigurable biped with an arm | `TRON1` | SUSTech, ZJU et al. | 2026 | Paper | [paper](https://doi.org/10.1109/TMECH.2026.3727546) |
-| <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**: research platform for two TRON2 robots carrying a load together, MuJoCo with LimX SDK interfaces | `TRON2`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**: hierarchical NMPC that lets wheel-foot TRON1 slide objects with its wheeled legs, RA-L | `TRON1` | University of Michigan | 2026 | Paper | [paper](https://arxiv.org/abs/2606.19233) |
 | <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**: drives both arms of a dual-arm TRON2 from OAK-D hand and arm tracking, with an ORCA hand and a pipe-drilling scene branded for Elecnor (Spanish) | `TRON2`&nbsp;*sim* | [Aremanky](https://github.com/Aremanky) | 2026 | Code | [code](https://github.com/Aremanky/Teleoperacion-tron-2) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**: UMI skills with an ARX5 arm on a real TRON1 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | Code | [code](https://github.com/Czy213hd/umi-on-tron-lab) |
@@ -269,6 +268,8 @@ _18 entries: 2 papers · 15 code · 1 tutorial_
 
 _34 entries in 6 groups_
 
+This section is maintained by LimX: public reports, partner announcements and company open source, each with a link to its source.
+
 ### Deployments & products
 
 | Project | Robot | Author / Org | Year | Type | Links |
@@ -303,7 +304,7 @@ _34 entries in 6 groups_
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | News | [news](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
-| <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | News | [news](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+| <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | News | [news](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
 | <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: five Luna humanoids perform an autonomous group dance at the opening of the CHINA GT motorsport championship | `Luna` | CHINA GT | 2026 | News | [news](https://robotstart.info/article/2026/09/18/382434.html) |
 
 ### Strategic partnerships
@@ -324,7 +325,7 @@ _34 entries in 6 groups_
 | <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-mybotshop-germany"></a>**MYBOTSHOP**: sells and supports the P1 in Germany, with a user manual, network and ROS 2 setup guide and RMA service | `P1` | MYBOTSHOP GmbH (Germany) | 2026 | News | [news](https://www.docs.mybotshop.de/limx_p1.html) |
 | <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | News | [news](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**: official developer and distributor in Hong Kong, RL robots for utility and inspection work | `W1` `P1` | R2C2 Limited (Hong Kong) | 2024 | News | [news](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
+| <a id="p-r2c2-partnership"></a>**R2C2**: official developer and distributor in Hong Kong, RL robots for utility and inspection work | `W1` `P1` | R2C2 Limited (Hong Kong) | 2024 | News | [news](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[news](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 ### Awards & recognition
 
@@ -342,7 +343,7 @@ Entries per robot and section:
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **36** | 1 |  | 4 | 6 | 6 | 8 | 11 |
+| [`TRON2`](robots/TRON2.md) | **35** | 1 |  | 3 | 6 | 6 | 8 | 11 |
 | [`Oli`](robots/Oli.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
 | [`Luna`](robots/Luna.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
 | [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |

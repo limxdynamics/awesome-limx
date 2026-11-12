@@ -10,13 +10,13 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **162** 个项目与合作，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **161** 个项目与合作，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 92&nbsp;条 | 36&nbsp;条 | 30&nbsp;条 | 8&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 92&nbsp;条 | 35&nbsp;条 | 30&nbsp;条 | 8&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 ## 目录
 
@@ -27,7 +27,7 @@
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
 - [感知与导航](#感知与导航) — 14
-- [操作](#操作) — 12
+- [操作](#操作) — 11
 - [具身智能](#具身智能) — 9
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 24
   - [训练框架](#训练框架)
@@ -45,7 +45,7 @@
 - [按机型查找](#按机型查找)
 - [参与贡献](#参与贡献)
 
-<sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
+<sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过 · **—** 不针对具体机型</sub>
 
 ## 动手之前
 
@@ -55,8 +55,8 @@
 |---|---|---|
 | 1 · 模型 | 机器人的 URDF、MJCF 和 USD | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
 | 2 · 接口 | 低层运动 SDK、ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
-| 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) |
-| 4 · 部署 | ONNX 推理、ROS 2、C++ | [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
+| 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo 仿真验证：[TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
+| 4 · 部署 | ONNX 推理、ROS 2、C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna：暂未公开部署仓库 |
 
 **用 LimX 机器人做出过东西？** 欢迎加到这个清单里 —— [提交项目](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)（给个链接就够了），或先看[贡献说明](CONTRIBUTING_cn.md)。只放链接，代码留在你自己的仓里。
 
@@ -158,17 +158,16 @@ _14 个条目：3 篇论文 · 11 个代码_
 
 ## 操作
 
-_12 个条目：5 篇论文 · 7 个代码_
+_11 个条目：5 篇论文 · 6 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-cola-on-tron2"></a>**COLA on TRON2**：人机协同搬运，TRON2 移植 | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/COLA_TRON2) |
 | <a id="p-holistic-loco-manipulation"></a>**全身一体化移动操作**：TRON1 加机械臂 | `TRON1` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18930) |
 | <a id="p-tron1-to-ur5e-bottle-transfer"></a>**TRON1 与 UR5e 交接水瓶**：ROS 2 与 MuJoCo | `TRON1`&nbsp;*仿真* | [Centaucyan](https://github.com/Centaucyan) | 2026 | 代码 | [代码](https://github.com/Centaucyan/Proj_Transferring_bottle_from_tron1_to_ur5e_in_mujoco_env) |
-| <a id="p-cooperative-transportation"></a>**多机协同搬运**：两台轮足协同搬运 | `TRON1` `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation) |
+| <a id="p-cooperative-transportation"></a>**多机协同搬运**：两台机器人协同搬运：轮足 TRON1 或 TRON2 成对搬运，另有对接 LimX SDK 的 TRON2 研究平台 | `TRON1` `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/Multiple_Humanoid_Cooperative_Transportation)&nbsp;·&nbsp;[代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-cwi"></a>**CWI**：全身模仿移动操作 | `Oli` | 逐际动力、港大等 | 2026 | 论文 | [主页](https://cwi-ral.github.io/CWI-RAL-Webpage/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2606.27676) |
 | <a id="p-arm-tron"></a>**Arm-TRON**：可变足型双足加机械臂 | `TRON1` | 南方科大、浙江大学等 | 2026 | 论文 | [论文](https://doi.org/10.1109/TMECH.2026.3727546) |
-| <a id="p-tron2-cooperative-carrying"></a>**TRON2 Cooperative Carrying**：两台 TRON2 协同搬运的研究平台，MuJoCo 仿真并对接 LimX SDK | `TRON2`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/tron2-cooperative-carrying) |
 | <a id="p-mobile-pedipulation"></a>**Mobile Pedipulation**：分层 NMPC 让轮足 TRON1 用轮腿推移物体，RA-L 论文 | `TRON1` | 密歇根大学 | 2026 | 论文 | [论文](https://arxiv.org/abs/2606.19233) |
 | <a id="p-tron2-vision-teleoperation"></a>**TRON2 Vision Teleoperation**：用 OAK-D 相机跟踪人的手臂和手，遥操作双臂 TRON2，接 ORCA 灵巧手，附带 Elecnor 品牌的管道钻孔场景（西班牙语） | `TRON2`&nbsp;*仿真* | [Aremanky](https://github.com/Aremanky) | 2026 | 代码 | [代码](https://github.com/Aremanky/Teleoperacion-tron-2) |
 | <a id="p-umi-on-tron1"></a>**UMI on Tron1**：真机 TRON1 加 ARX5 机械臂部署 UMI 技能 | `TRON1` | [Czy213hd](https://github.com/Czy213hd) | 2025 | 代码 | [代码](https://github.com/Czy213hd/umi-on-tron-lab) |
@@ -268,6 +267,8 @@ _18 个条目：2 篇论文 · 15 个代码 · 1 个教程_
 
 _34 个条目，分 6 组_
 
+本节由 LimX 维护，收录公开报道、合作方公告和企业开源项目，每条都附有来源链接。
+
 ### 落地与产品
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
@@ -302,7 +303,7 @@ _34 个条目，分 6 组_
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
-| <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://mikekalil.com/blog/limx-dynamics-luna-humanoid-robot/) |
+| <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
 | <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道](https://robotstart.info/article/2026/09/18/382434.html) |
 
 ### 战略合作
@@ -323,7 +324,7 @@ _34 个条目，分 6 组_
 | <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
 | <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：在德国销售并支持 P1，提供用户手册、网络与 ROS 2 配置指南和返修服务 | `P1` | MYBOTSHOP GmbH（德国） | 2026 | 报道 | [报道](https://www.docs.mybotshop.de/limx_p1.html) |
 | <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9) |
+| <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [报道](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[报道](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 ### 奖项与认可
 
@@ -341,7 +342,7 @@ _34 个条目，分 6 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **92** | 32 | 13 | 6 | 1 | 19 | 10 | 11 |
-| [`TRON2`](robots/TRON2_cn.md) | **36** | 1 |  | 4 | 6 | 6 | 8 | 11 |
+| [`TRON2`](robots/TRON2_cn.md) | **35** | 1 |  | 3 | 6 | 6 | 8 | 11 |
 | [`Oli`](robots/Oli_cn.md) | **30** | 14 |  | 2 | 2 | 4 | 2 | 6 |
 | [`Luna`](robots/Luna_cn.md) | **8** | 2 | 1 |  |  | 1 |  | 4 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |
