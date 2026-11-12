@@ -29,7 +29,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-faststair"></a>**FastStair**: 계단 달려 오르기 | `Oli` | HIT, LimX et al. | 2026 | 논문 | [프로젝트](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[영상](https://youtu.be/SoLBK7VEGDo) |
+| <a id="p-faststair"></a>**FastStair**: 모델 기반 발판 계획과 강화학습을 결합해 계단을 달려 오름 | `Oli` | HIT, LimX et al. | 2026 | 논문 | [프로젝트](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[영상](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-ga-phl"></a>**GA-PHL**: 보행 패턴 적응형 인지 보행 | `Oli` | USTC, LimX et al. | 2025 | 논문 | [프로젝트](https://ga-phl.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2512.07464) |
 
 ### 강화학습 훈련 및 실기 전이
@@ -37,7 +37,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-vaps"></a>**VAPS**: 안전한 곡예 동작, 실기 옆돌기 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 논문 | [프로젝트](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.01397) |
-| <a id="p-pvp"></a>**PvP**: 데이터 효율적인 휴머노이드 RL | `Oli` | PolyU, USTC et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2512.13093) |
+| <a id="p-pvp"></a>**PvP**: 고유감각과 특권 상태 간 대조 학습으로 데이터 효율적인 전신 제어 | `Oli` | PolyU, USTC et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2512.13093) |
 
 ### 모델 기반 제어
 
@@ -49,15 +49,15 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**: 기체 간 전신 모션 트래킹 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**: 사전학습된 전신 모션 트래킹 모델을 적은 적응으로 새 휴머노이드에 이전 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**: mjlab 기반 적응형 컴플라이언스 모션 트래킹 | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: 하나의 정책으로 40개 동작 추종 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 코드 | [코드](https://github.com/liuskywalkerjskd/supermimic_oli) |
-| <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**: robot_lab 확장, Oli 모션 모방 태스크 추가 (Isaac Lab) | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | 코드 | [코드](https://github.com/song-hl/robot_lab_srl) |
-| <a id="p-robot-retargeter"></a>**robot_retargeter**: SMPL-X 또는 다른 로봇의 모션을 휴머노이드로 리타게팅, Oli 설정 포함 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 코드 | [코드](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**: robot_lab 확장, Oli 모션 모방 태스크 추가 (Isaac Lab) | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | 코드 | [코드](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**Robot Retargeter**: SMPL-X 또는 다른 로봇의 모션을 휴머노이드로 리타게팅, Oli 설정 포함 | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 코드 | [코드](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX Dynamics | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**: mjlab에서 이전 세대 Oli(HU_D03)의 보행·동작 모방 정책 학습 (베트남어) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 코드 | [코드](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**robodance**: 웹 댄스 영상을 Oli를 포함한 휴머노이드 12종에 리타게팅, MuJoCo로 렌더링 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 코드 | [코드](https://github.com/junyuan-fang/robodance) |
-| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: 확산 모델 기반 모션 리타게팅 | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2505.20857) |
+| <a id="p-robodance"></a>**RoboDance**: 웹 댄스 영상을 Oli를 포함한 휴머노이드 12종에 리타게팅, MuJoCo로 렌더링 | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 코드 | [코드](https://github.com/junyuan-fang/robodance) |
+| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: 그래프 조건부 확산 모델로 구조가 다른 로봇들에 같은 동작을 리타게팅 | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2505.20857) |
 
 ## 매니퓰레이션
 
@@ -71,7 +71,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: 음성 대화와 동작 제어 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 코드 | [코드](https://github.com/zhilin2025/oli_audio) |
-| <a id="p-hwam"></a>**HWAM**: 휴머노이드 월드 액션 모델 | `Oli` | LimX | 2026 | 논문 | [프로젝트](https://hwam.vercel.app/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.12026) |
+| <a id="p-hwam"></a>**HWAM**: 미래 상태와 행동을 함께 생성하는 휴머노이드 월드 액션 모델 | `Oli` | LimX | 2026 | 논문 | [프로젝트](https://hwam.vercel.app/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.12026) |
 
 ## 도구, 시뮬레이션 및 SDK
 
@@ -79,7 +79,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**: 시뮬레이션과 제어를 위한 MCP 서버 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [코드](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: 시뮬레이션과 제어를 위한 MCP 서버 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [코드](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-roqsim"></a>**roqsim**: 플러그인 방식 MuJoCo 시뮬레이션 프레임워크, 기본 휴머노이드에 Oli 포함 | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [코드](https://github.com/cps-test-lab/roqsim) |
 
 ### 모델 및 모션 데이터
@@ -102,7 +102,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 Oli, 공동 발표. LimX는 칭화대·즈위안·무어스레드 등과 함께 둥투커지 주도의 전자 아키텍처 연맹에도 참여 | `Oli` | 둥투커지(Kyland) | 2026 | 보도 | [보도](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[보도](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지의 Intewell OS와 AUTBUS 버스를 탑재한 Oli, 공동 발표. LimX는 칭화대·즈위안·무어스레드 등과 함께 둥투커지 주도의 전자 아키텍처 연맹에도 참여 | `Oli` | 둥투커지(Kyland) | 2026 | 보도 | [보도 (zh)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도 (zh)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[보도 (zh)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### 기업 오픈소스
 
@@ -114,19 +114,19 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도](https://news.ifeng.com/c/8vmGa3sP4u7) |
+| <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도 (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
 
 ### 전략적 제휴
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: 휴머노이드·임바디드 AI 산업학원 공동 설립, Oli를 핵심 교육 플랫폼으로 삼고 실습 공방 개소 | `Oli` | 닝보직업기술대학 | 2026 | 보도 | [보도](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: 휴머노이드·임바디드 AI 산업학원 공동 설립, Oli를 핵심 교육 플랫폼으로 삼고 실습 공방 개소 | `Oli` | 닝보직업기술대학 | 2026 | 보도 | [보도 (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### 지역 파트너 및 판매 채널
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 보도 | [보도](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Oli로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

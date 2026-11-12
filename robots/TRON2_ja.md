@@ -44,9 +44,9 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**：自分の TRON2 で FluxVLA を学習・デプロイ | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | コード | [コード](https://github.com/emoPointer/FluxVLA) |
-| <a id="p-acg-wam"></a>**ACG-WAM**：多指ハンド付きの世界行動モデル | `TRON2` | BIT, LimX | 2026 | コード | [プロジェクト](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[コード](https://github.com/RoboOpus/ACG-WAM) |
-| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**：1 ステップのアクションヘッド | `TRON2` | ZJU-UIUC, LimX | 2026 | 論文 | [論文](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**：Pi0.5 ポリシー | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | コード | [モデル](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-acg-wam"></a>**ACG-WAM**：行動条件付きの幾何潜在表現を予測する世界行動モデル、多指ハンドで検証 | `TRON2` | BIT, LimX | 2026 | コード | [プロジェクト](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[コード](https://github.com/RoboOpus/ACG-WAM) |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**：GR00T N1.7 の拡散アクションヘッドを 1 ステップの drifting ヘッドに置き換え、推論コストを削減 | `TRON2` | ZJU-UIUC, LimX | 2026 | 論文 | [論文](https://arxiv.org/abs/2609.18108) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**：双腕 TRON2 で衣類の送り込み作業向けにファインチューニングした Pi0.5 ポリシー | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | コード | [モデル](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**：データセットと GR00T ファインチューニングモデル | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | コード | [モデル](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
 | <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRON2 の生け花・布たたみ向け Pi0.5 チェックポイント | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | コード | [モデル](https://huggingface.co/toki1231) |
 
@@ -56,22 +56,22 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**tron2-wuji-bag-replay**：TRON2 と Wuji ハンドの軌道を Isaac Sim で再生 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：TRON2 と Wuji ハンドの軌道を Isaac Sim で再生 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### デプロイと制御
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**：TRON2 の頭部・手首カメラのキャリブレーションツール | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**：TRON2 の頭部・手首カメラのキャリブレーションツール | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2_camera_calibration) |
 | <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：TRON1・TRON2・Bunker 台車のカメラを切り替え、タスク段階ごとに画像を保存してデータ収集（中国語） | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [コード](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### モデルとモーションデータ
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**tron2_revo3_description**：BrainCo Revo3 ハンド付き TRON2 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [コード](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：BrainCo Revo3 ハンド付き TRON2 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [コード](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：TRON1、TRON2、Oli、Luna のモデルを 1 行で読み込み | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [コード](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**limx-3d-measurement-workbench**：TRON モデルの閲覧と寸法計測 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [コード](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：TRON モデルの閲覧と寸法計測 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [コード](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教育と競技会
 
@@ -92,7 +92,7 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：TRON2 ホイール脚を土台にしたテニスロボット、2026 ビリー・ジーン・キング・カップ ファイナルでプロと対戦 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 報道 | [報道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
+| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：TRON2 ホイール脚を土台にしたテニスロボット、2026 ビリー・ジーン・キング・カップ ファイナルでプロと対戦 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 報道 | [報道 (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：2 台の TRON2 が釘打ち機と鉄筋で縮小版のティルトアップ工法を実演 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 報道 | [動画](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[報道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
 | <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：WUJI TECH の Wuji Hand 2 を装着した TRON2 が、薬局デモで生薬の取り出し・計量・粉砕・梱包を実行 | `TRON2` | WUJI TECH | 2026 | 報道 | [報道](https://robotstart.info/article/2026/08/26/382326.html) |
 

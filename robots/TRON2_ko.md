@@ -44,9 +44,9 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: 내 TRON2에서 FluxVLA 학습 및 배포 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 코드 | [코드](https://github.com/emoPointer/FluxVLA) |
-| <a id="p-acg-wam"></a>**ACG-WAM**: 다관절 손을 쓰는 월드 액션 모델 | `TRON2` | BIT, LimX | 2026 | 코드 | [프로젝트](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[코드](https://github.com/RoboOpus/ACG-WAM) |
-| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: 원스텝 액션 헤드 | `TRON2` | ZJU-UIUC, LimX | 2026 | 논문 | [논문](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 정책 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 코드 | [모델](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-acg-wam"></a>**ACG-WAM**: 행동 조건부 기하 잠재 표현을 예측하는 월드 액션 모델, 다관절 손으로 검증 | `TRON2` | BIT, LimX | 2026 | 코드 | [프로젝트](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[코드](https://github.com/RoboOpus/ACG-WAM) |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: GR00T N1.7의 확산 액션 헤드를 원스텝 drifting 헤드로 바꿔 추론 비용 절감 | `TRON2` | ZJU-UIUC, LimX | 2026 | 논문 | [논문](https://arxiv.org/abs/2609.18108) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: 양팔 TRON2에서 의류 공급 작업용으로 미세조정한 Pi0.5 정책 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 코드 | [모델](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: 데이터셋과 GR00T 파인튜닝 모델 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | 코드 | [모델](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[데이터셋](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
 | <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**: TRON2 꽃꽂이·옷 개기용 Pi0.5 체크포인트 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | 코드 | [모델](https://huggingface.co/toki1231) |
 
@@ -56,22 +56,22 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**tron2-wuji-bag-replay**: TRON2와 Wuji 핸드 궤적을 Isaac Sim에서 재생 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [코드](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: TRON2와 Wuji 핸드 궤적을 Isaac Sim에서 재생 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [코드](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### 배포 및 제어
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**: TRON2 머리·손목 카메라 캘리브레이션 도구 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [코드](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**: TRON2 머리·손목 카메라 캘리브레이션 도구 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [코드](https://github.com/zengxiong111/tron2_camera_calibration) |
 | <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: TRON1·TRON2·Bunker 섀시 카메라를 전환하며 작업 단계별로 화면을 저장해 데이터 수집 (중국어) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [코드](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### 모델 및 모션 데이터
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**tron2_revo3_description**: BrainCo Revo3 손을 단 TRON2 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [코드](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: BrainCo Revo3 손을 단 TRON2 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [코드](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: TRON1, TRON2, Oli, Luna 모델을 한 줄로 불러오기 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [코드](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**limx-3d-measurement-workbench**: TRON 모델 탐색과 치수 측정 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [코드](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: TRON 모델 탐색과 치수 측정 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [코드](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 교육 및 대회
 
@@ -92,9 +92,9 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 보도 | [보도](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
+| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 보도 | [보도 (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 보도 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: WUJI TECH의 Wuji Hand 2를 장착한 TRON2가 약국 시연에서 약재 꺼내기·계량·분쇄·포장 수행 | `TRON2` | WUJI TECH | 2026 | 보도 | [보도](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: WUJI TECH의 Wuji Hand 2를 장착한 TRON2가 약국 시연에서 약재 꺼내기·계량·분쇄·포장 수행 | `TRON2` | WUJI TECH | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### 기업 오픈소스
 
@@ -112,6 +112,6 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 보도 | [보도](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 TRON2로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

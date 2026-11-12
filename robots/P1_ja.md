@@ -29,13 +29,13 @@
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-cts"></a>**CTS**：同時進行型の教師・生徒 RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**：教師ポリシーと生徒ポリシーを同時に学習する脚式ロコモーション RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 論文 | [プロジェクト](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2405.10830) |
 
 ### モデルベース制御
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
-| <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**：全身制御 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 論文 | [論文](https://arxiv.org/abs/2404.00591) |
+| <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**：劣駆動脚ロボット向け、タスク空間 Riccati フィードバックによる全身制御 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 論文 | [論文](https://arxiv.org/abs/2404.00591) |
 
 ## 産業応用
 

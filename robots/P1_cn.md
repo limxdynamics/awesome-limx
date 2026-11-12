@@ -29,13 +29,13 @@
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-cts"></a>**CTS**：并行师生强化学习 | `P1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**：教师策略与学生策略同时训练的足式运动强化学习 | `P1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2405.10830) |
 
 ### 基于模型的控制
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
+| <a id="p-task-space-riccati-wbc"></a>**任务空间 Riccati 全身控制**：基于任务空间 Riccati 反馈的欠驱动足式机器人全身控制 | `P1`&nbsp;*仿真* | 南方科大、港科大等 | 2024 | 论文 | [论文](https://arxiv.org/abs/2404.00591) |
 
 ## 行业应用
 

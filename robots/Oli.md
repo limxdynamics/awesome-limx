@@ -29,7 +29,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-faststair"></a>**FastStair**: running up stairs | `Oli` | HIT, LimX et al. | 2026 | Paper | [project](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[video](https://youtu.be/SoLBK7VEGDo) |
+| <a id="p-faststair"></a>**FastStair**: learns to run up stairs by combining a model-based foothold planner with RL | `Oli` | HIT, LimX et al. | 2026 | Paper | [project](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[video](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-ga-phl"></a>**GA-PHL**: gait-adaptive perceptive walking | `Oli` | USTC, LimX et al. | 2025 | Paper | [project](https://ga-phl.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2512.07464) |
 
 ### RL training & sim-to-real
@@ -37,7 +37,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-vaps"></a>**VAPS**: safe acrobatics, real side flips | `Oli` | TU Darmstadt, LimX et al. | 2026 | Paper | [project](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.01397) |
-| <a id="p-pvp"></a>**PvP**: data-efficient humanoid RL | `Oli` | PolyU, USTC et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2512.13093) |
+| <a id="p-pvp"></a>**PvP**: contrastive learning between proprioceptive and privileged states for data-efficient whole-body control | `Oli` | PolyU, USTC et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2512.13093) |
 
 ### Model-based control
 
@@ -49,15 +49,15 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**: cross-embodiment whole-body tracking | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**: transfers a pretrained whole-body tracking model to new humanoids with little adaptation | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**: adaptive-compliance motion tracking on mjlab | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: one policy tracking 40 motions | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | Code | [code](https://github.com/liuskywalkerjskd/supermimic_oli) |
-| <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**: robot_lab extension with motion-mimic tasks for Oli in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
-| <a id="p-robot-retargeter"></a>**robot_retargeter**: retargets SMPL-X or source-robot motion to humanoids, with an Oli config | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**: robot_lab extension with motion-mimic tasks for Oli in Isaac Lab | `Oli`&nbsp;*sim* | [song-hl](https://github.com/song-hl) | 2026 | Code | [code](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**Robot Retargeter**: retargets SMPL-X or source-robot motion to humanoids, with an Oli config | `Oli`&nbsp;*sim* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | Code | [code](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**: locomotion and motion-imitation policies for HU_D03, the earlier Oli model, in mjlab (Vietnamese) | `Oli`&nbsp;*sim* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | Code | [code](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**robodance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
-| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: diffusion-based motion retargeting | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
+| <a id="p-robodance"></a>**RoboDance**: web dance videos retargeted to a fleet of 12 humanoids including Oli, rendered in MuJoCo | `Oli`&nbsp;*sim* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | Code | [code](https://github.com/junyuan-fang/robodance) |
+| <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: graph-conditioned diffusion model that retargets one motion across robots of different structure | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 
 ## Manipulation
 
@@ -71,7 +71,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: voice dialogue and action control | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | Code | [code](https://github.com/zhilin2025/oli_audio) |
-| <a id="p-hwam"></a>**HWAM**: humanoid world action model | `Oli` | LimX | 2026 | Paper | [project](https://hwam.vercel.app/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.12026) |
+| <a id="p-hwam"></a>**HWAM**: humanoid world action model that generates future states and actions jointly | `Oli` | LimX | 2026 | Paper | [project](https://hwam.vercel.app/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.12026) |
 
 ## Tools, simulation & SDK
 
@@ -79,7 +79,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**: MCP server for sim and control | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**: MCP server for sim and control | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [code](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-roqsim"></a>**roqsim**: plugin-driven MuJoCo simulation framework, Oli among its bundled humanoids | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [code](https://github.com/cps-test-lab/roqsim) |
 
 ### Models & motion data
@@ -102,7 +102,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli running Dongtu's Intewell OS and AUTBUS bus, released jointly; LimX also joined Dongtu's electronic-architecture alliance with Tsinghua, AgiBot and Moore Threads | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli running Dongtu's Intewell OS and AUTBUS bus, released jointly; LimX also joined Dongtu's electronic-architecture alliance with Tsinghua, AgiBot and Moore Threads | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### Open source from companies
 
@@ -114,19 +114,19 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news](https://news.ifeng.com/c/8vmGa3sP4u7) |
+| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
 
 ### Strategic partnerships
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: joint industry college for humanoid and embodied AI, with Oli as the core teaching platform and a new training workshop | `Oli` | Ningbo Polytechnic University | 2026 | News | [news](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
+| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: joint industry college for humanoid and embodied AI, with Oli as the core teaching platform and a new training workshop | `Oli` | Ningbo Polytechnic University | 2026 | News | [news (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
 
 ### Regional partners & channels
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | News | [news](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on Oli? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

@@ -27,7 +27,7 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**: cross-embodiment whole-body tracking | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**: transfers a pretrained whole-body tracking model to new humanoids with little adaptation | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-timo"></a>**Timo**: kinematics-aware multimodal diffusion transformer for text-to-motion; generated motions are retargeted and run on Oli and Luna | `Oli` `Luna` | LimX Dynamics | 2026 | Paper | [project](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2609.30761) |
 
 ## Perception & navigation
@@ -50,9 +50,9 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | News | [news](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
+| <a id="p-kill-it-finale"></a>**Kill It: Style Creator War finale**: Luna on stage in designer Kim Na-ra's winning final, tvN | `Luna` | tvN, Kim Na-ra | 2026 | News | [news (ko)](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[news](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | News | [news](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: five Luna humanoids perform an autonomous group dance at the opening of the CHINA GT motorsport championship | `Luna` | CHINA GT | 2026 | News | [news](https://robotstart.info/article/2026/09/18/382434.html) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: five Luna humanoids perform an autonomous group dance at the opening of the CHINA GT motorsport championship | `Luna` | CHINA GT | 2026 | News | [news (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
 
 Built something on Luna? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

@@ -27,7 +27,7 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**: 기체 간 전신 모션 트래킹 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**: 사전학습된 전신 모션 트래킹 모델을 적은 적응으로 새 휴머노이드에 이전 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-timo"></a>**Timo**: 텍스트-투-모션용 운동학 인지 멀티모달 확산 트랜스포머, 생성 동작을 리타게팅해 Oli와 Luna 실기에서 실행 | `Oli` `Luna` | LimX Dynamics | 2026 | 논문 | [프로젝트](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2609.30761) |
 
 ## 인지 및 내비게이션
@@ -50,9 +50,9 @@ Luna 공식 저장소: [luna-description](https://github.com/limxdynamics/luna-d
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도](https://news.ifeng.com/c/8vmGa3sP4u7) |
+| <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도 (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
 | <a id="p-kill-it-finale"></a>**〈킬잇: 스타일 크리에이터 대전쟁〉 결승**: 디자이너 김나라의 우승 결승 무대에 Luna 출연, tvN | `Luna` | tvN, 김나라 | 2026 | 보도 | [보도](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[보도](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**타오바오 인플루언서 페스티벌**: 상하이에서 배우 천이한과 Luna가 런웨이 워킹 | `Luna` | 타오바오 | 2026 | 보도 | [보도](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: Luna 5대가 CHINA GT 모터스포츠 대회 개막식에서 자율 군무 공연 | `Luna` | CHINA GT | 2026 | 보도 | [보도](https://robotstart.info/article/2026/09/18/382434.html) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: Luna 5대가 CHINA GT 모터스포츠 대회 개막식에서 자율 군무 공연 | `Luna` | CHINA GT | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
 
 Luna로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

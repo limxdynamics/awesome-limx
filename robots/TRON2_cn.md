@@ -44,9 +44,9 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的 TRON2 上训练部署 FluxVLA | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
-| <a id="p-acg-wam"></a>**ACG-WAM**：灵巧手世界-动作模型 | `TRON2` | 北京理工大学、逐际动力 | 2026 | 代码 | [主页](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[代码](https://github.com/RoboOpus/ACG-WAM) |
-| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：单步动作头 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：Pi0.5 策略 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 代码 | [模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-acg-wam"></a>**ACG-WAM**：预测动作条件几何隐变量的世界-动作模型，在灵巧手上验证 | `TRON2` | 北京理工大学、逐际动力 | 2026 | 代码 | [主页](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[代码](https://github.com/RoboOpus/ACG-WAM) |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：把 GR00T N1.7 的扩散动作头换成单步 drifting 头，降低推理开销 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 服装送料**：在双臂 TRON2 上微调的 Pi0.5 策略，用于服装送料任务 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | 代码 | [模型](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot 数据集**：数据集与 GR00T 微调模型 | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | 代码 | [模型](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
 | <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**：TRON2 插花、叠衣任务的 Pi0.5 权重 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | 代码 | [模型](https://huggingface.co/toki1231) |
 
@@ -56,22 +56,22 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**tron2-wuji-bag-replay**：在 Isaac Sim 中回放 TRON2 与 Wuji 灵巧手轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：在 Isaac Sim 中回放 TRON2 与 Wuji 灵巧手轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### 部署与控制
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**：TRON2 头部与腕部相机标定工具 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_camera_calibration) |
 | <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**：在 TRON1、TRON2 与 Bunker 底盘的摄像头之间切换，按任务阶段保存画面用于数据采集 | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [代码](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### 模型与动作数据
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**tron2_revo3_description**：TRON2 加 BrainCo Revo3 灵巧手模型 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**：TRON2 加 BrainCo Revo3 灵巧手模型 | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [代码](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**：一行代码加载 TRON1、TRON2、Oli、Luna 模型 | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [代码](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**limx-3d-measurement-workbench**：浏览 TRON 模型、测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**：浏览 TRON 模型、测量尺寸 | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [代码](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## 教学与竞赛
 
@@ -94,7 +94,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 报道 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 报道 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：TRON2 装上 WUJI TECH 的 Wuji Hand 2 灵巧手，在药房演示中完成取药、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### 企业开源项目
 
@@ -112,6 +112,6 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 TRON2 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

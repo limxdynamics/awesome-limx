@@ -29,7 +29,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-faststair"></a>**FastStair**：快速跑楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | 论文 | [主页](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[视频](https://youtu.be/SoLBK7VEGDo) |
+| <a id="p-faststair"></a>**FastStair**：把基于模型的落脚点规划与强化学习结合，学会快速跑上楼梯 | `Oli` | 哈工大、逐际动力等 | 2026 | 论文 | [主页](https://npcliu.github.io/FastStair)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2601.10365)&nbsp;·&nbsp;[视频](https://youtu.be/SoLBK7VEGDo) |
 | <a id="p-ga-phl"></a>**GA-PHL**：步态自适应感知行走 | `Oli` | 中国科大、逐际动力等 | 2025 | 论文 | [主页](https://ga-phl.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2512.07464) |
 
 ### 强化学习训练与部署
@@ -37,7 +37,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-vaps"></a>**VAPS**：安全特技动作，实机侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | 论文 | [主页](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.01397) |
-| <a id="p-pvp"></a>**PvP**：高效的人形强化学习 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
+| <a id="p-pvp"></a>**PvP**：在本体感知与特权状态之间做对比学习，提高全身控制的数据效率 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
 
 ### 基于模型的控制
 
@@ -49,15 +49,15 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**：跨本体全身动作跟踪 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**：把预训练的全身动作跟踪模型以少量适配迁移到新的人形机器人 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**：基于 mjlab 的自适应柔顺动作跟踪 | `Oli`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：单策略跟踪 40 段动作 | `Oli`&nbsp;*仿真* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 代码 | [代码](https://github.com/liuskywalkerjskd/supermimic_oli) |
-| <a id="p-robot-lab-srl-oli-mimic"></a>**robot_lab_srl**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
-| <a id="p-robot-retargeter"></a>**robot_retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
+| <a id="p-robot-lab-srl-oli-mimic"></a>**Oli Mimic Tasks for robot_lab**：robot_lab 扩展，新增 Oli 的 Isaac Lab 动作模仿任务 | `Oli`&nbsp;*仿真* | [song-hl](https://github.com/song-hl) | 2026 | 代码 | [代码](https://github.com/song-hl/robot_lab_srl) |
+| <a id="p-robot-retargeter"></a>**Robot Retargeter**：把 SMPL-X 或其他机器人的动作重定向到人形机器人，内置 Oli 配置 | `Oli`&nbsp;*仿真* | [ccrpRepo](https://github.com/ccrpRepo) | 2026 | 代码 | [代码](https://github.com/ccrpRepo/robot_retargeter) |
 | <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 | <a id="p-hu-d03-rl-mjlab"></a>**HU_D03 RL in mjlab**：在 mjlab 中为上一代 Oli（HU_D03）训练行走和动作模仿策略（越南语） | `Oli`&nbsp;*仿真* | [KhanhPham248](https://github.com/KhanhPham248) | 2026 | 代码 | [代码](https://github.com/KhanhPham248/LimX_HU_D03_rl_mjlab) |
-| <a id="p-robodance"></a>**robodance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
-| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：扩散模型动作重定向 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
+| <a id="p-robodance"></a>**RoboDance**：把网络舞蹈视频重定向到含 Oli 在内的 12 款人形机器人，在 MuJoCo 中渲染 | `Oli`&nbsp;*仿真* | [junyuan-fang](https://github.com/junyuan-fang) | 2026 | 代码 | [代码](https://github.com/junyuan-fang/robodance) |
+| <a id="p-multi-embodiment-retargeting"></a>**多本体动作重定向**：以图结构为条件的扩散模型，把同一段动作重定向到结构不同的机器人上 | `TRON1` `Oli`&nbsp;*仿真* | 南方科大、港科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2505.20857) |
 
 ## 操作
 
@@ -71,7 +71,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：语音对话与动作控制 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
-| <a id="p-hwam"></a>**HWAM**：人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
+| <a id="p-hwam"></a>**HWAM**：联合生成未来状态与动作的人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
 
 ## 工具、仿真与 SDK
 
@@ -79,7 +79,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-limx-robotics-mcp"></a>**limx-robotics-mcp**：仿真与控制的 MCP 服务器 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
+| <a id="p-limx-robotics-mcp"></a>**LimX Robotics MCP Server**：仿真与控制的 MCP 服务器 | `TRON1` `Oli` | [sandraschi](https://github.com/sandraschi) | 2026 | [代码](https://github.com/sandraschi/limx-robotics-mcp) |
 | <a id="p-roqsim"></a>**roqsim**：插件式 MuJoCo 仿真框架，内置人形机器人包含 Oli | `Oli` | [cps-test-lab](https://github.com/cps-test-lab) | 2026 | [代码](https://github.com/cps-test-lab/roqsim) |
 
 ### 模型与动作数据
@@ -127,6 +127,6 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 Oli 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

@@ -44,9 +44,9 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy FluxVLA on your own TRON2 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
-| <a id="p-acg-wam"></a>**ACG-WAM**: world-action model with dexterous hands | `TRON2` | BIT, LimX | 2026 | Code | [project](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[code](https://github.com/RoboOpus/ACG-WAM) |
-| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: one-step action heads | `TRON2` | ZJU-UIUC, LimX | 2026 | Paper | [paper](https://arxiv.org/abs/2609.18108) |
-| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | Code | [model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
+| <a id="p-acg-wam"></a>**ACG-WAM**: world-action model predicting action-conditioned geometric latents, tested with dexterous hands | `TRON2` | BIT, LimX | 2026 | Code | [project](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[code](https://github.com/RoboOpus/ACG-WAM) |
+| <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost | `TRON2` | ZJU-UIUC, LimX | 2026 | Paper | [paper](https://arxiv.org/abs/2609.18108) |
+| <a id="p-tron2-garment-feeder"></a>**TRON2 Garment Feeder**: Pi0.5 policy fine-tuned for a garment-feeding task on dual-arm TRON2 | `TRON2` | [voniu](https://huggingface.co/voniu) | 2026 | Code | [model](https://huggingface.co/voniu/tron2-garment-feeder-button-pi05) |
 | <a id="p-tron2-lerobot-datasets"></a>**TRON2 LeRobot Datasets**: datasets and GR00T fine-tunes | `TRON2` | [trantor2nd](https://huggingface.co/trantor2nd) | 2026 | Code | [model](https://huggingface.co/models?author=trantor2nd&search=tron2)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets?author=trantor2nd&search=tron2) |
 | <a id="p-troncamp-pi05-policies"></a>**TRONCamp Pi0.5 Policies**: Pi0.5 checkpoints for flower arranging and cloth folding on TRON2 | `TRON2` | [toki1231](https://huggingface.co/toki1231) | 2026 | Code | [model](https://huggingface.co/toki1231) |
 
@@ -56,22 +56,22 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2-wuji-bag-replay"></a>**tron2-wuji-bag-replay**: replay TRON2 + Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
+| <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: replay TRON2 + Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### Deployment & control
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2_camera_calibration"></a>**tron2_camera_calibration**: head and wrist camera calibration tools for TRON2 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_camera_calibration) |
+| <a id="p-tron2_camera_calibration"></a>**TRON2 Camera Calibration**: head and wrist camera calibration tools for TRON2 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_camera_calibration) |
 | <a id="p-multi-robot-camera-collector"></a>**Multi-Robot Camera Collector**: switches between TRON1, TRON2 and a Bunker base's cameras and saves frames by task stage for data collection (Chinese) | `TRON1` `TRON2` | [oalaaCN](https://github.com/oalaaCN) | 2026 | [code](https://github.com/oalaaCN/multi_robot_camera_collector) |
 
 ### Models & motion data
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-tron2_revo3_description"></a>**tron2_revo3_description**: TRON2 with BrainCo Revo3 hands | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
+| <a id="p-tron2_revo3_description"></a>**TRON2 with Revo3 Hands**: TRON2 with BrainCo Revo3 hands | `TRON2` | [ENDLESS0321](https://github.com/ENDLESS0321) | 2026 | [code](https://github.com/ENDLESS0321/tron2_revo3_description) |
 | <a id="p-robot_descriptionspy"></a>**robot_descriptions.py**: load TRON1, TRON2, Oli, Luna models in one line | `TRON1` `TRON2` `Oli` `Luna` | [robot-descriptions](https://github.com/robot-descriptions) | 2026 | [code](https://github.com/robot-descriptions/robot_descriptions.py) |
-| <a id="p-limx-3d-measurement-workbench"></a>**limx-3d-measurement-workbench**: browse TRON models, measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
+| <a id="p-limx-3d-measurement-workbench"></a>**LimX 3D Measurement Workbench**: browse TRON models, measure dimensions | `TRON1` `TRON2` | [voniu](https://github.com/voniu) | 2026 | [code](https://github.com/voniu/limx-3d-measurement-workbench) |
 
 ## Education & competitions
 
@@ -92,9 +92,9 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
+| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | News | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 fitted with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine in a pharmacy demo | `TRON2` | WUJI TECH | 2026 | News | [news](https://robotstart.info/article/2026/08/26/382326.html) |
+| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 fitted with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine in a pharmacy demo | `TRON2` | WUJI TECH | 2026 | News | [news (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### Open source from companies
 
@@ -112,6 +112,6 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | News | [news](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news](https://robotstart.info/article/2026/05/15/381891.html) |
+| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on TRON2? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

@@ -27,7 +27,7 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-any2any"></a>**Any2Any**：跨本体全身动作跟踪 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
+| <a id="p-any2any"></a>**Any2Any**：把预训练的全身动作跟踪模型以少量适配迁移到新的人形机器人 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-timo"></a>**Timo**：面向文本生成动作的运动学感知多模态扩散 Transformer，生成的动作重定向后在 Oli 和 Luna 实机上执行 | `Oli` `Luna` | 逐际动力 | 2026 | 论文 | [主页](https://kyfafyd.wang/projects/timo)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2609.30761) |
 
 ## 感知与导航
@@ -51,8 +51,8 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
+| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道 (ko)](https://isplus.com/article/view/isp202607290025)&nbsp;·&nbsp;[报道](https://mikekalil.com/blog/the-rise-of-limx-dynamics/) |
 | <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道](https://robotstart.info/article/2026/09/18/382434.html) |
+| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
 
 用 Luna 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

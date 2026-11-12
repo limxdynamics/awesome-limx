@@ -29,13 +29,13 @@
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-cts"></a>**CTS**: 동시 교사-학생 RL | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2405.10830) |
+| <a id="p-cts"></a>**CTS**: 교사·학생 정책을 동시에 학습하는 족형 보행 강화학습 | `P1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/concurrentTS/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2405.10830) |
 
 ### 모델 기반 제어
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**: 전신 제어 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 논문 | [논문](https://arxiv.org/abs/2404.00591) |
+| <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**: 저구동 족형 로봇을 위한 태스크 공간 Riccati 피드백 전신 제어 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 논문 | [논문](https://arxiv.org/abs/2404.00591) |
 
 ## 산업 적용
 
