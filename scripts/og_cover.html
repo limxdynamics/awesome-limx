@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- Share preview image for the gallery (docs/og.png, 1200 x 630).
+     Rendered once and committed; it has no counts, so it does not go stale.
+     To redraw it after a design change, from the repo root:
+       npx playwright screenshot --viewport-size=1200,630 scripts/og_cover.html docs/og.png
+     It draws the robots with scripts/gallery_illustrations.js, as the gallery cards do. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f7fa; --surface: #ffffff; --ink: #14181d; --muted: #59616c; --line: #e6e9ee;
+    --TRON1: #2f6feb; --TRON2: #0e8f80; --Oli: #7357e8; --Luna: #c4307a; --P1: #b06f12; --W1: #3d8a37;
+  }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body { background: var(--bg); color: var(--ink); font-family: Poppins, Inter, "Noto Sans CJK SC", sans-serif; position: relative; }
+  .top { position: absolute; left: 72px; top: 60px; font-weight: 600; font-size: 26px; letter-spacing: -.01em; }
+  .top span { color: var(--muted); font-weight: 400; }
+  h1 { position: absolute; left: 72px; top: 116px; font-size: 76px; line-height: 1.04; font-weight: 600; letter-spacing: -.03em; }
+  .sub { position: absolute; left: 72px; top: 304px; font-size: 26px; color: var(--muted); }
+  .stage { position: absolute; left: 0; right: 0; bottom: 0; height: 250px; background: var(--surface); border-top: 2px solid var(--line); }
+  .robots { position: absolute; left: 56px; right: 56px; bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .robot { width: 176px; text-align: center; color: var(--rc); }
+  .robot svg { display: block; width: 176px; height: 160px; overflow: visible; }
+  .robot b { display: block; margin-top: 6px; font-size: 20px; font-weight: 600; color: var(--ink); }
+  .robot b::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--rc); margin-right: 8px; vertical-align: 2px; }
+  .url { position: absolute; right: 72px; top: 64px; font-size: 20px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="top">Awesome LimX <span>Gallery</span></div>
+  <div class="url">EN · 中文 · 日本語 · 한국어</div>
+  <h1>What people build<br>with LimX robots</h1>
+  <p class="sub">Papers, code, competition results and partner deployments</p>
+  <div class="stage"><div class="robots" id="robots"></div></div>
+<script src="gallery_illustrations.js"></script>
+<script>
+  // Each robot alone, cropped to the part of the 320 x 180 picture around it.
+  var names = ["TRON1", "TRON2", "Oli", "Luna", "P1", "W1"];
+  document.getElementById("robots").innerHTML = names.map(function (r) {
+    var svg = window.illustrateRobot(r).replace(/viewBox="[^"]*"/, 'viewBox="90 6 140 142" preserveAspectRatio="xMidYMax meet"');
+    return '<div class="robot" style="--rc:var(--' + r + ')">' + svg + "<b>" + r + "</b></div>";
+  }).join("");
+</script>
+</body>
+</html>

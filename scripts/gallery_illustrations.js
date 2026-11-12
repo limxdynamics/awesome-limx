@@ -376,6 +376,11 @@
     return SECTION[item.section] || "sim";
   }
 
+  // One robot alone, standing at x = 160 on the ground line; used by scripts/og_cover.html.
+  window.illustrateRobot = function (name, foot) {
+    return '<svg viewBox="0 0 320 180" aria-hidden="true">' + drawRobot({ name: name, foot: foot || "point" }, 160, G, 1, 6, false) + "</svg>";
+  };
+
   window.illustrate = function (item, D) {
     var e = item.t.en, text = (e.name + " " + e.desc).replace(/<[^>]+>/g, " ").toLowerCase();
     var r = rng(item.id), kind = robotKind(item, text), key = pickScene(item, text, D), sc = SCENES[key](r);
