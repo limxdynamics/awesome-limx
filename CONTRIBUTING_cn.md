@@ -124,11 +124,11 @@ python scripts/check_list.py
 
 [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成一张卡片。卡片上显示什么，按以下顺序决定：
 
-1. 作者提供的缩略图，放在 `docs/thumbs/<id>.webp`（id 是条目的锚点，去掉 `p-`）。只有在作者主动提出、并确认拥有图片权利时，我们才会托管图片。请用 16:9、宽约 640 px、小于 60 KB 的图。
-2. 没有缩略图时，用条目里的 YouTube 视频：卡片显示 YouTube 自己的缩略图，点开后在 YouTube 播放器里播放。B 站视频同样可以播放，卡片不带缩略图。
-3. 都没有时，显示一条机型颜色的色带。在有人补上视频之前，大多数条目都是这样。
+1. `docs/thumbs/<id>.webp` 里的缩略图（id 是条目的锚点，去掉 `p-`）：从项目自己 README 里的演示图或 GIF 截取的一张 640×360 小图，或者作者提供的图。`scripts/gallery.json` 里的 `from` 记录了每张图的来源，卡片会链接回原项目。我们只截取项目自己的机器人画面，不用人物照片、新闻配图或示意图。
+2. 没有缩略图时，用条目里的 YouTube 视频：卡片显示 YouTube 自己的缩略图，点开后在 YouTube 播放器里播放。B 站视频和项目网站上的 `.mp4` 文件也可以直接播放，视频从原网站加载。
+3. 都没有时，显示一条机型颜色的色带。
 
-条目链接里没有的视频，可以加在 `scripts/gallery.json` 的 `media` 里；`featured` 决定最先展示哪几张卡片，我们会不定期更换。改完运行 `python scripts/build_gallery.py`，或者合并后交给 CI。README 始终是唯一的数据源：图库里不会出现 README 没有的条目。
+条目链接里没有的视频，可以加在 `scripts/gallery.json` 的 `media` 里；`featured` 决定最先展示哪几张卡片，我们会不定期更换。如果你是项目作者，想更换或撤下图库里的缩略图或视频，开 issue 或发邮件告诉我们即可，不需要说明理由。改完运行 `python scripts/build_gallery.py`，或者合并后交给 CI。README 始终是唯一的数据源：图库里不会出现 README 没有的条目。
 
 README 本身仍然只有文字和链接。如果希望在 README 的条目旁放图片或 Logo，请明确提出，并确认你拥有相应权利。
 

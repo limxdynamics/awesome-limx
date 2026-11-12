@@ -1,4 +1,113 @@
 {
-  "featured": ["faststair", "where-to-learn", "zinova-tron2-construction", "steppingstonelocomotion", "eroam"],
-  "media": {}
+  "featured": [
+    "ame-2",
+    "faststair",
+    "cwi",
+    "ga-phl",
+    "where-to-learn",
+    "vaps",
+    "zinova-tron2-construction",
+    "ctbc",
+    "steppingstonelocomotion"
+  ],
+  "media": {
+    "3d-navigation-with-pct-planner": {
+      "from": "https://raw.githubusercontent.com/81578823/3D_navigation_PCTplanner/HEAD/media/mapping"
+    },
+    "acg-wam": {
+      "from": "https://raw.githubusercontent.com/RoboOpus/ACG-WAM/HEAD/assets/readme/fruit-placement.gif"
+    },
+    "ame-2": {
+      "video": "https://www.youtube.com/watch?v=FNA1crvtBLs"
+    },
+    "any2any": {
+      "video": "https://any2any.top/vedio_data/cover_video.mp4"
+    },
+    "atec-2026-simulation-challenge": {
+      "from": "https://raw.githubusercontent.com/atecup/ATEC2026_Simulation_Challenge/HEAD/doc/Tron1.png"
+    },
+    "bipedal-mpc": {
+      "from": "https://raw.githubusercontent.com/clearlab-sustech/Bipedal_MPC/HEAD/display.gif"
+    },
+    "chip-for-oli": {
+      "from": "https://raw.githubusercontent.com/Matt14-mander/chip-oli/HEAD/docs/demo/chip-cover.png"
+    },
+    "crest-tron2-description": {
+      "from": "https://raw.githubusercontent.com/Crest-Robotics/tron2-robot-description/HEAD/docs/images/DA.jpg"
+    },
+    "ctbc": {
+      "video": "https://ctbc-for-wheeled-bipedal-robots.github.io/static/videos/ours.mp4"
+    },
+    "cts": {
+      "video": "https://www.bilibili.com/video/BV13Q4y1g7D3/"
+    },
+    "cwi": {
+      "video": "https://youtu.be/BLckpzHSI0w"
+    },
+    "ga-phl": {
+      "video": "https://www.youtube.com/watch?v=pOjxwzlYeKI"
+    },
+    "gewu-unity-rl-playground": {
+      "from": "https://raw.githubusercontent.com/loongOpen/Unity-RL-Playground/HEAD/gewu/Image/robothome.gif",
+      "video": "https://www.bilibili.com/video/BV1iJbSz9Eem/"
+    },
+    "hierarchical-nmpc-stsmc": {
+      "from": "https://raw.githubusercontent.com/pjmcconnellogue/Hierarchical-Nonlinear-MPC-and-Super-Twisting-Sliding-Mode-Control-for-a-Wheeled-Biped-Robot-/HEAD/Impulse_Push_Recovery.gif"
+    },
+    "him-pim-isaac-lab": {
+      "from": "https://raw.githubusercontent.com/DongyangLin/HIM-PIM-isaaclab/HEAD/media/HIM_stairs.gif"
+    },
+    "learning-enhanced-pmp-mpc": {
+      "from": "https://raw.githubusercontent.com/Markwcl2004/PMP_based_Bipedal_MPC/HEAD/img/tron1_mujoco.png"
+    },
+    "leggedgym-ex": {
+      "from": "https://raw.githubusercontent.com/lupinjia/leggedgym-ex-doc/main/source/_static/images/tron1_pf_ee_demo.gif",
+      "video": "https://www.bilibili.com/video/BV1MdePzcEvk/"
+    },
+    "metalsim": {
+      "from": "https://raw.githubusercontent.com/pulipakaa24/MetalSim/HEAD/docs/renders/tron1.webp"
+    },
+    "multi-loco": {
+      "from": "https://raw.githubusercontent.com/clearlab-sustech/multi_loco_isaacgym/HEAD/doc/framework.jpg"
+    },
+    "rimkit": {
+      "from": "https://raw.githubusercontent.com/tmjeong1103/RIMKit/HEAD/docs/media/demo/bones_seed_dance_hiphop_shuffle_17_robots_contacts.gif"
+    },
+    "rl-bipedal-locomotion": {
+      "from": "https://raw.githubusercontent.com/81578823/RL_bipedal_locomotion_Isaaclab/HEAD/media/multi-terrain-traversal.gif"
+    },
+    "rl-tron1": {
+      "from": "https://raw.githubusercontent.com/Jiakang-Ma/rl-tron1/HEAD/media/play_mujoco.gif"
+    },
+    "robot-retargeter": {
+      "from": "https://raw.githubusercontent.com/ccrpRepo/robot_retargeter/HEAD/retarget_from_g1_dance1_subject2_preview.gif"
+    },
+    "shape-your-body": {
+      "video": "https://youtu.be/_SHSWUSQZvg"
+    },
+    "supermimic-for-oli": {
+      "from": "https://raw.githubusercontent.com/liuskywalkerjskd/supermimic_oli/HEAD/results/oli_walk1_subject1_preview.gif"
+    },
+    "timo": {
+      "video": "https://kyfafyd.wang/projects/timo/assets/videos/long_sequence/five-prompts-20s.mp4"
+    },
+    "tron1-hermes-agent": {
+      "from": "https://raw.githubusercontent.com/justinsuo/tron1-hermes-agent/HEAD/status/cam_top.jpg"
+    },
+    "tron_docker_sim": {
+      "from": "https://raw.githubusercontent.com/The-RoboTUM/tron_docker_sim/HEAD/media/tron_in_warehouse.png"
+    },
+    "troncamp-2026-locomotion-solution": {
+      "from": "https://raw.githubusercontent.com/han-xudong/troncamp-locomotion/HEAD/docs/assets/course-demo.gif"
+    },
+    "vaps": {
+      "video": "https://vaps-r-al.github.io/static/videos/real_nominal.mp4"
+    },
+    "wheeled-quadrupedal-manipulator": {
+      "video": "https://www.bilibili.com/video/BV1yJBuYvEw4/"
+    },
+    "zetin-tron1-deploy": {
+      "from": "https://raw.githubusercontent.com/chanjun-nyam/Zetin-Humanoid-RL-Deploy/HEAD/.assets/Tron1-P.png"
+    }
+  }
 }

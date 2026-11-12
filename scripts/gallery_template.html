@@ -103,6 +103,7 @@ main { padding: 8px 0 40px; }
   position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border: 0; padding: 0; width: 100%; cursor: pointer;
   background: color-mix(in srgb, var(--rc) var(--tint), var(--surface)); text-align: left; color: var(--rc);
 }
+.thumb video { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; pointer-events: none; background: transparent; }
 .thumb img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; display: block; }
 .play, .badge { z-index: 2; }
 .ph { position: absolute; inset: 0; }
@@ -149,6 +150,7 @@ footer a { color: var(--accent); }
 dialog { border: 0; padding: 0; background: #000; width: min(1000px, 94vw); border-radius: 10px; overflow: hidden; }
 dialog::backdrop { background: rgba(5, 7, 10, .82); }
 .player { aspect-ratio: 16 / 9; width: 100%; display: block; border: 0; }
+.player[hidden] { display: none; }
 .dbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; background: #14181d; color: #e6e9ee; font-size: 14px; }
 .dbar a { color: #9ec0ff; }
 .dbar button { border: 1px solid #3a414b; background: none; color: #e6e9ee; border-radius: 6px; padding: 4px 12px; cursor: pointer; }
@@ -202,6 +204,7 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
 
 <dialog id="dlg" aria-label="Video">
   <iframe class="player" id="player" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <video class="player" id="vplayer" controls playsinline hidden></video>
   <div class="dbar"><a id="dlink" target="_blank" rel="noopener"></a><button id="dclose" data-i="close"></button></div>
 </dialog>
 
@@ -319,6 +322,9 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
     var badge = item.sim ? '<span class="badge">' + esc(t.sim || L.sim) + "</span>" : "";
     var ph = '<span class="ph"><span class="what">' + what + '</span><span class="big">' + esc(item.robots[0] || "LimX") + "</span></span>";
     var img = item.thumb ? '<img loading="lazy" decoding="async" alt="" src="' + esc(item.thumb) + '" onerror="this.remove()">' : "";
+    // A video file with no thumbnail: let the browser show one of its frames.
+    if (!img && item.video && item.video.provider === "file")
+      img = '<video muted playsinline preload="metadata" tabindex="-1" aria-hidden="true" src="' + esc(item.video.id) + '#t=1"></video>';
     if (item.video) {
       thumb = '<button class="thumb" type="button" data-video="' + esc(item.id) + '" aria-label="' + esc(L.play + ": " + t.name) + '">' +
         ph + img + '<span class="play"></span>' + badge + "</button>";
@@ -400,14 +406,25 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
     var it = D.items.filter(function (x) { return x.id === id; })[0];
     if (!it || !it.video) return;
     var v = it.video, L = S[st.lang];
-    $("player").src = v.provider === "youtube"
-      ? "https://www.youtube-nocookie.com/embed/" + v.id + "?autoplay=1&rel=0"
-      : "https://player.bilibili.com/player.html?bvid=" + v.id + "&autoplay=1&high_quality=1";
-    var p = v.provider === "youtube" ? "YouTube" : "bilibili";
+    var file = v.provider === "file";
+    $("player").hidden = file; $("vplayer").hidden = !file;
+    if (file) {
+      $("vplayer").src = v.id;
+      var pr = $("vplayer").play(); if (pr && pr.catch) pr.catch(function () {});
+    } else {
+      $("player").src = v.provider === "youtube"
+        ? "https://www.youtube-nocookie.com/embed/" + v.id + "?autoplay=1&rel=0"
+        : "https://player.bilibili.com/player.html?bvid=" + v.id + "&autoplay=1&high_quality=1";
+    }
+    var p = v.provider === "youtube" ? "YouTube" : v.provider === "bilibili" ? "bilibili" : new URL(v.url).hostname;
     $("dlink").href = v.url; $("dlink").textContent = it.t[st.lang].name + " · " + fmt(L.openOn, { p: p });
     if ($("dlg").showModal) $("dlg").showModal(); else window.open(v.url, "_blank");
   }
-  function closeVideo() { $("player").src = "about:blank"; if ($("dlg").open) $("dlg").close(); }
+  function stopVideo() {
+    $("player").src = "about:blank";
+    var vp = $("vplayer"); vp.pause(); vp.removeAttribute("src"); vp.load();
+  }
+  function closeVideo() { stopVideo(); if ($("dlg").open) $("dlg").close(); }
 
   document.addEventListener("click", function (e) {
     var t = e.target.closest ? e.target.closest("button") : null;
@@ -430,7 +447,9 @@ dialog::backdrop { background: rgba(5, 7, 10, .82); }
   $("cat").addEventListener("change", function () { st.cat = this.value; render(); });
   var timer;
   $("q").addEventListener("input", function () { var v = this.value; clearTimeout(timer); timer = setTimeout(function () { st.q = v.trim(); render(); }, 120); });
-  $("dlg").addEventListener("close", function () { $("player").src = "about:blank"; });
+  $("dlg").addEventListener("close", stopVideo);
+  // Esc must close the player even when the video's own controls have focus.
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && $("dlg").open) { e.preventDefault(); closeVideo(); } });
   $("dlg").addEventListener("click", function (e) { if (e.target === this) closeVideo(); });
   window.addEventListener("hashchange", function () { readHash(); renderChrome(); render(); });
 

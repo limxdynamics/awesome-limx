@@ -18,7 +18,9 @@ featured picks live in scripts/gallery.json:
 
 A thumbnail is picked in this order: "thumb" in gallery.json, a file
 docs/thumbs/<id>.(webp|jpg|png|gif), the first YouTube link of the entry,
-then a placeholder drawn from the robot name. Do not edit docs/index.html by
+a frame of a video file, then a placeholder drawn from the robot name.
+"video" can be a YouTube or bilibili link, or an https .mp4/.webm file on the
+project's own site. Do not edit docs/index.html by
 hand: change the README or gallery.json and run this script.
 """
 import argparse
@@ -77,13 +79,15 @@ def plain(md):
 
 
 def video_of(url):
-    """(provider, id) for a YouTube or bilibili link, else None."""
+    """(provider, id) for a YouTube or bilibili link or a video file, else None."""
     m = re.search(r"(?:youtu\.be/|youtube\.com/(?:watch\?(?:.*&)?v=|shorts/|embed/))([\w-]{11})", url)
     if m:
         return "youtube", m.group(1)
     m = re.search(r"bilibili\.com/video/(BV\w+)", url)
     if m:
         return "bilibili", m.group(1)
+    if re.match(r"https://", url) and re.search(r"\.(mp4|webm)(?:[?#]|$)", url, re.I):
+        return "file", url  # a video file on the project's own site, played in place
     return None
 
 
@@ -177,7 +181,7 @@ def build():
             if "thumb" not in media and v[0] == "youtube":
                 media["thumb"] = "https://i.ytimg.com/vi/%s/hqdefault.jpg" % v[1]
         elif media.get("video"):
-            problems.append("gallery.json: %s video is not a YouTube or bilibili link" % eid)
+            problems.append("gallery.json: %s video is not a YouTube, bilibili or https .mp4/.webm link" % eid)
         if media.get("thumb"):
             if not media["thumb"].startswith("http") and not os.path.exists(os.path.join(DOCS, media["thumb"])):
                 problems.append("gallery.json: %s thumb %s not found under docs/" % (eid, media["thumb"]))
