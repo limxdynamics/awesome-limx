@@ -1,5 +1,5 @@
 name: Submit a case / 提交案例
-description: Share a project, paper, video or competition result built on LimX hardware or SDK / 提交基于 LimX 硬件或 SDK 的项目、论文、视频或比赛成果
+description: Share a project, paper, tutorial, competition result or deployment built on LimX hardware or SDK / 提交基于 LimX 硬件或 SDK 的项目、论文、教程、比赛成绩或落地案例
 title: "case: "
 labels: ["entry-request"]
 body:
@@ -11,6 +11,11 @@ body:
         感谢分享。每次提交一个项目。如果你是作者，请在下方“与项目的关系”中注明，审核会快很多。
 
         日本語・한국어でも記入できます / 한국어로 작성해도 됩니다. Answers in Japanese or Korean are welcome too.
+
+        **Before you submit / 提交前请确认**
+        - A LimX robot is one of the main subjects, or the project ships a complete, runnable setup for it (training config, controller or deployment). Work where the LimX robot is only one model in a collection, or one name in a list of supported robots, is not listed. See [What we accept](https://github.com/limxdynamics/awesome-limx/blob/main/CONTRIBUTING.md#what-we-accept).
+        - LimX 机器人是主要研究对象之一，或项目为它提供了完整、可直接运行的配置（训练配置、控制器或部署）。LimX 机器人只是合集里的一个模型、或只是支持列表里的一个名字，不收录。详见[收录标准](https://github.com/limxdynamics/awesome-limx/blob/main/CONTRIBUTING_cn.md#收录标准)。
+        - Official code or model files re-uploaded without changes of your own are not listed. / 原样转传的官方代码或模型文件不收录。
   - type: input
     id: name
     attributes:
@@ -23,14 +28,15 @@ body:
     attributes:
       label: Links / 链接
       description: |
-        Public links only, one per line, labeled by type. At least one is required.
-        只填公开链接，每行一个，注明类型。至少填一个。
+        Public links only, one per line, labeled by type. At least one is required. Say the language if a source is not in English.
+        只填公开链接，每行一个，注明类型。至少填一个。非英文来源请注明语言。
       placeholder: |
         Project page / 项目主页: https://example.org/project
         Paper / 论文: https://arxiv.org/abs/0000.00000
         Code / 代码: https://github.com/owner/repo
         Video / 视频: https://www.bilibili.com/video/...
         Result / 比赛成绩: https://...
+        News / 报道 (Chinese / 中文): https://...
     validations:
       required: true
   - type: input
@@ -63,6 +69,9 @@ body:
     id: setting
     attributes:
       label: Real robot or simulation / 实机还是仿真
+      description: |
+        If the project supports several robots, say in the description what is specific to the LimX one.
+        如果项目支持多款机器人，请在简介里说明针对 LimX 机型的具体内容。
       options:
         - Real robot / 实机
         - Simulation with LimX models / 基于 LimX 模型的仿真
@@ -105,9 +114,9 @@ body:
     attributes:
       label: One-line description / 一句话简介
       description: |
-        What was done on the LimX robot, in one sentence. No superlatives. English, Chinese, Japanese or Korean.
-        一句话说明在 LimX 机器人上做了什么，不用最高级说法。中、英、日、韩文均可。
-      placeholder: Trained a stair-climbing policy in simulation and deployed it on TRON1 without fine-tuning.
+        What was done plus one detail that sets it apart, about 8 to 18 words (15 to 40 Chinese characters). No superlatives. English, Chinese, Japanese or Korean.
+        做了什么，再加一个与众不同的细节，大约 15 到 40 个字（英文 8 到 18 个词），不用最高级说法。中、英、日、韩文均可。
+      placeholder: stair-climbing policy trained in simulation and deployed without fine-tuning, using a learned foothold planner
     validations:
       required: true
   - type: dropdown
