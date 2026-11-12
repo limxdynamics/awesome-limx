@@ -37,6 +37,8 @@ python scripts/check_list.py
 
 `robots/` 下是按机型拆分的页面，由 README 自动生成，请不要手动修改。README 合并到 `main` 后 CI 会自动重新生成，你不需要运行任何命令。
 
+[图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)（`docs/index.html`）同样由脚本 `scripts/build_gallery.py` 自动生成，详见[图库、视频和缩略图](#图库视频和缩略图)。
+
 ## 条目格式
 
 每个分类是一张表格，每个项目占一行：
@@ -118,9 +120,17 @@ python scripts/check_list.py
 
 提交产品或企业落地项目时，请在表单、PR 或邮件中确认该企业同意公开收录。如果企业或合作双方已经公开发布过，附上发布稿或媒体报道链接即可。已公开的战略合作协议、官方区域合作伙伴与销售渠道、行业奖项也可以收录，放在“行业应用”。如果企业希望先自行发布，告诉我们，我们会等。
 
-## 截图和 Logo
+## 图库、视频和缩略图
 
-每条只是表格中的一行文字和链接。如果希望在条目旁放图片或 Logo，请明确提出，并确认你拥有相应权利。
+[图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成一张卡片。卡片上显示什么，按以下顺序决定：
+
+1. 作者提供的缩略图，放在 `docs/thumbs/<id>.webp`（id 是条目的锚点，去掉 `p-`）。只有在作者主动提出、并确认拥有图片权利时，我们才会托管图片。请用 16:9、宽约 640 px、小于 60 KB 的图。
+2. 没有缩略图时，用条目里的 YouTube 视频：卡片显示 YouTube 自己的缩略图，点开后在 YouTube 播放器里播放。B 站视频同样可以播放，卡片不带缩略图。
+3. 都没有时，显示一条机型颜色的色带。在有人补上视频之前，大多数条目都是这样。
+
+条目链接里没有的视频，可以加在 `scripts/gallery.json` 的 `media` 里；`featured` 决定最先展示哪几张卡片，我们会不定期更换。改完运行 `python scripts/build_gallery.py`，或者合并后交给 CI。README 始终是唯一的数据源：图库里不会出现 README 没有的条目。
+
+README 本身仍然只有文字和链接。如果希望在 README 的条目旁放图片或 Logo，请明确提出，并确认你拥有相应权利。
 
 ## 移除收录
 

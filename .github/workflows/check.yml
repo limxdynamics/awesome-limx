@@ -10,6 +10,7 @@ on:
       - README_ko.md
       - scripts/**
       - robots/**
+      - docs/thumbs/**
       - .github/workflows/check.yml
   pull_request:
     paths:
@@ -19,6 +20,7 @@ on:
       - README_ko.md
       - scripts/**
       - robots/**
+      - docs/thumbs/**
       - .github/workflows/check.yml
   schedule:
     # Monday 03:00 UTC: look for links that died since the last sweep.
@@ -39,6 +41,8 @@ jobs:
           python-version: '3.12'
       - name: Check entries, anchors and counts
         run: python scripts/check_list.py
+      - name: Check that the gallery builds (videos, thumbnails, featured ids)
+        run: python scripts/build_gallery.py --strict
 
   links:
     name: External links

@@ -33,6 +33,16 @@ body:
         Result / 比赛成绩: https://...
     validations:
       required: true
+  - type: input
+    id: video
+    attributes:
+      label: Demo video / 演示视频
+      description: |
+        Optional. A YouTube or bilibili link plays right on the gallery card, so the work can be seen, not just read about.
+        选填。YouTube 或 B 站链接可以直接在图库卡片上播放，读者一眼就能看到效果。
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: false
   - type: dropdown
     id: product
     attributes:

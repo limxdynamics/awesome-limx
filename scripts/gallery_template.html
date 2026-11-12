@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome LimX Gallery</title>
+<meta name="description" content="Projects, papers and deployments built on LimX robots, with filters by robot and demo videos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f7fa; --surface: #ffffff; --ink: #14181d; --muted: #59616c; --faint: #8a93a0;
+  --line: #e6e9ee; --accent: #2f6feb; --accent-ink: #ffffff;
+  --TRON1: #2f6feb; --TRON2: #0e8f80; --Oli: #7357e8; --Luna: #c4307a; --P1: #b06f12; --W1: #3d8a37; --none: #59616c;
+  --tint: 11%;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0d10; --surface: #14181d; --ink: #e6e9ee; --muted: #a3abb6; --faint: #737c88;
+    --line: #262c34; --accent: #6a9bff; --accent-ink: #0b0d10;
+    --TRON1: #6a9bff; --TRON2: #3cc3b0; --Oli: #a28fff; --Luna: #f06aa8; --P1: #e0a548; --W1: #79c46f; --none: #8a93a0;
+    --tint: 16%; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0d10; --surface: #14181d; --ink: #e6e9ee; --muted: #a3abb6; --faint: #737c88;
+  --line: #262c34; --accent: #6a9bff; --accent-ink: #0b0d10;
+  --TRON1: #6a9bff; --TRON2: #3cc3b0; --Oli: #a28fff; --Luna: #f06aa8; --P1: #e0a548; --W1: #79c46f; --none: #8a93a0;
+  --tint: 16%; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 15px/1.55 Poppins, "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans CJK SC", "Microsoft YaHei", "Malgun Gothic", system-ui, sans-serif;
+}
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+.top { display: flex; align-items: center; gap: 16px; padding: 18px 0; }
+.mark { display: flex; align-items: baseline; gap: 8px; text-decoration: none; font-weight: 600; font-size: 17px; }
+.mark span { color: var(--faint); font-weight: 400; }
+.top .spacer { flex: 1; }
+.langs { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.langs button { border: 0; background: none; padding: 5px 10px; font-size: 13px; cursor: pointer; color: var(--muted); }
+.langs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.toplink { font-size: 13px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.toplink:hover { color: var(--ink); text-decoration: underline; }
+
+.intro { padding-top: 28px; padding-bottom: 8px; }
+.intro h1, .intro .lead { max-width: 760px; }
+h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.12; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0; font-size: 16px; }
+
+/* Robot lineup: the one loud element */
+.lineup { display: flex; gap: 4px; margin-top: 28px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
+.lineup::-webkit-scrollbar { display: none; }
+.robot {
+  flex: 1 0 auto; min-width: 104px; border: 0; background: none; cursor: pointer; text-align: left;
+  padding: 10px 14px 14px; border-bottom: 3px solid transparent; margin-bottom: -1px; color: var(--faint);
+}
+.robot b { display: block; font-size: clamp(20px, 2.6vw, 30px); font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
+.robot small { font-size: 13px; }
+.robot:hover { color: var(--ink); }
+.robot[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--rc, var(--ink)); }
+.robot[aria-pressed="true"] small { color: var(--muted); }
+
+/* Filters */
+.bar {
+  position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 12px 0; border-bottom: 1px solid var(--line);
+}
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+.search { flex: 1 1 240px; min-width: 0; position: relative; }
+.search input {
+  width: 100%; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 7px 12px; font-size: 14px;
+}
+select { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 7px 10px; font-size: 14px; max-width: 100%; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 12px; font-size: 13px; cursor: pointer; color: var(--muted);
+}
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.count { font-size: 13px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+.clear { border: 0; background: none; color: var(--accent); cursor: pointer; font-size: 13px; padding: 0 2px; }
+
+/* Sections */
+main { padding: 8px 0 40px; }
+.group { margin-top: 36px; }
+.group h2 { font-size: 20px; font-weight: 600; margin: 0 0 14px; display: flex; gap: 10px; align-items: baseline; }
+.group h2 span { font-size: 14px; font-weight: 400; color: var(--faint); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
+.featured .grid { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+
+/* Card */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.thumb {
+  position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border: 0; padding: 0; width: 100%; cursor: pointer;
+  background: color-mix(in srgb, var(--rc) var(--tint), var(--surface)); text-align: left; color: var(--rc);
+}
+.thumb img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; display: block; }
+.play, .badge { z-index: 2; }
+.ph { position: absolute; inset: 0; }
+.ph .big {
+  position: absolute; left: -0.04em; bottom: -0.2em; font-weight: 600; line-height: 1; letter-spacing: -0.04em;
+  font-size: 92px; color: var(--rc); opacity: .28; white-space: nowrap;
+}
+/* No media yet: a short band instead of a full 16:9 tile, so real thumbnails stand out. */
+.thumb.bare { aspect-ratio: auto; height: 76px; }
+.thumb.bare .big { font-size: 58px; bottom: -0.22em; }
+.ph .what { position: absolute; left: 14px; top: 12px; right: 14px; font-size: 12.5px; color: var(--rc); font-weight: 500; }
+.badge {
+  position: absolute; right: 10px; top: 10px; font-size: 11.5px; font-weight: 500; padding: 2px 8px; border-radius: 999px;
+  background: var(--surface); color: var(--muted); border: 1px solid var(--line);
+}
+.play {
+  position: absolute; left: 50%; top: 50%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%;
+  background: rgba(10, 12, 16, .72); display: grid; place-items: center;
+}
+.play::after { content: ""; border-left: 17px solid #fff; border-top: 11px solid transparent; border-bottom: 11px solid transparent; margin-left: 5px; }
+.thumb:hover .play { background: var(--accent); }
+.body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.name { font-weight: 600; font-size: 16.5px; line-height: 1.3; margin: 0; }
+.name a { text-decoration: none; }
+.name a:hover { text-decoration: underline; }
+.desc { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; text-wrap: pretty; }
+.desc code { font-size: 12.5px; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; color: var(--muted); margin-top: auto; padding-top: 4px; }
+.tag { display: inline-flex; align-items: center; gap: 5px; font-weight: 500; color: var(--ink); }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--rc); }
+.meta .who a { text-decoration: none; }
+.meta .who a:hover { text-decoration: underline; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; border-top: 1px solid var(--line); padding-top: 10px; }
+.links a { color: var(--accent); text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+.kind { font-size: 12px; color: var(--faint); margin-right: auto; }
+
+.empty { padding: 60px 0; text-align: center; color: var(--muted); }
+.empty button { margin-top: 12px; }
+footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 13.5px; }
+footer a { color: var(--accent); }
+
+/* Video dialog */
+dialog { border: 0; padding: 0; background: #000; width: min(1000px, 94vw); border-radius: 10px; overflow: hidden; }
+dialog::backdrop { background: rgba(5, 7, 10, .82); }
+.player { aspect-ratio: 16 / 9; width: 100%; display: block; border: 0; }
+.dbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; background: #14181d; color: #e6e9ee; font-size: 14px; }
+.dbar a { color: #9ec0ff; }
+.dbar button { border: 1px solid #3a414b; background: none; color: #e6e9ee; border-radius: 6px; padding: 4px 12px; cursor: pointer; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .top { flex-wrap: wrap; gap: 10px; }
+  .top .spacer { display: none; }
+  .toplink { order: 3; }
+  .intro { padding-top: 16px; }
+  .robot { min-width: 84px; padding: 8px 10px 12px; }
+  .featured .grid, .grid { grid-template-columns: 1fr; }
+  .count { margin-left: 0; }
+  .bar { position: static; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <a class="mark" href="https://github.com/limxdynamics/awesome-limx">Awesome LimX <span data-i="gallery"></span></a>
+  <div class="spacer"></div>
+  <div class="langs" role="group" aria-label="Language"></div>
+  <a class="toplink" id="listlink" href="https://github.com/limxdynamics/awesome-limx" data-i="list"></a>
+</header>
+
+<section class="wrap intro">
+  <h1 data-i="h1"></h1>
+  <p class="lead" id="lead"></p>
+</section>
+
+<nav class="wrap lineup" id="lineup" aria-label="Robot"></nav>
+
+<div class="bar">
+  <div class="wrap">
+    <label class="search"><input id="q" type="search" autocomplete="off"></label>
+    <select id="cat" aria-label="Category"></select>
+    <div class="chips" id="types" role="group" aria-label="Type"></div>
+    <div class="chips">
+      <button class="chip" id="real" aria-pressed="false" data-i="real"></button>
+      <button class="chip" id="vid" aria-pressed="false" data-i="video"></button>
+    </div>
+    <span class="count" id="count" aria-live="polite"></span>
+    <button class="clear" id="clear" hidden data-i="clear"></button>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+
+<footer class="wrap" id="foot"></footer>
+
+<dialog id="dlg" aria-label="Video">
+  <iframe class="player" id="player" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <div class="dbar"><a id="dlink" target="_blank" rel="noopener"></a><button id="dclose" data-i="close"></button></div>
+</dialog>
+
+<script id="data" type="application/json">/*GALLERY_DATA*/{}</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("data").textContent);
+  var LANGS = [["en", "EN"], ["cn", "中文"], ["ja", "日本語"], ["ko", "한국어"]];
+  var README = { en: "README.md", cn: "README_cn.md", ja: "README_ja.md", ko: "README_ko.md" };
+  var REPO = "https://github.com/limxdynamics/awesome-limx";
+  var SUBMIT = REPO + "/issues/new?template=add-project.yml";
+  var S = {
+    en: { gallery: "Gallery", list: "Full list on GitHub", h1: "What people build with LimX robots",
+      lead: "{n} projects, papers and deployments from the community and partners. Pick a robot, narrow it down, and play the demos.",
+      all: "All robots", allCats: "All categories", real: "Real robot only", video: "With video",
+      search: "Search names, methods, authors", count: "{n} shown", clear: "Clear filters", featured: "Watch first",
+      empty: "Nothing matches these filters.", play: "Play video", close: "Close", openOn: "Open on {p}",
+      none: "No single robot", sim: "sim",
+      types: { code: "Code", tutorial: "Tutorial", paper: "Paper", news: "News" },
+      foot: "Built from the <a href=\"{readme}\">README list</a>, which stays the source of truth. Built something with a LimX robot? <a href=\"{submit}\">Submit it</a>. Videos and thumbnails belong to their owners." },
+    cn: { gallery: "图库", list: "GitHub 上的完整列表", h1: "大家用 LimX 机器人做了什么",
+      lead: "来自社区和合作伙伴的 {n} 个项目、论文与落地案例。选一个机型，筛一筛，直接看演示视频。",
+      all: "全部机型", allCats: "全部分类", real: "只看实机", video: "有视频",
+      search: "搜索名称、方法、作者", count: "显示 {n} 项", clear: "清除筛选", featured: "先看这些",
+      empty: "没有符合这些条件的项目。", play: "播放视频", close: "关闭", openOn: "在 {p} 打开",
+      none: "不针对具体机型", sim: "仿真",
+      types: { code: "代码", tutorial: "教程", paper: "论文", news: "报道" },
+      foot: "数据来自 <a href=\"{readme}\">README 列表</a>，以列表为准。用 LimX 机器人做了东西？<a href=\"{submit}\">欢迎提交</a>。视频和缩略图版权归原作者所有。" },
+    ja: { gallery: "ギャラリー", list: "GitHub の全リスト", h1: "LimX のロボットでみんなが作ったもの",
+      lead: "コミュニティとパートナーによる {n} 件のプロジェクト、論文、導入事例。機種を選んで絞り込み、デモ動画をそのまま再生できます。",
+      all: "すべての機種", allCats: "すべてのカテゴリ", real: "実機のみ", video: "動画あり",
+      search: "名前・手法・作者で検索", count: "{n} 件を表示", clear: "絞り込みを解除", featured: "まずはこちら",
+      empty: "条件に合うプロジェクトはありません。", play: "動画を再生", close: "閉じる", openOn: "{p} で開く",
+      none: "特定の機種なし", sim: "sim",
+      types: { code: "コード", tutorial: "チュートリアル", paper: "論文", news: "報道" },
+      foot: "データは <a href=\"{readme}\">README のリスト</a>から生成しており、リストが正です。LimX のロボットで何か作りましたか？<a href=\"{submit}\">投稿はこちら</a>。動画とサムネイルの権利は各制作者に帰属します。" },
+    ko: { gallery: "갤러리", list: "GitHub 전체 목록", h1: "사람들이 LimX 로봇으로 만든 것들",
+      lead: "커뮤니티와 파트너가 만든 프로젝트, 논문, 도입 사례 {n}건. 기종을 고르고 범위를 좁혀 데모 영상을 바로 재생하세요.",
+      all: "전체 기종", allCats: "전체 분류", real: "실제 로봇만", video: "영상 있음",
+      search: "이름, 방법, 저자로 검색", count: "{n}건 표시", clear: "필터 지우기", featured: "먼저 볼 것",
+      empty: "조건에 맞는 프로젝트가 없습니다.", play: "영상 재생", close: "닫기", openOn: "{p}에서 열기",
+      none: "특정 기종 없음", sim: "sim",
+      types: { code: "코드", tutorial: "튜토리얼", paper: "논문", news: "보도" },
+      foot: "<a href=\"{readme}\">README 목록</a>에서 생성되며, 목록이 기준입니다. LimX 로봇으로 무언가 만들었나요? <a href=\"{submit}\">제출하기</a>. 영상과 썸네일의 권리는 각 제작자에게 있습니다." }
+  };
+  var TYPE_ORDER = ["code", "tutorial", "paper", "news"];
+  var PRIMARY = ["code", "project", "paper", "model", "dataset", "tutorial", "news", "result", "announcement", "video"];
+
+  var st = { lang: "en", robot: "", cat: "", type: "", real: false, vid: false, q: "" };
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return "&#" + c.charCodeAt(0) + ";"; }); };
+  var fmt = function (s, o) { return s.replace(/\{(\w+)\}/g, function (_, k) { return o[k]; }); };
+
+  function readHash() {
+    var h = new URLSearchParams(location.hash.slice(1));
+    var saved = null;
+    try { saved = localStorage.getItem("awesome-limx-lang"); } catch (e) {}
+    var nav = (navigator.language || "en").toLowerCase();
+    var guess = nav.indexOf("zh") === 0 ? "cn" : nav.indexOf("ja") === 0 ? "ja" : nav.indexOf("ko") === 0 ? "ko" : "en";
+    st.lang = S[h.get("lang")] ? h.get("lang") : (S[saved] ? saved : guess);
+    st.robot = D.robots.indexOf(h.get("robot")) >= 0 ? h.get("robot") : "";
+    st.cat = h.get("cat") || "";
+    st.type = TYPE_ORDER.indexOf(h.get("type")) >= 0 ? h.get("type") : "";
+    st.real = h.get("real") === "1";
+    st.vid = h.get("video") === "1";
+    st.q = h.get("q") || "";
+  }
+  function writeHash() {
+    var h = new URLSearchParams();
+    if (st.lang !== "en") h.set("lang", st.lang);
+    if (st.robot) h.set("robot", st.robot);
+    if (st.cat !== "") h.set("cat", st.cat);
+    if (st.type) h.set("type", st.type);
+    if (st.real) h.set("real", "1");
+    if (st.vid) h.set("video", "1");
+    if (st.q) h.set("q", st.q);
+    var s = h.toString();
+    history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
+  }
+
+  function rc(item) { return item.robots.length ? "var(--" + item.robots[0] + ")" : "var(--none)"; }
+  // The card title opens the most useful link: code first, then the project page, then the paper.
+  function primaryUrl(item) {
+    for (var p = 0; p < PRIMARY.length; p++)
+      for (var i = 0; i < item.urls.length; i++)
+        if (kindOf(item.t.en.links[i]) === PRIMARY[p]) return item.urls[i];
+    return item.urls[0] || REPO;
+  }
+  function kindOf(label) { return String(label || "").replace(/\s*\(.*$/, "").toLowerCase(); }
+  function hay(item) {
+    var t = item.t[st.lang], e = item.t.en;
+    return (t.name + " " + t.desc + " " + t.author + " " + t.sub + " " + e.desc + " " + e.sub + " " + item.robots.join(" ") + " " + item.year)
+      .replace(/<[^>]+>/g, " ").toLowerCase();
+  }
+  function matches(item, skip) {
+    if (skip !== "robot" && st.robot && item.robots.indexOf(st.robot) < 0) return false;
+    if (st.cat !== "" && String(item.section) !== st.cat) return false;
+    if (st.type && item.type !== st.type) return false;
+    if (st.real && item.sim) return false;
+    if (st.vid && !item.video) return false;
+    if (st.q) {
+      var h = hay(item), words = st.q.toLowerCase().split(/\s+/).filter(Boolean);
+      for (var i = 0; i < words.length; i++) if (h.indexOf(words[i]) < 0) return false;
+    }
+    return true;
+  }
+  function filtered() { return !!(st.robot || st.cat !== "" || st.type || st.real || st.vid || st.q); }
+
+  function card(item) {
+    var t = item.t[st.lang], L = S[st.lang];
+    var url = primaryUrl(item);
+    var thumb;
+    var what = esc(t.sub || D.sections[st.lang][item.section]);
+    var badge = item.sim ? '<span class="badge">' + esc(t.sim || L.sim) + "</span>" : "";
+    var ph = '<span class="ph"><span class="what">' + what + '</span><span class="big">' + esc(item.robots[0] || "LimX") + "</span></span>";
+    var img = item.thumb ? '<img loading="lazy" decoding="async" alt="" src="' + esc(item.thumb) + '" onerror="this.remove()">' : "";
+    if (item.video) {
+      thumb = '<button class="thumb" type="button" data-video="' + esc(item.id) + '" aria-label="' + esc(L.play + ": " + t.name) + '">' +
+        ph + img + '<span class="play"></span>' + badge + "</button>";
+    } else {
+      thumb = '<a class="thumb' + (item.thumb ? "" : " bare") + '" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + ph + img + badge + "</a>";
+    }
+    var tags = item.robots.length
+      ? item.robots.map(function (r) { return '<span class="tag" style="--rc:var(--' + r + ')">' + esc(r) + "</span>"; }).join("")
+      : '<span class="tag" style="--rc:var(--none)">' + esc(L.none) + "</span>";
+    var links = item.urls.map(function (u, i) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(t.links[i] || item.t.en.links[i]) + "</a>";
+    }).join("");
+    return '<article class="card" style="--rc:' + rc(item) + '">' + thumb +
+      '<div class="body"><h3 class="name"><a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(t.name) + "</a></h3>" +
+      (t.desc ? '<p class="desc">' + t.desc + "</p>" : "") +
+      '<div class="meta">' + tags + "<span>" + (item.year || "") + '</span><span class="who">' + t.author + "</span></div>" +
+      '<div class="links"><span class="kind">' + esc(t.type || L.types[item.type]) + "</span>" + links + "</div></div></article>";
+  }
+
+  function renderChrome() {
+    var L = S[st.lang];
+    document.documentElement.lang = { en: "en", cn: "zh-CN", ja: "ja", ko: "ko" }[st.lang];
+    document.title = "Awesome LimX " + L.gallery;
+    [].forEach.call(document.querySelectorAll("[data-i]"), function (el) { el.textContent = L[el.getAttribute("data-i")]; });
+    $("lead").textContent = fmt(L.lead, { n: D.items.length });
+    $("q").placeholder = L.search; $("q").setAttribute("aria-label", L.search);
+    $("listlink").href = REPO + "/blob/main/" + README[st.lang];
+    $("foot").innerHTML = fmt(L.foot, { readme: REPO + "/blob/main/" + README[st.lang], submit: SUBMIT });
+    var langs = document.querySelector(".langs");
+    langs.innerHTML = LANGS.map(function (l) {
+      return '<button type="button" data-lang="' + l[0] + '" aria-pressed="' + (l[0] === st.lang) + '">' + l[1] + "</button>";
+    }).join("");
+    var cat = $("cat");
+    cat.innerHTML = '<option value="">' + esc(L.allCats) + "</option>" + D.sections[st.lang].map(function (s, i) {
+      return '<option value="' + i + '">' + esc(s) + "</option>";
+    }).join("");
+    cat.value = st.cat;
+    $("types").innerHTML = TYPE_ORDER.map(function (k) {
+      return '<button class="chip" type="button" data-type="' + k + '" aria-pressed="' + (st.type === k) + '">' + esc(L.types[k]) + "</button>";
+    }).join("");
+    $("q").value = st.q;
+  }
+
+  function render() {
+    var L = S[st.lang];
+    // Lineup counts follow the other filters, so the numbers say what each robot would show.
+    var lineup = [["", L.all]].concat(D.robots.map(function (r) { return [r, r]; }));
+    $("lineup").innerHTML = lineup.map(function (r) {
+      var n = D.items.filter(function (it) { return matches(it, "robot") && (!r[0] || it.robots.indexOf(r[0]) >= 0); }).length;
+      return '<button class="robot" type="button" data-robot="' + r[0] + '" aria-pressed="' + (st.robot === r[0]) + '" style="--rc:' +
+        (r[0] ? "var(--" + r[0] + ")" : "var(--ink)") + '"><b>' + esc(r[1]) + "</b><small>" + n + "</small></button>";
+    }).join("");
+    $("real").setAttribute("aria-pressed", st.real);
+    $("vid").setAttribute("aria-pressed", st.vid);
+    [].forEach.call(document.querySelectorAll("#types .chip"), function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-type") === st.type); });
+
+    var shown = D.items.filter(function (it) { return matches(it); });
+    $("count").textContent = fmt(L.count, { n: shown.length });
+    $("clear").hidden = !filtered();
+
+    var html = "";
+    if (!filtered() && D.featured.length) {
+      var byId = {}; D.items.forEach(function (it) { byId[it.id] = it; });
+      html += '<section class="group featured"><h2>' + esc(L.featured) + '</h2><div class="grid">' +
+        D.featured.map(function (id) { return card(byId[id]); }).join("") + "</div></section>";
+    }
+    var groups = {};
+    shown.forEach(function (it) { (groups[it.section] = groups[it.section] || []).push(it); });
+    Object.keys(groups).sort(function (a, b) { return a - b; }).forEach(function (s) {
+      html += '<section class="group"><h2>' + esc(D.sections[st.lang][s]) + "<span>" + groups[s].length + "</span></h2>" +
+        '<div class="grid">' + groups[s].map(card).join("") + "</div></section>";
+    });
+    if (!shown.length) html = '<div class="empty"><p>' + esc(L.empty) + '</p><button class="chip" type="button" id="clear2">' + esc(L.clear) + "</button></div>";
+    $("main").innerHTML = html;
+    writeHash();
+  }
+
+  function openVideo(id) {
+    var it = D.items.filter(function (x) { return x.id === id; })[0];
+    if (!it || !it.video) return;
+    var v = it.video, L = S[st.lang];
+    $("player").src = v.provider === "youtube"
+      ? "https://www.youtube-nocookie.com/embed/" + v.id + "?autoplay=1&rel=0"
+      : "https://player.bilibili.com/player.html?bvid=" + v.id + "&autoplay=1&high_quality=1";
+    var p = v.provider === "youtube" ? "YouTube" : "bilibili";
+    $("dlink").href = v.url; $("dlink").textContent = it.t[st.lang].name + " · " + fmt(L.openOn, { p: p });
+    if ($("dlg").showModal) $("dlg").showModal(); else window.open(v.url, "_blank");
+  }
+  function closeVideo() { $("player").src = "about:blank"; if ($("dlg").open) $("dlg").close(); }
+
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target.closest("button") : null;
+    if (!t) return;
+    if (t.hasAttribute("data-lang")) {
+      st.lang = t.getAttribute("data-lang");
+      try { localStorage.setItem("awesome-limx-lang", st.lang); } catch (err) {}
+      renderChrome(); render();
+    } else if (t.hasAttribute("data-robot")) { st.robot = t.getAttribute("data-robot"); render(); }
+    else if (t.hasAttribute("data-type")) { var k = t.getAttribute("data-type"); st.type = st.type === k ? "" : k; render(); }
+    else if (t.id === "real") { st.real = !st.real; render(); }
+    else if (t.id === "vid") { st.vid = !st.vid; render(); }
+    else if (t.id === "clear" || t.id === "clear2") {
+      st.robot = ""; st.cat = ""; st.type = ""; st.real = false; st.vid = false; st.q = "";
+      $("q").value = ""; $("cat").value = ""; render();
+    }
+    else if (t.hasAttribute("data-video")) openVideo(t.getAttribute("data-video"));
+    else if (t.id === "dclose") closeVideo();
+  });
+  $("cat").addEventListener("change", function () { st.cat = this.value; render(); });
+  var timer;
+  $("q").addEventListener("input", function () { var v = this.value; clearTimeout(timer); timer = setTimeout(function () { st.q = v.trim(); render(); }, 120); });
+  $("dlg").addEventListener("close", function () { $("player").src = "about:blank"; });
+  $("dlg").addEventListener("click", function (e) { if (e.target === this) closeVideo(); });
+  window.addEventListener("hashchange", function () { readHash(); renderChrome(); render(); });
+
+  readHash(); renderChrome(); render();
+})();
+</script>
+</body>
+</html>
