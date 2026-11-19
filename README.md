@@ -20,6 +20,8 @@
 
 **Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with demo videos and filters by robot, type and real or sim.
 
+**Built something with a LimX robot?** Add it to the list — [open a pull request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md) with one row, or [fill the submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml) if you would rather not edit the file. A link is enough; your code stays in your own repository.
+
 ## Contents
 
 - [Before you start](#before-you-start)
@@ -60,8 +62,6 @@ order - these are LimX's official repositories, not community projects.
 | 2 · Interface | Low-level motion SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo sim-to-sim: [TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
 | 4 · Deploy | ONNX runtime, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: no public deploy repo yet |
-
-**Built something with a LimX robot?** Add it to the list — [submit a project](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml) (a link is enough), or read [CONTRIBUTING.md](CONTRIBUTING.md) first. Links only; your code stays in your own repository.
 
 ## Locomotion & whole-body control
 
@@ -352,7 +352,7 @@ Entries per robot and section:
 
 ## Contributing
 
-Self-nominations and suggestions are welcome: use the [submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), open a pull request, or email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com). See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria. Entries are sorted by year, newest first, within each section; the Type column says what a reader gets: something to run (**Code**), something to follow (**Tutorial**), something to read (**Paper**), or a media report or announcement (**News**).
+Self-nominations and suggestions are welcome: [open a pull request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md), [fill the submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), or email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com). See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria. Entries are sorted by year, newest first, within each section; the Type column says what a reader gets: something to run (**Code**), something to follow (**Tutorial**), something to read (**Paper**), or a media report or announcement (**News**).
 
 A listing is not an endorsement, and all rights stay with the owners. Owners can ask to be removed at any time, for any reason.
 

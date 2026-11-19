@@ -20,6 +20,8 @@
 
 **보면서 찾고 싶다면:** [갤러리](https://limxdynamics.github.io/awesome-limx/#lang=ko)에서 모든 항목을 카드로 보고, 데모 영상을 재생하고, 기종·유형·실제 로봇/시뮬레이션으로 거를 수 있습니다.
 
+**LimX 로봇으로 무언가 만들었나요?** 이 목록에 추가할 수 있습니다 —— [Pull Request 보내기](https://github.com/limxdynamics/awesome-limx/edit/main/README.md)(한 줄만 추가), 파일을 직접 수정하고 싶지 않다면 [제출 양식](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)을 이용하세요. 링크만 있으면 됩니다. 코드는 원래 저장소에 그대로 두시면 됩니다.
+
 ## 목차
 
 - [시작하기 전에](#시작하기-전에)
@@ -59,8 +61,6 @@
 | 2 · 인터페이스 | 저수준 모션 SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · 학습 | Isaac Lab, Isaac Gym, MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo sim-to-sim 검증: [TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
 | 4 · 배포 | ONNX 런타임, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: 배포 저장소 아직 미공개 |
-
-**LimX 로봇으로 무언가 만들었나요?** 이 목록에 추가할 수 있습니다 —— [프로젝트 제출](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)(링크만 있으면 됩니다). 먼저 [기여 안내](CONTRIBUTING.md)를 읽어도 좋습니다. 코드는 원래 저장소에 그대로 두시면 됩니다.
 
 ## 보행 및 전신 제어
 
@@ -351,7 +351,7 @@ _34개 (6개 그룹)_
 
 ## 기여하기
 
-자기 추천과 타인 추천 모두 환영합니다. [제출 양식](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), Pull Request, 또는 이메일 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 보내 주세요. 영어, 중국어, 일본어, 한국어 모두 괜찮습니다. 수록 기준은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요. 각 분류는 연도 기준 최신순으로 정렬되어 있습니다. '유형' 열은 독자가 얻을 수 있는 것을 나타냅니다: 바로 실행할 수 있는 것(**코드**), 따라 배울 수 있는 것(**튜토리얼**), 읽을 수 있는 것(**논문**), 언론 보도나 발표(**보도**).
+자기 추천과 타인 추천 모두 환영합니다. [Pull Request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md), [제출 양식](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml), 또는 이메일 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 보내 주세요. 영어, 중국어, 일본어, 한국어 모두 괜찮습니다. 수록 기준은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요. 각 분류는 연도 기준 최신순으로 정렬되어 있습니다. '유형' 열은 독자가 얻을 수 있는 것을 나타냅니다: 바로 실행할 수 있는 것(**코드**), 따라 배울 수 있는 것(**튜토리얼**), 읽을 수 있는 것(**논문**), 언론 보도나 발표(**보도**).
 
 수록은 LimX의 보증을 의미하지 않으며 모든 권리는 원저작자에게 있습니다. 소유자는 이유와 관계없이 언제든 삭제를 요청할 수 있습니다.
 

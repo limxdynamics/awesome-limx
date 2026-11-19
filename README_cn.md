@@ -20,6 +20,8 @@
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，可以播放演示视频，并按机型、类型、实机或仿真筛选。
 
+**用 LimX 机器人做出过东西？** 欢迎加到这个清单里 —— 直接[提 Pull Request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md)加一行；不想改文件的话，[填写提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)也可以。给个链接就够了，代码留在你自己的仓里。
+
 ## 目录
 
 - [动手之前](#动手之前)
@@ -59,8 +61,6 @@
 | 2 · 接口 | 低层运动 SDK、ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo 仿真验证：[TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
 | 4 · 部署 | ONNX 推理、ROS 2、C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna：暂未公开部署仓库 |
-
-**用 LimX 机器人做出过东西？** 欢迎加到这个清单里 —— [提交项目](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)（给个链接就够了），或先看[贡献说明](CONTRIBUTING_cn.md)。只放链接，代码留在你自己的仓里。
 
 ## 运动控制
 
@@ -351,7 +351,7 @@ _34 个条目，分 6 组_
 
 ## 参与贡献
 
-欢迎自荐，也欢迎推荐别人的工作：填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、提 Pull Request，或发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按年份从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**）、可以阅读的（**论文**），还是媒体报道或公告（**报道**）。
+欢迎自荐，也欢迎推荐别人的工作：直接[提 Pull Request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md)加一行，或填写[提交表单](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)、发邮件到 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。收录标准见 [CONTRIBUTING_cn.md](CONTRIBUTING_cn.md)。各分类内按年份从新到旧排列；「类型」列说明读者能拿到什么：可以直接跑的（**代码**）、可以跟着学的（**教程**）、可以阅读的（**论文**），还是媒体报道或公告（**报道**）。
 
 收录不代表逐际动力背书，权利归原作者所有。项目所有者可随时要求移除，无需说明理由。
 

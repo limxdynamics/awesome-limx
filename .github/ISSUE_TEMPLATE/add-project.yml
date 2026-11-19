@@ -6,53 +6,46 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing your work. One project per submission, please. If you are the author, say so in the relationship question below; it makes review much faster.
+        Thanks for sharing your work. A link and one sentence is all we need — we fill in the rest ourselves.
+        感谢分享。一个链接、一句话就够，其余我们自己补。
 
-        感谢分享。每次提交一个项目。如果你是作者，请在下方“与项目的关系”中注明，审核会快很多。
-
-        日本語・한국어でも記入できます / 한국어로 작성해도 됩니다. Answers in Japanese or Korean are welcome too.
+        日本語・한국어でも記入できます / 한국어로 작성해도 됩니다.
 
         **Before you submit / 提交前请确认**
         - A LimX robot is one of the main subjects, or the project ships a complete, runnable setup for it (training config, controller or deployment). Work where the LimX robot is only one model in a collection, or one name in a list of supported robots, is not listed. See [What we accept](https://github.com/limxdynamics/awesome-limx/blob/main/CONTRIBUTING.md#what-we-accept).
         - LimX 机器人是主要研究对象之一，或项目为它提供了完整、可直接运行的配置（训练配置、控制器或部署）。LimX 机器人只是合集里的一个模型、或只是支持列表里的一个名字，不收录。详见[收录标准](https://github.com/limxdynamics/awesome-limx/blob/main/CONTRIBUTING_cn.md#收录标准)。
         - Official code or model files re-uploaded without changes of your own are not listed. / 原样转传的官方代码或模型文件不收录。
-  - type: input
-    id: name
-    attributes:
-      label: Project name / 项目名称
-      placeholder: Stair climbing with learned locomotion
-    validations:
-      required: true
+        - Submitting means you are happy to be listed. Owners can ask to be removed at any time, for any reason. / 提交即视为同意收录。项目所有者可随时要求移除，无需说明理由。
   - type: textarea
     id: links
     attributes:
       label: Links / 链接
       description: |
-        Public links only, one per line, labeled by type. At least one is required. Say the language if a source is not in English.
-        只填公开链接，每行一个，注明类型。至少填一个。非英文来源请注明语言。
+        Public links only, one per line. One is enough.
+        只填公开链接，每行一个，一个就够。
       placeholder: |
-        Project page / 项目主页: https://example.org/project
-        Paper / 论文: https://arxiv.org/abs/0000.00000
         Code / 代码: https://github.com/owner/repo
+        Paper / 论文: https://arxiv.org/abs/0000.00000
         Video / 视频: https://www.bilibili.com/video/...
-        Result / 比赛成绩: https://...
-        News / 报道 (Chinese / 中文): https://...
     validations:
       required: true
   - type: input
-    id: video
+    id: line
     attributes:
-      label: Demo video / 演示视频
+      label: One sentence / 一句话说明
       description: |
-        Optional. A YouTube or bilibili link plays right on the gallery card, so the work can be seen, not just read about.
-        选填。YouTube 或 B 站链接可以直接在图库卡片上播放，读者一眼就能看到效果。
-      placeholder: https://www.youtube.com/watch?v=...
+        What it does, and which LimX robot it runs on — about 8 to 18 words (15 to 40 Chinese characters). English, Chinese, Japanese or Korean.
+        做了什么，用的是哪款 LimX 机器人，大约 15 到 40 个字（英文 8 到 18 个词）。中、英、日、韩文均可。
+      placeholder: TRON2 上的楼梯攀爬策略，仿真训练后无需微调直接部署
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: product
     attributes:
       label: LimX product used / 使用的产品
+      description: |
+        Optional — leave it blank if you are not sure and we will figure it out.
+        选填。不确定可以留空，我们来判断。
       multiple: true
       options:
         - TRON1
@@ -63,78 +56,5 @@ body:
         - W1
         - LimX SDK only / 仅 LimX SDK
         - Other / 其他
-    validations:
-      required: true
-  - type: dropdown
-    id: setting
-    attributes:
-      label: Real robot or simulation / 实机还是仿真
-      description: |
-        If the project supports several robots, say in the description what is specific to the LimX one.
-        如果项目支持多款机器人，请在简介里说明针对 LimX 机型的具体内容。
-      options:
-        - Real robot / 实机
-        - Simulation with LimX models / 基于 LimX 模型的仿真
-        - Both / 两者都有
-    validations:
-      required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category / 分类
-      description: Pick the one that best describes the main result. / 选最能代表主要成果的一个。
-      options:
-        - Locomotion & whole-body control / 运动控制
-        - Perception & navigation / 感知与导航
-        - Manipulation / 操作
-        - Embodied AI / 具身智能
-        - Tools, simulation & SDK / 工具、仿真与 SDK
-        - Education & competitions / 教学与竞赛
-        - Industry deployments / 行业应用
-    validations:
-      required: true
-  - type: input
-    id: who
-    attributes:
-      label: Institution or authors / 机构或作者
-      description: As it should appear in the list. / 按希望在列表中显示的写法填写。
-      placeholder: Example University Robotics Lab
-    validations:
-      required: true
-  - type: input
-    id: year
-    attributes:
-      label: Year / 年份
-      description: When the work was published or shown. / 成果发表或公开展示的年份。
-      placeholder: "2025"
-    validations:
-      required: true
-  - type: textarea
-    id: line
-    attributes:
-      label: One-line description / 一句话简介
-      description: |
-        What was done plus one detail that sets it apart, about 8 to 18 words (15 to 40 Chinese characters). No superlatives. English, Chinese, Japanese or Korean.
-        做了什么，再加一个与众不同的细节，大约 15 到 40 个字（英文 8 到 18 个词），不用最高级说法。中、英、日、韩文均可。
-      placeholder: stair-climbing policy trained in simulation and deployed without fine-tuning, using a learned foothold planner
-    validations:
-      required: true
-  - type: dropdown
-    id: relation
-    attributes:
-      label: Your relationship to the project / 你与项目的关系
-      options:
-        - I am an author or maintainer, and I agree to be listed / 我是作者或维护者，同意公开收录
-        - I am not an author, but a public source says it used LimX hardware or software / 我不是作者，但有公开资料说明其使用了 LimX
-        - I am submitting for a company, and the company agrees to be listed / 我代表企业提交，企业同意公开收录
-    validations:
-      required: true
-  - type: textarea
-    id: notes
-    attributes:
-      label: Anything else / 其他
-      description: |
-        Optional. If the company wants to announce first, tell us here and we will wait.
-        选填。如果企业希望先自行发布，请在此说明，我们会等。
     validations:
       required: false
