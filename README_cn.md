@@ -10,27 +10,27 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **157** 个项目与合作，其中 **104** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **160** 个项目与合作，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 
 **按机型直达**
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;条 | 34&nbsp;条 | 27&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
+| 91&nbsp;条 | 34&nbsp;条 | 29&nbsp;条 | 7&nbsp;条 | 5&nbsp;条 | 4&nbsp;条 |
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，可以播放演示视频，并按机型、类型、实机或仿真筛选。
 
 ## 目录
 
 - [动手之前](#动手之前)
-- [运动控制](#运动控制) — 50
+- [运动控制](#运动控制) — 52
   - [地形与感知行走](#地形与感知行走)
   - [强化学习训练与部署](#强化学习训练与部署)
   - [基于模型的控制](#基于模型的控制)
   - [动作跟踪与重定向](#动作跟踪与重定向)
 - [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
-- [具身智能](#具身智能) — 9
+- [具身智能](#具身智能) — 10
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 22
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
@@ -64,7 +64,7 @@
 
 ## 运动控制
 
-_50 个条目，分 4 组：20 篇论文 · 30 个代码_
+_52 个条目，分 4 组：20 篇论文 · 32 个代码_
 
 ### 地形与感知行走
 
@@ -87,6 +87,7 @@ _50 个条目，分 4 组：20 篇论文 · 30 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**：上一代 Oli 机型在 mjlab 中的行走与动作跟踪策略，用 Kaggle 免费 GPU 训练 | `Oli`&nbsp;*仿真* | [nht-cyb](https://github.com/nht-cyb) | 2026 | 代码 | [代码](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-osram"></a>**OSRAM**：在线建模闭环系统，在实机上修正 sim2real 后残留的跟踪误差 | `TRON1` | [杜克大学](https://github.com/generalroboticslab) | 2026 | 代码 | [代码](https://github.com/generalroboticslab/OSRAM) |
 | <a id="p-rl-tron1"></a>**TRON1 Teacher-Student RL**：面向点足版本的 Isaac Lab 运动训练框架，采用师生结构 | `TRON1`&nbsp;*仿真* | [Jiakang Ma](https://github.com/Jiakang-Ma) | 2026 | 代码 | [代码](https://github.com/Jiakang-Ma/rl-tron1) |
 | <a id="p-tron1-sliding-analysis"></a>**TRON1 打滑分析**：分析轮足策略在哪些地面摩擦下开始侧滑，并在 Isaac 与 MuJoCo 中交叉验证 | `TRON1`&nbsp;*仿真* | [Shukashuki](https://github.com/Shukashuki) | 2026 | 代码 | [代码](https://github.com/Shukashuki/tron1-sliding-analysis) |
@@ -126,6 +127,7 @@ _50 个条目，分 4 组：20 篇论文 · 30 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-tron1-learning-from-human"></a>**TRON1 Learning from Human**：在 Isaac Sim 中用 CMU 动捕数据学会轮足跳跃，同一策略不经重训直接在 MuJoCo 中运行 | `TRON1`&nbsp;*仿真* | [Shukashuki](https://github.com/Shukashuki) | 2026 | 代码 | [代码](https://github.com/Shukashuki/tron1-learning-from-human) |
 | <a id="p-any2any"></a>**Any2Any**：把预训练的全身动作跟踪模型以少量适配迁移到新的人形机器人 | `Oli` `Luna` | 逐际动力 | 2026 | 代码 | [论文](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[代码](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**：CHIP 自适应柔顺动作跟踪任务的移植版，在 mjlab 上训练 | `Oli`&nbsp;*仿真* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 代码 | [代码](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**：SuperMimic 世界模型全身控制的适配版，单个策略跟踪 40 段动作 | `Oli`&nbsp;*仿真* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 代码 | [代码](https://github.com/liuskywalkerjskd/supermimic_oli) |
@@ -176,10 +178,11 @@ _11 个条目：5 篇论文 · 6 个代码_
 
 ## 具身智能
 
-_9 个条目：2 篇论文 · 7 个代码_
+_10 个条目：2 篇论文 · 8 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli 语音交互应用**：在机载 Jetson Orin NX 上离线语音对话，通过 SDK 音频接口接入 Whisper、本地大模型和 Piper 语音合成 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | 代码 | [代码](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：在 Mac 上运行的自我改进本地 AI 智能体，在 MuJoCo 中驱动机器人 | `TRON1`&nbsp;*仿真* | [justinsuo](https://github.com/justinsuo) | 2026 | 代码 | [代码](https://github.com/justinsuo/tron1-hermes-agent) |
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的机器人上训练并部署 FluxVLA 视觉-语言-动作模型 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：ROS 2 语音交互：离线与在线语音识别、大模型对话和动作指令 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
@@ -339,9 +342,9 @@ _34 个条目，分 6 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
+| [`TRON1`](robots/TRON1_cn.md) | **91** | 33 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2_cn.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
-| [`Oli`](robots/Oli_cn.md) | **27** | 13 |  | 2 | 2 | 2 | 2 | 6 |
+| [`Oli`](robots/Oli_cn.md) | **29** | 14 |  | 2 | 3 | 2 | 2 | 6 |
 | [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  |  |  | 4 |
 | [`P1`](robots/P1_cn.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1_cn.md) | **4** | 2 |  | 1 |  |  |  | 1 |

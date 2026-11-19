@@ -10,27 +10,27 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **157**개 프로젝트와 협력 사례를 모았고, 그중 **104**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **160**개 프로젝트와 협력 사례를 모았고, 그중 **107**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 
 **기종별로 찾기**
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90개 | 34개 | 27개 | 7개 | 5개 | 4개 |
+| 91개 | 34개 | 29개 | 7개 | 5개 | 4개 |
 
 **보면서 찾고 싶다면:** [갤러리](https://limxdynamics.github.io/awesome-limx/#lang=ko)에서 모든 항목을 카드로 보고, 데모 영상을 재생하고, 기종·유형·실제 로봇/시뮬레이션으로 거를 수 있습니다.
 
 ## 목차
 
 - [시작하기 전에](#시작하기-전에)
-- [보행 및 전신 제어](#보행-및-전신-제어) — 50
+- [보행 및 전신 제어](#보행-및-전신-제어) — 52
   - [지형 및 인지 기반 보행](#지형-및-인지-기반-보행)
   - [강화학습 훈련 및 실기 전이](#강화학습-훈련-및-실기-전이)
   - [모델 기반 제어](#모델-기반-제어)
   - [모션 트래킹 및 리타게팅](#모션-트래킹-및-리타게팅)
 - [인지 및 내비게이션](#인지-및-내비게이션) — 13
 - [매니퓰레이션](#매니퓰레이션) — 11
-- [임바디드 AI](#임바디드-ai) — 9
+- [임바디드 AI](#임바디드-ai) — 10
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 22
   - [학습 프레임워크](#학습-프레임워크)
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
@@ -64,7 +64,7 @@
 
 ## 보행 및 전신 제어
 
-_50개 (4개 그룹): 논문 20 · 코드 30_
+_52개 (4개 그룹): 논문 20 · 코드 32_
 
 ### 지형 및 인지 기반 보행
 
@@ -87,6 +87,7 @@ _50개 (4개 그룹): 논문 20 · 코드 30_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**: 이전 세대 Oli 모델용 보행·모션 트래킹 정책, Kaggle 무료 GPU로 mjlab에서 학습 | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | 코드 | [코드](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-biped-rl-with-pathfinding"></a>**Biped RL with Pathfinding**: 사용자 정의 목표와 경로 탐색을 갖춘 Isaac Lab 학습 환경 | `TRON1`&nbsp;*sim* | [shandilya1998](https://github.com/shandilya1998) | 2026 | 코드 | [코드](https://github.com/singhaman1750/biped-rl-isaaclab-iisc) |
 | <a id="p-osram"></a>**OSRAM**: 폐루프 시스템을 온라인으로 모델링해 실기에 남는 추종 오차를 보정 | `TRON1` | [Duke University](https://github.com/generalroboticslab) | 2026 | 코드 | [코드](https://github.com/generalroboticslab/OSRAM) |
 | <a id="p-rl-tron1"></a>**TRON1 Teacher-Student RL**: 포인트풋 버전용 교사-학생 구조 Isaac Lab 보행 학습 | `TRON1`&nbsp;*sim* | [Jiakang Ma](https://github.com/Jiakang-Ma) | 2026 | 코드 | [코드](https://github.com/Jiakang-Ma/rl-tron1) |
@@ -126,6 +127,7 @@ _50개 (4개 그룹): 논문 20 · 코드 30_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-tron1-learning-from-human"></a>**TRON1 Learning from Human**: CMU 모션 캡처로 Isaac Sim에서 휠풋 점프를 학습하고, 같은 정책을 재학습 없이 MuJoCo에서 실행 | `TRON1`&nbsp;*sim* | [Shukashuki](https://github.com/Shukashuki) | 2026 | 코드 | [코드](https://github.com/Shukashuki/tron1-learning-from-human) |
 | <a id="p-any2any"></a>**Any2Any**: 사전학습된 전신 모션 트래킹 모델을 적은 적응으로 새 휴머노이드에 이전 | `Oli` `Luna` | LimX | 2026 | 코드 | [논문](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[코드](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**: 적응형 컴플라이언스 모션 트래킹 CHIP 이식판, mjlab에서 학습 | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | 코드 | [코드](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: 월드 모델 전신 제어 SuperMimic 적용판, 정책 하나로 40개 동작 추종 | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | 코드 | [코드](https://github.com/liuskywalkerjskd/supermimic_oli) |
@@ -176,10 +178,11 @@ _11개: 논문 5 · 코드 6_
 
 ## 임바디드 AI
 
-_9개: 논문 2 · 코드 7_
+_10개: 논문 2 · 코드 8_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli Voice Interaction App**: 탑재된 Jetson Orin NX에서 오프라인 음성 대화, SDK 오디오 API로 Whisper·로컬 LLM·Piper TTS 연결 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | 코드 | [코드](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**: Mac에서 도는 자기 개선형 로컬 AI 에이전트가 MuJoCo에서 로봇을 조종 | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | 코드 | [코드](https://github.com/justinsuo/tron1-hermes-agent) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: FluxVLA 시각-언어-행동 모델을 자신의 로봇에서 학습·배포 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 코드 | [코드](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: 오프라인·온라인 음성 인식, LLM 대화, 동작 명령을 갖춘 ROS 2 음성 시스템 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 코드 | [코드](https://github.com/zhilin2025/oli_audio) |
@@ -339,9 +342,9 @@ _34개 (6개 그룹)_
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
+| [`TRON1`](robots/TRON1_ko.md) | **91** | 33 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2_ko.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
-| [`Oli`](robots/Oli_ko.md) | **27** | 13 |  | 2 | 2 | 2 | 2 | 6 |
+| [`Oli`](robots/Oli_ko.md) | **29** | 14 |  | 2 | 3 | 2 | 2 | 6 |
 | [`Luna`](robots/Luna_ko.md) | **7** | 2 | 1 |  |  |  |  | 4 |
 | [`P1`](robots/P1_ko.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1_ko.md) | **4** | 2 |  | 1 |  |  |  | 1 |

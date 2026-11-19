@@ -10,27 +10,27 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **157** projects and partnerships around LimX robots and the LimX SDK, **104** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **160** projects and partnerships around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 90&nbsp;projects | 34&nbsp;projects | 27&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 91&nbsp;projects | 34&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
 
 **Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with demo videos and filters by robot, type and real or sim.
 
 ## Contents
 
 - [Before you start](#before-you-start)
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 50
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 52
   - [Terrain & perceptive locomotion](#terrain--perceptive-locomotion)
   - [RL training & sim-to-real](#rl-training--sim-to-real)
   - [Model-based control](#model-based-control)
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
 - [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 11
-- [Embodied AI](#embodied-ai) — 9
+- [Embodied AI](#embodied-ai) — 10
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 22
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
@@ -65,7 +65,7 @@ order - these are LimX's official repositories, not community projects.
 
 ## Locomotion & whole-body control
 
-_50 entries in 4 groups: 20 papers · 30 code_
+_52 entries in 4 groups: 20 papers · 32 code_
 
 ### Terrain & perceptive locomotion
 
@@ -88,6 +88,7 @@ _50 entries in 4 groups: 20 papers · 30 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**: locomotion and motion-tracking policies for the earlier-generation Oli model in mjlab, trained on a free Kaggle GPU | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | Code | [code](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-biped-rl-with-pathfinding"></a>**Biped RL with Pathfinding**: Isaac Lab training environment with custom goals and pathfinding toward them | `TRON1`&nbsp;*sim* | [shandilya1998](https://github.com/shandilya1998) | 2026 | Code | [code](https://github.com/singhaman1750/biped-rl-isaaclab-iisc) |
 | <a id="p-osram"></a>**OSRAM**: corrects residual tracking error on hardware online by modeling the closed-loop system | `TRON1` | [Duke University](https://github.com/generalroboticslab) | 2026 | Code | [code](https://github.com/generalroboticslab/OSRAM) |
 | <a id="p-rl-tron1"></a>**TRON1 Teacher-Student RL**: Isaac Lab locomotion training for the point-foot version, with a teacher-student setup | `TRON1`&nbsp;*sim* | [Jiakang Ma](https://github.com/Jiakang-Ma) | 2026 | Code | [code](https://github.com/Jiakang-Ma/rl-tron1) |
@@ -127,6 +128,7 @@ _50 entries in 4 groups: 20 papers · 30 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-tron1-learning-from-human"></a>**TRON1 Learning from Human**: wheel-foot jump learned from CMU motion capture in Isaac Sim, then run unchanged in MuJoCo | `TRON1`&nbsp;*sim* | [Shukashuki](https://github.com/Shukashuki) | 2026 | Code | [code](https://github.com/Shukashuki/tron1-learning-from-human) |
 | <a id="p-any2any"></a>**Any2Any**: transfers a pretrained whole-body tracking model to new humanoids with little adaptation | `Oli` `Luna` | LimX | 2026 | Code | [paper](https://arxiv.org/abs/2605.23733)&nbsp;·&nbsp;[code](https://github.com/Ming827/any2any_sonic2Oli) |
 | <a id="p-chip-for-oli"></a>**CHIP for Oli**: CHIP adaptive-compliance motion tracking task, ported and trained on mjlab | `Oli`&nbsp;*sim* | [Matt14-mander](https://github.com/Matt14-mander) | 2026 | Code | [code](https://github.com/Matt14-mander/chip-oli) |
 | <a id="p-supermimic-for-oli"></a>**SuperMimic for Oli**: SuperMimic world-model whole-body control, with one policy tracking 40 motions | `Oli`&nbsp;*sim* | [Tianxing Liu](https://github.com/liuskywalkerjskd) | 2026 | Code | [code](https://github.com/liuskywalkerjskd/supermimic_oli) |
@@ -177,10 +179,11 @@ _11 entries: 5 papers · 6 code_
 
 ## Embodied AI
 
-_9 entries: 2 papers · 7 code_
+_10 entries: 2 papers · 8 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli Voice Interaction App**: offline voice chat on the onboard Jetson Orin NX, with Whisper, a local LLM and Piper TTS through the SDK audio API | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | Code | [code](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**: self-improving local AI agent that drives the robot in MuJoCo on a Mac | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | Code | [code](https://github.com/justinsuo/tron1-hermes-agent) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy the FluxVLA vision-language-action model on your own robot | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: ROS 2 voice system with offline and online speech recognition, LLM dialogue and action commands | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | Code | [code](https://github.com/zhilin2025/oli_audio) |
@@ -340,9 +343,9 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **90** | 32 | 12 | 6 | 1 | 18 | 10 | 11 |
+| [`TRON1`](robots/TRON1.md) | **91** | 33 | 12 | 6 | 1 | 18 | 10 | 11 |
 | [`TRON2`](robots/TRON2.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
-| [`Oli`](robots/Oli.md) | **27** | 13 |  | 2 | 2 | 2 | 2 | 6 |
+| [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 3 | 2 | 2 | 6 |
 | [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  |  |  | 4 |
 | [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |
 | [`W1`](robots/W1.md) | **4** | 2 |  | 1 |  |  |  | 1 |
