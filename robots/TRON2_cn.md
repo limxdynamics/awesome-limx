@@ -6,7 +6,9 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **34** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **32** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+>
+> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
 TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 6
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 5
 - [教学与竞赛](#教学与竞赛) — 8
-- [行业应用](#行业应用) — 11
+- [行业应用](#行业应用) — 9
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -105,12 +107,5 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**：第四范式 Phanthy Motus 具身智能平台的硬件驱动，支持 TRON2 双臂 | `TRON2` | [第四范式](https://github.com/4paradigm) | 2026 | 代码 | [代码](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**：115 条遥操作数据，带触觉视频；Voxel51 另以 FiftyOne 格式转发 | `TRON2` | [他山科技 Xense](https://huggingface.co/Xense) | 2026 | 代码 | [数据集](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[数据集 (Voxel51)](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-cmriat-citadel"></a>**Citadel**：机器人数据管理工具，把 HDF5 录制数据批量转换为 LeRobot v2.1，示例使用 TRON2 采集的数据 | `TRON2` | [招商局先进技术研究院](https://github.com/cmriat) | 2026 | 代码 | [代码](https://github.com/cmriat/Citadel) |
-
-### 区域伙伴与渠道
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 TRON2 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

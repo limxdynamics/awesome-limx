@@ -6,7 +6,9 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **26** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+>
+> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 - [具身智能](#具身智能) — 3
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 2
 - [教学与竞赛](#教学与竞赛) — 2
-- [行业应用](#行业应用) — 6
+- [行业应用](#行业应用) — 3
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -101,7 +103,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：Oli 搭载东土 Intewell 操作系统与 AUTBUS 总线；逐际同时加入东土发起的电子架构联盟 | `Oli` | 东土科技 | 2026 | 报道 | [报道 (微信公众号)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道 (21世纪经济报道)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[报道 (四川在线)](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：据东土科技介绍，Oli 搭载其 Intewell 操作系统与 AUTBUS 总线 | `Oli` | 东土科技 | 2026 | 报道 | [报道 (微信公众号)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道 (21世纪经济报道)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[报道 (四川在线)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### 企业开源项目
 
@@ -114,18 +116,5 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
-
-### 战略合作
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**：共建具身智能产业学院，以 Oli 作为核心教学平台 | `Oli` | 宁波职业技术大学 | 2026 | 报道 | [报道](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
-
-### 区域伙伴与渠道
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**：在美国销售 TRON2 与 Oli 套装，提供数据采集用遥操作部署 | `TRON2` `Oli` | Knoxlabs | 2026 | 报道 | [报道](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 用 Oli 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

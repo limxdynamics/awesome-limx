@@ -6,7 +6,9 @@
 
 # TRON1 · Awesome LimX
 
-> **91** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **89** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+>
+> Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -20,7 +22,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 18
 - [Education & competitions](#education--competitions) — 10
-- [Industry deployments](#industry-deployments) — 11
+- [Industry deployments](#industry-deployments) — 9
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -174,7 +176,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot locomotion policy moved to D-Robotics' RDK S100 BPU, an official application case | `TRON1` | D-Robotics | 2025 | News | [news (zh)](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot locomotion policy moved to D-Robotics' RDK S100 BPU, published by D-Robotics as an application case | `TRON1` | D-Robotics | 2025 | News | [news (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### Open source from companies
 
@@ -186,13 +188,6 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-openmind-om1-sim"></a>**OM1-sim**: Isaac Sim setup for the OM1 robot OS, with wheel-foot TRON1 next to Go2 and G1 | `TRON1`&nbsp;*sim* | [OpenMind](https://github.com/OpenMind) | 2026 | Code | [code](https://github.com/OpenMind/OM1-sim) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**: DDS and WebSocket bridge from AI agents to ROS 2 robots; detects LimX robots and ships TRON1 models | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | Code | [code](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: modular compute and development backpack integrated with TRON1, Unitree G1 and Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | Code | [code](https://github.com/OpenMind/brainpack) |
-
-### Regional partners & channels
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | News | [news (ko)](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### Awards & recognition
 

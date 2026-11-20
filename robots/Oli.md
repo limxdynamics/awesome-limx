@@ -6,7 +6,9 @@
 
 # Oli · Awesome LimX
 
-> **29** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **26** projects built on Oli, from the [Awesome LimX](../README.md) list.
+>
+> Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Embodied AI](#embodied-ai) — 3
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 2
 - [Education & competitions](#education--competitions) — 2
-- [Industry deployments](#industry-deployments) — 6
+- [Industry deployments](#industry-deployments) — 3
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -101,7 +103,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli on Kyland's Intewell OS and AUTBUS bus; LimX also joined Kyland's architecture alliance | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh, 21st Century Business Herald)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh, Sichuan Online)](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Kyland reports Oli running its Intewell OS and AUTBUS bus | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh, 21st Century Business Herald)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh, Sichuan Online)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### Open source from companies
 
@@ -114,18 +116,5 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
-
-### Strategic partnerships
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: joint industry college for embodied AI, with Oli as the core teaching platform | `Oli` | Ningbo Polytechnic University | 2026 | News | [news (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
-
-### Regional partners & channels
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | News | [news](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on Oli? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

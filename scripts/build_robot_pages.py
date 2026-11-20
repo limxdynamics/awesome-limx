@@ -30,28 +30,28 @@ OFFICIAL = {
 }
 TEXT = {
     "": dict(
-        lead="> **{n}** projects built on {r}, from the [Awesome LimX](../README.md) list.",
+        lead="> **{n}** projects built on {r}, from the [Awesome LimX](../README.md) list.\n>\n> Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).",
         official="Official {r} repositories: {links}",
         contents="Contents", back="Full list", others="Other robots",
         none="No entries yet.",
         legend="**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot",
         submit="Built something on {r}? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)."),
     "_cn": dict(
-        lead="> 基于 {r} 的 **{n}** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。",
+        lead="> 基于 {r} 的 **{n}** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。\n>\n> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。",
         official="{r} 官方仓库：{links}",
         contents="目录", back="完整列表", others="其他机型",
         none="暂无条目。",
         legend="**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过",
         submit="用 {r} 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。"),
     "_ja": dict(
-        lead="> {r} を使った **{n}** プロジェクト（[Awesome LimX](../README_ja.md) より）。",
+        lead="> {r} を使った **{n}** プロジェクト（[Awesome LimX](../README_ja.md) より）。\n>\n> 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。",
         official="{r} 公式リポジトリ：{links}",
         contents="目次", back="全リスト", others="ほかの機種",
         none="まだ項目はありません。",
         legend="**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作",
         submit="{r} で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。"),
     "_ko": dict(
-        lead="> {r}로 만든 **{n}**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).",
+        lead="> {r}로 만든 **{n}**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).\n>\n> 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.",
         official="{r} 공식 저장소: {links}",
         contents="목차", back="전체 목록", others="다른 기종",
         none="아직 항목이 없습니다.",

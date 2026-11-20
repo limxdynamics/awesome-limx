@@ -7,6 +7,8 @@
 # Luna · Awesome LimX
 
 > **7** projects built on Luna, from the [Awesome LimX](../README.md) list.
+>
+> Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
 Official Luna repositories: [luna-description](https://github.com/limxdynamics/luna-description)
 

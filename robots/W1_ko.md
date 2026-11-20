@@ -6,7 +6,9 @@
 
 # W1 · Awesome LimX
 
-> W1로 만든 **4**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> W1로 만든 **3**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+>
+> 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
 [전체 목록](../README_ko.md) · 다른 기종: [TRON1](TRON1_ko.md) · [TRON2](TRON2_ko.md) · [Oli](Oli_ko.md) · [Luna](Luna_ko.md) · [P1](P1_ko.md)
 
@@ -14,7 +16,6 @@
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 2
 - [매니퓰레이션](#매니퓰레이션) — 1
-- [산업 적용](#산업-적용) — 1
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -37,13 +38,5 @@
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**Wheeled-Quadrupedal Manipulator**: 휠 사족에 팔을 달고 학습한 제어기로 말단 자세를 추종 | `W1` | SUSTech CLEAR Lab, ZJU-UIUC et al. | 2024 | 논문 | [프로젝트](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2412.03012) |
-
-## 산업 적용
-
-### 지역 파트너 및 판매 채널
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-r2c2-partnership"></a>**R2C2**: 홍콩 공식 개발사 겸 유통사, 강화학습 로봇을 유틸리티·점검 업무에 활용 | `W1` `P1` | R2C2 Limited(홍콩) | 2024 | 보도 | [발표 (LinkedIn)](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[발표 (X)](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 W1로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

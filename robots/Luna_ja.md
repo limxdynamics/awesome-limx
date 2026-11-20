@@ -7,6 +7,8 @@
 # Luna · Awesome LimX
 
 > Luna を使った **7** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+>
+> 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。
 
 Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/luna-description)
 

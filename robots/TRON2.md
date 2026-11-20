@@ -6,7 +6,9 @@
 
 # TRON2 · Awesome LimX
 
-> **34** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **32** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+>
+> Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
 Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 6
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 8
-- [Industry deployments](#industry-deployments) — 11
+- [Industry deployments](#industry-deployments) — 9
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -105,12 +107,5 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: hardware drivers for 4Paradigm's Phanthy Motus embodied AI platform, TRON2 dual-arm included | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | Code | [code](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 115 teleoperated episodes with tactile video, also republished by Voxel51 in FiftyOne format | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | Code | [dataset](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[dataset (Voxel51)](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-cmriat-citadel"></a>**Citadel**: robot data pipeline that converts HDF5 recordings to LeRobot v2.1, with TRON2 episodes as its worked example | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | Code | [code](https://github.com/cmriat/Citadel) |
-
-### Regional partners & channels
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | News | [news](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Built something on TRON2? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

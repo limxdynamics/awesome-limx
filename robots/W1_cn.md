@@ -6,7 +6,9 @@
 
 # W1 · Awesome LimX
 
-> 基于 W1 的 **4** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 W1 的 **3** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+>
+> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
 [完整列表](../README_cn.md) · 其他机型: [TRON1](TRON1_cn.md) · [TRON2](TRON2_cn.md) · [Oli](Oli_cn.md) · [Luna](Luna_cn.md) · [P1](P1_cn.md)
 
@@ -14,7 +16,6 @@
 
 - [运动控制](#运动控制) — 2
 - [操作](#操作) — 1
-- [行业应用](#行业应用) — 1
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -37,13 +38,5 @@
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-wheeled-quadrupedal-manipulator"></a>**轮足四足移动操作**：在轮足四足机器人上加装机械臂，用学习控制器跟踪末端位姿 | `W1` | 南科大 CLEAR 实验室、浙大-UIUC等 | 2024 | 论文 | [主页](https://clearlab-sustech.github.io/RFM_loco_mani/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2412.03012) |
-
-## 行业应用
-
-### 区域伙伴与渠道
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-r2c2-partnership"></a>**R2C2**：香港官方开发者与分销商，把强化学习机器人用于公用设施与巡检 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 报道 | [公告 (LinkedIn)](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[公告 (X)](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 用 W1 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

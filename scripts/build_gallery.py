@@ -16,12 +16,15 @@ featured picks live in scripts/gallery.json:
       }
     }
 
-A thumbnail is picked in this order: "thumb" in gallery.json, a file
-docs/thumbs/<id>.(webp|jpg|png|gif), the first YouTube link of the entry,
-a frame of a video file, then an illustration drawn in the page from the
-robot and the description (scripts/gallery_illustrations.js), labelled as such.
-"video" can be a YouTube or bilibili link, or an https .mp4/.webm file on the
-project's own site. Do not edit docs/index.html by
+Cards show no third-party images or video. Copying or embedding someone
+else's thumbnails, screenshots or videos needs the owner's permission, and
+naming the source is not a substitute (legal review, 2026-11-20). So every
+card shows an illustration drawn in the page from the robot and the
+description (scripts/gallery_illustrations.js), labelled as such, and a
+video is a link that opens on its own site. "thumb" is honoured only for
+media LimX owns: set "own": true next to it in gallery.json. "video" can be
+a YouTube or bilibili link, or an https .mp4/.webm file on the project's own
+site. Do not edit docs/index.html by
 hand: change the README or gallery.json and run this script.
 """
 import argparse
@@ -170,20 +173,16 @@ def build():
                 "sim": x["simLabel"], "type": x["typeLabel"],
                 "links": [l["label"] for l in x["links"]],
             }
-        # Media: config first, then a file in docs/thumbs, then the entry's own video.
+        # Media: a video link from the config or the entry itself. A thumbnail
+        # only for media LimX owns ("own": true); see the docstring.
         media = dict(cfg.get("media", {}).get(eid, {}))
-        if "thumb" not in media:
-            for ext in ("webp", "jpg", "png", "gif"):
-                if os.path.exists(os.path.join(DOCS, "thumbs", "%s.%s" % (eid, ext))):
-                    media["thumb"] = "thumbs/%s.%s" % (eid, ext)
-                    break
+        if not media.get("own"):
+            media.pop("thumb", None)
         if "video" not in media:
             media["video"] = next((u for u in item["urls"] if video_of(u)), None)
         v = video_of(media["video"]) if media.get("video") else None
         if v:
             item["video"] = {"provider": v[0], "id": v[1], "url": media["video"]}
-            if "thumb" not in media and v[0] == "youtube":
-                media["thumb"] = "https://i.ytimg.com/vi/%s/hqdefault.jpg" % v[1]
         elif media.get("video"):
             problems.append("gallery.json: %s video is not a YouTube, bilibili or https .mp4/.webm link" % eid)
         if media.get("thumb"):
@@ -308,7 +307,7 @@ def page_html(it, data, sections):
 %s
 </main>
 <footer class="wrap">
-Part of <a href="../">Awesome LimX</a>, a list of work built on LimX robots. A listing is not an endorsement; all rights stay with the owners.
+Part of <a href="../">Awesome LimX</a>, a compilation of public information about work built on LimX robots, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects, names and media belong to their owners and stay under their own licenses. To correct or remove an entry, email <a href="mailto:opensource@limxdynamics.com">opensource@limxdynamics.com</a>.
 </footer>
 </body>
 </html>

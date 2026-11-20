@@ -6,7 +6,9 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **34**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **32**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+>
+> 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
 TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) · [tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 - [임바디드 AI](#임바디드-ai) — 6
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 5
 - [교육 및 대회](#교육-및-대회) — 8
-- [산업 적용](#산업-적용) — 11
+- [산업 적용](#산업-적용) — 9
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -105,12 +107,5 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 | <a id="p-phanthy-motus-driver"></a>**Phanthy Motus Drivers**: 4Paradigm 임바디드 AI 플랫폼 Phanthy Motus의 하드웨어 드라이버, TRON2 양팔 지원 | `TRON2` | [4Paradigm](https://github.com/4paradigm) | 2026 | 코드 | [코드](https://github.com/4paradigm/phanthymotus-driver) |
 | <a id="p-xense-tron2-pnp-dataset"></a>**Xense TRON2 Pick-and-Place Dataset**: 촉각 영상 포함 원격 조작 115 에피소드, Voxel51이 FiftyOne 형식으로도 공개 | `TRON2` | [Xense Robotics](https://huggingface.co/Xense) | 2026 | 코드 | [데이터셋](https://huggingface.co/datasets/Xense/tron2rt-pnp-0918)&nbsp;·&nbsp;[데이터셋 (Voxel51)](https://huggingface.co/datasets/Voxel51/xense-tron2rt-pnp-115ep) |
 | <a id="p-cmriat-citadel"></a>**Citadel**: HDF5 기록을 LeRobot v2.1로 일괄 변환하는 로봇 데이터 관리 도구, 예시로 TRON2 데이터 사용 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | 코드 | [코드](https://github.com/cmriat/Citadel) |
-
-### 지역 파트너 및 판매 채널
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 보도 | [보도](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 TRON2로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

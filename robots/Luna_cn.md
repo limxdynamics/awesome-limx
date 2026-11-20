@@ -7,6 +7,8 @@
 # Luna · Awesome LimX
 
 > 基于 Luna 的 **7** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+>
+> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
 Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-description)
 

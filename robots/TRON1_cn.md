@@ -6,7 +6,9 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **91** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **89** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+>
+> 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
 TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -20,7 +22,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 18
 - [教学与竞赛](#教学与竞赛) — 10
-- [行业应用](#行业应用) — 11
+- [行业应用](#行业应用) — 9
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -174,7 +176,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，列为官方应用案例 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，地瓜机器人将其作为应用案例发布 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企业开源项目
 
@@ -186,13 +188,6 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-openmind-om1-sim"></a>**OM1-sim**：OM1 机器人操作系统的 Isaac Sim 仿真环境，支持轮足 TRON1、Go2 和 G1 | `TRON1`&nbsp;*仿真* | [OpenMind](https://github.com/OpenMind) | 2026 | 代码 | [代码](https://github.com/OpenMind/OM1-sim) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**：AI 智能体到 ROS 2 机器人的 DDS / WebSocket 桥接，可自动识别 LimX 机器人并内置 TRON1 模型 | `TRON1`&nbsp;*仿真* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 代码 | [代码](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**：模块化计算与开发背包，适配 TRON1、Unitree G1 和 Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 代码 | [代码](https://github.com/OpenMind/brainpack) |
-
-### 区域伙伴与渠道
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**Robot Bank**：在日本推出 TRON1、TRON2 和 Oli，并提供现场部署支持 | `TRON1` `TRON2` `Oli` | Robot Bank（日本） | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**Synerex**：韩国官方合作伙伴，在 2025 韩国无人机展首次在韩展出 TRON1 | `TRON1` | Synerex（韩国） | 2025 | 报道 | [报道 (ko)](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 奖项与认可
 

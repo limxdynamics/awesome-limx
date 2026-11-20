@@ -6,7 +6,9 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **91**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **89**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+>
+> 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
 TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -20,7 +22,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 - [임바디드 AI](#임바디드-ai) — 1
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 18
 - [교육 및 대회](#교육-및-대회) — 10
-- [산업 적용](#산업-적용) — 11
+- [산업 적용](#산업-적용) — 9
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -174,7 +176,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: 포인트풋 보행 정책을 D-Robotics RDK S100 BPU로 이식, 공식 응용 사례 | `TRON1` | D-Robotics | 2025 | 보도 | [보도 (zh)](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: 포인트풋 보행 정책을 D-Robotics RDK S100 BPU로 이식, D-Robotics가 응용 사례로 공개 | `TRON1` | D-Robotics | 2025 | 보도 | [보도 (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 기업 오픈소스
 
@@ -186,13 +188,6 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-openmind-om1-sim"></a>**OM1-sim**: 로봇 OS OM1용 Isaac Sim 환경, 휠풋 TRON1·Go2·G1 지원 | `TRON1`&nbsp;*sim* | [OpenMind](https://github.com/OpenMind) | 2026 | 코드 | [코드](https://github.com/OpenMind/OM1-sim) |
 | <a id="p-anima-ros2-bridge"></a>**ANIMA ROS 2 Bridge**: AI 에이전트와 ROS 2 로봇을 잇는 DDS / WebSocket 브리지, LimX 로봇을 자동 인식하고 TRON1 모델 포함 | `TRON1`&nbsp;*sim* | [RobotFlow Labs](https://github.com/RobotFlow-Labs) | 2026 | 코드 | [코드](https://github.com/RobotFlow-Labs/anima-ros2-bridge) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: TRON1, Unitree G1, Go2에 통합되는 모듈형 컴퓨팅·개발 백팩 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 코드 | [코드](https://github.com/OpenMind/brainpack) |
-
-### 지역 파트너 및 판매 채널
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-synerex-korea"></a>**씨너렉스**: 한국 공식 파트너, 드론쇼코리아 2025에서 TRON1 국내 첫 공개 | `TRON1` | 씨너렉스 | 2025 | 보도 | [보도](https://www.newswire.co.kr/newsRead.php?no=1005949) |
 
 ### 수상 및 인정
 

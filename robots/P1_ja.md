@@ -6,14 +6,15 @@
 
 # P1 · Awesome LimX
 
-> P1 を使った **5** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> P1 を使った **3** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+>
+> 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。
 
 [全リスト](../README_ja.md) · ほかの機種: [TRON1](TRON1_ja.md) · [TRON2](TRON2_ja.md) · [Oli](Oli_ja.md) · [Luna](Luna_ja.md) · [W1](W1_ja.md)
 
 ## 目次
 
 - [移動と全身制御](#移動と全身制御) — 3
-- [産業応用](#産業応用) — 2
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -36,14 +37,5 @@
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-task-space-riccati-wbc"></a>**Task-Space Riccati WBC**：劣駆動脚ロボット向け、タスク空間 Riccati フィードバックによる全身制御 | `P1`&nbsp;*sim* | SUSTech, HKUST et al. | 2024 | 論文 | [論文](https://arxiv.org/abs/2404.00591) |
-
-## 産業応用
-
-### 地域パートナーと販売チャネル
-
-| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
-|---|---|---|---|---|---|
-| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**：ドイツで P1 を販売・サポート、マニュアル、ROS 2 設定ガイド、修理サービスを提供 | `P1` | MYBOTSHOP GmbH（ドイツ） | 2026 | 報道 | [報道](https://www.docs.mybotshop.de/limx_p1.html) |
-| <a id="p-r2c2-partnership"></a>**R2C2**：香港の公式デベロッパー兼販売代理店、強化学習ロボットを公共設備と点検業務に活用 | `W1` `P1` | R2C2 Limited（香港） | 2024 | 報道 | [発表 (LinkedIn)](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[発表 (X)](https://x.com/LimX_Dynamics/status/1806002749722820865) |
 
 P1 で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

@@ -6,7 +6,9 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **29**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **26**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+>
+> 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
 Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -19,7 +21,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 - [임바디드 AI](#임바디드-ai) — 3
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 2
 - [교육 및 대회](#교육-및-대회) — 2
-- [산업 적용](#산업-적용) — 6
+- [산업 적용](#산업-적용) — 3
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -101,7 +103,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지 Intewell OS와 AUTBUS를 탑재한 Oli, LimX는 둥투커지 주도 아키텍처 연맹에도 참여 | `Oli` | 둥투커지(Kyland) | 2026 | 보도 | [보도 (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도 (zh, 21세기경제보도)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[보도 (zh, 쓰촨온라인)](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지에 따르면 자사 Intewell OS와 AUTBUS를 탑재한 Oli | `Oli` | 둥투커지(Kyland) | 2026 | 보도 | [보도 (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도 (zh, 21세기경제보도)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[보도 (zh, 쓰촨온라인)](https://cbgc.scol.com.cn/news/8010385) |
 
 ### 기업 오픈소스
 
@@ -114,18 +116,5 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도 (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
-
-### 전략적 제휴
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: 체화 AI 공동 산업대학, Oli를 핵심 교육 플랫폼으로 채택 | `Oli` | 닝보직업기술대학 | 2026 | 보도 | [보도 (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
-
-### 지역 파트너 및 판매 채널
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: 미국에서 TRON2·Oli 번들 판매, 데이터 수집용 원격 조작 설정 제공 | `TRON2` `Oli` | Knoxlabs | 2026 | 보도 | [보도](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: TRON1, TRON2, Oli를 일본에 출시, 현장 도입 지원 | `TRON1` `TRON2` `Oli` | Robot Bank(일본) | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
 
 Oli로 무언가 만들었나요? [제출하기](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

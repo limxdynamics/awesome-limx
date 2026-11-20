@@ -10,15 +10,17 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **160** projects and partnerships around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **150** projects around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and industry deployments. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+>
+> **About this list.** It compiles publicly available information about work that uses LimX robots, with a link to each original source. A listing is not an endorsement or certification by LimX Dynamics, and it is not a statement by LimX about any business relationship. Third-party projects, papers, names and media belong to their owners and stay under their own licenses. Industry entries only summarize what the linked public source reports. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
 **Find by robot**
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 91&nbsp;projects | 34&nbsp;projects | 29&nbsp;projects | 7&nbsp;projects | 5&nbsp;projects | 4&nbsp;projects |
+| 89&nbsp;projects | 32&nbsp;projects | 26&nbsp;projects | 7&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects |
 
-**Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with demo videos and filters by robot, type and real or sim.
+**Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with links to demo videos and filters by robot, type and real or sim.
 
 **Built something with a LimX robot?** Add it to the list — [open a pull request](https://github.com/limxdynamics/awesome-limx/edit/main/README.md) with one row, or [fill the submission form](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml) if you would rather not edit the file. A link is enough; your code stays in your own repository.
 
@@ -39,12 +41,10 @@
   - [Deployment & control](#deployment--control)
   - [Models & motion data](#models--motion-data)
 - [Education & competitions](#education--competitions) — 18
-- [Industry deployments](#industry-deployments) — 34
+- [Industry deployments](#industry-deployments) — 24
   - [Deployments & products](#deployments--products)
   - [Open source from companies](#open-source-from-companies)
   - [Commercial shows & events](#commercial-shows--events)
-  - [Strategic partnerships](#strategic-partnerships)
-  - [Regional partners & channels](#regional-partners--channels)
   - [Awards & recognition](#awards--recognition)
 - [By robot](#by-robot)
 - [Contributing](#contributing)
@@ -267,9 +267,9 @@ _18 entries: 2 papers · 15 code · 1 tutorial_
 
 ## Industry deployments
 
-_34 entries in 6 groups_
+_24 entries in 4 groups_
 
-This section is maintained by LimX: public reports, partner announcements and company open source, each with a link to its source.
+Public media reports and company open source that involve LimX robots, each with a link to its source. Each description summarizes what the linked source says. It is not a statement by LimX Dynamics about a commercial relationship, and a listing does not mean that LimX endorses the company or product.
 
 ### Deployments & products
 
@@ -277,9 +277,9 @@ This section is maintained by LimX: public reports, partner announcements and co
 |---|---|---|---|---|---|
 | <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
 | <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | News | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Oli on Kyland's Intewell OS and AUTBUS bus; LimX also joined Kyland's architecture alliance | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh, 21st Century Business Herald)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh, Sichuan Online)](https://cbgc.scol.com.cn/news/8010385) |
+| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Kyland reports Oli running its Intewell OS and AUTBUS bus | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh, 21st Century Business Herald)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh, Sichuan Online)](https://cbgc.scol.com.cn/news/8010385) |
 | <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine | `TRON2` | WUJI TECH | 2026 | News | [news (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot locomotion policy moved to D-Robotics' RDK S100 BPU, an official application case | `TRON1` | D-Robotics | 2025 | News | [news (zh)](https://forum.d-robotics.cc/t/topic/28833) |
+| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot locomotion policy moved to D-Robotics' RDK S100 BPU, published by D-Robotics as an application case | `TRON1` | D-Robotics | 2025 | News | [news (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### Open source from companies
 
@@ -308,26 +308,6 @@ This section is maintained by LimX: public reports, partner announcements and co
 | <a id="p-taobao-influencer-festival"></a>**Taobao Influencer Festival**: Luna's runway walk with actress Michelle Chen in Shanghai | `Luna` | Taobao | 2026 | News | [news](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
 | <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: five Luna humanoids perform an autonomous group dance at the opening of the CHINA GT motorsport championship | `Luna` | CHINA GT | 2026 | News | [news (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
 
-### Strategic partnerships
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-smartcube-partnership"></a>**SmartCube**: official partner in Korea, humanoids for factory and energy-site inspection with digital twins | — | SmartCube (Korea) | 2026 | News | [news (ko)](https://www.aipostkorea.com/news/articleView.html?idxno=12727) |
-| <a id="p-guangyang-partnership"></a>**Guangyang Shares**: joint development of integrated joint modules: bearings, gears, reducers and drivers (supply chain) | — | Guangyang Shares | 2026 | News | [news (zh, NBD)](https://www.nbd.com.cn/articles/2026-03-09/4285402.html)&nbsp;·&nbsp;[news (zh, Eastmoney)](https://finance.eastmoney.com/a/202603093666208673.html) |
-| <a id="p-nbpu-industry-college"></a>**Ningbo Polytechnic University**: joint industry college for embodied AI, with Oli as the core teaching platform | `Oli` | Ningbo Polytechnic University | 2026 | News | [news (zh)](https://www.nbpu.edu.cn/2026/0612/c2654a6462855/page.htm) |
-| <a id="p-saic-beijing-joint-lab"></a>**SAIC Beijing Joint Lab**: embodied AI joint lab for automotive manufacturing, LimX as SAIC's first embodied AI partner | — | SAIC Beijing | 2025 | News | [news (zh)](https://www.pingwest.com/a/306356) |
-
-### Regional partners & channels
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-knoxlabs-data-collection"></a>**Knoxlabs**: TRON2 and Oli bundles with teleoperation setup for data collection (US) | `TRON2` `Oli` | Knoxlabs | 2026 | News | [news](https://www.knoxlabs.com/blogs/articles/robot-teleoperation-data-collection-limx) |
-| <a id="p-tron-kk-humanoid-si"></a>**TRON K.K.**: humanoid system integration and Omniverse simulation in Japan, with LimX robots | — | TRON K.K. (Japan) | 2026 | News | [news (ja)](https://tron.tokyo/en/service/limx-dynamics/) |
-| <a id="p-robot-bank-japan"></a>**Robot Bank**: rollout of TRON1, TRON2 and Oli in Japan with on-site deployment support | `TRON1` `TRON2` `Oli` | Robot Bank (Japan) | 2026 | News | [news (ja)](https://robotstart.info/article/2026/05/15/381891.html) |
-| <a id="p-mybotshop-germany"></a>**MYBOTSHOP**: sells and supports the P1 in Germany, with manuals, ROS 2 setup guides and repair service | `P1` | MYBOTSHOP GmbH (Germany) | 2026 | News | [news](https://www.docs.mybotshop.de/limx_p1.html) |
-| <a id="p-synerex-korea"></a>**Synerex**: official partner in Korea, TRON1's Korean debut at Drone Show Korea 2025 | `TRON1` | Synerex (Korea) | 2025 | News | [news (ko)](https://www.newswire.co.kr/newsRead.php?no=1005949) |
-| <a id="p-r2c2-partnership"></a>**R2C2**: official developer and distributor in Hong Kong, RL robots for utility and inspection work | `W1` `P1` | R2C2 Limited (Hong Kong) | 2024 | News | [announcement (LinkedIn)](https://www.linkedin.com/posts/limx-dynamics_robotics-partnership-innovation-activity-7211709457666310145-ddt9)&nbsp;·&nbsp;[announcement (X)](https://x.com/LimX_Dynamics/status/1806002749722820865) |
-
 ### Awards & recognition
 
 | Project | Robot | Author / Org | Year | Type | Links |
@@ -343,12 +323,12 @@ Entries per robot and section:
 
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1.md) | **91** | 33 | 12 | 6 | 1 | 18 | 10 | 11 |
-| [`TRON2`](robots/TRON2.md) | **34** | 1 |  | 3 | 6 | 5 | 8 | 11 |
-| [`Oli`](robots/Oli.md) | **29** | 14 |  | 2 | 3 | 2 | 2 | 6 |
+| [`TRON1`](robots/TRON1.md) | **89** | 33 | 12 | 6 | 1 | 18 | 10 | 9 |
+| [`TRON2`](robots/TRON2.md) | **32** | 1 |  | 3 | 6 | 5 | 8 | 9 |
+| [`Oli`](robots/Oli.md) | **26** | 14 |  | 2 | 3 | 2 | 2 | 3 |
 | [`Luna`](robots/Luna.md) | **7** | 2 | 1 |  |  |  |  | 4 |
-| [`P1`](robots/P1.md) | **5** | 3 |  |  |  |  |  | 2 |
-| [`W1`](robots/W1.md) | **4** | 2 |  | 1 |  |  |  | 1 |
+| [`P1`](robots/P1.md) | **3** | 3 |  |  |  |  |  |  |
+| [`W1`](robots/W1.md) | **3** | 2 |  | 1 |  |  |  |  |
 
 ## Contributing
 
