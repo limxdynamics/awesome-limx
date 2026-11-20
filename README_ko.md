@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **150**개 프로젝트를 모았고, 그중 **107**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 산업 적용 사례를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **141**개 프로젝트를 모았고, 그중 **107**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 기업 오픈소스를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 >
 > **이 목록에 대하여**: LimX 로봇과 관련된 공개 정보를 각 항목의 원출처 링크와 함께 정리한 목록입니다. 수록은 LimX Dynamics의 보증·인증·추천을 의미하지 않으며, 어떠한 상업적 관계에 대한 LimX의 표명도 아닙니다. 제3자 프로젝트, 논문, 명칭, 자료의 권리는 각 권리자에게 있으며 각자의 라이선스가 적용됩니다. 산업 적용 항목은 링크된 공개 출처의 내용을 요약한 것일 뿐입니다. 정정이나 삭제를 원하시면 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 89개 | 32개 | 26개 | 7개 | 3개 | 3개 |
+| 88개 | 29개 | 24개 | 3개 | 3개 | 3개 |
 
 **보면서 찾고 싶다면:** [갤러리](https://limxdynamics.github.io/awesome-limx/#lang=ko)에서 모든 항목을 카드로 보고, 데모 영상 링크를 확인하고, 기종·유형·실제 로봇/시뮬레이션으로 거를 수 있습니다.
 
@@ -41,10 +41,8 @@
   - [배포 및 제어](#배포-및-제어)
   - [모델 및 모션 데이터](#모델-및-모션-데이터)
 - [교육 및 대회](#교육-및-대회) — 18
-- [산업 적용](#산업-적용) — 24
-  - [적용 사례 및 제품](#적용-사례-및-제품)
+- [산업 적용](#산업-적용) — 15
   - [기업 오픈소스](#기업-오픈소스)
-  - [상업 공연 및 이벤트](#상업-공연-및-이벤트)
   - [수상 및 인정](#수상-및-인정)
 - [기종별](#기종별)
 - [기여하기](#기여하기)
@@ -266,19 +264,9 @@ _18개: 논문 2 · 코드 15 · 튜토리얼 1_
 
 ## 산업 적용
 
-_24개 (4개 그룹)_
+_15개 (2개 그룹)_
 
-LimX 로봇이 관련된 공개 보도와 기업 오픈소스를 출처 링크와 함께 수록합니다. 설명은 링크된 출처의 내용을 요약한 것으로, 상업적 관계에 대한 LimX Dynamics의 표명이 아닙니다. 수록은 LimX가 해당 기업이나 제품을 보증한다는 뜻이 아닙니다.
-
-### 적용 사례 및 제품
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: TRON2 휠-레그를 기반으로 한 테니스 로봇, 2026 빌리 진 킹 컵 파이널에서 프로 선수와 대결 | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | 보도 | [보도 (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
-| <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: TRON2 두 대가 네일건과 철근으로 축소판 틸트업 공정을 시연 | `TRON2` | ZINOVA, RIC Robotics | 2026 | 보도 | [영상](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[보도](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**국산 전자 아키텍처 휴머노이드**: 둥투커지에 따르면 자사 Intewell OS와 AUTBUS를 탑재한 Oli | `Oli` | 둥투커지(Kyland) | 2026 | 보도 | [보도 (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[보도 (zh, 21세기경제보도)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[보도 (zh, 쓰촨온라인)](https://cbgc.scol.com.cn/news/8010385) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: WUJI TECH Wuji Hand 2를 단 TRON2가 한약재를 집고, 달고, 갈고, 포장 | `TRON2` | WUJI TECH | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: 포인트풋 보행 정책을 D-Robotics RDK S100 BPU로 이식, D-Robotics가 응용 사례로 공개 | `TRON1` | D-Robotics | 2025 | 보도 | [보도 (zh)](https://forum.d-robotics.cc/t/topic/28833) |
+LimX 로봇이 관련된 기업 오픈소스와 공개 수상 내역을 출처 링크와 함께 수록합니다. 설명은 링크된 출처의 내용을 요약한 것으로, 상업적 관계에 대한 LimX Dynamics의 표명이 아닙니다. 수록은 LimX가 해당 기업이나 제품을 보증한다는 뜻이 아닙니다.
 
 ### 기업 오픈소스
 
@@ -298,15 +286,6 @@ LimX 로봇이 관련된 공개 보도와 기업 오픈소스를 출처 링크�
 | <a id="p-cmriat-citadel"></a>**Citadel**: HDF5 기록을 LeRobot v2.1로 일괄 변환하는 로봇 데이터 관리 도구, 예시로 TRON2 데이터 사용 | `TRON2` | [China Merchants Research Institute of Advanced Technology](https://github.com/cmriat) | 2026 | 코드 | [코드](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**: TRON1, Unitree G1, Go2에 통합되는 모듈형 컴퓨팅·개발 백팩 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 코드 | [코드](https://github.com/OpenMind/brainpack) |
 
-### 상업 공연 및 이벤트
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**광둥·홍콩·마카오 모터쇼 NIO 부스**: NIO 부스에서 Oli와 Luna가 인터랙티브 시연 | `Oli` `Luna` | NIO | 2026 | 보도 | [보도 (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**〈킬잇: 스타일 크리에이터 대전쟁〉 결승**: 디자이너 김나라의 우승 결승 무대에 Luna 출연, tvN | `Luna` | tvN, 김나라 | 2026 | 보도 | [보도](https://isplus.com/article/view/isp202607290025) |
-| <a id="p-taobao-influencer-festival"></a>**타오바오 인플루언서 페스티벌**: 상하이에서 배우 천이한과 Luna가 런웨이 워킹 | `Luna` | 타오바오 | 2026 | 보도 | [보도](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**: Luna 5대가 CHINA GT 모터스포츠 대회 개막식에서 자율 군무 공연 | `Luna` | CHINA GT | 2026 | 보도 | [보도 (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
-
 ### 수상 및 인정
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
@@ -322,10 +301,10 @@ LimX 로봇이 관련된 공개 보도와 기업 오픈소스를 출처 링크�
 
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_ko.md) | **89** | 33 | 12 | 6 | 1 | 18 | 10 | 9 |
-| [`TRON2`](robots/TRON2_ko.md) | **32** | 1 |  | 3 | 6 | 5 | 8 | 9 |
-| [`Oli`](robots/Oli_ko.md) | **26** | 14 |  | 2 | 3 | 2 | 2 | 3 |
-| [`Luna`](robots/Luna_ko.md) | **7** | 2 | 1 |  |  |  |  | 4 |
+| [`TRON1`](robots/TRON1_ko.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
+| [`TRON2`](robots/TRON2_ko.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
+| [`Oli`](robots/Oli_ko.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Luna`](robots/Luna_ko.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ko.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1_ko.md) | **3** | 2 |  | 1 |  |  |  |  |
 

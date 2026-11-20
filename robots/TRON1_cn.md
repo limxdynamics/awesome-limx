@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> 基于 TRON1 的 **89** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON1 的 **88** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 >
 > 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -22,7 +22,7 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 - [具身智能](#具身智能) — 1
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 18
 - [教学与竞赛](#教学与竞赛) — 10
-- [行业应用](#行业应用) — 9
+- [行业应用](#行业应用) — 8
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -171,12 +171,6 @@ TRON1 官方仓库：[tron1-robot-description](https://github.com/limxdynamics/t
 | <a id="p-pointfootgym"></a>**pointfootGym**：南科大 CLEAR 实验室的点足机器人训练模板，基于 Isaac Gym 与 legged_gym | `TRON1`&nbsp;*仿真* | [Haokai Su（南方科大 CLEAR 实验室）](https://github.com/SuDaxia-kai) | 2024 | 代码 | [代码](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 行业应用
-
-### 落地与产品
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，地瓜机器人将其作为应用案例发布 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企业开源项目
 

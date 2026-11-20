@@ -6,7 +6,7 @@
 
 # Luna · Awesome LimX
 
-> Luna を使った **7** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Luna を使った **3** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 >
 > 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。
 
@@ -18,7 +18,6 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 
 - [移動と全身制御](#移動と全身制御) — 2
 - [知覚とナビゲーション](#知覚とナビゲーション) — 1
-- [産業応用](#産業応用) — 4
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -36,16 +35,5 @@ Luna 公式リポジトリ：[luna-description](https://github.com/limxdynamics/
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-wave-go"></a>**WAVE-Go**：世界モデルによる行動適応で長距離ナビゲーション、Go2-W 実機と MuJoCo 上の Luna で検証 | `Luna`&nbsp;*sim* | BIT、HKU、GAC R&D、LimX ほか | 2026 | コード | [論文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[コード](https://github.com/vigorlee/wave-go) |
-
-## 産業応用
-
-### 商業公演とイベント
-
-| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
-|---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**粤港澳大湾区モーターショー NIO ブース**：NIO ブースで Oli と Luna がインタラクティブなデモ | `Oli` `Luna` | NIO | 2026 | 報道 | [報道 (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**「キル・イット」決勝**：デザイナー キム・ナラの優勝決勝ステージに Luna が登場、tvN | `Luna` | tvN、キム・ナラ | 2026 | 報道 | [報道 (ko)](https://isplus.com/article/view/isp202607290025) |
-| <a id="p-taobao-influencer-festival"></a>**淘宝インフルエンサーフェスティバル**：上海で俳優 ミシェル・チェンと Luna がランウェイを歩行 | `Luna` | 淘宝 | 2026 | 報道 | [報道](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台の Luna が CHINA GT 選手権の開幕式で自律型グループダンスを披露 | `Luna` | CHINA GT | 2026 | 報道 | [報道](https://robotstart.info/article/2026/09/18/382434.html) |
 
 Luna で何か作りましたか？[投稿はこちら](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

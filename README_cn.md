@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **150** 个项目，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和行业应用。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **141** 个项目，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 >
 > **关于本列表**：本列表汇编与 LimX 机器人相关的公开信息，每条均附原始来源链接。收录不代表逐际动力对相关项目、成果或企业的认可、认证或背书，也不构成逐际动力对任何商业合作关系的表述。第三方项目、论文、名称及素材的权利归各自权利人所有，并适用其各自的许可证。行业应用类条目仅转述所附公开来源的内容。如需更正或下架，请发邮件至 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 89&nbsp;条 | 32&nbsp;条 | 26&nbsp;条 | 7&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
+| 88&nbsp;条 | 29&nbsp;条 | 24&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，附演示视频链接，并可按机型、类型、实机或仿真筛选。
 
@@ -41,10 +41,8 @@
   - [部署与控制](#部署与控制)
   - [模型与动作数据](#模型与动作数据)
 - [教学与竞赛](#教学与竞赛) — 18
-- [行业应用](#行业应用) — 24
-  - [落地与产品](#落地与产品)
+- [行业应用](#行业应用) — 15
   - [企业开源项目](#企业开源项目)
-  - [商业演出与活动](#商业演出与活动)
   - [奖项与认可](#奖项与认可)
 - [按机型查找](#按机型查找)
 - [参与贡献](#参与贡献)
@@ -266,19 +264,9 @@ _18 个条目：2 篇论文 · 15 个代码 · 1 个教程_
 
 ## 行业应用
 
-_24 个条目，分 4 组_
+_15 个条目，分 2 组_
 
-本节收录涉及 LimX 机器人的公开媒体报道和企业开源项目，每条都附有来源链接。描述仅转述所附来源的内容，不构成逐际动力对任何商业合作关系的表述；收录也不代表逐际动力认可相关企业或产品。
-
-### 落地与产品
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**：以 TRON2 轮足为底盘的网球机器人，在 2026 比莉·简·金杯总决赛与职业选手对打 | `TRON2` | 英汉思动力（Tenniix） | 2026 | 报道 | [报道](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
-| <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**：两台 TRON2 用钉枪和钢筋完成缩比混凝土预制墙施工 | `TRON2` | ZINOVA、RIC Robotics | 2026 | 报道 | [视频](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[报道](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：据东土科技介绍，Oli 搭载其 Intewell 操作系统与 AUTBUS 总线 | `Oli` | 东土科技 | 2026 | 报道 | [报道 (微信公众号)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道 (21世纪经济报道)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[报道 (四川在线)](https://cbgc.scol.com.cn/news/8010385) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**：装配舞肌科技 Wuji Hand 2 的 TRON2 完成中药抓取、称量、研磨和包装 | `TRON2` | WUJI TECH | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：点足运控模型迁移到地瓜机器人 RDK S100 的 BPU 上运行，地瓜机器人将其作为应用案例发布 | `TRON1` | 地瓜机器人 | 2025 | 报道 | [报道](https://forum.d-robotics.cc/t/topic/28833) |
+本节收录涉及 LimX 机器人的企业开源项目和公开奖项，每条都附有来源链接。描述仅转述所附来源的内容，不构成逐际动力对任何商业合作关系的表述；收录也不代表逐际动力认可相关企业或产品。
 
 ### 企业开源项目
 
@@ -298,15 +286,6 @@ _24 个条目，分 4 组_
 | <a id="p-cmriat-citadel"></a>**Citadel**：机器人数据管理工具，把 HDF5 录制数据批量转换为 LeRobot v2.1，示例使用 TRON2 采集的数据 | `TRON2` | [招商局先进技术研究院](https://github.com/cmriat) | 2026 | 代码 | [代码](https://github.com/cmriat/Citadel) |
 | <a id="p-openmind-brainpack"></a>**OpenMind BrainPack**：模块化计算与开发背包，适配 TRON1、Unitree G1 和 Go2 | `TRON1` | [OpenMind](https://github.com/OpenMind) | 2025 | 代码 | [代码](https://github.com/OpenMind/brainpack) |
 
-### 商业演出与活动
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
-| <a id="p-kill-it-finale"></a>**《Kill It》时装真人秀总决赛**：Luna 登上设计师金娜拉的夺冠决赛舞台（tvN） | `Luna` | tvN、金娜拉 | 2026 | 报道 | [报道 (ko)](https://isplus.com/article/view/isp202607290025) |
-| <a id="p-taobao-influencer-festival"></a>**淘宝达人节**：Luna 与演员陈意涵在上海同走 T 台 | `Luna` | 淘宝 | 2026 | 报道 | [报道](https://interestingengineering.com/ai-robotics/video-china-humanoid-catwalk-taobao-festival) |
-| <a id="p-luna-china-gt-opening"></a>**2026 CHINA GT opening ceremony**：5 台 Luna 在 CHINA GT 中国超级跑车锦标赛开幕式上表演自主编队舞蹈 | `Luna` | CHINA GT | 2026 | 报道 | [报道 (ja)](https://robotstart.info/article/2026/09/18/382434.html) |
-
 ### 奖项与认可
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
@@ -322,10 +301,10 @@ _24 个条目，分 4 组_
 
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`TRON1`](robots/TRON1_cn.md) | **89** | 33 | 12 | 6 | 1 | 18 | 10 | 9 |
-| [`TRON2`](robots/TRON2_cn.md) | **32** | 1 |  | 3 | 6 | 5 | 8 | 9 |
-| [`Oli`](robots/Oli_cn.md) | **26** | 14 |  | 2 | 3 | 2 | 2 | 3 |
-| [`Luna`](robots/Luna_cn.md) | **7** | 2 | 1 |  |  |  |  | 4 |
+| [`TRON1`](robots/TRON1_cn.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
+| [`TRON2`](robots/TRON2_cn.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
+| [`Oli`](robots/Oli_cn.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Luna`](robots/Luna_cn.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_cn.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1_cn.md) | **3** | 2 |  | 1 |  |  |  |  |
 

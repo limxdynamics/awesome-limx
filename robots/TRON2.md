@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **32** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **29** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -21,7 +21,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 6
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 5
 - [Education & competitions](#education--competitions) — 8
-- [Industry deployments](#industry-deployments) — 9
+- [Industry deployments](#industry-deployments) — 6
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -88,14 +88,6 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 | <a id="p-troncamp-mani-sormaker"></a>**TRONCamp Mani Solution SORMaker**: unified ACT training and deployment for all four tasks, with rollout videos of the T3 and T4 policies | `TRON2`&nbsp;*sim* | [SORMaker](https://github.com/SORMaker) | 2026 | Code | [code](https://github.com/SORMaker/troncamp-mani) |
 
 ## Industry deployments
-
-### Deployments & products
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-tenniix-ultra-max"></a>**TENNIIX ULTRA MAX**: tennis robot on a TRON2 wheel-legged base, played at the 2026 Billie Jean King Cup Finals | `TRON2` | Enhanced Robotics (Tenniix) | 2026 | News | [news (zh)](https://www.news.cn/sports/20260928/f1776d7ca75042568a5137e256fa9425/c.html) |
-| <a id="p-zinova-tron2-construction"></a>**ZINOVA Tool Intelligence**: two TRON2s with a nail gun and rebar on a scaled tilt-up concrete job | `TRON2` | ZINOVA, RIC Robotics | 2026 | News | [video](https://www.youtube.com/watch?v=8KDxnT-4zl0)&nbsp;·&nbsp;[news](https://www.equipmentworld.com/technology/article/15836367/zinova-limx-bring-toolwielding-robots-to-construction) |
-| <a id="p-wuji-hand-2-pharmacy-demo"></a>**Wuji Hand 2 Pharmacy Demo**: TRON2 with WUJI TECH's Wuji Hand 2 picks, weighs, grinds and packs herbal medicine | `TRON2` | WUJI TECH | 2026 | News | [news (ja)](https://robotstart.info/article/2026/08/26/382326.html) |
 
 ### Open source from companies
 

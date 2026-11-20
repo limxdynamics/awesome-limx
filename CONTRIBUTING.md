@@ -95,7 +95,7 @@ partnership, a show or an award is known from reports, not from a paper.
 | Embodied AI | VLA models, LLM agents, imitation learning, foundation models |
 | Tools, simulation & SDK | simulators, robot models, deployment tooling, libraries on the LimX SDK |
 | Education & competitions | courses, teaching labs, student teams, competition results |
-| Industry deployments | company products, real-world deployments, company open source, commercial shows and events, awards |
+| Industry deployments | company open source, awards |
 
 If a project fits more than one section, choose the one that best describes its main result. Each project appears once.
 
@@ -124,7 +124,7 @@ Changes on top of official assets do count: a different controller, a new sensor
 
 ## Company projects
 
-If you submit a product or a company deployment, confirm in the form, pull request or email that the company agrees to be listed. If the company or both partners have already announced the work publicly, link that announcement or the press coverage instead. Industry awards count too: they go under Industry deployments. Business partnerships, distribution and sales channels are not listed for now; they need a check by LimX before any of them can be added. If the company wants to announce first, tell us and we will wait.
+Company open source and industry awards go under Industry deployments. Company products and deployments, commercial shows and events, business partnerships and sales channels are not listed for now; they need a check by LimX before any of them can be added.
 
 ## Gallery, videos and thumbnails
 

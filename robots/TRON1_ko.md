@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1로 만든 **89**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON1로 만든 **88**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 >
 > 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -22,7 +22,7 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 - [임바디드 AI](#임바디드-ai) — 1
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 18
 - [교육 및 대회](#교육-및-대회) — 10
-- [산업 적용](#산업-적용) — 9
+- [산업 적용](#산업-적용) — 8
 
 <sub>**코드** 바로 실행 가능 · **튜토리얼** 따라 배울 수 있음 · **논문** 읽을거리 · **보도** 언론 보도나 발표 · *sim* 시뮬레이션에서만 보여준 성과, 나머지는 실제 로봇에서 동작</sub>
 
@@ -171,12 +171,6 @@ TRON1 공식 저장소: [tron1-robot-description](https://github.com/limxdynamic
 | <a id="p-pointfootgym"></a>**pointfootGym**: 남방과기대 CLEAR Lab의 포인트풋 학습 템플릿, Isaac Gym과 legged_gym 기반 | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | 코드 | [코드](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 산업 적용
-
-### 적용 사례 및 제품
-
-| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
-|---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: 포인트풋 보행 정책을 D-Robotics RDK S100 BPU로 이식, D-Robotics가 응용 사례로 공개 | `TRON1` | D-Robotics | 2025 | 보도 | [보도 (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 기업 오픈소스
 

@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **26** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **24** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 >
 > 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -21,7 +21,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 - [具身智能](#具身智能) — 3
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 2
 - [教学与竞赛](#教学与竞赛) — 2
-- [行业应用](#行业应用) — 3
+- [行业应用](#行业应用) — 1
 
 <sub>**代码** 可以直接跑 · **教程** 可以跟着学 · **论文** 可以阅读 · **报道** 媒体报道或公告 · *仿真* 只在仿真中展示过，其余都在实机上运行过</sub>
 
@@ -99,22 +99,10 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 ## 行业应用
 
-### 落地与产品
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**国产电子架构人形机器人**：据东土科技介绍，Oli 搭载其 Intewell 操作系统与 AUTBUS 总线 | `Oli` | 东土科技 | 2026 | 报道 | [报道 (微信公众号)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[报道 (21世纪经济报道)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[报道 (四川在线)](https://cbgc.scol.com.cn/news/8010385) |
-
 ### 企业开源项目
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for Oli**：在 31 自由度型号上训练 GEAR-SONIC 全身控制，支持 PICO VR 遥操作 | `Oli`&nbsp;*仿真* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | 代码 | [代码](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
-
-### 商业演出与活动
-
-| 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
-|---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**大湾区车展蔚来展台**：Oli 与 Luna 在蔚来展台做互动展示 | `Oli` `Luna` | 蔚来 | 2026 | 报道 | [报道](https://news.ifeng.com/c/8vmGa3sP4u7) |
 
 用 Oli 做了东西？欢迎[提交](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml)。

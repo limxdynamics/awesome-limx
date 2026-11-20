@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **89** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **88** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -22,7 +22,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 - [Embodied AI](#embodied-ai) — 1
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 18
 - [Education & competitions](#education--competitions) — 10
-- [Industry deployments](#industry-deployments) — 9
+- [Industry deployments](#industry-deployments) — 8
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -171,12 +171,6 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 | <a id="p-pointfootgym"></a>**pointfootGym**: Isaac Gym and legged_gym template for training point-foot robots, from SUSTech CLEAR Lab | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | Code | [code](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## Industry deployments
-
-### Deployments & products
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**: point-foot locomotion policy moved to D-Robotics' RDK S100 BPU, published by D-Robotics as an application case | `TRON1` | D-Robotics | 2025 | News | [news (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### Open source from companies
 

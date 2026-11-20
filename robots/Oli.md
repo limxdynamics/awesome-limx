@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **26** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **24** projects built on Oli, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -21,7 +21,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Embodied AI](#embodied-ai) — 3
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 2
 - [Education & competitions](#education--competitions) — 2
-- [Industry deployments](#industry-deployments) — 3
+- [Industry deployments](#industry-deployments) — 1
 
 <sub>**Code** something to run · **Tutorial** something to follow · **Paper** something to read · **News** a media report or announcement · *sim* shown only in simulation, everything else ran on a real robot</sub>
 
@@ -99,22 +99,10 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 ## Industry deployments
 
-### Deployments & products
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-dongtu-domestic-architecture"></a>**Domestic Electronic Architecture Humanoid**: Kyland reports Oli running its Intewell OS and AUTBUS bus | `Oli` | Kyland (Dongtu Technology) | 2026 | News | [news (zh, WeChat)](http://mp.weixin.qq.com/s?__biz=Mzk0NDU5NjMwMA==&mid=2247495106&idx=1&sn=8b5ffd05d0615a0581d3b23a18f2d830&chksm=c20243eecd5be209a820feecab39fcb0480f5ec903b40f0d655db8f6225b378bd0e8f1db3a1a)&nbsp;·&nbsp;[news (zh, 21st Century Business Herald)](https://m.21jingji.com/article/20260929/herald/af2d0b02d6e7593ed4a2af7d05a191b5.html)&nbsp;·&nbsp;[news (zh, Sichuan Online)](https://cbgc.scol.com.cn/news/8010385) |
-
 ### Open source from companies
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-safesentinel-sonic-for-oli"></a>**SONIC Training for Oli**: GEAR-SONIC whole-body control on the 31-DoF model, with PICO VR teleoperation | `Oli`&nbsp;*sim* | [SafeSentinel](https://github.com/safe-sentinel-co) | 2026 | Code | [code](https://github.com/safe-sentinel-co/hu_d04_sonic_setup) |
-
-### Commercial shows & events
-
-| Project | Robot | Author / Org | Year | Type | Links |
-|---|---|---|---|---|---|
-| <a id="p-nio-gba-auto-show"></a>**NIO at the GBA Auto Show**: Oli and Luna run interactive demos at the NIO booth | `Oli` `Luna` | NIO | 2026 | News | [news (zh)](https://news.ifeng.com/c/8vmGa3sP4u7) |
 
 Built something on Oli? [Submit it](https://github.com/limxdynamics/awesome-limx/issues/new?template=add-project.yml).

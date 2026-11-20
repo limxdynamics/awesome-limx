@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **89** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **88** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 >
 > 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。
 
@@ -22,7 +22,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 - [エンボディドAI](#エンボディドai) — 1
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 18
 - [教育と競技会](#教育と競技会) — 10
-- [産業応用](#産業応用) — 9
+- [産業応用](#産業応用) — 8
 
 <sub>**コード** すぐ動かせる · **チュートリアル** 手順に沿って学べる · **論文** 読むもの · **報道** メディア報道や発表 · *sim* シミュレーションでのみ示された成果、それ以外は実機で動作</sub>
 
@@ -171,12 +171,6 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 | <a id="p-pointfootgym"></a>**pointfootGym**：南方科技大学 CLEAR Lab によるポイントフット学習テンプレート、Isaac Gym と legged_gym | `TRON1`&nbsp;*sim* | [Haokai Su (SUSTech CLEAR Lab)](https://github.com/SuDaxia-kai) | 2024 | コード | [コード](https://github.com/SuDaxia-kai/pointfootGym) |
 
 ## 産業応用
-
-### 導入事例と製品
-
-| プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
-|---|---|---|---|---|---|
-| <a id="p-d-robotics-rdk-s100-tron1"></a>**RDK S100 on TRON1**：ポイントフットの歩行ポリシーを D-Robotics RDK S100 の BPU に移植、D-Robotics が応用事例として公開 | `TRON1` | D-Robotics | 2025 | 報道 | [報道 (zh)](https://forum.d-robotics.cc/t/topic/28833) |
 
 ### 企業のオープンソース
 
