@@ -39,7 +39,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**：上一代 Oli 机型在 mjlab 中的行走与动作跟踪策略，用 Kaggle 免费 GPU 训练 | `Oli`&nbsp;*仿真* | [nht-cyb](https://github.com/nht-cyb) | 2026 | 代码 | [代码](https://github.com/nht-cyb/hu_d03_rl) |
-| <a id="p-vaps"></a>**VAPS**：在翻跟头时选择继续、中止或安全倒地，实机完成侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | 论文 | [主页](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.01397) |
+| <a id="p-vaps"></a>**VAPS**：在翻跟头时选择继续、中止或安全倒地，实机完成侧空翻 | `Oli` | 达姆施塔特工业大学、德国机器人研究所、逐际动力等 | 2026 | 论文 | [主页](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**：在本体感知与特权状态之间做对比学习，提高全身控制的数据效率 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
 
 ### 基于模型的控制

@@ -39,7 +39,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**: 이전 세대 Oli 모델용 보행·모션 트래킹 정책, Kaggle 무료 GPU로 mjlab에서 학습 | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | 코드 | [코드](https://github.com/nht-cyb/hu_d03_rl) |
-| <a id="p-vaps"></a>**VAPS**: 공중제비 중 계속·중단·안전 낙하를 선택, 실기로 옆돌기 시연 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 논문 | [프로젝트](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.01397) |
+| <a id="p-vaps"></a>**VAPS**: 공중제비 중 계속·중단·안전 낙하를 선택, 실기로 옆돌기 시연 | `Oli` | TU Darmstadt, RIG, LimX et al. | 2026 | 논문 | [프로젝트](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**: 고유감각과 특권 상태 간 대조 학습으로 데이터 효율적인 전신 제어 | `Oli` | PolyU, USTC et al. | 2025 | 논문 | [논문](https://arxiv.org/abs/2512.13093) |
 
 ### 모델 기반 제어

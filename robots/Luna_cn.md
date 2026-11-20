@@ -35,7 +35,7 @@ Luna 官方仓库：[luna-description](https://github.com/limxdynamics/luna-desc
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
-| <a id="p-wave-go"></a>**WAVE-Go**：世界模型动作适配的长距离导航，Go2-W 实机验证，并在 MuJoCo 中迁移到 Luna | `Luna`&nbsp;*仿真* | 北理工、港大、逐际动力等 | 2026 | 代码 | [论文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[代码](https://github.com/vigorlee/wave-go) |
+| <a id="p-wave-go"></a>**WAVE-Go**：世界模型动作适配的长距离导航，Go2-W 实机验证，并在 MuJoCo 中迁移到 Luna | `Luna`&nbsp;*仿真* | 北理工、港大、广汽研究院、逐际动力等 | 2026 | 代码 | [论文](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[代码](https://github.com/vigorlee/wave-go) |
 
 ## 行业应用
 

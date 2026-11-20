@@ -39,7 +39,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**: locomotion and motion-tracking policies for the earlier-generation Oli model in mjlab, trained on a free Kaggle GPU | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | Code | [code](https://github.com/nht-cyb/hu_d03_rl) |
-| <a id="p-vaps"></a>**VAPS**: picks between continuing, aborting or a safe fall during flips, shown with real side flips | `Oli` | TU Darmstadt, LimX et al. | 2026 | Paper | [project](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.01397) |
+| <a id="p-vaps"></a>**VAPS**: picks between continuing, aborting or a safe fall during flips, shown with real side flips | `Oli` | TU Darmstadt, RIG, LimX et al. | 2026 | Paper | [project](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**: contrastive learning between proprioceptive and privileged states for data-efficient whole-body control | `Oli` | PolyU, USTC et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2512.13093) |
 
 ### Model-based control

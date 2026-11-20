@@ -39,7 +39,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**：前世代 Oli モデル向けの歩行とモーショントラッキングのポリシー、Kaggle の無料 GPU を使い mjlab で学習 | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | コード | [コード](https://github.com/nht-cyb/hu_d03_rl) |
-| <a id="p-vaps"></a>**VAPS**：宙返り中に続行・中止・安全な転倒を選び分け、実機で側方宙返りを実演 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 論文 | [プロジェクト](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.01397) |
+| <a id="p-vaps"></a>**VAPS**：宙返り中に続行・中止・安全な転倒を選び分け、実機で側方宙返りを実演 | `Oli` | TU Darmstadt, RIG, LimX et al. | 2026 | 論文 | [プロジェクト](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**：固有感覚と特権状態の対比学習で、データ効率の高い全身制御 | `Oli` | PolyU, USTC et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2512.13093) |
 
 ### モデルベース制御

@@ -35,7 +35,7 @@ Official Luna repositories: [luna-description](https://github.com/limxdynamics/l
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
-| <a id="p-wave-go"></a>**WAVE-Go**: world-model action adaptation for long-range navigation, real Go2-W plus a Luna rollout in MuJoCo | `Luna`&nbsp;*sim* | BIT, HKU, LimX et al. | 2026 | Code | [paper](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[code](https://github.com/vigorlee/wave-go) |
+| <a id="p-wave-go"></a>**WAVE-Go**: world-model action adaptation for long-range navigation, real Go2-W plus a Luna rollout in MuJoCo | `Luna`&nbsp;*sim* | BIT, HKU, GAC R&D, LimX et al. | 2026 | Code | [paper](https://arxiv.org/abs/2609.18193)&nbsp;·&nbsp;[code](https://github.com/vigorlee/wave-go) |
 
 ## Industry deployments
 
