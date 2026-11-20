@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **27** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 
 Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,9 +14,9 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 ## 目录
 
-- [运动控制](#运动控制) — 13
+- [运动控制](#运动控制) — 14
 - [操作](#操作) — 2
-- [具身智能](#具身智能) — 2
+- [具身智能](#具身智能) — 3
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 2
 - [教学与竞赛](#教学与竞赛) — 2
 - [行业应用](#行业应用) — 6
@@ -36,6 +36,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**：上一代 Oli 机型在 mjlab 中的行走与动作跟踪策略，用 Kaggle 免费 GPU 训练 | `Oli`&nbsp;*仿真* | [nht-cyb](https://github.com/nht-cyb) | 2026 | 代码 | [代码](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-vaps"></a>**VAPS**：在翻跟头时选择继续、中止或安全倒地，实机完成侧空翻 | `Oli` | 达姆施塔特工业大学、逐际动力等 | 2026 | 论文 | [主页](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**：在本体感知与特权状态之间做对比学习，提高全身控制的数据效率 | `Oli` | 香港理工、中国科大等 | 2025 | 论文 | [论文](https://arxiv.org/abs/2512.13093) |
 
@@ -69,6 +70,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli 语音交互应用**：在机载 Jetson Orin NX 上离线语音对话，通过 SDK 音频接口接入 Whisper、本地大模型和 Piper 语音合成 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | 代码 | [代码](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：ROS 2 语音交互：离线与在线语音识别、大模型对话和动作指令 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：联合生成未来状态与动作的人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
 

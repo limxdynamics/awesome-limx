@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **27** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **29** projects built on Oli, from the [Awesome LimX](../README.md) list.
 
 Official Oli repositories: [humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,9 +14,9 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 13
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 14
 - [Manipulation](#manipulation) — 2
-- [Embodied AI](#embodied-ai) — 2
+- [Embodied AI](#embodied-ai) — 3
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 2
 - [Education & competitions](#education--competitions) — 2
 - [Industry deployments](#industry-deployments) — 6
@@ -36,6 +36,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**: locomotion and motion-tracking policies for the earlier-generation Oli model in mjlab, trained on a free Kaggle GPU | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | Code | [code](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-vaps"></a>**VAPS**: picks between continuing, aborting or a safe fall during flips, shown with real side flips | `Oli` | TU Darmstadt, LimX et al. | 2026 | Paper | [project](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**: contrastive learning between proprioceptive and privileged states for data-efficient whole-body control | `Oli` | PolyU, USTC et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2512.13093) |
 
@@ -69,6 +70,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli Voice Interaction App**: offline voice chat on the onboard Jetson Orin NX, with Whisper, a local LLM and Piper TTS through the SDK audio API | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | Code | [code](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: ROS 2 voice system with offline and online speech recognition, LLM dialogue and action commands | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | Code | [code](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**: humanoid world action model that generates future states and actions jointly | `Oli` | LimX | 2026 | Paper | [project](https://hwam.vercel.app/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.12026) |
 

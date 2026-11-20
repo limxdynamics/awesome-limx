@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli を使った **27** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> Oli を使った **29** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynamics/humanoid-description) · [humanoid-rl-deploy-python](https://github.com/limxdynamics/humanoid-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,9 +14,9 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 13
+- [移動と全身制御](#移動と全身制御) — 14
 - [マニピュレーション](#マニピュレーション) — 2
-- [エンボディドAI](#エンボディドai) — 2
+- [エンボディドAI](#エンボディドai) — 3
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 2
 - [教育と競技会](#教育と競技会) — 2
 - [産業応用](#産業応用) — 6
@@ -36,6 +36,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
+| <a id="p-hu-d03-rl-kaggle"></a>**HU_D03 RL on a Free GPU**：前世代 Oli モデル向けの歩行とモーショントラッキングのポリシー、Kaggle の無料 GPU を使い mjlab で学習 | `Oli`&nbsp;*sim* | [nht-cyb](https://github.com/nht-cyb) | 2026 | コード | [コード](https://github.com/nht-cyb/hu_d03_rl) |
 | <a id="p-vaps"></a>**VAPS**：宙返り中に続行・中止・安全な転倒を選び分け、実機で側方宙返りを実演 | `Oli` | TU Darmstadt, LimX et al. | 2026 | 論文 | [プロジェクト](https://vaps-r-al.github.io/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.01397) |
 | <a id="p-pvp"></a>**PvP**：固有感覚と特権状態の対比学習で、データ効率の高い全身制御 | `Oli` | PolyU, USTC et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2512.13093) |
 
@@ -69,6 +70,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
+| <a id="p-oli-via"></a>**Oli Voice Interaction App**：搭載の Jetson Orin NX 上でオフライン音声対話、SDK の音声 API 経由で Whisper・ローカル LLM・Piper TTS を接続 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | コード | [コード](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**：オフライン・オンライン音声認識、LLM 対話、動作指令を備えた ROS 2 音声システム | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | コード | [コード](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：将来の状態と行動を同時に生成するヒューマノイド世界行動モデル | `Oli` | LimX | 2026 | 論文 | [プロジェクト](https://hwam.vercel.app/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.12026) |
 

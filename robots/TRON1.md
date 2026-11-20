@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> **90** projects built on TRON1, from the [Awesome LimX](../README.md) list.
+> **91** projects built on TRON1, from the [Awesome LimX](../README.md) list.
 
 Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 ## Contents
 
-- [Locomotion & whole-body control](#locomotion--whole-body-control) — 32
+- [Locomotion & whole-body control](#locomotion--whole-body-control) — 33
 - [Perception & navigation](#perception--navigation) — 12
 - [Manipulation](#manipulation) — 6
 - [Embodied AI](#embodied-ai) — 1
@@ -75,6 +75,7 @@ Official TRON1 repositories: [tron1-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-tron1-learning-from-human"></a>**TRON1 Learning from Human**: wheel-foot jump learned from CMU motion capture in Isaac Sim, then run unchanged in MuJoCo | `TRON1`&nbsp;*sim* | [Shukashuki](https://github.com/Shukashuki) | 2026 | Code | [code](https://github.com/Shukashuki/tron1-learning-from-human) |
 | <a id="p-tron1-wf-mimic"></a>**Wheel-Foot TRON1 Dance Mimic**: imitates human dance on the wheel-foot biped and studies which motions the morphology can do | `TRON1`&nbsp;*sim* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | Code | [code](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**: graph-conditioned diffusion model that retargets one motion across robots of different structure | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | Paper | [paper](https://arxiv.org/abs/2505.20857) |
 

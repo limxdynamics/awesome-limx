@@ -6,7 +6,7 @@
 
 # TRON1 · Awesome LimX
 
-> TRON1 を使った **90** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON1 を使った **91** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 
 TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) · [tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab) · [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) · [tron1-rl-deploy-python](https://github.com/limxdynamics/tron1-rl-deploy-python) · [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel)
 
@@ -14,7 +14,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 ## 目次
 
-- [移動と全身制御](#移動と全身制御) — 32
+- [移動と全身制御](#移動と全身制御) — 33
 - [知覚とナビゲーション](#知覚とナビゲーション) — 12
 - [マニピュレーション](#マニピュレーション) — 6
 - [エンボディドAI](#エンボディドai) — 1
@@ -75,6 +75,7 @@ TRON1 公式リポジトリ：[tron1-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
+| <a id="p-tron1-learning-from-human"></a>**TRON1 Learning from Human**：CMU のモーションキャプチャから Isaac Sim でホイールフットのジャンプを学習し、同じポリシーをそのまま MuJoCo で実行 | `TRON1`&nbsp;*sim* | [Shukashuki](https://github.com/Shukashuki) | 2026 | コード | [コード](https://github.com/Shukashuki/tron1-learning-from-human) |
 | <a id="p-tron1-wf-mimic"></a>**Wheel-Foot TRON1 Dance Mimic**：ホイールフット二足で人のダンスを模倣し、この形態でできる動作とできない動作を分析 | `TRON1`&nbsp;*sim* | [HUST-dolores](https://github.com/HUST-dolores) | 2026 | コード | [コード](https://github.com/HUST-dolores/tron1-wf-mimic) |
 | <a id="p-multi-embodiment-retargeting"></a>**Multi-Embodiment Retargeting**：グラフ条件付き拡散モデルで、構造の異なるロボット間で同じ動作をリターゲット | `TRON1` `Oli`&nbsp;*sim* | SUSTech, HKUST et al. | 2025 | 論文 | [論文](https://arxiv.org/abs/2505.20857) |
 
