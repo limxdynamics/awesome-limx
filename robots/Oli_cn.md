@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> 基于 Oli 的 **24** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 Oli 的 **25** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 >
 > 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -19,7 +19,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 - [运动控制](#运动控制) — 14
 - [操作](#操作) — 2
 - [具身智能](#具身智能) — 3
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 2
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 3
 - [教学与竞赛](#教学与竞赛) — 2
 - [行业应用](#行业应用) — 1
 
@@ -77,6 +77,12 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 | <a id="p-hwam"></a>**HWAM**：联合生成未来状态与动作的人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
 
 ## 工具、仿真与 SDK
+
+### 训练框架
+
+| 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
+|---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 
 ### 仿真与环境
 

@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> Oli로 만든 **24**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> Oli로 만든 **25**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 >
 > 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -19,7 +19,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 - [보행 및 전신 제어](#보행-및-전신-제어) — 14
 - [매니퓰레이션](#매니퓰레이션) — 2
 - [임바디드 AI](#임바디드-ai) — 3
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 2
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 3
 - [교육 및 대회](#교육-및-대회) — 2
 - [산업 적용](#산업-적용) — 1
 
@@ -77,6 +77,12 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 | <a id="p-hwam"></a>**HWAM**: 미래 상태와 행동을 함께 생성하는 휴머노이드 월드 액션 모델 | `Oli` | LimX | 2026 | 논문 | [프로젝트](https://hwam.vercel.app/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.12026) |
 
 ## 도구, 시뮬레이션 및 SDK
+
+### 학습 프레임워크
+
+| 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
+|---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 
 ### 시뮬레이션 및 환경
 

@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **141** 个项目，其中 **107** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **142** 个项目，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 >
 > **关于本列表**：本列表汇编与 LimX 机器人相关的公开信息，每条均附原始来源链接。收录不代表逐际动力对相关项目、成果或企业的认可、认证或背书，也不构成逐际动力对任何商业合作关系的表述。第三方项目、论文、名称及素材的权利归各自权利人所有，并适用其各自的许可证。行业应用类条目仅转述所附公开来源的内容。如需更正或下架，请发邮件至 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;条 | 29&nbsp;条 | 24&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
+| 88&nbsp;条 | 29&nbsp;条 | 25&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，附演示视频链接，并可按机型、类型、实机或仿真筛选。
 
@@ -35,7 +35,7 @@
 - [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
 - [具身智能](#具身智能) — 10
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 22
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 23
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
@@ -193,12 +193,13 @@ _10 个条目：2 篇论文 · 8 个代码_
 
 ## 工具、仿真与 SDK
 
-_22 个工具，分 4 组_
+_23 个工具，分 4 组_
 
 ### 训练框架
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab 任务集**：三种足型的 Isaac Lab 任务，含跳跃 | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [代码](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**：在 mjlab 上训练轮足运动策略并导出 ONNX | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [代码](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**：支持 Genesis、Isaac Gym、Isaac Sim 的 legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [代码](https://github.com/lupinjia/LeggedGym-Ex) |
@@ -303,7 +304,7 @@ _15 个条目，分 2 组_
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
 | [`TRON2`](robots/TRON2_cn.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
-| [`Oli`](robots/Oli_cn.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Oli`](robots/Oli_cn.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_cn.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_cn.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1_cn.md) | **3** | 2 |  | 1 |  |  |  |  |

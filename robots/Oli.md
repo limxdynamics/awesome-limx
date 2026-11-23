@@ -6,7 +6,7 @@
 
 # Oli · Awesome LimX
 
-> **24** projects built on Oli, from the [Awesome LimX](../README.md) list.
+> **25** projects built on Oli, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -19,7 +19,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 14
 - [Manipulation](#manipulation) — 2
 - [Embodied AI](#embodied-ai) — 3
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 2
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 3
 - [Education & competitions](#education--competitions) — 2
 - [Industry deployments](#industry-deployments) — 1
 
@@ -77,6 +77,12 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 | <a id="p-hwam"></a>**HWAM**: humanoid world action model that generates future states and actions jointly | `Oli` | LimX | 2026 | Paper | [project](https://hwam.vercel.app/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.12026) |
 
 ## Tools, simulation & SDK
+
+### Training frameworks
+
+| Project | Robot | Author / Org | Year | Links |
+|---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**: agent-native robot learning framework with Oli training tasks, a locomotion policy, retargeting and real-robot deployment through the LimX SDK | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 
 ### Simulation & environments
 

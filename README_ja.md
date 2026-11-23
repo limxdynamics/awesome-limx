@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **141** プロジェクトを収録しています。うち **107** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **142** プロジェクトを収録しています。うち **108** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 >
 > **このリストについて**：LimX のロボットに関する公開情報を、各項目の出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証を意味せず、いかなる商業上の関係についての LimX の表明でもありません。第三者のプロジェクト、論文、名称、素材の権利はそれぞれの権利者に帰属し、各自のライセンスが適用されます。産業応用の項目は、リンク先の公開情報の内容を要約したものにすぎません。訂正や掲載の取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) までご連絡ください。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;件 | 29&nbsp;件 | 24&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
+| 88&nbsp;件 | 29&nbsp;件 | 25&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
 
 **見て探したい方へ：** [ギャラリー](https://limxdynamics.github.io/awesome-limx/#lang=ja)では各項目をカードで表示し、デモ動画へのリンクも掲載しています。機種・種別・実機/シミュレーションで絞り込めます。
 
@@ -35,7 +35,7 @@
 - [知覚とナビゲーション](#知覚とナビゲーション) — 13
 - [マニピュレーション](#マニピュレーション) — 11
 - [エンボディドAI](#エンボディドai) — 10
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 22
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 23
   - [学習フレームワーク](#学習フレームワーク)
   - [シミュレーションと環境](#シミュレーションと環境)
   - [デプロイと制御](#デプロイと制御)
@@ -193,12 +193,13 @@ _10 件：論文 2 · コード 8_
 
 ## ツール、シミュレーション、SDK
 
-_ツール 22 件（4 グループ）_
+_ツール 23 件（4 グループ）_
 
 ### 学習フレームワーク
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**：エージェントネイティブなロボット学習フレームワーク。Oli の学習タスク、歩行ポリシー、リターゲティングと LimX SDK による実機デプロイを搭載 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab Tasks**：3 種類の足すべてに対応した Isaac Lab タスク、ジャンプを含む | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [コード](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**：mjlab でホイールフット歩行を学習し ONNX を出力 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [コード](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**：Genesis、Isaac Gym、Isaac Sim 上の legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [コード](https://github.com/lupinjia/LeggedGym-Ex) |
@@ -303,7 +304,7 @@ LimX のロボットが関わる企業のオープンソースと公開された
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
 | [`TRON2`](robots/TRON2_ja.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
-| [`Oli`](robots/Oli_ja.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Oli`](robots/Oli_ja.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_ja.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ja.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1_ja.md) | **3** | 2 |  | 1 |  |  |  |  |

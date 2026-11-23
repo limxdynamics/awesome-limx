@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **141**개 프로젝트를 모았고, 그중 **107**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 기업 오픈소스를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **142**개 프로젝트를 모았고, 그중 **108**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 기업 오픈소스를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 >
 > **이 목록에 대하여**: LimX 로봇과 관련된 공개 정보를 각 항목의 원출처 링크와 함께 정리한 목록입니다. 수록은 LimX Dynamics의 보증·인증·추천을 의미하지 않으며, 어떠한 상업적 관계에 대한 LimX의 표명도 아닙니다. 제3자 프로젝트, 논문, 명칭, 자료의 권리는 각 권리자에게 있으며 각자의 라이선스가 적용됩니다. 산업 적용 항목은 링크된 공개 출처의 내용을 요약한 것일 뿐입니다. 정정이나 삭제를 원하시면 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88개 | 29개 | 24개 | 3개 | 3개 | 3개 |
+| 88개 | 29개 | 25개 | 3개 | 3개 | 3개 |
 
 **보면서 찾고 싶다면:** [갤러리](https://limxdynamics.github.io/awesome-limx/#lang=ko)에서 모든 항목을 카드로 보고, 데모 영상 링크를 확인하고, 기종·유형·실제 로봇/시뮬레이션으로 거를 수 있습니다.
 
@@ -35,7 +35,7 @@
 - [인지 및 내비게이션](#인지-및-내비게이션) — 13
 - [매니퓰레이션](#매니퓰레이션) — 11
 - [임바디드 AI](#임바디드-ai) — 10
-- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 22
+- [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 23
   - [학습 프레임워크](#학습-프레임워크)
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
   - [배포 및 제어](#배포-및-제어)
@@ -193,12 +193,13 @@ _10개: 논문 2 · 코드 8_
 
 ## 도구, 시뮬레이션 및 SDK
 
-_도구 22개 (4개 그룹)_
+_도구 23개 (4개 그룹)_
 
 ### 학습 프레임워크
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab Tasks**: 세 가지 발 형태 전부를 위한 Isaac Lab 태스크, 점프 포함 | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [코드](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**: mjlab에서 휠풋 보행을 학습하고 ONNX로 내보내기 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [코드](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**: Genesis, Isaac Gym, Isaac Sim에서 돌아가는 legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [코드](https://github.com/lupinjia/LeggedGym-Ex) |
@@ -303,7 +304,7 @@ LimX 로봇이 관련된 기업 오픈소스와 공개 수상 내역을 출처 �
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ko.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
 | [`TRON2`](robots/TRON2_ko.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
-| [`Oli`](robots/Oli_ko.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Oli`](robots/Oli_ko.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_ko.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ko.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1_ko.md) | **3** | 2 |  | 1 |  |  |  |  |

@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **141** projects around LimX robots and the LimX SDK, **107** of them with open-source code: papers, code, datasets, tutorials, competition results and company open source. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **142** projects around LimX robots and the LimX SDK, **108** of them with open-source code: papers, code, datasets, tutorials, competition results and company open source. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 >
 > **About this list.** It compiles publicly available information about work that uses LimX robots, with a link to each original source. A listing is not an endorsement or certification by LimX Dynamics, and it is not a statement by LimX about any business relationship. Third-party projects, papers, names and media belong to their owners and stay under their own licenses. Industry entries only summarize what the linked public source reports. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;projects | 29&nbsp;projects | 24&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects |
+| 88&nbsp;projects | 29&nbsp;projects | 25&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects |
 
 **Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with links to demo videos and filters by robot, type and real or sim.
 
@@ -35,7 +35,7 @@
 - [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 11
 - [Embodied AI](#embodied-ai) — 10
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 22
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 23
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
   - [Deployment & control](#deployment--control)
@@ -194,12 +194,13 @@ _10 entries: 2 papers · 8 code_
 
 ## Tools, simulation & SDK
 
-_22 tools in 4 groups_
+_23 tools in 4 groups_
 
 ### Training frameworks
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
+| <a id="p-eden"></a>**Eden**: agent-native robot learning framework with Oli training tasks, a locomotion policy, retargeting and real-robot deployment through the LimX SDK | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab Tasks**: Isaac Lab tasks for all three feet, incl. jumping | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [code](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**: wheel-foot locomotion training and ONNX export on mjlab | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [code](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**: legged_gym on Genesis, Isaac Gym and Isaac Sim | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [code](https://github.com/lupinjia/LeggedGym-Ex) |
@@ -304,7 +305,7 @@ Entries per robot and section:
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
 | [`TRON2`](robots/TRON2.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
-| [`Oli`](robots/Oli.md) | **24** | 14 |  | 2 | 3 | 2 | 2 | 1 |
+| [`Oli`](robots/Oli.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1.md) | **3** | 3 |  |  |  |  |  |  |
 | [`W1`](robots/W1.md) | **3** | 2 |  | 1 |  |  |  |  |
