@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **142** プロジェクトを収録しています。うち **108** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **143** プロジェクトを収録しています。うち **109** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 >
 > **このリストについて**：LimX のロボットに関する公開情報を、各項目の出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証を意味せず、いかなる商業上の関係についての LimX の表明でもありません。第三者のプロジェクト、論文、名称、素材の権利はそれぞれの権利者に帰属し、各自のライセンスが適用されます。産業応用の項目は、リンク先の公開情報の内容を要約したものにすぎません。訂正や掲載の取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) までご連絡ください。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;件 | 29&nbsp;件 | 25&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
+| 88&nbsp;件 | 30&nbsp;件 | 25&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
 
 **見て探したい方へ：** [ギャラリー](https://limxdynamics.github.io/awesome-limx/#lang=ja)では各項目をカードで表示し、デモ動画へのリンクも掲載しています。機種・種別・実機/シミュレーションで絞り込めます。
 
@@ -35,7 +35,7 @@
 - [知覚とナビゲーション](#知覚とナビゲーション) — 13
 - [マニピュレーション](#マニピュレーション) — 11
 - [エンボディドAI](#エンボディドai) — 10
-- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 23
+- [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 24
   - [学習フレームワーク](#学習フレームワーク)
   - [シミュレーションと環境](#シミュレーションと環境)
   - [デプロイと制御](#デプロイと制御)
@@ -193,7 +193,7 @@ _10 件：論文 2 · コード 8_
 
 ## ツール、シミュレーション、SDK
 
-_ツール 23 件（4 グループ）_
+_ツール 24 件（4 グループ）_
 
 ### 学習フレームワーク
 
@@ -209,6 +209,7 @@ _ツール 23 件（4 グループ）_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
+| <a id="p-tron2-manipulation-isaac"></a>**TRON2 Manipulation in Isaac Sim**：公式の TRON2A 双腕マニピュレーション制御器を Isaac Sim のモーターシミュレーターで動かし、MuJoCo 版と比較検証 | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2_manipulation_isaac) |
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：記録したロボットと Wuji ハンドの軌道を Isaac Sim で再生 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [コード](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 | <a id="p-metalsim"></a>**MetalSim**：Apple シリコン向けシミュレーション・学習基盤、TRON1 専用モジュール付き：シミュレータ、制御器、実機ブリッジ | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [コード](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**：ROS 2 と LimX Gazebo、Isaac Lab、LeIsaac、MuJoCo を 1 台のホストでコンテナ実行 | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [コード](https://github.com/Aklva/robot-sim-docker) |
@@ -303,7 +304,7 @@ LimX のロボットが関わる企業のオープンソースと公開された
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2_ja.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
+| [`TRON2`](robots/TRON2_ja.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli_ja.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_ja.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ja.md) | **3** | 3 |  |  |  |  |  |  |

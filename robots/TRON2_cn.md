@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **29** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **30** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 >
 > 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -19,7 +19,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 - [运动控制](#运动控制) — 1
 - [操作](#操作) — 3
 - [具身智能](#具身智能) — 6
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 5
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 6
 - [教学与竞赛](#教学与竞赛) — 8
 - [行业应用](#行业应用) — 6
 
@@ -58,6 +58,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-tron2-manipulation-isaac"></a>**TRON2 Manipulation in Isaac Sim**：在 Isaac Sim 电机仿真中运行官方 TRON2A 双臂操作控制器，并与 MuJoCo 版本对比验证 | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_manipulation_isaac) |
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：在 Isaac Sim 中回放机器人与 Wuji 灵巧手的录制轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### 部署与控制

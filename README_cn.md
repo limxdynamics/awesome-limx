@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **142** 个项目，其中 **108** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **143** 个项目，其中 **109** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 >
 > **关于本列表**：本列表汇编与 LimX 机器人相关的公开信息，每条均附原始来源链接。收录不代表逐际动力对相关项目、成果或企业的认可、认证或背书，也不构成逐际动力对任何商业合作关系的表述。第三方项目、论文、名称及素材的权利归各自权利人所有，并适用其各自的许可证。行业应用类条目仅转述所附公开来源的内容。如需更正或下架，请发邮件至 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;条 | 29&nbsp;条 | 25&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
+| 88&nbsp;条 | 30&nbsp;条 | 25&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，附演示视频链接，并可按机型、类型、实机或仿真筛选。
 
@@ -35,7 +35,7 @@
 - [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
 - [具身智能](#具身智能) — 10
-- [工具、仿真与 SDK](#工具仿真与-sdk) — 23
+- [工具、仿真与 SDK](#工具仿真与-sdk) — 24
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
   - [部署与控制](#部署与控制)
@@ -193,7 +193,7 @@ _10 个条目：2 篇论文 · 8 个代码_
 
 ## 工具、仿真与 SDK
 
-_23 个工具，分 4 组_
+_24 个工具，分 4 组_
 
 ### 训练框架
 
@@ -209,6 +209,7 @@ _23 个工具，分 4 组_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
+| <a id="p-tron2-manipulation-isaac"></a>**TRON2 Manipulation in Isaac Sim**：在 Isaac Sim 电机仿真中运行官方 TRON2A 双臂操作控制器，并与 MuJoCo 版本对比验证 | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2_manipulation_isaac) |
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**：在 Isaac Sim 中回放机器人与 Wuji 灵巧手的录制轨迹 | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [代码](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 | <a id="p-metalsim"></a>**MetalSim**：面向 Apple 芯片的仿真与学习框架，带 TRON1 专用模块：仿真器、控制器和实机桥接 | `TRON1` | [Aditya Pulipaka](https://github.com/pulipakaa24) | 2026 | [代码](https://github.com/pulipakaa24/MetalSim) |
 | <a id="p-robot-sim-docker"></a>**Robot Sim Docker**：在一台主机上用容器运行 ROS 2 与 LimX Gazebo、Isaac Lab、LeIsaac 和 MuJoCo | `TRON1` | [Aklva](https://github.com/Aklva) | 2026 | [代码](https://github.com/Aklva/robot-sim-docker) |
@@ -303,7 +304,7 @@ _15 个条目，分 2 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2_cn.md) | **29** | 1 |  | 3 | 6 | 5 | 8 | 6 |
+| [`TRON2`](robots/TRON2_cn.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli_cn.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_cn.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_cn.md) | **3** | 3 |  |  |  |  |  |  |

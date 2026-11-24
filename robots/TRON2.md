@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **29** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **30** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -19,7 +19,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
 - [Manipulation](#manipulation) — 3
 - [Embodied AI](#embodied-ai) — 6
-- [Tools, simulation & SDK](#tools-simulation--sdk) — 5
+- [Tools, simulation & SDK](#tools-simulation--sdk) — 6
 - [Education & competitions](#education--competitions) — 8
 - [Industry deployments](#industry-deployments) — 6
 
@@ -58,6 +58,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
+| <a id="p-tron2-manipulation-isaac"></a>**TRON2 Manipulation in Isaac Sim**: runs the official TRON2A dual-arm manipulation controller against an Isaac Sim motor simulator, checked against the MuJoCo version | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2_manipulation_isaac) |
 | <a id="p-tron2-wuji-bag-replay"></a>**TRON2 Wuji Hand Replay**: replays recorded robot and Wuji hand trajectories in Isaac Sim | `TRON2` | [zengxiong111](https://github.com/zengxiong111) | 2026 | [code](https://github.com/zengxiong111/tron2-wuji-bag-replay) |
 
 ### Deployment & control
