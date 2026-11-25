@@ -201,7 +201,7 @@ _24 个工具，分 4 组_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [代码](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab 任务集**：三种足型的 Isaac Lab 任务，含跳跃 | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [代码](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**：在 mjlab 上训练轮足运动策略并导出 ONNX | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [代码](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**：支持 Genesis、Isaac Gym、Isaac Sim 的 legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [代码](https://github.com/lupinjia/LeggedGym-Ex) |

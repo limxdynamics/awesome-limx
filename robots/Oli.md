@@ -82,7 +82,7 @@ Official Oli repositories: [humanoid-description](https://github.com/limxdynamic
 
 | Project | Robot | Author / Org | Year | Links |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**: agent-native robot learning framework with Oli training tasks, a locomotion policy, retargeting and real-robot deployment through the LimX SDK | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**: agent-native robot learning framework with Oli training tasks, a locomotion policy, retargeting and real-robot deployment through the LimX SDK | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[dataset](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 
 ### Simulation & environments
 

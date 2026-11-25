@@ -82,7 +82,7 @@ Oli 公式リポジトリ：[humanoid-description](https://github.com/limxdynami
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**：エージェントネイティブなロボット学習フレームワーク。Oli の学習タスク、歩行ポリシー、リターゲティングと LimX SDK による実機デプロイを搭載 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**：エージェントネイティブなロボット学習フレームワーク。Oli の学習タスク、歩行ポリシー、リターゲティングと LimX SDK による実機デプロイを搭載 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [コード](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 
 ### シミュレーションと環境
 

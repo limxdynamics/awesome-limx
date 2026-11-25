@@ -201,7 +201,7 @@ _ツール 24 件（4 グループ）_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | リンク |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**：エージェントネイティブなロボット学習フレームワーク。Oli の学習タスク、歩行ポリシー、リターゲティングと LimX SDK による実機デプロイを搭載 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**：エージェントネイティブなロボット学習フレームワーク。Oli の学習タスク、歩行ポリシー、リターゲティングと LimX SDK による実機デプロイを搭載 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [コード](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[データセット](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab Tasks**：3 種類の足すべてに対応した Isaac Lab タスク、ジャンプを含む | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [コード](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**：mjlab でホイールフット歩行を学習し ONNX を出力 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [コード](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**：Genesis、Isaac Gym、Isaac Sim 上の legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [コード](https://github.com/lupinjia/LeggedGym-Ex) |

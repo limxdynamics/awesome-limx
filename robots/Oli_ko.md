@@ -82,7 +82,7 @@ Oli 공식 저장소: [humanoid-description](https://github.com/limxdynamics/hum
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [코드](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[데이터셋](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 
 ### 시뮬레이션 및 환경
 

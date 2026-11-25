@@ -201,7 +201,7 @@ _도구 24개 (4개 그룹)_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 링크 |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**: 에이전트 네이티브 로봇 학습 프레임워크로, Oli 학습 태스크·보행 정책·리타기팅과 LimX SDK를 통한 실기 배포를 제공 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [코드](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[데이터셋](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 | <a id="p-tron1-isaac-lab-tasks"></a>**TRON1 Isaac Lab Tasks**: 세 가지 발 형태 전부를 위한 Isaac Lab 태스크, 점프 포함 | `TRON1` | [HughWang-wzy](https://github.com/HughWang-wzy) | 2026 | [코드](https://github.com/HughWang-wzy/tron1-rl-isaaclab) |
 | <a id="p-tron1-rl-mjlab"></a>**TRON1 RL on mjlab**: mjlab에서 휠풋 보행을 학습하고 ONNX로 내보내기 | `TRON1` | [Xinchen Yao](https://github.com/hoscy) | 2025 | [코드](https://github.com/hoscy/tron1-rl-mjlab) |
 | <a id="p-leggedgym-ex"></a>**LeggedGym-Ex**: Genesis, Isaac Gym, Isaac Sim에서 돌아가는 legged_gym | `TRON1` | [Yasen Jia](https://github.com/lupinjia) | 2024 | [코드](https://github.com/lupinjia/LeggedGym-Ex) |

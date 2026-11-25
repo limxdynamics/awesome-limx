@@ -82,7 +82,7 @@ Oli 官方仓库：[humanoid-description](https://github.com/limxdynamics/humano
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 链接 |
 |---|---|---|---|---|
-| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [code](https://github.com/embodied-ai-nexus/Eden) |
+| <a id="p-eden"></a>**Eden**：面向智能体的机器人学习框架，内置 Oli 训练任务、行走策略和动作重定向，并通过 LimX SDK 部署到真机 | `Oli` | [embodied-ai-nexus](https://github.com/embodied-ai-nexus) | 2026 | [代码](https://github.com/embodied-ai-nexus/Eden)&nbsp;·&nbsp;[数据集](https://huggingface.co/datasets/Kashu7100/eden_assets/tree/main/humanoids/limx_oli) |
 
 ### 仿真与环境
 
