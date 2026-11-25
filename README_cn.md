@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
 </p>
 
-> 收录 **143** 个项目，其中 **109** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
+> 收录 **145** 个项目，其中 **111** 个有开源代码，都围绕 LimX 机器人或 LimX SDK：论文、代码、数据集、教程、比赛成绩和企业开源项目。官方开源请见 [GitHub](https://github.com/limxdynamics) 和 [Hugging Face](https://huggingface.co/limxdynamics)。
 >
 > **关于本列表**：本列表汇编与 LimX 机器人相关的公开信息，每条均附原始来源链接。收录不代表逐际动力对相关项目、成果或企业的认可、认证或背书，也不构成逐际动力对任何商业合作关系的表述。第三方项目、论文、名称及素材的权利归各自权利人所有，并适用其各自的许可证。行业应用类条目仅转述所附公开来源的内容。如需更正或下架，请发邮件至 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_cn.md) | [**TRON2**](robots/TRON2_cn.md) | [**Oli**](robots/Oli_cn.md) | [**Luna**](robots/Luna_cn.md) | [**P1**](robots/P1_cn.md) | [**W1**](robots/W1_cn.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;条 | 30&nbsp;条 | 25&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
+| 88&nbsp;条 | 32&nbsp;条 | 25&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 | 3&nbsp;条 |
 
 **想直接看？** [图库](https://limxdynamics.github.io/awesome-limx/#lang=cn)把每条做成卡片，附演示视频链接，并可按机型、类型、实机或仿真筛选。
 
@@ -34,7 +34,7 @@
   - [动作跟踪与重定向](#动作跟踪与重定向)
 - [感知与导航](#感知与导航) — 13
 - [操作](#操作) — 11
-- [具身智能](#具身智能) — 10
+- [具身智能](#具身智能) — 12
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 24
   - [训练框架](#训练框架)
   - [仿真与环境](#仿真与环境)
@@ -176,12 +176,14 @@ _11 个条目：5 篇论文 · 6 个代码_
 
 ## 具身智能
 
-_10 个条目：2 篇论文 · 8 个代码_
+_12 个条目：2 篇论文 · 10 个代码_
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
 | <a id="p-oli-via"></a>**Oli 语音交互应用**：在机载 Jetson Orin NX 上离线语音对话，通过 SDK 音频接口接入 Whisper、本地大模型和 Piper 语音合成 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | 代码 | [代码](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：在 Mac 上运行的自我改进本地 AI 智能体，在 MuJoCo 中驱动机器人 | `TRON1`&nbsp;*仿真* | [justinsuo](https://github.com/justinsuo) | 2026 | 代码 | [代码](https://github.com/justinsuo/tron1-hermes-agent) |
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**：本地视觉语言模型调用机器人工具规划导航与抓放，腿部使用官方 WF_TRON2A 策略；可在免费的 Kaggle notebook 中运行 | `TRON2`&nbsp;*仿真* | [supat-roong](https://github.com/supat-roong) | 2026 | 代码 | [代码](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[notebook](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**：代码即策略，由大模型编写 Python 控制 DACH_TRON2A 夹爪完成抬起方块与抓放，附网页评测界面 | `TRON2`&nbsp;*仿真* | [zengxiong111](https://github.com/zengxiong111) | 2026 | 代码 | [代码](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的机器人上训练并部署 FluxVLA 视觉-语言-动作模型 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli 语音交互**：ROS 2 语音交互：离线与在线语音识别、大模型对话和动作指令 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 代码 | [代码](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：联合生成未来状态与动作的人形世界动作模型 | `Oli` | 逐际动力 | 2026 | 论文 | [主页](https://hwam.vercel.app/)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.12026) |
@@ -304,7 +306,7 @@ _15 个条目，分 2 组_
 | 机型 | 合计 | 运动控制 | 感知与导航 | 操作 | 具身智能 | 工具 | 教学与竞赛 | 行业应用 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_cn.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2_cn.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
+| [`TRON2`](robots/TRON2_cn.md) | **32** | 1 |  | 3 | 8 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli_cn.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_cn.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_cn.md) | **3** | 3 |  |  |  |  |  |  |

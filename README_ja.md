@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX のロボットと LimX SDK にまつわる **143** プロジェクトを収録しています。うち **109** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
+> LimX のロボットと LimX SDK にまつわる **145** プロジェクトを収録しています。うち **111** 件はオープンソースコードあり。論文、コード、データセット、チュートリアル、競技会の結果、企業のオープンソースを扱います。LimX 公式のオープンソースは [GitHub](https://github.com/limxdynamics) と [Hugging Face](https://huggingface.co/limxdynamics) をご覧ください。
 >
 > **このリストについて**：LimX のロボットに関する公開情報を、各項目の出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証を意味せず、いかなる商業上の関係についての LimX の表明でもありません。第三者のプロジェクト、論文、名称、素材の権利はそれぞれの権利者に帰属し、各自のライセンスが適用されます。産業応用の項目は、リンク先の公開情報の内容を要約したものにすぎません。訂正や掲載の取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) までご連絡ください。
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ja.md) | [**TRON2**](robots/TRON2_ja.md) | [**Oli**](robots/Oli_ja.md) | [**Luna**](robots/Luna_ja.md) | [**P1**](robots/P1_ja.md) | [**W1**](robots/W1_ja.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;件 | 30&nbsp;件 | 25&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
+| 88&nbsp;件 | 32&nbsp;件 | 25&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 | 3&nbsp;件 |
 
 **見て探したい方へ：** [ギャラリー](https://limxdynamics.github.io/awesome-limx/#lang=ja)では各項目をカードで表示し、デモ動画へのリンクも掲載しています。機種・種別・実機/シミュレーションで絞り込めます。
 
@@ -34,7 +34,7 @@
   - [モーショントラッキングとリターゲティング](#モーショントラッキングとリターゲティング)
 - [知覚とナビゲーション](#知覚とナビゲーション) — 13
 - [マニピュレーション](#マニピュレーション) — 11
-- [エンボディドAI](#エンボディドai) — 10
+- [エンボディドAI](#エンボディドai) — 12
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 24
   - [学習フレームワーク](#学習フレームワーク)
   - [シミュレーションと環境](#シミュレーションと環境)
@@ -176,12 +176,14 @@ _11 件：論文 5 · コード 6_
 
 ## エンボディドAI
 
-_10 件：論文 2 · コード 8_
+_12 件：論文 2 · コード 10_
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
 | <a id="p-oli-via"></a>**Oli Voice Interaction App**：搭載の Jetson Orin NX 上でオフライン音声対話、SDK の音声 API 経由で Whisper・ローカル LLM・Piper TTS を接続 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | コード | [コード](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**：Mac 上で動く自己改善型ローカル AI エージェントが MuJoCo でロボットを操作 | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | コード | [コード](https://github.com/justinsuo/tron1-hermes-agent) |
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**：ローカルの視覚言語モデルがロボットのツールを呼び出して移動とピック＆プレースを計画し、脚は公式の WF_TRON2A ポリシーで制御。無料の Kaggle ノートブックで実行可能 | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | コード | [コード](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[ノートブック](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**：Code as Policies で LLM が Python を書き、DACH_TRON2A のグリッパーでキューブ持ち上げとピック＆プレースを実行。Web 評価画面つき | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | コード | [コード](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**：FluxVLA 視覚言語行動モデルを自分のロボットで学習・展開 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | コード | [コード](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**：オフライン・オンライン音声認識、LLM 対話、動作指令を備えた ROS 2 音声システム | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | コード | [コード](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**：将来の状態と行動を同時に生成するヒューマノイド世界行動モデル | `Oli` | LimX | 2026 | 論文 | [プロジェクト](https://hwam.vercel.app/)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.12026) |
@@ -304,7 +306,7 @@ LimX のロボットが関わる企業のオープンソースと公開された
 | 機種 | 合計 | 移動 | 知覚 | マニピュレーション | エンボディドAI | ツール | 教育 | 産業 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ja.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2_ja.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
+| [`TRON2`](robots/TRON2_ja.md) | **32** | 1 |  | 3 | 8 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli_ja.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_ja.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ja.md) | **3** | 3 |  |  |  |  |  |  |

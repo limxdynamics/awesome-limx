@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> LimX 로봇과 LimX SDK 관련 **143**개 프로젝트를 모았고, 그중 **109**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 기업 오픈소스를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
+> LimX 로봇과 LimX SDK 관련 **145**개 프로젝트를 모았고, 그중 **111**개는 오픈소스 코드를 제공합니다. 논문, 코드, 데이터셋, 튜토리얼, 대회 결과, 기업 오픈소스를 다룹니다. LimX 공식 오픈소스는 [GitHub](https://github.com/limxdynamics)와 [Hugging Face](https://huggingface.co/limxdynamics)에서 확인하세요.
 >
 > **이 목록에 대하여**: LimX 로봇과 관련된 공개 정보를 각 항목의 원출처 링크와 함께 정리한 목록입니다. 수록은 LimX Dynamics의 보증·인증·추천을 의미하지 않으며, 어떠한 상업적 관계에 대한 LimX의 표명도 아닙니다. 제3자 프로젝트, 논문, 명칭, 자료의 권리는 각 권리자에게 있으며 각자의 라이선스가 적용됩니다. 산업 적용 항목은 링크된 공개 출처의 내용을 요약한 것일 뿐입니다. 정정이나 삭제를 원하시면 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1_ko.md) | [**TRON2**](robots/TRON2_ko.md) | [**Oli**](robots/Oli_ko.md) | [**Luna**](robots/Luna_ko.md) | [**P1**](robots/P1_ko.md) | [**W1**](robots/W1_ko.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88개 | 30개 | 25개 | 3개 | 3개 | 3개 |
+| 88개 | 32개 | 25개 | 3개 | 3개 | 3개 |
 
 **보면서 찾고 싶다면:** [갤러리](https://limxdynamics.github.io/awesome-limx/#lang=ko)에서 모든 항목을 카드로 보고, 데모 영상 링크를 확인하고, 기종·유형·실제 로봇/시뮬레이션으로 거를 수 있습니다.
 
@@ -34,7 +34,7 @@
   - [모션 트래킹 및 리타게팅](#모션-트래킹-및-리타게팅)
 - [인지 및 내비게이션](#인지-및-내비게이션) — 13
 - [매니퓰레이션](#매니퓰레이션) — 11
-- [임바디드 AI](#임바디드-ai) — 10
+- [임바디드 AI](#임바디드-ai) — 12
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 24
   - [학습 프레임워크](#학습-프레임워크)
   - [시뮬레이션 및 환경](#시뮬레이션-및-환경)
@@ -176,12 +176,14 @@ _11개: 논문 5 · 코드 6_
 
 ## 임바디드 AI
 
-_10개: 논문 2 · 코드 8_
+_12개: 논문 2 · 코드 10_
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
 | <a id="p-oli-via"></a>**Oli Voice Interaction App**: 탑재된 Jetson Orin NX에서 오프라인 음성 대화, SDK 오디오 API로 Whisper·로컬 LLM·Piper TTS 연결 | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | 코드 | [코드](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**: Mac에서 도는 자기 개선형 로컬 AI 에이전트가 MuJoCo에서 로봇을 조종 | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | 코드 | [코드](https://github.com/justinsuo/tron1-hermes-agent) |
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**: 로컬 비전-언어 모델이 로봇 도구를 호출해 이동과 픽앤플레이스를 계획하고, 다리는 공식 WF_TRON2A 정책으로 제어. 무료 Kaggle 노트북에서 실행 가능 | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | 코드 | [코드](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[노트북](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**: 코드 기반 정책(Code as Policies)으로 LLM이 Python을 작성해 DACH_TRON2A 그리퍼로 큐브 들기와 픽앤플레이스 수행, 웹 평가 UI 포함 | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | 코드 | [코드](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: FluxVLA 시각-언어-행동 모델을 자신의 로봇에서 학습·배포 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 코드 | [코드](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: 오프라인·온라인 음성 인식, LLM 대화, 동작 명령을 갖춘 ROS 2 음성 시스템 | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | 코드 | [코드](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**: 미래 상태와 행동을 함께 생성하는 휴머노이드 월드 액션 모델 | `Oli` | LimX | 2026 | 논문 | [프로젝트](https://hwam.vercel.app/)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.12026) |
@@ -304,7 +306,7 @@ LimX 로봇이 관련된 기업 오픈소스와 공개 수상 내역을 출처 �
 | 기종 | 합계 | 보행 | 인지 | 매니퓰레이션 | 임바디드 AI | 도구 | 교육 | 산업 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1_ko.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2_ko.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
+| [`TRON2`](robots/TRON2_ko.md) | **32** | 1 |  | 3 | 8 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli_ko.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna_ko.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1_ko.md) | **3** | 3 |  |  |  |  |  |  |

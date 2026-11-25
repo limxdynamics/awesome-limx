@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> 基于 TRON2 的 **30** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
+> 基于 TRON2 的 **32** 个项目，摘自 [Awesome LimX](../README_cn.md) 列表。
 >
 > 内容汇编自公开来源，每条均附原始来源链接。收录不代表逐际动力的认可、认证或背书，也不构成对任何商业合作关系的表述；第三方项目适用其各自的许可证，权利归各自权利人所有。如需更正或下架，请联系 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)。
 
@@ -18,7 +18,7 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 
 - [运动控制](#运动控制) — 1
 - [操作](#操作) — 3
-- [具身智能](#具身智能) — 6
+- [具身智能](#具身智能) — 8
 - [工具、仿真与 SDK](#工具仿真与-sdk) — 6
 - [教学与竞赛](#教学与竞赛) — 8
 - [行业应用](#行业应用) — 6
@@ -45,6 +45,8 @@ TRON2 官方仓库：[tron2-robot-description](https://github.com/limxdynamics/t
 
 | 项目 | 机型 | 作者 / 机构 | 年份 | 类型 | 链接 |
 |---|---|---|---|---|---|
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**：本地视觉语言模型调用机器人工具规划导航与抓放，腿部使用官方 WF_TRON2A 策略；可在免费的 Kaggle notebook 中运行 | `TRON2`&nbsp;*仿真* | [supat-roong](https://github.com/supat-roong) | 2026 | 代码 | [代码](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[notebook](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**：代码即策略，由大模型编写 Python 控制 DACH_TRON2A 夹爪完成抬起方块与抓放，附网页评测界面 | `TRON2`&nbsp;*仿真* | [zengxiong111](https://github.com/zengxiong111) | 2026 | 代码 | [代码](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**在 TRON2 上部署 FluxVLA**：在自己的机器人上训练并部署 FluxVLA 视觉-语言-动作模型 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 代码 | [代码](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**：预测动作条件几何隐变量的世界-动作模型，在灵巧手上验证 | `TRON2` | 北京理工大学、逐际动力 | 2026 | 代码 | [主页](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[论文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[代码](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T 漂移动作头**：把 GR00T N1.7 的扩散动作头换成单步 drifting 头，降低推理开销 | `TRON2` | 浙大-UIUC、逐际动力 | 2026 | 论文 | [论文](https://arxiv.org/abs/2609.18108) |

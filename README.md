@@ -10,7 +10,7 @@
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
-> **143** projects around LimX robots and the LimX SDK, **109** of them with open-source code: papers, code, datasets, tutorials, competition results and company open source. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
+> **145** projects around LimX robots and the LimX SDK, **111** of them with open-source code: papers, code, datasets, tutorials, competition results and company open source. LimX's own releases are on [GitHub](https://github.com/limxdynamics) and [Hugging Face](https://huggingface.co/limxdynamics).
 >
 > **About this list.** It compiles publicly available information about work that uses LimX robots, with a link to each original source. A listing is not an endorsement or certification by LimX Dynamics, and it is not a statement by LimX about any business relationship. Third-party projects, papers, names and media belong to their owners and stay under their own licenses. Industry entries only summarize what the linked public source reports. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -18,7 +18,7 @@
 
 | [**TRON1**](robots/TRON1.md) | [**TRON2**](robots/TRON2.md) | [**Oli**](robots/Oli.md) | [**Luna**](robots/Luna.md) | [**P1**](robots/P1.md) | [**W1**](robots/W1.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 88&nbsp;projects | 30&nbsp;projects | 25&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects |
+| 88&nbsp;projects | 32&nbsp;projects | 25&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects | 3&nbsp;projects |
 
 **Prefer to look?** The [gallery](https://limxdynamics.github.io/awesome-limx/) shows every entry as a card, with links to demo videos and filters by robot, type and real or sim.
 
@@ -34,7 +34,7 @@
   - [Motion tracking & retargeting](#motion-tracking--retargeting)
 - [Perception & navigation](#perception--navigation) — 13
 - [Manipulation](#manipulation) — 11
-- [Embodied AI](#embodied-ai) — 10
+- [Embodied AI](#embodied-ai) — 12
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 24
   - [Training frameworks](#training-frameworks)
   - [Simulation & environments](#simulation--environments)
@@ -177,12 +177,14 @@ _11 entries: 5 papers · 6 code_
 
 ## Embodied AI
 
-_10 entries: 2 papers · 8 code_
+_12 entries: 2 papers · 10 code_
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
 | <a id="p-oli-via"></a>**Oli Voice Interaction App**: offline voice chat on the onboard Jetson Orin NX, with Whisper, a local LLM and Piper TTS through the SDK audio API | `Oli` | [VonBoltStudios](https://github.com/VonBoltStudios) | 2026 | Code | [code](https://github.com/VonBoltStudios/oli-via) |
 | <a id="p-tron1-hermes-agent"></a>**Tron 1 Hermes Agent**: self-improving local AI agent that drives the robot in MuJoCo on a Mac | `TRON1`&nbsp;*sim* | [justinsuo](https://github.com/justinsuo) | 2026 | Code | [code](https://github.com/justinsuo/tron1-hermes-agent) |
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**: a local vision-language model plans navigation and pick-and-place by calling robot tools, with the official WF_TRON2A policy on the legs; runs in a free Kaggle notebook | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | Code | [code](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[notebook](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**: code-as-policy for the DACH_TRON2A gripper, where an LLM writes Python for cube lift and pick-and-place, with a web evaluation UI | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | Code | [code](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy the FluxVLA vision-language-action model on your own robot | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-oli-voice-interaction"></a>**Oli Voice Interaction**: ROS 2 voice system with offline and online speech recognition, LLM dialogue and action commands | `Oli` | [zhilin2025](https://github.com/zhilin2025) | 2026 | Code | [code](https://github.com/zhilin2025/oli_audio) |
 | <a id="p-hwam"></a>**HWAM**: humanoid world action model that generates future states and actions jointly | `Oli` | LimX | 2026 | Paper | [project](https://hwam.vercel.app/)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.12026) |
@@ -305,7 +307,7 @@ Entries per robot and section:
 | Robot | Total | Locomotion | Perception | Manipulation | Embodied AI | Tools | Education | Industry |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`TRON1`](robots/TRON1.md) | **88** | 33 | 12 | 6 | 1 | 18 | 10 | 8 |
-| [`TRON2`](robots/TRON2.md) | **30** | 1 |  | 3 | 6 | 6 | 8 | 6 |
+| [`TRON2`](robots/TRON2.md) | **32** | 1 |  | 3 | 8 | 6 | 8 | 6 |
 | [`Oli`](robots/Oli.md) | **25** | 14 |  | 2 | 3 | 3 | 2 | 1 |
 | [`Luna`](robots/Luna.md) | **3** | 2 | 1 |  |  |  |  |  |
 | [`P1`](robots/P1.md) | **3** | 3 |  |  |  |  |  |  |

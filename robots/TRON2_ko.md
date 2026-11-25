@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2로 만든 **30**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
+> TRON2로 만든 **32**개 프로젝트 ([Awesome LimX](../README_ko.md) 목록에서 발췌).
 >
 > 공개 출처에서 정리했으며 각 항목에 원출처 링크가 있습니다. 수록은 LimX Dynamics의 보증·인증·추천이나 상업적 관계에 대한 표명이 아닙니다. 제3자 프로젝트에는 각자의 라이선스가 적용되며 권리는 각 권리자에게 있습니다. 정정이나 삭제는 [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com)으로 연락해 주세요.
 
@@ -18,7 +18,7 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 
 - [보행 및 전신 제어](#보행-및-전신-제어) — 1
 - [매니퓰레이션](#매니퓰레이션) — 3
-- [임바디드 AI](#임바디드-ai) — 6
+- [임바디드 AI](#임바디드-ai) — 8
 - [도구, 시뮬레이션 및 SDK](#도구-시뮬레이션-및-sdk) — 6
 - [교육 및 대회](#교육-및-대회) — 8
 - [산업 적용](#산업-적용) — 6
@@ -45,6 +45,8 @@ TRON2 공식 저장소: [tron2-robot-description](https://github.com/limxdynamic
 
 | 프로젝트 | 기종 | 저자 / 기관 | 연도 | 유형 | 링크 |
 |---|---|---|---|---|---|
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**: 로컬 비전-언어 모델이 로봇 도구를 호출해 이동과 픽앤플레이스를 계획하고, 다리는 공식 WF_TRON2A 정책으로 제어. 무료 Kaggle 노트북에서 실행 가능 | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | 코드 | [코드](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[노트북](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**: 코드 기반 정책(Code as Policies)으로 LLM이 Python을 작성해 DACH_TRON2A 그리퍼로 큐브 들기와 픽앤플레이스 수행, 웹 평가 UI 포함 | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | 코드 | [코드](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: FluxVLA 시각-언어-행동 모델을 자신의 로봇에서 학습·배포 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | 코드 | [코드](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**: 행동 조건부 기하 잠재 표현을 예측하는 월드 액션 모델, 다관절 손으로 검증 | `TRON2` | BIT, LimX | 2026 | 코드 | [프로젝트](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[논문](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[코드](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: GR00T N1.7의 확산 액션 헤드를 원스텝 drifting 헤드로 바꿔 추론 비용 절감 | `TRON2` | ZJU-UIUC, LimX | 2026 | 논문 | [논문](https://arxiv.org/abs/2609.18108) |

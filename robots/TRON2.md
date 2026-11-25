@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> **30** projects built on TRON2, from the [Awesome LimX](../README.md) list.
+> **32** projects built on TRON2, from the [Awesome LimX](../README.md) list.
 >
 > Compiled from public sources, each entry linked to its original source. A listing is not an endorsement or certification by LimX Dynamics, nor a statement about any business relationship. Third-party projects keep their own licenses and rights. To correct or remove an entry, email [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com).
 
@@ -18,7 +18,7 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 - [Locomotion & whole-body control](#locomotion--whole-body-control) — 1
 - [Manipulation](#manipulation) — 3
-- [Embodied AI](#embodied-ai) — 6
+- [Embodied AI](#embodied-ai) — 8
 - [Tools, simulation & SDK](#tools-simulation--sdk) — 6
 - [Education & competitions](#education--competitions) — 8
 - [Industry deployments](#industry-deployments) — 6
@@ -45,6 +45,8 @@ Official TRON2 repositories: [tron2-robot-description](https://github.com/limxdy
 
 | Project | Robot | Author / Org | Year | Type | Links |
 |---|---|---|---|---|---|
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**: a local vision-language model plans navigation and pick-and-place by calling robot tools, with the official WF_TRON2A policy on the legs; runs in a free Kaggle notebook | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | Code | [code](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[notebook](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**: code-as-policy for the DACH_TRON2A gripper, where an LLM writes Python for cube lift and pick-and-place, with a web evaluation UI | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | Code | [code](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**: train and deploy the FluxVLA vision-language-action model on your own robot | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | Code | [code](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**: world-action model predicting action-conditioned geometric latents, tested with dexterous hands | `TRON2` | BIT, LimX | 2026 | Code | [project](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[paper](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[code](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**: replaces GR00T N1.7's diffusion action head with a one-step drifting head to cut inference cost | `TRON2` | ZJU-UIUC, LimX | 2026 | Paper | [paper](https://arxiv.org/abs/2609.18108) |

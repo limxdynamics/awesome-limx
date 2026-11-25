@@ -490,3 +490,8 @@ gh:junyuan-fang/robodance
 gh:cps-test-lab/roqsim
 gh:robot-descriptions/robot_descriptions.py
 arxiv:2610.41330
+gh:Matt14-mander/TRON2_WholeBody_LAB
+gh:QTQT233/Vedio_TRON1
+gh:North-CHI/robot-deploy-snapshot-2026-11-23
+gh:limxdynamics-online-robotics/xbot-limx-dynamics
+gh:limxdynamics-online-robotics/limxdynamics-online-robotics

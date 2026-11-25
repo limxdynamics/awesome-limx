@@ -6,7 +6,7 @@
 
 # TRON2 · Awesome LimX
 
-> TRON2 を使った **30** プロジェクト（[Awesome LimX](../README_ja.md) より）。
+> TRON2 を使った **32** プロジェクト（[Awesome LimX](../README_ja.md) より）。
 >
 > 公開情報を出典リンクとともにまとめたものです。掲載は LimX Dynamics による推奨・認定・保証や商業上の関係の表明ではありません。第三者のプロジェクトには各自のライセンスが適用され、権利は各権利者に帰属します。訂正や取り下げは [opensource@limxdynamics.com](mailto:opensource@limxdynamics.com) まで。
 
@@ -18,7 +18,7 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 - [移動と全身制御](#移動と全身制御) — 1
 - [マニピュレーション](#マニピュレーション) — 3
-- [エンボディドAI](#エンボディドai) — 6
+- [エンボディドAI](#エンボディドai) — 8
 - [ツール、シミュレーション、SDK](#ツールシミュレーションsdk) — 6
 - [教育と競技会](#教育と競技会) — 8
 - [産業応用](#産業応用) — 6
@@ -45,6 +45,8 @@ TRON2 公式リポジトリ：[tron2-robot-description](https://github.com/limxd
 
 | プロジェクト | 機種 | 作者 / 組織 | 年 | 種別 | リンク |
 |---|---|---|---|---|---|
+| <a id="p-agentic-locomanip"></a>**Agentic Loco-Manipulation**：ローカルの視覚言語モデルがロボットのツールを呼び出して移動とピック＆プレースを計画し、脚は公式の WF_TRON2A ポリシーで制御。無料の Kaggle ノートブックで実行可能 | `TRON2`&nbsp;*sim* | [supat-roong](https://github.com/supat-roong) | 2026 | コード | [コード](https://github.com/supat-roong/agentic-locomanip)&nbsp;·&nbsp;[ノートブック](https://www.kaggle.com/code/supatroongpraiwan/agentic-loco-manipulation-with-a-local-vlm) |
+| <a id="p-cap-x-tron2"></a>**CaP-X-Tron2**：Code as Policies で LLM が Python を書き、DACH_TRON2A のグリッパーでキューブ持ち上げとピック＆プレースを実行。Web 評価画面つき | `TRON2`&nbsp;*sim* | [zengxiong111](https://github.com/zengxiong111) | 2026 | コード | [コード](https://github.com/zengxiong111/CaP-X-Tron2) |
 | <a id="p-fluxvla-on-tron2"></a>**FluxVLA on TRON2**：FluxVLA 視覚言語行動モデルを自分のロボットで学習・展開 | `TRON2` | [emoPointer](https://github.com/emoPointer) | 2026 | コード | [コード](https://github.com/emoPointer/FluxVLA) |
 | <a id="p-acg-wam"></a>**ACG-WAM**：行動条件付きの幾何潜在表現を予測する世界行動モデル、多指ハンドで検証 | `TRON2` | BIT, LimX | 2026 | コード | [プロジェクト](https://RoboOpus.github.io/ACG-WAM)&nbsp;·&nbsp;[論文](https://arxiv.org/abs/2610.06965)&nbsp;·&nbsp;[コード](https://github.com/RoboOpus/ACG-WAM) |
 | <a id="p-drifting-action-heads-for-gr00t-n17"></a>**GR00T Drifting Heads**：GR00T N1.7 の拡散アクションヘッドを 1 ステップの drifting ヘッドに置き換え、推論コストを削減 | `TRON2` | ZJU-UIUC, LimX | 2026 | 論文 | [論文](https://arxiv.org/abs/2609.18108) |
