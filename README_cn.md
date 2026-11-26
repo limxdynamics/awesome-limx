@@ -53,12 +53,14 @@
 
 下面的条目都建立在这四步之上。刚开始的话，先按顺序走一遍——这些是 LimX 的官方仓库，不是社区项目。
 
+> **先在浏览器里试试：**不用安装，官方策略和动作直接在 Hugging Face Spaces 上运行——[TRON1 Teleop](https://huggingface.co/spaces/limxdynamics/tron1-teleop) · [TRON2 Teleop](https://huggingface.co/spaces/limxdynamics/tron2-teleop) · [Oli Teleop](https://huggingface.co/spaces/limxdynamics/oli-teleop) · [Luna Viewer](https://huggingface.co/spaces/limxdynamics/luna-viewer)。
+
 | 步骤 | 需要什么 | 从哪拿 |
 |---|---|---|
 | 1 · 模型 | 机器人的 URDF、MJCF 和 USD | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
 | 2 · 接口 | 低层运动 SDK、ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · 训练 | Isaac Lab、Isaac Gym、MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo 仿真验证：[TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
-| 4 · 部署 | ONNX 推理、ROS 2、C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna：暂未公开部署仓库 |
+| 4 · 部署 | ONNX 推理、ROS 2、C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna：暂未公开部署仓库<br>Hugging Face 上的预训练 ONNX 策略：[TRON1](https://huggingface.co/limxdynamics/tron1-rl-locomotion-policies) · [TRON2](https://huggingface.co/limxdynamics/tron2-rl-locomotion-policies) · [Oli](https://huggingface.co/limxdynamics/oli-rl-policies) |
 
 ## 运动控制
 

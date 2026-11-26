@@ -53,12 +53,14 @@
 
 아래의 모든 성과는 같은 네 단계를 바탕으로 합니다. 처음이라면 순서대로 따라가세요. 여기 있는 것은 LimX 공식 저장소이며 커뮤니티 프로젝트가 아닙니다.
 
+> **설치 전에 브라우저에서 체험:** 공식 정책과 모션을 Hugging Face Spaces에서 바로 실행해 볼 수 있습니다 — [TRON1 Teleop](https://huggingface.co/spaces/limxdynamics/tron1-teleop) · [TRON2 Teleop](https://huggingface.co/spaces/limxdynamics/tron2-teleop) · [Oli Teleop](https://huggingface.co/spaces/limxdynamics/oli-teleop) · [Luna Viewer](https://huggingface.co/spaces/limxdynamics/luna-viewer).
+
 | 단계 | 필요한 것 | 받는 곳 |
 |---|---|---|
 | 1 · 모델 | 로봇의 URDF, MJCF, USD | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
 | 2 · 인터페이스 | 저수준 모션 SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · 학습 | Isaac Lab, Isaac Gym, MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo sim-to-sim 검증: [TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
-| 4 · 배포 | ONNX 런타임, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: 배포 저장소 아직 미공개 |
+| 4 · 배포 | ONNX 런타임, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: 배포 저장소 아직 미공개<br>Hugging Face의 사전 학습 ONNX 정책: [TRON1](https://huggingface.co/limxdynamics/tron1-rl-locomotion-policies) · [TRON2](https://huggingface.co/limxdynamics/tron2-rl-locomotion-policies) · [Oli](https://huggingface.co/limxdynamics/oli-rl-policies) |
 
 ## 보행 및 전신 제어
 

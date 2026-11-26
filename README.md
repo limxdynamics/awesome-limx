@@ -54,12 +54,14 @@
 Everything below builds on the same four steps. If you are new, walk them in
 order - these are LimX's official repositories, not community projects.
 
+> **Try it before you install anything:** the official policies and motions run in your browser on Hugging Face Spaces — [TRON1 Teleop](https://huggingface.co/spaces/limxdynamics/tron1-teleop) · [TRON2 Teleop](https://huggingface.co/spaces/limxdynamics/tron2-teleop) · [Oli Teleop](https://huggingface.co/spaces/limxdynamics/oli-teleop) · [Luna Viewer](https://huggingface.co/spaces/limxdynamics/luna-viewer).
+
 | Step | What you need | Where to get it |
 |---|---|---|
 | 1 · Models | URDF, MJCF and USD for your robot | [TRON1](https://github.com/limxdynamics/tron1-robot-description) · [TRON2](https://github.com/limxdynamics/tron2-robot-description) · [Oli](https://github.com/limxdynamics/humanoid-description) · [Luna](https://github.com/limxdynamics/luna-description) |
 | 2 · Interface | Low-level motion SDK, ROS 2 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) |
 | 3 · Train | Isaac Lab, Isaac Gym, MuJoCo | [TRON1](https://github.com/limxdynamics/tron1-rl-isaaclab) · [TRON2](https://github.com/limxdynamics/tron2_rl_lab) · [Oli](https://github.com/limxdynamics/humanoid-rl-isaaclab) · [Luna](https://github.com/limxdynamics/luna-beyondmimic)<br>MuJoCo sim-to-sim: [TRON1](https://github.com/limxdynamics/tron1-mujoco-sim) · [TRON2](https://github.com/limxdynamics/tron2_mujoco_sim) · [Oli](https://github.com/limxdynamics/humanoid-mujoco-sim) |
-| 4 · Deploy | ONNX runtime, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: no public deploy repo yet |
+| 4 · Deploy | ONNX runtime, ROS 2, C++ | [TRON1](https://github.com/limxdynamics/tron1-rl-deploy-python) · [TRON2](https://github.com/limxdynamics/tron2_rl_deploy_python) · [Oli](https://github.com/limxdynamics/humanoid-rl-deploy-python) · Luna: no public deploy repo yet<br>Pretrained ONNX policies on Hugging Face: [TRON1](https://huggingface.co/limxdynamics/tron1-rl-locomotion-policies) · [TRON2](https://huggingface.co/limxdynamics/tron2-rl-locomotion-policies) · [Oli](https://huggingface.co/limxdynamics/oli-rl-policies) |
 
 ## Locomotion & whole-body control
 
